@@ -1,5 +1,6 @@
 ---
 slug: introduction-to-the-salesforce-connector
+redirect_from: "/article/288-introduction-to-the-salesforce-connector"
 title: Introduction to the Salesforce Connector
 ---
 

@@ -1,5 +1,6 @@
 ---
 slug: connectwise-integrations-frequently-asked-questions
+redirect_from: "/article/184-connectwise-connector-frequently-asked-questions"
 title: ConnectWise Integrations Frequently Asked Questions
 ---
 

@@ -1,5 +1,6 @@
 ---
-slug: connecting to bxp
+slug: connecting-to-bxp
+redirect_from: "/article/971-connecting-to-bxp"
 title: Connecting to BXP
 ---
 

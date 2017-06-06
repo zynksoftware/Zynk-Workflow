@@ -1,6 +1,7 @@
 ---
-slug: zynk-version-2---what's-new
-title: Zynk Version 2   What's New
+slug: zynk-version-2-whats-new
+redirect_from: "/article/64-zynk-version-2---whats-new"
+title: Zynk Version 2 What's New?
 ---
 **New features and developments**
 We've just released version 2.0 of Zynk with new features and connectors, and in the coming months we have some developments we want to share with you.

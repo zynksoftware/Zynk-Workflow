@@ -1,5 +1,6 @@
 ---
-slug: importing-products-to-salesforce-(bulk)
+slug: importing-products-to-salesforce-bulk
+redirect_from: "/article/296-uploading-products-to-salesforce-bulk"
 title: Importing Products to Salesforce (Bulk)
 ---
 This task will update or insert multiple product records and their standard price into Salesforce. Products are matched based on the ProductCode field in Salesforce, and the field from the input file specified in the XML SKU Field setting. If a match is found the existing product will be updated, or if no match is found a new product will be inserted.

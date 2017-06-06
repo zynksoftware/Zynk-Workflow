@@ -1,5 +1,5 @@
 ---
-slug: act!-company-xml
+slug: act-company-xml
 title: ACT! Company XML
 ---
 Import Companies allows you to create new and update existing Companies in ACT!. 

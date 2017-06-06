@@ -1,5 +1,6 @@
 ---
-slug: exporting-companies-from-act!
+slug: exporting-companies-from-act
+redirect_from: "/article/139-exporting-companies-from-act"
 title: Exporting Companies from ACT!
 ---
 This task will export Companies and their related Contacts from ACT! into [ACT! Company XML](act!-company-xml).

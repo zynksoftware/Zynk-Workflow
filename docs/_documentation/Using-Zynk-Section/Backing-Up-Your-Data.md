@@ -1,5 +1,6 @@
 ---
-slug: backing up your data
+slug: backing-up-your-data
+redirect_from: "/article/52-backing-up-your-data"
 title: Backing Up Your Data
 ---
 It is good practice to take backups of your data on a regular basis. Zynk has built in tools which will allow you to do this.
