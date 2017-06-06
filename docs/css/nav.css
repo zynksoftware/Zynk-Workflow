@@ -66,3 +66,9 @@
     color: #fff !important;
     
 }
+
+.navbar-nav>li 
+{
+    
+    margin-right: 20px;
+}
