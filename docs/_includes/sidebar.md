@@ -1,7 +1,6 @@
 <h1>Zynk Workflow Documentation</h1>
 
-* [Introduction](introduction)
-    * [Welcome](welcome)
+* [Home](index)
     * [Getting Started](getting-started)
     * [Key Concepts](key-concepts)
     * [Using Zynk](using-zynk)
