@@ -23,7 +23,7 @@ _Required_
 The file to save the create setup summary to.
 
 ### Zynk Settings
-See [Commmon Task Settings](commmon-task-settings)
+See [Common Task Settings](common-task-settings)
 
 
 ## Examples
