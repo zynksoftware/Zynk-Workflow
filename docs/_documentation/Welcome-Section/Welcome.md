@@ -1,9 +1,10 @@
 ---
 slug: welcome
 redirect_from: "/article/63-welcome"
+redirect_from: "/adam"
 title: Welcome
 ---
-## In this Section
+### In this Section
 
  * [Changelog](changelog)
  * [Consulting Development](consulting-development)
@@ -21,6 +22,9 @@ Zynk is a business automation and integration platform that can be configured t
 
 ## What can Zynk do?
 Zynk can handle almost any data type and manipulate it as required. Zynk can push or pull data from different databases and systems including your Accounting or CRM system. Zynk has modules and tasks for handling the following data types and sources:-
+
+### Data Integration for CRM, Ecommerce, Accounting and more
+Zynk can integrate your Ecommerce system to your accounting or CRM system with over 60 connectors for many different applications.
 
 ### Text Messaging Automation
 Zynk can send out marketing or other messages via SMS Text Message to customers or prospects informing them of special offers or for delivery of goods when despatch notes are created.
