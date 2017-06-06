@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Downloading Orders from WooCommerce</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Downloading Orders from WooCommerce</h1>
+                    <p>This task will download orders taken on your WooCommerce store to an XML file.</p>
+
+<p>We recommend configuring the task to download all orders of a particular status. Once the orders have been processed successfully, the <a href="uploading-orders-to-woocommerce">Uploading Orders to WooCommerce</a> task can be used to change the order status in WooCommerce to prevent the same ones downloading again.</p>
+
+<h2 id="settings">Settings</h2>
+<h3 id="connection">Connection</h3>
+<p><em>Required</em><br />
+The WooCommerce connection to use. See the <a href="connecting-to-woocommerce">Connecting to WooCommerce</a> article if you require more information on how to create/manage connections.</p>
+
+<h3 id="download-meta-data">Download Meta Data</h3>
+<p><em>Required</em><br />
+Set to true to download additional meta data for the orders. Defaults to false.</p>
+
+<h3 id="download-setting--date-created">Download Setting &gt; Date Created</h3>
+<p><em>Required</em><br />
+The date to download orders from when the task is set to download new orders. Updates automatically each time a order is downloaded.</p>
+
+<h3 id="download-setting--date-modified">Download Setting &gt; Date Modified</h3>
+<p><em>Required</em><br />
+The date to download orders from when the task is set to download modified orders. Updates automatically each time a order is downloaded.</p>
+
+<h3 id="download-setting--export-modified-new-or-all-records">Download Setting &gt; Export Modified, New or All Records</h3>
+<p><em>Required</em><br />
+Choose which orders should be downloaded from WooCommerce. The available options are:</p>
+
+<ul>
+  <li><strong>Modified</strong> - Downloads updated orders since the date shown in the Date Modified setting.</li>
+  <li><strong>New</strong> - Downloads new orders since the date shown in the Date Created setting.</li>
+  <li><strong>All</strong> - Downloads all orders.</li>
+</ul>
+
+<h3 id="page-size">Page Size</h3>
+<p><em>Required</em><br />
+The number of orders to download per page. Increasing this value will speed up the download, but will consume more memory. Defaults to 10.</p>
+
+<h3 id="output-file">Output File</h3>
+<p><em>Required</em><br />
+The name of the XML file to export the orders to. Defaults to ‘woo_commerce_orders.xml’.</p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a>.</p>
+
+<h2 id="examples">Examples</h2>
+<p>Sample output file:</p>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;OrderList&gt;</span>
+  <span class="nt">&lt;orders&gt;</span>
+    <span class="nt">&lt;order&gt;</span>
+      <span class="nt">&lt;id&gt;</span>9<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;created_at&gt;</span>2015-03-12T17:05:25<span class="nt">&lt;/created_at&gt;</span>
+      <span class="nt">&lt;updated_at&gt;</span>2015-03-25T17:00:00<span class="nt">&lt;/updated_at&gt;</span>
+      <span class="nt">&lt;order_number&gt;</span>9<span class="nt">&lt;/order_number&gt;</span>
+      <span class="nt">&lt;completed_at&gt;</span>2015-03-25T17:00:00<span class="nt">&lt;/completed_at&gt;</span>
+      <span class="nt">&lt;status&gt;</span>processing<span class="nt">&lt;/status&gt;</span>
+      <span class="nt">&lt;currency&gt;</span>GBP<span class="nt">&lt;/currency&gt;</span>
+      <span class="nt">&lt;total&gt;</span>8.00<span class="nt">&lt;/total&gt;</span>
+      <span class="nt">&lt;subtotal&gt;</span>8.00<span class="nt">&lt;/subtotal&gt;</span>
+      <span class="nt">&lt;total_line_items_quantity&gt;</span>1<span class="nt">&lt;/total_line_items_quantity&gt;</span>
+      <span class="nt">&lt;total_tax&gt;</span>0.00<span class="nt">&lt;/total_tax&gt;</span>
+      <span class="nt">&lt;total_shipping&gt;</span>0.00<span class="nt">&lt;/total_shipping&gt;</span>
+      <span class="nt">&lt;cart_tax&gt;</span>0.00<span class="nt">&lt;/cart_tax&gt;</span>
+      <span class="nt">&lt;shipping_tax&gt;</span>0.00<span class="nt">&lt;/shipping_tax&gt;</span>
+      <span class="nt">&lt;total_discount&gt;</span>0.00<span class="nt">&lt;/total_discount&gt;</span>
+      <span class="nt">&lt;shipping_methods&gt;</span>Free Shipping<span class="nt">&lt;/shipping_methods&gt;</span>
+      <span class="nt">&lt;payment_details&gt;</span>
+        <span class="nt">&lt;method_id&gt;</span>cheque<span class="nt">&lt;/method_id&gt;</span>
+        <span class="nt">&lt;method_title&gt;</span>Cheque Payment<span class="nt">&lt;/method_title&gt;</span>
+        <span class="nt">&lt;paid&gt;</span>false<span class="nt">&lt;/paid&gt;</span>
+      <span class="nt">&lt;/payment_details&gt;</span>
+      <span class="nt">&lt;billing_address&gt;</span>
+        <span class="nt">&lt;first_name&gt;</span>Adam<span class="nt">&lt;/first_name&gt;</span>
+        <span class="nt">&lt;last_name&gt;</span>Wardle<span class="nt">&lt;/last_name&gt;</span>
+        <span class="nt">&lt;company&gt;</span>Zynk Software Ltd<span class="nt">&lt;/company&gt;</span>
+        <span class="nt">&lt;address_1&gt;</span>Nelson House<span class="nt">&lt;/address_1&gt;</span>
+        <span class="nt">&lt;address_2</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;city&gt;</span>Jesmond<span class="nt">&lt;/city&gt;</span>
+        <span class="nt">&lt;state&gt;</span>Tyne <span class="err">&amp;</span> Wear<span class="nt">&lt;/state&gt;</span>
+        <span class="nt">&lt;postcode&gt;</span>NE2 3AE<span class="nt">&lt;/postcode&gt;</span>
+        <span class="nt">&lt;country&gt;</span>GB<span class="nt">&lt;/country&gt;</span>
+        <span class="nt">&lt;email&gt;</span>support@zynk.com<span class="nt">&lt;/email&gt;</span>
+        <span class="nt">&lt;phone&gt;</span>08451232920<span class="nt">&lt;/phone&gt;</span>
+      <span class="nt">&lt;/billing_address&gt;</span>
+      <span class="nt">&lt;shipping_address&gt;</span>
+        <span class="nt">&lt;first_name&gt;</span>Adam<span class="nt">&lt;/first_name&gt;</span>
+        <span class="nt">&lt;last_name&gt;</span>Wardle<span class="nt">&lt;/last_name&gt;</span>
+        <span class="nt">&lt;company&gt;</span>Zynk Software Ltd<span class="nt">&lt;/company&gt;</span>
+        <span class="nt">&lt;address_1&gt;</span>Nelson House<span class="nt">&lt;/address_1&gt;</span>
+        <span class="nt">&lt;address_2</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;city&gt;</span>Jesmond<span class="nt">&lt;/city&gt;</span>
+        <span class="nt">&lt;state&gt;</span>Tyne <span class="err">&amp;</span> Wear<span class="nt">&lt;/state&gt;</span>
+        <span class="nt">&lt;postcode&gt;</span>NE2 3AE<span class="nt">&lt;/postcode&gt;</span>
+        <span class="nt">&lt;country&gt;</span>GB<span class="nt">&lt;/country&gt;</span>
+      <span class="nt">&lt;/shipping_address&gt;</span>
+      <span class="nt">&lt;note&gt;</span>Leave by the gate<span class="nt">&lt;/note&gt;</span>
+      <span class="nt">&lt;customer_ip&gt;</span>::1<span class="nt">&lt;/customer_ip&gt;</span>
+      <span class="nt">&lt;customer_user_agent&gt;</span>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0<span class="nt">&lt;/customer_user_agent&gt;</span>
+      <span class="nt">&lt;customer_id&gt;</span>1<span class="nt">&lt;/customer_id&gt;</span>
+      <span class="nt">&lt;view_order_url&gt;</span>https://localhost:8080/wordpress-4.1.1/my-account/view-order/9<span class="nt">&lt;/view_order_url&gt;</span>
+      <span class="nt">&lt;line_items&gt;</span>
+        <span class="nt">&lt;line_item&gt;</span>
+          <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+          <span class="nt">&lt;subtotal&gt;</span>8.00<span class="nt">&lt;/subtotal&gt;</span>
+          <span class="nt">&lt;subtotal_tax&gt;</span>0.00<span class="nt">&lt;/subtotal_tax&gt;</span>
+          <span class="nt">&lt;total&gt;</span>8.00<span class="nt">&lt;/total&gt;</span>
+          <span class="nt">&lt;total_tax&gt;</span>0.00<span class="nt">&lt;/total_tax&gt;</span>
+          <span class="nt">&lt;price&gt;</span>8.00<span class="nt">&lt;/price&gt;</span>
+          <span class="nt">&lt;quantity&gt;</span>1<span class="nt">&lt;/quantity&gt;</span>
+          <span class="nt">&lt;name&gt;</span>Test<span class="nt">&lt;/name&gt;</span>
+          <span class="nt">&lt;product_id&gt;</span>8<span class="nt">&lt;/product_id&gt;</span>
+          <span class="nt">&lt;sku&gt;</span>ABC123<span class="nt">&lt;/sku&gt;</span>
+          <span class="nt">&lt;meta</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/line_item&gt;</span>
+      <span class="nt">&lt;/line_items&gt;</span>
+      <span class="nt">&lt;shipping_lines&gt;</span>
+        <span class="nt">&lt;shipping_line&gt;</span>
+          <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+          <span class="nt">&lt;method_id&gt;</span>free_shipping<span class="nt">&lt;/method_id&gt;</span>
+          <span class="nt">&lt;method_title&gt;</span>Free Shipping<span class="nt">&lt;/method_title&gt;</span>
+          <span class="nt">&lt;total&gt;</span>0.00<span class="nt">&lt;/total&gt;</span>
+        <span class="nt">&lt;/shipping_line&gt;</span>
+      <span class="nt">&lt;/shipping_lines&gt;</span>
+      <span class="nt">&lt;customer&gt;</span>
+        <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;created_at&gt;</span>2015-03-11T16:54:11<span class="nt">&lt;/created_at&gt;</span>
+        <span class="nt">&lt;updated_at</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;email&gt;</span>support@zynk.com<span class="nt">&lt;/email&gt;</span>
+        <span class="nt">&lt;first_name&gt;</span>Adam<span class="nt">&lt;/first_name&gt;</span>
+        <span class="nt">&lt;last_name</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;username&gt;</span>admin<span class="nt">&lt;/username&gt;</span>
+        <span class="nt">&lt;last_order_id&gt;</span>9<span class="nt">&lt;/last_order_id&gt;</span>
+        <span class="nt">&lt;last_order_date&gt;</span>2015-03-12T17:05:25<span class="nt">&lt;/last_order_date&gt;</span>
+        <span class="nt">&lt;orders_count&gt;</span>1<span class="nt">&lt;/orders_count&gt;</span>
+        <span class="nt">&lt;total_spent&gt;</span>8.00<span class="nt">&lt;/total_spent&gt;</span>
+        <span class="nt">&lt;avatar_url&gt;</span>https://secure.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=96<span class="nt">&lt;/avatar_url&gt;</span>
+        <span class="nt">&lt;billing_address&gt;</span>
+          <span class="nt">&lt;first_name&gt;</span>Adam<span class="nt">&lt;/first_name&gt;</span>
+          <span class="nt">&lt;last_name&gt;</span>Wardle<span class="nt">&lt;/last_name&gt;</span>
+          <span class="nt">&lt;company&gt;</span>Zynk Software Ltd<span class="nt">&lt;/company&gt;</span>
+          <span class="nt">&lt;address_1&gt;</span>Nelson House<span class="nt">&lt;/address_1&gt;</span>
+          <span class="nt">&lt;address_2</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;city&gt;</span>Jesmond<span class="nt">&lt;/city&gt;</span>
+          <span class="nt">&lt;state&gt;</span>Tyne <span class="err">&amp;</span> Wear<span class="nt">&lt;/state&gt;</span>
+          <span class="nt">&lt;postcode&gt;</span>NE2 3AE<span class="nt">&lt;/postcode&gt;</span>
+          <span class="nt">&lt;country&gt;</span>GB<span class="nt">&lt;/country&gt;</span>
+          <span class="nt">&lt;email&gt;</span>support@zynk.com<span class="nt">&lt;/email&gt;</span>
+          <span class="nt">&lt;phone&gt;</span>08451232920<span class="nt">&lt;/phone&gt;</span>
+        <span class="nt">&lt;/billing_address&gt;</span>
+        <span class="nt">&lt;shipping_address&gt;</span>
+          <span class="nt">&lt;first_name&gt;</span>Adam<span class="nt">&lt;/first_name&gt;</span>
+          <span class="nt">&lt;last_name&gt;</span>Wardle<span class="nt">&lt;/last_name&gt;</span>
+          <span class="nt">&lt;company&gt;</span>Zynk Software Ltd<span class="nt">&lt;/company&gt;</span>
+          <span class="nt">&lt;address_1&gt;</span>Nelson House<span class="nt">&lt;/address_1&gt;</span>
+          <span class="nt">&lt;address_2</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;city&gt;</span>Jesmond<span class="nt">&lt;/city&gt;</span>
+          <span class="nt">&lt;state&gt;</span>Tyne <span class="err">&amp;</span> Wear<span class="nt">&lt;/state&gt;</span>
+          <span class="nt">&lt;postcode&gt;</span>NE2 3AE<span class="nt">&lt;/postcode&gt;</span>
+          <span class="nt">&lt;country&gt;</span>GB<span class="nt">&lt;/country&gt;</span>
+        <span class="nt">&lt;/shipping_address&gt;</span>
+        <span class="nt">&lt;customer_meta&gt;</span>
+          <span class="nt">&lt;nickname&gt;</span>admin<span class="nt">&lt;/nickname&gt;</span>
+          <span class="nt">&lt;first_name&gt;</span>Adam<span class="nt">&lt;/first_name&gt;</span>
+          <span class="nt">&lt;last_name</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;description</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;rich_editing&gt;</span>true<span class="nt">&lt;/rich_editing&gt;</span>
+          <span class="nt">&lt;comment_shortcuts&gt;</span>false<span class="nt">&lt;/comment_shortcuts&gt;</span>
+          <span class="nt">&lt;admin_color&gt;</span>fresh<span class="nt">&lt;/admin_color&gt;</span>
+          <span class="nt">&lt;use_ssl&gt;</span>0<span class="nt">&lt;/use_ssl&gt;</span>
+          <span class="nt">&lt;show_admin_bar_front&gt;</span>true<span class="nt">&lt;/show_admin_bar_front&gt;</span>
+          <span class="nt">&lt;wp_capabilities&gt;</span>
+            <span class="nt">&lt;administrator&gt;</span>true<span class="nt">&lt;/administrator&gt;</span>
+          <span class="nt">&lt;/wp_capabilities&gt;</span>
+          <span class="nt">&lt;wp_user_level&gt;</span>10<span class="nt">&lt;/wp_user_level&gt;</span>
+          <span class="nt">&lt;dismissed_wp_pointers&gt;</span>wp360_locks,wp390_widgets,wp410_dfw<span class="nt">&lt;/dismissed_wp_pointers&gt;</span>
+          <span class="nt">&lt;show_welcome_panel&gt;</span>1<span class="nt">&lt;/show_welcome_panel&gt;</span>
+          <span class="nt">&lt;wp_dashboard_quick_press_last_post_id&gt;</span>10<span class="nt">&lt;/wp_dashboard_quick_press_last_post_id&gt;</span>
+          <span class="nt">&lt;billing_first_name&gt;</span>Adam<span class="nt">&lt;/billing_first_name&gt;</span>
+          <span class="nt">&lt;billing_last_name&gt;</span>Wardle<span class="nt">&lt;/billing_last_name&gt;</span>
+          <span class="nt">&lt;billing_company&gt;</span>Zynk Software Ltd<span class="nt">&lt;/billing_company&gt;</span>
+          <span class="nt">&lt;billing_address_1&gt;</span>Nelson House<span class="nt">&lt;/billing_address_1&gt;</span>
+          <span class="nt">&lt;billing_address_2</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;billing_city&gt;</span>Jesmond<span class="nt">&lt;/billing_city&gt;</span>
+          <span class="nt">&lt;billing_postcode&gt;</span>NE2 3AE<span class="nt">&lt;/billing_postcode&gt;</span>
+          <span class="nt">&lt;billing_country&gt;</span>GB<span class="nt">&lt;/billing_country&gt;</span>
+          <span class="nt">&lt;billing_state&gt;</span>Tyne <span class="err">&amp;</span> Wear<span class="nt">&lt;/billing_state&gt;</span>
+          <span class="nt">&lt;billing_phone&gt;</span>08451232920<span class="nt">&lt;/billing_phone&gt;</span>
+          <span class="nt">&lt;billing_email&gt;</span>support@zynk.com<span class="nt">&lt;/billing_email&gt;</span>
+          <span class="nt">&lt;shipping_first_name&gt;</span>Adam<span class="nt">&lt;/shipping_first_name&gt;</span>
+          <span class="nt">&lt;shipping_last_name&gt;</span>Wardle<span class="nt">&lt;/shipping_last_name&gt;</span>
+          <span class="nt">&lt;shipping_company&gt;</span>Zynk Software Ltd<span class="nt">&lt;/shipping_company&gt;</span>
+          <span class="nt">&lt;shipping_address_1&gt;</span>Nelson House<span class="nt">&lt;/shipping_address_1&gt;</span>
+          <span class="nt">&lt;shipping_address_2</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;shipping_city&gt;</span>Jesmond<span class="nt">&lt;/shipping_city&gt;</span>
+          <span class="nt">&lt;shipping_postcode&gt;</span>NE2 3AE<span class="nt">&lt;/shipping_postcode&gt;</span>
+          <span class="nt">&lt;shipping_country&gt;</span>GB<span class="nt">&lt;/shipping_country&gt;</span>
+          <span class="nt">&lt;shipping_state&gt;</span>Tyne <span class="err">&amp;</span> Wear<span class="nt">&lt;/shipping_state&gt;</span>
+          <span class="nt">&lt;woocommerce_api_consumer_key&gt;</span>ck_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<span class="nt">&lt;/woocommerce_api_consumer_key&gt;</span>
+          <span class="nt">&lt;woocommerce_api_consumer_secret&gt;</span>cs_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<span class="nt">&lt;/woocommerce_api_consumer_secret&gt;</span>
+          <span class="nt">&lt;woocommerce_api_key_permissions&gt;</span>read_write<span class="nt">&lt;/woocommerce_api_key_permissions&gt;</span>
+        <span class="nt">&lt;/customer_meta&gt;</span>
+      <span class="nt">&lt;/customer&gt;</span>
+    <span class="nt">&lt;/order&gt;</span>
+  <span class="nt">&lt;/orders&gt;</span>
+<span class="nt">&lt;/OrderList&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/WooCommerce-Connector/Downloading-Orders-from-WooCommerce.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Traffic Live to Sage 50 UK Integration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Traffic Live to Sage 50 UK Integration</h1>
+                    <p>We have established a partnership with Deltek who produce the client management system TrafficLIVE, which allows design and web studios to run and manage jobs, produce quotes and bills, automatically integrating the associated billing information into Sage 50 UK.</p>
+
+<p>We don’t manage the scripts that generate the data for this integration, this is done by Deltek. Any custom requirements (anything outside the detail of this article) will need to be raised with Deltek.</p>
+
+<p>This integration will export invoices from 		<strong>TrafficLIVE</strong> and import them into <strong>Sage 50 UK</strong>as Sales Invoices. You can find a sample workflow and a sample file on our <a href="https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/Traffic%20Live%20Integration">GitHub site</a>.</p>
+
+<p>Instructions on how to set up your TrafficLIVE system can be found 		<a href="http://trafficlive.screenstepslive.com/s/2523/m/userguide/l/54862-fully-automated-posting-to-sage-line-50-sales-ledger-posting#">here</a>, if you have any queries on this please contact the TrafficLIVE support team on 0800 880 3002.</p>
+
+<h2 id="workflow-overview">Workflow Overview</h2>
+<p>The following sections provide an overview of the tasks used by the TrafficLIVE To Sage 50 UK Integration and explain each task’s function within the Workflow process.</p>
+
+<h4 id="download-transactions---phase-1">Download Transactions - Phase 1</h4>
+<p>This part of the process will download and import your invoices from TrafficLIVE in to Sage 50 UK.</p>
+
+<p><a href="http-task">HTTP Task</a> - Download Transactions</p>
+
+<p>This task will download the transactions from TrafficLIVE and store them in an XML file.</p>
+
+<ul>
+  <li><strong>Method</strong> - Make sure that this is set to ‘GET’ so we can download the data.</li>
+  <li><strong>Output File</strong> - Here you can specify the name of the XML file that you are storing the TrafficLIVE invoices in.</li>
+  <li><strong>Password</strong> - This is configured at a Variable level. When in the workflow if you go to ‘Properties and then ‘Variables’ you will see a variable with the key ‘PASSWORD’, populate this with your API token generated from TrafficLIVE.</li>
+  <li><strong>URL</strong> - This is provided by TrafficLIVE and is authenticated based on your username an password.</li>
+  <li><strong>Username</strong> - This is the email address you used when you signed up for TrafficLIVE and is configured at a Variable level. When in the workflow if you go to ‘Properties’ and then ‘Variables’ you will see a variable with the key ‘USERNAME’, populate this with your TrafficLIVE email.</li>
+</ul>
+
+<p><a href="importing-transactions-into-sage-50-uk">Importing Transactions into Sage 50 UK</a></p>
+
+<p>This task will import your TrafficLIVE in to Sage 50 UK as Sales Invoices.</p>
+
+<ul>
+  <li><strong>Fail File</strong>This will be the destination for any failed transactions.</li>
+  <li><strong>Input File</strong>This will be the Output File from the previous task and the file that is imported in to Sage 50 UK.</li>
+  <li><strong>Success File</strong>This will be the destination of any successful transactions.</li>
+</ul>
+
+<p><a href="http-task">HTTP Task</a> - Notify Successful Transactions</p>
+
+<p>This task will notify any successful transactions that have been imported from TrafficLIVE.</p>
+
+<ul>
+  <li><strong>Header Values</strong>This needs to be set to the content type of the file being sent to TrafficLIVE.</li>
+  <li><strong>Input File</strong>This will need to be set the Success File from the previous task.</li>
+  <li><strong>Method</strong>This will need to be set to ‘POST’ as this is part of the notify process.</li>
+  <li><strong>Password</strong>This is configured at a Variable level. When in the workflow if you go to ‘Properties and then ‘Variables’ you will see a variable with the key ‘PASSWORD’, populate this with your API token generated from TrafficLIVE.</li>
+  <li><strong>URL</strong>This is provided by TrafficLIVE and is authenticated based on your username an password.</li>
+  <li><strong>Username</strong>This is the email address you used when you signed up for TrafficLIVE and is configured at a Variable level. When in the workflow if you go to ‘Properties’ and then ‘Variables’ you will see a variable with the key ‘USERNAME’, populate this with your TrafficLIVE email.</li>
+</ul>
+
+<p><a href="http-task">HTTP Task</a> - Notify Failed Transactions</p>
+
+<p>This task will notify any failed transactions that have not been imported from TrafficLIVE.</p>
+
+<ul>
+  <li><strong>Header Values</strong> - This needs to be set to the content type of the file being sent to TrafficLIVE.</li>
+  <li><strong>Input File</strong> - This will need to be set the Success File from the previous task.</li>
+  <li><strong>Method</strong> - This will need to be set to ‘POST’ as this is part of the notify process.</li>
+  <li><strong>Password</strong> - This is configured at a Variable level. When in the workflow if you go to ‘Properties and then ‘Variables’ you will see a variable with the key ‘PASSWORD’, populate this with your API token generated from TrafficLIVE.</li>
+  <li><strong>URL</strong> - This is provided by TrafficLIVE and is authenticated based on your username an password.</li>
+  <li><strong>Username</strong> - This is the email address you used when you signed up for TrafficLIVE and is configured at a Variable level. When in the workflow if you go to ‘Properties’ and then ‘Variables’ you will see a variable with the key ‘USERNAME’, populate this with your TrafficLIVE email.</li>
+</ul>
+
+<h4 id="archive---phase-2">Archive - Phase 2</h4>
+<p>This part of the process will archive off any data used in the workflow.</p>
+
+<p><a href="archive-workflow-data">Archive Workflow Data</a></p>
+
+<ul>
+  <li><strong>Archive Folder</strong>Specify this to folder that you want to archive your data to.</li>
+</ul>
+
+<h2 id="configuring-the-workflow">Configuring the Workflow</h2>
+
+<p>The following points detail how to configure the 		<a href="https://raw.githubusercontent.com/zynksoftware/samples/master/Integration%20Samples/Traffic%20Live%20Integration/My%20Workflows/TrafficLIVE%20-%20Sage%2050%20UK.wkf">TrafficLIVE Workflow</a>, this involves entering the TrafficLIVE details and configuring the Sage 50 UK connection to use.</p>
+
+<ul>
+  <li>Copy the Workflow to the My Workflows directory in Zynk: C:\ProgramData\Zynk Software\Zynk\2.0\My Workflows</li>
+  <li>Open Zynk and then double click the Workflow to edit it<br />
+<a href="http://www.zynk.com/images/v2/trafficlive/open-workflow.png"><img src="http://www.zynk.com/images/v2/trafficlive/open-workflow.png" alt="Open TrafficLIVE to Sage 50 Workflow" /></a></li>
+  <li>Select the ‘Import Transactions’ task from the Tasks that make up the Workflow to view the Task Properties		<br />
+<a href="http://www.zynk.com/images/v2/trafficlive/select-import-transactions.png"><img src="http://www.zynk.com/images/v2/trafficlive/select-import-transactions.png" alt="Select Import Transactions task in TrafficLIVE to Sage 50 Workflow" /></a></li>
+  <li>Select the Sage 50 Connection Property and click the button to select the Sage 50 UK company to connect to<br />
+<a href="http://www.zynk.com/images/v2/trafficlive/select-connection.png"><img src="http://www.zynk.com/images/v2/trafficlive/select-connection.png" alt="Select Sage 50 UK Connection on Import Transactions task in TrafficLIVE to Sage 50 Workflow" /></a></li>
+  <li>You may need to create a new Sage 50 Connection if this is a fresh install of Zynk<br />
+<a href="http://www.zynk.com/images/v2/trafficlive/new-connection.png"><img src="http://www.zynk.com/images/v2/trafficlive/new-connection.png" alt="Create a New Sage 50 UK Connection in TrafficLIVE to Sage 50 Workflow" /></a></li>
+  <li>You can find more information on <a href="connecting-to-sage-50-uk">Connecting to Sage 50 UK</a> here.</li>
+  <li>Next you will need to edit the Workflow Properties to enter the TrafficLIVE USERNAME and PASSWORD<br />
+<a href="http://www.zynk.com/images/v2/trafficlive/edit-workflow-properties-1.png"><img src="http://www.zynk.com/images/v2/trafficlive/edit-workflow-properties-1.png" alt="Click Workflow Properties Tab" /></a><a href="http://www.zynk.com/images/v2/trafficlive/edit-workflow-properties-2.png"><img src="http://www.zynk.com/images/v2/trafficlive/edit-workflow-properties-2.png" alt="Click Variables on the Properties Tab" /></a></li>
+  <li>The USERNAME will be the email address used to log into TrafficLIVE<br />
+<a href="http://www.zynk.com/images/v2/trafficlive/edit-workflow-properties-username.png"><img src="http://www.zynk.com/images/v2/trafficlive/edit-workflow-properties-username.png" alt="Edit the USERNAME Workflow Variable, populating with the TrafficLIVE email address" /></a></li>
+  <li>The PASSWORD will be the API Key that was generated from TrafficLIVE<br />
+<a href="http://www.zynk.com/images/v2/trafficlive/edit-workflow-properties-password.png"><img src="http://www.zynk.com/images/v2/trafficlive/edit-workflow-properties-password.png" alt="Edit the PASSWORD Workflow Variable, populating with the API Key generated on TrafficLIVE" /></a></li>
+  <li>Now you can schedule the Workflow to run at the desired frequency. We don’t advise scheduling Sage 50 UK integrations any more frequently than once every 15 minutes due to the impact this can have on performance in the application.</li>
+  <li>If the Sage 50 User being used by Zynk to connect up to Sage is already in use then the integration will not be able to run. Whenever any maintenance operations need to be carried out in Sage (backup, restore etc.), you should ensure that the Zynk schedule is disabled prior to this. You can find more information on Scheduling Workflows and disabling Zynk schedules here.</li>
+</ul>
+
+<p>If you have any queries on any of the above, feel free to contact our support team via email at support@zynk.com or via telephone on 0191 303 7279.</p>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Integrations-Section/Traffic-Live-to-Sage-50-UK-Integration.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

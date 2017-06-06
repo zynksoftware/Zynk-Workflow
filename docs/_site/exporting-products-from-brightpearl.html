@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exporting Products from Brightpearl</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Exporting Products from Brightpearl</h1>
+                    <p>This task will download products from Brightpearl in XML format.</p>
+
+<h2 id="settings">Settings</h2>
+
+<h3 id="connection">Connection</h3>
+<p><em>Required</em>
+The Brightpearl connection to use.</p>
+
+<h3 id="product-status">Product Status</h3>
+<p><em>Optional</em>
+Enter a product status to filer the export on.</p>
+
+<h3 id="output-file">Output File</h3>
+<p><em>Required</em>
+The file to save exported records to.</p>
+
+<h3 id="brightpearl-settings">Brightpearl Settings</h3>
+<p>See <a href="common-brightpearl-settings">Common Brightpearl Settings</a></p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a></p>
+
+<h2 id="examples">Examples</h2>
+
+<p>Sample output file:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ArrayOfProduct&gt;</span>
+	<span class="nt">&lt;Product&gt;</span>
+		<span class="nt">&lt;externalId</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;createdOn&gt;</span>2016-11-18T16:06:12Z<span class="nt">&lt;/createdOn&gt;</span>
+		<span class="nt">&lt;updatedOn&gt;</span>2016-11-18T16:36:34Z<span class="nt">&lt;/updatedOn&gt;</span>
+		<span class="nt">&lt;id&gt;</span>1007<span class="nt">&lt;/id&gt;</span>
+		<span class="nt">&lt;brand&gt;</span>
+			<span class="nt">&lt;id&gt;</span>74<span class="nt">&lt;/id&gt;</span>
+			<span class="nt">&lt;name&gt;</span>Other<span class="nt">&lt;/name&gt;</span>
+			<span class="nt">&lt;description</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;/brand&gt;</span>
+		<span class="nt">&lt;productType&gt;</span>
+			<span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+			<span class="nt">&lt;name&gt;</span>Default<span class="nt">&lt;/name&gt;</span>
+			<span class="nt">&lt;associations&gt;</span>
+				<span class="nt">&lt;options&gt;</span>
+					<span class="nt">&lt;Option&gt;</span>
+						<span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+						<span class="nt">&lt;name&gt;</span>Colour<span class="nt">&lt;/name&gt;</span>
+					<span class="nt">&lt;/Option&gt;</span>
+					<span class="nt">&lt;Option&gt;</span>
+						<span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+						<span class="nt">&lt;name&gt;</span>Size<span class="nt">&lt;/name&gt;</span>
+					<span class="nt">&lt;/Option&gt;</span>
+				<span class="nt">&lt;/options&gt;</span>
+			<span class="nt">&lt;/associations&gt;</span>
+		<span class="nt">&lt;/productType&gt;</span>
+		<span class="nt">&lt;seasons</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;productGroupId</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;nominalCodeStock&gt;</span>1001<span class="nt">&lt;/nominalCodeStock&gt;</span>
+		<span class="nt">&lt;identity&gt;</span>
+			<span class="nt">&lt;sku&gt;</span>IPHONE<span class="nt">&lt;/sku&gt;</span>
+			<span class="nt">&lt;barcode</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;/identity&gt;</span>
+		<span class="nt">&lt;stock&gt;</span>
+			<span class="nt">&lt;stockTracked&gt;</span>true<span class="nt">&lt;/stockTracked&gt;</span>
+			<span class="nt">&lt;weight&gt;</span>
+				<span class="nt">&lt;magnitude&gt;</span>0<span class="nt">&lt;/magnitude&gt;</span>
+			<span class="nt">&lt;/weight&gt;</span>
+		<span class="nt">&lt;/stock&gt;</span>
+		<span class="nt">&lt;financialDetails&gt;</span>
+			<span class="nt">&lt;taxable&gt;</span>false<span class="nt">&lt;/taxable&gt;</span>
+			<span class="nt">&lt;taxCode&gt;</span>
+				<span class="nt">&lt;id&gt;</span>7<span class="nt">&lt;/id&gt;</span>
+				<span class="nt">&lt;code&gt;</span>T20<span class="nt">&lt;/code&gt;</span>
+				<span class="nt">&lt;description&gt;</span>VAT<span class="nt">&lt;/description&gt;</span>
+				<span class="nt">&lt;rate&gt;</span>20<span class="nt">&lt;/rate&gt;</span>
+			<span class="nt">&lt;/taxCode&gt;</span>
+		<span class="nt">&lt;/financialDetails&gt;</span>
+		<span class="nt">&lt;salesChannels&gt;</span>
+			<span class="nt">&lt;salesChannel&gt;</span>
+				<span class="nt">&lt;id</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+				<span class="nt">&lt;salesChannelName&gt;</span>Brightpearl<span class="nt">&lt;/salesChannelName&gt;</span>
+				<span class="nt">&lt;productName&gt;</span>iPhone<span class="nt">&lt;/productName&gt;</span>
+				<span class="nt">&lt;productCondition&gt;</span>new<span class="nt">&lt;/productCondition&gt;</span>
+				<span class="nt">&lt;categories&gt;</span>
+					<span class="nt">&lt;Category&gt;</span>
+						<span class="nt">&lt;categoryCode&gt;</span>276<span class="nt">&lt;/categoryCode&gt;</span>
+					<span class="nt">&lt;/Category&gt;</span>
+				<span class="nt">&lt;/categories&gt;</span>
+				<span class="nt">&lt;description&gt;</span>
+					<span class="nt">&lt;languageCode&gt;</span>en<span class="nt">&lt;/languageCode&gt;</span>
+					<span class="nt">&lt;text</span> <span class="nt">/&gt;</span>
+					<span class="nt">&lt;format&gt;</span>HTML_FRAGMENT<span class="nt">&lt;/format&gt;</span>
+				<span class="nt">&lt;/description&gt;</span>
+				<span class="nt">&lt;shortDescription&gt;</span>
+					<span class="nt">&lt;languageCode&gt;</span>en<span class="nt">&lt;/languageCode&gt;</span>
+					<span class="nt">&lt;text&gt;</span>
+						<span class="nt">&lt;p&gt;</span>An iphone<span class="nt">&lt;/p&gt;</span>
+					<span class="nt">&lt;/text&gt;</span>
+					<span class="nt">&lt;format&gt;</span>HTML_FRAGMENT<span class="nt">&lt;/format&gt;</span>
+				<span class="nt">&lt;/shortDescription&gt;</span>
+				<span class="nt">&lt;availableToSellOnChannel</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+				<span class="nt">&lt;sellwhenNoStock</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+			<span class="nt">&lt;/salesChannel&gt;</span>
+		<span class="nt">&lt;/salesChannels&gt;</span>
+		<span class="nt">&lt;composition&gt;</span>
+			<span class="nt">&lt;bundle&gt;</span>false<span class="nt">&lt;/bundle&gt;</span>
+		<span class="nt">&lt;/composition&gt;</span>
+		<span class="nt">&lt;variations&gt;</span>
+			<span class="nt">&lt;variation&gt;</span>
+				<span class="nt">&lt;optionId&gt;</span>1<span class="nt">&lt;/optionId&gt;</span>
+				<span class="nt">&lt;optionName&gt;</span>Colour<span class="nt">&lt;/optionName&gt;</span>
+				<span class="nt">&lt;optionValueId&gt;</span>2<span class="nt">&lt;/optionValueId&gt;</span>
+				<span class="nt">&lt;optionValue&gt;</span>White<span class="nt">&lt;/optionValue&gt;</span>
+			<span class="nt">&lt;/variation&gt;</span>
+		<span class="nt">&lt;/variations&gt;</span>
+		<span class="nt">&lt;warehouses&gt;</span>
+			<span class="nt">&lt;item&gt;</span>
+				<span class="nt">&lt;key&gt;</span>2<span class="nt">&lt;/key&gt;</span>
+				<span class="nt">&lt;value&gt;</span>
+					<span class="nt">&lt;defaultLocationId&gt;</span>0<span class="nt">&lt;/defaultLocationId&gt;</span>
+					<span class="nt">&lt;reorderLevel&gt;</span>0<span class="nt">&lt;/reorderLevel&gt;</span>
+					<span class="nt">&lt;reorderQuantity&gt;</span>5<span class="nt">&lt;/reorderQuantity&gt;</span>
+				<span class="nt">&lt;/value&gt;</span>
+			<span class="nt">&lt;/item&gt;</span>
+		<span class="nt">&lt;/warehouses&gt;</span>
+		<span class="nt">&lt;customFields</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/Product&gt;</span>
+<span class="nt">&lt;/ArrayOfProduct&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Brightpearl-Connector/Exporting-Products-from-Brightpearl.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

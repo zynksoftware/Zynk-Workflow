@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Export Purchases</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Export Purchases</h1>
+                    <p>This is an example of a <strong>Purchase</strong> download.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code>    <span class="cp">&lt;?xml version="1.0"?&gt;</span>
+    <span class="nt">&lt;ArrayOfPurchase</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;Invoice&gt;</span>
+        <span class="nt">&lt;InvoiceDBID</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>45741079<span class="nt">&lt;/InvoiceDBID&gt;</span>
+        <span class="nt">&lt;InvoiceNumber</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/InvoiceNumber&gt;</span>
+        <span class="nt">&lt;InvoiceDate</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>2016-09-20T00:00:00<span class="nt">&lt;/InvoiceDate&gt;</span>
+        <span class="nt">&lt;DueDate</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>2016-10-20T00:00:00<span class="nt">&lt;/DueDate&gt;</span>
+        <span class="nt">&lt;Customer</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>PAUL01<span class="nt">&lt;/Customer&gt;</span>
+        <span class="nt">&lt;CustomerID</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>5468649<span class="nt">&lt;/CustomerID&gt;</span>
+        <span class="nt">&lt;Paid</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/Paid&gt;</span>
+        <span class="nt">&lt;CustomerReference</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;SuppressTotal</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/SuppressTotal&gt;</span>
+        <span class="nt">&lt;ProjectID</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/ProjectID&gt;</span>
+        <span class="nt">&lt;CurrencyCode</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>GBP<span class="nt">&lt;/CurrencyCode&gt;</span>
+        <span class="nt">&lt;ExchangeRate</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>1.0000<span class="nt">&lt;/ExchangeRate&gt;</span>
+        <span class="nt">&lt;ReadableString</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>Invoice Number : 1 
+    DBID: 45741079 
+    Date: 20/09/2016 00:00:00 
+    Due: 20/10/2016 00:00:00 
+    Customer: PAUL01 
+    Paid: 0 
+    Cust Ref:  
+    Line 1 : 17387829,5156547568,56293159,1.0000,8.3300,20.0000
+    <span class="nt">&lt;/ReadableString&gt;</span>
+        <span class="nt">&lt;Lines</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;anyType</span> <span class="na">xsi:type=</span><span class="s">"InvoiceLine"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Sku&gt;</span>TEST01<span class="nt">&lt;/Sku&gt;</span>
+            <span class="nt">&lt;SubProduct&gt;</span>true<span class="nt">&lt;/SubProduct&gt;</span>
+            <span class="nt">&lt;Quantity&gt;</span>1.0000<span class="nt">&lt;/Quantity&gt;</span>
+            <span class="nt">&lt;Description&gt;</span>5156547568<span class="nt">&lt;/Description&gt;</span>
+            <span class="nt">&lt;Rate&gt;</span>8.3300<span class="nt">&lt;/Rate&gt;</span>
+            <span class="nt">&lt;ChargeType&gt;</span>17387829<span class="nt">&lt;/ChargeType&gt;</span>
+            <span class="nt">&lt;VatRate&gt;</span>20.0000<span class="nt">&lt;/VatRate&gt;</span>
+            <span class="nt">&lt;VatAmount&gt;</span>1.6700<span class="nt">&lt;/VatAmount&gt;</span>
+            <span class="nt">&lt;ProductID&gt;</span>2747368<span class="nt">&lt;/ProductID&gt;</span>
+            <span class="nt">&lt;Sort&gt;</span>1<span class="nt">&lt;/Sort&gt;</span>
+            <span class="nt">&lt;ProjID&gt;</span>0<span class="nt">&lt;/ProjID&gt;</span>
+            <span class="nt">&lt;LineID&gt;</span>56293159<span class="nt">&lt;/LineID&gt;</span>
+          <span class="nt">&lt;/anyType&gt;</span>
+        <span class="nt">&lt;/Lines&gt;</span>
+        <span class="nt">&lt;NetAmount</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>8.3300<span class="nt">&lt;/NetAmount&gt;</span>
+        <span class="nt">&lt;VATAmount</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>1.6700<span class="nt">&lt;/VATAmount&gt;</span>
+        <span class="nt">&lt;AmountPaid</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>0.0000<span class="nt">&lt;/AmountPaid&gt;</span>
+        <span class="nt">&lt;CustomerName</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>Paul McCartney<span class="nt">&lt;/CustomerName&gt;</span>
+        <span class="nt">&lt;UseCustomDeliveryAddress</span> <span class="na">xmlns=</span><span class="s">"KashFlow"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/UseCustomDeliveryAddress&gt;</span>
+      <span class="nt">&lt;/Invoice&gt;</span>
+    <span class="nt">&lt;/ArrayOfPurchase&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Kashflow-Connector/Export-Purchases.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Xero Item XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Xero Item XML</h1>
+                    <p>The Upsert Items task allows you to create new and update existing inventory items in Xero.</p>
+
+<p>Any Xero fields not documented below are not supported with our imports. Examples of where in the XML the fields should appear are shown in the samples below.</p>
+
+<p>Sample import file for creating or updating an item:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ArrayOfXeroItem&gt;</span>
+  <span class="nt">&lt;XeroItem&gt;</span>
+    <span class="nt">&lt;ExternalId&gt;</span>7814<span class="nt">&lt;/ExternalId&gt;</span>
+    <span class="nt">&lt;Code&gt;</span>PROD001<span class="nt">&lt;/Code&gt;</span>
+    <span class="nt">&lt;Name&gt;</span>A4 Paper<span class="nt">&lt;/Name&gt;</span>
+    <span class="nt">&lt;SalesDetails&gt;</span>
+      <span class="nt">&lt;UnitPrice&gt;</span>4.00<span class="nt">&lt;/UnitPrice&gt;</span>
+      <span class="nt">&lt;AccountCode&gt;</span>200<span class="nt">&lt;/AccountCode&gt;</span>
+    <span class="nt">&lt;/SalesDetails&gt;</span>
+  <span class="nt">&lt;/XeroItem&gt;</span>
+<span class="nt">&lt;/ArrayOfXeroItem&gt;</span>
+</code></pre>
+</div>
+
+<p>In each of the following sections most of the XML has been omitted to make the samples easier to read. The whole structure of the XML schema is used below as a reference of where fields should be in the object model.</p>
+
+<h2 id="matching-items">Matching Items</h2>
+<p>Any of the following fields can be used to match the items provided in the XML to existing items in Xero. At least one should be provided, to prevent items being duplicated in Xero.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Xero Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Item ID</td>
+      <td>Id</td>
+      <td>cea98f0f-af1a-4b23-ac1b-9584ba014dcb</td>
+      <td>guid</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>ExternalId</td>
+      <td>7814</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td>Zynk stores a mapping between Xero’s item ID and the ExternalId, and will use this to look up the item ID.</td>
+    </tr>
+    <tr>
+      <td>Item Code</td>
+      <td>Code</td>
+      <td>PROD001</td>
+      <td>string</td>
+      <td>50</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ArrayOfXeroItem&gt;</span>
+  <span class="nt">&lt;XeroItem&gt;</span>
+    <span class="nt">&lt;Id&gt;</span>cea98f0f-af1a-4b23-ac1b-9584ba014dcb<span class="nt">&lt;/Id&gt;</span>
+    <span class="nt">&lt;ExternalId&gt;</span>7814<span class="nt">&lt;/ExternalId&gt;</span>
+    <span class="nt">&lt;Code&gt;</span>PROD001<span class="nt">&lt;/Code&gt;</span>
+  <span class="nt">&lt;/XeroItem&gt;</span>
+<span class="nt">&lt;/ArrayOfXeroItem&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="item-header">Item Header</h2>
+<p>The following fields can be set in the item header section.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Xero Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Item Code</td>
+      <td>Code</td>
+      <td>PROD001</td>
+      <td>string</td>
+      <td>50</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Item Name</td>
+      <td>Name</td>
+      <td>A4 Paper</td>
+      <td>string</td>
+      <td>50</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Inventory Asset Account</td>
+      <td>InventoryAssetAccountCode</td>
+      <td>630</td>
+      <td>string</td>
+      <td>10</td>
+      <td>Dependant</td>
+      <td>Required for tracked inventory items. Setting this field will tick the ‘I track this item’ check box. You must also provide the COGSAccountCode in the purchase details section when specifying this field.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ArrayOfXeroItem&gt;</span>
+  <span class="nt">&lt;XeroItem&gt;</span>
+    <span class="nt">&lt;Code&gt;</span>PROD001<span class="nt">&lt;/Code&gt;</span>
+    <span class="nt">&lt;Name&gt;</span>A4 Paper<span class="nt">&lt;/Name&gt;</span>
+    <span class="nt">&lt;InventoryAssetAccountCode&gt;</span>630<span class="nt">&lt;/InventoryAssetAccountCode&gt;</span>
+  <span class="nt">&lt;/XeroItem&gt;</span>
+<span class="nt">&lt;/ArrayOfXeroItem&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="purchase-details">Purchase Details</h2>
+<p>The following fields can be set in the purchase details section.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Xero Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Unit Price</td>
+      <td>PurchaseDetails/UnitPrice</td>
+      <td>2.00</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Cost of Goods Sold Account</td>
+      <td>PurchaseDetails/COGSAccountCode</td>
+      <td>300</td>
+      <td>string</td>
+      <td>10</td>
+      <td>Dependant</td>
+      <td>Required for tracked inventory items.</td>
+    </tr>
+    <tr>
+      <td>Tax Rate</td>
+      <td>PurchaseDetails/TaxType</td>
+      <td>INPUT2</td>
+      <td>string</td>
+      <td>10</td>
+      <td>Optional</td>
+      <td>Will be set to the default tax rate associated with the selected account if not specified.</td>
+    </tr>
+    <tr>
+      <td>Purchases Description</td>
+      <td>PurchaseDescription</td>
+      <td>1000 sheets of A4 paper</td>
+      <td>string</td>
+      <td>4000</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ArrayOfXeroItem&gt;</span>
+  <span class="nt">&lt;XeroItem&gt;</span>
+    <span class="nt">&lt;PurchaseDetails&gt;</span>
+      <span class="nt">&lt;UnitPrice&gt;</span>2.00<span class="nt">&lt;/UnitPrice&gt;</span>
+      <span class="nt">&lt;COGSAccountCode&gt;</span>300<span class="nt">&lt;/COGSAccountCode&gt;</span>
+      <span class="nt">&lt;TaxType&gt;</span>INPUT2<span class="nt">&lt;/TaxType&gt;</span>
+    <span class="nt">&lt;/PurchaseDetails&gt;</span>
+    <span class="nt">&lt;PurchaseDescription&gt;</span>1000 sheets of A4 paper<span class="nt">&lt;/PurchaseDescription&gt;</span>
+  <span class="nt">&lt;/XeroItem&gt;</span>
+<span class="nt">&lt;/ArrayOfXeroItem&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="sales-details">Sales Details</h2>
+<p>The following fields can be set in the sales details section.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Xero Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Unit Price</td>
+      <td>SalesDetails/UnitPrice</td>
+      <td>4.00</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Sales Account</td>
+      <td>SalesDetails/AccountCode</td>
+      <td>200</td>
+      <td>string</td>
+      <td>10</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tax Rate</td>
+      <td>SalesDetails/TaxType</td>
+      <td>OUTPUT2</td>
+      <td>string</td>
+      <td>10</td>
+      <td>Optional</td>
+      <td>Will be set to the default tax rate associated with the selected account if not specified.</td>
+    </tr>
+    <tr>
+      <td>Purchases Description</td>
+      <td>Description</td>
+      <td>1000 sheets of A4 paper</td>
+      <td>string</td>
+      <td>4000</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ArrayOfXeroItem&gt;</span>
+  <span class="nt">&lt;XeroItem&gt;</span>
+    <span class="nt">&lt;SalesDetails&gt;</span>
+      <span class="nt">&lt;UnitPrice&gt;</span>4.00<span class="nt">&lt;/UnitPrice&gt;</span>
+      <span class="nt">&lt;AccountCode&gt;</span>200<span class="nt">&lt;/AccountCode&gt;</span>
+      <span class="nt">&lt;TaxType&gt;</span>OUTPUT2<span class="nt">&lt;/TaxType&gt;</span>
+    <span class="nt">&lt;/SalesDetails&gt;</span>
+    <span class="nt">&lt;Description&gt;</span>1000 sheets of A4 paper<span class="nt">&lt;/Description&gt;</span>
+  <span class="nt">&lt;/XeroItem&gt;</span>
+<span class="nt">&lt;/ArrayOfXeroItem&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Xero-Connector/Xero-Item-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

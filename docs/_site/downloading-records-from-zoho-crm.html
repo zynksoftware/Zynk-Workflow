@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Downloading Records from Zoho CRM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Downloading Records from Zoho CRM</h1>
+                    <p>This task will download various types of records from your Zoho CRM account, in XML format.</p>
+
+<h2 id="settings">Settings</h2>
+<h3 id="connection">Connection</h3>
+<p><em>Required</em><br />
+The Zoho CRM Connection to use for deleting records.  See the <a href="connecting-to-zoho-crm">Connecting to Zoho CRM</a> article if you require more information on how to create/manage connections.</p>
+
+<h3 id="download-all">Download All</h3>
+<p><em>Required</em><br />
+Set to true to download all records, or set to false to download only new records or ones that have been modified since the last time you ran the task.</p>
+
+<h3 id="filter">Filter</h3>
+<p><em>Optional</em><br />
+Specify criteria to use to filter the records. See below for a sample filter. Note that you can only specify a maximum of 5 conditions in the filter.  <code class="highlighter-rouge">(((Last Name:Steve) AND (Company:Zynk)) OR (Lead Status:Contacted))</code></p>
+
+<h3 id="output-file">Output File</h3>
+<p><em>Required</em><br />
+Specify the XML file to download the records to.</p>
+
+<h3 id="record-type">Record Type</h3>
+<p><em>Required</em><br />
+The type of record to be deleted. The available options are:</p>
+
+<ul>
+  <li>Accounts</li>
+  <li>Calls</li>
+  <li>Campaigns</li>
+  <li>Contacts</li>
+  <li>Events</li>
+  <li>Invoices</li>
+  <li>Leads</li>
+  <li>Potentials</li>
+  <li>Price Books</li>
+  <li>Products</li>
+  <li>Purchase Orders</li>
+  <li>Quotes</li>
+  <li>Sales Orders</li>
+  <li>Solutions</li>
+  <li>Tasks</li>
+  <li>Vendors</li>
+</ul>
+
+<h3 id="related-records">Related Records</h3>
+<p><em>Optional</em><br />
+Enter a list of Zoho module names to download related records from. For example, if the ‘Record Type’ setting is set to ‘Sales Orders’ and you enter ‘Accounts’ into the related records list, the task will automatically download details of the account associated with each sales order.</p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a></p>
+
+<h2 id="examples">Examples</h2>
+<p>Sample output file, when the Record Type setting is set to ‘Accounts’:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Accounts&gt;</span>
+    <span class="nt">&lt;row</span> <span class="na">no=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"ACCOUNTID"</span><span class="nt">&gt;</span>919325000000064034<span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"SMOWNERID"</span><span class="nt">&gt;</span>919325000000064001<span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Account Owner"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[adam.wardle]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Account Name"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[Test Account]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Account Number"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[0]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Employees"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[0]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Annual Revenue"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[0]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"SIC Code"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[0]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"SMCREATORID"</span><span class="nt">&gt;</span>919325000000064001<span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Created By"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[adam.wardle]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"MODIFIEDBY"</span><span class="nt">&gt;</span>919325000000064001<span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Modified By"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[adam.wardle]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Created Time"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[2013-07-26 02:57:22]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Modified Time"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[2013-07-26 04:22:10]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Billing Street"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[test]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Billing State"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[test]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Last Activity Time"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[2013-07-26 04:22:10]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+    <span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;/Accounts&gt;</span>
+</code></pre>
+</div>
+
+<p>Sample output file, when the Record Type setting is set to ‘SalesOrders’:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+<span class="nt">&lt;SalesOrders&gt;</span>
+    <span class="nt">&lt;row</span> <span class="na">no=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"SALESORDERID"</span><span class="nt">&gt;</span>639175000000054025<span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"SO Number"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[639175000000054027]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Subject"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[test sales order]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Carrier"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[FedEX]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Excise Duty"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[0]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Sales Commission"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[0]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Status"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[Created]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"ACCOUNTID"</span><span class="nt">&gt;</span>639175000000054021<span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Account Name"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[test account]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"SMOWNERID"</span><span class="nt">&gt;</span>639175000000053003<span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Sales Order Owner"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[Adam Wardle]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"SMCREATORID"</span><span class="nt">&gt;</span>639175000000053003<span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Created By"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[Adam Wardle]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"MODIFIEDBY"</span><span class="nt">&gt;</span>639175000000053003<span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Modified By"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[Adam Wardle]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Created Time"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[2012-07-23 13:33:34]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Modified Time"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[2012-07-23 13:33:34]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Sub Total"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[4.5]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Tax"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[0]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Adjustment"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[0]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Grand Total"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[4.5]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Product Details"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;product</span> <span class="na">no=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Product Id"</span><span class="nt">&gt;</span>639175000000054019<span class="nt">&lt;/FL&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Product Name"</span><span class="nt">&gt;</span>
+                    <span class="cp">&lt;![CDATA[HB Pencil]]&gt;</span>
+                <span class="nt">&lt;/FL&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Unit Price"</span><span class="nt">&gt;</span>1.5<span class="nt">&lt;/FL&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Quantity"</span><span class="nt">&gt;</span>3.0<span class="nt">&lt;/FL&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Quantity in Stock"</span><span class="nt">&gt;</span>47.0<span class="nt">&lt;/FL&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Total"</span><span class="nt">&gt;</span>4.5<span class="nt">&lt;/FL&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Discount"</span><span class="nt">&gt;</span>0.0<span class="nt">&lt;/FL&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Total After Discount"</span><span class="nt">&gt;</span>4.5<span class="nt">&lt;/FL&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"List Price"</span><span class="nt">&gt;</span>1.5<span class="nt">&lt;/FL&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Net Total"</span><span class="nt">&gt;</span>4.5<span class="nt">&lt;/FL&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Tax"</span><span class="nt">&gt;</span>0.0<span class="nt">&lt;/FL&gt;</span>
+                <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Product Description"</span><span class="nt">&gt;</span>
+                    <span class="cp">&lt;![CDATA[null]]&gt;</span>
+                <span class="nt">&lt;/FL&gt;</span>
+            <span class="nt">&lt;/product&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+        <span class="nt">&lt;FL</span> <span class="na">val=</span><span class="s">"Discount"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;![CDATA[0]]&gt;</span>
+        <span class="nt">&lt;/FL&gt;</span>
+    <span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;/SalesOrders&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Zoho-CRM-Connector/Downloading-Records-from-Zoho-CRM.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

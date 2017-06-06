@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quickbooks Online Customer XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Quickbooks Online Customer XML</h1>
+                    <p>The Upload Customers task allows you to create and update customers in QuickBooks. Any fields not documented below are not currently supported by our upload.</p>
+
+<p>Sample import file for creating a basic customer:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfCustomer</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;RecordOfCustomer&gt;</span>
+    <span class="nt">&lt;Data</span> <span class="na">domain=</span><span class="s">"QBO"</span> <span class="na">xmlns=</span><span class="s">"http://schema.intuit.com/finance/v3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;DisplayName&gt;</span>Zynk Software<span class="nt">&lt;/DisplayName&gt;</span>
+    <span class="nt">&lt;/Data&gt;</span>
+  <span class="nt">&lt;/RecordOfCustomer&gt;</span>
+<span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+</code></pre>
+</div>
+
+<p>In each of the following sections most of the XML has been omitted to make the samples easier to read, you will need to provide the above as a minimum to create a customer. The whole structure from the root element down is shown in the samples below as a reference of where elements should appear in the object model.</p>
+
+<h2 id="customer-details">Customer Details</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML Field</th>
+      <th>QuickBooks Field </th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length </th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td>-</td>
+      <td>1234</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Used for matching to existing customers.</td>
+    </tr>
+    <tr>
+      <td>ExternalId</td>
+      <td>-</td>
+      <td>6492</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td>Used for matching to existing customers. The value provided will be stored in Zynk’s truth table, and used to lookup the Id of the customer.</td>
+    </tr>
+    <tr>
+      <td>DisplayName</td>
+      <td>Display Name As</td>
+      <td>Zynk Software</td>
+      <td>string</td>
+      <td>21</td>
+      <td>Required</td>
+      <td>Used for matching to existing customers. Must not contain a colon ‘:’ character.</td>
+    </tr>
+    <tr>
+      <td>Title</td>
+      <td>Title</td>
+      <td>Mr</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>GivenName</td>
+      <td>First Name</td>
+      <td>John</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Must not contain a colon ‘:’ character.</td>
+    </tr>
+    <tr>
+      <td>MiddleName</td>
+      <td>Middle Name</td>
+      <td>Neville</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Must not contain a colon ‘:’ character.</td>
+    </tr>
+    <tr>
+      <td>FamilyName</td>
+      <td>Last Name</td>
+      <td>Smith</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Must not contain a colon ‘:’ character.</td>
+    </tr>
+    <tr>
+      <td>Suffix</td>
+      <td>Suffix</td>
+      <td>BSc</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>CompanyName</td>
+      <td>Company</td>
+      <td>Zynk Software</td>
+      <td>string</td>
+      <td>4000</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PrimaryEmailAddr &gt; Address</td>
+      <td>Email</td>
+      <td>support@zynk.com</td>
+      <td>string</td>
+      <td>1000</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PrimaryPhone &gt; FreeFormNumber</td>
+      <td>Phone</td>
+      <td>0191 123 4567</td>
+      <td>string</td>
+      <td>21</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Mobile &gt; FreeFormNumber</td>
+      <td>Mobile</td>
+      <td>07123456789</td>
+      <td>string</td>
+      <td>21</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Fax &gt; FreeFormNumber</td>
+      <td>Fax</td>
+      <td>0191 123 4567</td>
+      <td>string</td>
+      <td>21</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>AlternatePhone &gt; FreeFormNumber</td>
+      <td>Other</td>
+      <td>0191 123 4567</td>
+      <td>string</td>
+      <td>21</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>WebAddr &gt; URI</td>
+      <td>Website</td>
+      <td>www.zynk.com</td>
+      <td>string</td>
+      <td>1000</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ParentRef</td>
+      <td>Parent Customer</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If you don’t know the customer ID, you can specify their display name using the name attribute, and the task will perform a lookup.</td>
+    </tr>
+    <tr>
+      <td>BillWithParent</td>
+      <td>Bill With Parent</td>
+      <td>true</td>
+      <td>boolean</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Defaults to false if not specified. Can only be set if the customer is a sub-customer.</td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Line 1</td>
+      <td>Billing Address</td>
+      <td>Zynk Software</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Line 2</td>
+      <td>Billing Address</td>
+      <td>Nelson House</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Line 3</td>
+      <td>Billing Address</td>
+      <td>Jesmond</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Line 4</td>
+      <td>Billing Address</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Line 5</td>
+      <td>Billing Address</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; City</td>
+      <td>City/Town</td>
+      <td>Newcastle</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Country</td>
+      <td>Country</td>
+      <td>England</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; CountrySubDivisionCode</td>
+      <td>Region</td>
+      <td>Tyne &amp; Wear</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; PostalCode</td>
+      <td>Postcode</td>
+      <td>NE2 3AE</td>
+      <td>string</td>
+      <td>31</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Line 1</td>
+      <td>Shipping Address</td>
+      <td>Zynk Software</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Line 2</td>
+      <td>Shipping Address</td>
+      <td>Nelson House</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Line 3</td>
+      <td>Shipping Address</td>
+      <td>Jesmond</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Line 4</td>
+      <td>Shipping Address</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Line 5</td>
+      <td>Shipping Address</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; City</td>
+      <td>City/Town</td>
+      <td>Newcastle</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Country</td>
+      <td>County</td>
+      <td>England</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; CountrySubDivisionCode</td>
+      <td>Region</td>
+      <td>Tyne &amp; Wear</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; PostalCode</td>
+      <td>Postcode</td>
+      <td>NE2 3AE</td>
+      <td>string</td>
+      <td>31</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Notes</td>
+      <td>Notes</td>
+      <td>Sample note</td>
+      <td>string</td>
+      <td>2000</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PaymentMethodRef</td>
+      <td>Preferred Payment Method</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If you don’t know the payment method ID, you can specify the name using the name attribute, and the task will perform a lookup.</td>
+    </tr>
+    <tr>
+      <td>PreferredDeliveryMethod</td>
+      <td>Preferred Delivery Method</td>
+      <td>Print</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Allowed values are Print, Email and None. Defaults to None if not specified.</td>
+    </tr>
+    <tr>
+      <td>SalesTermRef</td>
+      <td>Terms</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If you don’t know the sales term ID, you can specify the name using the name attribute, and the task will perform a lookup.</td>
+    </tr>
+    <tr>
+      <td>Balance</td>
+      <td>Opening Balance</td>
+      <td>1000</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Can only be set when first creating the customer. Will default to 0 if not specified.</td>
+    </tr>
+    <tr>
+      <td>OpenBalanceDate</td>
+      <td>Opening Balance As Of</td>
+      <td>2016-07-15</td>
+      <td>date</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Can only be set when first creating the customer.</td>
+    </tr>
+    <tr>
+      <td>CurrencyRef</td>
+      <td>This Customer Pays Me With</td>
+      <td>GBP</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Can only be set when first creating the customer. Provide the three letter ISO currency code as the value. Defaults to the home currency of the QuickBooks company if not specified.</td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td>Active</td>
+      <td>true</td>
+      <td>boolean</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Defaults to true if not specified.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfCustomer</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;RecordOfCustomer&gt;</span>
+    <span class="nt">&lt;ExternalId&gt;</span>6492<span class="nt">&lt;/ExternalId&gt;</span>
+    <span class="nt">&lt;Data</span> <span class="na">domain=</span><span class="s">"QBO"</span> <span class="na">sparse=</span><span class="s">"false"</span> <span class="na">xmlns=</span><span class="s">"http://schema.intuit.com/finance/v3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;Id&gt;</span>1234<span class="nt">&lt;/Id&gt;</span>
+      <span class="nt">&lt;DisplayName&gt;</span>Zynk Software<span class="nt">&lt;/DisplayName&gt;</span>
+      <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+      <span class="nt">&lt;GivenName&gt;</span>John<span class="nt">&lt;/GivenName&gt;</span>
+      <span class="nt">&lt;MiddleName&gt;</span>Neville<span class="nt">&lt;/MiddleName&gt;</span>
+      <span class="nt">&lt;FamilyName&gt;</span>Smith<span class="nt">&lt;/FamilyName&gt;</span>
+      <span class="nt">&lt;Suffix&gt;</span>BSc<span class="nt">&lt;/Suffix&gt;</span>
+      <span class="nt">&lt;CompanyName&gt;</span>Zynk Software<span class="nt">&lt;/CompanyName&gt;</span>
+      <span class="nt">&lt;PrimaryEmailAddr&gt;</span>
+        <span class="nt">&lt;Address&gt;</span>support@zynk.com<span class="nt">&lt;/Address&gt;</span>
+      <span class="nt">&lt;/PrimaryEmailAddr&gt;</span>
+      <span class="nt">&lt;PrimaryPhone&gt;</span>
+        <span class="nt">&lt;FreeFormNumber&gt;</span>0191 123 4567<span class="nt">&lt;/FreeFormNumber&gt;</span>
+      <span class="nt">&lt;/PrimaryPhone&gt;</span>
+      <span class="nt">&lt;Mobile&gt;</span>
+        <span class="nt">&lt;FreeFormNumber&gt;</span>07123456789<span class="nt">&lt;/FreeFormNumber&gt;</span>
+      <span class="nt">&lt;/Mobile&gt;</span>
+      <span class="nt">&lt;Fax&gt;</span>
+        <span class="nt">&lt;FreeFormNumber&gt;</span>0191 123 4567<span class="nt">&lt;/FreeFormNumber&gt;</span>
+      <span class="nt">&lt;/Fax&gt;</span>
+      <span class="nt">&lt;AlternatePhone&gt;</span>
+        <span class="nt">&lt;FreeFormNumber&gt;</span>0191 123 4567<span class="nt">&lt;/FreeFormNumber&gt;</span>
+      <span class="nt">&lt;/AlternatePhone&gt;</span>
+      <span class="nt">&lt;WebAddr&gt;</span>
+        <span class="nt">&lt;URI&gt;</span>www.zynk.com<span class="nt">&lt;/URI&gt;</span>
+      <span class="nt">&lt;/WebAddr&gt;</span>
+      <span class="nt">&lt;ParentRef</span> <span class="na">name=</span><span class="s">"Internetware"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/ParentRef&gt;</span>
+      <span class="nt">&lt;BillWithParent&gt;</span>false<span class="nt">&lt;/BillWithParent&gt;</span>
+      <span class="nt">&lt;BillAddr&gt;</span>
+        <span class="nt">&lt;Line1&gt;</span>Zynk Software<span class="nt">&lt;/Line1&gt;</span>
+        <span class="nt">&lt;Line2&gt;</span>Nelson House<span class="nt">&lt;/Line2&gt;</span>
+        <span class="nt">&lt;Line3&gt;</span>Jesmond<span class="nt">&lt;/Line3&gt;</span>
+        <span class="nt">&lt;City&gt;</span>Newcastle<span class="nt">&lt;/City&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>England<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;CountrySubDivisionCode&gt;</span>Tyne <span class="err">&amp;</span> Wear<span class="nt">&lt;/CountrySubDivisionCode&gt;</span>
+        <span class="nt">&lt;PostalCode&gt;</span>NE2 3AE<span class="nt">&lt;/PostalCode&gt;</span>
+      <span class="nt">&lt;/BillAddr&gt;</span>
+      <span class="nt">&lt;ShipAddr&gt;</span>
+        <span class="nt">&lt;Line1&gt;</span>Zynk Software<span class="nt">&lt;/Line1&gt;</span>
+        <span class="nt">&lt;Line2&gt;</span>Nelson House<span class="nt">&lt;/Line2&gt;</span>
+        <span class="nt">&lt;Line3&gt;</span>Jesmond<span class="nt">&lt;/Line3&gt;</span>
+        <span class="nt">&lt;City&gt;</span>Newcastle<span class="nt">&lt;/City&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>England<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;CountrySubDivisionCode&gt;</span>Tyne <span class="err">&amp;</span> Wear<span class="nt">&lt;/CountrySubDivisionCode&gt;</span>
+        <span class="nt">&lt;PostalCode&gt;</span>NE2 3AE<span class="nt">&lt;/PostalCode&gt;</span>
+      <span class="nt">&lt;/ShipAddr&gt;</span>
+      <span class="nt">&lt;Notes&gt;</span>Sample note<span class="nt">&lt;/Notes&gt;</span>
+      <span class="nt">&lt;PaymentMethodRef</span> <span class="na">name=</span><span class="s">"Card"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/PaymentMethodRef&gt;</span>
+      <span class="nt">&lt;PreferredDeliveryMethod&gt;</span>None<span class="nt">&lt;/PreferredDeliveryMethod&gt;</span>
+      <span class="nt">&lt;SalesTermRef</span> <span class="na">name=</span><span class="s">"Due on receipt"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/SalesTermRef&gt;</span>
+      <span class="nt">&lt;Balance&gt;</span>1000<span class="nt">&lt;/Balance&gt;</span>
+      <span class="nt">&lt;OpenBalanceDate&gt;</span>2016-07-15<span class="nt">&lt;/OpenBalanceDate&gt;</span>
+      <span class="nt">&lt;CurrencyRef&gt;</span>GBP<span class="nt">&lt;/CurrencyRef&gt;</span>
+      <span class="nt">&lt;Active&gt;</span>true<span class="nt">&lt;/Active&gt;</span>
+    <span class="nt">&lt;/Data&gt;</span>
+  <span class="nt">&lt;/RecordOfCustomer&gt;</span>
+<span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Quickbooks-Online-Connector/Quickbooks-Online-Customer-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

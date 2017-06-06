@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sage 200 Online Customer XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Sage 200 Online Customer XML</h1>
+                    <p>Customers are one of the most important entities within Sage 200 as they are associated with many important resources within the application and underpin most of the main features (e.g. sales orders, payment receipts, etc).  Further information can be found on the <a href="https://developer.columbus.sage.com/docs#/uk/sage200/accounts/v1/customers">Sage 200 Online Customers API Documentation</a>.</p>
+
+<h2 id="tasks">Tasks</h2>
+<ul>
+  <li><a href="exporting-customers-from-sage-200-online">Exporting Customers From Sage 200 Online</a></li>
+  <li><a href="importing-customers-to-sage-200-online">Importing Customers To Sage 200 Online</a></li>
+</ul>
+
+<h2 id="identifiers">Identifiers</h2>
+<p>The logic surrounding inserting/updating customers works as follows:</p>
+<ol>
+  <li>If an <code class="highlighter-rouge">&lt;id&gt;</code> is provided for the customer, the existing customer with this id will be updated.</li>
+  <li>If an <code class="highlighter-rouge">&lt;external_id&gt;</code> is provided for the customer, and a match is found in Zynk’s truth table, the existing customer will be updated.</li>
+  <li>If a <code class="highlighter-rouge">&lt;reference&gt;</code> is provided for the customer, the task will check if a customer already exists with this reference. If a match is found, the existing customer will be updated, otherwise a new customer will be created and given the reference specified.</li>
+  <li>If none of the above conditions are fulfilled, and the ‘Auto Generate References’ setting is enabled on the task, a new customer will be created and given an automatically generated reference.</li>
+</ol>
+
+<h3 id="id">id</h3>
+<p><em>Dependant</em><br />
+The <code class="highlighter-rouge">&lt;id&gt;</code> field is the unique internal database id of the customer.  This can be obtained from running a download of customers, or from the response of an upload.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>27006</td>
+      <td><code class="highlighter-rouge">&lt;id&gt;27006&lt;/id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="external_id">external_id</h3>
+<p><em>Optional (recommended)</em><br />
+The <code class="highlighter-rouge">&lt;external_id&gt;</code> field is used within Zynk to match records already processed.  If it is provided Zynk will store the external_id along with the reference in its internal database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(255)</td>
+      <td>12345</td>
+      <td><code class="highlighter-rouge">&lt;external_id&gt;12345&lt;/external_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="reference">reference</h3>
+<p><em>Dependant</em><br />
+The <code class="highlighter-rouge">&lt;reference&gt;</code> field is the customer account reference as shown with the Sage 200 Online interface.  This can either be generated automatically if the setting is enabled within Sage, or Zynk can generate one based on the settings setup on the task.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(8)</td>
+      <td>ZYNK001</td>
+      <td><code class="highlighter-rouge">&lt;reference&gt;ZYNK001&lt;/reference&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="fields-for-download-and-upload">Fields for Download and Upload</h2>
+<h3 id="name">name</h3>
+<p><em>Required</em><br />
+Customer name.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>Zynk Software Ltd.</td>
+      <td><code class="highlighter-rouge">&lt;name&gt;Zynk Software Ltd.&lt;/name&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="short_name">short_name</h3>
+<p><em>Optional</em><br />
+Customer short name.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(8)</td>
+      <td>Zynk</td>
+      <td><code class="highlighter-rouge">&lt;short_name&gt;Zynk&lt;/short_name&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="on_hold">on_hold</h3>
+<p><em>Optional</em><br />
+True if customer account is on hold, else False.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>boolean</td>
+      <td>false</td>
+      <td><code class="highlighter-rouge">&lt;on_hold&gt;false&lt;/on_hold&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="available-values">Available Values</h4>
+<ul>
+  <li>true</li>
+  <li>false</li>
+</ul>
+
+<h3 id="account_status_type">account_status_type</h3>
+<p><em>Optional</em><br />
+The status of the customer account.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(20)</td>
+      <td>AccountStatusActive</td>
+      <td><code class="highlighter-rouge">&lt;account_status_type&gt;AccountStatusActive&lt;/account_status_type&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="available-values-1">Available Values</h4>
+<ul>
+  <li>AccountStatusActive</li>
+  <li>AccountStatusHidden</li>
+</ul>
+
+<h3 id="currency_id">currency_id</h3>
+<p><em>Dependant (see <a href="#currency">currency</a>)</em><br />
+Currency record Id, can also be set using currency ISO code, see <a href="#currency">currency</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>3</td>
+      <td><code class="highlighter-rouge">&lt;currency_id&gt;3&lt;/currency_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="exchange_rate_type">exchange_rate_type</h3>
+<p><em>Optional</em><br />
+The type of exchange rate used on the customer account.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(20)</td>
+      <td>ExchangeRateSingle</td>
+      <td><code class="highlighter-rouge">&lt;exchange_rate_type&gt;ExchangeRateSingle&lt;/exchange_rate_type&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="available-values-2">Available Values</h4>
+<ul>
+  <li>ExchangeRateSingle</li>
+  <li>ExchangeRatePeriod</li>
+  <li>ExchangeRateBoth</li>
+</ul>
+
+<h3 id="telephone_country_code-">telephone_country_code †</h3>
+<p><em>Optional</em><br />
+Telephone country code.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(5)</td>
+      <td>+44</td>
+      <td><code class="highlighter-rouge">&lt;telephone_country_code&gt;+44&lt;/telephone_country_code&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="telephone_area_code-">telephone_area_code †</h3>
+<p><em>Optional</em><br />
+Telephone area code.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(20)</td>
+      <td>191</td>
+      <td><code class="highlighter-rouge">&lt;telephone_area_code&gt;191&lt;/telephone_area_code&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="telephone_subscriber_number-">telephone_subscriber_number †</h3>
+<p><em>Optional</em><br />
+Telephone subscriber number.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(200)</td>
+      <td>303 7279</td>
+      <td><code class="highlighter-rouge">&lt;telephone_subscriber_number&gt;303 7279&lt;/telephone_subscriber_number&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="fax_country_code">fax_country_code</h3>
+<p><em>Optional</em><br />
+Fax country code.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(5)</td>
+      <td>+44</td>
+      <td><code class="highlighter-rouge">&lt;fax_country_code&gt;+44&lt;/fax_country_code&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="fax_area_code">fax_area_code</h3>
+<p><em>Optional</em><br />
+Fax area code.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(20)</td>
+      <td>845</td>
+      <td><code class="highlighter-rouge">&lt;fax_area_code&gt;845&lt;/fax_area_code&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="fax_subscriber_number">fax_subscriber_number</h3>
+<p><em>Optional</em><br />
+Fax subscriber number.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(200)</td>
+      <td>123 2920</td>
+      <td><code class="highlighter-rouge">&lt;fax_subscriber_number&gt;123 2920&lt;/fax_subscriber_number&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="website">website</h3>
+<p><em>Optional</em><br />
+Website address.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(200)</td>
+      <td>http://zynk.com</td>
+      <td><code class="highlighter-rouge">&lt;website&gt;http://zynk.com&lt;/website&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="credit_limit">credit_limit</h3>
+<p><em>Optional</em><br />
+Credit limit for the customer.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 2dp)</td>
+      <td>10000</td>
+      <td><code class="highlighter-rouge">&lt;credit_limit&gt;10000&lt;/credit_limit&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="country_code_id">country_code_id</h3>
+<p><em>Dependant (see <a href="#country_code">country_code</a>)</em><br />
+Country code record Id, can also be set using country code, see <a href="#country_code">country_code</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>13</td>
+      <td><code class="highlighter-rouge">&lt;country_code_id&gt;13&lt;/country_code_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="default_tax_code_id">default_tax_code_id</h3>
+<p><em>Dependant (see <a href="#default_tax_code">default_tax_code</a>)</em><br />
+Default tax code record Id, can also be set using tax code, see <a href="#default_tax_code">default_tax_code</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>2</td>
+      <td><code class="highlighter-rouge">&lt;default_tax_code_id&gt;2&lt;/default_tax_code_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="vat_number">vat_number</h3>
+<p><em>Optional</em><br />
+VAT registration number.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(30)</td>
+      <td>796 5763 59</td>
+      <td><code class="highlighter-rouge">&lt;vat_number&gt;796 5763 59&lt;/vat_number&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="duns_code">duns_code</h3>
+<p>DUNS number.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(9)</td>
+      <td>424458615</td>
+      <td><code class="highlighter-rouge">&lt;duns_code&gt;424458615&lt;/duns_code&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="analysis_code_1">analysis_code_1</h3>
+<p><em>Optional</em><br />
+Analysis code 1.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>North</td>
+      <td><code class="highlighter-rouge">&lt;analysis_code_1&gt;North&lt;/analysis_code_1&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="analysis_code_2">analysis_code_2</h3>
+<p><em>Optional</em><br />
+Analysis code 2.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>Software</td>
+      <td><code class="highlighter-rouge">&lt;analysis_code_2&gt;Software&lt;/analysis_code_2&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="analysis_code_3">analysis_code_3</h3>
+<p><em>Optional</em><br />
+Analysis code 3.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>01/01/2005</td>
+      <td><code class="highlighter-rouge">&lt;analysis_code_3&gt;01/01/2005&lt;/analysis_code_3&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="analysis_code_4">analysis_code_4</h3>
+<p><em>Optional</em><br />
+Analysis code 4.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>10</td>
+      <td><code class="highlighter-rouge">&lt;analysis_code_4&gt;10&lt;/analysis_code_4&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="analysis_code_5">analysis_code_5</h3>
+<p><em>Optional</em><br />
+Analysis code 5.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>true</td>
+      <td><code class="highlighter-rouge">&lt;analysis_code_5&gt;true&lt;/analysis_code_5&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="main_address">main_address</h3>
+<p><em>Optional</em><br />
+The customers main address.  The <code class="highlighter-rouge">&lt;main_address&gt;</code> node is an object which contains the address fields, all of following fields must be inside the node, see full example XML below.</p>
+
+<h4 id="address_1">address_1</h4>
+<p><em>Optional</em><br />
+Address line 1.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>i6</td>
+      <td><code class="highlighter-rouge">&lt;address_1&gt;i6&lt;/address_1&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="address_2">address_2</h4>
+<p><em>Optional</em><br />
+Address line 2.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>6 - 8 Charlotte Square</td>
+      <td><code class="highlighter-rouge">&lt;address_2&gt;6 - 8 Charlotte Square&lt;/address_2&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="address_3">address_3</h4>
+<p><em>Optional</em><br />
+Address line 3.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td> </td>
+      <td><code class="highlighter-rouge">&lt;address_3&gt;&lt;/address_3&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="address_4">address_4</h4>
+<p><em>Optional</em><br />
+Address line 4.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td> </td>
+      <td><code class="highlighter-rouge">&lt;address_4&gt;&lt;/address_4&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="city">city</h4>
+<p><em>Optional</em><br />
+City.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td> </td>
+      <td><code class="highlighter-rouge">&lt;city&gt;Newcastle&lt;/city&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="county">county</h4>
+<p><em>Optional</em><br />
+County.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>Tyne and Wear</td>
+      <td><code class="highlighter-rouge">&lt;county&gt;Tyne and Wear&lt;/county&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="postcode">postcode</h4>
+<p><em>Optional</em><br />
+Postcode.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(10)</td>
+      <td>NE1 4XF</td>
+      <td><code class="highlighter-rouge">&lt;postcode&gt;NE1 4XF&lt;/postcode&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="address_country_code_id">address_country_code_id</h4>
+<p><em>Dependant (see <a href="#address_country_code">address_country_code</a>)</em><br />
+Country code Id, can also be set using country code, see <a href="#address_country_code">address_country_code</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>13</td>
+      <td><code class="highlighter-rouge">&lt;address_country_code_id&gt;13&lt;/address_country_code_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="address_country_code">address_country_code</h4>
+<p><em>Dependant (see <a href="#address_country_code_id">address_country_code_id</a>)</em><br />
+The address country code. On a download all the related information of the address country code will be included in the XML, see <a href="sage-200-online-country-code-xml">Sage 200 Online Country Code XML</a>. On an upload you can set the code of the country to use for the address and Zynk will lookup the correct internal id from Sage.</p>
+
+<h5 id="export-example-showing-related-information">Export example showing related information</h5>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;address_country_code&gt;</span>
+    <span class="nt">&lt;id&gt;</span>13<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;date_time_updated&gt;</span>2015-10-30T22:33:16.67<span class="nt">&lt;/date_time_updated&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Great Britain<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;code&gt;</span>GB<span class="nt">&lt;/code&gt;</span>
+    <span class="nt">&lt;eu_member&gt;</span>true<span class="nt">&lt;/eu_member&gt;</span>
+<span class="nt">&lt;/address_country_code&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="import-example-only-setting-the-code">Import example only setting the code</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;address_country_code&gt;</span>
+    <span class="nt">&lt;code&gt;</span>GB<span class="nt">&lt;/code&gt;</span>
+<span class="nt">&lt;/address_country_code&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="contacts">contacts</h3>
+<p><em>Optional</em><br />
+Customer contacts.  Note Sage 200 Standard Online only supports a single collection, so whilst the contact is in a collection in the XML it is invalid for more than one to be provided.  Only the default contact will be updated using this task.  See <a href="sage-200-online-contact-xml">Sage 200 Online Contact XML</a> for full details.</p>
+
+<h2 id="fields-for-download-only">Fields for Download Only</h2>
+<h3 id="balance">balance</h3>
+<p><em>Read Only</em><br />
+Customer account balance.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 2dp)</td>
+      <td>1000</td>
+      <td><code class="highlighter-rouge">&lt;balance&gt;1000&lt;balance/&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="date_time_updated">date_time_updated</h3>
+<p><em>Read Only</em><br />
+The date and time this entity was last updated (UTC).  This field is updated when a customer is uploaded using Zynk as well as when using the Sage 200 Online interface.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(date-time)</td>
+      <td>2017-06-02T08:19:00.147</td>
+      <td><code class="highlighter-rouge">&lt;date_time_updated&gt;2017-06-02T08:19:00.147&lt;/date_time_updated&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="expandable-fields">Expandable Fields</h2>
+<p>Related information linked to customers are also included in the downloaded XML, these can also be used to set certain fields on customer uploads using lookups rather than needing to know the internal id of the related record.</p>
+
+<h3 id="currency">currency</h3>
+<p><em>Dependant (see <a href="#currency_id">currency_id</a>)</em><br />
+The customers currency.  On a download all the related information of the currency will be included in the XML, see <a href="sage-200-online-currency-xml">Sage 200 Online Currency XML</a>.  On an upload you can set the code of the currency to use for the customer and Zynk will lookup the correct internal id from Sage.</p>
+
+<h4 id="export-example-showing-related-information-1">Export example showing related information</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;currency&gt;</span>
+    <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;date_time_updated&gt;</span>2016-07-08T09:28:40.9<span class="nt">&lt;/date_time_updated&gt;</span>
+    <span class="nt">&lt;symbol&gt;</span>£<span class="nt">&lt;/symbol&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Pound Sterling<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;core_currency_rate&gt;</span>1.000000<span class="nt">&lt;/core_currency_rate&gt;</span>
+    <span class="nt">&lt;euro_currency_rate&gt;</span>0.860000<span class="nt">&lt;/euro_currency_rate&gt;</span>
+    <span class="nt">&lt;currency_iso_code_id&gt;</span>49<span class="nt">&lt;/currency_iso_code_id&gt;</span>
+    <span class="nt">&lt;is_base_currency&gt;</span>true<span class="nt">&lt;/is_base_currency&gt;</span>
+    <span class="nt">&lt;is_euro_currency&gt;</span>false<span class="nt">&lt;/is_euro_currency&gt;</span>
+    <span class="nt">&lt;currency_iso_code&gt;</span>
+        <span class="nt">&lt;id&gt;</span>49<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;date_time_updated&gt;</span>2015-10-30T22:33:17.707<span class="nt">&lt;/date_time_updated&gt;</span>
+        <span class="nt">&lt;code&gt;</span>GBP<span class="nt">&lt;/code&gt;</span>
+        <span class="nt">&lt;name&gt;</span>UNITED KINGDOM, Pound Sterling<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;/currency_iso_code&gt;</span>
+<span class="nt">&lt;/currency&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="import-example-only-setting-the-code-1">Import example only setting the code</h4>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;currency&gt;</span>
+    <span class="nt">&lt;currency_iso_code&gt;</span>
+        <span class="nt">&lt;code&gt;</span>GBP<span class="nt">&lt;/code&gt;</span>
+    <span class="nt">&lt;/currency_iso_code&gt;</span>
+<span class="nt">&lt;/currency&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="country_code">country_code</h3>
+<p><em>Dependant (see <a href="#country_code_id">country_code_id</a>)</em><br />
+The customers country code.  On a download all the related information of the country code will be included in the XML, see <a href="sage-200-online-country-code-xml">Sage 200 Online Country Code XML</a>.  On an upload you can set the code of the country to use for the customer and Zynk will lookup the correct internal id from Sage.</p>
+
+<h4 id="export-example-showing-related-information-2">Export example showing related information</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;country_code&gt;</span>
+    <span class="nt">&lt;id&gt;</span>13<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;date_time_updated&gt;</span>2015-10-30T22:33:16.67<span class="nt">&lt;/date_time_updated&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Great Britain<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;code&gt;</span>GB<span class="nt">&lt;/code&gt;</span>
+    <span class="nt">&lt;eu_member&gt;</span>true<span class="nt">&lt;/eu_member&gt;</span>
+<span class="nt">&lt;/country_code&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="import-example-only-setting-the-code-2">Import example only setting the code</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;country_code&gt;</span>
+    <span class="nt">&lt;code&gt;</span>GB<span class="nt">&lt;/code&gt;</span>
+<span class="nt">&lt;/country_code&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="default_tax_code">default_tax_code</h3>
+<p><em>Dependant (see <a href="#default_tax_code_id">default_tax_code_id</a>)</em><br />
+The default tax code to be used in transactions for the customer.  On a download all the related information of the tax code will be included in the XML.  On an upload you can set the code of the tax rate to use for the customer and Zynk will lookup the correct internal id from Sage.</p>
+
+<h4 id="export-example-showing-related-information-3">Export example showing related information</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;default_tax_code&gt;</span>
+    <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;date_time_updated&gt;</span>2015-10-30T22:33:16.473<span class="nt">&lt;/date_time_updated&gt;</span>
+    <span class="nt">&lt;code&gt;</span>1<span class="nt">&lt;/code&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Standard Rate<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;tax_rate&gt;</span>20.00<span class="nt">&lt;/tax_rate&gt;</span>
+<span class="nt">&lt;/default_tax_code&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="import-example-only-setting-the-code-3">Import example only setting the code</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;default_tax_code&gt;</span>
+    <span class="nt">&lt;code&gt;</span>1<span class="nt">&lt;/code&gt;</span>
+<span class="nt">&lt;/default_tax_code&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="example-xml">Example XML</h2>
+<h3 id="minimal-example">Minimal Example</h3>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Customers</span> 
+    <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> 
+    <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Customer&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Zynk Software Ltd.<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/Customers&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="full-example">Full Example</h3>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Customers</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Customer&gt;</span>
+    <span class="nt">&lt;external_id&gt;</span>12345<span class="nt">&lt;/external_id&gt;</span>
+    <span class="nt">&lt;id&gt;</span>27006<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;date_time_updated&gt;</span>2017-06-02T14:59:04.877<span class="nt">&lt;/date_time_updated&gt;</span>
+    <span class="nt">&lt;reference&gt;</span>ZYNK001<span class="nt">&lt;/reference&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Zynk Software Ltd.<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;short_name&gt;</span>Zynk<span class="nt">&lt;/short_name&gt;</span>
+    <span class="nt">&lt;balance&gt;</span>0.00<span class="nt">&lt;/balance&gt;</span>
+    <span class="nt">&lt;on_hold&gt;</span>false<span class="nt">&lt;/on_hold&gt;</span>
+    <span class="nt">&lt;account_status_type&gt;</span>AccountStatusActive<span class="nt">&lt;/account_status_type&gt;</span>
+    <span class="nt">&lt;currency_id&gt;</span>1<span class="nt">&lt;/currency_id&gt;</span>
+    <span class="nt">&lt;exchange_rate_type&gt;</span>ExchangeRateSingle<span class="nt">&lt;/exchange_rate_type&gt;</span>
+    <span class="nt">&lt;telephone_country_code&gt;</span>+44<span class="nt">&lt;/telephone_country_code&gt;</span>
+    <span class="nt">&lt;telephone_area_code&gt;</span>191<span class="nt">&lt;/telephone_area_code&gt;</span>
+    <span class="nt">&lt;telephone_subscriber_number&gt;</span>303 7279<span class="nt">&lt;/telephone_subscriber_number&gt;</span>
+    <span class="nt">&lt;fax_country_code&gt;</span>+44<span class="nt">&lt;/fax_country_code&gt;</span>
+    <span class="nt">&lt;fax_area_code&gt;</span>845<span class="nt">&lt;/fax_area_code&gt;</span>
+    <span class="nt">&lt;fax_subscriber_number&gt;</span>123 2920<span class="nt">&lt;/fax_subscriber_number&gt;</span>
+    <span class="nt">&lt;website&gt;</span>http://zynk.com<span class="nt">&lt;/website&gt;</span>
+    <span class="nt">&lt;credit_limit&gt;</span>10000.00<span class="nt">&lt;/credit_limit&gt;</span>
+    <span class="nt">&lt;country_code_id&gt;</span>13<span class="nt">&lt;/country_code_id&gt;</span>
+    <span class="nt">&lt;default_tax_code_id&gt;</span>2<span class="nt">&lt;/default_tax_code_id&gt;</span>
+    <span class="nt">&lt;vat_number&gt;</span>796 5763 59<span class="nt">&lt;/vat_number&gt;</span>
+    <span class="nt">&lt;analysis_code_1&gt;</span>North<span class="nt">&lt;/analysis_code_1&gt;</span>
+    <span class="nt">&lt;analysis_code_2&gt;</span>Software<span class="nt">&lt;/analysis_code_2&gt;</span>
+    <span class="nt">&lt;analysis_code_3&gt;</span>01/01/2005<span class="nt">&lt;/analysis_code_3&gt;</span>
+    <span class="nt">&lt;analysis_code_4&gt;</span>10<span class="nt">&lt;/analysis_code_4&gt;</span>
+    <span class="nt">&lt;analysis_code_5&gt;</span>true<span class="nt">&lt;/analysis_code_5&gt;</span>
+    <span class="nt">&lt;country_code&gt;</span>
+      <span class="nt">&lt;id&gt;</span>13<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;date_time_updated&gt;</span>2015-10-30T22:33:16.67<span class="nt">&lt;/date_time_updated&gt;</span>
+      <span class="nt">&lt;name&gt;</span>Great Britain<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;code&gt;</span>GB<span class="nt">&lt;/code&gt;</span>
+      <span class="nt">&lt;eu_member&gt;</span>true<span class="nt">&lt;/eu_member&gt;</span>
+    <span class="nt">&lt;/country_code&gt;</span>
+    <span class="nt">&lt;currency&gt;</span>
+      <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;date_time_updated&gt;</span>2016-07-08T09:28:40.9<span class="nt">&lt;/date_time_updated&gt;</span>
+      <span class="nt">&lt;symbol&gt;</span>£<span class="nt">&lt;/symbol&gt;</span>
+      <span class="nt">&lt;name&gt;</span>Pound Sterling<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;core_currency_rate&gt;</span>1.000000<span class="nt">&lt;/core_currency_rate&gt;</span>
+      <span class="nt">&lt;euro_currency_rate&gt;</span>0.860000<span class="nt">&lt;/euro_currency_rate&gt;</span>
+      <span class="nt">&lt;currency_iso_code_id&gt;</span>49<span class="nt">&lt;/currency_iso_code_id&gt;</span>
+      <span class="nt">&lt;is_base_currency&gt;</span>true<span class="nt">&lt;/is_base_currency&gt;</span>
+      <span class="nt">&lt;is_euro_currency&gt;</span>false<span class="nt">&lt;/is_euro_currency&gt;</span>
+      <span class="nt">&lt;currency_iso_code&gt;</span>
+        <span class="nt">&lt;id&gt;</span>49<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;date_time_updated&gt;</span>2015-10-30T22:33:17.707<span class="nt">&lt;/date_time_updated&gt;</span>
+        <span class="nt">&lt;code&gt;</span>GBP<span class="nt">&lt;/code&gt;</span>
+        <span class="nt">&lt;name&gt;</span>UNITED KINGDOM, Pound Sterling<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;/currency_iso_code&gt;</span>
+    <span class="nt">&lt;/currency&gt;</span>
+    <span class="nt">&lt;default_tax_code&gt;</span>
+      <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;date_time_updated&gt;</span>2015-10-30T22:33:16.473<span class="nt">&lt;/date_time_updated&gt;</span>
+      <span class="nt">&lt;code&gt;</span>1<span class="nt">&lt;/code&gt;</span>
+      <span class="nt">&lt;name&gt;</span>Standard Rate<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;tax_rate&gt;</span>20.00<span class="nt">&lt;/tax_rate&gt;</span>
+    <span class="nt">&lt;/default_tax_code&gt;</span>
+    <span class="nt">&lt;main_address&gt;</span>
+      <span class="nt">&lt;id&gt;</span>27007<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;date_time_updated&gt;</span>2017-06-02T11:36:13.097<span class="nt">&lt;/date_time_updated&gt;</span>
+      <span class="nt">&lt;address_1&gt;</span>i6<span class="nt">&lt;/address_1&gt;</span>
+      <span class="nt">&lt;address_2&gt;</span>6 - 8 Charlotte Square<span class="nt">&lt;/address_2&gt;</span>
+      <span class="nt">&lt;address_3</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;address_4</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;city&gt;</span>Newcastle<span class="nt">&lt;/city&gt;</span>
+      <span class="nt">&lt;county&gt;</span>Tyne and Wear<span class="nt">&lt;/county&gt;</span>
+      <span class="nt">&lt;postcode&gt;</span>NE1 4XF<span class="nt">&lt;/postcode&gt;</span>
+      <span class="nt">&lt;address_country_code_id&gt;</span>13<span class="nt">&lt;/address_country_code_id&gt;</span>
+      <span class="nt">&lt;address_country_code&gt;</span>
+        <span class="nt">&lt;id&gt;</span>13<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;date_time_updated&gt;</span>2015-10-30T22:33:16.67<span class="nt">&lt;/date_time_updated&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Great Britain<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;code&gt;</span>GB<span class="nt">&lt;/code&gt;</span>
+        <span class="nt">&lt;eu_member&gt;</span>true<span class="nt">&lt;/eu_member&gt;</span>
+      <span class="nt">&lt;/address_country_code&gt;</span>
+      <span class="nt">&lt;customer_id&gt;</span>27006<span class="nt">&lt;/customer_id&gt;</span>
+    <span class="nt">&lt;/main_address&gt;</span>
+    <span class="nt">&lt;contacts&gt;</span>
+      <span class="nt">&lt;contact&gt;</span>
+        <span class="nt">&lt;id&gt;</span>27008<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;salutation_id&gt;</span>1<span class="nt">&lt;/salutation_id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Mr. Andrew Bryan Snape<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;first_name&gt;</span>Andrew<span class="nt">&lt;/first_name&gt;</span>
+        <span class="nt">&lt;middle_name&gt;</span>Bryan<span class="nt">&lt;/middle_name&gt;</span>
+        <span class="nt">&lt;last_name&gt;</span>Snape<span class="nt">&lt;/last_name&gt;</span>
+        <span class="nt">&lt;is_default&gt;</span>true<span class="nt">&lt;/is_default&gt;</span>
+        <span class="nt">&lt;default_telephone&gt;</span>+44 191 303 7279<span class="nt">&lt;/default_telephone&gt;</span>
+        <span class="nt">&lt;default_email&gt;</span>support@zynk.com<span class="nt">&lt;/default_email&gt;</span>
+        <span class="nt">&lt;salutation&gt;</span>
+          <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+          <span class="nt">&lt;date_time_updated&gt;</span>2015-10-30T22:33:25.81<span class="nt">&lt;/date_time_updated&gt;</span>
+          <span class="nt">&lt;code&gt;</span>Mr.<span class="nt">&lt;/code&gt;</span>
+          <span class="nt">&lt;description&gt;</span>Mr.<span class="nt">&lt;/description&gt;</span>
+          <span class="nt">&lt;is_default&gt;</span>false<span class="nt">&lt;/is_default&gt;</span>
+        <span class="nt">&lt;/salutation&gt;</span>
+        <span class="nt">&lt;date_time_updated&gt;</span>2017-06-02T14:59:04.893<span class="nt">&lt;/date_time_updated&gt;</span>
+        <span class="nt">&lt;customer_id&gt;</span>27006<span class="nt">&lt;/customer_id&gt;</span>
+      <span class="nt">&lt;/contact&gt;</span>
+    <span class="nt">&lt;/contacts&gt;</span>
+    <span class="nt">&lt;duns_code&gt;</span>424458615<span class="nt">&lt;/duns_code&gt;</span>
+  <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/Customers&gt;</span>
+</code></pre>
+</div>
+
+<hr />
+<p>† Available with Sage 200 Extra Online only.</p>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-200-Online-Connector/Sage-200-Online-Customer-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sage 50 UK Stock Transaction XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Sage 50 UK Stock Transaction XML</h1>
+                    <p>Import Stock Transactions allows you to create new stock transactions in Sage 50, allowing you to adjust stock levels.  Note that each type will create either a positive or negative adjust, using stock transactions you cannot set an absolute quantity in stock.  Any fields not documented below are not supported with our imports.</p>
+
+<p>Sample XML snippets are provided throughout, these are separated out for clarity and so that the hierarchy of the fields relative to the Company XML object model can be easily identified. A full sample of each of the supported stock transaction types is provided at the bottom of this article.</p>
+
+<h2 id="preventing-duplication-of-previously-imported-stock-transactions">Preventing Duplication of Previously Imported Stock Transactions</h2>
+
+<p>You can optionally provide an Id for each stock transaction, populating it with the unique identifier of the stock transaction from the external system (where the data originated). Any successfully imported stock transaction Id’s will be stored in an internal database associated with the Workflow. The Import Stock Transactions task can then be set to prevent duplicates based on the stored Id’s, preventing accidental reprocessing of already imported stock transactions.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field</th>
+      <th>Sage Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td>-</td>
+      <td>1</td>
+      <td>string</td>
+      <td>4000</td>
+      <td>Optional</td>
+      <td>The Zynk Id of the Sage 200 stock transaction. <em>See paragraph above for details of how this is used.</em> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+     <span class="nt">&lt;StockTransactions&gt;</span>
+          <span class="nt">&lt;StockTransaction&gt;</span>
+               <span class="nt">&lt;Id&gt;</span>1<span class="nt">&lt;/Id&gt;</span>
+          <span class="nt">&lt;/StockTransaction&gt;</span>
+     <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="stock-transaction-types">Stock Transaction Types</h2>
+<p>You need to provide the StockTransactionType for each stock transaction.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field</th>
+      <th>Sage Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>StockTransactionType</td>
+      <td>Type</td>
+      <td>AdjustmentIn</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>The type of stock transaction to create in Sage 50. <em>See the table below for a list of the available Zynk stock transaction types and the Sage 50 stock transactions that they relate to.</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="adjustmentin---ai">AdjustmentIn - AI</h3>
+<p>Equivalent of using the ‘Adjustment in’ button via the Sage 50 UI.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>AdjustmentIn<span class="nt">&lt;/StockTransactionType&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="adjustmentout---ao">AdjustmentOut - AO</h3>
+<p>Equivalent of using the ‘Adjustment out’ button via the Sage 50 UI.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>AdjustmentOut<span class="nt">&lt;/StockTransactionType&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="damagesin---di">DamagesIn - DI </h3>
+<p>Equivalent of using the ‘Returns’ button via the Sage 50 UI.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>DamagesIn<span class="nt">&lt;/StockTransactionType&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="damagesout--do">DamagesOut - DO</h3>
+<p>Equivalent of using the ‘Returns’ button via the Sage 50 UI. </p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>DamagesOut<span class="nt">&lt;/StockTransactionType&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="goodsin---gi">GoodsIn - GI</h3>
+<p>No equivalent via the Sage 50 UI.  Represents receiving goods on a purchase order.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>GoodsIn<span class="nt">&lt;/StockTransactionType&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="goodsout---go">GoodsOut - GO</h3>
+<p>No equivalent via the Sage 50 UI.  Represents despatching goods on a sales order / invoice. </p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>GoodsOut<span class="nt">&lt;/StockTransactionType&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="movementin-mi">MovementIn - MI</h3>
+<p>Equivalent of using the ‘Stock transfer’ button via the Sage 50 UI.  Should be used with the matching MovemenOut. </p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>MovementIn<span class="nt">&lt;/StockTransactionType&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="movementout-mo">MovementOut - MO</h3>
+<p>Equivalent of using the ‘Stock transfer’ button via the Sage 50 UI.  Should be used with the matching MovementIn.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>MovementOut<span class="nt">&lt;/StockTransactionType&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="transfer---mimo">Transfer - MI/MO</h3>
+<p>Equivalent of using the ‘Stock transfer’ button via the Sage 50 UI.  Will create the required MI/MO records.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>Transfer<span class="nt">&lt;/StockTransactionType&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="writeoff--wo">WriteOff - WO</h3>
+<p>Equivalent of using the ‘Returns’ button via the Sage 50 UI. </p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>WriteOff<span class="nt">&lt;/StockTransactionType&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="stock-transaction-fields">Stock Transaction Fields</h2>
+<p>The fields in the table below are shared across all stock transaction types.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field</th>
+      <th>Sage Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>StockCode</td>
+      <td>Product Code</td>
+      <td>PROD001</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Required</td>
+      <td>The Code of the Stock Item in Sage that you would like to create the stock transaction against.</td>
+    </tr>
+    <tr>
+      <td>StockTransactionDate</td>
+      <td>Date </td>
+      <td>2016-05-04T00:00:00 </td>
+      <td>datetime </td>
+      <td>- </td>
+      <td>Optional </td>
+      <td>The date of the stock transaction. Defaults to the date the transaction is imported if not provided. <em>The date needs to be in XSD format (yyyy-MM-ddTHH:mm:ss), only the date is displayed via the Sage UI.</em> </td>
+    </tr>
+    <tr>
+      <td>Reference</td>
+      <td>Ref.</td>
+      <td>NE6 STOCK</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td>An optional reference that can be used to help make the stock transaction in Sage easier to identify.</td>
+    </tr>
+    <tr>
+      <td>Details</td>
+      <td>Details</td>
+      <td>+2 stock</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Required</td>
+      <td>An additional description that can be provided</td>
+    </tr>
+    <tr>
+      <td>Qty</td>
+      <td>Qty In / Qty Out</td>
+      <td>2</td>
+      <td>double</td>
+      <td>15, 5</td>
+      <td>Required</td>
+      <td>The amount of stock to adjust in Sage.</td>
+    </tr>
+    <tr>
+      <td>CostPrice </td>
+      <td>Cost Price</td>
+      <td>10</td>
+      <td>double</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only used for AI, DI, GI, MI and Transfer</td>
+    </tr>
+    <tr>
+      <td>SalesPrice</td>
+      <td>Sales Price</td>
+      <td>15</td>
+      <td>double</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only used for GO.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD001<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>+2 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>2<span class="nt">&lt;/Qty&gt;</span>
+
+            <span class="c">&lt;!-- AI, DI, GI and MI Only&gt;
+            &lt;!-- &lt;CostPrice&gt;10&lt;/CostPrice&gt; --&gt;</span>
+
+            <span class="c">&lt;!-- GO Only --&gt;</span>
+            <span class="c">&lt;!-- &lt;SalesPrice&gt;15&lt;/SalesPrice&gt; --&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="transfers---bom-items">Transfers - BOM Items</h2>
+<p>Note we only currently support building top level BOM items.  If a component of the item you are trying to transfer into stock is also a BOM item and there is not enough quantity to fulfil the transfer will fail.</p>
+
+<h2 id="success-file">Success File</h2>
+<p>Any successfully imported stock transactions will be written out with the Sage assigned transaction number.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field</th>
+      <th>Sage Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>StockTransactionNumber</td>
+      <td>No</td>
+      <td>1</td>
+      <td>double</td>
+      <td>-</td>
+      <td>-</td>
+      <td>The Sage assigned transaction number</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;StockTransactionNumber&gt;</span>2<span class="nt">&lt;/StockTransactionNumber&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="failfile">Fail File</h2>
+<p>Any transactions that fail to import will be written out with a collection of validation errors.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field</th>
+      <th>Sage Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Date</td>
+      <td>-</td>
+      <td>2016-11-03T08:48:37</td>
+      <td>datetime</td>
+      <td>-</td>
+      <td>-</td>
+      <td>The date and time the validation error occurred</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>-</td>
+      <td>Validation</td>
+      <td>string</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>-</td>
+      <td>PROD002 does not have enough free stock to complete this transfer</td>
+      <td>string</td>
+      <td>-</td>
+      <td>-</td>
+      <td>The validation message</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>&gt;
+            <span class="nt">&lt;Errors&gt;</span>
+                <span class="nt">&lt;Error&gt;</span>
+                    <span class="nt">&lt;Date&gt;</span>2016-11-03T08:48:37.0994209+00:00<span class="nt">&lt;/Date&gt;</span>
+                    <span class="nt">&lt;Name&gt;</span>Validation<span class="nt">&lt;/Name&gt;</span>
+                    <span class="nt">&lt;Description&gt;</span>PROD002 does not have enough free stock to complete this transfer<span class="nt">&lt;/Description&gt;</span>
+                <span class="nt">&lt;/Error&gt;</span>
+            <span class="nt">&lt;/Errors&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="full-samples">Full Samples</h2>
+
+<h3 id="adjustment-in--out">Adjustment In / Out</h3>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>1<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>AdjustmentIn<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD001<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>+2 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>2<span class="nt">&lt;/Qty&gt;</span>
+            <span class="nt">&lt;CostPrice&gt;</span>10<span class="nt">&lt;/CostPrice&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>2<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>AdjustmentOut<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD001<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>-2 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>2<span class="nt">&lt;/Qty&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="damages-in--out">Damages In / Out</h3>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>3<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>DamagesIn<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD001<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>+2 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>2<span class="nt">&lt;/Qty&gt;</span>
+            <span class="nt">&lt;CostPrice&gt;</span>10<span class="nt">&lt;/CostPrice&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>4<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>DamagesOut<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD001<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>-2 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>2<span class="nt">&lt;/Qty&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="goods-in--out">Goods In / Out</h3>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>5<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>GoodsIn<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD001<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>+2 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>2<span class="nt">&lt;/Qty&gt;</span>
+            <span class="nt">&lt;CostPrice&gt;</span>10<span class="nt">&lt;/CostPrice&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>6<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>GoodsOut<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD001<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>-2 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>2<span class="nt">&lt;/Qty&gt;</span>            
+            <span class="nt">&lt;SalesPrice&gt;</span>15<span class="nt">&lt;/SalesPrice&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="movement-in--out">Movement In / Out</h3>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>7<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>MovementOut<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD002<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>-2 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>2<span class="nt">&lt;/Qty&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>8<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>MovementIn<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD003<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>+1 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>1<span class="nt">&lt;/Qty&gt;</span>
+            <span class="nt">&lt;CostPrice&gt;</span>10<span class="nt">&lt;/CostPrice&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="transfer">Transfer</h3>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>9<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>Transfer<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD003<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>+1 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>1<span class="nt">&lt;/Qty&gt;</span>
+            <span class="nt">&lt;CostPrice&gt;</span>10<span class="nt">&lt;/CostPrice&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="write-off">Write Off</h3>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>10<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>WriteOff<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD003<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>-1 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>1<span class="nt">&lt;/Qty&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="success-file-1">Success File</h3>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>1<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;UniqueId&gt;</span>23<span class="nt">&lt;/UniqueId&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>AdjustmentIn<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD001<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>+2 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>2<span class="nt">&lt;/Qty&gt;</span>
+            <span class="nt">&lt;CostPrice&gt;</span>10<span class="nt">&lt;/CostPrice&gt;</span>
+            <span class="nt">&lt;SalesPrice</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;StockTransactionNumber&gt;</span>23<span class="nt">&lt;/StockTransactionNumber&gt;</span>
+            <span class="nt">&lt;CustomFields</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>2<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;UniqueId&gt;</span>24<span class="nt">&lt;/UniqueId&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>AdjustmentOut<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD001<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>-2 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>2<span class="nt">&lt;/Qty&gt;</span>
+            <span class="nt">&lt;CostPrice&gt;</span>10<span class="nt">&lt;/CostPrice&gt;</span>
+            <span class="nt">&lt;SalesPrice</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;StockTransactionNumber&gt;</span>24<span class="nt">&lt;/StockTransactionNumber&gt;</span>
+            <span class="nt">&lt;CustomFields</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="fail-file">Fail File</h3>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+    <span class="nt">&lt;StockTransactions&gt;</span>
+        <span class="nt">&lt;StockTransaction&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>9<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;Errors&gt;</span>
+                <span class="nt">&lt;Error&gt;</span>
+                    <span class="nt">&lt;Date&gt;</span>2016-11-03T08:48:37.0994209+00:00<span class="nt">&lt;/Date&gt;</span>
+                    <span class="nt">&lt;Name&gt;</span>Validation<span class="nt">&lt;/Name&gt;</span>
+                    <span class="nt">&lt;Description&gt;</span>PROD002 does not have enough free stock to complete this transfer<span class="nt">&lt;/Description&gt;</span>
+                <span class="nt">&lt;/Error&gt;</span>
+            <span class="nt">&lt;/Errors&gt;</span>
+            <span class="nt">&lt;StockTransactionType&gt;</span>Transfer<span class="nt">&lt;/StockTransactionType&gt;</span>
+            <span class="nt">&lt;StockCode&gt;</span>PROD003<span class="nt">&lt;/StockCode&gt;</span>
+            <span class="nt">&lt;StockTransactionDate&gt;</span>2016-05-04T00:00:00<span class="nt">&lt;/StockTransactionDate&gt;</span>
+            <span class="nt">&lt;Reference&gt;</span>NE6 STOCK<span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Details&gt;</span>+1 stock<span class="nt">&lt;/Details&gt;</span>
+            <span class="nt">&lt;Qty&gt;</span>1<span class="nt">&lt;/Qty&gt;</span>
+            <span class="nt">&lt;CostPrice&gt;</span>10<span class="nt">&lt;/CostPrice&gt;</span>
+            <span class="nt">&lt;SalesPrice</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;StockTransactionNumber</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;CustomFields</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/StockTransaction&gt;</span>
+    <span class="nt">&lt;/StockTransactions&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-50-UK-Connector/Sage-50-UK-Stock-Transaction-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

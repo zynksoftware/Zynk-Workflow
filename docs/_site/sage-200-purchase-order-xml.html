@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sage 200 Purchase Order XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Sage 200 Purchase Order XML</h1>
+                    <p>Import Purchase Orders allows you to create new purchase orders with Sage 200, and optionally progress the order through the ordering process.  The Id field should be populated by the unique id of the order from the external system, Zynk uses this field to track orders already imported to prevent duplicates being created in Sage.  </p>
+
+<p>Any Sage fields not documented below are not currently supported with our imports.</p>
+
+<p>Sample import file for creating a basic purchase order:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;Id&gt;</span>123<span class="nt">&lt;/Id&gt;</span>
+      <span class="nt">&lt;AccountReference&gt;</span>INTE001<span class="nt">&lt;/AccountReference&gt;</span>
+      <span class="nt">&lt;PurchaseOrderDate&gt;</span>2011-01-01T11:11:11<span class="nt">&lt;/PurchaseOrderDate&gt;</span>
+      <span class="nt">&lt;PurchaseOrderAddress&gt;</span>
+        <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Test<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Person<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>Internetware<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>i6 Building<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>6-8 Charlotte Square<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Newcastle Upon Tyne<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE1 4XF<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne and Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderAddress&gt;</span>
+      <span class="nt">&lt;PurchaseOrderDeliveryAddress&gt;</span>
+        <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Test<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Person<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>Internetware<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>i6 Building<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>6-8 Charlotte Square<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Newcastle Upon Tyne<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE1 4XF<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne and Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderDeliveryAddress&gt;</span>
+      <span class="nt">&lt;PurchaseOrderItems&gt;</span>
+        <span class="nt">&lt;Item&gt;</span>
+          <span class="nt">&lt;Sku&gt;</span>TEST01<span class="nt">&lt;/Sku&gt;</span>
+          <span class="nt">&lt;QtyOrdered&gt;</span>1<span class="nt">&lt;/QtyOrdered&gt;</span>
+          <span class="nt">&lt;UnitPrice&gt;</span>200<span class="nt">&lt;/UnitPrice&gt;</span>
+        <span class="nt">&lt;/Item&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderItems&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<p>In each of the following sections most of the XML has been omitted to make the samples easier to read, you will need to provide the above as a minimum to create a purchase order.  The whole structure of the Company schema is used below as a reference of where fields should be in the object model.</p>
+
+<h2 id="order-details---account-selection">Order Details - Account selection</h2>
+<p>To assign the order to a particular account you will need to specify either a SupplierId or an AccountReference in the XML. The SupplierId should correspond to a supplier that has already been imported into Sage via Zynk (see Import Suppliers).  The AccountReference should correspond to the Reference of a Sales Ledger account that exists within Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML Field</th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th> Field Type</th>
+      <th>Field Length </th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SupplierId</td>
+      <td>-</td>
+      <td>12345</td>
+      <td> string</td>
+      <td> 255</td>
+      <td>Required, unless AccountReference is provided</td>
+      <td>Only used if an AccountReference is not provided.</td>
+    </tr>
+    <tr>
+      <td>AccountReference</td>
+      <td>A/C Ref</td>
+      <td>INTE001</td>
+      <td> string</td>
+      <td> 8</td>
+      <td>Required, unless SupplierId is provided</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;AccountReference&gt;</span>INTE001<span class="nt">&lt;/AccountReference&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="order-details---order-detail">Order Details - Order detail</h2>
+<p>All of the fields at the Order detail level are optional.</p>
+
+<p>Depending on the settings of the import task you can set the Order no of the created order.  If you have enabled Manual Order Numbering at the task level you can specify the PurchaseOrderNumber to use when creating the order, note this must be unique, and if already exists in Sage the order will not be imported.  You can specify the Document date of the order using PurchaseOrderDate.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field</th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td>-</td>
+      <td>123</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td>Used for duplicate prevention, if the setting is enabled on the task. It is included in purchase order exports.</td>
+    </tr>
+    <tr>
+      <td>PurchaseOrderNumber</td>
+      <td>Order no</td>
+      <td>12345</td>
+      <td>int</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td>Only used when the ‘Manual Order Number’ setting is enabled on the task, otherwise next number will be used.</td>
+    </tr>
+    <tr>
+      <td>PurchaseOrderDate</td>
+      <td>Document date</td>
+      <td>2014-01-01T00:00:00</td>
+      <td>date</td>
+      <td> -</td>
+      <td>Optional</td>
+      <td>Will default to the current date if not provided.</td>
+    </tr>
+    <tr>
+      <td>PurchaseOrderRequestedDate </td>
+      <td>Date requested </td>
+      <td>2014-01-01T00:00:00</td>
+      <td>date</td>
+      <td>11</td>
+      <td>Optional</td>
+      <td>Will default to the current date if not provided.</td>
+    </tr>
+    <tr>
+      <td>SupplierOrderNumber</td>
+      <td>Supplier Reference no</td>
+      <td>12345</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Currency</td>
+      <td>-</td>
+      <td>GBP</td>
+      <td>string</td>
+      <td>3</td>
+      <td>Optional</td>
+      <td>The three letter ISO currency code. It must match the currency of the supplier account. Will default to the currency on the supplier account if not provided.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;Id&gt;</span>123<span class="nt">&lt;/Id&gt;</span>
+      <span class="nt">&lt;PurchaseOrderNumber&gt;</span>12345<span class="nt">&lt;/SalesOrderNumber&gt;</span>
+      <span class="nt">&lt;PurchaseOrderDate&gt;</span>2011-01-01T11:11:11<span class="nt">&lt;/SalesOrderDate&gt;</span>
+      <span class="nt">&lt;PurchaseOrderRequestedDate&gt;</span>2011-01-01T11:11:11<span class="nt">&lt;/PurchaseOrderRequestedDate&gt;</span>
+      <span class="nt">&lt;SupplierOrderNumber&gt;</span>12345<span class="nt">&lt;/SupplierOrderNumber&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="order-details---items">Order Details - Items</h2>
+<p>We currently support all item types within Sage 200.  All item types support the import of analysis codes, see below.</p>
+
+<h3 id="standard-items">Standard Items</h3>
+<p>Setting the Type to either Stock, NonStock or Miscellaneous will import a standard item.  Depending on the settings on the import task you lookup a product based on either the Sku or Barcode fields.  You can import nominal analysis and project analysis with change lines, see below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field</th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sku</td>
+      <td>Code</td>
+      <td>PROD01</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Required, unless using barcode</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Barcode</td>
+      <td> -</td>
+      <td>123456789</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Required, unless using sku</td>
+      <td>Only used for lookups, if enabled at the task level.</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>Warehouse</td>
+      <td>Warehouse 1</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td>If not provided, will be set to a warehouse associated with the product based on the task settings.</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>Description</td>
+      <td>Product 01</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Required</td>
+      <td>Will default to the name of the product if not provided.</td>
+    </tr>
+    <tr>
+      <td>TaxCode</td>
+      <td>Tax rate </td>
+      <td>1</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If not provided, will be set to the tax code as determined by the Sage settings.</td>
+    </tr>
+    <tr>
+      <td>UnitPrice</td>
+      <td>Unit price</td>
+      <td>100</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>QtyOrdered</td>
+      <td>Quantity</td>
+      <td>1</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>UnitOfSale</td>
+      <td>Buying unit</td>
+      <td>Each</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+      <td>Will default to the base unit if not provided.</td>
+    </tr>
+    <tr>
+      <td>UnitDiscountAmount</td>
+      <td>Unit discount</td>
+      <td>10</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Will default to 0 if this or UnitDiscountPercentage is not provided.</td>
+    </tr>
+    <tr>
+      <td>UnitDiscountPercentage</td>
+      <td>Unit discount %</td>
+      <td>10</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only used if UnitDiscountAmount is not set. Defaults to 0 if this or UnitDiscountAmount is not set.</td>
+    </tr>
+    <tr>
+      <td> RequestedDeliveryDate</td>
+      <td>Delivery dates Requested</td>
+      <td>2011-01-01T11:11:11</td>
+      <td>date</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Will default to the RequestedDeliveryDate at the PurchaseOrder level if not provided.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;PurchaseOrderItems&gt;</span>
+        <span class="nt">&lt;Item&gt;</span>
+          <span class="nt">&lt;Type&gt;</span>Stock<span class="nt">&lt;/Type&gt;</span>
+          <span class="nt">&lt;Sku&gt;</span>PROD01<span class="nt">&lt;/Sku&gt;</span>
+          <span class="nt">&lt;Description&gt;</span>Product 01<span class="nt">&lt;/Description&gt;</span>
+          <span class="nt">&lt;Barcode&gt;</span>123456789<span class="nt">&lt;/Barcode&gt;</span>
+          <span class="nt">&lt;UnitPrice&gt;</span>100<span class="nt">&lt;/UnitPrice&gt;</span>
+          <span class="nt">&lt;QtyOrdered&gt;</span>1<span class="nt">&lt;/QtyOrdered&gt;</span>
+          <span class="nt">&lt;TotalNet&gt;</span>100<span class="nt">&lt;/TotalNet&gt;</span>
+          <span class="nt">&lt;TotalTax&gt;</span>20<span class="nt">&lt;/TotalTax&gt;</span>
+          <span class="nt">&lt;TaxCode&gt;</span>1<span class="nt">&lt;/TaxCode&gt;</span>
+          <span class="nt">&lt;TaxRate&gt;</span>20<span class="nt">&lt;/TaxRate&gt;</span>
+          <span class="nt">&lt;UnitDiscountAmount&gt;</span>10<span class="nt">&lt;/UnitDiscountAmount&gt;</span>
+          <span class="nt">&lt;UnitDiscountPercentage&gt;</span>10<span class="nt">&lt;/UnitDiscountPercentage&gt;</span>
+          <span class="nt">&lt;RequestedDeliveryDate&gt;</span>2011-01-01T11:11:11<span class="nt">&lt;/RequestedDeliveryDate&gt;</span>
+          <span class="nt">&lt;Location&gt;</span>Warehouse 1<span class="nt">&lt;/Location&gt;</span>
+        <span class="nt">&lt;/Item&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderItems&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="service-items">Service Items</h3>
+<p>You can import nominal analysis with change lines, see below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field </th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sku</td>
+      <td>Code</td>
+      <td>SERV01</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>UnitPrice</td>
+      <td>Unit price</td>
+      <td>100</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>QtyOrdered</td>
+      <td>Quantity</td>
+      <td>1</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TaxCode</td>
+      <td>Tax rate</td>
+      <td>1</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If not provided, will be set to the tax code as determined by the Sage settings.</td>
+    </tr>
+    <tr>
+      <td>UnitDiscountAmount</td>
+      <td>Unit discount</td>
+      <td>10</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Will default to 0 if this or UnitDiscountPercentage is not provided.</td>
+    </tr>
+    <tr>
+      <td>UnitDiscountPercentage*</td>
+      <td>Unit discount %</td>
+      <td>10</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only used if UnitDiscountAmount is not set. Defaults to 0 if this or UnitDiscountAmount is not set.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;PurchaseOrderItems&gt;</span>
+        <span class="nt">&lt;Item&gt;</span>
+          <span class="nt">&lt;Type&gt;</span>Service<span class="nt">&lt;/Type&gt;</span>
+          <span class="nt">&lt;Sku&gt;</span>SERV01<span class="nt">&lt;/Sku&gt;</span>
+          <span class="nt">&lt;UnitPrice&gt;</span>100<span class="nt">&lt;/UnitPrice&gt;</span>
+          <span class="nt">&lt;QtyOrdered&gt;</span>1<span class="nt">&lt;/QtyOrdered&gt;</span>
+          <span class="nt">&lt;TaxCode&gt;</span>1<span class="nt">&lt;/TaxCode&gt;</span>
+          <span class="nt">&lt;TaxRate&gt;</span>20<span class="nt">&lt;/TaxRate&gt;</span>
+          <span class="nt">&lt;UnitDiscountAmount&gt;</span>10<span class="nt">&lt;/UnitDiscountAmount&gt;</span>
+          <span class="nt">&lt;UnitDiscountPercentage&gt;</span>10<span class="nt">&lt;/UnitDiscountPercentage&gt;</span>
+        <span class="nt">&lt;/Item&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderItems&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="free-text-items">Free Text Items</h3>
+<p>You can import nominal analysis and project analysis with change lines, see below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field</th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Text</td>
+      <td>Item line description</td>
+      <td>Product 01</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Required, unless Description is set</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>Item line description</td>
+      <td>Product 01</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Required, unless Text is set</td>
+      <td>Will only be used if Text is not set</td>
+    </tr>
+    <tr>
+      <td>UnitPrice</td>
+      <td>Unit price</td>
+      <td>100</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>QtyOrdered</td>
+      <td>Quantity</td>
+      <td>1</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TaxCode</td>
+      <td>Tax rate</td>
+      <td>1</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If not provided, will be set to the tax code as determined by the Sage settings.</td>
+    </tr>
+    <tr>
+      <td>UnitDiscountAmount</td>
+      <td>Unit discount</td>
+      <td>10</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Will default to 0 if this or UnitDiscountPercentage is not provided.</td>
+    </tr>
+    <tr>
+      <td>UnitDiscountPercentage</td>
+      <td>Unit discount % </td>
+      <td>10</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only used if UnitDiscountAmount is not set. Defaults to 0 if this or UnitDiscountAmount is not set.</td>
+    </tr>
+    <tr>
+      <td> RequestedDeliveryDate</td>
+      <td>Delivery dates Requested</td>
+      <td>2011-01-01T11:11:11</td>
+      <td>date</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Will default to the RequestedDeliveryDate at the PurchaseOrder level if not provided.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;PurchaseOrderItems&gt;</span>
+        <span class="nt">&lt;Item&gt;</span>
+          <span class="nt">&lt;Type&gt;</span>FreeText<span class="nt">&lt;/Type&gt;</span>
+          <span class="nt">&lt;Text&gt;</span>Product 01<span class="nt">&lt;/Text&gt;</span>
+          <span class="nt">&lt;Description&gt;</span>Product 01<span class="nt">&lt;/Description&gt;</span>
+          <span class="nt">&lt;UnitPrice&gt;</span>100<span class="nt">&lt;/UnitPrice&gt;</span>
+          <span class="nt">&lt;QtyOrdered&gt;</span>1<span class="nt">&lt;/QtyOrdered&gt;</span>
+          <span class="nt">&lt;TaxCode&gt;</span>1<span class="nt">&lt;/TaxCode&gt;</span>
+          <span class="nt">&lt;UnitDiscountAmount&gt;</span>10<span class="nt">&lt;/UnitDiscountAmount&gt;</span>
+          <span class="nt">&lt;UnitDiscountPercentage&gt;</span>10<span class="nt">&lt;/UnitDiscountPercentage&gt;</span>
+          <span class="nt">&lt;RequestedDeliveryDate&gt;</span>2011-01-01T11:11:11<span class="nt">&lt;/RequestedDeliveryDate&gt;</span>
+        <span class="nt">&lt;/Item&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderItems&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="additional-charge-lines">Additional Charge Lines</h3>
+<p>To import a charge line it must already be setup within Sage.  You can import nominal analysis and project analysis with change lines, see below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field </th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sku</td>
+      <td>Charge Code</td>
+      <td>DELIVERY</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Charge Name</td>
+      <td>Delivery Charge</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TaxCode</td>
+      <td>Tax rate</td>
+      <td>1</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If not provided, will be set to the tax code as determined by the Sage settings.</td>
+    </tr>
+    <tr>
+      <td>UnitPrice</td>
+      <td>Net Value</td>
+      <td>100</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;PurchaseOrderItems&gt;</span>
+        <span class="nt">&lt;Item&gt;</span>
+          <span class="nt">&lt;Type&gt;</span>ChargeLine<span class="nt">&lt;/Type&gt;</span>
+          <span class="nt">&lt;Sku&gt;</span>DELIVERY<span class="nt">&lt;/Sku&gt;</span>
+          <span class="nt">&lt;Name&gt;</span>Delivery Charge<span class="nt">&lt;/Name&gt;</span>
+          <span class="nt">&lt;TaxCode&gt;</span>1<span class="nt">&lt;/TaxCode&gt;</span>
+          <span class="nt">&lt;UnitPrice&gt;</span>100<span class="nt">&lt;/UnitPrice&gt;</span>
+          <span class="nt">&lt;QtyOrdered&gt;</span>1<span class="nt">&lt;/QtyOrdered&gt;</span>
+        <span class="nt">&lt;/Item&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderItems&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="comment-lines">Comment Lines</h3>
+<p>Setting the Type to CommentLine will import a comment line.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field </th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Text</td>
+      <td>Item line description</td>
+      <td>Order comments</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShowOnDocs</td>
+      <td>Show on customer documents</td>
+      <td>true</td>
+      <td>boolean</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only supported in Zynk v2.6 and above</td>
+    </tr>
+    <tr>
+      <td>ShowOnPickingList</td>
+      <td>Show on picking lists</td>
+      <td>true</td>
+      <td>boolean</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only supported in Zynk v2.6 and above</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;PurchaseOrderItems&gt;</span>
+        <span class="nt">&lt;Item&gt;</span>
+          <span class="nt">&lt;Type&gt;</span>CommentLine<span class="nt">&lt;/Type&gt;</span>
+          <span class="nt">&lt;Text&gt;</span>Order comments<span class="nt">&lt;/Text&gt;</span>
+          <span class="nt">&lt;ShowOnDocs&gt;</span>true<span class="nt">&lt;/ShowOnDocs&gt;</span>
+          <span class="nt">&lt;ShowOnPickingList&gt;</span>true<span class="nt">&lt;/ShowOnPickingList&gt;</span>
+        <span class="nt">&lt;/Item&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderItems&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="analysis-codes">Analysis Codes</h3>
+<p>Analysis codes are imported from a collection, so you can import as many as are setup within Sage 200.  We lookup analysis codes by matching the Name from our XML to the Field Label in Sage.  The values that can be imported depend on how the analysis code is configured, if you need to import any value ensure Enter Free Text is enabled from Accounting System Manager -&gt; Settings -&gt; Maintain Analysis Codes.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field</th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Analysis Code</td>
+      <td>Customer Type</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Required</td>
+      <td>The analysis code must already exist, otherwise will not be added.</td>
+    </tr>
+    <tr>
+      <td>Value </td>
+      <td>Value </td>
+      <td>A</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>The value must already exist, unless Enter Free Text is enabled.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;PurchaseOrderItems&gt;</span>
+        <span class="nt">&lt;Item&gt;</span>
+          <span class="nt">&lt;AnalysisCodes&gt;</span>
+            <span class="nt">&lt;AnalysisCode&gt;</span>
+              <span class="nt">&lt;Name&gt;</span>Customer Type<span class="nt">&lt;/Name&gt;</span>
+              <span class="nt">&lt;Value&gt;</span>A<span class="nt">&lt;/Value&gt;</span>
+            <span class="nt">&lt;/AnalysisCode&gt;</span>
+            <span class="nt">&lt;AnalysisCode&gt;</span>
+              <span class="nt">&lt;Name&gt;</span>Order Source<span class="nt">&lt;/Name&gt;</span>
+              <span class="nt">&lt;Value&gt;</span>Web<span class="nt">&lt;/Value&gt;</span>
+            <span class="nt">&lt;/AnalysisCode&gt;</span>
+          <span class="nt">&lt;/AnalysisCodes&gt;</span>
+        <span class="nt">&lt;/Item&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderItems&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="nominal-analysis">Nominal Analysis</h3>
+<p>The nominal specification supplied in the XML must exist within Sage 200.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field </th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NominalCode</td>
+      <td>A/C Ref</td>
+      <td>4000</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>CostCentre</td>
+      <td>CC</td>
+      <td>01</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Department</td>
+      <td>Dept</td>
+      <td>01</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;PurchaseOrderItems&gt;</span>
+        <span class="nt">&lt;Item&gt;</span>
+          <span class="nt">&lt;NominalCode&gt;</span>4000<span class="nt">&lt;/NominalCode&gt;</span>
+          <span class="nt">&lt;CostCentre&gt;</span>01<span class="nt">&lt;/CostCentre&gt;</span>
+          <span class="nt">&lt;Department&gt;</span>01<span class="nt">&lt;/Department&gt;</span>
+        <span class="nt">&lt;/Item&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderItems&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="project-analysis">Project Analysis</h3>
+<p>The project code and item supplied in the XML must exist within Sage 200.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field </th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ProjectRef</td>
+      <td>Project Code</td>
+      <td>0000000001</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Required</td>
+    </tr>
+    <tr>
+      <td>ProjectItem</td>
+      <td>Project Item</td>
+      <td>MATERIAL01</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Required</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;PurchaseOrderItems&gt;</span>
+        <span class="nt">&lt;Item&gt;</span>
+          <span class="nt">&lt;ProjectRef&gt;</span>0000000001<span class="nt">&lt;/ProjectRef&gt;</span>
+          <span class="nt">&lt;ProjectItem&gt;</span>MATERIAL01<span class="nt">&lt;/ProjectItem&gt;</span>
+        <span class="nt">&lt;/Item&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderItems&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="order-details---exchange-rate">Order Details - Exchange rate</h2>
+<p>The Currency field cannot be set directly on an order as this is set through the associated Purchase Ledger account.  Note that the exchange rate can only be set to 1 if the order is in the base currency.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field</th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ForeignRate</td>
+      <td>Rate</td>
+      <td>1</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;ForeignRate&gt;</span>1<span class="nt">&lt;/ForeignRate&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="delivery--invoicing---delivery-address">Delivery &amp; Invoicing - Delivery address</h2>
+<p>If a delivery address is provided we will use the data in the XML, otherwise we will fall back to use the invoice address of the customer from Sage.  Note the Address1 field is required, if this is blank we will also fall back to use the invoice address of the customer from Sage.  Note if Use segmented addresses is not enabled in Accounting System Manager -&gt; System Settings certain fields will not be displayed in addresses.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML FIeld</th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Company</td>
+      <td>Postal name</td>
+      <td>Internetware</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>If not provided, will be built up from the Title, Forename and Surname.</td>
+    </tr>
+    <tr>
+      <td>Address1</td>
+      <td>Address 1</td>
+      <td>i6 Building</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Address2</td>
+      <td>Address 2</td>
+      <td>6-8 Charlotte Square</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Address3</td>
+      <td>Address 3</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Address4</td>
+      <td>Address 4</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Town</td>
+      <td>City</td>
+      <td>Newcastle Upon Tyne</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>Available in Sage 200 V6 and greater. Can only be set if ‘Use Segmented Addresses’ is enabled in Accounting System Manager -&gt; System Settings.</td>
+    </tr>
+    <tr>
+      <td>County</td>
+      <td>County</td>
+      <td>Tyne and Wear</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>Available in Sage 200 V6 and greater. Can only be set if ‘Use Segmented Addresses’ is enabled in Accounting System Manager -&gt; System Settings.</td>
+    </tr>
+    <tr>
+      <td>Postcode</td>
+      <td>Postcode</td>
+      <td>NE1 4XF</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>Country</td>
+      <td>GB</td>
+      <td>string</td>
+      <td>2</td>
+      <td>Optional</td>
+      <td>Should be the ISO2 country code. If a country name is provided, Zynk will try to map it to the appropriate county code.</td>
+    </tr>
+    <tr>
+      <td>ContactName</td>
+      <td>Contact</td>
+      <td>Test Person</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Telephone</td>
+      <td>Telephone</td>
+      <td>0845 123 2920</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Fax</td>
+      <td>Fax</td>
+      <td>0845 123 2921</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>E-mail</td>
+      <td>support@internetware.co.uk</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;PurchaseOrderDeliveryAddress&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>Internetware<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Test<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Person<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>i6 Building<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>6-8 Charlotte Square<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Newcastle Upon Tyne<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne and Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE1 4XF<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;ContactName&gt;</span>Test Person<span class="nt">&lt;/ContactName&gt;</span>
+        <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+        <span class="nt">&lt;Fax&gt;</span>0845 123 2921<span class="nt">&lt;/Fax&gt;</span>
+        <span class="nt">&lt;Email&gt;</span>support@internetware.co.uk<span class="nt">&lt;/Email&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderDeliveryAddress&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="delivery--invoicing---tax-details">Delivery &amp; Invoicing - Tax details</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field</th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TaxNumber</td>
+      <td>Tax number</td>
+      <td>12345</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>GlobalTaxCode</td>
+      <td>Tax code </td>
+      <td>1</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;TaxNumber&gt;</span>12345<span class="nt">&lt;/TaxNumber&gt;</span>
+      <span class="nt">&lt;GlobalTaxCode&gt;</span>1<span class="nt">&lt;/GlobalTaxCode&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="delivery--invoicing---invoice-address">Delivery &amp; Invoicing - Invoice address</h2>
+<p>The invoice address is read from the associated supplier account.</p>
+
+<h2 id="delivery--invoicing---early-settlement-discount">Delivery &amp; Invoicing - Early settlement discount</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field </th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SettlementDiscount</td>
+      <td>Discount %</td>
+      <td>10</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>SettlementDays</td>
+      <td>if paid within </td>
+      <td>10</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;SettlementDiscount&gt;</span>10<span class="nt">&lt;/SettlementDiscount&gt;</span>
+      <span class="nt">&lt;SettlementDays&gt;</span>10<span class="nt">&lt;/SettlementDays&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="delivery--invoicing---order-discount--surcharge">Delivery &amp; Invoicing - Order discount / surcharge</h2>
+<p>We currently only support adding order discounts.  You can provide either an amount or a percentage, and the percentage discount will be calculate based on the given values.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>XML Field </th>
+      <th>Sage Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NetValueDiscount</td>
+      <td>Discount %</td>
+      <td>10</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Defaults to 0 if neither the NetValueDiscount or NetValueDiscountPercent is provided.</td>
+    </tr>
+    <tr>
+      <td>NetValueDiscountPercent</td>
+      <td>Discount %</td>
+      <td>10</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If both nodes are provided the NetValueDiscount will be used.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;NetValueDiscount&gt;</span>10<span class="nt">&lt;/NetValueDiscount&gt;</span>
+      <span class="nt">&lt;NetValueDiscountPercent&gt;</span>10<span class="nt">&lt;/NetValueDiscountPercent&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="delivery--invoicing---order-taken-by">Delivery &amp; Invoicing - Order taken by</h2>
+<p>If this field is not provided it will be set to the user setup within Zynk.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML Field</th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TakenBy</td>
+      <td>Name</td>
+      <td>ZYNK</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;TakenBy&gt;</span>ZYNK<span class="nt">&lt;/TakenBy&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="delivery--invoicing---analysis-codes">Delivery &amp; Invoicing - Analysis codes</h2>
+<p>Analysis codes are imported from a collection, so you can import as many as are setup within Sage 200.  We lookup analysis codes by matching the Name from our XML to the Field Label in Sage.  Zynk will not automatically create analysis codes that do not exist in Sage, and will log a warning if an analysis code provided in the XML does not exist.  The values that can be imported depend on how the analysis code is configured, if you need to import any value ensure Enter Free Text is enabled from Accounting System Manager -&gt; Settings -&gt; Maintain Analysis Codes.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML Field</th>
+      <th>Sage Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Analysis Code</td>
+      <td>Customer Type</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td>The analysis code must already exist, otherwise will not be added.</td>
+    </tr>
+    <tr>
+      <td>Value</td>
+      <td>Value</td>
+      <td>A</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td>The value must already exist, unless Enter Free Text is enabled.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;AnalysisCodes&gt;</span>
+        <span class="nt">&lt;AnalysisCode&gt;</span>
+          <span class="nt">&lt;Name&gt;</span>Customer Type<span class="nt">&lt;/Name&gt;</span>
+          <span class="nt">&lt;Value&gt;</span>A<span class="nt">&lt;/Value&gt;</span>
+        <span class="nt">&lt;/AnalysisCode&gt;</span>
+        <span class="nt">&lt;AnalysisCode&gt;</span>
+          <span class="nt">&lt;Name&gt;</span>Order Source<span class="nt">&lt;/Name&gt;</span>
+          <span class="nt">&lt;Value&gt;</span>Web<span class="nt">&lt;/Value&gt;</span>
+        <span class="nt">&lt;/AnalysisCode&gt;</span>
+      <span class="nt">&lt;/AnalysisCodes&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="purchase-invoice-transaction">Purchase Invoice Transaction</h2>
+<p>You can optionally generate a Purchase Invoice (PI) transaction on the Supplier account when importing purchase orders. To do this, make sure the Auto Receive Orders and Auto Invoice Orders settings on the Import Purchase Orders task are set to true.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML Field</th>
+      <th>Sage Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>InvoiceNumber</td>
+      <td>Reference</td>
+      <td>123</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Required</td>
+    </tr>
+    <tr>
+      <td>InvoiceDate</td>
+      <td>Trans. Date</td>
+      <td>2014-05-09T00:00:00</td>
+      <td>dateTime</td>
+      <td>-</td>
+      <td>Required</td>
+    </tr>
+    <tr>
+      <td>InvoiceSecondReference</td>
+      <td>2nd Reference</td>
+      <td>456</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PurchaseOrders&gt;</span>
+    <span class="nt">&lt;PurchaseOrder&gt;</span>
+      <span class="nt">&lt;InvoiceNumber&gt;</span>123<span class="nt">&lt;/InvoiceNumber&gt;</span>
+      <span class="nt">&lt;InvoiceDate&gt;</span>2014-05-09T00:00:00<span class="nt">&lt;/InvoiceDate&gt;</span>
+      <span class="nt">&lt;InvoiceSecondReference&gt;</span>456<span class="nt">&lt;/InvoiceSecondReference&gt;</span>
+    <span class="nt">&lt;/PurchaseOrder&gt;</span>
+  <span class="nt">&lt;/PurchaseOrders&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-200-Connector/Sage-200-Purchase-Order-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

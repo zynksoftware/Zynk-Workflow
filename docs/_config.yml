@@ -1,0 +1,29 @@
+title: Zynk Workflow Documentation
+description: Documentation for Zynk Workflow
+url: http://workflow.zynk.com
+repository: workflow/docs
+google_analytics_key:
+
+collections:
+  documentation:
+    title: Documentation
+    output: true
+    permalink: /:slug.html
+  releases:
+    title: Release Notes
+    output: true
+
+gems:
+  - github-pages
+  - jekyll-redirect-from
+
+exclude:
+  - readme.md
+  - LICENCE
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default

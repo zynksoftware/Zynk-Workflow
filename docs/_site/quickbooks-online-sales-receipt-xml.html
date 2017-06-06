@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quickbooks Online Sales Receipt XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Quickbooks Online Sales Receipt XML</h1>
+                    <p>The Upload Sales Receipts task allows you to create and update sales receipts in QuickBooks. Any fields not documented below are not currently supported by our upload.</p>
+
+<p>Sample import file for creating a basic sales receipt:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfSalesReceipt</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;RecordOfSalesReceipt&gt;</span>
+    <span class="nt">&lt;ExternalId&gt;</span>7440<span class="nt">&lt;/ExternalId&gt;</span>
+    <span class="nt">&lt;Data</span> <span class="na">domain=</span><span class="s">"QBO"</span> <span class="na">xmlns=</span><span class="s">"http://schema.intuit.com/finance/v3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;AutoDocNumber&gt;</span>true<span class="nt">&lt;/AutoDocNumber&gt;</span>
+      <span class="nt">&lt;Line&gt;</span>
+        <span class="nt">&lt;Amount&gt;</span>50<span class="nt">&lt;/Amount&gt;</span>
+        <span class="nt">&lt;DetailType&gt;</span>SalesItemLineDetail<span class="nt">&lt;/DetailType&gt;</span>
+        <span class="nt">&lt;SalesItemLineDetail&gt;</span>
+          <span class="nt">&lt;ItemRef</span> <span class="na">name=</span><span class="s">"Catering"</span><span class="nt">&gt;&lt;/ItemRef&gt;</span>
+          <span class="nt">&lt;UnitPrice&gt;</span>50<span class="nt">&lt;/UnitPrice&gt;</span>
+          <span class="nt">&lt;Qty&gt;</span>1<span class="nt">&lt;/Qty&gt;</span>
+          <span class="nt">&lt;TaxCodeRef</span> <span class="na">name=</span><span class="s">"20.0% S"</span><span class="nt">&gt;&lt;/TaxCodeRef&gt;</span>
+        <span class="nt">&lt;/SalesItemLineDetail&gt;</span>
+      <span class="nt">&lt;/Line&gt;</span>
+      <span class="nt">&lt;CustomerRef</span> <span class="na">name=</span><span class="s">"Zynk Software"</span><span class="nt">&gt;&lt;/CustomerRef&gt;</span>
+    <span class="nt">&lt;/Data&gt;</span>
+  <span class="nt">&lt;/RecordOfSalesReceipt&gt;</span>
+<span class="nt">&lt;/ArrayOfSalesReceipt&gt;</span>
+</code></pre>
+</div>
+
+<p>In each of the following sections most of the XML has been omitted to make the samples easier to read, you will need to provide the above as a minimum to create a sales receipt. The whole structure from the root element down is shown in the samples below as a reference of where elements should appear in the object model.</p>
+
+<h2 id="sales-receipt-details">Sales Receipt Details</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML Field</th>
+      <th>QuickBooks Field </th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length </th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td>-</td>
+      <td>1234</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Used for matching to existing sales receipts.</td>
+    </tr>
+    <tr>
+      <td>ExternalId</td>
+      <td>-</td>
+      <td>7440</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td>Used for matching to existing sales receipts, and duplicate prevention. The value provided will be stored in Zynk’s truth table, and used to lookup the Id of the sales receipt.</td>
+    </tr>
+    <tr>
+      <td>DocNumber</td>
+      <td>Sales Receipt No.</td>
+      <td>1001</td>
+      <td>string</td>
+      <td>21</td>
+      <td>Dependant</td>
+      <td>Used for matching to existing sales receipts. Can be auto generated when creating new sales receipts, by setting AutoDocNumber to true (requires custom transaction numbers to be disabled in QuickBooks).</td>
+    </tr>
+    <tr>
+      <td>AutoDocNumber</td>
+      <td>-</td>
+      <td>false</td>
+      <td>boolean</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Set to true to generate a DocNumber automatically if not specified in the XML. AutoDocNumber will default to false if not specified.</td>
+    </tr>
+    <tr>
+      <td>TxnDate</td>
+      <td>Sales Receipt Date</td>
+      <td>2016-07-15</td>
+      <td>date</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Will default to the current date if not provided.</td>
+    </tr>
+    <tr>
+      <td>CustomerRef</td>
+      <td>Customer</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>If you don’t know the customer ID, you can specify their name using the name attribute, and the task will perform a lookup.</td>
+    </tr>
+    <tr>
+      <td>DepartmentRef</td>
+      <td>Department</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Can only be set if department tracking is enabled in QuickBooks. If you don’t know the department ID, you can specify the name using the name attribute, and the task will perform a lookup.</td>
+    </tr>
+    <tr>
+      <td>ExchangeRate</td>
+      <td>Exchange Rate</td>
+      <td>1.345</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Defaults to 1 if not specified. Can only be set if multi currency is enabled in QuickBooks.</td>
+    </tr>
+    <tr>
+      <td>PrivateNote</td>
+      <td>Statement Memo</td>
+      <td>Example memo</td>
+      <td>string</td>
+      <td>4000</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>CustomerMemo</td>
+      <td>Message displayed on sales receipt</td>
+      <td>Example memo</td>
+      <td>string</td>
+      <td>1000</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr</td>
+      <td>Billing Address</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Will default to the customer’s default bill-to address if not specified.</td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Line 1</td>
+      <td>Billing Address</td>
+      <td>Zynk Software</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Line 2</td>
+      <td>Billing Address</td>
+      <td>Nelson House</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Line 3</td>
+      <td>Billing Address</td>
+      <td>Jesmond</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Line 4</td>
+      <td>Billing Address</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Line 5</td>
+      <td>Billing Address</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; City</td>
+      <td>Billing Address</td>
+      <td>Newcastle</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; Country</td>
+      <td>Billing Address</td>
+      <td>England</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; CountrySubDivisionCode</td>
+      <td>Billing Address</td>
+      <td>Tyne &amp; Wear</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>BillAddr &gt; PostalCode</td>
+      <td>Billing Address</td>
+      <td>NE2 3AE</td>
+      <td>string</td>
+      <td>31</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr</td>
+      <td>Shipping Address</td>
+      <td> -</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Will default to the customer’s default ship-to address if not specified.</td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Line 1</td>
+      <td>Shipping Address</td>
+      <td>Zynk Software</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Line 2</td>
+      <td>Shipping Address</td>
+      <td>Nelson House</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Line 3</td>
+      <td>Shipping Address</td>
+      <td>Jesmond</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Line 4</td>
+      <td>Shipping Address</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Line 5</td>
+      <td>Shipping Address</td>
+      <td>string</td>
+      <td>500</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; City</td>
+      <td>Shipping Address</td>
+      <td>Newcastle</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; Country</td>
+      <td>Shipping Address</td>
+      <td>England</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; CountrySubDivisionCode</td>
+      <td>Shipping Address</td>
+      <td>Tyne &amp; Wear</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ShipAddr &gt; PostalCode</td>
+      <td>Shipping Address</td>
+      <td>NE2 3AE</td>
+      <td>string</td>
+      <td>31</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>SalesTermRef</td>
+      <td>Terms</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If you don’t know the sales term ID, you can specify the name using the name attribute, and the task will perform a lookup.</td>
+    </tr>
+    <tr>
+      <td>DueDate</td>
+      <td>Due Date</td>
+      <td>2016-07-15</td>
+      <td>date</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Will be set based on the SalesTermRef of not specified.</td>
+    </tr>
+    <tr>
+      <td>GlobalTaxCalculation</td>
+      <td>Amounts are</td>
+      <td>TaxExcluded</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Allowed values are TaxExcluded, TaxInclusive and NotApplicable.</td>
+    </tr>
+    <tr>
+      <td>ShipMethodRef</td>
+      <td>Ship Via</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If you don’t know the shipping method ID, you can specify the name using the name attribute, and the task will perform a lookup.</td>
+    </tr>
+    <tr>
+      <td>ShipDate</td>
+      <td>Ship Date</td>
+      <td>2016-07-15</td>
+      <td>date</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TrackingNum</td>
+      <td>Tracking No.</td>
+      <td>DH0012-4251</td>
+      <td>string</td>
+      <td>31</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ApplyTaxAfterDiscount</td>
+      <td>-</td>
+      <td>false</td>
+      <td>boolean</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only applicable to US version of QuickBooks. Defaults to false.</td>
+    </tr>
+    <tr>
+      <td>PrintStatus</td>
+      <td>-</td>
+      <td>NeedToPrint</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Allowed values are NotSet, NeedToPrint and PrintComplete. Defaults to NotSet if not provided.</td>
+    </tr>
+    <tr>
+      <td>EmailStatus</td>
+      <td>-</td>
+      <td>NeedToSend</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Allowed values are NotSet, NeedToSend and EmailSent. Defaults to NotSet if not provided.</td>
+    </tr>
+    <tr>
+      <td>BillEmail &gt; Address</td>
+      <td>Email</td>
+      <td>support@zynk.com</td>
+      <td>string</td>
+      <td>100</td>
+      <td>Dependant</td>
+      <td>Must be provided if EmailStatus is set to NeedToSend.</td>
+    </tr>
+    <tr>
+      <td>PaymentMethodRef</td>
+      <td>Payment Method</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If you don’t know the payment method ID, you can specify the name using the name attribute, and the task will perform a lookup.</td>
+    </tr>
+    <tr>
+      <td>PaymentRefNum</td>
+      <td>Reference No.</td>
+      <td>CF13041</td>
+      <td>string</td>
+      <td>21</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>DepositToAccountRef</td>
+      <td>Deposit To</td>
+      <td>10.99</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If you don’t know the account ID, you can specify the name using the name attribute, and the task will perform a lookup. The chosen account must be of type ‘Other Current Asset’ or ‘Bank’. Will default to the Undeposited Funds account if not specified.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfSalesReceipt</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;RecordOfSalesReceipt&gt;</span>
+    <span class="nt">&lt;ExternalId&gt;</span>7440<span class="nt">&lt;/ExternalId&gt;</span>
+    <span class="nt">&lt;Data</span> <span class="na">domain=</span><span class="s">"QBO"</span> <span class="na">xmlns=</span><span class="s">"http://schema.intuit.com/finance/v3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;Id&gt;</span>1234<span class="nt">&lt;/Id&gt;</span>
+      <span class="nt">&lt;DocNumber&gt;</span>1001<span class="nt">&lt;/DocNumber&gt;</span>
+      <span class="nt">&lt;AutoDocNumber&gt;</span>false<span class="nt">&lt;/AutoDocNumber&gt;</span>
+      <span class="nt">&lt;TxnDate&gt;</span>2016-07-15<span class="nt">&lt;/TxnDate&gt;</span>
+      <span class="nt">&lt;CustomerRef</span> <span class="na">name=</span><span class="s">"Zynk Software"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/CustomerRef&gt;</span>
+      <span class="nt">&lt;DepartmentRef</span> <span class="na">name=</span><span class="s">"Sales"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/DepartmentRef&gt;</span>
+      <span class="nt">&lt;ExchangeRate&gt;</span>1.345<span class="nt">&lt;/ExchangeRate&gt;</span>
+      <span class="nt">&lt;PrivateNote&gt;</span>Example memo<span class="nt">&lt;/PrivateNote&gt;</span>
+      <span class="nt">&lt;CustomerMemo&gt;</span>Example memo<span class="nt">&lt;/CustomerMemo&gt;</span>
+      <span class="nt">&lt;BillAddr&gt;</span>
+        <span class="nt">&lt;Line1&gt;</span>Zynk Software<span class="nt">&lt;/Line1&gt;</span>
+        <span class="nt">&lt;Line2&gt;</span>Nelson House<span class="nt">&lt;/Line2&gt;</span>
+        <span class="nt">&lt;Line3&gt;</span>Jesmond<span class="nt">&lt;/Line3&gt;</span>
+        <span class="nt">&lt;Line4&gt;&lt;/Line4&gt;</span>
+        <span class="nt">&lt;Line5&gt;&lt;/Line5&gt;</span>
+        <span class="nt">&lt;City&gt;</span>Newcastle<span class="nt">&lt;/City&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>England<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;CountrySubDivisionCode&gt;</span>Tyne <span class="err">&amp;</span> Wear<span class="nt">&lt;/CountrySubDivisionCode&gt;</span>
+        <span class="nt">&lt;PostalCode&gt;</span>NE2 3AE<span class="nt">&lt;/PostalCode&gt;</span>
+      <span class="nt">&lt;/BillAddr&gt;</span>
+      <span class="nt">&lt;ShipAddr&gt;</span>
+        <span class="nt">&lt;Line1&gt;</span>Zynk Software<span class="nt">&lt;/Line1&gt;</span>
+        <span class="nt">&lt;Line2&gt;</span>Nelson House<span class="nt">&lt;/Line2&gt;</span>
+        <span class="nt">&lt;Line3&gt;</span>Jesmond<span class="nt">&lt;/Line3&gt;</span>
+        <span class="nt">&lt;Line4&gt;&lt;/Line4&gt;</span>
+        <span class="nt">&lt;Line5&gt;&lt;/Line5&gt;</span>
+        <span class="nt">&lt;City&gt;</span>Newcastle<span class="nt">&lt;/City&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>England<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;CountrySubDivisionCode&gt;</span>Tyne <span class="err">&amp;</span> Wear<span class="nt">&lt;/CountrySubDivisionCode&gt;</span>
+        <span class="nt">&lt;PostalCode&gt;</span>NE2 3AE<span class="nt">&lt;/PostalCode&gt;</span>
+      <span class="nt">&lt;/ShipAddr&gt;</span>
+      <span class="nt">&lt;SalesTermRef</span> <span class="na">name=</span><span class="s">"Due on receipt"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/SalesTermRef&gt;</span>
+      <span class="nt">&lt;DueDate&gt;</span>2016-07-15<span class="nt">&lt;/DueDate&gt;</span>
+      <span class="nt">&lt;GlobalTaxCalculation&gt;</span>TaxExcluded<span class="nt">&lt;/GlobalTaxCalculation&gt;</span>
+      <span class="nt">&lt;ShipMethodRef</span> <span class="na">name=</span><span class="s">"DHL"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/ShipMethodRef&gt;</span>
+      <span class="nt">&lt;ShipDate&gt;</span>2016-07-15<span class="nt">&lt;/ShipDate&gt;</span>
+      <span class="nt">&lt;TrackingNum&gt;</span>DH0012-4251<span class="nt">&lt;/TrackingNum&gt;</span>
+      <span class="nt">&lt;ApplyTaxAfterDiscount&gt;</span>false<span class="nt">&lt;/ApplyTaxAfterDiscount&gt;</span>
+      <span class="nt">&lt;PrintStatus&gt;</span>NeedToPrint<span class="nt">&lt;/PrintStatus&gt;</span>
+      <span class="nt">&lt;EmailStatus&gt;</span>NeedToSend<span class="nt">&lt;/EmailStatus&gt;</span>
+      <span class="nt">&lt;BillEmail&gt;</span>
+        <span class="nt">&lt;Address&gt;</span>support@zynk.com<span class="nt">&lt;/Address&gt;</span>
+      <span class="nt">&lt;/BillEmail&gt;</span>
+      <span class="nt">&lt;PaymentMethodRef</span> <span class="na">name=</span><span class="s">"Cash"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/PaymentMethodRef&gt;</span>
+      <span class="nt">&lt;PaymentRefNum&gt;</span>abc123<span class="nt">&lt;/PaymentRefNum&gt;</span>
+      <span class="nt">&lt;DepositToAccountRef</span> <span class="na">name=</span><span class="s">"Current"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/DepositToAccountRef&gt;</span>
+    <span class="nt">&lt;/Data&gt;</span>
+  <span class="nt">&lt;/RecordOfSalesReceipt&gt;</span>
+<span class="nt">&lt;/ArrayOfSalesReceipt&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="sales-receipt-details---items">Sales Receipt Details - Items</h2>
+<p>There are several different types of item that can be added to a sales receipt, as shown below. The item type is specified by the DetailType element in the XML.</p>
+
+<h3 id="sales-item-line">Sales Item Line</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML Field</th>
+      <th>QuickBooks Field </th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length </th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td>-</td>
+      <td>1234</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Dependant</td>
+      <td>Used for matching to existing line items. Required when updating an existing item line.</td>
+    </tr>
+    <tr>
+      <td>LineNum</td>
+      <td>-</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Specifies the position of the line.</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>Description</td>
+      <td>Catering</td>
+      <td>string</td>
+      <td>4000</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Amount</td>
+      <td>Amount</td>
+      <td>50</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>The total amount for the line.</td>
+    </tr>
+    <tr>
+      <td>DetailType</td>
+      <td>-</td>
+      <td>SalesItemLineDetail</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>Set to SalesItemLineDetail for this item type.</td>
+    </tr>
+    <tr>
+      <td>SalesItemLineDetail &gt; ItemRef</td>
+      <td>Product/Service</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>If you don’t know the item ID, you can specify the SKU or name using the name attribute, and the task will perform a lookup.</td>
+    </tr>
+    <tr>
+      <td>SalesItemLineDetail &gt; UnitPrice</td>
+      <td>Rate</td>
+      <td>50</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>SalesItemLineDetail &gt; Qty</td>
+      <td>Qty</td>
+      <td>1</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>SalesItemLineDetail &gt; TaxCodeRef</td>
+      <td>Vat</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If you don’t know the tax code ID, you can specify the name using the name attribute, and the task will perform a lookup.</td>
+    </tr>
+    <tr>
+      <td>SalesItemLineDetail &gt; ServiceDate</td>
+      <td>Service Date</td>
+      <td>2016-07-15</td>
+      <td>date</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Can only be set if service dates are enabled in QuickBooks.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfSalesReceipt</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;RecordOfSalesReceipt&gt;</span>
+    <span class="nt">&lt;Data</span> <span class="na">domain=</span><span class="s">"QBO"</span> <span class="na">xmlns=</span><span class="s">"http://schema.intuit.com/finance/v3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;Line&gt;</span>
+        <span class="nt">&lt;Id&gt;</span>1234<span class="nt">&lt;/Id&gt;</span>
+        <span class="nt">&lt;LineNum&gt;</span>1<span class="nt">&lt;/LineNum&gt;</span>
+        <span class="nt">&lt;Description&gt;</span>Catering<span class="nt">&lt;/Description&gt;</span>
+        <span class="nt">&lt;Amount&gt;</span>50<span class="nt">&lt;/Amount&gt;</span>
+        <span class="nt">&lt;DetailType&gt;</span>SalesItemLineDetail<span class="nt">&lt;/DetailType&gt;</span>
+        <span class="nt">&lt;SalesItemLineDetail&gt;</span>
+          <span class="nt">&lt;ItemRef</span> <span class="na">name=</span><span class="s">"Catering"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/ItemRef&gt;</span>
+          <span class="nt">&lt;UnitPrice&gt;</span>50<span class="nt">&lt;/UnitPrice&gt;</span>
+          <span class="nt">&lt;Qty&gt;</span>1<span class="nt">&lt;/Qty&gt;</span>
+          <span class="nt">&lt;TaxCodeRef</span> <span class="na">name=</span><span class="s">"20.0% S"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/TaxCodeRef&gt;</span>
+          <span class="nt">&lt;ServiceDate&gt;</span>2016-07-15<span class="nt">&lt;/ServiceDate&gt;</span>
+        <span class="nt">&lt;/SalesItemLineDetail&gt;</span>
+      <span class="nt">&lt;/Line&gt;</span>
+    <span class="nt">&lt;/Data&gt;</span>
+  <span class="nt">&lt;/RecordOfSalesReceipt&gt;</span>
+<span class="nt">&lt;/ArrayOfSalesReceipt&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="group-item-line">Group Item Line</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML Field</th>
+      <th>QuickBooks Field </th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length </th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td>-</td>
+      <td>1234</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Dependant</td>
+      <td>Used for matching to existing line items. Required when updating an existing item line.</td>
+    </tr>
+    <tr>
+      <td>LineNum</td>
+      <td>-</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Specifies the position of the line.</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>Description</td>
+      <td>Group</td>
+      <td>string</td>
+      <td>4000</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>DetailType</td>
+      <td>-</td>
+      <td>GroupLineDetail</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>Set to GroupLineDetail for this item type.</td>
+    </tr>
+    <tr>
+      <td>GroupLineDetail &gt; GroupItemRef</td>
+      <td>Product/Service</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>If you don’t know the group item ID, you can specify the SKU or name using the name attribute, and the task will perform a lookup. The chosen item must have the type ‘Group’.</td>
+    </tr>
+    <tr>
+      <td>GroupLineDetail &gt; UnitPrice</td>
+      <td>Rate</td>
+      <td>50</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>GroupLineDetail &gt; Quantity</td>
+      <td>Qty</td>
+      <td>1</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>GroupLineDetail &gt; Line</td>
+      <td>Product/Service</td>
+      <td>-</td>
+      <td>Item</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>The collection of items in the group.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfSalesReceipt</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;RecordOfSalesReceipt&gt;</span>
+    <span class="nt">&lt;Data</span> <span class="na">domain=</span><span class="s">"QBO"</span> <span class="na">xmlns=</span><span class="s">"http://schema.intuit.com/finance/v3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;Line&gt;</span>
+        <span class="nt">&lt;Id&gt;</span>1234<span class="nt">&lt;/Id&gt;</span>
+        <span class="nt">&lt;LineNum&gt;</span>1<span class="nt">&lt;/LineNum&gt;</span>
+        <span class="nt">&lt;Description&gt;</span>A Bundle Product<span class="nt">&lt;/Description&gt;</span>
+        <span class="nt">&lt;DetailType&gt;</span>GroupLineDetail<span class="nt">&lt;/DetailType&gt;</span>
+        <span class="nt">&lt;GroupLineDetail&gt;</span>
+          <span class="nt">&lt;GroupItemRef</span> <span class="na">name=</span><span class="s">"Bundle Product"</span><span class="nt">&gt;</span>22<span class="nt">&lt;/GroupItemRef&gt;</span>
+          <span class="nt">&lt;Quantity&gt;</span>1<span class="nt">&lt;/Quantity&gt;</span>
+          <span class="nt">&lt;Line&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>4<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;LineNum&gt;</span>2<span class="nt">&lt;/LineNum&gt;</span>
+            <span class="nt">&lt;Description&gt;</span>Catering -- food <span class="err">&amp;</span> beverage<span class="nt">&lt;/Description&gt;</span>
+            <span class="nt">&lt;Amount&gt;</span>0<span class="nt">&lt;/Amount&gt;</span>
+            <span class="nt">&lt;DetailType&gt;</span>SalesItemLineDetail<span class="nt">&lt;/DetailType&gt;</span>
+            <span class="nt">&lt;SalesItemLineDetail&gt;</span>
+              <span class="nt">&lt;ItemRef</span> <span class="na">name=</span><span class="s">"Catering"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/ItemRef&gt;</span>
+              <span class="nt">&lt;UnitPrice&gt;</span>0<span class="nt">&lt;/UnitPrice&gt;</span>
+              <span class="nt">&lt;Qty&gt;</span>1<span class="nt">&lt;/Qty&gt;</span>
+              <span class="nt">&lt;TaxCodeRef</span> <span class="na">name=</span><span class="s">"20.0% S"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/TaxCodeRef&gt;</span>
+            <span class="nt">&lt;/SalesItemLineDetail&gt;</span>
+          <span class="nt">&lt;/Line&gt;</span>
+          <span class="nt">&lt;Line&gt;</span>
+            <span class="nt">&lt;Id&gt;</span>5<span class="nt">&lt;/Id&gt;</span>
+            <span class="nt">&lt;LineNum&gt;</span>3<span class="nt">&lt;/LineNum&gt;</span>
+            <span class="nt">&lt;Description&gt;</span>Entertainment for the event<span class="nt">&lt;/Description&gt;</span>
+            <span class="nt">&lt;Amount&gt;</span>0<span class="nt">&lt;/Amount&gt;</span>
+            <span class="nt">&lt;DetailType&gt;</span>SalesItemLineDetail<span class="nt">&lt;/DetailType&gt;</span>
+            <span class="nt">&lt;SalesItemLineDetail&gt;</span>
+              <span class="nt">&lt;ItemRef</span> <span class="na">name=</span><span class="s">"Entertainment"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/ItemRef&gt;</span>
+              <span class="nt">&lt;UnitPrice&gt;</span>0<span class="nt">&lt;/UnitPrice&gt;</span>
+              <span class="nt">&lt;Qty&gt;</span>1<span class="nt">&lt;/Qty&gt;</span>
+              <span class="nt">&lt;TaxCodeRef</span> <span class="na">name=</span><span class="s">"20.0% S"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/TaxCodeRef&gt;</span>
+            <span class="nt">&lt;/SalesItemLineDetail&gt;</span>
+          <span class="nt">&lt;/Line&gt;</span>
+        <span class="nt">&lt;/GroupLineDetail&gt;</span>
+      <span class="nt">&lt;/Line&gt;</span>
+    <span class="nt">&lt;/Data&gt;</span>
+  <span class="nt">&lt;/RecordOfSalesReceipt&gt;</span>
+<span class="nt">&lt;/ArrayOfSalesReceipt&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="description-only-item-line">Description Only Item Line</h3>
+<p>The description only item is also used for setting inline subtotals.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML Field</th>
+      <th>QuickBooks Field </th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length </th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td>-</td>
+      <td>1234</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Dependant</td>
+      <td>Used for matching to existing line items. Required when updating an existing item line.</td>
+    </tr>
+    <tr>
+      <td>LineNum</td>
+      <td>-</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Specifies the position of the line.</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>Description</td>
+      <td>An item</td>
+      <td>string</td>
+      <td>4000</td>
+      <td>Optional</td>
+      <td>To create a subtotal line, set this to ‘Subtotal:’. QuickBooks will calculate the subtotal amount automatically.</td>
+    </tr>
+    <tr>
+      <td>Amount</td>
+      <td>Amount</td>
+      <td>50</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Dependant</td>
+      <td>Not required when creating a subtotal line.</td>
+    </tr>
+    <tr>
+      <td>DetailType</td>
+      <td>-</td>
+      <td>DescriptionOnly</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>Set to DescriptionOnly for this item type.</td>
+    </tr>
+    <tr>
+      <td>GroupLineDetail &gt; ServiceDate</td>
+      <td>Service Date</td>
+      <td>2016-07-15</td>
+      <td>date</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Can only be set if service dates are enabled in QuickBooks.</td>
+    </tr>
+    <tr>
+      <td>GroupLineDetail &gt; TaxCodeRef</td>
+      <td>Vat</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If you don’t know the tax code ID, you can specify the name using the name attribute, and the task will perform a lookup.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfSalesReceipt</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;RecordOfSalesReceipt&gt;</span>
+    <span class="nt">&lt;Data</span> <span class="na">domain=</span><span class="s">"QBO"</span> <span class="na">xmlns=</span><span class="s">"http://schema.intuit.com/finance/v3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;Line&gt;</span>
+        <span class="nt">&lt;Id&gt;</span>1234<span class="nt">&lt;/Id&gt;</span>
+        <span class="nt">&lt;LineNum&gt;</span>1<span class="nt">&lt;/LineNum&gt;</span>
+        <span class="nt">&lt;Description&gt;</span>An item<span class="nt">&lt;/Description&gt;</span>
+        <span class="nt">&lt;Amount&gt;</span>50<span class="nt">&lt;/Amount&gt;</span>
+        <span class="nt">&lt;DetailType&gt;</span>DescriptionOnly<span class="nt">&lt;/DetailType&gt;</span>
+        <span class="nt">&lt;DescriptionLineDetail&gt;</span>
+          <span class="nt">&lt;ServiceDate&gt;</span>2016-07-15<span class="nt">&lt;/ServiceDate&gt;</span>
+          <span class="nt">&lt;TaxCodeRef</span> <span class="na">name=</span><span class="s">"20.0% S"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/TaxCodeRef&gt;</span>
+        <span class="nt">&lt;/DescriptionLineDetail&gt;</span>
+      <span class="nt">&lt;/Line&gt;</span>
+      <span class="c">&lt;!-- Inline subtotal --&gt;</span>
+      <span class="nt">&lt;Line&gt;</span>
+        <span class="nt">&lt;Id&gt;</span>2<span class="nt">&lt;/Id&gt;</span>
+        <span class="nt">&lt;LineNum&gt;</span>2<span class="nt">&lt;/LineNum&gt;</span>
+        <span class="nt">&lt;Description&gt;</span>Subtotal:<span class="nt">&lt;/Description&gt;</span>
+        <span class="nt">&lt;DetailType&gt;</span>DescriptionOnly<span class="nt">&lt;/DetailType&gt;</span>
+        <span class="nt">&lt;DescriptionLineDetail</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/Line&gt;</span>
+    <span class="nt">&lt;/Data&gt;</span>
+  <span class="nt">&lt;/RecordOfSalesReceipt&gt;</span>
+<span class="nt">&lt;/ArrayOfSalesReceipt&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="discount-line">Discount Line</h3>
+<p>Specifies a discount to apply to the whole transaction. Discount Lines can only be added if discounts are enabled in QuickBooks.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML Field</th>
+      <th>QuickBooks Field </th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length </th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amount</td>
+      <td>Amount</td>
+      <td>10.5</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>The total amount for the line.</td>
+    </tr>
+    <tr>
+      <td>DetailType</td>
+      <td>-</td>
+      <td>DiscountLineDetail</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>Set to DiscountLineDetail for this item type.</td>
+    </tr>
+    <tr>
+      <td>DiscountLineDetail &gt; PercentBased</td>
+      <td>Discount percent / Discount value</td>
+      <td>false</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Required</td>
+      <td>Set to true if the discount is a percentage discount, or false if it is a discount amount.</td>
+    </tr>
+    <tr>
+      <td>DiscountLineDetail &gt; DiscountPercent</td>
+      <td>Rate</td>
+      <td>10.5</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>DiscountLineDetail &gt; DiscountAccountRef</td>
+      <td>-</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>If you don’t know the account ID, you can specify the name using the name attribute, and the task will perform a lookup. The chosen accountmust have the Type ‘Income’ and Sub Type ‘DiscountsRefundsGiven’.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfSalesReceipt</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;RecordOfSalesReceipt&gt;</span>
+    <span class="nt">&lt;Data</span> <span class="na">domain=</span><span class="s">"QBO"</span> <span class="na">xmlns=</span><span class="s">"http://schema.intuit.com/finance/v3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;Line&gt;</span>
+        <span class="nt">&lt;Amount&gt;</span>10.5<span class="nt">&lt;/Amount&gt;</span>
+        <span class="nt">&lt;DetailType&gt;</span>DiscountLineDetail<span class="nt">&lt;/DetailType&gt;</span>
+        <span class="nt">&lt;DiscountLineDetail&gt;</span>
+          <span class="nt">&lt;PercentBased&gt;</span>false<span class="nt">&lt;/PercentBased&gt;</span>
+          <span class="nt">&lt;DiscountPercent&gt;</span>10.5<span class="nt">&lt;/DiscountPercent&gt;</span>
+          <span class="nt">&lt;DiscountAccountRef</span> <span class="na">name=</span><span class="s">"Discounts given"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/DiscountAccountRef&gt;</span>
+        <span class="nt">&lt;/DiscountLineDetail&gt;</span>
+      <span class="nt">&lt;/Line&gt;</span>
+    <span class="nt">&lt;/Data&gt;</span>
+  <span class="nt">&lt;/RecordOfSalesReceipt&gt;</span>
+<span class="nt">&lt;/ArrayOfSalesReceipt&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="custom-fields">Custom Fields</h2>
+<p>QuickBooks supports up to 3 custom fields, which can be set as described below. The custom field must already exist in QuickBooks, the task will not automatically create custom fields.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> XML Field</th>
+      <th>QuickBooks Field </th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length </th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DefinitionId</td>
+      <td>Name</td>
+      <td>1</td>
+      <td>integer</td>
+      <td>-</td>
+      <td>Dependant</td>
+      <td>This is the number of the custom field, used for matching. Will be either 1, 2 or 3. Required if Name is not specified.</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Name</td>
+      <td>Sales Rep</td>
+      <td>string</td>
+      <td>15</td>
+      <td>Dependant</td>
+      <td>The name of the custom field, used for matching. Required if DefinitionId is not specified.</td>
+    </tr>
+    <tr>
+      <td>StringValue</td>
+      <td>Value</td>
+      <td>John Smith</td>
+      <td>string</td>
+      <td>31</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfSalesReceipt</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;RecordOfSalesReceipt&gt;</span>
+    <span class="nt">&lt;Data</span> <span class="na">domain=</span><span class="s">"QBO"</span> <span class="na">xmlns=</span><span class="s">"http://schema.intuit.com/finance/v3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;CustomField&gt;</span>
+        <span class="nt">&lt;DefinitionId&gt;</span>1<span class="nt">&lt;/DefinitionId&gt;</span>
+        <span class="nt">&lt;Name&gt;</span>Sales Rep<span class="nt">&lt;/Name&gt;</span>
+        <span class="nt">&lt;StringValue&gt;</span>John Smith<span class="nt">&lt;/StringValue&gt;</span>
+      <span class="nt">&lt;/CustomField&gt;</span>
+    <span class="nt">&lt;/Data&gt;</span>
+  <span class="nt">&lt;/RecordOfSalesReceipt&gt;</span>
+<span class="nt">&lt;/ArrayOfSalesReceipt&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Quickbooks-Online-Connector/Quickbooks-Online-Sales-Receipt-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

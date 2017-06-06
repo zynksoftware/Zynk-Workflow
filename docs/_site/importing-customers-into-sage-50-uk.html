@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Importing Customers into Sage 50 UK</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Importing Customers into Sage 50 UK</h1>
+                    <table>
+  <tbody>
+    <tr>
+      <td>This task will import customers to Sage 50 that is supplied in [Sage 50 UK XML]]. See the [[Examples</td>
+      <td>https://github.com/zynksoftware/Zynk-Workflow/wiki/Importing-Customers-into-Sage-50-UK#examples](sage-50-uk-xml]].-see-the-[[examples</td>
+      <td>https://github.com/zynksoftware/zynk-workflow/wiki/importing-customers-into-sage-50-uk#examples) for the XML format</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="settings">Settings</h2>
+<h3 id="sage-50-connection">Sage 50 Connection</h3>
+<p><em>Required</em><br />
+The connection to Sage 50 UK to use.  See the <a href="connecting-to-sage-50-uk">Connecting to Sage 50 UK</a> article if you require more information on how to create/manage connections.</p>
+
+<h3 id="auto-generate-references">Auto Generate References</h3>
+<p><em>Required</em></p>
+
+<ul>
+  <li><strong>Account Reference Convention</strong> - Used when auto generating account references. Select a method for generating the alphabetic part of the account reference.  The following options are available:
+    <ul>
+      <li>CompanyOtherwiseFullName - The company name will be used if provided, otherwise the customers full name.</li>
+      <li>CompanyOtherwiseForenameSurname - The company name will be used if provided, otherwise the customers forename followed by surname.</li>
+      <li>CompanyOtherwiseSurnameForename - The company name will be used if provided, otherwise the customers surname followed by forename.</li>
+      <li>ForenameSurname - The customers forename followed by surname.</li>
+      <li>SurnameForename - The customers surname followed by forename.</li>
+    </ul>
+  </li>
+  <li><strong>Alphabetic Length</strong>  - Used when auto generating account references. Controls the number of alphabetic characters to use in the generated account reference (e.g. 3 may produce an account reference starting with ABC)</li>
+  <li><strong>Auto Generate Account Ref</strong> - Set this to True to have the task auto-create an account reference if one is not provided in the input file, or an account reference is not found in the truth table based on the customer Id. Set to False to prevent new account references being generated automatically.</li>
+  <li><strong>Mask</strong> - This will prefix any account reference generated by Zynk, for example, if the account reference was ‘INT001’ and the mask was ‘Z-‘ the account reference would be set to ‘Z-INT001’ in Sage. Wild cards can be used to insert characters at certain positions in the account reference. For example, the mask ???-??? may produce the account reference ‘INT-001’.</li>
+  <li><strong>Numeric Length</strong> - Used when auto generating account references. Controls the number of numeric characters to use in the generated account reference (e.g. 3 may produce an account reference ending in 001)</li>
+  <li><strong>Regular Expression</strong> - The regular expression to use for stripping out undesired characters from the generated account reference.  E.g. use <code class="highlighter-rouge">\s*</code> to strip out any spaces</li>
+</ul>
+
+<h3 id="create-multiple-delivery-addresses">Create Multiple Delivery Addresses</h3>
+<p><em>Required</em><br />
+Set this value to True if you need to create multiple delivery addresses each time a new delivery address is added, False will not create delivery addresses on the customer record</p>
+
+<h3 id="match-accounts-on">Match Accounts On</h3>
+<p><em>Optional</em><br />
+The list of fields to use to try and find an existing account in Sage which matches with the customer in the input file. These settings will only be used if there is no account reference provided for the customer in the input file, and no account reference found in the truth table based on the customer Id. When multiple fields are selected, only customers in Sage where the value of all fields matches those in the input file will be considered a match. The following fields are supported:</p>
+<ul>
+  <li>Company Name</li>
+  <li>Telephone</li>
+  <li>Mobile</li>
+  <li>Fax</li>
+  <li>Email</li>
+  <li>Website</li>
+  <li>Postcode</li>
+</ul>
+
+<h3 id="fail-file">Fail File</h3>
+<p><em>Required</em><br />
+The name of a file for “failed” imports to be sent to</p>
+
+<h3 id="input-file">Input File</h3>
+<p><em>Required</em><br />
+The source file that you want to import in Zynk XML format</p>
+
+<h3 id="success-file">Success File</h3>
+<p><em>Required</em><br />
+The name of a file for “successful” imports to be sent to.</p>
+
+<h2 id="zynk-settings">Zynk Settings</h2>
+<p>See <a href="common-task-settings">Common Task Settings</a></p>
+
+<h2 id="examples">Examples</h2>
+<p>Sample input file, for full documentation and samples see <a href="sage-50-uk-customer-xml">Sage 50 UK Customer XML</a>:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Customers&gt;</span>
+    <span class="nt">&lt;Customer&gt;</span>
+      <span class="nt">&lt;Id&gt;</span>123<span class="nt">&lt;/Id&gt;</span>
+      <span class="nt">&lt;CompanyName&gt;</span>Zynk Software<span class="nt">&lt;/CompanyName&gt;</span>
+      <span class="nt">&lt;AccountReference</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;CustomerInvoiceAddress&gt;</span>
+        <span class="nt">&lt;Title</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Support<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Person<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>Internetware<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>Nelson House<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>Fleming Business Centre<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Address3&gt;</span>Jesmond<span class="nt">&lt;/Address3&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Newcastle Upon Tyne<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE2 3AE<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne and Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+        <span class="nt">&lt;Fax&gt;</span>0845 123 2921<span class="nt">&lt;/Fax&gt;</span>
+        <span class="nt">&lt;Mobile</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;Email&gt;</span>support@zynk.com<span class="nt">&lt;/Email&gt;</span>
+      <span class="nt">&lt;/CustomerInvoiceAddress&gt;</span>
+      <span class="nt">&lt;CustomerDeliveryAddress&gt;</span>
+        <span class="nt">&lt;Title</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Support<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Person<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>Internetware<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>Nelson House<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>Fleming Business Centre<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Address3&gt;</span>Jesmond<span class="nt">&lt;/Address3&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Newcastle Upon Tyne<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE2 3AE<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne and Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+        <span class="nt">&lt;Fax&gt;</span>0845 123 2921<span class="nt">&lt;/Fax&gt;</span>
+        <span class="nt">&lt;Mobile</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;Email&gt;</span>support@zynk.com<span class="nt">&lt;/Email&gt;</span>
+      <span class="nt">&lt;/CustomerDeliveryAddress&gt;</span>
+      <span class="nt">&lt;Currency&gt;</span>GBP<span class="nt">&lt;/Currency&gt;</span>
+      <span class="nt">&lt;TermsAgreed&gt;</span>1<span class="nt">&lt;/TermsAgreed&gt;</span>
+      <span class="nt">&lt;AccountStatus&gt;</span>1<span class="nt">&lt;/AccountStatus&gt;</span>
+    <span class="nt">&lt;/Customer&gt;</span>
+  <span class="nt">&lt;/Customers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-50-UK-Connector/Importing-Customers-into-Sage-50-UK.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

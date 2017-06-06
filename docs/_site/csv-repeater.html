@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSV Repeater</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>CSV Repeater</h1>
+                    <p>This task will loop or iterate through all records contained within the specified CSV Input, running the sub-tasks contained within this task for each record that is processed. 
+To add sub-tasks, drag and drop tasks from the task library onto this task. The sub-tasks are displayed as child nodes of the CSV Repeater task.</p>
+
+<h2 id="settings">Settings</h2>
+
+<h3 id="column-name-prefix">Column Name Prefix</h3>
+<p><em>Required (If Headers not specified)</em><br />
+The prefix that will be used with the Column Index for auto generated Column names (only applicable if Headers are not specified). Column names are used when generating the Context Variables. Defaulted to F.</p>
+
+<h3 id="delimiter">Delimiter</h3>
+<p><em>Optional</em><br />
+The column delimiter used in the Input. This is often a quotation mark. Please see the <a href="csv">CSV</a> article if you are unsure what value to use. Defaulted to double quotes e.g. “</p>
+
+<h3 id="encoding-type">Encoding Type</h3>
+<p><em>Required</em><br />
+The encoding to use when parsing the Input. 
+Defaulted to UTF8.</p>
+
+<h3 id="include-headers">Include Headers</h3>
+<p><em>Required</em><br />
+Set this to true to interpret the first row of the Input as column names. Column names are used when generating the Context Variables.  Defaulted to true.</p>
+
+<h3 id="input">Input</h3>
+<p><em>Required</em><br />
+The absolute or relative file path on the local computer or network to the CSV file or the actual CSV data you would like to repeat/loop over. See the Zynk Objects article if you require more information on how the Zynk Object file value works. Defaulted to Output from previous task.</p>
+
+<h3 id="separator">Separator</h3>
+<p><em>Required</em><br />
+The column separator used in the Input, for a CSV file this will be a comma, for tab delimited use \t.  Please see the <a href="csv">CSV</a> article if you are unsure what value to use.
+Defaulted to <code class="highlighter-rouge">,</code></p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a></p>
+
+<h2 id="context-variables">Context Variables</h2>
+<p>For every record in the Input CSV, the columns are available to each sub-task as a current variable. If the Include Headers setting is set to true, the variable names will correspond to the values in the first row of the Input. Otherwise, the variables will be named based on the Column Name Prefix setting and the column’s index e.g. F1, F2, F3 etc.</p>
+
+<p>The sub-tasks can access the values of the variables using razor, so they can be used in templates, or within task settings that support <a href="zynk-objects">Zynk Objects</a> (using the ‘Use Razor Engine’ option). For example <code class="highlighter-rouge">@(Context.Current["F1"])</code> would be used to access the first value in a row when Include Headers is set to false.</p>
+
+<p>See <a href="accessing-variables-in-tasks">Accessing Variables in Tasks</a> for more information on using context variables.</p>
+
+<h2 id="examples">Examples</h2>
+<p>Sample input file, which includes a header row:</p>
+
+<pre><code class="language-csv">AccountReference,CompanyName,Balance
+A1D001,A1 Design Services,0
+BBS001,Bobs Building Supplies,4309.77
+</code></pre>
+
+<p>Given this input file, and with the Include Headers setting set to true, the sub-tasks would be ran twice (as there are two rows in the file, excluding the header), and the following variables would be available to them:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>CSV Row Number</th>
+      <th>Variable Name</th>
+      <th>Value</th>
+      <th>Razor Code to Access the Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>AccountReference</td>
+      <td>A1D001</td>
+      <td>@(Context.Current[“AccountReference”])</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>CompanyName</td>
+      <td>A1 Design Services</td>
+      <td>@(Context.Current[“CompanyName”])</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Balance</td>
+      <td>0</td>
+      <td>@(Context.Current[“Balance”])</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>AccountReference</td>
+      <td>BBS001</td>
+      <td>@(Context.Current[“AccountReference”])</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>CompanyName</td>
+      <td>Bobs Building Supplies</td>
+      <td>@(Context.Current[“CompanyName”])</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Balance</td>
+      <td>4309.77</td>
+      <td>@(Context.Current[“Balance”])</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Sample input file, which does not include a header row:</p>
+
+<pre><code class="language-csv">ZYNK0001,Zynk Software Ltd,0
+JIMSWIM,Jims Swim School,2000.00
+</code></pre>
+
+<p>Given this input file, with the Include Headers setting set to false and the Column Name Prefix set to ‘F’, the sub-tasks would be ran twice (as there are two rows in the file), and the following variables would be available to them:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>CSV Row Number</th>
+      <th>Variable Name</th>
+      <th>Value</th>
+      <th>Razor Code to Access the Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>F1</td>
+      <td>ZYNK0001</td>
+      <td>@(Context.Current[“F1”])</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>F2</td>
+      <td>Zynk Software Ltd</td>
+      <td>@(Context.Current[“F2”])</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>F3</td>
+      <td>0</td>
+      <td>@(Context.Current[“F3”])</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>F1</td>
+      <td>JIMSWIM</td>
+      <td>@(Context.Current[“F1”])</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>F2</td>
+      <td>Jims Swim School</td>
+      <td>@(Context.Current[“F2”])</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>F3</td>
+      <td>2000.00</td>
+      <td>@(Context.Current[“F3”])</td>
+    </tr>
+  </tbody>
+</table>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/CSV-Connector/CSV-Repeater.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

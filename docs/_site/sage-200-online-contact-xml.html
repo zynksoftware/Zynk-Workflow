@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sage 200 Online Contact XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Sage 200 Online Contact XML</h1>
+                    <p>Information can be stored for multiple contacts against each customer account. Each contact can have its own details such as telephone numbers, fax numbers, email address and website. <strong>Note: In Sage 200 Standard, only one contact is supported.</strong>  Further information can be found on the <a href="https://developer.columbus.sage.com/docs#/uk/sage200/accounts/v1/customer_contacts">Sage 200 Online Contact API Documentation</a>.</p>
+
+<h2 id="tasks">Tasks</h2>
+<p>Zynk does not currently support downloading or uploading contacts directly, but can be used within <a href="sage-200-online-customer-xml">Sage 200 Online Customer XML</a> as part of the export and import of customer records.</p>
+
+<ul>
+  <li><a href="exporting-customers-from-sage-200-online">Exporting Customers From Sage 200 Online</a></li>
+  <li><a href="importing-customers-to-sage-200-online">Importing Customers To Sage 200 Online</a></li>
+</ul>
+
+<h2 id="fields-for-download-and-upload">Fields for Download and Upload</h2>
+<h3 id="salutation_id">salutation_id</h3>
+<p><em>Optional</em><br />
+Salutation record Id, can also be set using code, see <a href="#salutation">salutation</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>1</td>
+      <td><code class="highlighter-rouge">&lt;salutation_id&gt;1&lt;/salutation_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="first_name">first_name</h3>
+<p><em>Optional</em><br />
+Contact first name.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>Andrew</td>
+      <td><code class="highlighter-rouge">&lt;first_name&gt;Andrew&lt;/first_name&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="middle_name">middle_name</h3>
+<p><em>Optional</em><br />
+Contact middle name.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>Bryan</td>
+      <td><code class="highlighter-rouge">&lt;middle_name&gt;Bryan&lt;/middle_name&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="last_name">last_name</h3>
+<p><em>Optional</em><br />
+Contact surname.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(60)</td>
+      <td>Snape</td>
+      <td><code class="highlighter-rouge">&lt;last_name&gt;Snape&lt;/last_name&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="is_default">is_default</h3>
+<p><em>Optional</em><br />
+Is this the default contact for the parent customer.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>boolean</td>
+      <td>true</td>
+      <td><code class="highlighter-rouge">&lt;is_default&gt;true&lt;/is_default&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="available-values">Available Values</h4>
+<ul>
+  <li>true</li>
+  <li>false</li>
+</ul>
+
+<h2 id="fields-for-download-only">Fields for Download Only</h2>
+<h3 id="id">id</h3>
+<p><em>Read Only</em><br />
+Customer contact record Id.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>27008</td>
+      <td><code class="highlighter-rouge">&lt;id&gt;27008&lt;/id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="customer_id">customer_id</h3>
+<p><em>Read Only</em><br />
+Customer record Id.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>27006</td>
+      <td><code class="highlighter-rouge">&lt;customer_id&gt;27006&lt;/customer_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="name">name</h3>
+<p><em>Read Only</em>
+Contact Name - Concatenated <code class="highlighter-rouge">first_name</code>, <code class="highlighter-rouge">middle_name</code> and <code class="highlighter-rouge">last_name</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(180)</td>
+      <td>Mr. Andrew Bryan Snape</td>
+      <td><code class="highlighter-rouge">&lt;name&gt;Mr. Andrew Bryan Snape&lt;/name&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="default_telephone">default_telephone</h3>
+<p><em>Read Only</em>
+Default telephone number.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(227)</td>
+      <td> </td>
+      <td>``</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="default_email">default_email</h3>
+<p><em>Read Only</em>
+Default email address.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(227)</td>
+      <td> </td>
+      <td>``</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="date_time_updated">date_time_updated</h3>
+<p><em>Read Only</em><br />
+The date and time this entity was last updated (UTC).  This field is updated when a contact is uploaded using Zynk as well as when using the Sage 200 Online interface.</p>
+
+<h2 id="expandable-fields">Expandable Fields</h2>
+<p>Related information linked to contacts are also included in the downloaded XML, and these can be used to set certain fields on contact uploads using lookups rather than needing to know the internal id of the related record.</p>
+
+<h3 id="salutation">salutation</h3>
+<p><em>Optional</em><br />
+The salutation to be used for the contact.  On a download all the related information of the salutation will be included in the XML.  On an upload you can set the code of the salutation to use for the contact and Zynk will lookup the correct internal id from Sage.</p>
+
+<h4 id="download-example-showing-all-related-information">Download example showing all related information</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;salutation&gt;</span>
+    <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;date_time_updated&gt;</span>2015-10-30T22:33:25.81<span class="nt">&lt;/date_time_updated&gt;</span>
+    <span class="nt">&lt;code&gt;</span>Mr.<span class="nt">&lt;/code&gt;</span>
+    <span class="nt">&lt;description&gt;</span>Mr.<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;is_default&gt;</span>false<span class="nt">&lt;/is_default&gt;</span>
+<span class="nt">&lt;/salutation&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="upload-example-only-setting-the-code">Upload example only setting the code</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;salutation&gt;</span>
+    <span class="nt">&lt;code&gt;</span>Mr.<span class="nt">&lt;/code&gt;</span>
+<span class="nt">&lt;/salutation&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="example-xml">Example XML</h2>
+<p>Note, as contacts are only used as part of customer download or upload the example is shown within the context of a customer record but with all other fields removed.  See <a href="sage-200-online-customer-xml">Sage 200 Online Customer XML</a> for full sample.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;Customers</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Customer&gt;</span>
+    ...
+    <span class="nt">&lt;contacts&gt;</span>
+      <span class="nt">&lt;contact&gt;</span>
+        <span class="nt">&lt;id&gt;</span>27008<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;salutation_id&gt;</span>1<span class="nt">&lt;/salutation_id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Mr. Andrew Bryan Snape<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;first_name&gt;</span>Andrew<span class="nt">&lt;/first_name&gt;</span>
+        <span class="nt">&lt;middle_name&gt;</span>Bryan<span class="nt">&lt;/middle_name&gt;</span>
+        <span class="nt">&lt;last_name&gt;</span>Snape<span class="nt">&lt;/last_name&gt;</span>
+        <span class="nt">&lt;is_default&gt;</span>true<span class="nt">&lt;/is_default&gt;</span>
+        <span class="nt">&lt;default_telephone</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;default_email</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;salutation&gt;</span>
+          <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+          <span class="nt">&lt;date_time_updated&gt;</span>2015-10-30T22:33:25.81<span class="nt">&lt;/date_time_updated&gt;</span>
+          <span class="nt">&lt;code&gt;</span>Mr.<span class="nt">&lt;/code&gt;</span>
+          <span class="nt">&lt;description&gt;</span>Mr.<span class="nt">&lt;/description&gt;</span>
+          <span class="nt">&lt;is_default&gt;</span>false<span class="nt">&lt;/is_default&gt;</span>
+        <span class="nt">&lt;/salutation&gt;</span>
+        <span class="nt">&lt;date_time_updated&gt;</span>2017-06-02T14:14:35.04<span class="nt">&lt;/date_time_updated&gt;</span>
+        <span class="nt">&lt;customer_id&gt;</span>27006<span class="nt">&lt;/customer_id&gt;</span>
+      <span class="nt">&lt;/contact&gt;</span>
+    <span class="nt">&lt;/contacts&gt;</span>
+    ...
+  <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/Customers&gt;</span>
+</code></pre>
+</div>
+
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-200-Online-Connector/Sage-200-Online-Contact-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

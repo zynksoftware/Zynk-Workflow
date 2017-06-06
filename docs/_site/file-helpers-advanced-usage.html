@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>File Helpers   Advanced Usage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>File Helpers   Advanced Usage</h1>
+                    <p>This article is an introduction to using the FileHelpers Module within Zynk, based on the examples on the <a href="http://www.filehelpers.com/">FileHelpers site</a>.  </p>
+
+<h2 id="delimited-record">Delimited Record</h2>
+<p>Using a C# class you can read in a flat file format representing nested data (the provided example represents customers and their orders) and convert to XML, which can then be used for further processing within Zynk Workflows e.g. with the XSLT Transform.</p>
+
+<p>More information can be found on our <a href="master-detail-converter">Master Detail Converter</a> article.</p>
+
+<h3 id="input-file">Input File</h3>
+<p>Save the below to input.txt</p>
+
+<pre><code class="language-csv">ALFKI|Alfreds Futterkiste|Maria Anders|Sales Representative|Obere Str. 57|Berlin|Germany 
+10248|ALFKI|5|04071996|01081996|16071996|3|32.38 
+10249|ALFKI|6|05071996|16081996|10071996|1|11.61 
+10251|ALFKI|3|08071996|05081996|15071996|1|41.34 
+ANATR|Ana Trujillo Emparedados y helados|Ana Trujillo|Owner|Avda. de la ConstituciÃ³n 2222|MÃ©xico D.F.|Mexico 
+10252|ANATR|4|09071996|06081996|11071996|2|51.3 
+ANTON|Antonio Moreno TaquerÃ­a|Antonio Moreno|Owner|Mataderos  2312|MÃ©xico D.F.|Mexico
+</code></pre>
+
+<h3 id="c-master-class">C# Master Class</h3>
+<p>Save the below to master.cs</p>
+
+<div class="language-cs highlighter-rouge"><pre class="highlight"><code><span class="na">[DelimitedRecord("|")]</span> 
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Customers</span> 
+<span class="p">{</span>    
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">CustomerID</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">CompanyName</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">ContactName</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">ContactTitle</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Address</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">City</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Country</span><span class="p">;</span>     
+
+    <span class="k">public</span> <span class="k">static</span> <span class="n">FileHelpers</span><span class="p">.</span><span class="n">MasterDetail</span><span class="p">.</span><span class="n">RecordAction</span> <span class="nf">ExampleSelector</span><span class="p">(</span><span class="kt">string</span> <span class="n">record</span><span class="p">)</span>     
+    <span class="p">{</span>          
+        <span class="k">if</span> <span class="p">(</span><span class="n">Char</span><span class="p">.</span><span class="nf">IsLetter</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="m">0</span><span class="p">]))</span>             
+            <span class="k">return</span> <span class="n">FileHelpers</span><span class="p">.</span><span class="n">MasterDetail</span><span class="p">.</span><span class="n">RecordAction</span><span class="p">.</span><span class="n">Master</span><span class="p">;</span>         
+        <span class="k">else</span>             
+            <span class="k">return</span> <span class="n">FileHelpers</span><span class="p">.</span><span class="n">MasterDetail</span><span class="p">.</span><span class="n">RecordAction</span><span class="p">.</span><span class="n">Detail</span><span class="p">;</span>     
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="err">###</span> <span class="n">C</span><span class="err">#</span> <span class="n">Detail</span> <span class="n">Class</span>
+<span class="n">Save</span> <span class="n">the</span> <span class="n">below</span> <span class="n">to</span> <span class="n">detail</span><span class="p">.</span><span class="n">cs</span>
+
+<span class="err">```</span><span class="n">cs</span>
+<span class="na">[DelimitedRecord("|")]</span> 
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Orders</span> 
+<span class="p">{</span>    
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">OrderID</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">CustomerID</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">EmployeeID</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="n">DateTime</span> <span class="n">OrderDate</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="n">DateTime</span> <span class="n">RequiredDate</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="n">DateTime</span> <span class="n">ShippedDate</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">ShipVia</span><span class="p">;</span>    
+    <span class="k">public</span> <span class="kt">decimal</span> <span class="n">Freight</span><span class="p">;</span> 
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>Create a new Workflow in Zynk, and drag on the Master Detail Converter task from the FileHelpers folder. Set the following settings on the task.</p>
+
+<h4 id="detail-convert-class">Detail Convert Class</h4>
+<p>Path to detail.cs (ensure this is set to type of File)</p>
+
+<h4 id="master-convert-file">Master Convert File</h4>
+<p>Path to master.cs (ensure this is set to type of File)</p>
+
+<h4 id="error-file">Error File</h4>
+<p>error.txt</p>
+
+<h4 id="input-file-1">Input File </h4>
+<p>Path to input.txt (ensure this is set to type of File)</p>
+
+<h4 id="output-file">Output File </h4>
+<p>output.xml</p>
+
+<h2 id="fixed-length-record">Fixed Length Record</h2>
+<p>Furthermore, using a C# class you can read in a fixed file format and convert to XML, which can then be used for further processing within Zynk Workflows e.g. with the XSLT Transform.</p>
+
+<h2 id="input-file-2">Input File</h2>
+<p>Save the below to input.txt</p>
+
+<p>The format is customer ID (5 characters), customer name (20 characters), balance (8 characters, 000000.00 format) and date created (8 characters, ddMMyyyy format).</p>
+
+<pre><code class="language-csv">01732Juan Perez           004350011052002 00554Pedro Gomez          123423406022004 
+00112Ramiro Politti       000000001022000 00924Pablo Ramirez        033213024112002
+</code></pre>
+
+<h3 id="c-master-class-1">C# Master Class</h3>
+<p>Save the below to class.cs</p>
+
+<div class="language-cs highlighter-rouge"><pre class="highlight"><code><span class="na">[FixedLengthRecord()]</span>  
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Customer</span> 
+<span class="p">{</span>      
+    <span class="p">[</span><span class="nf">FieldFixedLength</span><span class="p">(</span><span class="m">5</span><span class="p">)]</span>      
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">CustId</span><span class="p">;</span>       
+    
+    <span class="p">[</span><span class="nf">FieldFixedLength</span><span class="p">(</span><span class="m">20</span><span class="p">)]</span>      
+    <span class="c1">// Trim any spaces to the right of the name     
+</span>    <span class="p">[</span><span class="nf">FieldTrim</span><span class="p">(</span><span class="n">TrimMode</span><span class="p">.</span><span class="n">Right</span><span class="p">)]</span>     
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span><span class="p">;</span>           
+    
+    <span class="p">[</span><span class="nf">FieldFixedLength</span><span class="p">(</span><span class="m">8</span><span class="p">)]</span>      
+    <span class="c1">// Convert this field using the custom converter TwoDecimalConverter     
+</span>    <span class="p">[</span><span class="nf">FieldConverter</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">TwoDecimalConverter</span><span class="p">))]</span>      
+    <span class="k">public</span> <span class="kt">decimal</span> <span class="n">Balance</span><span class="p">;</span>           
+    
+    <span class="p">[</span><span class="nf">FieldFixedLength</span><span class="p">(</span><span class="m">8</span><span class="p">)]</span>      
+    <span class="c1">// Convert this field using the built in date converter     
+</span>    <span class="p">[</span><span class="nf">FieldConverter</span><span class="p">(</span><span class="n">ConverterKind</span><span class="p">.</span><span class="n">Date</span><span class="p">,</span> <span class="s">"ddMMyyyy"</span><span class="p">)]</span>      
+    <span class="k">public</span> <span class="n">DateTime</span> <span class="n">AddedDate</span><span class="p">;</span>           
+    
+    <span class="c1">// A custom converter - converts a number stored in the form 00000000 to 000000.00     
+</span>    <span class="k">internal</span> <span class="k">class</span> <span class="nc">TwoDecimalConverter</span><span class="p">:</span> <span class="n">ConverterBase</span>      
+    <span class="p">{</span>          
+    	<span class="k">public</span> <span class="k">override</span> <span class="kt">object</span> <span class="nf">StringToField</span><span class="p">(</span><span class="kt">string</span> <span class="k">from</span><span class="p">)</span>          
+    	<span class="p">{</span>              
+    		<span class="kt">decimal</span> <span class="n">res</span> <span class="p">=</span> <span class="n">Convert</span><span class="p">.</span><span class="nf">ToDecimal</span><span class="p">(</span><span class="k">from</span><span class="p">);</span>              
+    		<span class="k">return</span> <span class="n">res</span> <span class="p">/</span> <span class="m">100</span><span class="p">;</span>          
+    	<span class="p">}</span>                   
+    
+    	<span class="k">public</span> <span class="k">override</span> <span class="kt">string</span> <span class="nf">FieldToString</span><span class="p">(</span><span class="kt">object</span> <span class="k">from</span><span class="p">)</span>          
+    	<span class="p">{</span>              
+    		<span class="kt">decimal</span> <span class="n">d</span> <span class="p">=</span> <span class="p">(</span><span class="kt">decimal</span><span class="p">)</span> <span class="k">from</span><span class="p">;</span>              
+    		<span class="k">return</span> <span class="n">Math</span><span class="p">.</span><span class="nf">Round</span><span class="p">(</span><span class="n">d</span> <span class="p">*</span> <span class="m">100</span><span class="p">).</span><span class="nf">ToString</span><span class="p">();</span>          
+    	<span class="p">}</span>     
+    <span class="p">}</span>  
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h3 id="zynk-settings-1">Zynk Settings</h3>
+<p>Create a new Workflow in Zynk, and drag on the Basic Converter task from the FileHelpers folder. Set the following settings on the task.</p>
+
+<h4 id="convert-class">Convert Class</h4>
+<p>Path to class.cs (ensure this is set to type of File)</p>
+
+<h4 id="error-file-1">Error File</h4>
+<p>error.txt (ensure this is set to type of File)</p>
+
+<h4 id="input-file-3">Input File</h4>
+<p>Path to input.txt (ensure this is set to type of File)</p>
+
+<h4 id="output-file-1">Output File</h4>
+<p>output.xml (ensure this is set to type of File)</p>
+
+<h3 id="output-xml">Output XML</h3>
+<p>After saving and running the Workflow, the output.xml file should contain the following XML representation of the input file.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ArrayOfAnyType</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;anyType</span> <span class="na">xsi:type=</span><span class="s">"Customer"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;CustId&gt;</span>1732<span class="nt">&lt;/CustId&gt;</span>
+		<span class="nt">&lt;Name&gt;</span>Juan Perez<span class="nt">&lt;/Name&gt;</span>
+		<span class="nt">&lt;Balance&gt;</span>435<span class="nt">&lt;/Balance&gt;</span>
+		<span class="nt">&lt;AddedDate&gt;</span>2002-05-11T00:00:00<span class="nt">&lt;/AddedDate&gt;</span>
+	<span class="nt">&lt;/anyType&gt;</span>
+	<span class="nt">&lt;anyType</span> <span class="na">xsi:type=</span><span class="s">"Customer"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;CustId&gt;</span>554<span class="nt">&lt;/CustId&gt;</span>
+		<span class="nt">&lt;Name&gt;</span>Pedro Gomez<span class="nt">&lt;/Name&gt;</span>
+		<span class="nt">&lt;Balance&gt;</span>12342.34<span class="nt">&lt;/Balance&gt;</span>
+		<span class="nt">&lt;AddedDate&gt;</span>2004-02-06T00:00:00<span class="nt">&lt;/AddedDate&gt;</span>
+	<span class="nt">&lt;/anyType&gt;</span>
+	<span class="nt">&lt;anyType</span> <span class="na">xsi:type=</span><span class="s">"Customer"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;CustId&gt;</span>112<span class="nt">&lt;/CustId&gt;</span>
+		<span class="nt">&lt;Name&gt;</span>Ramiro Politti<span class="nt">&lt;/Name&gt;</span>
+		<span class="nt">&lt;Balance&gt;</span>0<span class="nt">&lt;/Balance&gt;</span>
+		<span class="nt">&lt;AddedDate&gt;</span>2000-02-01T00:00:00<span class="nt">&lt;/AddedDate&gt;</span>
+	<span class="nt">&lt;/anyType&gt;</span>
+	<span class="nt">&lt;anyType</span> <span class="na">xsi:type=</span><span class="s">"Customer"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;CustId&gt;</span>924<span class="nt">&lt;/CustId&gt;</span>
+		<span class="nt">&lt;Name&gt;</span>Pablo Ramirez<span class="nt">&lt;/Name&gt;</span>
+		<span class="nt">&lt;Balance&gt;</span>3321.3<span class="nt">&lt;/Balance&gt;</span>
+		<span class="nt">&lt;AddedDate&gt;</span>2002-11-24T00:00:00<span class="nt">&lt;/AddedDate&gt;</span>
+	<span class="nt">&lt;/anyType&gt;</span>
+<span class="nt">&lt;/ArrayOfAnyType&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Using-Zynk-Section/File-Helpers---Advanced-Usage.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sage 50 UK Supplier XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Sage 50 UK Supplier XML</h1>
+                    <p>The Import Suppliers task will allow you to generate a new Supplier in a new sage through Zynk’s XML format. </p>
+
+<p>If you follow the below instructions on the XML format you will be able to customise your XML file to meet your needs. Whilst you can auto create a Supplier based on a setting on the Import Sales Orders/Invoices Task, if you are looking to specify precise things on the Supplier record in Sage it is always best to use a separate Import Suppliers task.</p>
+
+<p>See the below sample Supplier file:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Suppliers&gt;</span>
+    <span class="nt">&lt;Supplier&gt;</span>
+      <span class="nt">&lt;Id&gt;</span>123<span class="nt">&lt;/Id&gt;</span>
+      <span class="nt">&lt;AccountReference&gt;</span>JOE001<span class="nt">&lt;/AccountReference&gt;</span>
+      <span class="nt">&lt;CompanyName&gt;</span>Zynk Software Limited<span class="nt">&lt;/CompanyName&gt;</span>
+      <span class="nt">&lt;SupplierInvoiceAddress&gt;</span>
+        <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Joe<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Harrison<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>Zynk Software Limited<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>Nelson House, Fleming Business Centre<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>Jesmond<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Newcastle upon Tyne<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE2 3AE<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne and Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+        <span class="nt">&lt;Email&gt;</span>support@zynk.com<span class="nt">&lt;/Email&gt;</span>
+        <span class="nt">&lt;Website&gt;</span>www.zynk.com<span class="nt">&lt;/Website&gt;</span>
+      <span class="nt">&lt;/SupplierInvoiceAddress&gt;</span>
+      <span class="nt">&lt;SupplierDeliveryAddress&gt;</span>
+        <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Joe<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Harrison<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>Zynk Software Limited<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>Nelson House, Fleming Business Centre<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>Jesmond<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Newcastle upon Tyne<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE2 3AE<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne and Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+      <span class="nt">&lt;/SupplierDeliveryAddress&gt;</span>
+      <span class="nt">&lt;Analysis1&gt;</span>North East<span class="nt">&lt;/Analysis1&gt;</span>
+      <span class="nt">&lt;NominalCode&gt;</span>4000<span class="nt">&lt;/NominalCode&gt;</span>
+      <span class="nt">&lt;DepartmentInfo&gt;</span>
+        <span class="nt">&lt;Reference&gt;</span>4<span class="nt">&lt;/Reference&gt;</span>
+        <span class="nt">&lt;Name&gt;</span>Admin<span class="nt">&lt;/Name&gt;</span>
+      <span class="nt">&lt;/DepartmentInfo&gt;</span>
+      <span class="nt">&lt;OverrideNominalCode</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;TaxCode&gt;</span>4<span class="nt">&lt;/TaxCode&gt;</span>
+      <span class="nt">&lt;Currency&gt;</span>GBP<span class="nt">&lt;/Currency&gt;</span>
+      <span class="nt">&lt;TermsAgreed&gt;</span>true<span class="nt">&lt;/TermsAgreed&gt;</span>
+      <span class="nt">&lt;AccountOnHold&gt;</span>false<span class="nt">&lt;/AccountOnHold&gt;</span>
+    <span class="nt">&lt;/Supplier&gt;</span>
+  <span class="nt">&lt;/Suppliers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<p>In each of the following sections most of the XML has been omitted to make the samples easier to read. The whole structure of the Company schema is used below as a reference of where fields should be in the object model.</p>
+
+<h2 id="details">Details</h2>
+<p>The fields below on the Details tab in Sage can be set via the XML. Depending on your configuration at the Task Settings level in Zynk, you may not need to specify an account reference for every supplier because they can be generated automatically through Zynk.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>Id</td>
+      <td>123</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>A/C</td>
+      <td>AccountReference</td>
+      <td>JOE001</td>
+      <td>string</td>
+      <td>8</td>
+      <td>Required, depending on settings</td>
+    </tr>
+    <tr>
+      <td>Company Name</td>
+      <td>CompanyName</td>
+      <td>Zynk Software Limited</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Street 1</td>
+      <td>Address1</td>
+      <td>Nelson House, Fleming Business Centre</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Street 2</td>
+      <td>Address2</td>
+      <td>Jesmond</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Town</td>
+      <td>Town</td>
+      <td>Newcastle upon Tyne</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>County </td>
+      <td>County </td>
+      <td>Tyne &amp; Wear </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Post Code</td>
+      <td>Postcode</td>
+      <td>NE2 3AE</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>Country</td>
+      <td>GB</td>
+      <td>string</td>
+      <td>2</td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>VAT Number</td>
+      <td>VatNumber</td>
+      <td>796 5763 59</td>
+      <td>string</td>
+      <td>30 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Contact Name</td>
+      <td>FullName*</td>
+      <td>Mr Joe E Harrison Jr.</td>
+      <td>string</td>
+      <td>30 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>- </td>
+      <td>Title </td>
+      <td>Mr </td>
+      <td>string </td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>- </td>
+      <td>Forename </td>
+      <td>Joe </td>
+      <td>string </td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>- </td>
+      <td>Middlename </td>
+      <td>E </td>
+      <td>string </td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>- </td>
+      <td>Surname </td>
+      <td>Harrison </td>
+      <td>string </td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>- </td>
+      <td>Suffix </td>
+      <td>Jr. </td>
+      <td>string </td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Trade Contact</td>
+      <td>TradeContact</td>
+      <td>Joe Harrison</td>
+      <td>string </td>
+      <td>30 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Telephone</td>
+      <td>Telephone</td>
+      <td>0845 123 2920</td>
+      <td>string </td>
+      <td>30 </td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Telephone 2</td>
+      <td>Mobile</td>
+      <td>0777 777 7777 </td>
+      <td>string </td>
+      <td>30 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Fax</td>
+      <td>Fax</td>
+      <td>0845 123 2921</td>
+      <td>string </td>
+      <td>30 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Website</td>
+      <td>Website</td>
+      <td>http://www.zynk.com/</td>
+      <td>string</td>
+      <td>255 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>Email</td>
+      <td>support@zynk.com</td>
+      <td>string </td>
+      <td>255</td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Electronic Letters</td>
+      <td>SendElectronicLetter </td>
+      <td>true </td>
+      <td>bool </td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Electronic Invoices</td>
+      <td>SendElectronicInvoice </td>
+      <td>true </td>
+      <td>bool </td>
+      <td>- </td>
+      <td>Optional  </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>FullName* - This field is not set directly in the XML, but is built up of Title, Forename, Middlename, Surname and Suffix.</li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Suppliers&gt;</span>
+    <span class="nt">&lt;Supplier&gt;</span>
+      <span class="nt">&lt;Id&gt;</span>123<span class="nt">&lt;/Id&gt;</span>
+      <span class="nt">&lt;AccountReference&gt;</span>JOE001<span class="nt">&lt;/AccountReference&gt;</span>
+      <span class="nt">&lt;CompanyName&gt;</span>Zynk Software Limited<span class="nt">&lt;/CompanyName&gt;</span>
+      <span class="nt">&lt;SupplierInvoiceAddress&gt;</span>
+        <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Joe<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Middlename&gt;</span>E<span class="nt">&lt;/Middlename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Harrison<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Suffix&gt;</span>Jr.<span class="nt">&lt;/Suffix&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>Zynk Software Limited<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>Nelson House, Fleming Business Centre<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>Jesmond<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Newcastle upon Tyne<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE2 3AE<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne and Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+        <span class="nt">&lt;Fax&gt;</span>0845 123 2921<span class="nt">&lt;/Fax&gt;</span>
+        <span class="nt">&lt;Mobile&gt;</span>0777 777 7777<span class="nt">&lt;/Mobile&gt;</span>
+        <span class="nt">&lt;Email&gt;</span>support@zynk.com<span class="nt">&lt;/Email&gt;</span>
+        <span class="nt">&lt;Website&gt;</span>www.zynk.com<span class="nt">&lt;/Website&gt;</span>
+        <span class="nt">&lt;TradeContact&gt;</span>Joe Harrison<span class="nt">&lt;/TradeContact&gt;</span>
+      <span class="nt">&lt;/SupplierInvoiceAddress&gt;</span>
+      <span class="nt">&lt;VatNumber&gt;</span>796 5763 59<span class="nt">&lt;/VatNumber&gt;</span>
+      <span class="nt">&lt;SendElectronicInvoice&gt;</span>true<span class="nt">&lt;/SendElectronicInvoice&gt;</span>
+      <span class="nt">&lt;SendElectronicLetter&gt;</span>true<span class="nt">&lt;/SendElectronicLetter&gt;</span>
+    <span class="nt">&lt;/Supplier&gt;</span>
+  <span class="nt">&lt;/Suppliers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="defaults">Defaults</h2>
+<p>The below information will appear on the Defaults tab of the Supplier record in Sage 50. This is all optional information when building your Supplier Import XML, none of the below fields are mandatory when importing a Supplier.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Analysis 1</td>
+      <td>Analysis1 </td>
+      <td>North East </td>
+      <td>string </td>
+      <td>30 </td>
+      <td>Optional </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Analysis 2 </td>
+      <td>Analysis2 </td>
+      <td>Support </td>
+      <td>string </td>
+      <td>30 </td>
+      <td>Optional </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Analysis 3 </td>
+      <td>Analysis3 </td>
+      <td>01/01/2014 </td>
+      <td>string </td>
+      <td>30 </td>
+      <td>Optional </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Discount % </td>
+      <td>FixedDiscount </td>
+      <td>10 </td>
+      <td>double </td>
+      <td>- </td>
+      <td>Optional </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Default Nominal Code </td>
+      <td>NominalCode </td>
+      <td>4000 </td>
+      <td>string </td>
+      <td>8 </td>
+      <td>Optional </td>
+      <td>If not specified when creating a supplier, the nominal code will be set to the default configured in Sage.</td>
+    </tr>
+    <tr>
+      <td>Default Tax Code </td>
+      <td>TaxCode </td>
+      <td>1 </td>
+      <td>int </td>
+      <td>2 </td>
+      <td>Optional </td>
+      <td>If not specified when creating a supplier, the tax code will be set to the default configured in Sage.</td>
+    </tr>
+    <tr>
+      <td>Currency </td>
+      <td>Currency</td>
+      <td>GBP </td>
+      <td>string </td>
+      <td>2 </td>
+      <td>Optional </td>
+      <td>This field can only be set when creating a new supplier</td>
+    </tr>
+    <tr>
+      <td>Department</td>
+      <td>DepartmentInfo/Reference</td>
+      <td>4</td>
+      <td>int </td>
+      <td>3</td>
+      <td>Optional</td>
+      <td>If not specified when creating a supplier, the department will be set to the default configured in Sage.</td>
+    </tr>
+    <tr>
+      <td>Department</td>
+      <td>DepartmentInfo/Name</td>
+      <td>Admin</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>If not specified when creating a supplier, the department will be set to the default configured in Sage.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Suppliers&gt;</span>
+    <span class="nt">&lt;Supplier&gt;</span>  
+      <span class="nt">&lt;Analysis1&gt;</span>North East<span class="nt">&lt;/Analysis1&gt;</span>
+      <span class="nt">&lt;Analysis2&gt;</span>Support<span class="nt">&lt;/Analysis2&gt;</span>
+      <span class="nt">&lt;Analysis3&gt;</span>01/01/2013<span class="nt">&lt;/Analysis3&gt;</span>
+      <span class="nt">&lt;FixedDiscount&gt;</span>10<span class="nt">&lt;/FixedDiscount&gt;</span>
+      <span class="nt">&lt;NominalCode&gt;</span>4000<span class="nt">&lt;/NominalCode&gt;</span>
+      <span class="nt">&lt;TaxCode&gt;</span>1<span class="nt">&lt;/TaxCode&gt;</span>
+      <span class="nt">&lt;Currency&gt;</span>GBP<span class="nt">&lt;/Currency&gt;</span>
+      <span class="nt">&lt;DepartmentInfo&gt;</span>
+        <span class="nt">&lt;Reference&gt;</span>4<span class="nt">&lt;/Reference&gt;</span>
+        <span class="nt">&lt;Name&gt;</span>Admin<span class="nt">&lt;/Name&gt;</span>
+      <span class="nt">&lt;/DepartmentInfo&gt;</span>
+   <span class="nt">&lt;/Supplier&gt;</span>
+ <span class="nt">&lt;/Suppliers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<p>Credit Control
+When importing a Supplier record you can also set fields on the Credit Control tab like Account Status, Terms Agreed and more.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Credit Limit </td>
+      <td>CreditLimit </td>
+      <td>1000 </td>
+      <td>double </td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Priority Supplier</td>
+      <td>Priority </td>
+      <td>true </td>
+      <td>bool </td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Account Status </td>
+      <td>AccountStatus* </td>
+      <td>0 </td>
+      <td>int </td>
+      <td>2 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Terms Agreed </td>
+      <td>TermsAgreed </td>
+      <td>true </td>
+      <td>bool </td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>AccountStatus* - This field is only set when creating a new customer.</li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Suppliers&gt;</span>
+    <span class="nt">&lt;Supplier&gt;</span>
+      <span class="nt">&lt;CreditLimit&gt;</span>1000<span class="nt">&lt;/CreditLimit&gt;</span>
+      <span class="nt">&lt;Priority&gt;</span>true<span class="nt">&lt;/Priority&gt;</span>
+      <span class="nt">&lt;AccountStatus&gt;</span>0<span class="nt">&lt;/AccountStatus&gt;</span>
+      <span class="nt">&lt;TermsAgreed&gt;</span>true<span class="nt">&lt;/TermsAgreed&gt;</span>
+    <span class="nt">&lt;/Supplier&gt;</span>
+  <span class="nt">&lt;/Suppliers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="bank">Bank</h2>
+<p>Bank information on the Customer record can also be set via XML, see the node information below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bank Name </td>
+      <td>BankName </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Street 1 </td>
+      <td>Address1 </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Street 2 </td>
+      <td>Address2 </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Town </td>
+      <td>Town </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>County </td>
+      <td>County </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Post Code </td>
+      <td>Postcode </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Account Name </td>
+      <td>AccountName </td>
+      <td>-</td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Sort Code </td>
+      <td>SortCode </td>
+      <td>- </td>
+      <td>string </td>
+      <td>10 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Account Number </td>
+      <td>AccountNumber </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>BACS Ref </td>
+      <td>BACSRef </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>IBAN </td>
+      <td>IBAN </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>BIC/Swift</td>
+      <td>BICSwift </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Roll Number </td>
+      <td>RollNumber </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Additional Ref 1 </td>
+      <td>AdditionalRef1 </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Additional Ref 2 </td>
+      <td>AdditionalRef2 </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Additional Ref 3 </td>
+      <td>AdditionalRef3 </td>
+      <td>- </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Online Receipts </td>
+      <td>OnlineReceipts </td>
+      <td>false </td>
+      <td>bool </td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Suppliers&gt;</span>
+    <span class="nt">&lt;Supplier&gt;</span>
+      <span class="nt">&lt;Banks&gt;</span>
+        <span class="nt">&lt;Bank&gt;</span>
+          <span class="nt">&lt;BankName</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;Address1</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;Address2</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;Town</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;County</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;Postcode</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;AccountName</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;SortCode</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;AccountNumber</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;BACSRef</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;IBAN</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;BICSwift</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;RollNumber</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;AdditionalRef1</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;AdditionalRef2</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;AdditionalRef3</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;OnlineReceipts&gt;</span>false<span class="nt">&lt;/OnlineReceipts&gt;</span>
+        <span class="nt">&lt;/Bank&gt;</span>
+      <span class="nt">&lt;/Banks&gt;</span>
+    <span class="nt">&lt;/Supplier&gt;</span>
+  <span class="nt">&lt;/Suppliers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-50-UK-Connector/Sage-50-UK-Supplier-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

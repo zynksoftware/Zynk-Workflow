@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Workflows</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Workflows</h1>
+                    <p>In Zynk a Workflow is a collection of Tasks or “actions”, that when ran together can be used to automate your business processes.  Once configured a workflow can either be ran on demand through Zynk, or setup using Windows Schedule Tasks to run on regular basis.  Each workflow can consist of up to 20 tasks, so some processes may need to be split up over multiple workflows.</p>
+
+<p>For information on how to create workflows using Zynk, see <a href="creating-new-workflows">Creating New Workflows</a></p>
+
+<h2 id="tasks">Tasks</h2>
+<p>You build up the structure of the workflow by adding tasks from the Task Library, these are added to the current workflows Task List.  The example below shows an example workflow that could be used to download orders from a website, convert the data into the required format, import the data as invoices in Sage, and finally email the customers their invoice.  You can edit the settings for each task using the grid on the right of Zynk.</p>
+
+<p><a href="https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b08f7c9033603f7da36fb3/file-1uwzUl6pIN.png"><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b08f7c9033603f7da36fb3/file-1uwzUl6pIN.png" alt="" /></a></p>
+
+<h2 id="properties">Properties</h2>
+<p>Each workflow has a set of properties which can be configured on the ‘Properties’ tab.</p>
+
+<h3 id="email-workflow-report">Email Workflow Report</h3>
+<p><em>Required</em><br />
+Zynk can email a workflow report after running, which details the tasks that ran and any messages logged.  The options available are:-</p>
+
+<ul>
+  <li>Never (default) - will never send any report emails</li>
+  <li>Always - will always send a report regardless if the workflow was successful or not</li>
+  <li>OnFailure - will only send a report if one of the tasks fails (and break of fail for that task is true)</li>
+  <li>OnErrorFlag - will only send a report if the Set Error Flag has been used in the workflow, allowing for finer control of error handling</li>
+</ul>
+
+<h3 id="email-workflow-report-to">Email Workflow Report To</h3>
+<p><em>Optional</em><br />
+The email address(es) to send the workflow reports to.</p>
+
+<h3 id="include-workflow-log">Include Workflow Log</h3>
+<p><em>Required</em><br />
+Choose when the log messages should be included in the report.</p>
+
+<h3 id="description">Description</h3>
+<p><em>Optional</em><br />
+You can enter a brief description of the workflow’s functions here.</p>
+
+<h3 id="documentation">Documentation</h3>
+<p><em>Optional</em><br />
+You can enter HTML formatted documentation of the workflow’s functions here.</p>
+
+<h3 id="history-house-keeping">History House Keeping</h3>
+<p><em>Required</em><br />
+Settings to control how long entries in the workflow history should be kept. The default setting is 90 days.</p>
+
+<h3 id="id">Id</h3>
+<p><em>Read Only</em><br />
+The workflow’s unique identification number.</p>
+
+<h3 id="last-ran">Last Ran</h3>
+<p><em>Required</em><br />
+The date the workflow was last ran.</p>
+
+<h3 id="last-result">Last Result</h3>
+<p><em>Required</em><br />
+The result when the workflow was last ran.</p>
+
+<h3 id="name">Name</h3>
+<p><em>Read Only</em><br />
+The name of the workflow. To rename a workflow, right click on the workflow in the ‘My Workflows’ tab, and click ‘Rename’.</p>
+
+<h3 id="show-help-on-startup">Show Help On Startup</h3>
+<p><em>Required</em><br />
+Set to true to display the documentation when the workflow is opened.</p>
+
+<h3 id="use-mutex">Use Mutex</h3>
+<p><em>Required</em><br />
+Set to true to prevent more than one copy of the workflow running simultaneously.</p>
+
+<h3 id="variables">Variables</h3>
+<p><em>Required</em><br />
+The list of workflow variables. See <a href="variables">Variables</a> for more information.</p>
+
+<h3 id="version">Version</h3>
+<p><em>Read Only</em><br />
+The version of Zynk which last saved the workflow.</p>
+
+<h2 id="typical-use-cases">Typical Use Cases</h2>
+<p>Two of the most common use cases for workflows are to download data from an e-commerce website and import in into Sage, or export data from Sage and upload it to an e-commerce website. See below for an overview of how this can be achieved.</p>
+
+<h3 id="download-from-website-to-sage">Download from website to Sage</h3>
+
+<ul>
+  <li>Download the required data from the website using the appropriate task. For example, this may be the [Amazon Order Download]] task or the [<a href="amazon-order-download]]-task-or-the [[magento-order-download">Magento Order Download</a> task.</li>
+  <li>Transform the data to the Zynk format. This can be done using the [Auto Mapper]] task or an [<a href="auto-mapper]]-task-or-an [[xslt-transform">XSLT Transform</a>.</li>
+  <li>Import the data into Sage using the appropriate task. For example, this may be the <a href="sage-50-import-sales-orders">Sage 50 Import Sales Orders</a> task.</li>
+</ul>
+
+<h3 id="upload-from-sage-to-website">Upload from Sage to website</h3>
+
+<ul>
+  <li>Export the required data from Sage using the appropriate task. For example, this may be the <a href="sage-50-export-stock-records">Sage 50 Export Stock Records</a> task.</li>
+  <li>Transform the data to the website’s format. This can be done using the [Auto Mapper]] task or an [<a href="auto-mapper]]-task-or-an [[xslt-transform">XSLT Transform</a>.</li>
+  <li>Upload the data to the website using the appropriate task. For example, this may be the <a href="magento-upload-inventory">Magento Upload Inventory</a> task.</li>
+</ul>
+
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Key-Concepts-Section/Workflows.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

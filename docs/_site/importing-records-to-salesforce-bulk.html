@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Importing Records to Salesforce (Bulk)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Importing Records to Salesforce (Bulk)</h1>
+                    <p>This task will update or insert multiple records in Salesforce. Existing records are matched with those provided in the input file, based on the Salesforce field specified in the Salesforce Key Field setting, and the field from the input file specified by the XML Key Field setting. Unlike the [Importing Records to Salesforce]] and [<a href="importing-records-to-salesforce]]-and [[bulk-salesforce-operation">Bulk Salesforce Operation</a> task, the Salesforce field does not need to be of type External Id. If a match is found the existing record will be updated, or if no match is found a new record will be inserted.</p>
+
+<h2 id="settings">Settings</h2>
+
+<h3 id="connection">Connection</h3>
+<p><em>Required</em><br />
+The Salesforce (Bulk) connection to use, see <a href="connecting-to-salesforce-(bulk)">Connecting to Salesforce (Bulk)</a></p>
+
+<h3 id="salesforce-key-field">Salesforce Key Field</h3>
+<p><em>Required</em><br />
+The field in Salesforce to use to match existing records.</p>
+
+<h3 id="salesforce-object">Salesforce Object</h3>
+<p><em>Required</em><br />
+The record type to upload e.g. Account.</p>
+
+<h3 id="input-file">Input File</h3>
+<p><em>Required</em><br />
+The file containing the raw product data to import to Salesforce. The contents of this file will be transformed using the XSLT file provided before being imported to Salesforce.</p>
+
+<h3 id="xml-key-field">XML Key Field</h3>
+<p><em>Required</em><br />
+The relative XPath query to get the value to match on from a record in the input file.</p>
+
+<h3 id="xpath-query">XPath Query</h3>
+<p><em>Required</em><br />
+The XPath query (relative to the one provided in the XPath Query setting) to get individual records from the input file.</p>
+
+<h3 id="xslt-file">XSLT File</h3>
+<p><em>Required</em><br />
+The XSLT file to use to transform the input file to objects in the Salesforce XML format. The XML field names outputted from the XSLT must match Salesforce object API field names. A list of standard API field names can be found <a href="http://help.salesforce.com/help/pdfs/en/salesforce_field_names_reference.pdf">here</a>. Any custom fields added to the chosen object are supported, and are usually named like <code class="highlighter-rouge">Account_Ref__c</code>.</p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a></p>
+
+<h2 id="examples">Examples</h2>
+
+<p>You can find an example of how to use this task in the <a href="salesforce-to-sage-50-integration">Salesforce to Sage 50 Integration</a> article.</p>
+
+<p>Sample input file containing customers in the Zynk XML format, to be uploaded to Salesforce as accounts:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+  <span class="nt">&lt;Customers&gt;</span>
+    <span class="nt">&lt;Customer&gt;</span>
+      <span class="nt">&lt;UniqueId&gt;</span>ABS001<span class="nt">&lt;/UniqueId&gt;</span>
+      <span class="nt">&lt;AccountReference&gt;</span>ABS001<span class="nt">&lt;/AccountReference&gt;</span>
+      <span class="nt">&lt;CompanyName&gt;</span>ABS Garages Ltd<span class="nt">&lt;/CompanyName&gt;</span>
+      <span class="nt">&lt;Balance&gt;</span>2533.31<span class="nt">&lt;/Balance&gt;</span>
+      <span class="nt">&lt;Currency&gt;</span>GBP<span class="nt">&lt;/Currency&gt;</span>
+      <span class="nt">&lt;CustomerInvoiceAddress&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Mike<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Hall<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>ABS Garages Ltd<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>Unit 34<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>Holystone Ind Estate<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Hebburn<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE31 1VB<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne <span class="ni">&amp;amp;</span> Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;Telephone&gt;</span>0191 254 5909<span class="nt">&lt;/Telephone&gt;</span>
+        <span class="nt">&lt;Fax&gt;</span>0191 254 5907<span class="nt">&lt;/Fax&gt;</span>
+        <span class="nt">&lt;Email&gt;</span>newbusinessadvice@sage.com<span class="nt">&lt;/Email&gt;</span>
+        <span class="nt">&lt;Website&gt;</span>www.sage.co.uk<span class="nt">&lt;/Website&gt;</span>
+      <span class="nt">&lt;/CustomerInvoiceAddress&gt;</span>
+    <span class="nt">&lt;/Customer&gt;</span>
+  <span class="nt">&lt;/Customers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<p>Given this input file, the XPath Query setting would need to be set to <code class="highlighter-rouge">Company/Customers/Customer</code>, the XML Key Field would be set to <code class="highlighter-rouge">AccountReference</code> and the Salesforce Object would be set to <code class="highlighter-rouge">Account</code>. The Salesforce Key Field setting would be set to <code class="highlighter-rouge">AccountNumber</code>, as this is the field which will be used when searching for existing accounts in Salesforce.</p>
+
+<p>Sample XSLT file to convert the input file above to the Salesforce XML format:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;xsl:output</span> <span class="na">method=</span><span class="s">"xml"</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="na">encoding=</span><span class="s">"utf-8"</span> <span class="na">indent=</span><span class="s">"yes"</span> <span class="na">xmlns=</span><span class="s">"http://www.force.com/2009/06/asyncapi/dataload"</span><span class="nt">/&gt;</span>
+  
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;sObjects</span> <span class="na">xmlns=</span><span class="s">"http://www.force.com/2009/06/asyncapi/dataload"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;xsl:for-each</span> <span class="na">select=</span><span class="s">"Company/Customers/Customer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;sObject&gt;</span>
+          <span class="c">&lt;!-- The task will write out the Id field when the record already exists in Salesforce, this just needs to be copied by the XSLT --&gt;</span>
+          <span class="nt">&lt;xsl:if</span> <span class="na">test=</span><span class="s">"Id"</span><span class="nt">&gt;</span> 
+            <span class="nt">&lt;Id&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"Id"</span><span class="nt">/&gt;&lt;/Id&gt;</span>
+          <span class="nt">&lt;/xsl:if&gt;</span>
+    				
+          <span class="nt">&lt;AccountNumber&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"AccountReference"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;/AccountNumber&gt;</span>
+          <span class="nt">&lt;CurrencyIsoCode&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"Currency"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/CurrencyIsoCode&gt;</span>
+          <span class="nt">&lt;Name&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CompanyName"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/Name&gt;</span>
+          <span class="nt">&lt;BillingStreet&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Address1"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;xsl:text&gt;</span> <span class="nt">&lt;/xsl:text&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Address2"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;/BillingStreet&gt;</span>
+          <span class="nt">&lt;BillingCity&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Town"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/BillingCity&gt;</span>
+          <span class="nt">&lt;BillingState&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/County"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/BillingState&gt;</span>
+          <span class="nt">&lt;BillingPostalCode&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Postcode"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/BillingPostalCode&gt;</span>
+          <span class="nt">&lt;BillingCountry&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Country"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/BillingCountry&gt;</span>
+          <span class="nt">&lt;Phone&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Telephone"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/Phone&gt;</span>
+          <span class="nt">&lt;Fax&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Fax"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/Fax&gt;</span>
+          <span class="nt">&lt;Website&gt;</span>
+            <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Website"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/Website&gt;</span>
+        <span class="nt">&lt;/sObject&gt;</span>
+      <span class="nt">&lt;/xsl:for-each&gt;</span>
+    <span class="nt">&lt;/sObjects&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Salesforce-Connector/Importing-Records-to-Salesforce-(Bulk).md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

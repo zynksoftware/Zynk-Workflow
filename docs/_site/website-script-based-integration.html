@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website Script Based Integration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Website Script Based Integration</h1>
+                    <p>This article will provide an overview of a typical script based Website to Sage integration (the example Workflow provided is specifically for a Sage 50 based integration but can be replaced by the relevant Sage 200 or ACT! tasks). More information can be found on the connector pages [Sage 50 UK]], [<a href="sage-50-uk]],-[[sage-200">Sage 200</a> and [ACT!. What you will not find in this article is how to develop the website scripts. What the website scripts contain and what (programming) language they are developed in is entirely dependent upon the requirements of the project and what (programming) language the website itself is developed in. Some example scripts of more common e-commerce website integrations are <a href="https://github.com/zynksoftware/samples/tree/master/PHP">available here</a>.</p>
+
+<p>The sample Workflow (Website Script Based Sage 50 Integration) which accompanies this article can be found on our <a href="https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/Website%20Script%20Based%20Sage%2050%20Integration/My%20Workflows">GitHubsite</a>.The sample Workflow consists of the following tasks</p>
+
+<ol>
+  <li><a href="http-task">HTTP Task</a> - Download Website XML
+GETs any available data from the specified  URL and downloads to the specified Output File on the local disk to be processed by the rest of the Workflow.
+Typically, the website script being called will run queries against the website database, generating any data needing to be downloaded in the Zynk.Connect.Objects XML structure.
+e.g. The script might query the customers table for any Trade accounts who do not yet have an account reference stored on the website (so that these new accounts may be imported into Sage and have an automatic account reference assigned), as well as querying the orders table for any orders matching a status of Pending which are not currently marked as posted (a boolean column to indicate if an order has been previously downloaded into Sage)</li>
+  <li><a href="importing-customers-into-sage-50-uk">Importing Customers into Sage 50 UK</a>
+ Attempt to import any customers present in the data downloaded from the website script into Sage 50. Outputting customers which failed to import to the  Fail File and any successfully imported customers to the Success File.</li>
+  <li><a href="importing-sales-orders-into-sage-50-uk">Importing Sales Orders into Sage 50 UK</a>
+ Attempt to import any sales orders present in the data downloaded from the website script into Sage 50. Outputting sales orders which failed to import to the  Fail File and any successfully imported sales orders to the Success File.</li>
+  <li><a href="http-task">HTTP Task</a> - Notify Successfully Imported Customers
+ POSTs the Import Customers Success File back to the specified  URL, saving the response to the Output File. 
+ Typically, the website script being called will need to update certain information in the website database based on the data that is posted back. The website script should be written to accept POST XML data in the Zynk.Connect.Objects XML structure.
+ e.g. The script might iterate over the customers contained in the POST XML, using the Id node from the customer XML as the website customer ID and updating the website customer account reference field based on the AccountReference node from the customer XML, writing the successfully ran queries to the output as well as any encountered errors.</li>
+  <li><a href="http-task">HTTP Task</a> - Notify Successfully Imported Sales Orders
+ POSTs the Import Sales Orders Success File back to the specified  URL, saving the response to the Output File.
+ Typically, the website script being called will need to update certain information in the website database based on the data that is posted back. The website script should be written to accept POST XML data in the Zynk.Connect.Objects XML structure.
+ e.g. The script might iterate over the sales orders contained in the POST XML, using the Id node from the sales order XML as the website order ID and updating the website order status field to Processed as well as marking the website order as Posted, writing the successfully ran queries to the output as well as any encountered errors.</li>
+  <li><a href="splitting-xml-files">Splitting XML Files</a> - Split Exported Stock Records XML Into Smaller Chunks
+ Splits the Export Stock Records Output File based on the Zynk Connect Products  XPath Query (/Company/Products/Product) into multiple files in the Output Folder, with each file having no more Product records than the specified Record Limit.
+ Typically, as a best practice, we would run any exported data through an XMLSplitTask in order to prevent large amounts of data in the XML from causing the website scripts to exceed their allowed timeout. (i.e. by separating the file into smaller files with less records).
+ The original export file being split remains in the Working data directory.</li>
+  <li><a href="file-repeater">File Repeater</a> - For Every Stock Record XML File
+ Iterates over the files within the Split Exported Stock Records XML Into Smaller Chunks Output Folder.</li>
+  <li><a href="http-task">HTTP Task</a> - Upload Stock Record File To Website
+    POSTs the current split file to the specified  URL, saving the response to the Output Folder (will be defaulted to the Working data directory for the current Workflow, with the name of the current file being repeated, appended with ‘_response.txt’).
+    Typically, the website script being called will need to insert/update certain information in the website database based on the data that is uploaded. The website script should be written to accept POST XML data in the Zynk.Connect.Objects XML structure.
+    e.g. The script might iterate over the product data contained in the POST XML, using the Sku node to look for products with a matching product code on the website and then update the website product’s quantity based on the QtyInStock node less the QtyAllocated node (to obtain a true free stock value).</li>
+  <li><a href="delete-file">Delete File</a> - Delete Processed Stock Record Chunk File
+    Deletes the current split file. 
+    Typically, as a best practice when using the XMLSplitTask to split large files into smaller ‘chunks’, once a split file has been processed it should be deleted, so that the next time the Workflow runs, only up to date data is being processed.</li>
+  <li><a href="archive-workflow-data">Archive Workflow Data</a>
+ Compresses all files within the Working data directory for the current Workflow into a single zip file in the Archive Folder with the name of the date and time that the archive was created, appended with ‘_archive.zip’.
+ Typically, as a best practice, we would structure Zynk Workflow’s so that all data relating to the Workflow run remains in the Working data directory, meaning that the ArchiveWorkflowData task can be dropped at the end of the Workflow and the data stored for traceability purposes.</li>
+</ol>
+
+<p>If you have any queries on any of the above, feel free to contact our support team via email at support@zynk.com or via telephoneon 0191 303 7279.</p>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Integrations-Section/Website-Script-Based-Integration.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

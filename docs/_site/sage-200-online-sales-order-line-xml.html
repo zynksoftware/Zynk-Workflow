@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sage 200 Online Sales Order Line XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Sage 200 Online Sales Order Line XML</h1>
+                    <p>All sales orders contain ‘line items’ that define what an order consists of (e.g. items on an order). If the contents of an order are modified by adding/updating/deleting order lines, this will affect the overall value of the order.  Further information can be found on the <a href="https://developer.columbus.sage.com/docs#/uk/sage200extra/accounts/v1/sop_order_lines">Sage 200 Online Sales Order Line API Documentation</a>.</p>
+
+<h2 id="tasks">Tasks</h2>
+<p>Zynk does not currently support downloading or uploading sales order lines directly, but can be used within <a href="sage-200-online-sales-order-xml">Sage 200 Online Sales Order XML</a> as part of the export and import of sales order records.</p>
+
+<ul>
+  <li><a href="exporting-sales-orders-from-sage-200-online">Exporting Sales Orders From Sage 200 Online</a></li>
+  <li><a href="importing-sales-orders-to-sage-200-online">Importing Sales Orders To Sage 200 Online</a></li>
+</ul>
+
+<h2 id="fields-for-download-and-upload">Fields for Download and Upload</h2>
+<h3 id="product_id">product_id</h3>
+<p><em>Dependant (see <a href="#product">product</a>)</em><br />
+Product record Id, can also be set using product code, see <a href="#product">product</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>27256</td>
+      <td><code class="highlighter-rouge">&lt;product_id&gt;27256&lt;/product_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="line_type">line_type</h3>
+<p><em>Required</em><br />
+The sales order line type.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(20)</td>
+      <td>EnumLineTypeStandard</td>
+      <td><code class="highlighter-rouge">&lt;line_type&gt;EnumLineTypeStandard&lt;/line_type&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="available-values">Available Values</h4>
+<ul>
+  <li>EnumLineTypeStandard</li>
+  <li>EnumLineTypeFreeText</li>
+  <li>EnumLineTypeCharge</li>
+  <li>EnumLineTypeComment</li>
+</ul>
+
+<h3 id="code">code</h3>
+<p><em>Dependant</em><br />
+The stock item code. In case of an additional charge, this can only be set for lines of type EnumLineTypeCharge and is required if description is not specified.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(30)</td>
+      <td>CAR001</td>
+      <td><code class="highlighter-rouge">&lt;code&gt;CAR001&lt;/code&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="description">description</h3>
+<p><em>Dependant</em><br />
+The item description. This could be stock item description, free text, additional charge or comment. Required for lines of type EnumLineTypeFreeText and is required for lines of type EnumLineTypeCharge if code is not specified.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(6000)</td>
+      <td>Shipping Charges</td>
+      <td><code class="highlighter-rouge">&lt;description&gt;Shipping Charges&lt;/description&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tax_code_id">tax_code_id</h3>
+<p><em>Dependant (see <a href="#tax_code">tax_code</a>)</em><br />
+Tax code Id, can also be set using tax code, see <a href="#tax_code">tax_code</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>2</td>
+      <td><code class="highlighter-rouge">&lt;tax_code_id&gt;2&lt;/tax_code_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="line_quantity">line_quantity</h3>
+<p><em>Optional</em><br />
+Item quantity.Note: Decimals cannot be used as quantity values for traceable items that use serial numbers. These will be rounded up/down at the time of posting via the API.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>1</td>
+      <td><code class="highlighter-rouge">&lt;line_quantity&gt;1&lt;/line_quantity&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="selling_unit_price">selling_unit_price</h3>
+<p><em>Optional</em><br />
+Selling unit price.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>10.0</td>
+      <td><code class="highlighter-rouge">&lt;selling_unit_price&gt;10.0&lt;/selling_unit_price&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="unit_discount_percent">unit_discount_percent</h3>
+<p><em>Optional</em><br />
+Unit discount percent.  Note if <a href="#unit_discount_value">unit_discount_value</a> is provided as well, this value will be adjusted accordingly.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 2dp)</td>
+      <td>10.0</td>
+      <td><code class="highlighter-rouge">&lt;unit_discount_percent&gt;10.0&lt;/unit_discount_percent&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="unit_discount_value">unit_discount_value</h3>
+<p><em>Optional</em><br />
+Unit discount value.  Note if <a href="#unit_discount_percent">unit_discount_percent</a> is provided as well, this value will be used and the percentage will be adjusted accordingly.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp</td>
+      <td>5.0</td>
+      <td><code class="highlighter-rouge">&lt;unit_discount_value&gt;5.0&lt;/unit_discount_value&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="cost_price">cost_price</h3>
+<p><em>Optional</em><br />
+Cost price.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>5.0</td>
+      <td><code class="highlighter-rouge">&lt;cost_price&gt;5.0&lt;/cost_price&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="show_on_customer_docs">show_on_customer_docs</h3>
+<p><em>Optional</em><br />
+Can only be set for lines of type EnumLineTypeComment.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>boolean</td>
+      <td>true</td>
+      <td><code class="highlighter-rouge">&lt;show_on_customer_docs&gt;true&lt;/show_on_customer_docs&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="available-values-1">Available Values</h4>
+<ul>
+  <li>true</li>
+  <li>false</li>
+</ul>
+
+<h3 id="show_on_picking_list_type">show_on_picking_list_type</h3>
+<p><em>Optional</em><br />
+Whether the line should appear on the picking list.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>string(20)</td>
+      <td>ShowButExclude</td>
+      <td><code class="highlighter-rouge">&lt;show_on_picking_list_type&gt;ShowButExclude&lt;/show_on_picking_list_type&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="available-values-2">Available Values</h4>
+<ul>
+  <li>DoNotShow</li>
+  <li>Show</li>
+  <li>ShowButExclude</li>
+</ul>
+
+<h2 id="fields-for-download-only">Fields for Download Only</h2>
+<h3 id="id">id</h3>
+<p><em>Read Only</em><br />
+Sales order line record Id.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>27767</td>
+      <td><code class="highlighter-rouge">&lt;id&gt;27767&lt;/id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="line_number">line_number</h3>
+<p><em>Read Only</em><br />
+The line number.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int16)</td>
+      <td>1</td>
+      <td><code class="highlighter-rouge">&lt;line_number&gt;1&lt;/line_number&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sop_order_id">sop_order_id</h3>
+<p><em>Read Only</em><br />
+Sales order record Id.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>28006</td>
+      <td><code class="highlighter-rouge">&lt;sop_order_id&gt;28006&lt;/sop_order_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="allocated_quantity">allocated_quantity</h3>
+<p><em>Read Only</em><br />
+Allocated quantity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>0.0</td>
+      <td><code class="highlighter-rouge">&lt;allocated_quantity&gt;0.0&lt;/allocated_quantity&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="despatch_receipt_quantity">despatch_receipt_quantity</h3>
+<p><em>Read Only</em><br />
+Despatch quantity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>0.0</td>
+      <td><code class="highlighter-rouge">&lt;despatch_receipt_quantity&gt;0.0&lt;/despatch_receipt_quantity&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="invoice_credit_quantity">invoice_credit_quantity</h3>
+<p><em>Read Only</em><br />
+Invoiced quantity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>0.0</td>
+      <td><code class="highlighter-rouge">&lt;invoice_credit_quantity&gt;0.0&lt;/invoice_credit_quantity&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="line_total_value">line_total_value</h3>
+<p><em>Read Only</em><br />
+The total value of the line.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 2dp)</td>
+      <td>5.0</td>
+      <td><code class="highlighter-rouge">&lt;line_total_value&gt;5.0&lt;/line_total_value&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="line_tax_value">line_tax_value</h3>
+<p><em>Read Only</em><br />
+The tax value of the line.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 2dp)</td>
+      <td>1.0</td>
+      <td><code class="highlighter-rouge">&lt;line_tax_value&gt;1.0&lt;/line_tax_value&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="date_time_updated">date_time_updated</h3>
+<p><em>Read Only</em><br />
+The date and time this entity was last updated (UTC).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>datetime</td>
+      <td>2017-06-05T16:27:25.623</td>
+      <td><code class="highlighter-rouge">&lt;date_time_updated&gt;2017-06-05T16:27:25.623&lt;/date_time_updated&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="expandable-fields">Expandable Fields</h2>
+<p>Related information linked to sales order lines are also included in the exported XML, these can also be used to set certain fields on sales order imports using lookups rather than needing to know the internal id of the related record.</p>
+
+<h3 id="product">Product</h3>
+<p><em>Dependant (see <a href="#product_id">product_id</a>)</em><br />
+The sales order lines product code.  On an import you can set the code of the product to use for the sales order line and Zynk will lookup the correct internal id from Sage.</p>
+
+<h4 id="import-example-only-setting-the-code">Import example only setting the code</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;product&gt;</span>
+    <span class="nt">&lt;code&gt;</span>BOARD001<span class="nt">&lt;/code&gt;</span>
+<span class="nt">&lt;/product&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="tax-code">Tax Code</h3>
+<p><em>Dependant (see <a href="#tax_code_id">tax_code_id</a>)</em><br />
+The sales order lines tax code.  On an import you can set the code of the tax code to use for the sales order line and Zynk will lookup the correct internal id from Sage.</p>
+
+<h4 id="import-example-only-setting-the-code-1">Import example only setting the code</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;tax_code&gt;</span>
+    <span class="nt">&lt;code&gt;</span>1<span class="nt">&lt;/code&gt;</span>
+<span class="nt">&lt;/tax_code&gt;</span>
+</code></pre>
+</div>
+
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-200-Online-Connector/Sage-200-Online-Sales-Order-Line-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

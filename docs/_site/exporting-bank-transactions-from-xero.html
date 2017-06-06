@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exporting Bank Transactions from Xero</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Exporting Bank Transactions from Xero</h1>
+                    <p>This task will download bank transactions from Xero in XML format.</p>
+
+<h2 id="settings">Settings</h2>
+
+<h3 id="connection">Connection</h3>
+<p><em>Required</em><br />
+The Xero connection use when running this task.</p>
+
+<h3 id="output-file">Output File</h3>
+<p><em>Required</em><br />
+The file to save results from this task. The results are returned as an array of the object as detailed in the example below.</p>
+
+<h3 id="export-all">Export All</h3>
+<p><em>Required</em>
+Set to true to export all records, or false to only export records since the time shown in the Export From setting.</p>
+
+<h3 id="export-from">Export From</h3>
+<p><em>Required</em>
+The rolling date to export modified records from. This will update automatically when the task runs. This setting only takes affect when Export All is set to false.</p>
+
+<h3 id="filter">Filter</h3>
+<p><em>Optional</em><br />
+Specify criteria to filter the accounts on e.g. 	<code class="highlighter-rouge">Type == "BANK" AND Name.Contains("Business")</code></p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a></p>
+
+<h2 id="examples">Examples</h2>
+
+<p>Sample output file showing a bank transaction:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+    <span class="nt">&lt;ArrayOfXeroBankTransaction&gt;</span>
+      <span class="nt">&lt;XeroBankTransaction</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ValidationStatus&gt;</span>Ok<span class="nt">&lt;/ValidationStatus&gt;</span>
+        <span class="nt">&lt;UpdatedDateUtc&gt;</span>2015-10-27T14:56:45.677<span class="nt">&lt;/UpdatedDateUtc&gt;</span>
+        <span class="nt">&lt;Id&gt;</span>11f64cd1-4323-4f86-bc2d-dac88458b225<span class="nt">&lt;/Id&gt;</span>
+        <span class="nt">&lt;Contact&gt;</span>
+          <span class="nt">&lt;ValidationStatus&gt;</span>Ok<span class="nt">&lt;/ValidationStatus&gt;</span>
+          <span class="nt">&lt;UpdatedDateUtc</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;Id&gt;</span>bcc999c0-9273-4e2f-82be-882ed4d1aad1<span class="nt">&lt;/Id&gt;</span>
+          <span class="nt">&lt;ContactStatus&gt;</span>Active<span class="nt">&lt;/ContactStatus&gt;</span>
+          <span class="nt">&lt;Name&gt;</span>Westpac<span class="nt">&lt;/Name&gt;</span>
+          <span class="nt">&lt;IsSupplier</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;IsCustomer</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;Discount</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;HasAttachments</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;ContactPersons</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;Addresses</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;Phones</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;ContactGroups</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/Contact&gt;</span>
+        <span class="nt">&lt;BankAccount&gt;</span>
+          <span class="nt">&lt;ValidationStatus&gt;</span>Ok<span class="nt">&lt;/ValidationStatus&gt;</span>
+          <span class="nt">&lt;Id&gt;</span>12c4da0e-c2e0-4b25-837e-734b3875c2bc<span class="nt">&lt;/Id&gt;</span>
+          <span class="nt">&lt;Code&gt;</span>1200B<span class="nt">&lt;/Code&gt;</span>
+          <span class="nt">&lt;Name&gt;</span>Bank<span class="nt">&lt;/Name&gt;</span>
+          <span class="nt">&lt;Status&gt;</span>Active<span class="nt">&lt;/Status&gt;</span>
+          <span class="nt">&lt;Type&gt;</span>None<span class="nt">&lt;/Type&gt;</span>
+          <span class="nt">&lt;BankAccountType</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;Class&gt;</span>Asset<span class="nt">&lt;/Class&gt;</span>
+          <span class="nt">&lt;SystemAccount</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;EnablePaymentsToAccount</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;ShowInExpenseClaims</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;HasAttachments</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;UpdatedDateUTC&gt;</span>0001-01-01T00:00:00<span class="nt">&lt;/UpdatedDateUTC&gt;</span>
+        <span class="nt">&lt;/BankAccount&gt;</span>
+        <span class="nt">&lt;Type&gt;</span>Spend<span class="nt">&lt;/Type&gt;</span>
+        <span class="nt">&lt;Status&gt;</span>Authorised<span class="nt">&lt;/Status&gt;</span>
+        <span class="nt">&lt;LineAmountTypes&gt;</span>Inclusive<span class="nt">&lt;/LineAmountTypes&gt;</span>
+        <span class="nt">&lt;IsReconciled&gt;</span>false<span class="nt">&lt;/IsReconciled&gt;</span>
+        <span class="nt">&lt;Date&gt;</span>2015-10-28T00:00:00<span class="nt">&lt;/Date&gt;</span>
+        <span class="nt">&lt;Reference</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;CurrencyRate&gt;</span>0<span class="nt">&lt;/CurrencyRate&gt;</span>
+        <span class="nt">&lt;CurrencyCode&gt;</span>GBP<span class="nt">&lt;/CurrencyCode&gt;</span>
+        <span class="nt">&lt;SubTotal&gt;</span>16.67<span class="nt">&lt;/SubTotal&gt;</span>
+        <span class="nt">&lt;TotalTax&gt;</span>3.33<span class="nt">&lt;/TotalTax&gt;</span>
+        <span class="nt">&lt;Total&gt;</span>20.00<span class="nt">&lt;/Total&gt;</span>
+        <span class="nt">&lt;HasAttachments&gt;</span>false<span class="nt">&lt;/HasAttachments&gt;</span>
+        <span class="nt">&lt;LineItems&gt;</span>
+          <span class="nt">&lt;LineItem&gt;</span>
+            <span class="nt">&lt;ValidationStatus&gt;</span>Ok<span class="nt">&lt;/ValidationStatus&gt;</span>
+            <span class="nt">&lt;Description&gt;</span>Yearly Bank Account Fee<span class="nt">&lt;/Description&gt;</span>
+            <span class="nt">&lt;Quantity&gt;</span>1.0000<span class="nt">&lt;/Quantity&gt;</span>
+            <span class="nt">&lt;UnitAmount&gt;</span>20.0000<span class="nt">&lt;/UnitAmount&gt;</span>
+            <span class="nt">&lt;AccountCode&gt;</span>4000<span class="nt">&lt;/AccountCode&gt;</span>
+            <span class="nt">&lt;TaxType&gt;</span>OUTPUT2<span class="nt">&lt;/TaxType&gt;</span>
+            <span class="nt">&lt;TaxAmount&gt;</span>3.33<span class="nt">&lt;/TaxAmount&gt;</span>
+            <span class="nt">&lt;LineAmount&gt;</span>20.00<span class="nt">&lt;/LineAmount&gt;</span>
+            <span class="nt">&lt;DiscountRate</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;Tracking</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;LineItemId&gt;</span>c438eaf3-fcef-4a31-a9b6-d6377319455f<span class="nt">&lt;/LineItemId&gt;</span>
+          <span class="nt">&lt;/LineItem&gt;</span>
+        <span class="nt">&lt;/LineItems&gt;</span>
+        <span class="nt">&lt;PrepaymentID</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;OverpaymentID</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/XeroBankTransaction&gt;</span>
+    <span class="nt">&lt;/ArrayOfXeroBankTransaction&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Xero-Connector/Exporting-Bank-Transactions-from-Xero.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

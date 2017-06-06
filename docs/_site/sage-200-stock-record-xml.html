@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sage 200 Stock Record XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Sage 200 Stock Record XML</h1>
+                    <p>Import Stock Records allows you to create and update products within Sage 200.</p>
+
+<p>Any fields not documented below are not supported with our imports.</p>
+
+<p>Sample import file for creating a basic product:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+  <span class="nt">&lt;Products&gt;</span>
+    <span class="nt">&lt;Product&gt;</span>
+      <span class="nt">&lt;Sku&gt;</span>PROD001<span class="nt">&lt;/Sku&gt;</span>
+      <span class="nt">&lt;Name&gt;</span>Test Product<span class="nt">&lt;/Name&gt;</span>
+      <span class="nt">&lt;SalePrice&gt;</span>100<span class="nt">&lt;/SalePrice&gt;</span>
+      <span class="nt">&lt;TaxCode&gt;</span>1<span class="nt">&lt;/TaxCode&gt;</span>
+      <span class="nt">&lt;UnitOfSale&gt;</span>Each<span class="nt">&lt;/UnitOfSale&gt;</span>
+    <span class="nt">&lt;/Product&gt;</span>
+  <span class="nt">&lt;/Products&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<p>In each of the following sections most of the XML has been omitted to make the samples easier to read. The whole structure of the Company schema is used below as a reference of where fields should be in the XML.</p>
+
+<h2 id="details">Details</h2>
+<p>The information below can be specified on the Details tab in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Code</td>
+      <td>Sku</td>
+      <td>PROD001 </td>
+      <td>string </td>
+      <td>30 </td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Name</td>
+      <td>Test Product </td>
+      <td>string </td>
+      <td>60 </td>
+      <td>Optional </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Product Group</td>
+      <td>GroupCode</td>
+      <td>TESTGROUP</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+      <td>If the product group does not already exist, it will be created automatically. If no group code is provided, it will default to the setting at the task level.</td>
+    </tr>
+    <tr>
+      <td>Product Group - Description</td>
+      <td>GroupName</td>
+      <td>Test Group</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>Only used when creating a new product group. If it is not provided, the description will default to the value of the GroupCode.</td>
+    </tr>
+    <tr>
+      <td>Product Type</td>
+      <td>ItemType</td>
+      <td>Stock</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>If the product group already exists, the ItemType provided must match that of the product group. If an ItemType is not provided, it will default to the type associated with the product group. When creating a new product group, its type will be set based on the ItemType provided. If it is not provided, it will default to Stock. The following types are supported: Stock, NonStock and Miscellaneous.</td>
+    </tr>
+    <tr>
+      <td>Current Status</td>
+      <td>Status</td>
+      <td>1</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Set to 1 for ‘Active’, or 0 for ‘Inactive’.</td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td>SalePrice</td>
+      <td>100</td>
+      <td>double</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Stock unit</td>
+      <td>UnitOfSale</td>
+      <td>Each</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+      <td>The ‘Use multiple units’ option in the Product Group must be enabled to set the UnitOfSale.</td>
+    </tr>
+    <tr>
+      <td>Tax Rate</td>
+      <td>TaxCode</td>
+      <td>1</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Manufacturer</td>
+      <td>Manufacturer</td>
+      <td>Test Company</td>
+      <td>string</td>
+      <td>40</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Part No</td>
+      <td>PartNumber</td>
+      <td>1234</td>
+      <td>string</td>
+      <td>40</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Average Buying Price</td>
+      <td>StandardCostPrice</td>
+      <td>60</td>
+      <td>double</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Item Description</td>
+      <td>Description</td>
+      <td>This is a test product</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Use Item Description On Orders And Invoices</td>
+      <td>UseDescriptionOnDocs</td>
+      <td>false</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+  <span class="nt">&lt;Products&gt;</span>
+    <span class="nt">&lt;Product&gt;</span>
+      <span class="nt">&lt;Sku&gt;</span>PROD001<span class="nt">&lt;/Sku&gt;</span>
+      <span class="nt">&lt;Name&gt;</span>Test Product<span class="nt">&lt;/Name&gt;</span>
+      <span class="nt">&lt;GroupCode&gt;</span>TESTGROUP<span class="nt">&lt;/GroupCode&gt;</span>
+      <span class="nt">&lt;GroupName&gt;</span>Test Group<span class="nt">&lt;/GroupName&gt;</span>
+      <span class="nt">&lt;ItemType&gt;</span>Stock<span class="nt">&lt;/ItemType&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>1<span class="nt">&lt;/Status&gt;</span>
+      <span class="nt">&lt;SalePrice&gt;</span>100<span class="nt">&lt;/SalePrice&gt;</span>
+      <span class="nt">&lt;UnitOfSale&gt;</span>Each<span class="nt">&lt;/UnitOfSale&gt;</span>
+      <span class="nt">&lt;TaxCode&gt;</span>1<span class="nt">&lt;/TaxCode&gt;</span>
+      <span class="nt">&lt;Manufacturer&gt;</span>Test Company<span class="nt">&lt;/Manufacturer&gt;</span>
+      <span class="nt">&lt;PartNumber&gt;</span>1234<span class="nt">&lt;/PartNumber&gt;</span>
+      <span class="nt">&lt;StandardCostPrice&gt;</span>60<span class="nt">&lt;/StandardCostPrice&gt;</span>
+      <span class="nt">&lt;Description&gt;</span>This is a test product<span class="nt">&lt;/Description&gt;</span>
+      <span class="nt">&lt;UseDescriptionOnDocs&gt;</span>false<span class="nt">&lt;/UseDescriptionOnDocs&gt;</span>
+    <span class="nt">&lt;/Product&gt;</span>
+  <span class="nt">&lt;/Products&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="analysis">Analysis</h2>
+<p>The information below can be specified on the Analysis tab in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Search Category</td>
+      <td>SearchCategories/SearchCategory/Name</td>
+      <td>Sync with Website</td>
+      <td>string</td>
+      <td>40</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Search Value</td>
+      <td>SearchCategories/SearchCategory/Value</td>
+      <td>true</td>
+      <td>string</td>
+      <td>40</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Stock - A/C Ref</td>
+      <td>StockNominal/Code</td>
+      <td>13103</td>
+      <td>int</td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Stock - CC</td>
+      <td>StockNominal/CostCentre</td>
+      <td>string</td>
+      <td>3</td>
+      <td>Optional A StockNominal/Code must be provided if specifying CostCentre</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Stock - Dept</td>
+      <td>StockNominal/Department</td>
+      <td>string</td>
+      <td>3</td>
+      <td>Optional A StockNominal/Code must be provided if specifying Department</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Revenue - A/C Ref</td>
+      <td>RevenueNominal/Code</td>
+      <td>31100</td>
+      <td>int</td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Revenue - CC</td>
+      <td>RevenueNominal/CostCentre</td>
+      <td>SAL</td>
+      <td>string</td>
+      <td>3</td>
+      <td>Optional A RevenueNominal/Code must be provided if specifying CostCentre</td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Revenue - Dept</td>
+      <td>RevenueNominal/Department</td>
+      <td>VAL</td>
+      <td>string</td>
+      <td>3</td>
+      <td>Optional A RevenueNominal/Code must be provided if specifying Department</td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Accrued receipts - A/C Ref</td>
+      <td>AccruedReceiptsNominal/Code</td>
+      <td>29100</td>
+      <td>int</td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Accrued receipts - CC</td>
+      <td>AccruedReceiptsNominal/CostCentre</td>
+      <td>string</td>
+      <td>3</td>
+      <td>Optional A AccruedReceiptsNominal/Code must be provided if specifying CostCentre</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Accrued receipts - Dept</td>
+      <td>AccruedReceiptsNominal/Department</td>
+      <td>string</td>
+      <td>3</td>
+      <td>Optional A AccruedReceiptsNominal/Code must be provided if specifying Department</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Issues - A/C Ref</td>
+      <td>IssuesNominal/Code</td>
+      <td>44100</td>
+      <td>int</td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Issues - CC</td>
+      <td>IssuesNominal/CostCentre</td>
+      <td>SAL</td>
+      <td>string</td>
+      <td>3</td>
+      <td>Optional A IssuesNominal/Code must be provided if specifying CostCentre</td>
+    </tr>
+    <tr>
+      <td>Default nominal codes - Issues - Dept</td>
+      <td>IssuesNominal/Department</td>
+      <td>VAL</td>
+      <td>string</td>
+      <td>3</td>
+      <td>Optional A IssuesNominal/Code must be provided if specifying Department</td>
+    </tr>
+    <tr>
+      <td>Weight </td>
+      <td>UnitWeight </td>
+      <td>12 </td>
+      <td>double </td>
+      <td>- </td>
+      <td>Optional </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+  <span class="nt">&lt;Products&gt;</span>
+    <span class="nt">&lt;Product&gt;</span>
+      <span class="nt">&lt;SearchCategories&gt;</span>
+        <span class="nt">&lt;SearchCategory&gt;</span>
+          <span class="nt">&lt;Name&gt;</span>Sync with Website<span class="nt">&lt;/Name&gt;</span>
+          <span class="nt">&lt;Value&gt;</span>true<span class="nt">&lt;/Value&gt;</span>
+        <span class="nt">&lt;/SearchCategory&gt;</span>
+      <span class="nt">&lt;/SearchCategories&gt;</span>
+      <span class="nt">&lt;StockNominal&gt;</span>
+        <span class="nt">&lt;Code&gt;</span>13103<span class="nt">&lt;/Code&gt;</span>
+        <span class="nt">&lt;CostCentre/&gt;</span>
+        <span class="nt">&lt;Department/&gt;</span>
+      <span class="nt">&lt;/StockNominal&gt;</span>
+      <span class="nt">&lt;RevenueNominal&gt;</span>
+        <span class="nt">&lt;Code&gt;</span>31100<span class="nt">&lt;/Code&gt;</span>
+        <span class="nt">&lt;CostCentre&gt;</span>SAL<span class="nt">&lt;/CostCentre&gt;</span>
+        <span class="nt">&lt;Department&gt;</span>VAL<span class="nt">&lt;/Department&gt;</span>
+      <span class="nt">&lt;/RevenueNominal&gt;</span>
+      <span class="nt">&lt;AccruedReceiptsNominal&gt;</span>
+        <span class="nt">&lt;Code&gt;</span>29100<span class="nt">&lt;/Code&gt;</span>
+        <span class="nt">&lt;CostCentre/&gt;</span>
+        <span class="nt">&lt;Department/&gt;</span>
+      <span class="nt">&lt;/AccruedReceiptsNominal&gt;</span>
+      <span class="nt">&lt;IssuesNominal&gt;</span>
+        <span class="nt">&lt;Code&gt;</span>44100<span class="nt">&lt;/Code&gt;</span>
+        <span class="nt">&lt;CostCentre&gt;</span>SAL<span class="nt">&lt;/CostCentre&gt;</span>
+        <span class="nt">&lt;Department&gt;</span>VAL<span class="nt">&lt;/Department&gt;</span>
+      <span class="nt">&lt;/IssuesNominal&gt;</span>
+      <span class="nt">&lt;UnitWeight&gt;</span>12<span class="nt">&lt;/UnitWeight&gt;</span>
+    <span class="nt">&lt;/Product&gt;</span>
+  <span class="nt">&lt;/Products&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="suppliers">Suppliers</h2>
+<p>The information below can be specified on the Suppliers tab in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A/C Ref</td>
+      <td>AccountReference</td>
+      <td>SUP001</td>
+      <td>string</td>
+      <td>8</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Supplier stock code</td>
+      <td>SupplierStockCode</td>
+      <td>S-PROD001</td>
+      <td>string</td>
+      <td>40</td>
+      <td>Required</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Lead Time</td>
+      <td>LeadTime</td>
+      <td>3</td>
+      <td>short</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Lead Time Unit</td>
+      <td>LeadTimeUnit</td>
+      <td>EnumTimeUnitDay</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Can be either EnumTimeUnitDay, EnumTimeUnitWeek, EnumTimeUnitMonth, or EnumTimeUnitYear.</td>
+    </tr>
+    <tr>
+      <td>Usual Order Quantity</td>
+      <td>UsualOrderQuantity</td>
+      <td>1</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Minimum Order Quantity</td>
+      <td>MinimumOrderQuantity</td>
+      <td>1</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Supplier List Price</td>
+      <td>ListPrice</td>
+      <td>60</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>List Price Updated</td>
+      <td>DateListPriceChanged</td>
+      <td>2014-01-01T00:00:00</td>
+      <td>datetime</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>List Price Expiry</td>
+      <td>ListPriceExpiryDate</td>
+      <td>2015-01-01T00:00:00</td>
+      <td>datetime</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Price Source</td>
+      <td>PricingSource</td>
+      <td>LastBuyingPrice</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Can be either LastBuyingPrice or ListPrice.</td>
+    </tr>
+    <tr>
+      <td>Pref</td>
+      <td>Preferred</td>
+      <td>true</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+  <span class="nt">&lt;Products&gt;</span>
+    <span class="nt">&lt;Product&gt;</span>
+      <span class="nt">&lt;ProductSuppliers&gt;</span>
+        <span class="nt">&lt;ProductSupplier&gt;</span>
+          <span class="nt">&lt;AccountReference&gt;</span>SUP001<span class="nt">&lt;/AccountReference&gt;</span>
+          <span class="nt">&lt;SupplierStockCode&gt;</span>S-PROD001<span class="nt">&lt;/SupplierStockCode&gt;</span>
+          <span class="nt">&lt;LeadTime&gt;</span>3<span class="nt">&lt;/LeadTime&gt;</span>
+          <span class="nt">&lt;LeadTimeUnit&gt;</span>EnumTimeUnitDay<span class="nt">&lt;/LeadTimeUnit&gt;</span>
+          <span class="nt">&lt;UsualOrderQuantity&gt;</span>1<span class="nt">&lt;/UsualOrderQuantity&gt;</span>
+          <span class="nt">&lt;MinimumOrderQuantity&gt;</span>1<span class="nt">&lt;/MinimumOrderQuantity&gt;</span>
+          <span class="nt">&lt;ListPrice&gt;</span>60<span class="nt">&lt;/ListPrice&gt;</span>
+          <span class="nt">&lt;DateListPriceChanged&gt;</span>2014-01-01T00:00:00<span class="nt">&lt;/DateListPriceChanged&gt;</span>
+          <span class="nt">&lt;ListPriceExpiryDate&gt;</span>2015-01-01T00:00:00<span class="nt">&lt;/ListPriceExpiryDate&gt;</span>
+          <span class="nt">&lt;PricingSource&gt;</span>LastBuyingPrice<span class="nt">&lt;/PricingSource&gt;</span>
+          <span class="nt">&lt;Preferred&gt;</span>true<span class="nt">&lt;/Preferred&gt;</span>
+        <span class="nt">&lt;/ProductSupplier&gt;</span>
+      <span class="nt">&lt;/ProductSuppliers&gt;</span>
+    <span class="nt">&lt;/Product&gt;</span>
+  <span class="nt">&lt;/Products&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="locations">Locations</h2>
+<p>The information below can be specified on the Locations tab in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Re-order</td>
+      <td>ReorderLvl</td>
+      <td>10</td>
+      <td>double</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>This will set the Re-order level on the first warehouse in the list.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+  <span class="nt">&lt;Products&gt;</span>
+    <span class="nt">&lt;Product&gt;</span>
+      <span class="nt">&lt;ReorderLvl&gt;</span>10<span class="nt">&lt;/ReorderLvl&gt;</span>
+    <span class="nt">&lt;/Product&gt;</span>
+  <span class="nt">&lt;/Products&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="comments">Comments</h2>
+<p>The information below can be specified on the Comments tab in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Default Comment for Picking List</td>
+      <td>DefaultPickingListComment</td>
+      <td>Picking list comment</td>
+      <td>string</td>
+      <td>160</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Default Comment for Despatch Note</td>
+      <td>DefaultDespatchNoteComment</td>
+      <td>Despatch note comment</td>
+      <td>string</td>
+      <td>160</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+  <span class="nt">&lt;Products&gt;</span>
+    <span class="nt">&lt;Product&gt;</span>
+      <span class="nt">&lt;ProductSuppliers&gt;</span>
+        <span class="nt">&lt;ProductSupplier&gt;</span>
+          <span class="nt">&lt;DefaultPickingListComment&gt;</span>Picking list comment<span class="nt">&lt;/DefaultPickingListComment&gt;</span>
+          <span class="nt">&lt;DefaultDespatchNoteComment&gt;</span>Despatch note comment<span class="nt">&lt;/DefaultDespatchNoteComment&gt;</span>
+        <span class="nt">&lt;/ProductSupplier&gt;</span>
+      <span class="nt">&lt;/ProductSuppliers&gt;</span>
+    <span class="nt">&lt;/Product&gt;</span>
+  <span class="nt">&lt;/Products&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="stock-order-fulfilment">Stock Order Fulfilment</h2>
+<p>The information below can be specified on the Stock Records &gt; Stock Order Fulfilment section in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fulfilment Method</td>
+      <td>FulfilmentMethod</td>
+      <td>FromStock</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Can be set to FromStock, FromSupplier or DirectToCustomer. Defaults to FromStock.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company&gt;</span>
+  <span class="nt">&lt;Products&gt;</span>
+    <span class="nt">&lt;Product&gt;</span>
+      <span class="nt">&lt;FulfilmentMethod&gt;</span>FromStock<span class="nt">&lt;/FulfilmentMethod&gt;</span>
+    <span class="nt">&lt;/Product&gt;</span>
+  <span class="nt">&lt;/Products&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-200-Connector/Sage-200-Stock-Record-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

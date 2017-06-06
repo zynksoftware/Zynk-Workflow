@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Changelog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Changelog</h1>
+                    <h2 id="release-212">Release 2.12</h2>
+
+<h3 id="new">New</h3>
+<ul>
+  <li>Magento v1 - Download store information from Magento</li>
+  <li>Magento v2 - Added Upload Shipments task</li>
+  <li>Peoplevox - New connector to integrate customers, suppliers. sales orders and more with Peoplevox warehouse management system</li>
+</ul>
+
+<h3 id="updated">Updated</h3>
+<ul>
+  <li>BXP - Upload Records - Added support for referencing the generated ID of a parent record within it’s related records</li>
+  <li>HTTP Task - Added a setting to compress data before sending it via HTTP POST, PUT, PATCH or DELETE</li>
+  <li>Sage 50 - Allocate Payments - Changed the Date From and Date To settings to Zynk Objects, to allow them to be set dynamically</li>
+  <li>Sage 50 - Update Ledgers - Optionally use customer order number to match an invoice.</li>
+  <li>Sage 200 - Export Customers - Now exports OverrideTaxCode, DUNSNumber, LastCreditReview, NextCreditReview, ApplicationDate and DateReceived</li>
+  <li>Sage 200 - Export Tasks - Now support retriving custom fields from custom join tables</li>
+</ul>
+
+<h3 id="fixed">Fixed</h3>
+<ul>
+  <li>BXP - Download Records - Fixed issue with the modified date setting not updating</li>
+  <li>BXP - Upload Records - Fixed the 500 error when the value of a match field contains an apostrophe</li>
+  <li>Ebay - Connection - Web browser was constanly refreshing</li>
+  <li>Sage 50 - Allocate Payments - Fixed the syntax error caused by account references containing an apostrophe</li>
+  <li>Sage 200 - Export Customers - Fixed issue which could prevent modified delivery addresses being exported</li>
+</ul>
+
+<h2 id="release-2112">Release 2.11.2</h2>
+<h3 id="updated-1">Updated</h3>
+<ul>
+  <li>Sage 200 - Export Suppliers V2 - Now exports analysis codes.</li>
+  <li>Sage 200 - Customers/Suppliers - Now supports setting and retrieving the MonthsToKeepTransactionsFor field.</li>
+  <li>Sage 200 - Customers &amp; Suppliers - Now supports setting and retrieving the trading tab country code independently of the Main Address country code.</li>
+  <li>Sage 200 - Suppliers - Now supports setting and retrieving AdditionalReference, NonUKSortCode, BankPaymentReference.</li>
+  <li>Sage 200 - Suppliers - Now supports setting and retrieving the Payment Terms In Days field.</li>
+</ul>
+
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+  <li>Sage 200 - Import Purchase Orders - Allow auto creation of 0 priced products.</li>
+  <li>Sage 200 - Export Suppliers V2 - Now exports email addresses correctly, was previously retrieving phone numbers in some instances.</li>
+</ul>
+
+<h2 id="release-2111">Release 2.11.1</h2>
+<h3 id="fixed-2">Fixed</h3>
+<ul>
+  <li>Sage 200 - Export Suppliers - Exporting the same Contact for every supplier.</li>
+  <li>Sage 200 - Export Customers - Delivery addresses not belonging to Customer being exported.</li>
+</ul>
+
+<h2 id="release-211">Release 2.11</h2>
+<h3 id="new-1">New</h3>
+<ul>
+  <li>BXP - Added new connector for BXP, with upload and download records tasks</li>
+  <li>Connectwise - Added Upload Companies and Opportunities tasks</li>
+  <li>Magento v2 - Download Customer Groups - A new task that allows you to download all customer groups from Magento v2</li>
+  <li>Magento v2 - Update Inventory - A new task that can update inventory in Magento v2</li>
+</ul>
+
+<h3 id="updated-2">Updated</h3>
+<ul>
+  <li>ConnectWise - Download Opportunities - Allow for the download of additional product information relating to opportunity line items</li>
+  <li>Email - Send Email - Added support for email addresses including a display name</li>
+  <li>FTP - Connection - Now test the credentials against the FTP server</li>
+  <li>Magento - Upload Inventory - Add in support to set manage_stock and use_config_manage_stock on Inventory tab in Magento v1</li>
+  <li>Zynk - Extensions - Add a shortcut to the start menu for installed extensions</li>
+  <li>Zynk - History Tab - Now show the what triggered each run of the workflow, added a button to view the workflow’s archived data</li>
+  <li>Zynk - History Tab - Now show the position of each task in the workflow</li>
+  <li>Zynk - Submit Support Ticket - Fixed issue sending the emails, simplified the options for including additional info about the problem</li>
+  <li>Zynk - Task Library - Templates now appear in the task library. Restructured the task folders. Ctrl+F now focuses the search box. New tasks added to the workflow are auto selected.</li>
+</ul>
+
+<h3 id="fixed-3">Fixed</h3>
+<ul>
+  <li>File - File Repeater - Only update the Modified Since setting if the task ran successfully</li>
+  <li>Magento v2 - Matching on id for uploads</li>
+  <li>Magento v2 - Upload Tier Prices - Catch exception when price less than 0 is provided for a tier price entry</li>
+  <li>Sage 50 - Import Sales Orders - Replace the ‘index was out of range’ error with something more helpful when auto transfer BOM stock fails</li>
+  <li>Sage 50 - Import Sales Orders/Invoices - Net down the NetValueDiscount value when importing a VAT inclusive order</li>
+  <li>Xero - Upload Tasks - If an ExternalId is specified in the XML, it will no longer override the Id</li>
+  <li>XML - XML Merge - Make sure attributes are merged in subsequent file</li>
+  <li>Zynk - Clone Workflow - Copy the workflow’s working directory instead of moving it</li>
+</ul>
+
+<h2 id="release-210">Release 2.10</h2>
+<h3 id="new-2">New</h3>
+<ul>
+  <li>Magento - New task to download all customer groups from Magento.</li>
+  <li>Sage 200 - Added Export Report task for Sage 200 v9 (2013) onwards</li>
+  <li>Sage 50 - Added new versions of the Update Sales Orders/Invoices tasks which accept Zynk XML input files</li>
+  <li>Zynk - In an open workflow, you can now see the number of tasks in use.</li>
+</ul>
+
+<h3 id="updated-3">Updated</h3>
+<ul>
+  <li>Email - Send Integration Report - Added support for more data types</li>
+  <li>Sage 50 - Export Report - Support setting multiple values for a criteria, by setting the data type to a list</li>
+  <li>Sage 50 - Import Customers/Suppliers - Now read the default currency from Customer/Supplier Defaults when not specified in the XML</li>
+  <li>Sage 50 - Import Customers/Suppliers - Now validate provided currency code exists in the Sage 50 company</li>
+  <li>Sage 50 - Import Customers/Suppliers - Now validate provided tax code is valid</li>
+  <li>Sage 50 - Import Invoices/Purchase Orders - Now support the VatInclusive flag</li>
+  <li>Sage 50 - Import Transactions - Allow the Posted Date to be provided, will default to today’s date if not specified in the XML</li>
+  <li>Sage 50 - Import Transactions - Default TransactionDate to today’s date if not specified in the XML</li>
+  <li>Sage 50 - Import Transactions - Pick up the default nominal code from the customer/supplier when importing SI/SC/PI/PC transactions</li>
+  <li>Sage 50 - Import Customers/Suppliers - CompanyName is only required on new records.</li>
+  <li>Sage 200 - Import Customers/Suppliers - CompanyName is only required on new records.</li>
+  <li>Sage 200 - Import Goods Despatched Notes - Added ‘Auto Acknowledge Order’, ‘Auto Print Order Invoice’ and ‘Auto Post Invoice’ settings</li>
+  <li>WooCommerce - Upload Tasks - Improved handling of parse errors on the responses from the API, will now log a warning with details of the field that couldn’t be parsed</li>
+  <li>Shopify - Download Orders - Add Download From date to task. Prevent orders from being missed in downloaded data.</li>
+</ul>
+
+<h3 id="fixed-4">Fixed</h3>
+<ul>
+  <li>Container/Repeater Tasks - Setting the ‘Can Resume From Failure’ setting to false now prevents its child tasks from resuming if they fail</li>
+  <li>Sage 50 - Connection - When editing an existing connection, the data path will no longer change if there is more than one company with the same name</li>
+  <li>Sage 50 - Import Sales Orders/Invoices/Purchase Orders - Only read the carriage tax code from VAT Settings on the task if enabled, otherwise use the default from the customer/supplier account</li>
+  <li>Sage 50 2017 - Import Transactions - When importing into a company where GBP is not the base, results in (Failed to import transaction : The Foreign Currency on the account does not match the Foreign Currency on the transaction.)</li>
+  <li>Sage 200 - Export Query - Now return the Fail result code instead of Success if the task can’t connect to Sage</li>
+  <li>Zoho CRM - Download Records - Fixed issue where the task would always download all records when a filter was specified</li>
+  <li>Zynk - Always store the zynk.sdf and log.sdf files in C:\ProgramData\Zynk Software\Zynk\2.0\Data even if the working directory has been changed, to avoid issues accessing the files from a network location</li>
+  <li>Zynk - Resolved issues with the extension manager hanging after installs.</li>
+  <li>Zynk - Fixed instability issues with the History tab</li>
+  <li>Zynk - Fixed the ‘max workflows reached’ error after an exisiting license key is re-activated</li>
+  <li>Sage 50 - Export Transactions - Sage 50 (All / Modified) not exporting any transactions</li>
+  <li>Sage 200 - Import Sales Orders - Attempting to import an order with an inactive item results in the import failing</li>
+  <li>Sage 50 - Import Transactions - Application crash when trying to import certain transaction types (e.g. SalesPayment)</li>
+</ul>
+
+<h2 id="release-29">Release 2.9</h2>
+<h3 id="new-3">New</h3>
+<ul>
+  <li>Xero - Added download purchase orders and upload purchase orders tasks</li>
+  <li>Zynk - Statistics Start Page - View statistical data retrieved from the Zynk database and send to yourself via email in CSV or HTML format.</li>
+</ul>
+
+<h3 id="updated-4">Updated</h3>
+<ul>
+  <li>Magento - Upload Shipments - Now supports receiving multiple item lines of the same sku code</li>
+  <li>Magento - Upload Shipments - Now supports specifying the item_id or sku</li>
+  <li>Magento V2 - Upload Products - Added support for automatically assigning and optionally creating product categories on Magento</li>
+  <li>Sage 50 - Import Customers/Suppliers - Now support importing/exporting the Email 2 and Email 3 fields</li>
+  <li>Sage 50 - Import Transactions - Now automatically set the TaxCode, TaxRate and TaxAmount for sales and purchase transactions if not provided</li>
+  <li>WooCommerce - Upload Products - Now support matching to multiple products with the same SKU. The task will update each matching product it finds</li>
+  <li>WooCommerce - Connection - Added option to ignore certificate errors</li>
+  <li>Xero - All Tasks - Added support for storing an ExternalId in the truth table, and using this to match existing records in Xero</li>
+  <li>Zynk Options - Added an option for setting the encoding used throughout the application</li>
+  <li>Zoho CRM - Download Records - Added a ‘Download From’ setting, which is now used instead of the Last Ran date when downloading modified records</li>
+  <li>Zoho CRM - Download Records - Add support for downloading single related records based on the foreign ID provided in the data</li>
+</ul>
+
+<h3 id="fixed-5">Fixed</h3>
+<ul>
+  <li>Brightpearl - Upload Orders - Fixed decimal precision error when automatically calculating tax amounts</li>
+  <li>Brightpearl - Upload Tasks - Fixed incorrect ‘more than one match’ errors when looking up matching records</li>
+  <li>EKM Powershop - Download Orders - Store the last download date in a Download From property as relying on Last Ran at task level causes some record changes to be missed</li>
+  <li>Magento - Upload Shipments - Invoice creation and capture creates an invoice for the entire order, rather than for the item quantities that have been shipped.</li>
+  <li>Magento - Upload Products - Removed field validation on fields which can be marked as ‘not required’ on</li>
+  <li>Magento V2 - Download/Upload Products - Fixed a ‘Failed to parse the response from Magento.’ message when working with Magento Products.</li>
+  <li>Sage 200 (V9, V10 onwards) - Import Customers/Sales Orders - Account Matching - Updated the account mapping to use the Sage 200 SDK to perform the lookup. (Stops database access errors occurring).</li>
+  <li>Sage 200 - Export Purchase Orders - PurcahseOrderDeliveryAddress now shows the correct telephone and fax numbers</li>
+  <li>Sage 50 - Import Purchase Orders - Automatically placing items on order resulted in the error “The product {0} either does not appear on purchase order {1}, or the quantity specified exceeds the amount to be delivered” when trying to import goods received notes</li>
+  <li>Salesforce - Complex Object Upload - Objects are now written to the success file even if a related object failed to upload. Still attempt to upload other related objects if one fails.</li>
+  <li>Zynk - Auto Mapper - Zynk XML Product to Magento V2 Product - not mapping price from Sage product</li>
+  <li>Zynk - Email Address Validation - Not allowing any email addresses with a TLD longer than 4 characters. Now supports up to 63</li>
+  <li>Zynk - Mappings Form - Updated the clipboard functionality to support pasting from spreadsheets (Google Sheets, Excel etc.)</li>
+  <li>Zynk - CSV Tasks - Now escapes field delimiters correctly (i.e. any instances of two field delimiters together will be escaped).</li>
+</ul>
+
+<h2 id="release-28">Release 2.8</h2>
+<h3 id="new-4">New</h3>
+<ul>
+  <li>Shopify - Added Upload Inventory task</li>
+  <li>Brightpearl - Added new connector for the Brightpearl online accounts system</li>
+</ul>
+
+<h3 id="updated-5">Updated</h3>
+<ul>
+  <li>Sage 200 - v2 Export Tasks - Added basic support for getting custom field values from joined tables, only works where a single join is involved</li>
+  <li>Sage 200 - v2 Export Tasks - Now log custom fields and joins when debug logging is enabled</li>
+  <li>Sage 50 - Import Sales Orders - Optionally automatically create transfers for BOM products if there is not enough quantity available</li>
+  <li>Sage 50 - Import Transactions - No longer support sales discount transactions as its not valid to create these directly</li>
+</ul>
+
+<h3 id="fixed-6">Fixed</h3>
+<ul>
+  <li>Sage 200 - v2 Export Tasks - Fixed issues when using an alias for a custom field</li>
+  <li>Sage 50 - Import Purchase Orders - Now correctly calculate the tax amount for carriage</li>
+  <li>Sage 200 - Export Customers V2 - City, County and Country not reflecting the segmented address settings in Sage</li>
+  <li>Sage 200 - Import Transactions - Fixed issue with penny difference rounding issues, sometimes causing tax analysis does not match tax values errors</li>
+</ul>
+
+<h2 id="release-271">Release 2.7.1</h2>
+<h3 id="new-5">New</h3>
+<ul>
+  <li>ProSKu - New connector available for the warehouse management system, ProSku.</li>
+  <li>Sage 50 - Update Sales Orders - Update a single field on a Sales Order.</li>
+</ul>
+
+<h3 id="updated-6">Updated</h3>
+<ul>
+  <li>Workflow Reports - Now show which tasks ran, including their status and in/out/error counts</li>
+  <li>Sage 50 - Import Stock Transactions - Now set Reference, Details etc. from XML input.</li>
+  <li>Sage 50 - Export Transactions - Now export the project reference and cost code</li>
+  <li>Sage 50 - Import Transactions - Now support setting the cost code field on purchase invoices/credits</li>
+</ul>
+
+<h3 id="fixed-7">Fixed</h3>
+<ul>
+  <li>Sage 200 - Export Query - Fixed the ‘There is already an open DataReader associated with this command’ error when using more than one export query task in a workflow</li>
+  <li>Sage 50 - Import Goods Received Notes - Now write any errors to the log and fail file</li>
+  <li>Sage 50 - Export Price Lists - Fixed the ‘No connection’ errors when running the task</li>
+  <li>Magento - Download Tasks - Fixed issue where filters checking for null values would not return any results</li>
+</ul>
+
+<h2 id="release-27">Release 2.7</h2>
+<h3 id="new-6">New</h3>
+<ul>
+  <li>Zynk - Auto Mappers - We now provide auto mappers for Kashflow and Sage One integrations.</li>
+</ul>
+
+<h3 id="updated-7">Updated</h3>
+<ul>
+  <li>Sage 50 - Import Goods Received Notes - No longer required to provide AccountReference in object.</li>
+  <li>Sage 50 - Import Sales Orders, Purchase Orders and Invoices - Always round payment amount to 2 decimal places to replicate Sage 50’s own functionality.</li>
+  <li>Zynk - Auto Mappers - Now able to add auto mappers between two external systems, e.g Kashflow to Magento, Magento to Sage One etc.</li>
+  <li>Sage 200 - Import Stock Records - Fail any products with an invalid supplier account reference, previously logged an error and still imported the product.</li>
+  <li>Sage 50 - Import Sales Orders, Invoices and Purchase Orders - Added validation for the tax code, nominal code and department.</li>
+  <li>Sage 200 - Import Stock Records - Automatically enable search category values on the product group, if not already enabled</li>
+</ul>
+
+<h3 id="fixed-8">Fixed</h3>
+<ul>
+  <li>Sage 50 - Import Stock Records - Only set ItemType when provided or creating a new product.</li>
+  <li>Sage 200 - Import Sales Orders - Fixed NullReferenceException in Sage v9 and above when the project code doesn’t exist</li>
+  <li>WooCommerce - Download Orders - Meta data is now written to the output file when the setting is enabled</li>
+  <li>Magento - Upload Products - Fixed error when specifying a decimal qty</li>
+  <li>Sage 50 - Import Transactions - Only check for duplicates if an Id is provided in the XML</li>
+  <li>Zynk Upgrader - Now copy auto mapper files and fixed permissions issues with the copied files</li>
+  <li>Sage 200 - Export Stock Records - Now write search categories to the SearchCategories collection instead of Attributes</li>
+  <li>Task Scheduler - Fixed issue where schedules don’t trigger on Windows 10</li>
+  <li>Sugar CRM - Connection - Fixed issue connecting to Sugar version 7.7.x.x</li>
+  <li>Amazon Marketplace - Upload Feeds - Fixed the ‘Missing required parameter SellerId’ error</li>
+  <li>Sage 50 - Import Sales Orders, Purchase Orders and Invoices - Added validation for the default product code setting</li>
+</ul>
+
+<h2 id="release-26">Release 2.6</h2>
+<h3 id="new-7">New</h3>
+<ul>
+  <li>WooCommerce - Added auto mappers for orders, customers and products</li>
+  <li>Sage 200 - Import Price Bands - Create and update price bands and selling prices</li>
+  <li>Kashflow - New connector that integrates with accounting web system Kashflow.</li>
+  <li>Options - Optionally select your own SMTP credentials to send workflow notification emails.</li>
+  <li>Sage 50 - Export Departments - A task to export departments from Sage 50.</li>
+  <li>Designer - Task Settings - Added drop down which allows values to be selected from the source data</li>
+</ul>
+
+<h3 id="updated-8">Updated</h3>
+<ul>
+  <li>Magento - Upload Products - Added validation of required fields</li>
+  <li>Sage 200 - Import Purchase Orders - Now support setting analysis codes on item lines</li>
+  <li>Sage 200 - Import Transactions - Renamed existing Prevent Duplicates setting to ‘Check References’, added new Prevent Duplicates setting which checks the truth table</li>
+  <li>Sage 200 - Import Sales Orders - Now support setting the ‘Show on customer documents’ and ‘Show on picking list’ fields</li>
+  <li>Sage 200 - Export Stock Records - Added option to export product suppliers</li>
+  <li>Amazon - Download Orders - Optionally download a specific order by using the Order Id setting.</li>
+  <li>Amazon - Download Commissions/Orders/Refunds - Optionally specify a ‘Download To’ date to download orders between a specific time frame.</li>
+  <li>Amazon - All Tasks - Now configure which channels you wish to integrate at task level, also one connection supports all channels.</li>
+  <li>Sage 50 - Departments - Set department by name now on various import tasks using new department objects.</li>
+  <li>Sage 200 - Import Sales Orders - Now support setting the project analysis fields on item lines</li>
+</ul>
+
+<h3 id="fixed-9">Fixed</h3>
+<ul>
+  <li>Sage 50 - Email Invoices - Fixed issue setting the printed/emailed flags in Sage</li>
+  <li>Salesforce - Complex Object Upload - No longer check required fields are provided when updating an existing record</li>
+  <li>WooCommerce - Upload Customers - Fixed invalid email error when trying to create a new customer in WooCommerce</li>
+</ul>
+
+<h2 id="release-251">Release 2.5.1</h2>
+<h3 id="updated-9">Updated</h3>
+<ul>
+  <li>Magento - Upload Products - Can now set the is_in_stock field manually via the XML</li>
+</ul>
+
+<h3 id="fixed-10">Fixed</h3>
+<ul>
+  <li>Sage 50 - Import Invoices - Fixed issue with the Default Account Reference setting not working</li>
+  <li>Quickbooks - Added missing dependency which prevented the connector from loading</li>
+</ul>
+
+<h2 id="release-25">Release 2.5</h2>
+<h3 id="new-8">New</h3>
+<ul>
+  <li>Amazon - Download Commissions - Retrieve the commission value of an order based on date</li>
+  <li>Amazon - Download Refunds - Retrieve refund value of an order based on date</li>
+  <li>Connection Failure Notifications - Can now get an email if Zynk can’t connect to an external system. Currently only supported for Sage 50 UK, Sage 50 US, Sage 200, ACT, Magento V1 &amp; V2, Salesforce, SugarCRM, Zoho CRM, Xero, WooCommerce, FTP, MS SQL, ODBC, OLEBD and SQLite</li>
+  <li>Extensions - Now install extra connectors from the extensions form.</li>
+  <li>Salesforce - Added Complex Object Upload task</li>
+  <li>My Mobile Workers - New connector for integrating Jobs, Items and Customers.</li>
+  <li>Quickbooks - Added new connector for Quickbooks</li>
+</ul>
+
+<h3 id="updated-10">Updated</h3>
+<ul>
+  <li>Sage 50 - Export Price Lists - Add list of account references assigned to the price list.</li>
+  <li>Sage 200 - Export Sales Orders - Now export the delivery phone and fax numbers</li>
+  <li>Sage 200 - Import Transactions - Now support setting second reference on BankReceipt and BankPayment transactions</li>
+  <li>Sage 200 - Import Transactions - Now support importing non-taxable receipts and non-taxable payments against bank accounts</li>
+  <li>Amazon Marketplace - Connection - Added support for Canadian accounts</li>
+  <li>Amazon Marketplace - Download Orders - Added fulfillment channel option to specify whether to download FBA, non-FBA or all orders</li>
+  <li>Connection Wizard - Help button now takes you to the specific article for the type of connection you are editing</li>
+  <li>Designer - Now expand container tasks after moving an existing task into them</li>
+  <li>Database Connectors - Connections are now kept open and re-used between tasks</li>
+  <li>Report Emails - Improved the style of the reports, and updated all reports to use the same style</li>
+  <li>Sage 200 - Export Sales Orders/Purchase Orders - Now output both the Description and Text elements for free text lines, mimicking the fact that these are interchangeable in the import tasks</li>
+  <li>WooCommerce - Added support for the WC API Custom Meta plugin</li>
+</ul>
+
+<h3 id="fixed-11">Fixed</h3>
+<ul>
+  <li>Xero - Download Tasks - Filter setting is now applied to every page of records downloaded</li>
+  <li>File - If File Exists - Will no longer automatically create the file if it doesn’t exist, causing the task to always return true</li>
+  <li>Sugar CRM - Connection - Will now automatically re-connect if the session ID becomes invalid</li>
+  <li>Log Database - Fixed issue with upgrade routine that prevented Zynk creating entries in the workflow history</li>
+  <li>CSV - CSV to XML &amp; CSV Repeater - Now correctly handle delimited fields containing a line break</li>
+  <li>Sage 50 - Export Purchase Orders - When “Use Base Currency” is false, all values (net, tax and totals) were exported as 0</li>
+  <li>Sage 50 - Import Stock Transactions - Now reads out the generated StockTransactionNumber</li>
+  <li>WooCommerce - Download Tasks - Fixed issue which could cause some records not to be returned when downloading new or modified records</li>
+  <li>Designer - Fixed object reference error when clicking Run Workflow when there’s no workflow open</li>
+  <li>Designer - Import Workflow - Fixed issue which caused auto mapper files to not be imported</li>
+  <li>Sage 50 - Export Tasks - ‘NOT LIKE’ operator now functions as expected.</li>
+  <li>Sage 200 - Traceable errors when trying to receive stock for traceable item on Sales return</li>
+</ul>
+
+<h2 id="release-24">Release 2.4</h2>
+<h3 id="new-9">New</h3>
+<ul>
+  <li>Sage One - Added new connector for Sage One</li>
+</ul>
+
+<h3 id="updated-11">Updated</h3>
+<ul>
+  <li>Zoho CRM - Connection - Now support generating an auth token using an application specific password, and allow auth tokens to be entered manually where two factor auth is enabled</li>
+  <li>Zoho CRM - Download Records - Now support filtering records</li>
+  <li>Sage 200 - Export Sales Orders - Now export the project analysis fields on item lines</li>
+  <li>Sage 200 - Export Transactions - Now Export the project analysis fields</li>
+  <li>Sage 200 - Import Sales Orders - Now support creating quotes and pro formas</li>
+  <li>Sage 200 - Analysis Codes - updated the set analysis code value logic to add new values where they don’t exist and the setting in sage permits (Add New On Entry is enabled)</li>
+  <li>Designer - Can now rename workflows by pressing F2</li>
+  <li>Sage 50 US - Now support Sage 50 US 2017</li>
+  <li>Sage 50 - Export Query - Added ‘Export As Elements’ option</li>
+</ul>
+
+<h3 id="fixed-12">Fixed</h3>
+<ul>
+  <li>Sage 50 - Email Invoices/Statements - Fixed object reference not set error when a CC and BCC address are not specified</li>
+  <li>Sage 50 - Dashboards - Sales Order and Invoice totals now take credits into account</li>
+  <li>Sage 200 - Import Sales Orders - Fixed issue where stock would only be partially allocated if negative stock levels are allowed and some (but not enough) free stock is available</li>
+  <li>Designer - Fixed error when trying to delete a template that has been added to the workflow</li>
+  <li>Sage 200 - Import Transactions - Always use exempt tax code for SR, SP, PR and PP transactions (any other tax code is not valid)</li>
+  <li>Sage 200 - Import Transactions - Always set a posted date on the transactions, prevents them appearing as deferred</li>
+  <li>Sage 200 - Import Sales Orders - Fixed object reference not set error when allocating an order that doesn’t contain any lines that require allocation</li>
+  <li>Sage 200 - Import Sales Orders - Fixed error when trying to set a discount on a free text item</li>
+  <li>Sage 200 - Import Customers - Now match existing contacts correctly when only some of the name fields (Forename, Middlename and Surname) are provided</li>
+  <li>Sage 200 v9, v10, v11 - Export Tasks - Fixed error when exporting custom fields</li>
+  <li>Designer - Fixed unhandled exception when trying to delete a template that has been added to a workflow</li>
+  <li>Sage 50 - Import Customers - Fixed detached field error when creating a new delivery address</li>
+  <li>MS SQL, ODBC, OLEDB - All Tasks - Now log a more meaningful error message if no connection is selected in the task settings</li>
+</ul>
+
+<h2 id="release-23">Release 2.3</h2>
+<h3 id="new-10">New</h3>
+<ul>
+  <li>Sage 50 - Added Export Couriers task</li>
+  <li>Sage 50 - Added Export SDO Query task</li>
+  <li>Sage 200 - Added connector for Sage 200 2016 (v11)</li>
+</ul>
+
+<h3 id="updated-12">Updated</h3>
+<ul>
+  <li>SMTP Connection - Now validate the server and port settings</li>
+  <li>Sage 200 - Update Sales Orders - Now support updating the priority field</li>
+  <li>Sage 50 - Import Sales Orders - Now set the global department to the customer’s department if not specified in the XML</li>
+  <li>Sage 50 - Import Invoices - Now set the global department to the customer’s department if not specified in the XML</li>
+  <li>Sage 200 - Import Transactions - Now support importing JD and JC transactions as part of a group with a SI, SC, PI or PC transaction</li>
+  <li>Sugar CRM - Upload Records - Added settings to choose whether to perform an insert, update or upsert operation against Sugar</li>
+</ul>
+
+<h3 id="fixed-13">Fixed</h3>
+<ul>
+  <li>FTP Rename - Fixed issue with some FTP servers when checking if the file exists</li>
+  <li>Sage 200 - Export Customers - Fixed issue where contacts would not export if there was only one associated with the account</li>
+  <li>Sage 200 - Export Tasks - Fixed issue where custom where clauses would have no effect when the task is set to export all records</li>
+  <li>Sage 200 - Import Sales Orders - Fixed object reference error when auto creating products and no default warehouse is provided, or the warehouse provided doesn’t exist</li>
+  <li>Workflows - Now only resume a workflow if the ‘Resume Workflow on Failure’ setting is true</li>
+  <li>Sage 50 - Export Inventory - Exports to incorrect XML structure /Company/Inventory/Inventory</li>
+  <li>Sage 200 - Import Transactions - Fixed issue with the rounding of tax amounts</li>
+  <li>Sage 50 - Export Customers - Fixed issue where customers without a delivery address were not exported when the Export Delivery Addresses setting was enabled</li>
+  <li>Zoho CRM - Upload Records - Task will no longer fail if the input file contains records with an error collection</li>
+  <li>Zynk Objects - Razor - Fixed issue where Zynk could hang if the value returned by the script contained a @ symbol</li>
+  <li>Data Tab - Changes to the internal or external IDs are now saved</li>
+  <li>Magento - Download Tasks - Fixed error if filtering on the created_at or updated_at field</li>
+</ul>
+
+<h2 id="release-22">Release 2.2</h2>
+<h3 id="new-11">New</h3>
+<ul>
+  <li>Extensions - Extensions Manager now allows the download of useful tools such as Zip Search, ZLM and XSLT Builder.</li>
+</ul>
+
+<h3 id="updated-13">Updated</h3>
+<ul>
+  <li>Sage 50 - Export Customers - Added option for exporting multiple delivery addresses</li>
+  <li>Sage 50 - Import/Export Sales Orders - Added support for the new custom fields in Sage 50 2016</li>
+  <li>Sage 50 - Import/Export Purchase Orders - Added support for the new custom fields in Sage 50 2016</li>
+  <li>Sage 50 - Import/Export Invoices - Added support for the new custom fields in Sage 50 2016</li>
+  <li>FTP - Rename - Now support overwriting existing files</li>
+  <li>Task Library - Tasks are now grouped by system type</li>
+  <li>Sage 200 - Export Suppliers - Now export bank infomation</li>
+  <li>Sage 50 - Import Purchase Orders - Added support for auto creating suppliers</li>
+  <li>Zynk Objects - Files can now be dragged and dropped onto the form, which automatically sets the value</li>
+  <li>Sage 200 - Import Stock Transactions - Added a prevent duplicates setting</li>
+  <li>Sage 50 - Email Invoices/Statements - Added CC and BCC settings</li>
+  <li>Sage 200 - Export Customers - Added contact roles to the contact export</li>
+</ul>
+
+<h3 id="fixed-14">Fixed</h3>
+<ul>
+  <li>On Failure Tasks - Fixed issue where tasks which use a connection would fail with an ‘object reference not set to an instance of an object’ error</li>
+  <li>Designer - Fixed application hanging when dragging a container/repeater task into one of it’s own child container/repeater tasks</li>
+</ul>
+
+<h2 id="release-218">Release 2.1.8</h2>
+<h3 id="new-12">New</h3>
+<ul>
+  <li>Email - Send Integration Report - Added new task for generating and sending a report based on success/fail files</li>
+  <li>Designer - Workflows can now be ran without having to save them first</li>
+  <li>Workflows - Can now resume from where they last finished if an error occurred</li>
+  <li>Mappings - Can now define mappings between data from different systems (e.g. Magento shipping method &gt; Sage additional charge), which can be used in XSLT via the MapTo and MapFrom functions</li>
+  <li>Twitter - A twitter connector that allows you to download followers, retweets, mentions etc. and upload tweets.</li>
+  <li>LinkedIn - A LinkedIn connector that allows you to download your profile information.</li>
+  <li>Ebay - Added Upload Inventory task</li>
+  <li>Magento V2 - Added new Magento V2 connector</li>
+</ul>
+
+<h3 id="updated-14">Updated</h3>
+<ul>
+  <li>Sage 50 - All tasks - Connection is now kept open and re-used between tasks</li>
+  <li>Sage 200 - All tasks - Connection is now kept open and re-used between tasks</li>
+  <li>Magento - All tasks - Connection is now kept open and re-used between tasks</li>
+  <li>Salesforce - All tasks - Connection is now kept open and re-used between tasks</li>
+  <li>Sugar CRM - All tasks - Connection is now kept open and re-used between tasks</li>
+  <li>Sage 50 US - All tasks - Connection is now kept open and re-used between tasks</li>
+  <li>ACT - All tasks - Connection is now kept open and re-used between tasks</li>
+  <li>Sage 200 - Import Customers - Added support for setting the payment basis field</li>
+  <li>Campaign Monitor - Upload Subscribers - Added resubscribe setting</li>
+  <li>Installer - The installer is now signed and will show the publisher as ‘Zynk Software’</li>
+  <li>Sugar CRM - Query - Now uses pagination to download the results in a series of batches</li>
+  <li>Sage 50 - Export Invoices - Now export the GlobalNominalCode, GlobalDetails, NetValueDiscountDescription, NetValueDiscountComment1 and NetValueDiscountComment2</li>
+  <li>eBay - Download Orders - Now expose a property ‘Include Item Specifics’, resulting in extended item information being downloaded (including MPN) with each order</li>
+  <li>eBay - Download Listings - Now expose a property ‘Include Variations’, resulting in extended variant (option) information being downloaded (including MPN) with each listing</li>
+  <li>Schedule - Default the ‘Configure for’ setting to highest version supported by the OS</li>
+  <li>Designer - Now show a status icon next to each task when running a workflow</li>
+  <li>Sugar CRM - Upsert Task - Support matching on multiple key fields</li>
+  <li>Sage 50 - Connection - Improved wording of the error messages</li>
+</ul>
+
+<h3 id="fixed-15">Fixed</h3>
+<ul>
+  <li>ACT! - Export Contacts - No contacts exported when exporting modified.</li>
+  <li>CSV to XML - Now handle invalid XML characters in the column names correctly</li>
+  <li>XML to CSV - Still output the header if the input file contains no data when using a custom mapping</li>
+  <li>Sugar CRM - Upsert - Fixed error when matching existing records if the key field’s value contained an apostrophe</li>
+  <li>Sage 200 - Sales/Purchase Traceable adjustments - Stock items with non-standard casing (some lowercase and some uppercase characters) not identified</li>
+  <li>Sage 200 - Import Stock Transactions - Errors being thrown if the item being processed is not set up as a traceable item in Sage</li>
+  <li>Sage 200 - Export Goods Despatched Note - Orders with only non-traceable item’s despatches are not correctly picked up when Export Traceable Items is set to True</li>
+  <li>Sage 200 - Export Goods Despatched Note - Multiple traceable despatches not picked up in export</li>
+  <li>Sage 200 - Export Purchase Orders - Header custom fields not being exported</li>
+  <li>Zynk Core - Razor Engine - @@ can now be used to escape the razor instruction (@)</li>
+  <li>Sage 200 - Sales/Purchase Traceable adjustments - Traceable batch attributes not found on import</li>
+  <li>Sage 50 - Import Sales Orders / Invoices - Convert To Account Currency setting now converts unit and net value discount amounts</li>
+  <li>Sugar CRM - Upsert Task - Fixed error when looking up existing records by a key field where the module name is different to the table name</li>
+</ul>
+
+<h2 id="release-217">Release 2.1.7</h2>
+<h3 id="new-13">New</h3>
+<ul>
+  <li>Sage 50 - Update Ledgers - Added task to post invoices to the ledger</li>
+  <li>ACT 2016 - Added new ACT 2016 connector</li>
+</ul>
+
+<h3 id="updated-15">Updated</h3>
+<ul>
+  <li>Xero - Download Tasks - Added a separate setting for the download from date, no longer uses last ran</li>
+  <li>CSV Library - Added support for setting the encoding to be used when processing the Input CSV File</li>
+  <li>Sage 50 - Import Purchase Orders - Added support for automatically setting the stock as ‘on order’</li>
+  <li>Sage 50 - Import Despatch Notes, Goods Received Notes and Stock Transactions - Added prevent duplicates setting</li>
+  <li>Sage 200 - Import Despatch Notes, Goods Received Notes and Stock Transactions - Added prevent duplicates setting</li>
+  <li>Salesforce - Create, Update and Upsert Tasks - Now log any error message returned by the API</li>
+</ul>
+
+<h3 id="fixed-16">Fixed</h3>
+<ul>
+  <li>Magento - Upload Group Prices - Fixed issue setting the standard price on products</li>
+  <li>Sugar CRM - Upsert - Fixed issue when looking up the record IDs to set in link fields</li>
+  <li>Sage 50 - Import Sales Orders - Fixed issue where company name on sales order is empty if Company on SalesOrderAddress in XML is empty, now uses the FullName (Title, Forename, Surname)</li>
+  <li>CSV Library - Normalised the terminology used in the tasks.</li>
+  <li>XML Select - Fixed object reference exception when the XPath query does not return a result</li>
+</ul>
+
+<h2 id="release-216">Release 2.1.6</h2>
+<h3 id="new-14">New</h3>
+<ul>
+  <li>Sage 200 - Update Purchase Orders - Allows for purchase orders/returns to be adjusted (received/returned).</li>
+  <li>Linked In - New Linked In connector to be used for downloading your profile.</li>
+  <li>Campaign Monitor - Download Lists</li>
+</ul>
+
+<h3 id="updated-16">Updated</h3>
+<ul>
+  <li>Sage 200 - Import Goods Received Notes - AccountReference is no longer mandatory, it will be looked up based on the OrderNumber if not provided.</li>
+  <li>Sage 200 - Import Goods Received Notes - Now support setting the warehouse and bin.</li>
+  <li>Sage 200 - Update Sales Orders - Now support sales order/return adjustments</li>
+  <li>Sage 200 - Export Goods Despatched Notes - Added support for exporting traceable item details</li>
+  <li>Sage 200 - Export Stock Records - Fixed issue where incorrect stock nominal code was exported</li>
+  <li>Sage 200 - Export Stock Records - Now export the revenue, accrued receipts and issues nominals</li>
+  <li>Web Automation - Now implemented using Selenium + PhantomJS, enabling support for javascript</li>
+</ul>
+
+<h3 id="fixed-17">Fixed</h3>
+<ul>
+  <li>Sage 200 v9/10 - Export Stock Records - Fixed the ““StockItemPrice” and “StockItemPrice” in the FROM clause have the same exposed names” error.</li>
+  <li>Sage 200 v9/10 - Export Stock Records - Fixed issue with filtering on new records</li>
+  <li>Sage 200 - Export Sales Orders - Fixed issue where multiple despatches would cause item lines to be duplicated in the XML</li>
+  <li>XML Dashboards - Fixed issue reading the value returned by the XPath query</li>
+  <li>Sage 50 - Import Sales Orders - Fixed issue with looking up the unit price of item lines in Sage when not provided in the XML</li>
+  <li>FTP Repeater - Fixed issue with context variables being incorrectly calculated, causing unexpected errors.</li>
+</ul>
+
+<h2 id="release-215">Release 2.1.5</h2>
+<h3 id="fixed-18">Fixed</h3>
+<ul>
+  <li>FTP - Upload - Fixed temporary upload settings issue.</li>
+  <li>Zynk - Core - Fixed issue with errors on sql ce internal log database.</li>
+</ul>
+
+<h2 id="release-214">Release 2.1.4</h2>
+<h3 id="new-15">New</h3>
+<ul>
+  <li>Magento - Added Upload Product Images task</li>
+  <li>Designer - Added a notifications section, summarising recent workflow runs and failures</li>
+</ul>
+
+<h3 id="updated-17">Updated</h3>
+<ul>
+  <li>HTTP Task - Added additional debug logging.</li>
+  <li>Sage 50 - Export Query - Can now specify a list of tables to check the modified date against.</li>
+  <li>XSLT Transform - Added support for xsl:message, messages can be logged as debug messages or to a file.</li>
+  <li>XSLT Transform - Added extension objects with common date, file and node functions.</li>
+  <li>Ebay - All Tasks - Now use the latest version of the API (947).</li>
+  <li>Designer - Updated the logo and branding.</li>
+  <li>Logs - All log data is now stored in a separate Log.sdf file.</li>
+  <li>Sage 200 - Export Sales Orders - Now export the ProjectRef and ProjectItem for item lines.</li>
+  <li>Sage 200 - Import Goods Received Notes - Now support setting the alternative ref field on traceable items.</li>
+  <li>Sage 50 - Email Statements - Now allow a custom date range to be specified for the transactions.</li>
+</ul>
+
+<h3 id="fixed-19">Fixed</h3>
+<ul>
+  <li>Designer - Fixed case sensitivity issue on the file extension when opening a workflow.</li>
+  <li>Sage 200 - Import Stock Records - Fixed error that would occur when trying to set the fulfilment method on a new product to FromSupplier.</li>
+</ul>
+
+<h2 id="release-213">Release 2.1.3</h2>
+<h3 id="fixed-20">Fixed</h3>
+<ul>
+  <li>XSLT Transform - Now calculate the parameter values before the output file is prepared for writing.</li>
+  <li>Sage 50 - Import Sales Receipt - Don’t prevent tax amount from being set, VAT is valid on SR’s if VAT cash accounting enabled.</li>
+</ul>
+
+<h2 id="release-212-1">Release 2.1.2</h2>
+<h3 id="new-16">New</h3>
+<ul>
+  <li>XSLT Builder - Added tool for writing and testing XSLT transforms.</li>
+</ul>
+
+<h3 id="updated-18">Updated</h3>
+<ul>
+  <li>Sage 50 - Export Tasks - Updated the description on the export settings to reflect the current logic for determining new/modified records</li>
+  <li>Sage 50 - Export Tasks - Updated the Query Settings to support specifying how clauses will be built up (AND or OR)</li>
+  <li>Sage 50 - Export Reports - Readded support for XLS and XLSX file type.</li>
+</ul>
+
+<h3 id="fixed-21">Fixed</h3>
+<ul>
+  <li>Schedule - Fixed error when trying to change the location or group.</li>
+  <li>Sage 50 - Export Transactions - Fixed an issue with how the query was being built up.</li>
+  <li>Zynk - Set Variable Task - Variable values are now calculated when the task is ran, rather than each time the variable is accessed.</li>
+  <li>Razor Scripts - Now correctly calculate the value of Zynk Objects used in the script.</li>
+  <li>Zynk Objects - Read Contents of File option - Fixed the ‘Cannot access the file because it is being used by another process’ error when reading a file that is already open.</li>
+  <li>File - File Repeater - Fixed issue where some modified files could be skipped if there was another file modified more recently in the same folder.</li>
+  <li>Sage 50 - Import Sales Orders - Fixed issue where the item description would not default to that on the product record if the SKU contained leading/trailing whitespace.</li>
+  <li>Sage 200 - Export Customers - Fixed issue with the wrong values being exported to the website and mobile fields on contacts.</li>
+</ul>
+
+<h2 id="release-211-1">Release 2.1.1</h2>
+<h3 id="new-17">New</h3>
+<ul>
+  <li>Zynk - Stop Repeater - Added new task for breaking out of repeaters.</li>
+  <li>Dashboards for Sage 50 UK - Added support for quotes.</li>
+  <li>Dashboards for Sage 50 UK - Added support for transactions.</li>
+  <li>Dashboards for Sage 200 - Added support for transactions.</li>
+  <li>HTML - HTML to XML - Added new task for converting HTML to XML.</li>
+  <li>Sage 200 - Update Sales Orders - Added new task for updaing analysis codes on existing orders.</li>
+</ul>
+
+<h3 id="updated-19">Updated</h3>
+<ul>
+  <li>Options - Added settings for changing the supported SSL/TLS versions.</li>
+  <li>HTTP Task - Addded option for setting the protocol version, defaults to 1.1.</li>
+  <li>Dashboards - Split the list of available values into two separate drop downs, for module and value.</li>
+  <li>WooCommerce - Upsert Products - Now match existing product variations based on SKU.</li>
+  <li>Shopify - Upsert Customers - Now match existing customers based on email address.</li>
+  <li>FTP - Added support for a new format of FTP server.</li>
+  <li>Zynk Data Upgrader - Added option to not run the upgrade.</li>
+  <li>Sage 200 - Import Customers - Now support setting the account status field.</li>
+</ul>
+
+<h3 id="fixed-22">Fixed</h3>
+<ul>
+  <li>Backups - Fixed the ‘size was 0, but I expected XXXXX’ error.</li>
+  <li>Licensing - Now correctly check the number of tasks in a workflow.</li>
+  <li>Dashboards for Sage 50 UK - Sales order values now exclude quotes and proformas.</li>
+  <li>Dashboards for Sage 200 - Sales order values now exclude returns.</li>
+  <li>Sage 50 - Import Transactions - Ignore the TaxAmount on sales receipt transactions, as its not valid to specify this value.</li>
+  <li>WooCommerce - Upsert Products - Fixed issue setting quantity in stock for product variations.</li>
+  <li>Sage 200 - Import Suppliers - Issue where payment group information was flattened on Sage 200 suppliers updated by Zynk, even when payment group not provided in XML.</li>
+  <li>Truth - Issue with retrieval of matching records where if no Id node provided in data (e.g. CustomerId, SupplierId), the first matching InternalId to that type is retrieved from the Truth.</li>
+  <li>Zoho - Upserting Records - Issue uploading data containing special characters (e.g. &amp;).</li>
+  <li>Email Repeater - Fixed issue with the message body variable not being populated in certain conditions.</li>
+  <li>Sage 50 - Import Invoices - Price calculations now take the decimal precision setting in Sage into account.</li>
+  <li>Sage 50 - Import Sales Orders - Price calculations now take the decimal precision setting in Sage into account.</li>
+  <li>Sage 50 - Import Invoices - Now default the SKU code to S3 when importing service invoices.</li>
+</ul>
+
+<h2 id="release-210-1">Release 2.1.0</h2>
+<h3 id="new-18">New</h3>
+<ul>
+  <li>Dashboards for Sage 50 UK - New connector for building dashboards for Sage 50.</li>
+  <li>Dashboards for Sage 200 - New connector for building dashboards for Sage 200.</li>
+  <li>Dashboards for Salesforce - New connector for building dashboards for Salseforce.</li>
+  <li>Dashboards for SQL - New connector for building dashboards for SQL databases.</li>
+  <li>Dashboards for XML - New connector for building dashboards for XML data.</li>
+  <li>Magento - Upload Invoices - Added a new task for uploading invoices to Magento.</li>
+  <li>Magento - Upload Shipments - Added a new task for uploading shipments to Magento.</li>
+  <li>Salesforce - Upload Prices - Added task for updating pricebooks, supports multiple currencies.</li>
+  <li>Web Automation - New task for automating web processes.</li>
+</ul>
+
+<h3 id="updated-20">Updated</h3>
+<ul>
+  <li>Designer - Logs - Logs are now displayed in a single list, with buttons to show/hide info, debug, warning and error messages.</li>
+  <li>Designer - Connections can now be removed from tasks.</li>
+  <li>All Tasks - Added an option to enable/disable debug logging, by default it is disabled</li>
+  <li>Sage 50 - Connection - No longer store the version number as part of the connection, will now connect to a new version of Sage automatically if the data path hasn’t changed.</li>
+  <li>Sage 50 - Import Stock Records - Added pre-validation of the products.</li>
+  <li>Sage 200 - Import Customers - Added support for setting the credit reference field.</li>
+  <li>Sage 200 - Import Customers - Added support for setting the account on hold field.</li>
+  <li>Sage 200 - Export Customers - Now export the credit reference field.</li>
+  <li>Sage 200 - Import Stock Transactions - Added support for setting the debit/credit nominal analysis.</li>
+  <li>Sage 200 - Export Stock Transactions - Export the debit/credit nominal analysis lines if the nominal ledger was updated.</li>
+  <li>Sage 200 - Export Query - Now has a single Query setting which can be edited using the query designer, and support for updating the OpLock based on multiple tables</li>
+  <li>Sage 200 - Import Despatch Notes - Added support for matching to orders based on the customer order number.</li>
+  <li>Sage 200 - Import Stock Transactions - Now write the ID to the success file.</li>
+  <li>Shopify - All Tasks - Now connect to Shopify as a private app.</li>
+  <li>History Tab - Added refresh button.</li>
+  <li>WooCommerce - Upload Tasks - Added validation for required fields.</li>
+</ul>
+
+<h3 id="fixed-23">Fixed</h3>
+<ul>
+  <li>Designer - Improved error handling when loading/saving workflows.</li>
+  <li>Designer - Now displays correctly when using non-standard windows themes.</li>
+  <li>Designer - Now associate workflow package files (.wpk) with Zynk, allows import of workflows directly from the file system.</li>
+</ul>
+
+<h2 id="release-203">Release 2.0.3</h2>
+<h3 id="updated-21">Updated</h3>
+<ul>
+  <li>Sage 200 - Import Goods Despatched Notes - Added option to auto allocate stock</li>
+  <li>Sage 200 - Import Stock Records - Added support for setting custom fields</li>
+  <li>Sage 200 - Import Stock Transactions - Added support for setting the cost price field</li>
+  <li>Schedules - Now set ‘Run with Highest Privileges’ to true and ‘Do not store passwords’ to false by default</li>
+  <li>Xero - Now connect using the private API</li>
+  <li>Zoho CRM - Added all standard modules to the list of record types</li>
+  <li>Zoho CRM - Added support for matching related records based on an external ID in the truth table</li>
+</ul>
+
+<h3 id="fixed-24">Fixed</h3>
+<ul>
+  <li>Sage 50 - Export Sales Orders/Invoices - Fixed issue where the quantity would export as 0 if it was not a whole number</li>
+  <li>Sage 50 - Import Invoices - PricesIncludeTax rounds correctly.</li>
+  <li>Sage 50 - Fixed issue detecting whether Sage is installed</li>
+  <li>Zynk - Set Variable - Fixed issue where razor scripts which raed the current value of the variable would cause Zynk to hang</li>
+</ul>
+
+<h2 id="release-202">Release 2.0.2</h2>
+<h3 id="new-19">New</h3>
+<ul>
+  <li>Zynk - Truth Tasks - Added a Insert into Truth task.</li>
+  <li>Zynk - Truth Tasks - Added a Update Truth task, allows for on custom criteria.</li>
+  <li>Zynk - Truth Tasks - Added a Delete from Truth task, allows for on custom criteria.</li>
+  <li>Zynk - Truth Tasks - Added a If Truth Contains task, allows for on custom criteria.</li>
+  <li>XML - Select XML Task - Added a Select XML task, allows for a value at a given XPath to be retrieved from XML (and optionally stored in a variable).</li>
+</ul>
+
+<h3 id="updated-22">Updated</h3>
+<ul>
+  <li>Zynk Objects - Can now lookup a value from another task’s settings</li>
+  <li>Sage 50 - Import Stock Records - Can now set the Inactive flag on products</li>
+  <li>Sage 50 - Export Stock Records - Now export the Inactive flag on products</li>
+  <li>Data Tab - Added search functionality</li>
+  <li>Sage 200 - Import Purchase Orders - Can now set the confirmation method on free text lines</li>
+  <li>Salesforce - Can now specify which API version to use</li>
+</ul>
+
+<h3 id="fixed-25">Fixed</h3>
+<ul>
+  <li>Sage 50 - Export Tasks - Fixed object reference not set to an instance of object error when running export task within a repeater.</li>
+  <li>Sage 50 - Export Invoices - Fixed negative values appearing on product credit invoices</li>
+  <li>Sage 50 - Import Sales Orders/Invoices - Default QtyOrdered on carriage to 1, preventing the price being calculated as 0 if a quantity is not specified</li>
+  <li>History Tab - Fixed the default ordering of the log entries</li>
+  <li>Zynk - Set Variable Task - Razor values are now calculated when the task is ran, rather than each time the variable is accessed</li>
+</ul>
+
+<h2 id="release-201">Release 2.0.1</h2>
+<h3 id="updated-23">Updated</h3>
+<ul>
+  <li>Sage 200 - Import/Export Customers - Now support importing/exporting Credit Reference</li>
+  <li>Sage 200 - Import/Export Customers - Now support importing/exporting Trading Terms</li>
+  <li>Sage 200 - Import/Export Customers - Now support importing/exporting Sales Invoice Layout</li>
+  <li>Sage 200 - Import Stock Records - Now support assigning Warehouses to products on import (Warehouse must already exist)</li>
+  <li>Sage 200 - Import Stock Records - Now automatically assign search categories to the product group if it is not already assigned</li>
+  <li>Connections - Optional properties are now explicitly marked</li>
+</ul>
+
+<h3 id="fixed-26">Fixed</h3>
+<ul>
+  <li>Sage 200 - Export Goods Despatched Notes - Now export custom fields at both the despatch note and items level, UniqueId now contains the correct values</li>
+  <li>Sage 200 - Export Query - Fixed error caused by column names containing invalid characters for XML element/attribute names, invalid characters are now escaped</li>
+</ul>
+
+<h2 id="release-20">Release 2.0</h2>
+<h3 id="new-20">New</h3>
+<ul>
+  <li>Connection Manager - Connection details are no longer stored in workflow variables, and are now stored in the Connection Manager.</li>
+  <li>Facebook - Added Facebook connector, with tasks to get pages and post status updates.</li>
+  <li>Twitter - Added Twitter connector, with tasks to get favourites, followers, messages and timeline, and publish tweets.</li>
+  <li>Sage 50 US (BETA) - Added Sage 50 US connector, with tasks to import customers and sales orders, and export inventory.</li>
+  <li>WooCommerce - Added WooCommerce connector.</li>
+  <li>Task Library - The task library is now searchable.</li>
+  <li>My Workflows - Added functions to import/export workflows and their data.</li>
+  <li>SQL Select tasks - Added a graphical query builder.</li>
+  <li>Input/Output File Settings - Most tasks now have default input/output file names.</li>
+  <li>Data Upgrader - Upgrades all data for compatibility with Zynk v2.</li>
+  <li>Zynk CSV to Zynk XML - Transform .csv files directly into Zynk XML format.</li>
+</ul>
+
+<h3 id="updated-24">Updated</h3>
+<ul>
+  <li>Zynk Designer - Changed the appearance of the designer. Added new icons and updated the menu and toolbar options.</li>
+  <li>Zynk Designer - Added a context menu to the task list.</li>
+  <li>Zynk Designer - Now cache the task library, significatly speeds up application load time.</li>
+  <li>Zynk Designer - Removed debugging options.</li>
+  <li>Zynk Designer - Removed the welcome screen.</li>
+  <li>Zynk Options - Optionally use your default text editor instead of the Zynk editor.</li>
+  <li>Zynk Object Editor - Redesigned the Zynk object editor, type is now selected using a drop down.</li>
+  <li>Zynk Object Editor - Will now open large files in an external application.</li>
+  <li>Workflow Schedules - Redesigned the schedule form, gives much greater control over the schedule.</li>
+  <li>Workflow Templates - Templates are now added to the currently open workflow.</li>
+  <li>Workflow Templates - Workflows can now be saved as a template.</li>
+  <li>JSON - JSON to XML - Now supports reading static text as the input.</li>
+  <li>Magento - Update Orders - Can now specify the comment in the input XML file.</li>
+  <li>Magento - Update Orders - Added ‘Prevent Reprocessing’ option.</li>
+  <li>Magento - Upload Inventory - Added success/fail files.</li>
+  <li>Magento - Upload Prices - Added success/fail files.</li>
+  <li>Sage 50 - Import Sales Orders - Now only support payments with order of type ‘Payment already received’. Will automatically create an SA transaction for the payment amount.</li>
+  <li>Sage 50 - Export Report - Removed the unsupported export types.</li>
+  <li>Sage 200 - Export Tasks - Corrected the In/Out/Error counts shown on the history tab.</li>
+  <li>Sage 200 - Export Inventory - Added setting to enable/diable the export of traceable item details.</li>
+</ul>
+
+<h3 id="fixed-27">Fixed</h3>
+<ul>
+  <li>File Repeater - Processing modified files only - File changes made around the time of Workflow running were sometimes missed.</li>
+  <li>Truth Table - Fixed issues with sorting.</li>
+  <li>Zynk Designer - Imporoved error handling when opening workflow files.</li>
+  <li>ACT - All Tasks - Fixed error when a standard field has been deleted.</li>
+  <li>Amazon S3 - Updated to the latest SDK version, fixes issues with tasks not working.</li>
+  <li>Sage 50 - Login - Fixed missleading error when an invalid manual data path is provided.</li>
+  <li>Sage 200 - All Tasks - Fixed object reference error when their is an error in the input XML.</li>
+</ul>
+
+<h2 id="release-1627">Release 1.6.27</h2>
+<h3 id="new-21">New</h3>
+<ul>
+  <li>Tesco - Added Tesco Marketplace Module, tasks to download orders, update orders (acknowledge/cancel), update inventory, upload product listings, upload product images an upload shipments</li>
+  <li>NetDespatch - Added NetDespatch Module, tasks to create new jobs or update jobs (cancel)</li>
+</ul>
+
+<h3 id="updated-25">Updated</h3>
+<ul>
+  <li>CoreCommerce - Download Products - Added options to exclude product image information</li>
+  <li>Magento - Upload Products - Added should_create and should_update flags in the XML, to control whether to create or update the product in Magento</li>
+  <li>Auto Mapper - Magento Orders to Zynk Sales Orders/Invoices - Correctly map configurable products to a single item line</li>
+  <li>Sage 200 - Import Stock Records - set the Allow sales orders (AllowSalesOrder in XML) field</li>
+  <li>Sage 200 - Import Stock Transactions - Supports replication of a transfer in Sage, using StockTransactionType of Transfer.</li>
+  <li>Truth Records - Updated to allow for external id’s up to 4000 characters (prevent truncation errors on Import into Sage)</li>
+</ul>
+
+<h3 id="fixed-28">Fixed</h3>
+<ul>
+  <li>CoreCommerce - Upload Products - Resolved timeout issues related to product get requests (previously returning base64 image information as well, increasing the request size)</li>
+  <li>JSON - JSON to XML - Validate XML output before writing to Output File.</li>
+  <li>Sage 50 - Export Inventory - Previously export as Company/Inventory/Inventory instead of the correct Company/Inventories/Inventory which is used in the connect object model</li>
+  <li>Sage 200 v8 (2011) - Import Purchase Orders - Fixed issue setting the Project Code and Project Item fields on free text items</li>
+  <li>Sage 200 - Import Stock Records - Don’t require the product name to be provided if the stock record already exists in Sage 200</li>
+  <li>Channel Advisor - Download Orders - Update the Date From date based on the highest modify date in the data rather than the time that the task last finished running</li>
+</ul>
+
+<h2 id="release-1626">Release 1.6.26</h2>
+<h3 id="updated-26">Updated</h3>
+<ul>
+  <li>Sage 200 - Import Sales Orders - Added options to auto allocate stock always, as Sage or never</li>
+  <li>Sage 200 - Import Sales Orders - Made the validation of delivery dates optional</li>
+  <li>Sage 200 - Import Stock Records - Added support for importing NonStock and Miscellaneous products</li>
+  <li>Sage 200 - Import Stock Records - Now supports setting the default nominal specification for the Stock, Revenue, AccruedReceipts and Issues (StockNominal, RevenueNominal, AccruedReceiptsNominal and IssuesNominal on Product). See Analysis section of http://zynk.apidoc.io/zynk-xml-for-sage-200/import-stock-records for more details.</li>
+  <li>Salesforce - Bulk API Tasks - Added support for connecting to a sandbox</li>
+</ul>
+
+<h3 id="fixed-29">Fixed</h3>
+<ul>
+  <li>Upsert Truth - Correctly set the type when creating new records</li>
+  <li>Sage 200 - Import Purchase Orders - Purchase Orders can now be imported against supplier accounts where the balance exceeds the credit limit.</li>
+  <li>Salesforce - Upload Products - Fixed issue with prices when multi-currency is enabled in Salesforce</li>
+  <li>Salesforce - Upload Products - Prices will no longer be set to 0 if not provided in the input file</li>
+  <li>Salesforce - Upload Products / Upload Records / Bulk Salesforce - Now correctly derive the salesforce instance name if made up of multiple parts e.g. https://my.domain.salesforce.com</li>
+  <li>Sage 200 - Import Purchase Orders - Auto Create Products now sets the created stock item’s Default Stock Nominal Analysis information based on the NominalCode, CostCentre and Department on the item line.</li>
+  <li>Sage 200 - Import Sales Orders - Auto Create Products now sets the created stock item’s Default Revenue Nominal Analysis information based on the NominalCode, CostCentre and Department on the item line.</li>
+  <li>Sage 50 - Export Sales Orders / Export Purchase Orders / Export Invoices - Now exports records following update of the item line information - e.g. update of allocated/received amounts.</li>
+  <li>Sage 50 - All Exports - Now correctly set the hash (used for tracking changes to objects) based on the item line changes as well.</li>
+  <li>Sage 50 - Export Pricelists - If Recalculate Prices setting is enabled on task and the price in Sage uses the ‘plus adjustment’ value now derives the correct price, previously coming up with incorrect values.</li>
+</ul>
+
+<h2 id="release-1625">Release 1.6.25</h2>
+<h3 id="updated-27">Updated</h3>
+<ul>
+  <li>Sage 50 - Email Invoices - No longer delete the invoice query result when running in test mode</li>
+  <li>Sage 50 - Email Statements - Added option to include all tranasactions on the statements</li>
+  <li>Sage 50 - Email Statements - No longer delete the statement query result when running in test mode</li>
+  <li>Sage 200 - Import Purchase Orders - Added auto create products option</li>
+</ul>
+
+<h3 id="fixed-30">Fixed</h3>
+<ul>
+  <li>Sage 50 - Import Tasks - Now validate the success/fail file setting before running the import</li>
+  <li>Sage 200 - Import Tasks - Now validate the success/fail file setting before running the import</li>
+  <li>Sage 200 - Export Query - Fixed index error when Export All is set to false</li>
+</ul>
+
+<h2 id="release-1624">Release 1.6.24</h2>
+<h3 id="new-22">New</h3>
+<ul>
+  <li>Added Sage 200 v10 (2015) connector</li>
+</ul>
+
+<h3 id="updated-28">Updated</h3>
+<ul>
+  <li>Automapper - eBay - Supports variation listings</li>
+  <li>Sage 50 - Email Statements/Email Invoices - Added a ‘Retain Generated Reports’ option to the task. Set to true if you would like the generated reports to remain in the Zynk working Workflow directory (i.e. for archiving) or set to false if you would like the generated reports to be deleted by Zynk once they have been emailed.</li>
+</ul>
+
+<h3 id="fixed-31">Fixed</h3>
+<ul>
+  <li>Sage 50 - Import Transactions - Journal imports could allow for mismatching values where a debit/credit failed to import due to invalid nominal</li>
+  <li>Sage 200 - Export Stock Records - Fixed issue with the query</li>
+  <li>Sage 200 - Export Query - Fixed issue when exporting records with large OpLock values</li>
+</ul>
+
+<h2 id="release-1623">Release 1.6.23</h2>
+<h3 id="updated-29">Updated</h3>
+<ul>
+  <li>Sage 200 - Export Query - Now supports the query timeout setting to resolve issues with exporting large data sets</li>
+</ul>
+
+<h3 id="fixed-32">Fixed</h3>
+<ul>
+  <li>Sage 200 - Export Stock Records - Convert all OpLock values to big int to prevent issues with large OpLock values</li>
+  <li>Sage 200 v9 and v10 - Login Form - Fixed issue where the login form would display each time the workflow runs</li>
+</ul>
+
+<h2 id="release-1622">Release 1.6.22</h2>
+<h3 id="fixed-33">Fixed</h3>
+<ul>
+  <li>Sage 50 - Import Invoices - Fixed issues with the Sku validation when importing service invoices</li>
+</ul>
+
+<h2 id="release-1621">Release 1.6.21</h2>
+<h3 id="fixed-34">Fixed</h3>
+<ul>
+  <li>Web - HTTP Task - Correctly set timeout, previously wasn’t setting all timeouts meaning that the task could sometimes take the default 5 mins before actually timing out</li>
+  <li>Amazon - Amazon Marketplace - Fixed issue with upload feeds not working, would complain about missing file ‘MarketplaceWebService.dll’ when running any of the upload feed tasks</li>
+</ul>
+
+<h2 id="release-1620">Release 1.6.20</h2>
+<h3 id="fixed-35">Fixed</h3>
+<ul>
+  <li>Workflow Data Tab - fixed issue where multiple records incorrectly updated when editing truth records</li>
+  <li>Amazon Module - Fixed issue with Zynk installer</li>
+</ul>
+
+<h2 id="release-1619">Release 1.6.19</h2>
+<h3 id="new-23">New</h3>
+<ul>
+  <li>ACT! 2015 - Added ACT! tasks (Import/Export Companies/Contacts/Opportunities/Products)</li>
+  <li>Amazon Vendor Central - Download Purchase Orders, Upload Purchase Order Responses/Despatch Advice/Invoices</li>
+</ul>
+
+<h3 id="updated-30">Updated</h3>
+<ul>
+  <li>Amazon - All Tasks - Now support the MWSAuthToken parameter</li>
+  <li>Sage 50 - Export Tasks - Store a hash for each record to prevent the tasks exporting all records when the Sage recovery tools are used</li>
+  <li>SFTP - Upload - Now support providing the file content as static text</li>
+  <li>Sage 200 - Export Tasks - Added support for ‘Characters To Cleanse’, if receiving errors on export to do with invalid characters, these can now be stripped out during the import.</li>
+</ul>
+
+<h3 id="fixed-36">Fixed</h3>
+<ul>
+  <li>Sage 200 - Export Tasks - Query Timeout setting now works correctly</li>
+  <li>Sage 200 - Import Sales Orders - Added prevalidation of the delivery dates to prevent the task failing if the date is in the past</li>
+  <li>Sage 50 Import Sales Orders/Invoices - Fixed issue where orders/invoicescould be imported without an account reference when auto create accounts was enabled but the account reference generation was disabled</li>
+</ul>
+
+<h2 id="release-1618">Release 1.6.18</h2>
+<h3 id="updated-31">Updated</h3>
+<ul>
+  <li>Magento - Update Orders - Added Prevent Reprocessing option</li>
+  <li>ConnectWise - Download GL Batch - Thru Date property now supports Zynk Objects (meaning caluclated/rolling dates can be used)</li>
+</ul>
+
+<h2 id="release-1617">Release 1.6.17</h2>
+<h3 id="updated-32">Updated</h3>
+<ul>
+  <li>Sugar CRM - Upsert - Now support matching with existing records based on the value of a given field</li>
+  <li>Sage 200 - Import Goods Despatched Notes - Added support for custom fields on despatch note and despatch lines</li>
+</ul>
+
+<h3 id="fixed-37">Fixed</h3>
+<ul>
+  <li>Sage 200 - Export Sales Orders - Certain fields where missing from the output file when exporting from Sage 200 v9 (2013)</li>
+</ul>
+
+<h2 id="release-1616">Release 1.6.16</h2>
+<h3 id="updated-33">Updated</h3>
+<ul>
+  <li>Sage 50 - Import Customers - Added support for specifying custom regular expression for stripping out unwanted characters in any generated account references (only applies when using Account Generation Settings).</li>
+  <li>Sage 50 - Import Sales Orders - Added support for specifying custom regular expression for stripping out unwanted characters in any generated account references (only applies when using Account Generation Settings).</li>
+  <li>Sage 50 - Import Invoices - Added support for specifying custom regular expression for stripping out unwanted characters in any generated account references (only applies when using Account Generation Settings).</li>
+</ul>
+
+<h3 id="fixed-38">Fixed</h3>
+<ul>
+  <li>Magento - Upload Categories - parent id and name incorrect in success file for newly created categories</li>
+  <li>Sage 50 - Export Customers - Fixed issue with IsActive flag logic</li>
+  <li>ConnectWise - Update Invoice Payments - Would never log if an update call failed</li>
+</ul>
+
+<h2 id="release-1615">Release 1.6.15</h2>
+<h3 id="new-24">New</h3>
+<ul>
+  <li>Sage 200 - Import Goods Despatched Notes - Now write out the Despatch Note DocumentNo in the success file</li>
+  <li>Sage 200 - Import Goods Despatched Notes - Now support the setting of custom fields on the import</li>
+</ul>
+
+<h3 id="fixed-39">Fixed</h3>
+<ul>
+  <li>Sage 200 - Import Goods Despatched Notes - Sage internal reference of goods despatch note wasn’t always correct</li>
+</ul>
+
+<h2 id="release-1614">Release 1.6.14</h2>
+<h3 id="new-25">New</h3>
+<ul>
+  <li>ConnectWise - Added Support for downloading detailed invoice information</li>
+</ul>
+
+<h3 id="fixed-40">Fixed</h3>
+<ul>
+  <li>Sage 50 - Import Customers - Fixed issue with logic surrounding the Inactive flag in Sage (based on the IsActive flag in the XML)</li>
+</ul>
+
+<h2 id="release-1613">Release 1.6.13</h2>
+<h3 id="updated-34">Updated</h3>
+<ul>
+  <li>FTP - FTP Repeater - Added a search pattern setting, which allows the results to be filtered</li>
+  <li>FTP - List Files - Added a search pattern setting, which allows the results to be filtered</li>
+  <li>Magento - Download Tasks - Now write the local date/time to the log when downloading modified records instead of the UTC date/time</li>
+  <li>Sage 200 - Import Customers - Added account reference convention setting</li>
+  <li>Sage 200 - Import Stock Transactions - Now allows stock transactions to take the stock level below the minimum quantity / above the maximum</li>
+  <li>SFTP - All Tasks - Added support for public key authentication</li>
+</ul>
+
+<h3 id="fixed-41">Fixed</h3>
+<ul>
+  <li>All Conditional Tasks - Now break on failure if a sub-task fails</li>
+  <li>Dropbox - Fixed issue with a 404 error when authorising Zynk to access Dropbox</li>
+  <li>Sage 50 - Import Invoices - Duplicate error message is now included in the fail file</li>
+  <li>Sage 50 - Import Purchase Orders - Now logs the error message if a nominal code is not valid, previously the order would fail to import without any reason</li>
+  <li>Sage 200 - Import Sales Orders - If the payment method specified in the input file does not exist in Sage the order now fails to import</li>
+  <li>XML - XML Merge - Now log a warning if the input file list contains the output file, previously caused a ‘Process cannot access file’ error</li>
+  <li>Sage 50 - Exports - fixed an issue where custom fields on nested objects (e.g. Sales Order Items) come through as a custom field on the parent object (e.g. Sales Order)</li>
+</ul>
+
+<h2 id="release-1612">Release 1.6.12</h2>
+<h3 id="updated-35">Updated</h3>
+<ul>
+  <li>Sage 200 - Import Goods Despatched Notes - Success file now contains the Sage internal reference</li>
+</ul>
+
+<h2 id="release-1611">Release 1.6.11</h2>
+<h3 id="updated-36">Updated</h3>
+<ul>
+  <li>Salesforce - Login Task - Removed the login task, all salesforce tasks now handle logging in automatically</li>
+  <li>Salesforce - Query - Error message returned by Salesforce are now logged</li>
+  <li>XML To CSV - Now supports XML documents using namespaces; provide the list of namespaces to use at the task level</li>
+  <li>XML To CSV - Default the separator to ‘,’ and the delimiter to ‘”’</li>
+</ul>
+
+<h3 id="fixed-42">Fixed</h3>
+<ul>
+  <li>Sage 50 - Import Sales Orders - If Auto Create customer setting was enabled but customer already existed, would cause sales ledger data to be updated based on sales order address</li>
+  <li>Sage 50 - Import Invoices - If Auto Create customer setting was enabled but customer already existed, would cause sales ledger data to be updated based on invoice address</li>
+</ul>
+
+<h2 id="release-1610">Release 1.6.10</h2>
+<h3 id="updated-37">Updated</h3>
+<ul>
+  <li>Sage 50 - Import/Export Suppliers - Now support importing and exporting the Department field</li>
+  <li>Sage 50 - Import Sales Orders - Fixed issue with incorrect total net/total tax values when a discount is applied and the ‘Discount By Unit Price’ setting is enabled</li>
+  <li>Sage 50 - Import Invocies - Fixed issue with incorrect total net/total tax values when a discount is applied and the ‘Discount By Unit Price’ setting is enabled</li>
+  <li>Sage 50 - Import Purchase Orders - Fixed issue with incorrect total net/total tax values when a discount is applied and the ‘Discount By Unit Price’ setting is enabled</li>
+  <li>Sugar CRM - Upsert - Now supports setting relationships to existing records</li>
+</ul>
+
+<h3 id="fixed-43">Fixed</h3>
+<ul>
+  <li>Sage 200 - Import Stock Transactions - Resolved issue with stock lookup</li>
+</ul>
+
+<h2 id="release-169">Release 1.6.9</h2>
+<h3 id="new-26">New</h3>
+<ul>
+  <li>ConnectWise - Added a Update Invoice Payment task, documentation available on the Zynk API site (http://api.zynk.com)</li>
+</ul>
+
+<h3 id="updated-38">Updated</h3>
+<ul>
+  <li>Sage 50 - Export Purchase Orders - Now include the Ref field in the exported data</li>
+  <li>Sage 50 - Email Statements - Added option to include/exclude accounts with a negative balance</li>
+  <li>Sage 200 - Import Sales Orders - Improved validation of the order item lines</li>
+  <li>Sage 200 - Import Sales Orders - Added validation of the currency and exchange rate</li>
+  <li>Sage 200 - Import Sales Orders - Now set the item line requested/promised delivery dates to the values at the item level in the XML (if provided)</li>
+  <li>Sage 200 - Import Purchase Orders - Improved validation of the order item lines</li>
+  <li>Sage 200 - Import Purchase Orders - Added validation of the currency and exchange rate</li>
+  <li>Sage 200 - Import Purchase Orders - Added support for setting the Project Analysis fields</li>
+  <li>Sage 200 - Import Purchase Orders - Now set the item line requested delivery date to the value at the item level in the XML (if provided)</li>
+  <li>Sage 200 - Export Purchase Orders - Now output the Project Analysis fields</li>
+  <li>Sugar CRM - All tasks - Updated to use the latest API version (V4_1)</li>
+  <li>Zynk - Export Truth Records - Added new/modified/all setting to the export</li>
+</ul>
+
+<h3 id="fixed-44">Fixed</h3>
+<ul>
+  <li>Sage 200 - Export Price Bands - Fixed issue with processing large OpLock values</li>
+  <li>Sage 200 - Export Stock Inventory - Fixed issue with processing large OpLock values</li>
+  <li>Sage 200 - Import Transactions - Fixed issue where journal debits/credits would fail validation due to no account reference being provided</li>
+  <li>Sage 200 - Import Purchase Orders - Fixed issue where additional charge codes would fail validation even if they did exist</li>
+  <li>Sage 200 - Import Purchase Orders - Now available for Sage 200 2013 (v9)</li>
+  <li>Sage 50 - Email Statements - Now set the transaction from date to the task last ran and the transaction to date to the current time</li>
+</ul>
+
+<h2 id="release-168">Release 1.6.8</h2>
+<h3 id="new-27">New</h3>
+
+<h3 id="updated-39">Updated</h3>
+<ul>
+  <li>Sage 200 - Export Customers - Now export AccountOpened (date)</li>
+  <li>Sage 200 - Export Stock Records - Added option to export traceable items, was previously always exporting traceable items</li>
+  <li>Sage 200 - Import Sales Orders - Added option to choose printing of picking lists on imported orders (disabled, use the same setting as sage or enabled) - print picking lists setting must be enabled in Sage to be used on the import</li>
+  <li>Ebay Connector - Added option to connect to a sandbox account when logging in</li>
+  <li>Sage 50/200 - Import Tasks - Not providing an Id for a record in the input file is now treat as a warning rather than an error</li>
+  <li>Sage 50 - Import Goods Despatched Notes - Added support for despatching by customer order number</li>
+</ul>
+
+<h3 id="fixed-45">Fixed</h3>
+
+<ul>
+  <li>Sage 200 - Import Customers - The value in the Postal Name field on a delivery address was being deleted if not provided in the XML, will now keep the original value</li>
+  <li>Sage 200 - Import Customers - Update the description on delivery addresses</li>
+  <li>Sage 50 - Login - Fixed an issue where Zynk would crash on using a manual path if no companies are available from the drop down</li>
+</ul>
+
+<h2 id="release-167">Release 1.6.7</h2>
+<h3 id="new-28">New</h3>
+<ul>
+  <li>Added Help button which links to the help page for the selected task</li>
+</ul>
+
+<h3 id="updated-40">Updated</h3>
+<ul>
+  <li>Task Library - Renamed Amazon MWS connector to Amazon Marketplace</li>
+  <li>Task Library - Removed ‘Connect for’ from all Sage connector names</li>
+  <li>Task Library - Renamed Sage 50 Payroll connector to Sage Payroll</li>
+  <li>Task Library - Split Database connector into separate connectors for each database type</li>
+</ul>
+
+<h3 id="fixed-46">Fixed</h3>
+<ul>
+  <li>Developer - Validate Resource - Fixed issue with a 403 Forbidden error</li>
+  <li>Sage 50 - Import Sales Orders - Auto create customer setting would always result in customers information being overwritten (if the customer existed already). will now only create an account if necessary</li>
+  <li>Sage 200 - Import Sales Orders - Issue with nominal being set on item lines if the use cc and dept option is enabled in Sage. will now use nominal if provided, otherwise, use sage 200 defaults</li>
+</ul>
+
+<h2 id="release-166">Release 1.6.6</h2>
+<h3 id="new-29">New</h3>
+<ul>
+  <li>Channel Advisor - Download Orders</li>
+  <li>Channel Advisor - Update Inventory</li>
+  <li>Coupa - Download Invoices</li>
+  <li>Coupa - Upload Invoice Payments</li>
+  <li>Coupa - Upload Suppliers</li>
+</ul>
+
+<h3 id="updated-41">Updated</h3>
+<ul>
+  <li>Send Email - Added support for CC and BCC.</li>
+</ul>
+
+<h3 id="fixed-47">Fixed</h3>
+<ul>
+  <li>Sage 200 - Export Stock Records - Fixed issue with duplicate BOMs in output file</li>
+  <li>Auto Mapper - Parameter List - The ellipsis (…) button now scrolls with the list</li>
+</ul>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Welcome-Section/Changelog.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

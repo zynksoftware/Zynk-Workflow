@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zynk Objects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Zynk Objects</h1>
+                    <p>Zynk Objects are a flexible way to handle both static and dynamic content such as text values, file names, URL’s or lists. Most of the [Tasks]] settings in Zynk accept a Zynk Object. [<a href="tasks]]-settings-in-zynk-accept-a-zynk-object. [[variable">Variable</a> values are also Zynk Objects.</p>
+
+<h2 id="editing-the-value-of-a-zynk-object">Editing the Value of a Zynk Object</h2>
+<p>From the task settings list or variable collection editor, click on the setting to edit, then either click the ellipsis (…) button or press F4.</p>
+
+<p><a href="http://www.zynk.com/images/v2/zynk_object/zynk_object_ellipsis.png"><img src="http://www.zynk.com/images/v2/zynk_object/zynk_object_ellipsis.png" alt="Zynk Objects" title="Task Settings" /></a></p>
+
+<p>The Zynk Object editor window will appear, as shown below.</p>
+
+<p><a href="https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b094109033603f7da36fde/file-mychizEoSZ.png"><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b094109033603f7da36fde/file-mychizEoSZ.png" alt="" /></a></p>
+
+<ol>
+  <li>Select the appropriate data type from the drop down list. See the list of data types below for more information on each type.</li>
+  <li>Enter the value for the setting into the ‘Value’ box. You can also use the ‘Edit’ and ‘Browse’ buttons to enter a value, depending on the data type selected. See below for more information.</li>
+  <li>Choose any additional options from the ‘Options’ list. Please note that certain options are only available for certain data types, see the options section below for more information.</li>
+</ol>
+
+<h2 id="data-types">Data Types</h2>
+<h3 id="text-or-script">Text or Script</h3>
+<p>This represents a single text value which can be manually entered at design time. For example, a username, a path to a file, a website address - any static piece of text. Static text objects support the use of <a href="environment-variables">Environment Variables</a>. For instance, you can use %USERNAME% to return the username of the user currently logged on the the computer.</p>
+
+<p><strong>Available Options</strong>
+When using static objects the Edit button will launch a text editor window which will allow you to edit the value of the setting. You can optionally set the language used for the text editor for syntax highlighting, this will default to C#. The static object will allow the Use Razor Engine setting to dynamically calculate the value to use.</p>
+
+<p><strong>Processing</strong>
+Static objects are calculated with the following process:-</p>
+
+<ol>
+  <li>Will read the value at the setting level</li>
+  <li>If Use Razor Engine is enabled the value will be ran through the Razor engine and environmental variables will be expanded, the result of which is used as the value</li>
+</ol>
+
+<h3 id="file-data-type">File Data Type</h3>
+<p>A file object can be either a full or relative path of a file, for example C:\Exports\Invoices.xml or customers.xml. If you need to enter a directory, use the URI object instead. You can use the browse button to locate the required file on your system, instead of entering the full path manually. File objects support the use of <a href="environment-variables">Environment Variables</a>. For instance, you can use %AppData% to return the path of the AppData folder on your computer.</p>
+
+<p><strong>Absolute Paths</strong>
+You can either use a full or relative path for file object types. If you use a use a relative path Zynk will use the base directory of the application data path using the current Workflow name. For example:</p>
+
+<ul>
+  <li>A file of orders.xml in a workflow called My Workflow will be treated as either:</li>
+  <li>C:\Documents and Settings\All Users\Application Data\Internetware\Zynk\1.0\Data\My Workflow\orders.xml (Windows XP, Windows Server 2003)</li>
+  <li>C:\ProgramData\Internetware\Zynk\1.0\Data\My Workflow\orders.xml (Windows Vista and higher, Windows Server 2008 and higher)</li>
+</ul>
+
+<p><strong>Available Options</strong>
+When using file objects the Edit button will launch a text editor window which will allow you to edit the contents of the file (note, this is not enabled if using Use Razor Engine). The file object will allow the Use Razor Engine setting to dynamically calculate the file path to use. You can use the Read Contents of File setting to read the text contents of the file rather than the file path.</p>
+
+<p><strong>Processing</strong>
+File objects are calculated with the following process:-</p>
+
+<ol>
+  <li>Will read the value at the setting level</li>
+  <li>If Use Razor Engine is enabled the value will be ran through the Razor engine and environmental variables will be expanded, the result of which is used as the value</li>
+  <li>If the file path is not rooted, the workflow’s data directory will be used as the root</li>
+  <li>If the folder structure of the file does not exist it will be created</li>
+  <li>If Read Contents of File is enabled the text contents of the file will be read, the result of which is used as the value. Note, the contents of the file will not be ran through the Razor engine.</li>
+</ol>
+
+<h3 id="folder-http-or-ftp-location-data-type">Folder HTTP or FTP Location Data Type</h3>
+<p>A URI object in simple terms represents the address or location of a Website, FTP site or a Folder on your system or server. You can use the browse button to locate a specific folder. If you want to read the URL into memory, tick the Read Contents of File checkbox. URI objects also support the use of environment variables.</p>
+
+<p><strong>Available Options</strong>
+When using URI objects you can enable the Use Razor Engine setting to dynamically calculate the value to use. You can use the Read Contents of File setting to read text value of the URI end point rather than the URI itself.</p>
+
+<p><strong>Processing</strong>
+URI objects are calculated with the following process:-</p>
+
+<ol>
+  <li>Will read the value at the setting level</li>
+  <li>If Use Razor Engine is enabled the value will be ran through the Razor engine and environmental variables will be expanded, the result of which is used as the value</li>
+  <li>If the value is a directory and the path is not rooted, the workflow’s data directory will be used as the root</li>
+  <li>If the value is a directory and the parent folder structure does not exist it will be created</li>
+  <li>If Read Contents of File is enabled the text contents of the URI will be read (note, this will only read the contents of HTTP URI’s without Authentication)</li>
+</ol>
+
+<h3 id="variable-data-type">Variable Data Type</h3>
+<p>If you have configured any variables they will be shown in this drop down list. The list will only show System, Application and Workflow variables. Task and Current variables are only accessible via the razor engine or Razor Template task. See <a href="accessing-variables-in-tasks">Accessing Variables in Tasks</a> for more information. The value of the variable will be replaced at run time.</p>
+
+<p><strong>Available Options</strong>
+When using variable objects you can enable the Use Razor Engine setting to dynamically calculate the value to use.</p>
+
+<p><strong>Processing</strong>
+Variable objects are calculated with the following process:-</p>
+
+<ol>
+  <li>Will read the variable name from the setting</li>
+  <li>Will check the Workflow Variables to find a match based on the value from step 1, the result of which is used as the value</li>
+  <li>If no value found from step 2, will check the Global Variables to find a match based on the value from step 1, the result of which is used as the value</li>
+  <li>If no value found from step 3, will check System Variables to find a match based on the value from step 1, the result of which is used as the value</li>
+  <li>If a value was found, and the Use Razor Engine option is enabled, the value will be ran through the Razor engine and environmental variables will be expanded, the result of which is used as the value</li>
+</ol>
+
+<h3 id="list-data-type">List Data Type</h3>
+<p>A List object is a “collection” of items - for example the output from a FTP or Directory Listing. The following Tasks support the List object as an input.</p>
+
+<ul>
+  <li>Email Connector &gt; Send Email</li>
+  <li>File Connector &gt; List Files</li>
+  <li>File Connector &gt; Zip Files</li>
+  <li>File Connector &gt; Delete Files</li>
+  <li>FTP Connector &gt; Upload Files</li>
+  <li>FTP Connector &gt; Download Files</li>
+  <li>XML Connector &gt; XML Merge</li>
+</ul>
+
+<p><strong>Available Options</strong>
+There are no additional options available for this data type.</p>
+
+<p><strong>Processing</strong>
+Each item in the list is itself a Zynk Object, and will be processed according to its type. If the type of an item is set to a list, the items within it will be processed recursively.</p>
+
+<h3 id="output-from-the-previous-task-data-type">Output from the Previous Task Data Type</h3>
+<p>This will take the output of the previous and use it as the value for this property. An example of this would be the file location from a previous task.</p>
+
+<h2 id="options">Options</h2>
+<h3 id="use-razor-engine">Use Razor Engine</h3>
+<p>The “Use Razor Engine” option pre-processes the field value through the built-in razor engine allowing you to dynamically create values at run time. An example of this would be where you need to create a filename on the fly at runtime based on the output of a variable. An example of this would be where you are processing a list of orders in a database and need to generate a collection of files based on the order number. For example adding <code class="highlighter-rouge">@(Context.Current["OrderId"]).xml</code> would result in the system creating a file named 100234.xml. Razor supports the use of <a href="environment-variables">Environment Variables</a>. For instance, you can use %AppData% to return the path of the AppData folder on your computer.</p>
+
+<h3 id="read-contents-of-file">Read Contents of File</h3>
+<p>The “Read Contents of File” option will read a file name or data from a URI location e.g. Website, FTP File and use that data as the value. You can also use the Razor Engine to perform any additional modifications to the data.</p>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Key-Concepts-Section/Zynk-Objects.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

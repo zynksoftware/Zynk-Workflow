@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sage 50 US Customer XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Sage 50 US Customer XML</h1>
+                    <p>Import Customers allows you to create new and update existing customers in Sage 50 US.  We recommend that the ExternalId field be populated by the unique id of the customer from the external system, Zynk uses this field to track customers already imported to prevent duplicates being created in Sage.</p>
+
+<p>Any Sage fields not documented below are not supported with our imports, if there are additional fields you need contact us at support@zynk.com.</p>
+
+<p>Complete import file for creating a customer:-</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfCustomer&gt;</span>
+  <span class="nt">&lt;Customer</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ExternalId&gt;</span>123<span class="nt">&lt;/ExternalId&gt;</span>
+    <span class="nt">&lt;Id&gt;</span>ALDRED<span class="nt">&lt;/Id&gt;</span>
+    <span class="nt">&lt;Name&gt;</span>Aldred Builders, Inc.<span class="nt">&lt;/Name&gt;</span>
+    <span class="nt">&lt;IsInactive&gt;</span>false<span class="nt">&lt;/IsInactive&gt;</span>
+    <span class="nt">&lt;AccountNumber</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;Category&gt;</span>LAND<span class="nt">&lt;/Category&gt;</span>
+    <span class="nt">&lt;CustomFields&gt;</span>
+      <span class="nt">&lt;CustomField&gt;</span>
+        <span class="nt">&lt;Name&gt;</span>Sales Contact<span class="nt">&lt;/Name&gt;</span>
+        <span class="nt">&lt;Value</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/CustomField&gt;</span>
+      <span class="nt">&lt;CustomField&gt;</span>
+        <span class="nt">&lt;Name&gt;</span>Lawn Care Srvc?<span class="nt">&lt;/Name&gt;</span>
+        <span class="nt">&lt;Value&gt;</span>Yes<span class="nt">&lt;/Value&gt;</span>
+      <span class="nt">&lt;/CustomField&gt;</span>
+      <span class="nt">&lt;CustomField&gt;</span>
+        <span class="nt">&lt;Name&gt;</span>Monthly Service?<span class="nt">&lt;/Name&gt;</span>
+        <span class="nt">&lt;Value&gt;</span>Yes<span class="nt">&lt;/Value&gt;</span>
+      <span class="nt">&lt;/CustomField&gt;</span>
+      <span class="nt">&lt;CustomField&gt;</span>
+        <span class="nt">&lt;Name&gt;</span>Qtrly Mailing?<span class="nt">&lt;/Name&gt;</span>
+        <span class="nt">&lt;Value&gt;</span>Yes<span class="nt">&lt;/Value&gt;</span>
+      <span class="nt">&lt;/CustomField&gt;</span>
+      <span class="nt">&lt;CustomField&gt;</span>
+        <span class="nt">&lt;Name&gt;</span>Referral<span class="nt">&lt;/Name&gt;</span>
+        <span class="nt">&lt;Value&gt;</span>Internet<span class="nt">&lt;/Value&gt;</span>
+      <span class="nt">&lt;/CustomField&gt;</span>
+    <span class="nt">&lt;/CustomFields&gt;</span>
+    <span class="nt">&lt;ShipVia&gt;</span>None<span class="nt">&lt;/ShipVia&gt;</span>
+    <span class="nt">&lt;UseEmailToDeliverForms&gt;</span>false<span class="nt">&lt;/UseEmailToDeliverForms&gt;</span>
+    <span class="nt">&lt;ReplaceInventoryItemIDWithUPC&gt;</span>false<span class="nt">&lt;/ReplaceInventoryItemIDWithUPC&gt;</span>
+    <span class="nt">&lt;ReplaceInventoryItemIDWithPartNumber&gt;</span>false<span class="nt">&lt;/ReplaceInventoryItemIDWithPartNumber&gt;</span>
+    <span class="nt">&lt;PaymentMethod&gt;</span>Check<span class="nt">&lt;/PaymentMethod&gt;</span>
+    <span class="nt">&lt;CashAccountReference&gt;</span>10200-00<span class="nt">&lt;/CashAccountReference&gt;</span>
+    <span class="nt">&lt;Terms&gt;</span>
+      <span class="nt">&lt;ChargeInterest&gt;</span>true<span class="nt">&lt;/ChargeInterest&gt;</span>
+      <span class="nt">&lt;CreditLimit&gt;</span>50000.00<span class="nt">&lt;/CreditLimit&gt;</span>
+      <span class="nt">&lt;DiscountDays&gt;</span>10<span class="nt">&lt;/DiscountDays&gt;</span>
+      <span class="nt">&lt;DiscountPercent&gt;</span>2.00<span class="nt">&lt;/DiscountPercent&gt;</span>
+      <span class="nt">&lt;DueDays&gt;</span>30<span class="nt">&lt;/DueDays&gt;</span>
+      <span class="nt">&lt;IsStandardTerms&gt;</span>false<span class="nt">&lt;/IsStandardTerms&gt;</span>
+      <span class="nt">&lt;PaymentTimeFrame&gt;</span>DueInNumberOfDays<span class="nt">&lt;/PaymentTimeFrame&gt;</span>
+      <span class="nt">&lt;UseDiscounts&gt;</span>true<span class="nt">&lt;/UseDiscounts&gt;</span>
+    <span class="nt">&lt;/Terms&gt;</span>
+    <span class="nt">&lt;IsProspect&gt;</span>false<span class="nt">&lt;/IsProspect&gt;</span>
+    <span class="nt">&lt;BillToContact&gt;</span>
+      <span class="nt">&lt;Prefix</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;FirstName&gt;</span>Tony<span class="nt">&lt;/FirstName&gt;</span>
+      <span class="nt">&lt;MiddleInitial</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;LastName&gt;</span>Aldred<span class="nt">&lt;/LastName&gt;</span>
+      <span class="nt">&lt;Suffix</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;CompanyName&gt;</span>Aldred Builders, Inc.<span class="nt">&lt;/CompanyName&gt;</span>
+      <span class="nt">&lt;Title</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Telephone1&gt;</span>770-555-0654<span class="nt">&lt;/Telephone1&gt;</span>
+      <span class="nt">&lt;Telephone2&gt;</span>770-555-0655<span class="nt">&lt;/Telephone2&gt;</span>
+      <span class="nt">&lt;Fax&gt;</span>770-555-0656<span class="nt">&lt;/Fax&gt;</span>
+      <span class="nt">&lt;Email&gt;</span>taldred@sample.sage.com<span class="nt">&lt;/Email&gt;</span>
+      <span class="nt">&lt;Gender&gt;</span>NotSpecified<span class="nt">&lt;/Gender&gt;</span>
+      <span class="nt">&lt;NameToUseOnForms&gt;</span>CompanyName<span class="nt">&lt;/NameToUseOnForms&gt;</span>
+      <span class="nt">&lt;Address&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>412 Sever Rd<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;City&gt;</span>Norcross<span class="nt">&lt;/City&gt;</span>
+        <span class="nt">&lt;State&gt;</span>GA<span class="nt">&lt;/State&gt;</span>
+        <span class="nt">&lt;Zip&gt;</span>30092<span class="nt">&lt;/Zip&gt;</span>
+        <span class="nt">&lt;Country</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;SalesTaxCode&gt;</span>GAGWINN<span class="nt">&lt;/SalesTaxCode&gt;</span>
+      <span class="nt">&lt;/Address&gt;</span>
+      <span class="nt">&lt;Notes</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/BillToContact&gt;</span>
+    <span class="nt">&lt;ShipToContact&gt;</span>
+      <span class="nt">&lt;Prefix</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;FirstName&gt;</span>Tammy<span class="nt">&lt;/FirstName&gt;</span>
+      <span class="nt">&lt;MiddleInitial</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;LastName&gt;</span>Aldred<span class="nt">&lt;/LastName&gt;</span>
+      <span class="nt">&lt;Suffix</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;CompanyName&gt;</span>Aldred Builders, Inc.<span class="nt">&lt;/CompanyName&gt;</span>
+      <span class="nt">&lt;Title&gt;</span>Bookkeeper<span class="nt">&lt;/Title&gt;</span>
+      <span class="nt">&lt;Telephone1&gt;</span>770-555-0657<span class="nt">&lt;/Telephone1&gt;</span>
+      <span class="nt">&lt;Telephone2&gt;</span>770-555-0658<span class="nt">&lt;/Telephone2&gt;</span>
+      <span class="nt">&lt;Fax&gt;</span>770-555-0659<span class="nt">&lt;/Fax&gt;</span>
+      <span class="nt">&lt;Email&gt;</span>tammyaldred@sample.sage.com<span class="nt">&lt;/Email&gt;</span>
+      <span class="nt">&lt;Gender&gt;</span>NotSpecified<span class="nt">&lt;/Gender&gt;</span>
+      <span class="nt">&lt;NameToUseOnForms&gt;</span>ContactName<span class="nt">&lt;/NameToUseOnForms&gt;</span>
+      <span class="nt">&lt;Address&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>412 Sever Rd<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;City&gt;</span>Norcross<span class="nt">&lt;/City&gt;</span>
+        <span class="nt">&lt;State&gt;</span>GA<span class="nt">&lt;/State&gt;</span>
+        <span class="nt">&lt;Zip&gt;</span>30092<span class="nt">&lt;/Zip&gt;</span>
+        <span class="nt">&lt;Country</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;SalesTaxCode&gt;</span>GAGWINN<span class="nt">&lt;/SalesTaxCode&gt;</span>
+      <span class="nt">&lt;/Address&gt;</span>
+      <span class="nt">&lt;Notes</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/ShipToContact&gt;</span>
+    <span class="nt">&lt;CustomerSince&gt;</span>2011-03-15T00:00:00<span class="nt">&lt;/CustomerSince&gt;</span>
+    <span class="nt">&lt;SalesRepresentativeReference&gt;</span>DGROSS<span class="nt">&lt;/SalesRepresentativeReference&gt;</span>
+    <span class="nt">&lt;UsualSalesAccountReference&gt;</span>40000-00<span class="nt">&lt;/UsualSalesAccountReference&gt;</span>
+    <span class="nt">&lt;OpenPurchaseOrderNumber</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;ResaleNumber</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;PriceLevel&gt;</span>Price Level 1<span class="nt">&lt;/PriceLevel&gt;</span>
+    <span class="nt">&lt;CreditStatus&gt;</span>NotifyOverLimit<span class="nt">&lt;/CreditStatus&gt;</span>
+  <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+</code></pre>
+</div>
+
+<p>In each of the following sections most of the XML has been omitted to make the samples easier to read.  The sections have been broken up into the various sections of the customer record as viewed within Sage 50 US.</p>
+
+<h2 id="main-customer-fields">Main Customer Fields</h2>
+<p>The below will let you specify the main fields required for a customer record.  Note that depending on your configuration at the Task Settings level in Zynk you may not need to specify an Id field as you can create them automatically through Zynk as part of the import.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N/A</td>
+      <td>ExternalId</td>
+      <td>123</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Customer ID</td>
+      <td>Id</td>
+      <td>ALDRED</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Required when not using auto generate settings</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Name</td>
+      <td>Aldred Builders, Inc. </td>
+      <td>string</td>
+      <td>40</td>
+      <td>Required when using auto generate settings</td>
+    </tr>
+    <tr>
+      <td>Prospect</td>
+      <td>IsProspect</td>
+      <td>false</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Inactive</td>
+      <td>IsInactive</td>
+      <td>false</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfCustomer&gt;</span>
+  <span class="nt">&lt;Customer</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ExternalId</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;Id&gt;</span>ALDRED<span class="nt">&lt;/Id&gt;</span>
+    <span class="nt">&lt;Name&gt;</span>Aldred Builders, Inc.<span class="nt">&lt;/Name&gt;</span>
+    <span class="nt">&lt;IsProspect&gt;</span>false<span class="nt">&lt;/IsProspect&gt;</span>
+    <span class="nt">&lt;IsInactive&gt;</span>false<span class="nt">&lt;/IsInactive&gt;</span>
+  <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="general-fields">General Fields</h2>
+<p>The below will let you specify the fields on the General tab in Sage.  Note the names of the custom fields depend on what you have called the fields within Sage, and must be provided within the CustomFields node.  Please see Bill To Contact section below for any fields relating to that contact.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Account number</td>
+      <td>AccountNumber</td>
+      <td>ALDRED</td>
+      <td>string</td>
+      <td>25</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Customer type</td>
+      <td>Category</td>
+      <td>LAND</td>
+      <td>string</td>
+      <td>8</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Custom Field Label</td>
+      <td>CustomField/Name</td>
+      <td>Referral</td>
+      <td>string</td>
+      <td>26</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Custom Field Value</td>
+      <td>CustomField/Value</td>
+      <td>Internet</td>
+      <td>string</td>
+      <td>40</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfCustomer&gt;</span>
+  <span class="nt">&lt;Customer</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;AccountNumber&gt;</span>ALDRED<span class="nt">&lt;/AccountNumber&gt;</span>
+    <span class="nt">&lt;Category&gt;</span>LAND<span class="nt">&lt;/Category&gt;</span>
+    <span class="nt">&lt;CustomFields&gt;</span>
+      <span class="nt">&lt;CustomField&gt;</span>
+        <span class="nt">&lt;Name&gt;</span>Referral<span class="nt">&lt;/Name&gt;</span>
+        <span class="nt">&lt;Value&gt;</span>Internet<span class="nt">&lt;/Value&gt;</span>
+      <span class="nt">&lt;/CustomField&gt;</span>
+    <span class="nt">&lt;/CustomFields&gt;</span>
+  <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="bill-to-contact-fields">Bill To Contact Fields</h2>
+<p>The below will let you specify the fields for the bill to contact in Sage.  Note the details of the bill to contact are what are shown on the General tab.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Title</td>
+      <td>Prefix</td>
+      <td>string</td>
+      <td>4</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>First</td>
+      <td>FirstName</td>
+      <td>Tony</td>
+      <td>string</td>
+      <td>15</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>MI</td>
+      <td>MiddleInitial</td>
+      <td>string</td>
+      <td>1</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Last</td>
+      <td>LastName</td>
+      <td>Aldred</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Suffix</td>
+      <td>Suffix</td>
+      <td>string</td>
+      <td>4</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Company name</td>
+      <td>CompanyName</td>
+      <td>Aldred Builders, Inc. </td>
+      <td>string</td>
+      <td>39</td>
+      <td>Required</td>
+    </tr>
+    <tr>
+      <td>Job title</td>
+      <td>Title</td>
+      <td>Owner</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Telephone 1</td>
+      <td>Telephone1</td>
+      <td>770-555-0654 </td>
+      <td>string  </td>
+      <td>20</td>
+      <td>Optional  </td>
+    </tr>
+    <tr>
+      <td>Telephone 2</td>
+      <td>Telephone2</td>
+      <td>770-555-0655 </td>
+      <td>string  </td>
+      <td>20</td>
+      <td>Optional  </td>
+    </tr>
+    <tr>
+      <td>Fax</td>
+      <td>Fax</td>
+      <td>770-555-0656 </td>
+      <td>string  </td>
+      <td>20</td>
+      <td>Optional  </td>
+    </tr>
+    <tr>
+      <td>E-mail</td>
+      <td>Email</td>
+      <td>taldred@sample.sage.com</td>
+      <td>string </td>
+      <td>64</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>Gender*</td>
+      <td>Male</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Ship to address name</td>
+      <td>NameToUseOnForms*</td>
+      <td>CompanyName </td>
+      <td>enum </td>
+      <td>-  </td>
+      <td>Optional  </td>
+    </tr>
+    <tr>
+      <td>Address Line 1</td>
+      <td>Address/ Address1</td>
+      <td>412 Sever Rd </td>
+      <td>string </td>
+      <td>30</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Address Line 2 </td>
+      <td>Address/Address2 </td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>City  </td>
+      <td>Address/City </td>
+      <td>Norcross </td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>ST</td>
+      <td>Address/State </td>
+      <td>GA </td>
+      <td>string</td>
+      <td>2</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Zip Code</td>
+      <td>Address/Zip </td>
+      <td>30092 </td>
+      <td>string</td>
+      <td>12</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>Address/Country </td>
+      <td>string</td>
+      <td>15</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Sales Tax*</td>
+      <td>Address/SalesTaxCode </td>
+      <td>GAGWINN </td>
+      <td>string</td>
+      <td>8</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Gender* - can be NotSpecified, Male or Female</li>
+  <li>NameToUseOnForms* - can be ContactName or CompanyName</li>
+  <li>Sales Tax* - can only be what you have setup in Sage under Maintain -&gt; Sales Taxes</li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfCustomer&gt;</span>
+  <span class="nt">&lt;Customer</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;BillToContact&gt;</span>
+      <span class="nt">&lt;Prefix</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;FirstName&gt;</span>Tony<span class="nt">&lt;/FirstName&gt;</span>
+      <span class="nt">&lt;MiddleInitial</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;LastName&gt;</span>Aldred<span class="nt">&lt;/LastName&gt;</span>
+      <span class="nt">&lt;Suffix</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;CompanyName&gt;</span>Aldred Builders, Inc.<span class="nt">&lt;/CompanyName&gt;</span>
+      <span class="nt">&lt;Title</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Telephone1&gt;</span>770-555-0654<span class="nt">&lt;/Telephone1&gt;</span>
+      <span class="nt">&lt;Telephone2&gt;</span>770-555-0655<span class="nt">&lt;/Telephone2&gt;</span>
+      <span class="nt">&lt;Fax&gt;</span>770-555-0656<span class="nt">&lt;/Fax&gt;</span>
+      <span class="nt">&lt;Email&gt;</span>taldred@sample.sage.com<span class="nt">&lt;/Email&gt;</span>
+      <span class="nt">&lt;Gender&gt;</span>NotSpecified<span class="nt">&lt;/Gender&gt;</span>
+      <span class="nt">&lt;NameToUseOnForms&gt;</span>CompanyName<span class="nt">&lt;/NameToUseOnForms&gt;</span>
+      <span class="nt">&lt;Address&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>412 Sever Rd<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;City&gt;</span>Norcross<span class="nt">&lt;/City&gt;</span>
+        <span class="nt">&lt;State&gt;</span>GA<span class="nt">&lt;/State&gt;</span>
+        <span class="nt">&lt;Zip&gt;</span>30092<span class="nt">&lt;/Zip&gt;</span>
+        <span class="nt">&lt;Country</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;SalesTaxCode&gt;</span>GAGWINN<span class="nt">&lt;/SalesTaxCode&gt;</span>
+      <span class="nt">&lt;/Address&gt;</span>
+      <span class="nt">&lt;Notes</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/BillToContact&gt;</span>
+  <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="ship-to-contact-fields">Ship To Contact Fields</h2>
+<p>The ship to contact uses the exact same structure as the bill to contact, except it is within a ShipToContact node in the XML.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfCustomer&gt;</span>
+  <span class="nt">&lt;Customer</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ShipToContact&gt;</span>
+      <span class="nt">&lt;Prefix</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;FirstName&gt;</span>Tammy<span class="nt">&lt;/FirstName&gt;</span>
+      <span class="nt">&lt;MiddleInitial</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;LastName&gt;</span>Aldred<span class="nt">&lt;/LastName&gt;</span>
+      <span class="nt">&lt;Suffix</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;CompanyName&gt;</span>Aldred Builders, Inc.<span class="nt">&lt;/CompanyName&gt;</span>
+      <span class="nt">&lt;Title&gt;</span>Bookkeeper<span class="nt">&lt;/Title&gt;</span>
+      <span class="nt">&lt;Telephone1&gt;</span>770-555-0657<span class="nt">&lt;/Telephone1&gt;</span>
+      <span class="nt">&lt;Telephone2&gt;</span>770-555-0658<span class="nt">&lt;/Telephone2&gt;</span>
+      <span class="nt">&lt;Fax&gt;</span>770-555-0659<span class="nt">&lt;/Fax&gt;</span>
+      <span class="nt">&lt;Email&gt;</span>tammyaldred@sample.sage.com<span class="nt">&lt;/Email&gt;</span>
+      <span class="nt">&lt;Gender&gt;</span>NotSpecified<span class="nt">&lt;/Gender&gt;</span>
+      <span class="nt">&lt;NameToUseOnForms&gt;</span>ContactName<span class="nt">&lt;/NameToUseOnForms&gt;</span>
+      <span class="nt">&lt;Address&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>412 Sever Rd<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;City&gt;</span>Norcross<span class="nt">&lt;/City&gt;</span>
+        <span class="nt">&lt;State&gt;</span>GA<span class="nt">&lt;/State&gt;</span>
+        <span class="nt">&lt;Zip&gt;</span>30092<span class="nt">&lt;/Zip&gt;</span>
+        <span class="nt">&lt;Country</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;SalesTaxCode&gt;</span>GAGWINN<span class="nt">&lt;/SalesTaxCode&gt;</span>
+      <span class="nt">&lt;/Address&gt;</span>
+      <span class="nt">&lt;Notes</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/ShipToContact&gt;</span>
+  <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="history-fields">History Fields</h2>
+<p>The below will let you specify the fields on the History tab in Sage.  Note the majority of fields on this tab are read only, so will only be used in future exports of customer data.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Customer since</td>
+      <td>CustomerSince</td>
+      <td>2011-03-15T00:00:00</td>
+      <td>datetime</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code>xml version="1.0" encoding="utf-8"?&gt;
+<span class="nt">&lt;ArrayOfCustomer&gt;</span>
+  <span class="nt">&lt;Customer</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;CustomerSince&gt;</span>2011-03-15T00:00:00<span class="nt">&lt;/CustomerSince&gt;</span>
+  <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="sales-info-fields">Sales Info Fields</h2>
+<p>The below will let you specify the fields on the Sales Info tab in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sales rep*</td>
+      <td>SalesRepresentativeReference</td>
+      <td>DGROSS</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>GL sales account*</td>
+      <td>UsualSalesAccountReference</td>
+      <td>40000-00</td>
+      <td>string</td>
+      <td>15</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Open PO number</td>
+      <td>OpenPurchaseOrderNumber</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Ship via*</td>
+      <td>ShipVia</td>
+      <td>None</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Resale number</td>
+      <td>ResaleNumber</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pricing level*</td>
+      <td>PriceLevel</td>
+      <td>Price Level 1</td>
+      <td>string</td>
+      <td>14</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Batch delivery method</td>
+      <td>UseEmailToDeliverForms*</td>
+      <td>false</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Replace item ID with*</td>
+      <td>ReplaceInventoryItemIDWithUPC</td>
+      <td>false</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ReplaceInventoryItemIDWithPartNumber</td>
+      <td>false</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Sales rep* - can only be what you have setup in Sage under Maintain Employees &amp; Sales Reps. </li>
+  <li>GL sales account* - can only be what you have setup in Sage under Maintain Chart of Accounts. </li>
+  <li>Ship via* - can only be what you have setup in Inventory Item Defaults on the Taxes/Shipping tab</li>
+  <li>Pricing level* - can only be what you have setup on the Price Levels tab in Inventory Item Defaults</li>
+  <li>UseEmailToDeliverForms* - set to false to use Paper form, set to true to use E-mail</li>
+  <li>Replace item ID with*</li>
+  <li>To uncheck all options set both ReplaceInventoryItemIDWithUPC and ReplaceInventoryItemIDWithPartNumber to false</li>
+  <li>To check option and set to UPC/SKU set ReplaceInventoryItemIDWithUPC to true</li>
+  <li>To check option and set to Part number set ReplaceInventoryItemIDWithPartNumber to true</li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfCustomer&gt;</span>
+  <span class="nt">&lt;Customer</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;SalesRepresentativeReference&gt;</span>DGROSS<span class="nt">&lt;/SalesRepresentativeReference&gt;</span>
+    <span class="nt">&lt;UsualSalesAccountReference&gt;</span>40000-00<span class="nt">&lt;/UsualSalesAccountReference&gt;</span>
+    <span class="nt">&lt;OpenPurchaseOrderNumber</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;ShipVia&gt;</span>None<span class="nt">&lt;/ShipVia&gt;</span>
+    <span class="nt">&lt;ResaleNumber</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;PriceLevel&gt;</span>Price Level 1<span class="nt">&lt;/PriceLevel&gt;</span>
+    <span class="nt">&lt;UseEmailToDeliverForms&gt;</span>false<span class="nt">&lt;/UseEmailToDeliverForms&gt;</span>
+    <span class="nt">&lt;ReplaceInventoryItemIDWithUPC&gt;</span>false<span class="nt">&lt;/ReplaceInventoryItemIDWithUPC&gt;</span>
+    <span class="nt">&lt;ReplaceInventoryItemIDWithPartNumber&gt;</span>false<span class="nt">&lt;/ReplaceInventoryItemIDWithPartNumber&gt;</span>
+  <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="payment-and-credit-fields">Payment and Credit Fields</h2>
+<p>The below will let you specify the fields on the Payment &amp; Credit tab in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Payment method</td>
+      <td>PaymentMethod</td>
+      <td>Check</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Cash account</td>
+      <td>CashAccountReference</td>
+      <td>10200-00</td>
+      <td>string</td>
+      <td>15</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Terms and Credit Option</td>
+      <td>Terms/PaymentTimeFrame*</td>
+      <td>DueInNumberOfDays</td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Net due / Due on</td>
+      <td>Terms/DueDays*</td>
+      <td>30</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Use discounts</td>
+      <td>UseDiscounts</td>
+      <td>true</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Discount in day</td>
+      <td>DiscountDays</td>
+      <td>10</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Discount percent</td>
+      <td>DiscountPercent</td>
+      <td>2.00</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Charge finance charges</td>
+      <td>ChargeInterest</td>
+      <td>true</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Credit limit</td>
+      <td>CreditLimit</td>
+      <td>50000.00</td>
+      <td>decimal</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Credit status</td>
+      <td>CreditStatus*</td>
+      <td>NotifyOverLimit </td>
+      <td>enum</td>
+      <td>-</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Terms/PaymentTimeFrame* - can be COD, Prepaid, DueInNumberOfDays, DueOnDayOfNextMonth or DueAtEndOfNextMonth</li>
+  <li>Terms/DueDays* - Sage field is only shown when using DueInNumberOfDays or DueOnDayOfNextMonth options from above, and wording changes depending on which</li>
+  <li>CreditStatus* - can be NoLimit, NotifyOverLimit, Notify, HoldoverLimit or Hold</li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfCustomer&gt;</span>
+  <span class="nt">&lt;Customer</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;PaymentMethod&gt;</span>Check<span class="nt">&lt;/PaymentMethod&gt;</span>
+    <span class="nt">&lt;CashAccountReference&gt;</span>10200-00<span class="nt">&lt;/CashAccountReference&gt;</span>
+      <span class="nt">&lt;Terms&gt;</span>
+      <span class="nt">&lt;PaymentTimeFrame&gt;</span>DueInNumberOfDays<span class="nt">&lt;/PaymentTimeFrame&gt;</span>
+      <span class="nt">&lt;DueDays&gt;</span>30<span class="nt">&lt;/DueDays&gt;</span>
+      <span class="nt">&lt;UseDiscounts&gt;</span>true<span class="nt">&lt;/UseDiscounts&gt;</span>
+      <span class="nt">&lt;DiscountDays&gt;</span>10<span class="nt">&lt;/DiscountDays&gt;</span>
+      <span class="nt">&lt;DiscountPercent&gt;</span>2.00<span class="nt">&lt;/DiscountPercent&gt;</span>
+      <span class="nt">&lt;ChargeInterest&gt;</span>true<span class="nt">&lt;/ChargeInterest&gt;</span>
+      <span class="nt">&lt;CreditLimit&gt;</span>50000.00<span class="nt">&lt;/CreditLimit&gt;</span>
+    <span class="nt">&lt;/Terms&gt;</span>
+    <span class="nt">&lt;CreditStatus&gt;</span>NotifyOverLimit<span class="nt">&lt;/CreditStatus&gt;</span>
+  <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-50-US-Connector/Sage-50-US-Customer-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

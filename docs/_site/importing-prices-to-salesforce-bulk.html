@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Importing Prices To Salesforce (Bulk)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Importing Prices To Salesforce (Bulk)</h1>
+                    <p>This task will update or insert multiple pricebook records. Products are matched based on the ProductCode field in Salesforce, and the field from the input file specified in the XML SKU Field setting. Pricebooks are matched based on the Name field in Salesforce, and the field from the input field specified in the XML Pricebook setting. If a matching Pricebook entry is found for the product, the existing pricebook entry will be updated, otherwise a pricebook entry will be inserted.</p>
+
+<h2 id="settings">Settings</h2>
+
+<h3 id="connection">Connection</h3>
+<p><em>Required</em><br />
+The Salesforce (Bulk) connection to use, see <a href="connecting-to-salesforce-(bulk)">Connecting to Salesforce (Bulk)</a></p>
+
+<h3 id="input-file">Input File</h3>
+<p><em>Required</em><br />
+The file containing the raw product data to import to Salesforce. The contents of this file will be transformed using the XSLT file provided before being imported to Salesforce.</p>
+
+<h3 id="multi-currency">Multi-currency</h3>
+<p><em>Required</em><br />
+Set to true if your Salesforce organisation has multi-currency enabled.</p>
+
+<h3 id="xml-currency-field">XML Currency Field</h3>
+<p><em>Dependant</em><br />
+The XPath query (relative to the one provided in the XPath Query setting) to get the currency from a price in the input file. The currency should be provided as a 3 letter ISO currency code (e.g. GBP, EUR, USD). This setting is only required when the Multi-currency setting is set to true.</p>
+
+<h3 id="xml-pricebook-field">XML Pricebook Field</h3>
+<p><em>Required</em><br />
+The XPath query (relative to the one provided in the XPath Query setting) to get the pricebook name from a price in the input file. The value returned by the XPath will be matched to the Pricebook.Name field  in Salesforce. If no match is found, the price will not be imported.</p>
+
+<h3 id="xml-sku-field">XML SKU Field</h3>
+<p><em>Required</em><br />
+The XPath query (relative to the one provided in the XPath Query setting) to get the SKU code from a product record in the input file. The value returned by the XPath will be matched to the Product2.ProductCode field in Salesforce. If no match is found, the price will not be imported.</p>
+
+<h3 id="xpath-query">XPath Query</h3>
+<p><em>Required</em><br />
+The XPath query to get individual price records from the input file.</p>
+
+<h3 id="xslt-file">XSLT File</h3>
+<p><em>Required</em><br />
+The XSLT file to use to transform the input file to PricebookEntry objects in the Salesforce XML format. The XML field names outputted from the XSLT must match Salesforce PricebookEntry object API field names. A list of standard API field names can be found <a href="http://help.salesforce.com/help/pdfs/en/salesforce_field_names_reference.pdf">here</a>. Any custom fields added to the PricebookEntry object are supported, and are usually named like <code class="highlighter-rouge">Price_Ref__c</code>. Note that the Id, Pricebook2Id and Product2Id are determined by the task, but do still need to be copied by the XSLT, see the sample XSLT below for more an example.</p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a></p>
+
+<h2 id="examples">Examples</h2>
+
+<p>Sample input file containing prices in the Zynk XML format:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+    <span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;PriceLists&gt;</span>
+        <span class="nt">&lt;PriceList</span> <span class="na">AllRecords=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;UniqueId&gt;</span>1008<span class="nt">&lt;/UniqueId&gt;</span>
+          <span class="nt">&lt;Name&gt;</span>Standard Price Book<span class="nt">&lt;/Name&gt;</span>
+          <span class="nt">&lt;Reference&gt;</span>Standard<span class="nt">&lt;/Reference&gt;</span>
+          <span class="nt">&lt;Currency&gt;</span>GBP<span class="nt">&lt;/Currency&gt;</span>
+          <span class="nt">&lt;Type&gt;</span>PriceList<span class="nt">&lt;/Type&gt;</span>
+          <span class="nt">&lt;Prices&gt;</span>
+            <span class="nt">&lt;Price</span> <span class="na">Action=</span><span class="s">"Upsert"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;UniqueId&gt;</span>6689<span class="nt">&lt;/UniqueId&gt;</span>
+              <span class="nt">&lt;DiscountType&gt;</span>Fixed<span class="nt">&lt;/DiscountType&gt;</span>
+              <span class="nt">&lt;StockCode&gt;</span>TEST<span class="nt">&lt;/StockCode&gt;</span>
+              <span class="nt">&lt;StoredPrice&gt;</span>34.2<span class="nt">&lt;/StoredPrice&gt;</span>
+              <span class="nt">&lt;Value&gt;</span>0<span class="nt">&lt;/Value&gt;</span>
+              <span class="nt">&lt;ExternalReference&gt;</span>PROD001<span class="nt">&lt;/ExternalReference&gt;</span>
+              <span class="nt">&lt;BaseQty</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;QtyBreak</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;DiscountAmountValue</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;DiscountPercentValue</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/Price&gt;</span>
+          <span class="nt">&lt;/Prices&gt;</span>
+        <span class="nt">&lt;/PriceList&gt;</span>
+        <span class="nt">&lt;PriceList</span> <span class="na">AllRecords=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;UniqueId&gt;</span>1009<span class="nt">&lt;/UniqueId&gt;</span>
+          <span class="nt">&lt;Name&gt;</span>Euro Prices<span class="nt">&lt;/Name&gt;</span>
+          <span class="nt">&lt;Reference&gt;</span>Euro<span class="nt">&lt;/Reference&gt;</span>
+          <span class="nt">&lt;Currency&gt;</span>EUR<span class="nt">&lt;/Currency&gt;</span>
+          <span class="nt">&lt;Type&gt;</span>PriceList<span class="nt">&lt;/Type&gt;</span>
+          <span class="nt">&lt;Prices&gt;</span>
+            <span class="nt">&lt;Price</span> <span class="na">Action=</span><span class="s">"Upsert"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;UniqueId&gt;</span>7021<span class="nt">&lt;/UniqueId&gt;</span>
+              <span class="nt">&lt;DiscountType&gt;</span>Fixed<span class="nt">&lt;/DiscountType&gt;</span>
+              <span class="nt">&lt;StockCode&gt;</span>TEST<span class="nt">&lt;/StockCode&gt;</span>
+              <span class="nt">&lt;StoredPrice&gt;</span>25.2<span class="nt">&lt;/StoredPrice&gt;</span>
+              <span class="nt">&lt;Value&gt;</span>0<span class="nt">&lt;/Value&gt;</span>
+              <span class="nt">&lt;ExternalReference&gt;</span>PROD001<span class="nt">&lt;/ExternalReference&gt;</span>
+              <span class="nt">&lt;BaseQty</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;QtyBreak</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;DiscountAmountValue</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;DiscountPercentValue</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/Price&gt;</span>
+          <span class="nt">&lt;/Prices&gt;</span>
+        <span class="nt">&lt;/PriceList&gt;</span>
+      <span class="nt">&lt;/PriceLists&gt;</span>
+    <span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<p>Given this input file, the task’s settings will need to be set as follows:</p>
+
+<ul>
+  <li>XPath Query - <code class="highlighter-rouge">Company/PriceLists/PriceList/Prices/Price</code></li>
+  <li>XML Currency Field - <code class="highlighter-rouge">../../Currency</code></li>
+  <li>XML Pricebook Field  - <code class="highlighter-rouge">../../Name</code></li>
+  <li>XML SKU Field - <code class="highlighter-rouge">StockCode</code></li>
+</ul>
+
+<p>Sample XSLT file to convert the input file above to the Salesforce XML format. Note that only fields from the PricebookEntry object can be set:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;xsl:output</span> <span class="na">method=</span><span class="s">"xml"</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="na">encoding=</span><span class="s">"utf-8"</span> <span class="na">indent=</span><span class="s">"yes"</span> <span class="na">xmlns=</span><span class="s">"http://www.force.com/2009/06/asyncapi/dataload"</span><span class="nt">/&gt;</span>
+    
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;sObjects</span> <span class="na">xmlns=</span><span class="s">"http://www.force.com/2009/06/asyncapi/dataload"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;xsl:for-each</span> <span class="na">select=</span><span class="s">"Company/PriceLists/PriceList/Prices/Price"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;sObject&gt;</span>
+          <span class="nt">&lt;xsl:choose&gt;</span>
+            <span class="c">&lt;!-- The task will write out the PricebookEntry Id field when the price already exists in Salesforce, this just needs to be copied by the XSLT --&gt;</span>
+            <span class="nt">&lt;xsl:when</span> <span class="na">test=</span><span class="s">"Id"</span><span class="nt">&gt;</span> 
+              <span class="nt">&lt;Id&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"Id"</span><span class="nt">/&gt;&lt;/Id&gt;</span>
+            <span class="nt">&lt;/xsl:when&gt;</span>
+    
+            <span class="c">&lt;!-- The task will write out the PricebookEntry Pricebook2Id and Product2Id fields if a new price needs to be created in Salesforce, they just need to be copied by the XSLT --&gt;</span>
+            <span class="nt">&lt;xsl:otherwise&gt;</span>
+              <span class="nt">&lt;Pricebook2Id&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"Pricebook2Id"</span><span class="nt">/&gt;&lt;/Pricebook2Id&gt;</span>
+              <span class="nt">&lt;Product2Id&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"Product2Id"</span><span class="nt">/&gt;&lt;/Product2Id&gt;</span>
+            <span class="nt">&lt;/xsl:otherwise&gt;</span>
+          <span class="nt">&lt;/xsl:choose&gt;</span>
+     
+          <span class="nt">&lt;UnitPrice&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"StoredPrice"</span><span class="nt">/&gt;&lt;/UnitPrice&gt;</span>
+          <span class="nt">&lt;CurrencyIsoCode&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"../../Currency"</span> <span class="nt">/&gt;&lt;/CurrencyIsoCode&gt;</span>
+          <span class="nt">&lt;UseStandardPrice&gt;</span>false<span class="nt">&lt;/UseStandardPrice&gt;</span>
+          <span class="nt">&lt;IsActive&gt;</span>true<span class="nt">&lt;/IsActive&gt;</span>
+        <span class="nt">&lt;/sObject&gt;</span>
+      <span class="nt">&lt;/xsl:for-each&gt;</span>
+    <span class="nt">&lt;/sObjects&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Salesforce-Connector/Importing-Prices-To-Salesforce-(Bulk).md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

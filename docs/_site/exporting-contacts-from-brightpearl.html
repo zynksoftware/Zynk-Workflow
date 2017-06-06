@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exporting Contacts from Brightpearl</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Exporting Contacts from Brightpearl</h1>
+                    <p>This task will download contacts from Brightpearl in XML format.</p>
+
+<h2 id="settings">Settings</h2>
+
+<h3 id="connection">Connection</h3>
+<p><em>Required</em>
+The Brightpearl connection to use. See the <a href="connecting-to-brightpearl">Connecting to Brightpearl</a></p>
+
+<h3 id="contact-type">Contact Type</h3>
+<p><em>Required</em>
+Select the type of contacts to export from Brightpearl. The available options are:</p>
+
+<ul>
+  <li>Any - All types of contact will be downloaded</li>
+  <li>Customers - Only customer contacts will be downloaded</li>
+  <li>Suppliers - Only supplier contacts will be downloaded</li>
+  <li>Staff - Only staff contacts will be downloaded</li>
+</ul>
+
+<h3 id="brightpearl-settings">Brightpearl Settings</h3>
+<p>See <a href="common-brightpearl-settings">Common Brightpearl Settings</a></p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a></p>
+
+<h2 id="examples">Examples</h2>
+
+<p>Sample output file:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ArrayOfContact&gt;</span>
+	<span class="nt">&lt;Contact&gt;</span>
+		<span class="nt">&lt;externalId</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;createdOn&gt;</span>2010-08-17T13:57:14+01:00<span class="nt">&lt;/createdOn&gt;</span>
+		<span class="nt">&lt;updatedOn&gt;</span>2016-11-24T10:11:22Z<span class="nt">&lt;/updatedOn&gt;</span>
+		<span class="nt">&lt;contactId&gt;</span>200<span class="nt">&lt;/contactId&gt;</span>
+		<span class="nt">&lt;isPrimaryContact&gt;</span>true<span class="nt">&lt;/isPrimaryContact&gt;</span>
+		<span class="nt">&lt;salutation&gt;</span>Mr.<span class="nt">&lt;/salutation&gt;</span>
+		<span class="nt">&lt;firstName&gt;</span>Demo<span class="nt">&lt;/firstName&gt;</span>
+		<span class="nt">&lt;lastName&gt;</span>Customer<span class="nt">&lt;/lastName&gt;</span>
+		<span class="nt">&lt;postalAddresses&gt;</span>
+			<span class="nt">&lt;defaultAddress&gt;</span>
+				<span class="nt">&lt;addressId&gt;</span>107<span class="nt">&lt;/addressId&gt;</span>
+				<span class="nt">&lt;addressLine1&gt;</span>34 Lime St<span class="nt">&lt;/addressLine1&gt;</span>
+				<span class="nt">&lt;addressLine2&gt;</span>Barton<span class="nt">&lt;/addressLine2&gt;</span>
+				<span class="nt">&lt;addressLine3&gt;</span>Sheffield<span class="nt">&lt;/addressLine3&gt;</span>
+				<span class="nt">&lt;addressLine4&gt;</span>South Yorkshire<span class="nt">&lt;/addressLine4&gt;</span>
+				<span class="nt">&lt;postalCode&gt;</span>S1 4RT<span class="nt">&lt;/postalCode&gt;</span>
+				<span class="nt">&lt;countryIsoCode&gt;</span>GBR<span class="nt">&lt;/countryIsoCode&gt;</span>
+				<span class="nt">&lt;countryId&gt;</span>222<span class="nt">&lt;/countryId&gt;</span>
+			<span class="nt">&lt;/defaultAddress&gt;</span>
+			<span class="nt">&lt;billingAddress&gt;</span>
+				<span class="nt">&lt;addressId&gt;</span>107<span class="nt">&lt;/addressId&gt;</span>
+				<span class="nt">&lt;addressLine1&gt;</span>34 Lime St<span class="nt">&lt;/addressLine1&gt;</span>
+				<span class="nt">&lt;addressLine2&gt;</span>Barton<span class="nt">&lt;/addressLine2&gt;</span>
+				<span class="nt">&lt;addressLine3&gt;</span>Sheffield<span class="nt">&lt;/addressLine3&gt;</span>
+				<span class="nt">&lt;addressLine4&gt;</span>South Yorkshire<span class="nt">&lt;/addressLine4&gt;</span>
+				<span class="nt">&lt;postalCode&gt;</span>S1 4RT<span class="nt">&lt;/postalCode&gt;</span>
+				<span class="nt">&lt;countryIsoCode&gt;</span>GBR<span class="nt">&lt;/countryIsoCode&gt;</span>
+				<span class="nt">&lt;countryId&gt;</span>222<span class="nt">&lt;/countryId&gt;</span>
+			<span class="nt">&lt;/billingAddress&gt;</span>
+			<span class="nt">&lt;deliveryAddress&gt;</span>
+				<span class="nt">&lt;addressId&gt;</span>107<span class="nt">&lt;/addressId&gt;</span>
+				<span class="nt">&lt;addressLine1&gt;</span>34 Lime St<span class="nt">&lt;/addressLine1&gt;</span>
+				<span class="nt">&lt;addressLine2&gt;</span>Barton<span class="nt">&lt;/addressLine2&gt;</span>
+				<span class="nt">&lt;addressLine3&gt;</span>Sheffield<span class="nt">&lt;/addressLine3&gt;</span>
+				<span class="nt">&lt;addressLine4&gt;</span>South Yorkshire<span class="nt">&lt;/addressLine4&gt;</span>
+				<span class="nt">&lt;postalCode&gt;</span>S1 4RT<span class="nt">&lt;/postalCode&gt;</span>
+				<span class="nt">&lt;countryIsoCode&gt;</span>GBR<span class="nt">&lt;/countryIsoCode&gt;</span>
+				<span class="nt">&lt;countryId&gt;</span>222<span class="nt">&lt;/countryId&gt;</span>
+			<span class="nt">&lt;/deliveryAddress&gt;</span>
+		<span class="nt">&lt;/postalAddresses&gt;</span>
+		<span class="nt">&lt;communication&gt;</span>
+			<span class="nt">&lt;emails&gt;</span>
+				<span class="nt">&lt;PRI&gt;</span>
+					<span class="nt">&lt;email&gt;</span>demo@test.com<span class="nt">&lt;/email&gt;</span>
+				<span class="nt">&lt;/PRI&gt;</span>
+			<span class="nt">&lt;/emails&gt;</span>
+			<span class="nt">&lt;telephones&gt;</span>
+				<span class="nt">&lt;PRI&gt;</span>01245 845632<span class="nt">&lt;/PRI&gt;</span>
+			<span class="nt">&lt;/telephones&gt;</span>
+			<span class="nt">&lt;messagingVoips</span> <span class="nt">/&gt;</span>
+			<span class="nt">&lt;websites</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;/communication&gt;</span>
+		<span class="nt">&lt;contactStatus&gt;</span>
+			<span class="nt">&lt;current&gt;</span>
+				<span class="nt">&lt;contactStatusId&gt;</span>0<span class="nt">&lt;/contactStatusId&gt;</span>
+			<span class="nt">&lt;/current&gt;</span>
+		<span class="nt">&lt;/contactStatus&gt;</span>
+		<span class="nt">&lt;relationshipToAccount&gt;</span>
+			<span class="nt">&lt;isSupplier&gt;</span>false<span class="nt">&lt;/isSupplier&gt;</span>
+			<span class="nt">&lt;isStaff&gt;</span>false<span class="nt">&lt;/isStaff&gt;</span>
+		<span class="nt">&lt;/relationshipToAccount&gt;</span>
+		<span class="nt">&lt;marketingDetails&gt;</span>
+			<span class="nt">&lt;isReceiveEmailNewsletterStaff</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;/marketingDetails&gt;</span>
+		<span class="nt">&lt;financialDetails&gt;</span>
+			<span class="nt">&lt;priceList&gt;</span>
+				<span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+				<span class="nt">&lt;name&gt;</span>
+					<span class="nt">&lt;languageCode&gt;</span>en<span class="nt">&lt;/languageCode&gt;</span>
+					<span class="nt">&lt;text&gt;</span>Cost<span class="nt">&lt;/text&gt;</span>
+					<span class="nt">&lt;format&gt;</span>PLAINTEXT<span class="nt">&lt;/format&gt;</span>
+				<span class="nt">&lt;/name&gt;</span>
+				<span class="nt">&lt;code&gt;</span>COST<span class="nt">&lt;/code&gt;</span>
+				<span class="nt">&lt;currencyCode&gt;</span>GBP<span class="nt">&lt;/currencyCode&gt;</span>
+				<span class="nt">&lt;currencySymbol&gt;</span>Â£<span class="nt">&lt;/currencySymbol&gt;</span>
+				<span class="nt">&lt;currencyId&gt;</span>1<span class="nt">&lt;/currencyId&gt;</span>
+				<span class="nt">&lt;priceListTypeCode&gt;</span>BUY<span class="nt">&lt;/priceListTypeCode&gt;</span>
+				<span class="nt">&lt;gross&gt;</span>false<span class="nt">&lt;/gross&gt;</span>
+			<span class="nt">&lt;/priceList&gt;</span>
+			<span class="nt">&lt;nominalCode&gt;</span>0<span class="nt">&lt;/nominalCode&gt;</span>
+			<span class="nt">&lt;creditLimit&gt;</span>1000<span class="nt">&lt;/creditLimit&gt;</span>
+			<span class="nt">&lt;creditTermDays&gt;</span>30<span class="nt">&lt;/creditTermDays&gt;</span>
+			<span class="nt">&lt;currency&gt;</span>
+				<span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+				<span class="nt">&lt;title&gt;</span>British Pound Sterling<span class="nt">&lt;/title&gt;</span>
+				<span class="nt">&lt;code&gt;</span>GBP<span class="nt">&lt;/code&gt;</span>
+				<span class="nt">&lt;symbol&gt;</span>Â£<span class="nt">&lt;/symbol&gt;</span>
+				<span class="nt">&lt;exchangeRate&gt;</span>1.000000<span class="nt">&lt;/exchangeRate&gt;</span>
+				<span class="nt">&lt;isDefault&gt;</span>true<span class="nt">&lt;/isDefault&gt;</span>
+			<span class="nt">&lt;/currency&gt;</span>
+			<span class="nt">&lt;discountPercentage&gt;</span>0<span class="nt">&lt;/discountPercentage&gt;</span>
+		<span class="nt">&lt;/financialDetails&gt;</span>
+		<span class="nt">&lt;assignment&gt;</span>
+			<span class="nt">&lt;current&gt;</span>
+				<span class="nt">&lt;staffOwnerContactId</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+				<span class="nt">&lt;departmentId</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+				<span class="nt">&lt;leadSourceId</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+				<span class="nt">&lt;channelId</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+				<span class="nt">&lt;projectId</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+			<span class="nt">&lt;/current&gt;</span>
+		<span class="nt">&lt;/assignment&gt;</span>
+		<span class="nt">&lt;organisation&gt;</span>
+			<span class="nt">&lt;organisationId</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+			<span class="nt">&lt;name&gt;</span>Customer Company Ltd.<span class="nt">&lt;/name&gt;</span>
+		<span class="nt">&lt;/organisation&gt;</span>
+		<span class="nt">&lt;createdByid&gt;</span>2<span class="nt">&lt;/createdByid&gt;</span>
+		<span class="nt">&lt;contactTags&gt;</span>1<span class="nt">&lt;/contactTags&gt;</span>
+		<span class="nt">&lt;customFields</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/Contact&gt;</span>
+<span class="nt">&lt;/ArrayOfContact&gt;</span>
+</code></pre>
+</div>
+
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Brightpearl-Connector/Exporting-Contacts-from-Brightpearl.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Downloading Orders from eBay</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Downloading Orders from eBay</h1>
+                    <p>This task will download order information from eBay in XML format. The results can be filtered by Order ID if required. See the Examples section for a for sample output file.</p>
+
+<h2 id="settings">Settings</h2>
+<h3 id="connection">Connection</h3>
+<p><em>Required</em><br />
+The eBay connection to use. See the <a href="connecting-to-ebay">Connecting to eBay</a> article if you require more information on how to create/manage connections.</p>
+
+<h3 id="download-date">Download Date</h3>
+<p><em>Required</em><br />
+The initial date to download orders from. Any orders placed before this date will not be downloaded, even if they have been modified.</p>
+
+<h3 id="download-from">Download From</h3>
+<p><em>Required</em><br />
+The date to download new/modified orders from. This will update automatically each time the task runs. Note that the task will download a maximum of 30 days worth of orders at a time.</p>
+
+<h3 id="include-item-specifics">Include Item Specifics</h3>
+<p><em>Required</em><br />
+Allows you to download extended information about the items sold on the order, e.g. MPN Identifier. Defaults to False.</p>
+
+<h3 id="order-id">Order ID</h3>
+<p><em>Optional</em><br />
+Allows you to specify a specific order to download. If an Order ID is provided, it will override the Download Date and Download From settings.</p>
+
+<h3 id="output-file">Output File</h3>
+<p><em>Required</em><br />
+The file to export orders to.</p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a>.</p>
+
+<h2 id="examples">Examples</h2>
+<p>You can find an example of how to use this task in the <a href="ebay-to-sage-50-integration">eBay to Sage 50 Integration</a> article.</p>
+
+<p>Sample output file:</p>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;GetOrdersResponseType</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Timestamp</span> <span class="na">xmlns=</span><span class="s">"urn:ebay:apis:eBLBaseComponents"</span><span class="nt">&gt;</span>2011-04-19T15:10:04.869Z<span class="nt">&lt;/Timestamp&gt;</span>
+    <span class="nt">&lt;Ack</span> <span class="na">xmlns=</span><span class="s">"urn:ebay:apis:eBLBaseComponents"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/Ack&gt;</span>
+    <span class="nt">&lt;Version</span> <span class="na">xmlns=</span><span class="s">"urn:ebay:apis:eBLBaseComponents"</span><span class="nt">&gt;</span>715<span class="nt">&lt;/Version&gt;</span>
+    <span class="nt">&lt;Build</span> <span class="na">xmlns=</span><span class="s">"urn:ebay:apis:eBLBaseComponents"</span><span class="nt">&gt;</span>E715_INTL_BUNDLED_13003939_R1<span class="nt">&lt;/Build&gt;</span>
+    <span class="nt">&lt;OrderArray</span> <span class="na">xmlns=</span><span class="s">"urn:ebay:apis:eBLBaseComponents"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Order&gt;</span>
+            <span class="nt">&lt;OrderID&gt;</span>83658149016<span class="nt">&lt;/OrderID&gt;</span>
+            <span class="nt">&lt;OrderStatus&gt;</span>Completed<span class="nt">&lt;/OrderStatus&gt;</span>
+            <span class="nt">&lt;AdjustmentAmount</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/AdjustmentAmount&gt;</span>
+            <span class="nt">&lt;AmountPaid</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>7.53<span class="nt">&lt;/AmountPaid&gt;</span>
+            <span class="nt">&lt;AmountSaved</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/AmountSaved&gt;</span>
+            <span class="nt">&lt;CheckoutStatus&gt;</span>
+                <span class="nt">&lt;eBayPaymentStatus&gt;</span>NoPaymentFailure<span class="nt">&lt;/eBayPaymentStatus&gt;</span>
+                <span class="nt">&lt;LastModifiedTime&gt;</span>2011-04-08T16:17:14Z<span class="nt">&lt;/LastModifiedTime&gt;</span>
+                <span class="nt">&lt;PaymentMethod&gt;</span>PayPal<span class="nt">&lt;/PaymentMethod&gt;</span>
+                <span class="nt">&lt;Status&gt;</span>Complete<span class="nt">&lt;/Status&gt;</span>
+                <span class="nt">&lt;IntegratedMerchantCreditCardEnabled&gt;</span>false<span class="nt">&lt;/IntegratedMerchantCreditCardEnabled&gt;</span>
+            <span class="nt">&lt;/CheckoutStatus&gt;</span>
+            <span class="nt">&lt;ShippingDetails&gt;</span>
+                <span class="nt">&lt;SalesTax&gt;</span>
+                    <span class="nt">&lt;SalesTaxPercent&gt;</span>0<span class="nt">&lt;/SalesTaxPercent&gt;</span>
+                    <span class="nt">&lt;SalesTaxState</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;ShippingIncludedInTax&gt;</span>false<span class="nt">&lt;/ShippingIncludedInTax&gt;</span>
+                    <span class="nt">&lt;SalesTaxAmount</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/SalesTaxAmount&gt;</span>
+                <span class="nt">&lt;/SalesTax&gt;</span>
+                <span class="nt">&lt;ShippingServiceOptions&gt;</span>
+                    <span class="nt">&lt;ShippingService&gt;</span>UK_RoyalMailFirstClassStandard<span class="nt">&lt;/ShippingService&gt;</span>
+                    <span class="nt">&lt;ShippingServiceCost</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>2.28<span class="nt">&lt;/ShippingServiceCost&gt;</span>
+                    <span class="nt">&lt;ShippingServicePriority&gt;</span>1<span class="nt">&lt;/ShippingServicePriority&gt;</span>
+                    <span class="nt">&lt;ExpeditedService&gt;</span>false<span class="nt">&lt;/ExpeditedService&gt;</span>
+                    <span class="nt">&lt;ShippingTimeMin&gt;</span>1<span class="nt">&lt;/ShippingTimeMin&gt;</span>
+                    <span class="nt">&lt;ShippingTimeMax&gt;</span>2<span class="nt">&lt;/ShippingTimeMax&gt;</span>
+                <span class="nt">&lt;/ShippingServiceOptions&gt;</span>
+                <span class="nt">&lt;SellingManagerSalesRecordNumber&gt;</span>143122<span class="nt">&lt;/SellingManagerSalesRecordNumber&gt;</span>
+                <span class="nt">&lt;GetItFast&gt;</span>false<span class="nt">&lt;/GetItFast&gt;</span>
+            <span class="nt">&lt;/ShippingDetails&gt;</span>
+            <span class="nt">&lt;CreatingUserRole&gt;</span>Seller<span class="nt">&lt;/CreatingUserRole&gt;</span>
+            <span class="nt">&lt;CreatedTime&gt;</span>2011-04-08T13:14:10Z<span class="nt">&lt;/CreatedTime&gt;</span>
+            <span class="nt">&lt;PaymentMethods&gt;</span>CCAccepted<span class="nt">&lt;/PaymentMethods&gt;</span>
+            <span class="nt">&lt;PaymentMethods&gt;</span>MOCC<span class="nt">&lt;/PaymentMethods&gt;</span>
+            <span class="nt">&lt;PaymentMethods&gt;</span>PayPal<span class="nt">&lt;/PaymentMethods&gt;</span>
+            <span class="nt">&lt;ShippingAddress&gt;</span>
+                <span class="nt">&lt;Name&gt;</span>Billy Piper<span class="nt">&lt;/Name&gt;</span>
+                <span class="nt">&lt;Street1&gt;</span>29 Barnes Road<span class="nt">&lt;/Street1&gt;</span>
+                <span class="nt">&lt;Street2</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;CityName&gt;</span>Bishops Stortford<span class="nt">&lt;/CityName&gt;</span>
+                <span class="nt">&lt;StateOrProvince&gt;</span>Hertfordshire<span class="nt">&lt;/StateOrProvince&gt;</span>
+                <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+                <span class="nt">&lt;CountryName&gt;</span>United Kingdom<span class="nt">&lt;/CountryName&gt;</span>
+                <span class="nt">&lt;Phone</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;PostalCode&gt;</span>CM32 2RR<span class="nt">&lt;/PostalCode&gt;</span>
+                <span class="nt">&lt;AddressID&gt;</span>12349283<span class="nt">&lt;/AddressID&gt;</span>
+                <span class="nt">&lt;AddressOwner&gt;</span>eBay<span class="nt">&lt;/AddressOwner&gt;</span>
+                <span class="nt">&lt;ExternalAddressID</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/ShippingAddress&gt;</span>
+            <span class="nt">&lt;ShippingServiceSelected&gt;</span>
+                <span class="nt">&lt;ShippingService&gt;</span>UK_RoyalMailFirstClassStandard<span class="nt">&lt;/ShippingService&gt;</span>
+                <span class="nt">&lt;ShippingServiceCost</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>2.28<span class="nt">&lt;/ShippingServiceCost&gt;</span>
+            <span class="nt">&lt;/ShippingServiceSelected&gt;</span>
+            <span class="nt">&lt;Subtotal</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>5.25<span class="nt">&lt;/Subtotal&gt;</span>
+            <span class="nt">&lt;Total</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>7.53<span class="nt">&lt;/Total&gt;</span>
+            <span class="nt">&lt;TransactionArray&gt;</span>
+                <span class="nt">&lt;Transaction&gt;</span>
+                    <span class="nt">&lt;Buyer&gt;</span>
+                        <span class="nt">&lt;Email&gt;</span>buyer@example.com<span class="nt">&lt;/Email&gt;</span>
+                    <span class="nt">&lt;/Buyer&gt;</span>
+                    <span class="nt">&lt;ShippingDetails&gt;</span>
+                        <span class="nt">&lt;SellingManagerSalesRecordNumber&gt;</span>545078<span class="nt">&lt;/SellingManagerSalesRecordNumber&gt;</span>
+                    <span class="nt">&lt;/ShippingDetails&gt;</span>
+                    <span class="nt">&lt;Item&gt;</span>
+                        <span class="nt">&lt;AutoPay&gt;</span>false<span class="nt">&lt;/AutoPay&gt;</span>
+                        <span class="nt">&lt;BuyerProtection&gt;</span>ItemEligible<span class="nt">&lt;/BuyerProtection&gt;</span>
+                        <span class="nt">&lt;BuyItNowPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/BuyItNowPrice&gt;</span>
+                        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+                        <span class="nt">&lt;Currency&gt;</span>GBP<span class="nt">&lt;/Currency&gt;</span>
+                        <span class="nt">&lt;GiftIcon&gt;</span>0<span class="nt">&lt;/GiftIcon&gt;</span>
+                        <span class="nt">&lt;HitCounter&gt;</span>RetroStyle<span class="nt">&lt;/HitCounter&gt;</span>
+                        <span class="nt">&lt;ItemID&gt;</span>390234234873<span class="nt">&lt;/ItemID&gt;</span>
+                        <span class="nt">&lt;ListingDetails&gt;</span>
+                            <span class="nt">&lt;Adult&gt;</span>false<span class="nt">&lt;/Adult&gt;</span>
+                            <span class="nt">&lt;BindingAuction&gt;</span>false<span class="nt">&lt;/BindingAuction&gt;</span>
+                            <span class="nt">&lt;CheckoutEnabled&gt;</span>true<span class="nt">&lt;/CheckoutEnabled&gt;</span>
+                            <span class="nt">&lt;ConvertedBuyItNowPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/ConvertedBuyItNowPrice&gt;</span>
+                            <span class="nt">&lt;ConvertedStartPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/ConvertedStartPrice&gt;</span>
+                            <span class="nt">&lt;ConvertedReservePrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/ConvertedReservePrice&gt;</span>
+                            <span class="nt">&lt;HasReservePrice&gt;</span>false<span class="nt">&lt;/HasReservePrice&gt;</span>
+                            <span class="nt">&lt;StartTime&gt;</span>2011-03-12T19:55:05Z<span class="nt">&lt;/StartTime&gt;</span>
+                            <span class="nt">&lt;EndTime&gt;</span>2011-04-11T19:55:05Z<span class="nt">&lt;/EndTime&gt;</span>
+                            <span class="nt">&lt;ViewItemURL&gt;</span>http://cgi.ebay.co.uk/ws/eBayISAPI.dll?ViewItem<span class="err">&amp;</span>item=390234234873<span class="err">&amp;</span>category=82248<span class="nt">&lt;/ViewItemURL&gt;</span>
+                            <span class="nt">&lt;HasUnansweredQuestions&gt;</span>false<span class="nt">&lt;/HasUnansweredQuestions&gt;</span>
+                            <span class="nt">&lt;HasPublicMessages&gt;</span>false<span class="nt">&lt;/HasPublicMessages&gt;</span>
+                            <span class="nt">&lt;ViewItemURLForNaturalSearch&gt;</span>http://cgi.ebay.co.uk/IPHONE-4G-16GB-WITH-BOX_W0QQitemZ3902994873QQcategoryZ82248QQcmdZViewItem<span class="nt">&lt;/ViewItemURLForNaturalSearch&gt;</span>
+                        <span class="nt">&lt;/ListingDetails&gt;</span>
+                        <span class="nt">&lt;ListingDuration&gt;</span>Days_30<span class="nt">&lt;/ListingDuration&gt;</span>
+                        <span class="nt">&lt;ListingType&gt;</span>StoresFixedPrice<span class="nt">&lt;/ListingType&gt;</span>
+                        <span class="nt">&lt;Location&gt;</span>Newcastle<span class="nt">&lt;/Location&gt;</span>
+                        <span class="nt">&lt;PaymentMethods&gt;</span>MOCC<span class="nt">&lt;/PaymentMethods&gt;</span>
+                        <span class="nt">&lt;PaymentMethods&gt;</span>PayPal<span class="nt">&lt;/PaymentMethods&gt;</span>
+                        <span class="nt">&lt;PaymentMethods&gt;</span>CCAccepted<span class="nt">&lt;/PaymentMethods&gt;</span>
+                        <span class="nt">&lt;PayPalEmailAddress&gt;</span>seller@example.com<span class="nt">&lt;/PayPalEmailAddress&gt;</span>
+                        <span class="nt">&lt;PrimaryCategory&gt;</span>
+                            <span class="nt">&lt;CategoryID&gt;</span>82248<span class="nt">&lt;/CategoryID&gt;</span>
+                            <span class="nt">&lt;CategoryName&gt;</span>Home <span class="err">&amp;</span> Garden:Garden <span class="err">&amp;</span><span class="nt">&lt;/CategoryName&gt;</span>
+                        <span class="nt">&lt;/PrimaryCategory&gt;</span>
+                        <span class="nt">&lt;PrivateListing&gt;</span>false<span class="nt">&lt;/PrivateListing&gt;</span>
+                        <span class="nt">&lt;Quantity&gt;</span>337<span class="nt">&lt;/Quantity&gt;</span>
+                        <span class="nt">&lt;ReservePrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/ReservePrice&gt;</span>
+                        <span class="nt">&lt;ReviseStatus&gt;</span>
+                            <span class="nt">&lt;ItemRevised&gt;</span>true<span class="nt">&lt;/ItemRevised&gt;</span>
+                        <span class="nt">&lt;/ReviseStatus&gt;</span>
+                        <span class="nt">&lt;Seller&gt;</span>
+                            <span class="nt">&lt;AboutMePage&gt;</span>false<span class="nt">&lt;/AboutMePage&gt;</span>
+                            <span class="nt">&lt;Email&gt;</span>seller@example.com<span class="nt">&lt;/Email&gt;</span>
+                            <span class="nt">&lt;FeedbackScore&gt;</span>87634<span class="nt">&lt;/FeedbackScore&gt;</span>
+                            <span class="nt">&lt;PositiveFeedbackPercent&gt;</span>99.9<span class="nt">&lt;/PositiveFeedbackPercent&gt;</span>
+                            <span class="nt">&lt;FeedbackPrivate&gt;</span>false<span class="nt">&lt;/FeedbackPrivate&gt;</span>
+                            <span class="nt">&lt;FeedbackRatingStar&gt;</span>PurpleShooting<span class="nt">&lt;/FeedbackRatingStar&gt;</span>
+                            <span class="nt">&lt;IDVerified&gt;</span>false<span class="nt">&lt;/IDVerified&gt;</span>
+                            <span class="nt">&lt;eBayGoodStanding&gt;</span>true<span class="nt">&lt;/eBayGoodStanding&gt;</span>
+                            <span class="nt">&lt;NewUser&gt;</span>false<span class="nt">&lt;/NewUser&gt;</span>
+                            <span class="nt">&lt;RegistrationDate&gt;</span>2002-12-14T16:35:06Z<span class="nt">&lt;/RegistrationDate&gt;</span>
+                            <span class="nt">&lt;Site&gt;</span>UK<span class="nt">&lt;/Site&gt;</span>
+                            <span class="nt">&lt;Status&gt;</span>Confirmed<span class="nt">&lt;/Status&gt;</span>
+                            <span class="nt">&lt;UserID&gt;</span>example-ebay-user<span class="nt">&lt;/UserID&gt;</span>
+                            <span class="nt">&lt;UserIDChanged&gt;</span>false<span class="nt">&lt;/UserIDChanged&gt;</span>
+                            <span class="nt">&lt;UserIDLastChanged&gt;</span>2006-08-31T14:33:47Z<span class="nt">&lt;/UserIDLastChanged&gt;</span>
+                            <span class="nt">&lt;VATStatus&gt;</span>VATExempt<span class="nt">&lt;/VATStatus&gt;</span>
+                            <span class="nt">&lt;SellerInfo&gt;</span>
+                                <span class="nt">&lt;AllowPaymentEdit&gt;</span>false<span class="nt">&lt;/AllowPaymentEdit&gt;</span>
+                                <span class="nt">&lt;CheckoutEnabled&gt;</span>true<span class="nt">&lt;/CheckoutEnabled&gt;</span>
+                                <span class="nt">&lt;CIPBankAccountStored&gt;</span>false<span class="nt">&lt;/CIPBankAccountStored&gt;</span>
+                                <span class="nt">&lt;GoodStanding&gt;</span>true<span class="nt">&lt;/GoodStanding&gt;</span>
+                                <span class="nt">&lt;MerchandizingPref&gt;</span>OptIn<span class="nt">&lt;/MerchandizingPref&gt;</span>
+                                <span class="nt">&lt;QualifiesForB2BVAT&gt;</span>false<span class="nt">&lt;/QualifiesForB2BVAT&gt;</span>
+                                <span class="nt">&lt;StoreOwner&gt;</span>true<span class="nt">&lt;/StoreOwner&gt;</span>
+                                <span class="nt">&lt;StoreURL&gt;</span>http://www.stores.ebay.co.uk/id=12348789<span class="nt">&lt;/StoreURL&gt;</span>
+                                <span class="nt">&lt;SellerBusinessType&gt;</span>Commercial<span class="nt">&lt;/SellerBusinessType&gt;</span>
+                                <span class="nt">&lt;SafePaymentExempt&gt;</span>true<span class="nt">&lt;/SafePaymentExempt&gt;</span>
+                                <span class="nt">&lt;TopRatedSeller&gt;</span>true<span class="nt">&lt;/TopRatedSeller&gt;</span>
+                                <span class="nt">&lt;LiveAuctionAuthorized&gt;</span>false<span class="nt">&lt;/LiveAuctionAuthorized&gt;</span>
+                            <span class="nt">&lt;/SellerInfo&gt;</span>
+                            <span class="nt">&lt;MotorsDealer&gt;</span>false<span class="nt">&lt;/MotorsDealer&gt;</span>
+                        <span class="nt">&lt;/Seller&gt;</span>
+                        <span class="nt">&lt;SellingStatus&gt;</span>
+                            <span class="nt">&lt;BidCount&gt;</span>0<span class="nt">&lt;/BidCount&gt;</span>
+                            <span class="nt">&lt;BidIncrement</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/BidIncrement&gt;</span>
+                            <span class="nt">&lt;ConvertedCurrentPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/ConvertedCurrentPrice&gt;</span>
+                            <span class="nt">&lt;CurrentPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/CurrentPrice&gt;</span>
+                            <span class="nt">&lt;LeadCount&gt;</span>0<span class="nt">&lt;/LeadCount&gt;</span>
+                            <span class="nt">&lt;MinimumToBid</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/MinimumToBid&gt;</span>
+                            <span class="nt">&lt;QuantitySold&gt;</span>36<span class="nt">&lt;/QuantitySold&gt;</span>
+                            <span class="nt">&lt;ReserveMet&gt;</span>true<span class="nt">&lt;/ReserveMet&gt;</span>
+                            <span class="nt">&lt;SecondChanceEligible&gt;</span>false<span class="nt">&lt;/SecondChanceEligible&gt;</span>
+                            <span class="nt">&lt;ListingStatus&gt;</span>Completed<span class="nt">&lt;/ListingStatus&gt;</span>
+                        <span class="nt">&lt;/SellingStatus&gt;</span>
+                        <span class="nt">&lt;ShippingDetails&gt;</span>
+                            <span class="nt">&lt;ApplyShippingDiscount&gt;</span>false<span class="nt">&lt;/ApplyShippingDiscount&gt;</span>
+                            <span class="nt">&lt;SalesTax&gt;</span>
+                                <span class="nt">&lt;SalesTaxPercent&gt;</span>0<span class="nt">&lt;/SalesTaxPercent&gt;</span>
+                                <span class="nt">&lt;ShippingIncludedInTax&gt;</span>false<span class="nt">&lt;/ShippingIncludedInTax&gt;</span>
+                            <span class="nt">&lt;/SalesTax&gt;</span>
+                            <span class="nt">&lt;ShippingServiceOptions&gt;</span>
+                                <span class="nt">&lt;ShippingService&gt;</span>UK_RoyalMailFirstClassStandard<span class="nt">&lt;/ShippingService&gt;</span>
+                                <span class="nt">&lt;ShippingServiceCost</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.12<span class="nt">&lt;/ShippingServiceCost&gt;</span>
+                                <span class="nt">&lt;ShippingServiceAdditionalCost</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0.58<span class="nt">&lt;/ShippingServiceAdditionalCost&gt;</span>
+                                <span class="nt">&lt;ShippingServicePriority&gt;</span>1<span class="nt">&lt;/ShippingServicePriority&gt;</span>
+                                <span class="nt">&lt;ExpeditedService&gt;</span>false<span class="nt">&lt;/ExpeditedService&gt;</span>
+                                <span class="nt">&lt;ShippingTimeMin&gt;</span>1<span class="nt">&lt;/ShippingTimeMin&gt;</span>
+                                <span class="nt">&lt;ShippingTimeMax&gt;</span>2<span class="nt">&lt;/ShippingTimeMax&gt;</span>
+                            <span class="nt">&lt;/ShippingServiceOptions&gt;</span>
+                            <span class="nt">&lt;InternationalShippingServiceOption&gt;</span>
+                                <span class="nt">&lt;ShippingService&gt;</span>UK_RoyalMailInternationalSignedFor<span class="nt">&lt;/ShippingService&gt;</span>
+                                <span class="nt">&lt;ShippingServiceCost</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>5.5<span class="nt">&lt;/ShippingServiceCost&gt;</span>
+                                <span class="nt">&lt;ShippingServiceAdditionalCost</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/ShippingServiceAdditionalCost&gt;</span>
+                                <span class="nt">&lt;ShippingServicePriority&gt;</span>1<span class="nt">&lt;/ShippingServicePriority&gt;</span>
+                                <span class="nt">&lt;ShipToLocation&gt;</span>Worldwide<span class="nt">&lt;/ShipToLocation&gt;</span>
+                            <span class="nt">&lt;/InternationalShippingServiceOption&gt;</span>
+                            <span class="nt">&lt;ShippingType&gt;</span>Flat<span class="nt">&lt;/ShippingType&gt;</span>
+                            <span class="nt">&lt;ThirdPartyCheckout&gt;</span>false<span class="nt">&lt;/ThirdPartyCheckout&gt;</span>
+                            <span class="nt">&lt;SellerExcludeShipToLocationsPreference&gt;</span>false<span class="nt">&lt;/SellerExcludeShipToLocationsPreference&gt;</span>
+                        <span class="nt">&lt;/ShippingDetails&gt;</span>
+                        <span class="nt">&lt;ShipToLocations&gt;</span>Worldwide<span class="nt">&lt;/ShipToLocations&gt;</span>
+                        <span class="nt">&lt;Site&gt;</span>UK<span class="nt">&lt;/Site&gt;</span>
+                        <span class="nt">&lt;StartPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/StartPrice&gt;</span>
+                        <span class="nt">&lt;Storefront&gt;</span>
+                            <span class="nt">&lt;StoreCategoryID&gt;</span>4<span class="nt">&lt;/StoreCategoryID&gt;</span>
+                            <span class="nt">&lt;StoreCategory2ID&gt;</span>18<span class="nt">&lt;/StoreCategory2ID&gt;</span>
+                            <span class="nt">&lt;StoreURL&gt;</span>http://www.stores.ebay.co.uk/id=987654321<span class="nt">&lt;/StoreURL&gt;</span>
+                        <span class="nt">&lt;/Storefront&gt;</span>
+                        <span class="nt">&lt;TimeLeft&gt;</span>PT0S<span class="nt">&lt;/TimeLeft&gt;</span>
+                        <span class="nt">&lt;Title&gt;</span>APPLE IPHONE 4G 16GB WITH BOX<span class="nt">&lt;/Title&gt;</span>
+                        <span class="nt">&lt;HitCount&gt;</span>146<span class="nt">&lt;/HitCount&gt;</span>
+                        <span class="nt">&lt;GetItFast&gt;</span>false<span class="nt">&lt;/GetItFast&gt;</span>
+                        <span class="nt">&lt;SKU&gt;</span>3011<span class="nt">&lt;/SKU&gt;</span>
+                        <span class="nt">&lt;PostalCode&gt;</span>WR6 5LT<span class="nt">&lt;/PostalCode&gt;</span>
+                        <span class="nt">&lt;PictureDetails&gt;</span>
+                            <span class="nt">&lt;GalleryType&gt;</span>Plus<span class="nt">&lt;/GalleryType&gt;</span>
+                            <span class="nt">&lt;GalleryURL&gt;</span>http://i.ebayimg.com/10/!C!Vcd9QBWk~$(KGrHqV,!hMEzsdfdfedEpD6ffdfPBNCjQDUrM!~~_1.JPG?set_id=88021000500F<span class="nt">&lt;/GalleryURL&gt;</span>
+                            <span class="nt">&lt;PhotoDisplay&gt;</span>PicturePack<span class="nt">&lt;/PhotoDisplay&gt;</span>
+                            <span class="nt">&lt;PictureURL&gt;</span>http://i.ebayimg.com/10/!C!Vcd9QBWk~$(KGrHqV,!hMEzedEpD62312asdPBNCjQDUrM!~~_1.JPG?set_id=88002300500F<span class="nt">&lt;/PictureURL&gt;</span>
+                        <span class="nt">&lt;/PictureDetails&gt;</span>
+                        <span class="nt">&lt;DispatchTimeMax&gt;</span>1<span class="nt">&lt;/DispatchTimeMax&gt;</span>
+                        <span class="nt">&lt;ProxyItem&gt;</span>false<span class="nt">&lt;/ProxyItem&gt;</span>
+                        <span class="nt">&lt;BusinessSellerDetails&gt;</span>
+                            <span class="nt">&lt;Address&gt;</span>
+                                <span class="nt">&lt;Street1&gt;</span>Example Sellter,<span class="nt">&lt;/Street1&gt;</span>
+                                <span class="nt">&lt;Street2&gt;</span>Rosewood Lane,<span class="nt">&lt;/Street2&gt;</span>
+                                <span class="nt">&lt;CityName&gt;</span>Corbridge<span class="nt">&lt;/CityName&gt;</span>
+                                <span class="nt">&lt;StateOrProvince&gt;</span>Tyne and Wear<span class="nt">&lt;/StateOrProvince&gt;</span>
+                                <span class="nt">&lt;CountryName&gt;</span>United Kingdom<span class="nt">&lt;/CountryName&gt;</span>
+                                <span class="nt">&lt;Phone&gt;</span>0191 123 6547<span class="nt">&lt;/Phone&gt;</span>
+                                <span class="nt">&lt;PostalCode&gt;</span>NE38 3DL<span class="nt">&lt;/PostalCode&gt;</span>
+                                <span class="nt">&lt;CompanyName&gt;</span>Example Seller Ltd<span class="nt">&lt;/CompanyName&gt;</span>
+                                <span class="nt">&lt;FirstName&gt;</span>Sales<span class="nt">&lt;/FirstName&gt;</span>
+                                <span class="nt">&lt;LastName&gt;</span>Dept<span class="nt">&lt;/LastName&gt;</span>
+                            <span class="nt">&lt;/Address&gt;</span>
+                            <span class="nt">&lt;Fax&gt;</span>0191 456 7878<span class="nt">&lt;/Fax&gt;</span>
+                            <span class="nt">&lt;Email&gt;</span>sales@example.com<span class="nt">&lt;/Email&gt;</span>
+                            <span class="nt">&lt;LegalInvoice&gt;</span>true<span class="nt">&lt;/LegalInvoice&gt;</span>
+                            <span class="nt">&lt;TermsAndConditions&gt;</span>Cheque payments; Please allow 10 working days for cheque clearance.<span class="nt">&lt;/TermsAndConditions&gt;</span>
+                            <span class="nt">&lt;VATDetails&gt;</span>
+                                <span class="nt">&lt;VATSite&gt;</span>GB<span class="nt">&lt;/VATSite&gt;</span>
+                                <span class="nt">&lt;VATID&gt;</span>229222229<span class="nt">&lt;/VATID&gt;</span>
+                            <span class="nt">&lt;/VATDetails&gt;</span>
+                        <span class="nt">&lt;/BusinessSellerDetails&gt;</span>
+                        <span class="nt">&lt;BuyerGuaranteePrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>10000<span class="nt">&lt;/BuyerGuaranteePrice&gt;</span>
+                        <span class="nt">&lt;BuyerRequirementDetails&gt;</span>
+                            <span class="nt">&lt;MinimumFeedbackScore&gt;</span>-1<span class="nt">&lt;/MinimumFeedbackScore&gt;</span>
+                            <span class="nt">&lt;MaximumUnpaidItemStrikesInfo&gt;</span>
+                                <span class="nt">&lt;Count&gt;</span>2<span class="nt">&lt;/Count&gt;</span>
+                                <span class="nt">&lt;Period&gt;</span>Days_30<span class="nt">&lt;/Period&gt;</span>
+                            <span class="nt">&lt;/MaximumUnpaidItemStrikesInfo&gt;</span>
+                        <span class="nt">&lt;/BuyerRequirementDetails&gt;</span>
+                        <span class="nt">&lt;ReturnPolicy&gt;</span>
+                            <span class="nt">&lt;ReturnsAcceptedOption&gt;</span>ReturnsAccepted<span class="nt">&lt;/ReturnsAcceptedOption&gt;</span>
+                            <span class="nt">&lt;ReturnsAccepted&gt;</span>Returns Accepted<span class="nt">&lt;/ReturnsAccepted&gt;</span>
+                            <span class="nt">&lt;Description&gt;</span>Faulty/Damaged items must be reported to us within 7 days of receipt..<span class="nt">&lt;/Description&gt;</span>
+                        <span class="nt">&lt;/ReturnPolicy&gt;</span>
+                        <span class="nt">&lt;ConditionID&gt;</span>1000<span class="nt">&lt;/ConditionID&gt;</span>
+                        <span class="nt">&lt;ConditionDisplayName&gt;</span>New<span class="nt">&lt;/ConditionDisplayName&gt;</span>
+                    <span class="nt">&lt;/Item&gt;</span>
+                    <span class="nt">&lt;QuantityPurchased&gt;</span>1<span class="nt">&lt;/QuantityPurchased&gt;</span>
+                    <span class="nt">&lt;Status&gt;</span>
+                        <span class="nt">&lt;PaymentHoldStatus&gt;</span>None<span class="nt">&lt;/PaymentHoldStatus&gt;</span>
+                    <span class="nt">&lt;/Status&gt;</span>
+                    <span class="nt">&lt;TransactionID&gt;</span>1521921232150026<span class="nt">&lt;/TransactionID&gt;</span>
+                    <span class="nt">&lt;TransactionPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/TransactionPrice&gt;</span>
+                    <span class="nt">&lt;SellingManagerProductDetails&gt;</span>
+                        <span class="nt">&lt;ProductName&gt;</span>APPLE IPHONE 4G 16GB WITH BOX<span class="nt">&lt;/ProductName&gt;</span>
+                        <span class="nt">&lt;CustomLabel&gt;</span>3011<span class="nt">&lt;/CustomLabel&gt;</span>
+                    <span class="nt">&lt;/SellingManagerProductDetails&gt;</span>
+                    <span class="nt">&lt;Platform&gt;</span>eBay<span class="nt">&lt;/Platform&gt;</span>
+                    <span class="nt">&lt;Variation</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;OrderLineItemID&gt;</span>3902873-1521950026<span class="nt">&lt;/OrderLineItemID&gt;</span>
+                <span class="nt">&lt;/Transaction&gt;</span>
+                <span class="nt">&lt;Transaction&gt;</span>
+                    <span class="nt">&lt;Buyer&gt;</span>
+                        <span class="nt">&lt;Email&gt;</span>buyer@example.com<span class="nt">&lt;/Email&gt;</span>
+                    <span class="nt">&lt;/Buyer&gt;</span>
+                    <span class="nt">&lt;ShippingDetails&gt;</span>
+                        <span class="nt">&lt;SellingManagerSalesRecordNumber&gt;</span>198780<span class="nt">&lt;/SellingManagerSalesRecordNumber&gt;</span>
+                    <span class="nt">&lt;/ShippingDetails&gt;</span>
+                    <span class="nt">&lt;Item&gt;</span>
+                        <span class="nt">&lt;AutoPay&gt;</span>false<span class="nt">&lt;/AutoPay&gt;</span>
+                        <span class="nt">&lt;BuyerProtection&gt;</span>ItemEligible<span class="nt">&lt;/BuyerProtection&gt;</span>
+                        <span class="nt">&lt;BuyItNowPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/BuyItNowPrice&gt;</span>
+                        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+                        <span class="nt">&lt;Currency&gt;</span>GBP<span class="nt">&lt;/Currency&gt;</span>
+                        <span class="nt">&lt;GiftIcon&gt;</span>0<span class="nt">&lt;/GiftIcon&gt;</span>
+                        <span class="nt">&lt;HitCounter&gt;</span>RetroStyle<span class="nt">&lt;/HitCounter&gt;</span>
+                        <span class="nt">&lt;ItemID&gt;</span>39026578873<span class="nt">&lt;/ItemID&gt;</span>
+                        <span class="nt">&lt;ListingDetails&gt;</span>
+                            <span class="nt">&lt;Adult&gt;</span>false<span class="nt">&lt;/Adult&gt;</span>
+                            <span class="nt">&lt;BindingAuction&gt;</span>false<span class="nt">&lt;/BindingAuction&gt;</span>
+                            <span class="nt">&lt;CheckoutEnabled&gt;</span>true<span class="nt">&lt;/CheckoutEnabled&gt;</span>
+                            <span class="nt">&lt;ConvertedBuyItNowPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/ConvertedBuyItNowPrice&gt;</span>
+                            <span class="nt">&lt;ConvertedStartPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/ConvertedStartPrice&gt;</span>
+                            <span class="nt">&lt;ConvertedReservePrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/ConvertedReservePrice&gt;</span>
+                            <span class="nt">&lt;HasReservePrice&gt;</span>false<span class="nt">&lt;/HasReservePrice&gt;</span>
+                            <span class="nt">&lt;StartTime&gt;</span>2011-03-12T19:55:05Z<span class="nt">&lt;/StartTime&gt;</span>
+                            <span class="nt">&lt;EndTime&gt;</span>2011-04-11T19:55:05Z<span class="nt">&lt;/EndTime&gt;</span>
+                            <span class="nt">&lt;ViewItemURL&gt;</span>http://cgi.ebay.co.uk/ws/eBayISAPI.dll?ViewItem<span class="err">&amp;</span>item=390265474873<span class="err">&amp;</span>category=82248<span class="nt">&lt;/ViewItemURL&gt;</span>
+                            <span class="nt">&lt;HasUnansweredQuestions&gt;</span>false<span class="nt">&lt;/HasUnansweredQuestions&gt;</span>
+                            <span class="nt">&lt;HasPublicMessages&gt;</span>false<span class="nt">&lt;/HasPublicMessages&gt;</span>
+                            <span class="nt">&lt;ViewItemURLForNaturalSearch&gt;</span>http://cgi.ebay.co.uk/IPHONE-4G-16GB-WITH-BOX_itemZ390296894873QQcategoryZ82248QQcmdZViewItem<span class="nt">&lt;/ViewItemURLForNaturalSearch&gt;</span>
+                        <span class="nt">&lt;/ListingDetails&gt;</span>
+                        <span class="nt">&lt;ListingDuration&gt;</span>Days_30<span class="nt">&lt;/ListingDuration&gt;</span>
+                        <span class="nt">&lt;ListingType&gt;</span>StoresFixedPrice<span class="nt">&lt;/ListingType&gt;</span>
+                        <span class="nt">&lt;Location&gt;</span>Newcastle<span class="nt">&lt;/Location&gt;</span>
+                        <span class="nt">&lt;PaymentMethods&gt;</span>MOCC<span class="nt">&lt;/PaymentMethods&gt;</span>
+                        <span class="nt">&lt;PaymentMethods&gt;</span>PayPal<span class="nt">&lt;/PaymentMethods&gt;</span>
+                        <span class="nt">&lt;PaymentMethods&gt;</span>CCAccepted<span class="nt">&lt;/PaymentMethods&gt;</span>
+                        <span class="nt">&lt;PayPalEmailAddress&gt;</span>seller@example.com<span class="nt">&lt;/PayPalEmailAddress&gt;</span>
+                        <span class="nt">&lt;PrimaryCategory&gt;</span>
+                            <span class="nt">&lt;CategoryID&gt;</span>82248<span class="nt">&lt;/CategoryID&gt;</span>
+                            <span class="nt">&lt;CategoryName&gt;</span>Home <span class="err">&amp;</span> Garden<span class="nt">&lt;/CategoryName&gt;</span>
+                        <span class="nt">&lt;/PrimaryCategory&gt;</span>
+                        <span class="nt">&lt;PrivateListing&gt;</span>false<span class="nt">&lt;/PrivateListing&gt;</span>
+                        <span class="nt">&lt;Quantity&gt;</span>127<span class="nt">&lt;/Quantity&gt;</span>
+                        <span class="nt">&lt;ReservePrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/ReservePrice&gt;</span>
+                        <span class="nt">&lt;ReviseStatus&gt;</span>
+                            <span class="nt">&lt;ItemRevised&gt;</span>true<span class="nt">&lt;/ItemRevised&gt;</span>
+                        <span class="nt">&lt;/ReviseStatus&gt;</span>
+                        <span class="nt">&lt;Seller&gt;</span>
+                            <span class="nt">&lt;AboutMePage&gt;</span>false<span class="nt">&lt;/AboutMePage&gt;</span>
+                            <span class="nt">&lt;Email&gt;</span>sales@example.com<span class="nt">&lt;/Email&gt;</span>
+                            <span class="nt">&lt;FeedbackScore&gt;</span>87634<span class="nt">&lt;/FeedbackScore&gt;</span>
+                            <span class="nt">&lt;PositiveFeedbackPercent&gt;</span>99.9<span class="nt">&lt;/PositiveFeedbackPercent&gt;</span>
+                            <span class="nt">&lt;FeedbackPrivate&gt;</span>false<span class="nt">&lt;/FeedbackPrivate&gt;</span>
+                            <span class="nt">&lt;FeedbackRatingStar&gt;</span>PurpleShooting<span class="nt">&lt;/FeedbackRatingStar&gt;</span>
+                            <span class="nt">&lt;IDVerified&gt;</span>false<span class="nt">&lt;/IDVerified&gt;</span>
+                            <span class="nt">&lt;eBayGoodStanding&gt;</span>true<span class="nt">&lt;/eBayGoodStanding&gt;</span>
+                            <span class="nt">&lt;NewUser&gt;</span>false<span class="nt">&lt;/NewUser&gt;</span>
+                            <span class="nt">&lt;RegistrationDate&gt;</span>2002-12-14T16:35:06Z<span class="nt">&lt;/RegistrationDate&gt;</span>
+                            <span class="nt">&lt;Site&gt;</span>UK<span class="nt">&lt;/Site&gt;</span>
+                            <span class="nt">&lt;Status&gt;</span>Confirmed<span class="nt">&lt;/Status&gt;</span>
+                            <span class="nt">&lt;UserID&gt;</span>example-seller<span class="nt">&lt;/UserID&gt;</span>
+                            <span class="nt">&lt;UserIDChanged&gt;</span>false<span class="nt">&lt;/UserIDChanged&gt;</span>
+                            <span class="nt">&lt;UserIDLastChanged&gt;</span>2006-08-31T14:33:47Z<span class="nt">&lt;/UserIDLastChanged&gt;</span>
+                            <span class="nt">&lt;VATStatus&gt;</span>VATExempt<span class="nt">&lt;/VATStatus&gt;</span>
+                            <span class="nt">&lt;SellerInfo&gt;</span>
+                                <span class="nt">&lt;AllowPaymentEdit&gt;</span>false<span class="nt">&lt;/AllowPaymentEdit&gt;</span>
+                                <span class="nt">&lt;CheckoutEnabled&gt;</span>true<span class="nt">&lt;/CheckoutEnabled&gt;</span>
+                                <span class="nt">&lt;CIPBankAccountStored&gt;</span>false<span class="nt">&lt;/CIPBankAccountStored&gt;</span>
+                                <span class="nt">&lt;GoodStanding&gt;</span>true<span class="nt">&lt;/GoodStanding&gt;</span>
+                                <span class="nt">&lt;MerchandizingPref&gt;</span>OptIn<span class="nt">&lt;/MerchandizingPref&gt;</span>
+                                <span class="nt">&lt;QualifiesForB2BVAT&gt;</span>false<span class="nt">&lt;/QualifiesForB2BVAT&gt;</span>
+                                <span class="nt">&lt;StoreOwner&gt;</span>true<span class="nt">&lt;/StoreOwner&gt;</span>
+                                <span class="nt">&lt;StoreURL&gt;</span>http://www.stores.ebay.co.uk/id=6543412<span class="nt">&lt;/StoreURL&gt;</span>
+                                <span class="nt">&lt;SellerBusinessType&gt;</span>Commercial<span class="nt">&lt;/SellerBusinessType&gt;</span>
+                                <span class="nt">&lt;SafePaymentExempt&gt;</span>true<span class="nt">&lt;/SafePaymentExempt&gt;</span>
+                                <span class="nt">&lt;TopRatedSeller&gt;</span>true<span class="nt">&lt;/TopRatedSeller&gt;</span>
+                                <span class="nt">&lt;LiveAuctionAuthorized&gt;</span>false<span class="nt">&lt;/LiveAuctionAuthorized&gt;</span>
+                            <span class="nt">&lt;/SellerInfo&gt;</span>
+                            <span class="nt">&lt;MotorsDealer&gt;</span>false<span class="nt">&lt;/MotorsDealer&gt;</span>
+                        <span class="nt">&lt;/Seller&gt;</span>
+                        <span class="nt">&lt;SellingStatus&gt;</span>
+                            <span class="nt">&lt;BidCount&gt;</span>0<span class="nt">&lt;/BidCount&gt;</span>
+                            <span class="nt">&lt;BidIncrement</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/BidIncrement&gt;</span>
+                            <span class="nt">&lt;ConvertedCurrentPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/ConvertedCurrentPrice&gt;</span>
+                            <span class="nt">&lt;CurrentPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/CurrentPrice&gt;</span>
+                            <span class="nt">&lt;LeadCount&gt;</span>0<span class="nt">&lt;/LeadCount&gt;</span>
+                            <span class="nt">&lt;MinimumToBid</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/MinimumToBid&gt;</span>
+                            <span class="nt">&lt;QuantitySold&gt;</span>12<span class="nt">&lt;/QuantitySold&gt;</span>
+                            <span class="nt">&lt;ReserveMet&gt;</span>true<span class="nt">&lt;/ReserveMet&gt;</span>
+                            <span class="nt">&lt;SecondChanceEligible&gt;</span>false<span class="nt">&lt;/SecondChanceEligible&gt;</span>
+                            <span class="nt">&lt;ListingStatus&gt;</span>Completed<span class="nt">&lt;/ListingStatus&gt;</span>
+                        <span class="nt">&lt;/SellingStatus&gt;</span>
+                        <span class="nt">&lt;ShippingDetails&gt;</span>
+                            <span class="nt">&lt;ApplyShippingDiscount&gt;</span>false<span class="nt">&lt;/ApplyShippingDiscount&gt;</span>
+                            <span class="nt">&lt;SalesTax&gt;</span>
+                                <span class="nt">&lt;SalesTaxPercent&gt;</span>0<span class="nt">&lt;/SalesTaxPercent&gt;</span>
+                                <span class="nt">&lt;ShippingIncludedInTax&gt;</span>false<span class="nt">&lt;/ShippingIncludedInTax&gt;</span>
+                            <span class="nt">&lt;/SalesTax&gt;</span>
+                            <span class="nt">&lt;ShippingServiceOptions&gt;</span>
+                                <span class="nt">&lt;ShippingService&gt;</span>UK_RoyalMailFirstClassStandard<span class="nt">&lt;/ShippingService&gt;</span>
+                                <span class="nt">&lt;ShippingServiceCost</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.12<span class="nt">&lt;/ShippingServiceCost&gt;</span>
+                                <span class="nt">&lt;ShippingServiceAdditionalCost</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>0.58<span class="nt">&lt;/ShippingServiceAdditionalCost&gt;</span>
+                                <span class="nt">&lt;ShippingServicePriority&gt;</span>1<span class="nt">&lt;/ShippingServicePriority&gt;</span>
+                                <span class="nt">&lt;ExpeditedService&gt;</span>false<span class="nt">&lt;/ExpeditedService&gt;</span>
+                                <span class="nt">&lt;ShippingTimeMin&gt;</span>1<span class="nt">&lt;/ShippingTimeMin&gt;</span>
+                                <span class="nt">&lt;ShippingTimeMax&gt;</span>2<span class="nt">&lt;/ShippingTimeMax&gt;</span>
+                            <span class="nt">&lt;/ShippingServiceOptions&gt;</span>
+                            <span class="nt">&lt;InternationalShippingServiceOption&gt;</span>
+                                <span class="nt">&lt;ShippingService&gt;</span>UK_RoyalMailInternationalSignedFor<span class="nt">&lt;/ShippingService&gt;</span>
+                                <span class="nt">&lt;ShippingServiceCost</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>5.5<span class="nt">&lt;/ShippingServiceCost&gt;</span>
+                                <span class="nt">&lt;ShippingServiceAdditionalCost</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/ShippingServiceAdditionalCost&gt;</span>
+                                <span class="nt">&lt;ShippingServicePriority&gt;</span>1<span class="nt">&lt;/ShippingServicePriority&gt;</span>
+                                <span class="nt">&lt;ShipToLocation&gt;</span>Worldwide<span class="nt">&lt;/ShipToLocation&gt;</span>
+                            <span class="nt">&lt;/InternationalShippingServiceOption&gt;</span>
+                            <span class="nt">&lt;ShippingType&gt;</span>Flat<span class="nt">&lt;/ShippingType&gt;</span>
+                            <span class="nt">&lt;ThirdPartyCheckout&gt;</span>false<span class="nt">&lt;/ThirdPartyCheckout&gt;</span>
+                            <span class="nt">&lt;SellerExcludeShipToLocationsPreference&gt;</span>false<span class="nt">&lt;/SellerExcludeShipToLocationsPreference&gt;</span>
+                        <span class="nt">&lt;/ShippingDetails&gt;</span>
+                        <span class="nt">&lt;ShipToLocations&gt;</span>Worldwide<span class="nt">&lt;/ShipToLocations&gt;</span>
+                        <span class="nt">&lt;Site&gt;</span>UK<span class="nt">&lt;/Site&gt;</span>
+                        <span class="nt">&lt;StartPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/StartPrice&gt;</span>
+                        <span class="nt">&lt;Storefront&gt;</span>
+                            <span class="nt">&lt;StoreCategoryID&gt;</span>4<span class="nt">&lt;/StoreCategoryID&gt;</span>
+                            <span class="nt">&lt;StoreCategory2ID&gt;</span>18<span class="nt">&lt;/StoreCategory2ID&gt;</span>
+                            <span class="nt">&lt;StoreURL&gt;</span>http://www.stores.ebay.co.uk/id=65487123<span class="nt">&lt;/StoreURL&gt;</span>
+                        <span class="nt">&lt;/Storefront&gt;</span>
+                        <span class="nt">&lt;TimeLeft&gt;</span>PT0S<span class="nt">&lt;/TimeLeft&gt;</span>
+                        <span class="nt">&lt;Title&gt;</span>APPLE IPHONE 4G 16GB WITH BOX<span class="nt">&lt;/Title&gt;</span>
+                        <span class="nt">&lt;HitCount&gt;</span>146<span class="nt">&lt;/HitCount&gt;</span>
+                        <span class="nt">&lt;GetItFast&gt;</span>false<span class="nt">&lt;/GetItFast&gt;</span>
+                        <span class="nt">&lt;SKU&gt;</span>3011<span class="nt">&lt;/SKU&gt;</span>
+                        <span class="nt">&lt;PostalCode&gt;</span>NE38 2RR<span class="nt">&lt;/PostalCode&gt;</span>
+                        <span class="nt">&lt;PictureDetails&gt;</span>
+                            <span class="nt">&lt;GalleryType&gt;</span>Plus<span class="nt">&lt;/GalleryType&gt;</span>
+                            <span class="nt">&lt;GalleryURL&gt;</span>http://i.ebayimg.com/10/!C!Vcd9QBWk~$(KGrHqV,EpD6PBNCjQDUrM!~~_1.JPG?set_id=880000500F<span class="nt">&lt;/GalleryURL&gt;</span>
+                            <span class="nt">&lt;PhotoDisplay&gt;</span>PicturePack<span class="nt">&lt;/PhotoDisplay&gt;</span>
+                            <span class="nt">&lt;PictureURL&gt;</span>http://i.ebayimg.com/10/!C!Vcd9QBWk~$(KGrHqV,!hD6PBNCjQDUrM!~~_1.JPG?set_id=880000500F<span class="nt">&lt;/PictureURL&gt;</span>
+                        <span class="nt">&lt;/PictureDetails&gt;</span>
+                        <span class="nt">&lt;DispatchTimeMax&gt;</span>1<span class="nt">&lt;/DispatchTimeMax&gt;</span>
+                        <span class="nt">&lt;ProxyItem&gt;</span>false<span class="nt">&lt;/ProxyItem&gt;</span>
+                        <span class="nt">&lt;BusinessSellerDetails&gt;</span>
+                            <span class="nt">&lt;Address&gt;</span>
+                                <span class="nt">&lt;Street1&gt;</span>Example Store,<span class="nt">&lt;/Street1&gt;</span>
+                                <span class="nt">&lt;Street2&gt;</span>Rosewood Lane,<span class="nt">&lt;/Street2&gt;</span>
+                                <span class="nt">&lt;CityName&gt;</span>Corbridge<span class="nt">&lt;/CityName&gt;</span>
+                                <span class="nt">&lt;StateOrProvince&gt;</span>Tyne and Wear<span class="nt">&lt;/StateOrProvince&gt;</span>
+                                <span class="nt">&lt;CountryName&gt;</span>United Kingdom<span class="nt">&lt;/CountryName&gt;</span>
+                                <span class="nt">&lt;Phone&gt;</span>0191 123 6547<span class="nt">&lt;/Phone&gt;</span>
+                                <span class="nt">&lt;PostalCode&gt;</span>NE38 3DL<span class="nt">&lt;/PostalCode&gt;</span>
+                                <span class="nt">&lt;CompanyName&gt;</span>Example Seller Ltd<span class="nt">&lt;/CompanyName&gt;</span>
+                                <span class="nt">&lt;FirstName&gt;</span>Sales<span class="nt">&lt;/FirstName&gt;</span>
+                                <span class="nt">&lt;LastName&gt;</span>Dept<span class="nt">&lt;/LastName&gt;</span>
+                            <span class="nt">&lt;/Address&gt;</span>
+                            <span class="nt">&lt;Fax&gt;</span>0191 123 4568<span class="nt">&lt;/Fax&gt;</span>
+                            <span class="nt">&lt;Email&gt;</span>Seller@example/com<span class="nt">&lt;/Email&gt;</span>
+                            <span class="nt">&lt;LegalInvoice&gt;</span>true<span class="nt">&lt;/LegalInvoice&gt;</span>
+                            <span class="nt">&lt;TermsAndConditions&gt;</span>Cheque payments.<span class="nt">&lt;/TermsAndConditions&gt;</span>
+                            <span class="nt">&lt;VATDetails&gt;</span>
+                                <span class="nt">&lt;VATSite&gt;</span>GB<span class="nt">&lt;/VATSite&gt;</span>
+                                <span class="nt">&lt;VATID&gt;</span>88934349<span class="nt">&lt;/VATID&gt;</span>
+                            <span class="nt">&lt;/VATDetails&gt;</span>
+                        <span class="nt">&lt;/BusinessSellerDetails&gt;</span>
+                        <span class="nt">&lt;BuyerGuaranteePrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>10000<span class="nt">&lt;/BuyerGuaranteePrice&gt;</span>
+                        <span class="nt">&lt;BuyerRequirementDetails&gt;</span>
+                            <span class="nt">&lt;MinimumFeedbackScore&gt;</span>-1<span class="nt">&lt;/MinimumFeedbackScore&gt;</span>
+                            <span class="nt">&lt;MaximumUnpaidItemStrikesInfo&gt;</span>
+                                <span class="nt">&lt;Count&gt;</span>2<span class="nt">&lt;/Count&gt;</span>
+                                <span class="nt">&lt;Period&gt;</span>Days_30<span class="nt">&lt;/Period&gt;</span>
+                            <span class="nt">&lt;/MaximumUnpaidItemStrikesInfo&gt;</span>
+                        <span class="nt">&lt;/BuyerRequirementDetails&gt;</span>
+                        <span class="nt">&lt;ReturnPolicy&gt;</span>
+                            <span class="nt">&lt;ReturnsAcceptedOption&gt;</span>ReturnsAccepted<span class="nt">&lt;/ReturnsAcceptedOption&gt;</span>
+                            <span class="nt">&lt;ReturnsAccepted&gt;</span>Returns Accepted<span class="nt">&lt;/ReturnsAccepted&gt;</span>
+                            <span class="nt">&lt;Description&gt;</span>Faulty/Damaged items must be reported to us within 7 days of receipt. <span class="nt">&lt;/Description&gt;</span>
+                        <span class="nt">&lt;/ReturnPolicy&gt;</span>
+                        <span class="nt">&lt;ConditionID&gt;</span>1000<span class="nt">&lt;/ConditionID&gt;</span>
+                        <span class="nt">&lt;ConditionDisplayName&gt;</span>New<span class="nt">&lt;/ConditionDisplayName&gt;</span>
+                    <span class="nt">&lt;/Item&gt;</span>
+                    <span class="nt">&lt;QuantityPurchased&gt;</span>2<span class="nt">&lt;/QuantityPurchased&gt;</span>
+                    <span class="nt">&lt;Status&gt;</span>
+                        <span class="nt">&lt;PaymentHoldStatus&gt;</span>None<span class="nt">&lt;/PaymentHoldStatus&gt;</span>
+                    <span class="nt">&lt;/Status&gt;</span>
+                    <span class="nt">&lt;TransactionID&gt;</span>1521204026<span class="nt">&lt;/TransactionID&gt;</span>
+                    <span class="nt">&lt;TransactionPrice</span> <span class="na">currencyID=</span><span class="s">"GBP"</span><span class="nt">&gt;</span>1.75<span class="nt">&lt;/TransactionPrice&gt;</span>
+                    <span class="nt">&lt;SellingManagerProductDetails&gt;</span>
+                        <span class="nt">&lt;ProductName&gt;</span>APPLE IPHONE 4G 16GB WITH BOX<span class="nt">&lt;/ProductName&gt;</span>
+                        <span class="nt">&lt;CustomLabel&gt;</span>3011<span class="nt">&lt;/CustomLabel&gt;</span>
+                    <span class="nt">&lt;/SellingManagerProductDetails&gt;</span>
+                    <span class="nt">&lt;Platform&gt;</span>eBay<span class="nt">&lt;/Platform&gt;</span>
+                    <span class="nt">&lt;Variation</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;OrderLineItemID&gt;</span>390234894873-152134214026<span class="nt">&lt;/OrderLineItemID&gt;</span>
+                <span class="nt">&lt;/Transaction&gt;</span>
+            <span class="nt">&lt;/TransactionArray&gt;</span>
+            <span class="nt">&lt;BuyerUserID&gt;</span>buyer-id<span class="nt">&lt;/BuyerUserID&gt;</span>
+            <span class="nt">&lt;PaidTime&gt;</span>2011-04-08T13:59:01Z<span class="nt">&lt;/PaidTime&gt;</span>
+            <span class="nt">&lt;ShippedTime&gt;</span>2011-04-08T16:16:54Z<span class="nt">&lt;/ShippedTime&gt;</span>
+            <span class="nt">&lt;IntegratedMerchantCreditCardEnabled&gt;</span>false<span class="nt">&lt;/IntegratedMerchantCreditCardEnabled&gt;</span>
+            <span class="nt">&lt;EIASToken&gt;</span>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJmYqmCJeFpQ+dj6x9nY+seQ==<span class="nt">&lt;/EIASToken&gt;</span>
+        <span class="nt">&lt;/Order&gt;</span>
+    <span class="nt">&lt;/OrderArray&gt;</span>
+<span class="nt">&lt;/GetOrdersResponseType&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Ebay-Connector/Downloading-Orders-from-eBay.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

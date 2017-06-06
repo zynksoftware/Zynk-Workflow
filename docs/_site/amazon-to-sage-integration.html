@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amazon to Sage Integration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Amazon to Sage Integration</h1>
+                    <p>This article will detail the process you will need to go through to develop an integration between your <strong>Amazon Seller Central</strong> account and your package of <strong>Sage</strong>. We will go through how to download your Amazon orders and import them in to Sage. We will also detail how to upload your Inventory and Price feeds to Amazon.</p>
+
+<p>You can find a template workflow for this process on our <a href="https://github.com/zynksoftware/samples/tree/master/Workflow%20Samples">GitHub site</a>.</p>
+
+<h2 id="download-sales-orders---phase-1">Download Sales Orders - Phase 1</h2>
+<p>This part of the process will detail how to download and then import your Amazon orders in to Sage.</p>
+
+<p><a href="downloading-orders-from-amazon-marketplace">Downloading Orders from Amazon Marketplace</a></p>
+
+<p>This task will download your orders from Amazon in the raw format we receive.</p>
+
+<ul>
+  <li><strong>Country</strong> - Your Amazon Seller Central account’s county.</li>
+  <li><strong>Merchant ID</strong> - This will be your unique Merchant ID, there are instructions on how to get this on this link, see <a href="obtaining-a-merchant-id-from-amazon">Obtaining a Merchant ID from Amazon</a> for more information.</li>
+  <li><strong>Download From</strong> - This is the date the orders will initially download from and is normally configured when you are first setting up the workflow.</li>
+  <li><strong>Order Status</strong> - The order status we will download from Amazon, so for example if you were to set this to ‘Shipped’ we would download any ‘Shipped’ orders from the date specified in the above setting.</li>
+  <li><strong>Output File</strong> - The file in which the orders will be dropped in to.</li>
+</ul>
+
+<p><a href="auto-mapper">Auto Mapper</a> - Amazon Sales Orders to Zynk Sales Orders</p>
+
+<ul>
+  <li><strong>Input File</strong> - This will be Output File from the previous task.</li>
+  <li><strong>Mapping</strong> - Here you will need to specify your mapping, in this case it would Amazon Orders to Zynk XML Sales Orders.</li>
+  <li><strong>Output File</strong> - This will be the transformed file, and will be the file that is imported in to Sage.</li>
+</ul>
+
+<p><a href="importing-sales-orders-into-sage-50-uk">Importing Sales Orders into Sage 50 UK</a></p>
+
+<ul>
+  <li><strong>Fail File</strong> - This will be the file that any failed orders will be dropped in to, we will also specify any errors so that you can pinpoint any wrongdoings and re download the order.</li>
+  <li><strong>Input File</strong> - This will be the Output File from the previous task.</li>
+  <li><strong>Success File</strong> - This will be the file that we drop any successful orders in to.</li>
+</ul>
+
+<h2 id="upload-inventory-feed---phase-2">Upload Inventory Feed - Phase 2</h2>
+<p>This part of the process will export product information from Sage, transform it in to an Amazon Inventory Feed and then upload it.</p>
+
+<p><a href="exporting-stock-records-from-sage-50-uk">Exporting Stock Records from Sage 50 UK</a></p>
+
+<p>This task will output any modified stock records in to an XML file.</p>
+
+<ul>
+  <li><strong>Output File</strong> - This is the file that will hold the Zynk XML formatted Stock Records.</li>
+</ul>
+
+<p><a href="auto-mapper">Auto Mapper</a> - Zynk Stock Records to Amazon Inventory</p>
+
+<p>This task will transform the Zynk XML format of Stock Records in to an Amazon Inventory Feed.</p>
+
+<ul>
+  <li><strong>Input File</strong> - This will be the Output File from the previous task and the file that will be transformed.</li>
+  <li><strong>Mapping</strong> - Here you will need to specify the mapping you require.</li>
+  <li><strong>Output File</strong> - This file will be in the Amazon Inventory Feed format which will be uploaded in the next task.</li>
+</ul>
+
+<p><a href="uploading-inventory-feeds-to-amazon-marketplace">Uploading Inventory Feeds to Amazon Marketplace</a></p>
+
+<p>This task will actually upload the inventory to your Amazon Seller Central site.</p>
+
+<ul>
+  <li><strong>Input File</strong> - This will be the Output File from the previous task, and will be uploaded to update your inventory.</li>
+</ul>
+
+<h2 id="upload-price-feed---phase-3">Upload Price Feed - Phase 3</h2>
+<p>This part of the process will upload your prices to your Amazon Seller Central site.</p>
+
+<p><a href="auto-mapper">Auto Mapper</a> - Zynk Stock Records to Amazon Prices</p>
+
+<ul>
+  <li><strong>Input File</strong> - We can use the previous Export Stock Records task here to generate the Amazon Price Feed information.</li>
+  <li><strong>Mapping</strong> - Here you will need to specify the mapping you require.</li>
+  <li><strong>Output File</strong> - This will be your transformed file and will uploaded to Amazon.</li>
+</ul>
+
+<p><a href="uploading-price-feeds-to-amazon-marketplace">Uploading Price Feeds to Amazon Marketplace</a></p>
+
+<ul>
+  <li><strong>Input File</strong> - This will be the Output File from the previous task.</li>
+</ul>
+
+<h2 id="archive---phase-4">Archive - Phase 4</h2>
+<p>This is the last part of the process and will essentially archive any data used in the workflow in to the folder specified at the Task Settings level.</p>
+
+<p><a href="archive-workflow-data">Archive Workflow Data</a></p>
+
+<ul>
+  <li><strong>Archive Folder</strong> - The folder for the files to be archived to.</li>
+</ul>
+
+<p>If you have any queries on any of the above, feel free to contact our support team via email at support@zynk.com or via telephone on 0191 303 7279.  Please note, as stated on the Auto Mapper task we do not support any changes to XSLT.</p>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Integrations-Section/Amazon-to-Sage-Integration.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

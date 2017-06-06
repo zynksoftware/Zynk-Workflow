@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sage 200 Customer XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Sage 200 Customer XML</h1>
+                    <p>Import Customers allows you to create new and update existing customers in Sage 200. We recommend that the Id field be populated by the unique id of the customers from the external system, Zynk uses this field to track customers already imported to prevent duplicates being created in Sage, and to allow sales orders to be created without the customer’s account reference (the CustomerId is provided instead, which is useful when the external system does not store the account reference).</p>
+
+<p>Any fields not documented below are not supported with our imports. Examples of where in the XML the fields should appear are shown in the samples below.</p>
+
+<p>Sample import file for creating a customer:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Customers&gt;</span>
+    <span class="nt">&lt;Customer&gt;</span>
+      <span class="nt">&lt;Id&gt;</span>123<span class="nt">&lt;/Id&gt;</span>
+      <span class="nt">&lt;AccountReference&gt;</span>JOE001<span class="nt">&lt;/AccountReference&gt;</span>
+      <span class="nt">&lt;CompanyName&gt;</span>Zynk Software Limited<span class="nt">&lt;/CompanyName&gt;</span>
+      <span class="nt">&lt;CreditLimit&gt;</span>1000<span class="nt">&lt;/CreditLimit&gt;</span>
+      <span class="nt">&lt;Currency&gt;</span>GBP<span class="nt">&lt;/Currency&gt;</span>
+      <span class="nt">&lt;CustomerInvoiceAddress&gt;</span>
+        <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Joe<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Harrison<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>Zynk Software Limited<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>Nelson House, Fleming Business Centre<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>Jesmond<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Newcastle upon Tyne<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE2 3AE<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne <span class="ni">&amp;amp;</span> Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+        <span class="nt">&lt;Email&gt;</span>support@zynk.com<span class="nt">&lt;/Email&gt;</span>
+        <span class="nt">&lt;Website&gt;</span>www.zynk.com<span class="nt">&lt;/Website&gt;</span>
+      <span class="nt">&lt;/CustomerInvoiceAddress&gt;</span>
+      <span class="nt">&lt;CustomerDeliveryAddress&gt;</span>
+        <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Joe<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Harrison<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>Zynk Software Limited<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>Nelson House, Fleming Business Centre<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>Jesmond<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Newcastle upon Tyne<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE2 3AE<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne <span class="ni">&amp;amp;</span> Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+      <span class="nt">&lt;/CustomerDeliveryAddress&gt;</span>
+      <span class="nt">&lt;TermsAgreed&gt;</span>true<span class="nt">&lt;/TermsAgreed&gt;</span>
+      <span class="nt">&lt;TaxCode&gt;</span>4<span class="nt">&lt;/TaxCode&gt;</span>
+      <span class="nt">&lt;OverrideTaxCode&gt;</span>false<span class="nt">&lt;/OverrideTaxCode&gt;</span>
+      <span class="nt">&lt;VatNumber&gt;</span>796 5763 59<span class="nt">&lt;/VatNumber&gt;</span>
+      <span class="nt">&lt;NominalCode&gt;</span>4000<span class="nt">&lt;/NominalCode&gt;</span>
+      <span class="nt">&lt;CostCentre&gt;</span>INT<span class="nt">&lt;/CostCentre&gt;</span>
+      <span class="nt">&lt;Department&gt;</span>Dep<span class="nt">&lt;/Department&gt;</span>
+      <span class="nt">&lt;Contacts&gt;</span>
+        <span class="nt">&lt;Contact&gt;</span>
+          <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+          <span class="nt">&lt;Forename&gt;</span>Joe<span class="nt">&lt;/Forename&gt;</span>
+          <span class="nt">&lt;Middlename&gt;</span>E<span class="nt">&lt;/Middlename&gt;</span>
+          <span class="nt">&lt;Surname&gt;</span>Harrison<span class="nt">&lt;/Surname&gt;</span>
+          <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+          <span class="nt">&lt;Mobile&gt;</span>0777 777 7777<span class="nt">&lt;/Mobile&gt;</span>
+          <span class="nt">&lt;Fax&gt;</span>0845 123 2921<span class="nt">&lt;/Fax&gt;</span>
+          <span class="nt">&lt;Email&gt;</span>support@zynk.com<span class="nt">&lt;/Email&gt;</span>
+          <span class="nt">&lt;Website&gt;</span>www.zynk.com<span class="nt">&lt;/Website&gt;</span>
+        <span class="nt">&lt;/Contact&gt;</span>
+      <span class="nt">&lt;/Contacts&gt;</span>
+      <span class="nt">&lt;DeliveryAddresses&gt;</span>
+        <span class="nt">&lt;Contact&gt;</span>
+          <span class="nt">&lt;Id&gt;</span>5230<span class="nt">&lt;/Id&gt;</span>
+          <span class="nt">&lt;Company&gt;</span>internetware<span class="nt">&lt;/Company&gt;</span>
+          <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+          <span class="nt">&lt;Forename&gt;</span>Joe<span class="nt">&lt;/Forename&gt;</span>
+          <span class="nt">&lt;Middlename&gt;</span>E<span class="nt">&lt;/Middlename&gt;</span>
+          <span class="nt">&lt;Surname&gt;</span>Harrison<span class="nt">&lt;/Surname&gt;</span>
+          <span class="nt">&lt;Address1&gt;</span>Nelson House<span class="nt">&lt;/Address1&gt;</span>
+          <span class="nt">&lt;Address2&gt;</span>Fleming Business Centre<span class="nt">&lt;/Address2&gt;</span>
+          <span class="nt">&lt;Address3&gt;</span>Jesmond<span class="nt">&lt;/Address3&gt;</span>
+          <span class="nt">&lt;Address4&gt;&lt;/Address4&gt;</span>
+          <span class="nt">&lt;Town&gt;</span>Newcastle upon Tyne<span class="nt">&lt;/Town&gt;</span>
+          <span class="nt">&lt;County&gt;</span>Tyne <span class="ni">&amp;amp;</span> Wear <span class="nt">&lt;/County&gt;</span>
+          <span class="nt">&lt;Postcode&gt;</span>NE2 3AE<span class="nt">&lt;/Postcode&gt;</span>
+          <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+          <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+          <span class="nt">&lt;Fax&gt;</span>0845 123 2921<span class="nt">&lt;/Fax&gt;</span>
+          <span class="nt">&lt;Email&gt;</span>support@zynk.com<span class="nt">&lt;/Email&gt;</span>
+          <span class="nt">&lt;VatNumber&gt;</span>796 5763 59<span class="nt">&lt;/VatNumber&gt;</span>
+          <span class="nt">&lt;TaxCode&gt;</span>1<span class="nt">&lt;/TaxCode&gt;</span>
+        <span class="nt">&lt;/Contact&gt;</span>
+      <span class="nt">&lt;/DeliveryAddresses&gt;</span>
+      <span class="nt">&lt;AnalysisCodes&gt;</span>
+        <span class="nt">&lt;AnalysisCode&gt;</span>
+          <span class="nt">&lt;Name&gt;</span>Web Customer<span class="nt">&lt;/Name&gt;</span>
+          <span class="nt">&lt;Value&gt;</span>true<span class="nt">&lt;/Value&gt;</span>
+        <span class="nt">&lt;/AnalysisCode&gt;</span>
+      <span class="nt">&lt;/AnalysisCodes&gt;</span>
+    <span class="nt">&lt;/Customer&gt;</span>
+  <span class="nt">&lt;/Customers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<p>In each of the following sections most of the XML has been omitted to make the samples easier to read. The whole structure of the Company schema is used below as a reference of where fields should be in the XML.</p>
+
+<h2 id="company">Company</h2>
+<p>The information below can be specified on the Company tab in Sage. Depending on your configuration at the Task Settings level in Zynk, you may not need to specify an account reference for every customer. This applies when the ‘Auto Generate References’ or ‘Match Accounts On’ settings are enabled.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>Id</td>
+      <td>123</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td>Used internally by Zynk for duplicate prevention and when importing sales orders.</td>
+    </tr>
+    <tr>
+      <td>A/C Ref</td>
+      <td>AccountReference</td>
+      <td>JOE001</td>
+      <td>string</td>
+      <td>8</td>
+      <td>Optional</td>
+      <td>Required when ‘Auto Generate References’ and ‘Match Accounts On’ settings are disabled.</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>CompanyName</td>
+      <td>Zynk Software Limited</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional </td>
+      <td>If a CompanyName is not provided, it will default to the Title, Forename, Middlename and Surname.</td>
+    </tr>
+    <tr>
+      <td>Credit Limit</td>
+      <td>CreditLimit</td>
+      <td>1000</td>
+      <td>double</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Defaults to 0 if not provided.</td>
+    </tr>
+    <tr>
+      <td>Currency</td>
+      <td>Currency</td>
+      <td>GBP</td>
+      <td>string</td>
+      <td>3</td>
+      <td>Optional</td>
+      <td>This field can only be set when creating a new customer. Defaults to the base currency from Accounting System Manager -&gt; Currencies and Exchange Rates if not provided.</td>
+    </tr>
+    <tr>
+      <td>Address [Line 1]</td>
+      <td>Address1</td>
+      <td>Nelson House</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Address [Line 2]</td>
+      <td>Address2</td>
+      <td>Fleming Business Centre</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Address [Line 3]</td>
+      <td>Address3</td>
+      <td>Jesmond</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Address [Line 4]</td>
+      <td>Address4</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td>Town</td>
+      <td>Newcastle upon Tyne</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>Available in Sage 200 V6 and greater. Can only be set if ‘Use Segmented Addresses’ is enabled in Accounting System Manager -&gt; System Settings.</td>
+    </tr>
+    <tr>
+      <td>County</td>
+      <td>County</td>
+      <td>Tyne &amp; Wear</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>Available in Sage 200 V6 and greater. Can only be set if ‘Use Segmented Addresses’ is enabled in Accounting System Manager -&gt; System Settings.</td>
+    </tr>
+    <tr>
+      <td>Post Code</td>
+      <td>Postcode</td>
+      <td>NE2 3AE</td>
+      <td>string</td>
+      <td>10</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>Country</td>
+      <td>GB</td>
+      <td>string</td>
+      <td>2</td>
+      <td>Optional</td>
+      <td>Use the 2 letter ISO country code as the value.</td>
+    </tr>
+    <tr>
+      <td>Telephone</td>
+      <td>Telephone</td>
+      <td>0845 123 2920</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Fax</td>
+      <td>Fax</td>
+      <td>0845 123 2921</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Website</td>
+      <td>Website</td>
+      <td>http://www.zynk.com/</td>
+      <td>string</td>
+      <td>200</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Customers&gt;</span>
+    <span class="nt">&lt;Customer&gt;</span>
+      <span class="nt">&lt;Id&gt;</span>123<span class="nt">&lt;/Id&gt;</span>
+      <span class="nt">&lt;AccountReference&gt;</span>JOE001<span class="nt">&lt;/AccountReference&gt;</span>
+      <span class="nt">&lt;CompanyName&gt;</span>Zynk Software Limited<span class="nt">&lt;/CompanyName&gt;</span>
+      <span class="nt">&lt;CreditLimit&gt;</span>1000<span class="nt">&lt;/CreditLimit&gt;</span>
+      <span class="nt">&lt;Currency&gt;</span>GBP<span class="nt">&lt;/Currency&gt;</span>
+      <span class="nt">&lt;CustomerInvoiceAddress&gt;</span>
+        <span class="nt">&lt;Company&gt;</span>Zynk Software Limited<span class="nt">&lt;/Company&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>Nelson House<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2&gt;</span>Fleming Business Centre<span class="nt">&lt;/Address2&gt;</span>
+        <span class="nt">&lt;Address3&gt;</span>Jesmond<span class="nt">&lt;/Address3&gt;</span>
+        <span class="nt">&lt;Town&gt;</span>Newcastle upon Tyne<span class="nt">&lt;/Town&gt;</span>
+        <span class="nt">&lt;Postcode&gt;</span>NE2 3AE<span class="nt">&lt;/Postcode&gt;</span>
+        <span class="nt">&lt;County&gt;</span>Tyne <span class="ni">&amp;amp;</span> Wear<span class="nt">&lt;/County&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+        <span class="nt">&lt;Email&gt;</span>support@zynk.com<span class="nt">&lt;/Email&gt;</span>
+        <span class="nt">&lt;Website&gt;</span>www.zynk.com<span class="nt">&lt;/Website&gt;</span>
+      <span class="nt">&lt;/CustomerInvoiceAddress&gt;</span>
+    <span class="nt">&lt;/Customer&gt;</span>
+  <span class="nt">&lt;/Customers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="contacts">Contacts</h2>
+<p>The information below can be specified on the Contacts tab in Sage. The default contact is specified as part of the CustomerInvoiceAddress in the XML. Any other contacts are specified in the Contacts section of the XML. The telephone, mobile, fax, email and website are only used to set or update the default value for the corresponding fields in Sage, multiple values cannot be specified.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Salutation</td>
+      <td>Title</td>
+      <td>Mr</td>
+      <td>string</td>
+      <td>3</td>
+      <td>Optional</td>
+      <td>If the salutation does not already exist in Sage, it will be created.</td>
+    </tr>
+    <tr>
+      <td>First Name</td>
+      <td>Forename</td>
+      <td>Joe</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Middle Name</td>
+      <td>Middlename </td>
+      <td>E</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td>Surname</td>
+      <td>Harrison</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Telephone</td>
+      <td>Telephone</td>
+      <td>0845 123 2920</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Mobile</td>
+      <td>Mobile</td>
+      <td>0777 777 7777</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Fax</td>
+      <td>Fax</td>
+      <td>0845 123 2921</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>Email</td>
+      <td>support@zynk.com</td>
+      <td>string</td>
+      <td>200</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Website</td>
+      <td>Website</td>
+      <td>http://www.zynk.com/</td>
+      <td>string</td>
+      <td>200</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Customers&gt;</span>
+    <span class="nt">&lt;Customer&gt;</span>
+      <span class="nt">&lt;CustomerInvoiceAddress&gt;</span>
+        <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+        <span class="nt">&lt;Forename&gt;</span>Joe<span class="nt">&lt;/Forename&gt;</span>
+        <span class="nt">&lt;Middlename&gt;</span>E<span class="nt">&lt;/Middlename&gt;</span>
+        <span class="nt">&lt;Surname&gt;</span>Harrison<span class="nt">&lt;/Surname&gt;</span>
+        <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+        <span class="nt">&lt;Mobile&gt;</span>0777 777 7777<span class="nt">&lt;/Mobile&gt;</span>
+        <span class="nt">&lt;Fax&gt;</span>0845 123 2921<span class="nt">&lt;/Fax&gt;</span>
+        <span class="nt">&lt;Email&gt;</span>support@zynk.com<span class="nt">&lt;/Email&gt;</span>
+        <span class="nt">&lt;Website&gt;</span>www.zynk.com<span class="nt">&lt;/Website&gt;</span>
+      <span class="nt">&lt;/CustomerInvoiceAddress&gt;</span>
+      <span class="nt">&lt;Contacts&gt;</span>
+        <span class="nt">&lt;Contact&gt;</span>
+          <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+          <span class="nt">&lt;Forename&gt;</span>Joe<span class="nt">&lt;/Forename&gt;</span>
+          <span class="nt">&lt;Middlename&gt;</span>E<span class="nt">&lt;/Middlename&gt;</span>
+          <span class="nt">&lt;Surname&gt;</span>Harrison<span class="nt">&lt;/Surname&gt;</span>
+          <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+          <span class="nt">&lt;Mobile&gt;</span>0777 777 7777<span class="nt">&lt;/Mobile&gt;</span>
+          <span class="nt">&lt;Fax&gt;</span>0845 123 2921<span class="nt">&lt;/Fax&gt;</span>
+          <span class="nt">&lt;Email&gt;</span>support@zynk.com<span class="nt">&lt;/Email&gt;</span>
+          <span class="nt">&lt;Website&gt;</span>www.zynk.com<span class="nt">&lt;/Website&gt;</span>
+        <span class="nt">&lt;/Contact&gt;</span>
+      <span class="nt">&lt;/Contacts&gt;</span>
+    <span class="nt">&lt;/Customer&gt;</span>
+  <span class="nt">&lt;/Customers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="trading">Trading</h2>
+<p>The information below can be specified on the Trading tab in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Country Code</td>
+      <td>Country</td>
+      <td>GB</td>
+      <td>string</td>
+      <td>2</td>
+      <td>Optional</td>
+      <td>Use the 2 letter ISO country code as the value.</td>
+    </tr>
+    <tr>
+      <td>Default Tax Code</td>
+      <td>TaxCode</td>
+      <td>1</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Will use the default from the Sales Ledger settings if not provided.</td>
+    </tr>
+    <tr>
+      <td>Use Tax Code as SOP Default</td>
+      <td>OverrideTaxCode</td>
+      <td>false</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tax Number</td>
+      <td>VatNumber</td>
+      <td>796 5763 59</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Default Nominal Code - Account Number</td>
+      <td>NominalCode</td>
+      <td>4000</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td>Will use the default from Sage if not provided.</td>
+    </tr>
+    <tr>
+      <td>Default Nominal Code - CC</td>
+      <td>CostCentre</td>
+      <td>INT</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td>Will use the default from Sage if not provided.</td>
+    </tr>
+    <tr>
+      <td>Default Nominal Code - Dept</td>
+      <td>Department</td>
+      <td>Dep</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td>Will use the default from Sage if not provided.</td>
+    </tr>
+    <tr>
+      <td>Analysis Code</td>
+      <td>Name</td>
+      <td>Web Customer</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>If the analysis code does not already exist in Sage, it will not be set on the customer.</td>
+    </tr>
+    <tr>
+      <td>Value</td>
+      <td>Value</td>
+      <td>true</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>If the analysis code does not already exist in Sage, it will not be set on the customer.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Customers&gt;</span>
+    <span class="nt">&lt;Customer&gt;</span>
+      <span class="nt">&lt;CustomerInvoiceAddress&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+      <span class="nt">&lt;/CustomerInvoiceAddress&gt;</span>
+      <span class="nt">&lt;TaxCode&gt;</span>4<span class="nt">&lt;/TaxCode&gt;</span>
+      <span class="nt">&lt;OverrideTaxCode&gt;</span>false<span class="nt">&lt;/OverrideTaxCode&gt;</span>
+      <span class="nt">&lt;VatNumber&gt;</span>796 5763 59<span class="nt">&lt;/VatNumber&gt;</span>
+      <span class="nt">&lt;NominalCode&gt;</span>4000<span class="nt">&lt;/NominalCode&gt;</span>
+      <span class="nt">&lt;CostCentre&gt;</span>INT<span class="nt">&lt;/CostCentre&gt;</span>
+      <span class="nt">&lt;Department&gt;</span>Dep<span class="nt">&lt;/Department&gt;</span>
+      <span class="nt">&lt;AnalysisCodes&gt;</span>
+        <span class="nt">&lt;AnalysisCode&gt;</span>
+          <span class="nt">&lt;Name&gt;</span>Web Customer<span class="nt">&lt;/Name&gt;</span>
+          <span class="nt">&lt;Value&gt;</span>true<span class="nt">&lt;/Value&gt;</span>
+        <span class="nt">&lt;/AnalysisCode&gt;</span>
+      <span class="nt">&lt;/AnalysisCodes&gt;</span>
+    <span class="nt">&lt;/Customer&gt;</span>
+  <span class="nt">&lt;/Customers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="credit">Credit</h2>
+<p>The information below can be specified on the Credit tab in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Terms Agreed</td>
+      <td>TermsAgreed</td>
+      <td>true</td>
+      <td>bool</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Will use the default from the Sales Ledger settings if not provided.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Customers&gt;</span>
+    <span class="nt">&lt;Customer&gt;</span>
+      <span class="nt">&lt;TermsAgreed&gt;</span>true<span class="nt">&lt;/TermsAgreed&gt;</span>
+    <span class="nt">&lt;/Customer&gt;</span>
+  <span class="nt">&lt;/Customers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="documents">Documents</h2>
+<p>The information below can be specified on the Documents tab in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field </th>
+      <th>Example </th>
+      <th>Field Type </th>
+      <th>Field Length </th>
+      <th>Input </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Price Band</td>
+      <td>PriceListReference</td>
+      <td>Standard</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Discount Group</td>
+      <td>DiscountGroupReference</td>
+      <td>Trade</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Order Value Discount</td>
+      <td>OrderValueDiscountReference</td>
+      <td>10% Off orders over 1000</td>
+      <td>string</td>
+      <td>20</td>
+      <td>Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Customers&gt;</span>
+    <span class="nt">&lt;Customer&gt;</span>
+      <span class="nt">&lt;PriceListReference&gt;</span>Standard<span class="nt">&lt;/PriceListReference&gt;</span>
+      <span class="nt">&lt;DiscountGroupReference&gt;</span>Trade<span class="nt">&lt;/DiscountGroupReference&gt;</span>
+      <span class="nt">&lt;OrderValueDiscountReference&gt;</span>10% Off orders over 1000<span class="nt">&lt;/OrderValueDiscountReference&gt;</span>
+    <span class="nt">&lt;/Customer&gt;</span>
+  <span class="nt">&lt;/Customers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="delivery-addresses">Delivery Addresses</h2>
+<p>The information below can be specified in under Sales Order Processing -&gt; SOP Maintenance -&gt; Customer Delivery Addresses in Sage. We recommend that the Id field be populated by the unique id of the delivery address from the external system, Zynk uses this field to track delivery addresses already imported to prevent duplicates being created in Sage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sage Field</th>
+      <th>XML Field</th>
+      <th>Example</th>
+      <th>Field Type</th>
+      <th>Field Length</th>
+      <th>Input</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>Id</td>
+      <td>5230</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Postal Name</td>
+      <td>Company</td>
+      <td>Zynk Software Limited</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>If a value is not provided for this field, it will default to the Title, Forename, Middlename, Surname and Suffix.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Title</td>
+      <td>Mr</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only used if Company is not provided.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Forename</td>
+      <td>Joe</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only used if Company is not provided.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Middlename</td>
+      <td>E</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only used if Company is not provided.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Surname</td>
+      <td>Harrison</td>
+      <td>string</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td>Only used if Company is not provided.</td>
+    </tr>
+    <tr>
+      <td>Address [Line 1]</td>
+      <td>Address1</td>
+      <td>Nelson House</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Address [Line 2]</td>
+      <td>Address2</td>
+      <td>Fleming Business Centre</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Address [Line 3]</td>
+      <td>Address3</td>
+      <td>Jesmond</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Address [Line 4]</td>
+      <td>Address4</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td>Town</td>
+      <td>Newcastle upon Tyne</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>Available in Sage 200 V6 and greater. Can only be set if ‘Use Segmented Addresses’ is enabled in Accounting System Manager -&gt; System Settings.</td>
+    </tr>
+    <tr>
+      <td>County</td>
+      <td>County</td>
+      <td>Tyne &amp; Wear</td>
+      <td>string</td>
+      <td>60</td>
+      <td>Optional</td>
+      <td>Available in Sage 200 V6 and greater. Can only be set if ‘Use Segmented Addresses’ is enabled in Accounting System Manager -&gt; System Settings.</td>
+    </tr>
+    <tr>
+      <td>Post Code</td>
+      <td>Postcode</td>
+      <td>NE2 3AE</td>
+      <td>string</td>
+      <td>10</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>Country</td>
+      <td>GB</td>
+      <td>string</td>
+      <td>2</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Telephone</td>
+      <td>Telephone</td>
+      <td>0845 123 2920</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Fax</td>
+      <td>Fax</td>
+      <td>0845 123 2921</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>E-mail</td>
+      <td>Email</td>
+      <td>support@zynk.com</td>
+      <td>string</td>
+      <td>255</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tax Number</td>
+      <td>VatNumber</td>
+      <td>796 5763 59</td>
+      <td>string</td>
+      <td>30</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tax Code</td>
+      <td>TaxCode</td>
+      <td>1</td>
+      <td>int</td>
+      <td>-</td>
+      <td>Optional</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Country Code</td>
+      <td>Country</td>
+      <td>GB</td>
+      <td>string</td>
+      <td>2</td>
+      <td>Optional</td>
+      <td>Use the 2 letter ISO country code as the value.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;Company</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Customers&gt;</span>
+    <span class="nt">&lt;Customer&gt;</span>      
+      <span class="nt">&lt;DeliveryAddresses&gt;</span>
+        <span class="nt">&lt;Contact&gt;</span>
+          <span class="nt">&lt;Id&gt;</span>5230<span class="nt">&lt;/Id&gt;</span>
+          <span class="nt">&lt;Company&gt;</span>internetware<span class="nt">&lt;/Company&gt;</span>
+          <span class="nt">&lt;Title&gt;</span>Mr<span class="nt">&lt;/Title&gt;</span>
+          <span class="nt">&lt;Forename&gt;</span>Joe<span class="nt">&lt;/Forename&gt;</span>
+          <span class="nt">&lt;Middlename&gt;</span>E<span class="nt">&lt;/Middlename&gt;</span>
+          <span class="nt">&lt;Surname&gt;</span>Harrison<span class="nt">&lt;/Surname&gt;</span>
+          <span class="nt">&lt;Address1&gt;</span>Nelson House<span class="nt">&lt;/Address1&gt;</span>
+          <span class="nt">&lt;Address2&gt;</span>Fleming Business Centre<span class="nt">&lt;/Address2&gt;</span>
+          <span class="nt">&lt;Address3&gt;</span>Jesmond<span class="nt">&lt;/Address3&gt;</span>
+          <span class="nt">&lt;Address4&gt;&lt;/Address4&gt;</span>
+          <span class="nt">&lt;Town&gt;</span>Newcastle upon Tyne<span class="nt">&lt;/Town&gt;</span>
+          <span class="nt">&lt;County&gt;</span>Tyne <span class="ni">&amp;amp;</span> Wear<span class="nt">&lt;/County&gt;</span>
+          <span class="nt">&lt;Postcode&gt;</span>NE2 3AE<span class="nt">&lt;/Postcode&gt;</span>
+          <span class="nt">&lt;Country&gt;</span>GB<span class="nt">&lt;/Country&gt;</span>
+          <span class="nt">&lt;Telephone&gt;</span>0845 123 2920<span class="nt">&lt;/Telephone&gt;</span>
+          <span class="nt">&lt;Fax&gt;</span>0845 123 2921<span class="nt">&lt;/Fax&gt;</span>
+          <span class="nt">&lt;Email&gt;</span>support@zynk.com<span class="nt">&lt;/Email&gt;</span>
+          <span class="nt">&lt;VatNumber&gt;</span>796 5763 59<span class="nt">&lt;/VatNumber&gt;</span>
+          <span class="nt">&lt;TaxCode&gt;</span>1<span class="nt">&lt;/TaxCode&gt;</span>
+        <span class="nt">&lt;/Contact&gt;</span>
+      <span class="nt">&lt;/DeliveryAddresses&gt;</span>
+    <span class="nt">&lt;/Customer&gt;</span>
+  <span class="nt">&lt;/Customers&gt;</span>
+<span class="nt">&lt;/Company&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-200-Connector/Sage-200-Customer-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

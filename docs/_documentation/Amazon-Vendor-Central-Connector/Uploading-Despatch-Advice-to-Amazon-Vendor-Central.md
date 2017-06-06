@@ -1,0 +1,433 @@
+---
+slug: uploading-despatch-advice-to-amazon-vendor-central
+redirect_from: "/article/162-uploading-despatch-advice-to-amazon-vendor-central"
+title: Uploading Despatch Advice to Amazon Vendor Central
+---
+This task will convert an input XML file containing despatch advice messages (DESADV) to EDIFACT D96A format, and upload them to Amazon Vendor Central.
+
+## Settings
+### Connection
+_Required_  
+The Amazon Vendor Central Connection to use. See the [Connecting to Amazon Vendor Central](connecting-to-amazon-vendor-central) article if you require more information on how to create/manage connections.
+
+### Test Mode
+_Required_  
+Set to true to save the generated EDI files to the workflow's data directory instead of uploading them to the SFTP. This can be useful for testing purposes, as it allows you to take a look at the converted EDI file.
+
+### Fail File
+_Required_  
+The XML file to output any despatch advice messages which failed to upload to Amazon. The data is stored in the same format as the input file.
+
+### Input File
+_Required_  
+The XML file containing the despatch advice messages to upload to Amazon. See below for an example.
+
+### Success File
+_Required_  
+The XML file to output despatch advice messages which successfully to upload to Amazon. The data is stored in the same format as the input file.
+
+### Zynk Settings
+See [Common Task Settings](common-task-settings).
+
+## Examples
+A sample input file is shown below. Refer to the documentation provided by Amazon for an explanation of the segment and element tags. Note that in the XML, the segment tags are prefixed with `S_`, segment groups are prefixed with `G_`, composite element tags are prefixed with `C_` and value element tags are prefixed with `D_`.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfInterchange>
+	<INTERCHANGE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="www.edifabric.com/edifact">
+		<S_UNB>
+			<C_S001>
+				<D_0001_1>UNOC</D_0001_1>
+				<D_0002_2>3</D_0002_2>
+			</C_S001>
+			<C_S002>
+				<D_0004_1><Sender GLN></D_0004_1>
+				<D_0007_2>14</D_0007_2>
+			</C_S002>
+			<C_S003>
+				<D_0010_1><Receiver GLN></D_0010_1>
+				<D_0007_2>14</D_0007_2>
+			</C_S003>
+			<C_S004>
+				<D_0017_1>140407</D_0017_1>
+				<D_0019_2>1000</D_0019_2>
+			</C_S004>
+			<D_0020_5>99</D_0020_5>
+			<C_S005>
+				<D_0022_1 />
+				<D_0025_2 />
+			</C_S005>
+			<D_0026_7 />
+			<D_0029_8 />
+			<D_0031_9 />
+			<D_0032_10>EANCOM</D_0032_10>
+		</S_UNB>
+		<GROUPS>
+			<GROUP>
+				<MESSAGES>
+					<MESSAGE>
+						<Item>
+							<M_DESADV>
+								<S_UNH>
+									<D_0062_1>1</D_0062_1>
+									<C_S009>
+										<D_0065_1>DESADV</D_0065_1>
+										<D_0052_2>D</D_0052_2>
+										<D_0054_3>96A</D_0054_3>
+										<D_0051_4>UN</D_0051_4>
+										<D_0057_5>EAN005</D_0057_5>
+									</C_S009>
+								</S_UNH>
+								<S_BGM>
+									<C_C002>
+										<D_1001_1>351</D_1001_1>
+									</C_C002>
+									<D_1004_2>DES587441</D_1004_2>
+									<D_1225_3>9</D_1225_3>
+								</S_BGM>
+								<S_DTM>
+									<C_C507>
+										<D_2005_1>11</D_2005_1>
+										<D_2380_2>20140407</D_2380_2>
+										<D_2379_3>102</D_2379_3>
+									</C_C507>
+								</S_DTM>
+								<S_DTM>
+									<C_C507>
+										<D_2005_1>132</D_2005_1>
+										<D_2380_2>20140409</D_2380_2>
+										<D_2379_3>102</D_2379_3>
+									</C_C507>
+								</S_DTM>
+								<S_DTM>
+									<C_C507>
+										<D_2005_1>137</D_2005_1>
+										<D_2380_2>20140407</D_2380_2>
+										<D_2379_3>102</D_2379_3>
+									</C_C507>
+								</S_DTM>
+								<G_RFF>
+									<S_RFF>
+										<C_C506>
+											<D_1153_1>BM</D_1153_1>
+											<D_1154_2>ABCD12332</D_1154_2>
+										</C_C506>
+									</S_RFF>
+								</G_RFF>
+								<G_NAD>
+									<S_NAD>
+										<D_3035_1>DP</D_3035_1>
+										<C_C082>
+											<D_3039_1>5450534000109</D_3039_1>
+											<D_3055_3>9</D_3055_3>
+										</C_C082>
+										<D_3207_9>GB</D_3207_9>
+									</S_NAD>
+								</G_NAD>
+								<G_NAD>
+									<S_NAD>
+										<D_3035_1>SU</D_3035_1>
+										<C_C082>
+											<D_3039_1><Supplier GLN></D_3039_1>
+											<D_3055_3>9</D_3055_3>
+										</C_C082>
+									</S_NAD>
+								</G_NAD>
+								<G_NAD>
+									<S_NAD>
+										<D_3035_1>SF</D_3035_1>
+										<C_C082>
+											<D_3039_1><Warehouse GLN></D_3039_1>
+											<D_3055_3>9</D_3055_3>
+										</C_C082>
+										<D_3251_8>ZIP CODE</D_3251_8>
+										<D_3207_9>ISOCOUNTRYCODE</D_3207_9>
+									</S_NAD>
+								</G_NAD>
+								<G_TDT>
+									<S_TDT>
+										<D_8051_1>20</D_8051_1>
+										<C_C220>
+											<D_8067_1>30</D_8067_1>
+										</C_C220>
+										<C_C228>
+											<D_8179_1>31</D_8179_1>
+										</C_C228>
+									</S_TDT>
+								</G_TDT>
+								<G_CPS>
+									<S_CPS>
+										<D_7164_1>1</D_7164_1>
+									</S_CPS>
+									<G_PAC>
+										<S_PAC>
+											<D_7224_1>2</D_7224_1>
+											<C_C202>
+												<D_7065_1>201</D_7065_1>
+											</C_C202>
+										</S_PAC>
+									</G_PAC>
+									<G_PAC>
+										<S_PAC>
+											<D_7224_1>2</D_7224_1>
+											<C_C202>
+												<D_7065_1>PK</D_7065_1>
+											</C_C202>
+										</S_PAC>
+									</G_PAC>
+								</G_CPS>
+								<G_CPS>
+									<S_CPS>
+										<D_7164_1>2</D_7164_1>
+										<D_7166_2>1</D_7166_2>
+									</S_CPS>
+									<G_PAC>
+										<S_PAC>
+											<D_7224_1>1</D_7224_1>
+											<C_C531>
+												<D_7233_2>52</D_7233_2>
+											</C_C531>
+											<C_C202>
+												<D_7065_1>PK</D_7065_1>
+											</C_C202>
+										</S_PAC>
+										<S_MEA_3>
+											<D_6311_1>PD</D_6311_1>
+											<C_C502_3>
+												<D_6313_1>LN</D_6313_1>
+											</C_C502_3>
+											<C_C174_3>
+												<D_6411_1>CMT</D_6411_1>
+												<D_6314_2>120</D_6314_2>
+											</C_C174_3>
+										</S_MEA_3>
+										<S_MEA_3>
+											<D_6311_1>PD</D_6311_1>
+											<C_C502_3>
+												<D_6313_1>WD</D_6313_1>
+											</C_C502_3>
+											<C_C174_3>
+												<D_6411_1>CMT</D_6411_1>
+												<D_6314_2>50</D_6314_2>
+											</C_C174_3>
+										</S_MEA_3>
+										<S_MEA_3>
+											<D_6311_1>PD</D_6311_1>
+											<C_C502_3>
+												<D_6313_1>HT</D_6313_1>
+											</C_C502_3>
+											<C_C174_3>
+												<D_6411_1>CMT</D_6411_1>
+												<D_6314_2>30</D_6314_2>
+											</C_C174_3>
+										</S_MEA_3>
+										<S_MEA_3>
+											<D_6311_1>PD</D_6311_1>
+											<C_C502_3>
+												<D_6313_1>AAB</D_6313_1>
+											</C_C502_3>
+											<C_C174_3>
+												<D_6411_1>KGM</D_6411_1>
+												<D_6314_2>12</D_6314_2>
+											</C_C174_3>
+										</S_MEA_3>
+										<G_HAN_2>
+											<S_HAN_2>
+												<C_C524_2>
+													<D_4079_1>BIG</D_4079_1>
+												</C_C524_2>
+											</S_HAN_2>
+										</G_HAN_2>
+										<G_PCI>
+											<S_PCI>
+												<D_4233_1>33E</D_4233_1>
+											</S_PCI>
+											<G_GIN>
+												<S_GIN>
+													<D_7405_1>BJ</D_7405_1>
+													<C_C208>
+														<D_7402_1>354123450000000014</D_7402_1>
+													</C_C208>
+												</S_GIN>
+											</G_GIN>
+										</G_PCI>
+									</G_PAC>
+									<G_LIN>
+										<S_LIN>
+											<D_1082_1>1</D_1082_1>
+											<C_C212>
+												<D_7140_1>1234567891234</D_7140_1>
+												<D_7143_2>EN</D_7143_2>
+											</C_C212>
+										</S_LIN>
+										<S_QTY_2>
+											<C_C186_2>
+												<D_6063_1>12</D_6063_1>
+												<D_6060_2>30</D_6060_2>
+											</C_C186_2>
+										</S_QTY_2>
+										<G_RFF_3>
+											<S_RFF_4>
+												<C_C506_4>
+													<D_1153_1>ON</D_1153_1>
+													<D_1154_2>1AA1TEST</D_1154_2>
+												</C_C506_4>
+											</S_RFF_4>
+										</G_RFF_3>
+									</G_LIN>
+									<G_LIN>
+										<S_LIN>
+											<D_1082_1>2</D_1082_1>
+											<C_C212>
+												<D_7140_1>1234567891236</D_7140_1>
+												<D_7143_2>EN</D_7143_2>
+											</C_C212>
+										</S_LIN>
+										<S_QTY_2>
+											<C_C186_2>
+												<D_6063_1>12</D_6063_1>
+												<D_6060_2>30</D_6060_2>
+											</C_C186_2>
+										</S_QTY_2>
+										<G_RFF_3>
+											<S_RFF_4>
+												<C_C506_4>
+													<D_1153_1>ON</D_1153_1>
+													<D_1154_2>1AA2TEST</D_1154_2>
+												</C_C506_4>
+											</S_RFF_4>
+										</G_RFF_3>
+									</G_LIN>
+								</G_CPS>
+								<G_CPS>
+									<S_CPS>
+										<D_7164_1>3</D_7164_1>
+										<D_7166_2>1</D_7166_2>
+									</S_CPS>
+									<G_PAC>
+										<S_PAC>
+											<D_7224_1>1</D_7224_1>
+											<C_C531>
+												<D_7233_2>52</D_7233_2>
+											</C_C531>
+											<C_C202>
+												<D_7065_1>PK</D_7065_1>
+											</C_C202>
+										</S_PAC>
+										<S_MEA_3>
+											<D_6311_1>PD</D_6311_1>
+											<C_C502_3>
+												<D_6313_1>LN</D_6313_1>
+											</C_C502_3>
+											<C_C174_3>
+												<D_6411_1>CMT</D_6411_1>
+												<D_6314_2>120</D_6314_2>
+											</C_C174_3>
+										</S_MEA_3>
+										<S_MEA_3>
+											<D_6311_1>PD</D_6311_1>
+											<C_C502_3>
+												<D_6313_1>WD</D_6313_1>
+											</C_C502_3>
+											<C_C174_3>
+												<D_6411_1>CMT</D_6411_1>
+												<D_6314_2>50</D_6314_2>
+											</C_C174_3>
+										</S_MEA_3>
+										<S_MEA_3>
+											<D_6311_1>PD</D_6311_1>
+											<C_C502_3>
+												<D_6313_1>HT</D_6313_1>
+											</C_C502_3>
+											<C_C174_3>
+												<D_6411_1>CMT</D_6411_1>
+												<D_6314_2>30</D_6314_2>
+											</C_C174_3>
+										</S_MEA_3>
+										<S_MEA_3>
+											<D_6311_1>PD</D_6311_1>
+											<C_C502_3>
+												<D_6313_1>AAB</D_6313_1>
+											</C_C502_3>
+											<C_C174_3>
+												<D_6411_1>KGM</D_6411_1>
+												<D_6314_2>12</D_6314_2>
+											</C_C174_3>
+										</S_MEA_3>
+										<G_HAN_2>
+											<S_HAN_2>
+												<C_C524_2>
+													<D_4079_1>BIG</D_4079_1>
+												</C_C524_2>
+											</S_HAN_2>
+										</G_HAN_2>
+										<G_PCI>
+											<S_PCI>
+												<D_4233_1>33E</D_4233_1>
+											</S_PCI>
+											<G_GIN>
+												<S_GIN>
+													<D_7405_1>BJ</D_7405_1>
+													<C_C208>
+														<D_7402_1>354123450000000015</D_7402_1>
+													</C_C208>
+												</S_GIN>
+											</G_GIN>
+										</G_PCI>
+									</G_PAC>
+									<G_LIN>
+										<S_LIN>
+											<D_1082_1>3</D_1082_1>
+										</S_LIN>
+										<S_PIA>
+											<D_4347_1>5</D_4347_1>
+											<C_C212_2>
+												<D_7140_1>1234567891</D_7140_1>
+												<D_7143_2>IB</D_7143_2>
+											</C_C212_2>
+										</S_PIA>
+										<S_QTY_2>
+											<C_C186_2>
+												<D_6063_1>12</D_6063_1>
+												<D_6060_2>20</D_6060_2>
+											</C_C186_2>
+										</S_QTY_2>
+										<G_RFF_3>
+											<S_RFF_4>
+												<C_C506_4>
+													<D_1153_1>ON</D_1153_1>
+													<D_1154_2>1AA3TEST</D_1154_2>
+												</C_C506_4>
+											</S_RFF_4>
+										</G_RFF_3>
+									</G_LIN>
+								</G_CPS>
+								<S_CNT>
+									<C_C270>
+										<D_6069_1>1</D_6069_1>
+										<D_6066_2>80</D_6066_2>
+									</C_C270>
+								</S_CNT>
+								<S_UNT>
+									<D_0074_1>43</D_0074_1>
+									<D_0062_2>1</D_0062_2>
+								</S_UNT>
+							</M_DESADV>
+						</Item>
+						<Context>
+							<Tag>DESADV</Tag>
+							<Version>D96A</Version>
+							<Format>Edifact</Format>
+						</Context>
+					</MESSAGE>
+				</MESSAGES>
+			</GROUP>
+		</GROUPS>
+		<S_UNZ>
+			<D_0036_1>1</D_0036_1>
+			<D_0020_2>99</D_0020_2>
+		</S_UNZ>
+	</INTERCHANGE>
+</ArrayOfInterchange>
+```

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Downloading Product Categories from Magento</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Downloading Product Categories from Magento</h1>
+                    <p>This task will download a list of all product categories from Magento in XML format.</p>
+
+<h2 id="settings">Settings</h2>
+<h3 id="connection">Connection</h3>
+<p><em>Required</em><br />
+The Magento connection to use. See the <a href="connecting-to-magento">Connecting to Magento</a> article if you require more information on how to create/manage connections.</p>
+
+<h3 id="output-file">Output File</h3>
+<p><em>Required</em><br />
+The name of the file to export the product categories to.</p>
+
+<h3 id="download-detailed">Download Detailed</h3>
+<p><em>Required</em><br />
+Set to true to download detailed category data, or false to just download the category tree containing the category names and IDs.</p>
+
+<h3 id="parent-category-id">Parent Category ID</h3>
+<p><em>Optional</em><br />
+Enter the ID of the category to download a list of sub categories from, or leave blank to download all sub categories from the root level.</p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a>.</p>
+
+<h2 id="examples">Examples</h2>
+<p>Sample output file, when Download Detailed is set to true:</p>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ArrayOfCategory&gt;</span>
+  <span class="nt">&lt;Category&gt;</span>
+    <span class="nt">&lt;Fields&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"thumbnail"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"children_count"</span> <span class="na">Value=</span><span class="s">"3"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"filter_price_range"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"custom_use_parent_settings"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"custom_apply_to_products"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/Fields&gt;</span>
+    <span class="nt">&lt;all_children&gt;</span>1,2,3,4<span class="nt">&lt;/all_children&gt;</span>
+    <span class="nt">&lt;created_at&gt;</span>2014-01-17 12:59:14<span class="nt">&lt;/created_at&gt;</span>
+    <span class="nt">&lt;category_id&gt;</span>1<span class="nt">&lt;/category_id&gt;</span>
+    <span class="nt">&lt;parent_id&gt;</span>0<span class="nt">&lt;/parent_id&gt;</span>
+    <span class="nt">&lt;path&gt;</span>1<span class="nt">&lt;/path&gt;</span>
+    <span class="nt">&lt;children&gt;</span>2<span class="nt">&lt;/children&gt;</span>
+    <span class="nt">&lt;url_key&gt;</span>root-catalog<span class="nt">&lt;/url_key&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Root Catalog<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;position&gt;</span>0<span class="nt">&lt;/position&gt;</span>
+    <span class="nt">&lt;level&gt;</span>0<span class="nt">&lt;/level&gt;</span>
+    <span class="nt">&lt;updated_at&gt;</span>2014-01-17 12:59:14<span class="nt">&lt;/updated_at&gt;</span>
+    <span class="nt">&lt;include_in_menu&gt;</span>1<span class="nt">&lt;/include_in_menu&gt;</span>
+  <span class="nt">&lt;/Category&gt;</span>
+  <span class="nt">&lt;Category&gt;</span>
+    <span class="nt">&lt;Fields&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"thumbnail"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"children_count"</span> <span class="na">Value=</span><span class="s">"2"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"filter_price_range"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"custom_use_parent_settings"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"custom_apply_to_products"</span> <span class="na">Value=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/Fields&gt;</span>
+    <span class="nt">&lt;display_mode&gt;</span>PRODUCTS<span class="nt">&lt;/display_mode&gt;</span>
+    <span class="nt">&lt;all_children&gt;</span>2,3,4<span class="nt">&lt;/all_children&gt;</span>
+    <span class="nt">&lt;created_at&gt;</span>2014-01-17 12:59:15<span class="nt">&lt;/created_at&gt;</span>
+    <span class="nt">&lt;category_id&gt;</span>2<span class="nt">&lt;/category_id&gt;</span>
+    <span class="nt">&lt;parent_id&gt;</span>1<span class="nt">&lt;/parent_id&gt;</span>
+    <span class="nt">&lt;parent_name&gt;</span>Root Catalog<span class="nt">&lt;/parent_name&gt;</span>
+    <span class="nt">&lt;is_anchor&gt;</span>0<span class="nt">&lt;/is_anchor&gt;</span>
+    <span class="nt">&lt;path&gt;</span>1/2<span class="nt">&lt;/path&gt;</span>
+    <span class="nt">&lt;children&gt;</span>3,4<span class="nt">&lt;/children&gt;</span>
+    <span class="nt">&lt;is_active&gt;</span>1<span class="nt">&lt;/is_active&gt;</span>
+    <span class="nt">&lt;url_key&gt;</span>office-supplies<span class="nt">&lt;/url_key&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Office Supplies<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;position&gt;</span>1<span class="nt">&lt;/position&gt;</span>
+    <span class="nt">&lt;level&gt;</span>1<span class="nt">&lt;/level&gt;</span>
+    <span class="nt">&lt;updated_at&gt;</span>2014-07-24 11:56:24<span class="nt">&lt;/updated_at&gt;</span>
+    <span class="nt">&lt;include_in_menu&gt;</span>1<span class="nt">&lt;/include_in_menu&gt;</span>
+  <span class="nt">&lt;/Category&gt;</span>
+  <span class="nt">&lt;Category&gt;</span>
+    <span class="nt">&lt;Fields&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"thumbnail"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"children_count"</span> <span class="na">Value=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"filter_price_range"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"custom_use_parent_settings"</span> <span class="na">Value=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"custom_apply_to_products"</span> <span class="na">Value=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/Fields&gt;</span>
+    <span class="nt">&lt;display_mode&gt;</span>PRODUCTS<span class="nt">&lt;/display_mode&gt;</span>
+    <span class="nt">&lt;all_children&gt;</span>3<span class="nt">&lt;/all_children&gt;</span>
+    <span class="nt">&lt;created_at&gt;</span>2014-07-24 11:46:22<span class="nt">&lt;/created_at&gt;</span>
+    <span class="nt">&lt;category_id&gt;</span>3<span class="nt">&lt;/category_id&gt;</span>
+    <span class="nt">&lt;parent_id&gt;</span>2<span class="nt">&lt;/parent_id&gt;</span>
+    <span class="nt">&lt;parent_name&gt;</span>Office Supplies<span class="nt">&lt;/parent_name&gt;</span>
+    <span class="nt">&lt;is_anchor&gt;</span>0<span class="nt">&lt;/is_anchor&gt;</span>
+    <span class="nt">&lt;url_path&gt;</span>stationary.html<span class="nt">&lt;/url_path&gt;</span>
+    <span class="nt">&lt;path&gt;</span>1/2/3<span class="nt">&lt;/path&gt;</span>
+    <span class="nt">&lt;children</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;meta_title&gt;</span>Stationary<span class="nt">&lt;/meta_title&gt;</span>
+    <span class="nt">&lt;is_active&gt;</span>1<span class="nt">&lt;/is_active&gt;</span>
+    <span class="nt">&lt;description&gt;</span>This is our collection of stationary supplies<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;url_key&gt;</span>stationary<span class="nt">&lt;/url_key&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Stationary<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;position&gt;</span>1<span class="nt">&lt;/position&gt;</span>
+    <span class="nt">&lt;level&gt;</span>2<span class="nt">&lt;/level&gt;</span>
+    <span class="nt">&lt;updated_at&gt;</span>2014-07-24 11:46:22<span class="nt">&lt;/updated_at&gt;</span>
+    <span class="nt">&lt;include_in_menu&gt;</span>1<span class="nt">&lt;/include_in_menu&gt;</span>
+  <span class="nt">&lt;/Category&gt;</span>
+  <span class="nt">&lt;Category&gt;</span>
+    <span class="nt">&lt;Fields&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"thumbnail"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"children_count"</span> <span class="na">Value=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"filter_price_range"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"custom_use_parent_settings"</span> <span class="na">Value=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"custom_apply_to_products"</span> <span class="na">Value=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/Fields&gt;</span>
+    <span class="nt">&lt;display_mode&gt;</span>PRODUCTS<span class="nt">&lt;/display_mode&gt;</span>
+    <span class="nt">&lt;all_children&gt;</span>4<span class="nt">&lt;/all_children&gt;</span>
+    <span class="nt">&lt;created_at&gt;</span>2014-07-24 11:48:16<span class="nt">&lt;/created_at&gt;</span>
+    <span class="nt">&lt;category_id&gt;</span>4<span class="nt">&lt;/category_id&gt;</span>
+    <span class="nt">&lt;parent_id&gt;</span>2<span class="nt">&lt;/parent_id&gt;</span>
+    <span class="nt">&lt;parent_name&gt;</span>Office Supplies<span class="nt">&lt;/parent_name&gt;</span>
+    <span class="nt">&lt;is_anchor&gt;</span>0<span class="nt">&lt;/is_anchor&gt;</span>
+    <span class="nt">&lt;url_path&gt;</span>office-equipment.html<span class="nt">&lt;/url_path&gt;</span>
+    <span class="nt">&lt;path&gt;</span>1/2/4<span class="nt">&lt;/path&gt;</span>
+    <span class="nt">&lt;children</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;meta_title&gt;</span>Office Equipment<span class="nt">&lt;/meta_title&gt;</span>
+    <span class="nt">&lt;is_active&gt;</span>1<span class="nt">&lt;/is_active&gt;</span>
+    <span class="nt">&lt;description&gt;</span>We stock a wide range of office equipment.<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;url_key&gt;</span>office-equipment<span class="nt">&lt;/url_key&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Office Equipment<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;position&gt;</span>2<span class="nt">&lt;/position&gt;</span>
+    <span class="nt">&lt;level&gt;</span>2<span class="nt">&lt;/level&gt;</span>
+    <span class="nt">&lt;updated_at&gt;</span>2014-07-24 11:48:16<span class="nt">&lt;/updated_at&gt;</span>
+    <span class="nt">&lt;include_in_menu&gt;</span>1<span class="nt">&lt;/include_in_menu&gt;</span>
+  <span class="nt">&lt;/Category&gt;</span>
+<span class="nt">&lt;/ArrayOfCategory&gt;</span>
+</code></pre>
+</div>
+
+<p>Sample output file, when Download Detailed is set to false:</p>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ArrayOfCategory&gt;</span>
+  <span class="nt">&lt;Category&gt;</span>
+    <span class="nt">&lt;Fields</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;category_id&gt;</span>1<span class="nt">&lt;/category_id&gt;</span>
+    <span class="nt">&lt;parent_id&gt;</span>0<span class="nt">&lt;/parent_id&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Root Catalog<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;position&gt;</span>0<span class="nt">&lt;/position&gt;</span>
+    <span class="nt">&lt;level&gt;</span>0<span class="nt">&lt;/level&gt;</span>
+  <span class="nt">&lt;/Category&gt;</span>
+  <span class="nt">&lt;Category&gt;</span>
+    <span class="nt">&lt;Fields</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;category_id&gt;</span>2<span class="nt">&lt;/category_id&gt;</span>
+    <span class="nt">&lt;parent_id&gt;</span>1<span class="nt">&lt;/parent_id&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Office Supplies<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;position&gt;</span>1<span class="nt">&lt;/position&gt;</span>
+    <span class="nt">&lt;level&gt;</span>1<span class="nt">&lt;/level&gt;</span>
+  <span class="nt">&lt;/Category&gt;</span>
+  <span class="nt">&lt;Category&gt;</span>
+    <span class="nt">&lt;Fields</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;category_id&gt;</span>3<span class="nt">&lt;/category_id&gt;</span>
+    <span class="nt">&lt;parent_id&gt;</span>2<span class="nt">&lt;/parent_id&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Stationary<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;position&gt;</span>1<span class="nt">&lt;/position&gt;</span>
+    <span class="nt">&lt;level&gt;</span>2<span class="nt">&lt;/level&gt;</span>
+  <span class="nt">&lt;/Category&gt;</span>
+  <span class="nt">&lt;Category&gt;</span>
+    <span class="nt">&lt;Fields</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;category_id&gt;</span>4<span class="nt">&lt;/category_id&gt;</span>
+    <span class="nt">&lt;parent_id&gt;</span>2<span class="nt">&lt;/parent_id&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Office Equipment<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;position&gt;</span>2<span class="nt">&lt;/position&gt;</span>
+    <span class="nt">&lt;level&gt;</span>2<span class="nt">&lt;/level&gt;</span>
+  <span class="nt">&lt;/Category&gt;</span>
+<span class="nt">&lt;/ArrayOfCategory&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Magento-V1-Connector/Downloading-Product-Categories-from-Magento.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

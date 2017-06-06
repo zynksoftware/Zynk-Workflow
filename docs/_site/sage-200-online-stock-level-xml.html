@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sage 200 Online Stock Level XML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Sage 200 Online Stock Level XML</h1>
+                    <p>All stock within Sage 200 regardless of type (Stock, Service/labour, or Miscellaneous), require a holding location. The location indicates where an item is stored and the stock level settings for each product in the warehouse i.e. the re-order level, the minimum and maximum stock levels. Items with a type of ‘Stock’ have levels recorded for each warehouse location and the levels are used when allocating, issuing and receiving stock.  Further information can be found on the <a href="https://developer.columbus.sage.com/docs#/uk/sage200extra/accounts/v1/warehouse_holdings">Sage 200 Online Warehouse Holdings API Documentation</a>.</p>
+
+<h2 id="tasks">Tasks</h2>
+<p>Zynk does not currently support uploading stock levels directly, but can be used within <a href="sage-200-online-stock-record-xml">Sage 200 Online Stock Record XML</a> as part of the download or upload of stock records.</p>
+
+<ul>
+  <li><a href="exporting-stock-levels-from-sage-200-online">Exporting Stock Levels From Sage 200 Online</a></li>
+  <li><a href="exporting-stock-records-from-sage-200-online">Exporting Stock Records From Sage 200 Online</a></li>
+  <li><a href="importing-stock-records-to-sage-200-online">Importing Stock Records To Sage 200 Online</a></li>
+</ul>
+
+<h2 id="fields-for-download-and-upload">Fields for Download and Upload</h2>
+<h3 id="warehouse_id">warehouse_id</h3>
+<p><em>Read Only</em><br />
+Warehouse record Id, will also return <a href="#warehouse">warehouse</a> data.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>1</td>
+      <td><code class="highlighter-rouge">&lt;warehouse_id&gt;1&lt;/warehouse_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="product_id">product_id</h3>
+<p><em>Read Only</em><br />
+Product record Id, will also return <a href="#product">product</a> data.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>27256</td>
+      <td><code class="highlighter-rouge">&lt;product_id&gt;27256&lt;/product_id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="reorder_level">reorder_level</h3>
+<p><em>Optional</em><br />
+Reorder stock level.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>2.00000</td>
+      <td><code class="highlighter-rouge">&lt;reorder_level&gt;2.00000&lt;/reorder_level&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="minimum_level">minimum_level</h3>
+<p><em>Optional</em><br />
+Minimum stock quantity level.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>1.00000</td>
+      <td><code class="highlighter-rouge">&lt;minimum_level&gt;1.00000&lt;/minimum_level&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="maximum_level">maximum_level</h3>
+<p><em>Optional</em><br />
+Maximum stock quantity level.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>0.00000</td>
+      <td><code class="highlighter-rouge">&lt;maximum_level&gt;0.00000&lt;/maximum_level&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="fields-for-download-only">Fields for Download Only</h2>
+<h3 id="id">id</h3>
+<p><em>Read Only</em><br />
+Warehouse holding record Id.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>integer(int64)</td>
+      <td>27336</td>
+      <td><code class="highlighter-rouge">&lt;id&gt;27336&lt;/id&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="confirmed_qty_in_stock">confirmed_qty_in_stock</h3>
+<p><em>Read Only</em><br />
+Confirmed stock quantity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>0.00000</td>
+      <td><code class="highlighter-rouge">&lt;confirmed_qty_in_stock&gt;0.00000&lt;/confirmed_qty_in_stock&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="unconfirmed_qty_in_stock">unconfirmed_qty_in_stock</h3>
+<p><em>Read Only</em><br />
+Unconfirmed stock quantity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>0.00000</td>
+      <td><code class="highlighter-rouge">&lt;unconfirmed_qty_in_stock&gt;0.00000&lt;/unconfirmed_qty_in_stock&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="quantity_in_stock">quantity_in_stock</h3>
+<p><em>Read Only</em><br />
+Total confirmed and unconfirmed stock quantity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>0.00000</td>
+      <td><code class="highlighter-rouge">&lt;quantity_in_stock&gt;0.00000&lt;/quantity_in_stock&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="quantity_allocated_stock">quantity_allocated_stock</h3>
+<p><em>Read Only</em><br />
+Allocated stock quantity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>0.00000</td>
+      <td><code class="highlighter-rouge">&lt;quantity_allocated_stock&gt;0.00000&lt;/quantity_allocated_stock&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="quantity_allocated_sop">quantity_allocated_sop</h3>
+<p><em>Read Only</em><br />
+Allocated sales order quantity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>0.00000</td>
+      <td><code class="highlighter-rouge">&lt;quantity_allocated_sop&gt;0.00000&lt;/quantity_allocated_sop&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="quantity_allocated_bom">quantity_allocated_bom</h3>
+<p><em>Read Only</em><br />
+Allocated bill of materials quantity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>0.00000</td>
+      <td><code class="highlighter-rouge">&lt;quantity_allocated_bom&gt;0.00000&lt;/quantity_allocated_bom&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="quantity_allocated">quantity_allocated</h3>
+<p><em>Read Only</em><br />
+Total Allocated stock, sop and bom quantity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>number(decimal 5dp)</td>
+      <td>0.00000</td>
+      <td><code class="highlighter-rouge">&lt;quantity_allocated&gt;0.00000&lt;/quantity_allocated&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="date_time_updated">date_time_updated</h3>
+<p><em>Read Only</em><br />
+The date and time this entity was last updated (UTC).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>XML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>datetime</td>
+      <td>2017-06-05T09:56:51.967</td>
+      <td><code class="highlighter-rouge">&lt;date_time_updated&gt;2017-06-05T09:56:51.967&lt;/date_time_updated&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="expandable-fields">Expandable Fields</h2>
+<p>Related information linked to stock levels are also included in the downloaded XML.</p>
+
+<h3 id="warehouse">warehouse</h3>
+<p><em>Read Only</em><br />
+The warehouse related to the stock level, see <a href="sage-200-online-warehouse-xml">Sage 200 Online Warehouse XML</a>.</p>
+
+<h4 id="download-example-showing-related-information">Download example showing related information</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;warehouse&gt;</span>
+    <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;name&gt;</span>HOME<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;date_time_updated&gt;</span>2017-05-15T16:04:40.42<span class="nt">&lt;/date_time_updated&gt;</span>
+<span class="nt">&lt;/warehouse&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="product">product</h3>
+<p><em>Read Only</em><br />
+The product related to the stock level, see <a href="sage-200-online-product-xml">Sage 200 Online Product XML</a>.</p>
+
+<h4 id="download-example-showing-related-information-1">Download example showing related information</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;product&gt;</span>
+    <span class="nt">&lt;id&gt;</span>27256<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;date_time_updated&gt;</span>2017-06-05T10:00:53.483<span class="nt">&lt;/date_time_updated&gt;</span>
+    <span class="nt">&lt;code&gt;</span>BOARD001<span class="nt">&lt;/code&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Whiteboard - Drywipe (900 x 1200)<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;description&gt;</span>Magnetic steel drywipe whiteboard.Complete with marker tray.Compatible with most rail systemsDimensions: 900 x 1200<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;barcode</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;allow_sales_order&gt;</span>true<span class="nt">&lt;/allow_sales_order&gt;</span>
+    <span class="nt">&lt;product_group_id&gt;</span>14910<span class="nt">&lt;/product_group_id&gt;</span>
+    <span class="nt">&lt;tax_code_id&gt;</span>2<span class="nt">&lt;/tax_code_id&gt;</span>
+<span class="nt">&lt;/product&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="example-xml">Example XML</h2>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;WarehouseHoldings</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;WarehouseHolding&gt;</span>
+    <span class="nt">&lt;id&gt;</span>27336<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;warehouse_id&gt;</span>1<span class="nt">&lt;/warehouse_id&gt;</span>
+    <span class="nt">&lt;product_id&gt;</span>27256<span class="nt">&lt;/product_id&gt;</span>
+    <span class="nt">&lt;reorder_level&gt;</span>2.00000<span class="nt">&lt;/reorder_level&gt;</span>
+    <span class="nt">&lt;minimum_level&gt;</span>1.00000<span class="nt">&lt;/minimum_level&gt;</span>
+    <span class="nt">&lt;maximum_level&gt;</span>0.00000<span class="nt">&lt;/maximum_level&gt;</span>
+    <span class="nt">&lt;confirmed_qty_in_stock&gt;</span>0.00000<span class="nt">&lt;/confirmed_qty_in_stock&gt;</span>
+    <span class="nt">&lt;unconfirmed_qty_in_stock&gt;</span>0.00000<span class="nt">&lt;/unconfirmed_qty_in_stock&gt;</span>
+    <span class="nt">&lt;quantity_in_stock&gt;</span>0.00000<span class="nt">&lt;/quantity_in_stock&gt;</span>
+    <span class="nt">&lt;quantity_allocated_stock&gt;</span>0.00000<span class="nt">&lt;/quantity_allocated_stock&gt;</span>
+    <span class="nt">&lt;quantity_allocated_sop&gt;</span>0.00000<span class="nt">&lt;/quantity_allocated_sop&gt;</span>
+    <span class="nt">&lt;quantity_allocated_bom&gt;</span>0.00000<span class="nt">&lt;/quantity_allocated_bom&gt;</span>
+    <span class="nt">&lt;quantity_allocated&gt;</span>0.00000<span class="nt">&lt;/quantity_allocated&gt;</span>
+    <span class="nt">&lt;warehouse&gt;</span>
+      <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;name&gt;</span>HOME<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;date_time_updated&gt;</span>2017-05-15T16:04:40.42<span class="nt">&lt;/date_time_updated&gt;</span>
+    <span class="nt">&lt;/warehouse&gt;</span>
+    <span class="nt">&lt;product&gt;</span>
+      <span class="nt">&lt;id&gt;</span>27256<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;date_time_updated&gt;</span>2017-06-05T10:00:53.483<span class="nt">&lt;/date_time_updated&gt;</span>
+      <span class="nt">&lt;code&gt;</span>BOARD001<span class="nt">&lt;/code&gt;</span>
+      <span class="nt">&lt;name&gt;</span>Whiteboard - Drywipe (900 x 1200)<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;description&gt;</span>Magnetic steel drywipe whiteboard.
+
+Complete with marker tray.
+
+Compatible with most rail systems
+
+Dimensions: 900 x 1200<span class="nt">&lt;/description&gt;</span>
+      <span class="nt">&lt;barcode</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;allow_sales_order&gt;</span>true<span class="nt">&lt;/allow_sales_order&gt;</span>
+      <span class="nt">&lt;product_group_id&gt;</span>14910<span class="nt">&lt;/product_group_id&gt;</span>
+      <span class="nt">&lt;tax_code_id&gt;</span>2<span class="nt">&lt;/tax_code_id&gt;</span>
+    <span class="nt">&lt;/product&gt;</span>
+    <span class="nt">&lt;date_time_updated&gt;</span>2017-06-05T09:56:51.967<span class="nt">&lt;/date_time_updated&gt;</span>
+  <span class="nt">&lt;/WarehouseHolding&gt;</span>
+<span class="nt">&lt;/WarehouseHoldings&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-200-Online-Connector/Sage-200-Online-Stock-Level-XML.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

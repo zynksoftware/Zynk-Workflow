@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Uploading Customers to Magento V2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Uploading Customers to Magento V2</h1>
+                    <p>This task will create or update customers in Magento. See below for a sample input file.</p>
+
+<p>If the <code class="highlighter-rouge">&lt;id&gt;</code> element is specified in the input file, the task will update the customer with the specified ID. If no ID is specified, the task will use the <code class="highlighter-rouge">&lt;email&gt;</code> element to check if the customer already exists. If a match is found the existing customer will be updated, otherwise a new customer will be created.</p>
+
+<h2 id="settings">Settings</h2>
+<h3 id="connection">Connection</h3>
+<p><em>Required</em><br />
+The Magento V2 connection to use. See the <a href="connecting-to-magento-v2">Connecting to Magento V2</a> article if you require more information on how to create/manage connections.</p>
+
+<h2 id="fail-file">Fail File</h2>
+<p><em>Required</em><br />
+The XML file to save failed customer uploads to. The data will be written in the same format as the input file.</p>
+
+<h2 id="input-file">Input File</h2>
+<p><em>Required</em><br />
+The XML file containing the customers to upload in Magento.</p>
+
+<h2 id="success-file">Success File</h2>
+<p><em>Required</em><br />
+The XML file to save successful customer uploads to. The data will be written in the same format as the input file.</p>
+
+<h2 id="prevent-reprocessing">Prevent Reprocessing</h2>
+<p><em>Required</em><br />
+Set to true to prevent the same record being processed more than once by the task. This setting will only work where an <code class="highlighter-rouge">&lt;external_id&gt;</code> element is provided in the XML.</p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a>.</p>
+
+<h2 id="examples">Examples</h2>
+<p>A sample input file is shown below. This will create or update the customer with the email address <code class="highlighter-rouge">support@zynk.com</code>.</p>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfCustomer</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Customer&gt;</span>
+    <span class="nt">&lt;external_id&gt;</span>WARD0001<span class="nt">&lt;/external_id&gt;</span>
+    <span class="nt">&lt;group_id&gt;</span>1<span class="nt">&lt;/group_id&gt;</span>
+    <span class="nt">&lt;dob</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;email&gt;</span>support@zynk.com<span class="nt">&lt;/email&gt;</span>
+    <span class="nt">&lt;firstname&gt;</span>Adam<span class="nt">&lt;/firstname&gt;</span>
+    <span class="nt">&lt;lastname&gt;</span>Wardle<span class="nt">&lt;/lastname&gt;</span>
+    <span class="nt">&lt;gender&gt;</span>0<span class="nt">&lt;/gender&gt;</span>
+    <span class="nt">&lt;store_id&gt;</span>1<span class="nt">&lt;/store_id&gt;</span>
+    <span class="nt">&lt;website_id&gt;</span>1<span class="nt">&lt;/website_id&gt;</span>
+    <span class="nt">&lt;addresses&gt;</span>
+      <span class="nt">&lt;address&gt;</span>
+        <span class="nt">&lt;region&gt;</span>
+          <span class="nt">&lt;region&gt;</span>Tyne <span class="ni">&amp;amp;</span> Wear<span class="nt">&lt;/region&gt;</span>
+        <span class="nt">&lt;/region&gt;</span>
+        <span class="nt">&lt;country_id&gt;</span>GB<span class="nt">&lt;/country_id&gt;</span>
+        <span class="nt">&lt;street&gt;</span>
+          <span class="nt">&lt;string&gt;</span>Nelson House<span class="nt">&lt;/string&gt;</span>
+          <span class="nt">&lt;string&gt;</span>Jesmond<span class="nt">&lt;/string&gt;</span>
+        <span class="nt">&lt;/street&gt;</span>
+        <span class="nt">&lt;telephone&gt;</span>214153215<span class="nt">&lt;/telephone&gt;</span>
+        <span class="nt">&lt;postcode&gt;</span>NE2 3AE<span class="nt">&lt;/postcode&gt;</span>
+        <span class="nt">&lt;city&gt;</span>Newcastle<span class="nt">&lt;/city&gt;</span>
+        <span class="nt">&lt;firstname&gt;</span>Adam<span class="nt">&lt;/firstname&gt;</span>
+        <span class="nt">&lt;lastname&gt;</span>Wardle<span class="nt">&lt;/lastname&gt;</span>
+        <span class="nt">&lt;default_billing&gt;</span>true<span class="nt">&lt;/default_billing&gt;</span>
+        <span class="nt">&lt;default_shipping&gt;</span>true<span class="nt">&lt;/default_shipping&gt;</span>
+      <span class="nt">&lt;/address&gt;</span>
+    <span class="nt">&lt;/addresses&gt;</span>
+  <span class="nt">&lt;/Customer&gt;</span>
+<span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+</code></pre>
+</div>
+
+<p>Sample XSLT file to use to transform customers exported from Sage in the Zynk XML Customers format, to the Magento customer format. This is also available in the <a href="auto-mapper">Auto Mapper</a>.</p>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;xsl:output</span> <span class="na">method=</span><span class="s">"xml"</span> <span class="na">indent=</span><span class="s">"yes"</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ArrayOfCustomer&gt;</span>
+            <span class="nt">&lt;xsl:for-each</span> <span class="na">select=</span><span class="s">"Company/Customers/Customer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;xsl:call-template</span> <span class="na">name=</span><span class="s">"Customer"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/xsl:for-each&gt;</span>
+        <span class="nt">&lt;/ArrayOfCustomer&gt;</span>
+    <span class="nt">&lt;/xsl:template&gt;</span>
+
+    <span class="nt">&lt;xsl:template</span> <span class="na">name=</span><span class="s">"Customer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Customer&gt;</span>
+            <span class="nt">&lt;xsl:if</span> <span class="na">test=</span><span class="s">"Id"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;id&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"Id"</span> <span class="nt">/&gt;&lt;/id&gt;</span>
+            <span class="nt">&lt;/xsl:if&gt;</span>
+            <span class="nt">&lt;external_id&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"AccountReference"</span> <span class="nt">/&gt;&lt;/external_id&gt;</span>
+            <span class="nt">&lt;suffix&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"AccountReference"</span> <span class="nt">/&gt;&lt;/suffix&gt;</span>
+            <span class="nt">&lt;firstname&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Forename"</span> <span class="nt">/&gt;&lt;/firstname&gt;</span>
+            <span class="nt">&lt;lastname&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Surname"</span> <span class="nt">/&gt;&lt;/lastname&gt;</span>
+            <span class="nt">&lt;email&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Email"</span> <span class="nt">/&gt;&lt;/email&gt;</span>
+            <span class="nt">&lt;addresses&gt;</span>
+              <span class="nt">&lt;address&gt;</span>
+                <span class="nt">&lt;xsl:if</span> <span class="na">test=</span><span class="s">"Id"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;customer_id&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"UniqueId"</span><span class="nt">/&gt;&lt;/customer_id&gt;</span>
+                <span class="nt">&lt;/xsl:if&gt;</span>
+                <span class="nt">&lt;firstname&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Forename"</span> <span class="nt">/&gt;&lt;/firstname&gt;</span>
+                <span class="nt">&lt;lastname&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Surname"</span> <span class="nt">/&gt;&lt;/lastname&gt;</span>
+                <span class="nt">&lt;street&gt;</span>
+                  <span class="nt">&lt;string&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Address1"</span><span class="nt">/&gt;&lt;/string&gt;</span>
+                  <span class="nt">&lt;string&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Address2"</span><span class="nt">/&gt;&lt;/string&gt;</span>
+                <span class="nt">&lt;/street&gt;</span>
+                <span class="nt">&lt;city&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Town"</span> <span class="nt">/&gt;&lt;/city&gt;</span>
+                <span class="nt">&lt;region&gt;</span>
+                  <span class="nt">&lt;region&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/County"</span> <span class="nt">/&gt;&lt;/region&gt;</span>
+                <span class="nt">&lt;/region&gt;</span>    
+                <span class="nt">&lt;postcode&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Postcode"</span> <span class="nt">/&gt;&lt;/postcode&gt;</span>
+                <span class="nt">&lt;country_id&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Country"</span> <span class="nt">/&gt;&lt;/country_id&gt;</span>
+                <span class="nt">&lt;telephone&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"CustomerInvoiceAddress/Telephone"</span> <span class="nt">/&gt;&lt;/telephone&gt;</span>
+                <span class="nt">&lt;default_billing&gt;</span>true<span class="nt">&lt;/default_billing&gt;</span>
+                <span class="nt">&lt;default_shipping&gt;</span>true<span class="nt">&lt;/default_shipping&gt;</span>
+              <span class="nt">&lt;/address&gt;</span>
+            <span class="nt">&lt;/addresses&gt;</span>
+        <span class="nt">&lt;/Customer&gt;</span>
+    <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Magento-V2-Connector/Uploading-Customers-to-Magento-V2.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

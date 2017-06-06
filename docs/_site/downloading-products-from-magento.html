@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Downloading Products from Magento</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Downloading Products from Magento</h1>
+                    <p>This task will download product details from Magento in XML format. The results can be filtered if required.</p>
+
+<h2 id="settings">Settings</h2>
+<h3 id="connection">Connection</h3>
+<p><em>Required</em><br />
+The Magento connection to use. See the <a href="connecting-to-magento">Connecting to Magento</a> article if you require more information on how to create/manage connections.</p>
+
+<h3 id="download-all">Download All</h3>
+<p><em>Required</em><br />
+Set to true to download all products, set to false to download only those products which have been modified since the last time the task was run.</p>
+
+<h3 id="download-detailed">Download Detailed</h3>
+<p><em>Required</em><br />
+Set to true to download detailed information for each product, set to false to download only basic information.</p>
+
+<h3 id="download-from">Download From</h3>
+<p><em>Required</em><br />
+The rolling date to download new/modified products from, when Download All is set to false. Will update automatically each time the task runs.</p>
+
+<h3 id="start-date">Start Date</h3>
+<p><em>Optional</em><br />
+No products created before this date will be downloaded, even if they are modified.</p>
+
+<h3 id="output-file">Output File</h3>
+<p><em>Required</em><br />
+The name of the file to export the products to.</p>
+
+<h3 id="filter-property">Filter Property</h3>
+<p><em>Optional</em><br />
+The property the filter is to be based upon. The property name should match the API field name, as seen in the output file.</p>
+
+<h3 id="filter-type">Filter Type</h3>
+<p><em>Optional</em><br />
+The following types of filter are available:</p>
+
+<ul>
+  <li><strong>eq</strong> - Returns records where the property matches the specified value</li>
+  <li><strong>gt</strong> - Returns records where the property is greater than the specified value</li>
+  <li><strong>lt</strong> - Returns records where the property is less than the specified value.</li>
+  <li><strong>like</strong> - Returns records where the property contains the specified value.</li>
+  <li><strong>isnull</strong> - Returns records where the property is null.</li>
+  <li><strong>notnull</strong> - Returns records where the property is not null.</li>
+</ul>
+
+<h3 id="filter-value">Filter Value</h3>
+<p><em>Optional</em><br />
+The value the filter is to be based upon. When using the eq filter type, you can specify multiple values by separating them with commas, or using the ‘Use a list’ option after clicking the ellipsis (…) button.</p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a>.</p>
+
+<h2 id="examples">Examples</h2>
+<p>Sample output file:</p>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ArrayOfProduct&gt;</span>
+  <span class="nt">&lt;Product&gt;</span>
+    <span class="nt">&lt;Fields&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"country_of_manufacture"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"msrp_enabled"</span> <span class="na">Value=</span><span class="s">"2"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"msrp_display_actual_price_type"</span> <span class="na">Value=</span><span class="s">"4"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"msrp"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"is_recurring"</span> <span class="na">Value=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"recurring_profile"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;Field</span> <span class="na">Name=</span><span class="s">"page_layout"</span> <span class="na">Value=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/Fields&gt;</span>
+    <span class="nt">&lt;type&gt;</span>simple<span class="nt">&lt;/type&gt;</span>
+    <span class="nt">&lt;created_at&gt;</span>2014-01-17 14:00:25<span class="nt">&lt;/created_at&gt;</span>
+    <span class="nt">&lt;status&gt;</span>1<span class="nt">&lt;/status&gt;</span>
+    <span class="nt">&lt;options_container&gt;</span>container2<span class="nt">&lt;/options_container&gt;</span>
+    <span class="nt">&lt;category_ids</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;description&gt;</span>test<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;tier_price</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;visibility&gt;</span>4<span class="nt">&lt;/visibility&gt;</span>
+    <span class="nt">&lt;short_description&gt;</span>test<span class="nt">&lt;/short_description&gt;</span>
+    <span class="nt">&lt;required_options&gt;</span>0<span class="nt">&lt;/required_options&gt;</span>
+    <span class="nt">&lt;url_key&gt;</span>test<span class="nt">&lt;/url_key&gt;</span>
+    <span class="nt">&lt;updated_at&gt;</span>2014-01-17 14:00:25<span class="nt">&lt;/updated_at&gt;</span>
+    <span class="nt">&lt;websites&gt;</span>
+      <span class="nt">&lt;string&gt;</span>1<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/websites&gt;</span>
+    <span class="nt">&lt;url_path&gt;</span>test.html<span class="nt">&lt;/url_path&gt;</span>
+    <span class="nt">&lt;has_options&gt;</span>0<span class="nt">&lt;/has_options&gt;</span>
+    <span class="nt">&lt;product_id&gt;</span>1<span class="nt">&lt;/product_id&gt;</span>
+    <span class="nt">&lt;tax_class_id&gt;</span>2<span class="nt">&lt;/tax_class_id&gt;</span>
+    <span class="nt">&lt;type_id&gt;</span>simple<span class="nt">&lt;/type_id&gt;</span>
+    <span class="nt">&lt;set&gt;</span>4<span class="nt">&lt;/set&gt;</span>
+    <span class="nt">&lt;categories</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;enable_googlecheckout&gt;</span>1<span class="nt">&lt;/enable_googlecheckout&gt;</span>
+    <span class="nt">&lt;sku&gt;</span>PROD001<span class="nt">&lt;/sku&gt;</span>
+    <span class="nt">&lt;name&gt;</span>test<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;weight&gt;</span>2.0000<span class="nt">&lt;/weight&gt;</span>
+    <span class="nt">&lt;price&gt;</span>10.0000<span class="nt">&lt;/price&gt;</span>
+    <span class="nt">&lt;group_price</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/Product&gt;</span>
+<span class="nt">&lt;/ArrayOfProduct&gt;</span>
+</code></pre>
+</div>
+
+<p>Sample XSLT file to use to transform the output file from this task to the Zynk XML Products format, ready for import into Sage. This is also available in the <a href="auto-mapper">Auto Mapper</a>.</p>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:output</span> <span class="na">method=</span><span class="s">"xml"</span> <span class="na">standalone=</span><span class="s">"yes"</span> <span class="na">indent=</span><span class="s">"yes"</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Company&gt;</span>
+      <span class="nt">&lt;Products&gt;</span>
+        <span class="nt">&lt;xsl:for-each</span> <span class="na">select=</span><span class="s">"ArrayOfProduct/Product"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;xsl:call-template</span> <span class="na">name=</span><span class="s">"Product"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/xsl:for-each&gt;</span>
+      <span class="nt">&lt;/Products&gt;</span>
+    <span class="nt">&lt;/Company&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">name=</span><span class="s">"Product"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Only add products that have a price --&gt;</span>
+    <span class="nt">&lt;xsl:choose&gt;</span>
+      <span class="nt">&lt;xsl:when</span> <span class="na">test=</span><span class="s">"price &gt; 0"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Product&gt;</span>
+          <span class="nt">&lt;Sku&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"sku"</span><span class="nt">/&gt;&lt;/Sku&gt;</span>
+          <span class="nt">&lt;Name&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"name"</span><span class="nt">/&gt;&lt;/Name&gt;</span>
+          <span class="nt">&lt;Description&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"description"</span><span class="nt">/&gt;&lt;/Description&gt;</span>
+          <span class="nt">&lt;SalePrice&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"price"</span><span class="nt">/&gt;&lt;/SalePrice&gt;</span>
+          <span class="nt">&lt;UnitWeight&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"weight"</span><span class="nt">/&gt;&lt;/UnitWeight&gt;</span>
+        <span class="nt">&lt;/Product&gt;</span>
+      <span class="nt">&lt;/xsl:when&gt;</span>
+      <span class="nt">&lt;xsl:otherwise&gt;</span><span class="c">&lt;!-- Do nothing --&gt;</span><span class="nt">&lt;/xsl:otherwise&gt;</span>
+    <span class="nt">&lt;/xsl:choose&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Magento-V1-Connector/Downloading-Products-from-Magento.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Importing Purchase Orders into Sage 50 US</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="xcontainer">
+        <div class="navbar-header">
+            <a class="navbar-brand" title="Go to Zynk.com" href="http://zynk.com"><img class="img-responsive" id="logo-main" src="assets/logo.svg" alt="Click here to visit Zynk.com" /></a>
+        </div>
+        <div id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="topnav-2"><a href="mailto:support@zynk.com">support@zynk.com</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-nav">
+        
+        <h1>Zynk Workflow Documentation</h1>
+<ul>
+  <li><a href="index">Home</a></li>
+  <li>[[Introduction]]
+    <ul>
+      <li>[[Welcome]]</li>
+      <li>[[Getting Started]]</li>
+      <li>[[Key Concepts]]</li>
+      <li>[[Using Zynk]]</li>
+      <li>[[Settings]]</li>
+      <li>[[Extensions]]</li>
+      <li>[[Integrations]]</li>
+    </ul>
+  </li>
+  <li>[[Accounting]]
+    <ul>
+      <li>[[Sage 50 UK]]</li>
+      <li>[[Sage 200]]</li>
+      <li>[[Sage 200 Online]]</li>
+      <li>[[Xero]]</li>
+      <li>[[Kashflow]]</li>
+      <li>[[Quickbooks Online]]</li>
+      <li>[[Sage 50 US]]</li>
+      <li>[[Brightpearl]]</li>
+      <li>[[Sage One]]</li>
+      <li>[[Sage 50 Payroll]]</li>
+      <li>[[Sage 50 UK Reporting]]</li>
+    </ul>
+  </li>
+  <li>[[CRM]]
+    <ul>
+      <li>[[ACT]]</li>
+      <li>[[AutoTask]]</li>
+      <li>[[BXP]]</li>
+      <li>[[Campaign Monitor]]</li>
+      <li>[[ConnectWise]]</li>
+      <li>[[Salesforce]]</li>
+      <li>[[Sugar CRM]]</li>
+      <li>[[Zoho CRM]]</li>
+    </ul>
+  </li>
+  <li>[[Databases]]
+    <ul>
+      <li>[[SQL Server]]</li>
+      <li>[[SQLite]]</li>
+      <li>[[ODBC]]</li>
+      <li>[[OLEDB]]</li>
+    </ul>
+  </li>
+  <li>[[Ecommerce]]
+    <ul>
+      <li>[[Amazon Marketplace]]</li>
+      <li>[[Amazon Vendor Central]]</li>
+      <li>[[BigCommerce]]</li>
+      <li>[[Channel Advisor]]</li>
+      <li>[[CoreCommerce]]</li>
+      <li>[[Easy Webstore]]</li>
+      <li>[[Ebay]]</li>
+      <li>[[EKM Powershop]]</li>
+      <li>[[Magento V1]]</li>
+      <li>[[Magento V2]]</li>
+      <li>[[PayPal]]</li>
+      <li>[[Shopify]]</li>
+      <li>[[WooCommerce]]</li>
+    </ul>
+  </li>
+  <li>[[Files]]
+    <ul>
+      <li>[[CSV]]</li>
+      <li>[[HTML]]</li>
+      <li>[[Excel]]</li>
+      <li>[[File]]</li>
+      <li>[[File Helpers]]</li>
+      <li>[[JSON]]</li>
+      <li>[[PDF]]</li>
+      <li>[[XML and XSLT]]</li>
+    </ul>
+  </li>
+  <li>[[Cloud]]
+    <ul>
+      <li>[[Amazon S3]]</li>
+    </ul>
+  </li>
+  <li>[[Social]]
+    <ul>
+      <li>[[LinkedIn]]</li>
+      <li>[[Twitter]]</li>
+      <li>[[Facebook]]</li>
+    </ul>
+  </li>
+  <li>[[Web]]
+    <ul>
+      <li>[[Email]]</li>
+      <li>[[FTP]]</li>
+      <li>[[SFTP]]</li>
+      <li>[[HTTP]]</li>
+    </ul>
+  </li>
+  <li>[[Other]]
+    <ul>
+      <li>[[Developer]]</li>
+      <li>[[SMS]]</li>
+      <li>[[User Interface]]</li>
+      <li>[[WordPress]]</li>
+      <li>[[Zynk Core]]</li>
+    </ul>
+  </li>
+  <li>[[Contact Us]]</li>
+</ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 markdown-body">
+                    <a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a>
+                    <h1>Importing Purchase Orders into Sage 50 US</h1>
+                    <p>This task will import purchase order information in the <a href="sage-50-us-purchase-order-xml">Sage 50 US Purchase Order XML</a> format into Sage 50 US.</p>
+
+<h2 id="settings">Settings</h2>
+<h3 id="sage-connection">Sage Connection</h3>
+<p><em>Required</em><br />
+The connection to Sage 50 US to use. See the <a href="connecting-to-sage-50-us">Connecting to Sage 50 US</a> article if you require more information on how to create/manage connections.</p>
+
+<h3 id="fail-file">Fail File</h3>
+<p><em>Required</em><br />
+The name of a file for “failed” imports to be sent to.</p>
+
+<h3 id="input-file">Input File</h3>
+<p><em>Required</em><br />
+The source file that you want to import in XML format.</p>
+
+<h3 id="success-file">Success File</h3>
+<p><em>Required</em><br />
+The name of a file for “successful” imports to be sent to.</p>
+
+<h3 id="prevent-duplicates">Prevent Duplicates</h3>
+<p><em>Required</em><br />
+Set this to ‘True’ to check whether the supplied purchase order Id has already been imported, and if so skip the purchase order.</p>
+
+<h3 id="zynk-settings">Zynk Settings</h3>
+<p>See <a href="common-task-settings">Common Task Settings</a>.</p>
+
+<h2 id="example">Example</h2>
+<p>A sample input file is shown below. See <a href="sage-50-us-purchase-order-xml">Sage 50 US Purchase Order XML</a> for full documentation of the XML format.</p>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;ArrayOfPurchaseOrder&gt;</span>
+  <span class="nt">&lt;PurchaseOrder</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ExternalId&gt;</span>2317<span class="nt">&lt;/ExternalId&gt;</span>
+    <span class="nt">&lt;Key&gt;</span>2ff80f5a-d4c2-4e9c-9151-4ca9e3fa87de<span class="nt">&lt;/Key&gt;</span>
+    <span class="nt">&lt;ReferenceNumber</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;Date&gt;</span>2015-03-15T00:00:00<span class="nt">&lt;/Date&gt;</span>
+    <span class="nt">&lt;Amount&gt;</span>215.8500000000000000000<span class="nt">&lt;/Amount&gt;</span>
+    <span class="nt">&lt;LastSavedAt&gt;</span>0001-01-01T00:00:00<span class="nt">&lt;/LastSavedAt&gt;</span>
+    <span class="nt">&lt;IsPosted&gt;</span>true<span class="nt">&lt;/IsPosted&gt;</span>
+    <span class="nt">&lt;AccountReference&gt;</span>20000-00<span class="nt">&lt;/AccountReference&gt;</span>
+    <span class="nt">&lt;ShipToAddress&gt;</span>
+      <span class="nt">&lt;Name&gt;</span>Bellwether Garden Supply<span class="nt">&lt;/Name&gt;</span>
+      <span class="nt">&lt;Address&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>1505 Pavilion Place<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;City&gt;</span>Norcross<span class="nt">&lt;/City&gt;</span>
+        <span class="nt">&lt;State&gt;</span>GA<span class="nt">&lt;/State&gt;</span>
+        <span class="nt">&lt;Zip&gt;</span>30093-3203<span class="nt">&lt;/Zip&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>USA<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;SalesTaxCode</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/Address&gt;</span>
+    <span class="nt">&lt;/ShipToAddress&gt;</span>
+    <span class="nt">&lt;ShipVia&gt;</span>None<span class="nt">&lt;/ShipVia&gt;</span>
+    <span class="nt">&lt;TermsDescription&gt;</span>2% 10, Net 30 Days<span class="nt">&lt;/TermsDescription&gt;</span>
+    <span class="nt">&lt;InternalNote</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;DiscountAmount&gt;</span>4.3200000000000000000<span class="nt">&lt;/DiscountAmount&gt;</span>
+    <span class="nt">&lt;VendorReference&gt;</span>SOGARDEN<span class="nt">&lt;/VendorReference&gt;</span>
+    <span class="nt">&lt;PrintVendorNoteAfterLineItems&gt;</span>false<span class="nt">&lt;/PrintVendorNoteAfterLineItems&gt;</span>
+    <span class="nt">&lt;VendorNote</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;MainAddress&gt;</span>
+      <span class="nt">&lt;Name&gt;</span>Southern Garden Wholesale<span class="nt">&lt;/Name&gt;</span>
+      <span class="nt">&lt;Address&gt;</span>
+        <span class="nt">&lt;Address1&gt;</span>4555 Oakland Park Blvd.<span class="nt">&lt;/Address1&gt;</span>
+        <span class="nt">&lt;Address2</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;City&gt;</span>Atlanta<span class="nt">&lt;/City&gt;</span>
+        <span class="nt">&lt;State&gt;</span>GA<span class="nt">&lt;/State&gt;</span>
+        <span class="nt">&lt;Zip&gt;</span>30312<span class="nt">&lt;/Zip&gt;</span>
+        <span class="nt">&lt;Country&gt;</span>USA<span class="nt">&lt;/Country&gt;</span>
+        <span class="nt">&lt;SalesTaxCode</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/Address&gt;</span>
+    <span class="nt">&lt;/MainAddress&gt;</span>
+    <span class="nt">&lt;GoodThroughDate&gt;</span>2015-04-14T00:00:00<span class="nt">&lt;/GoodThroughDate&gt;</span>
+    <span class="nt">&lt;IsClosed&gt;</span>false<span class="nt">&lt;/IsClosed&gt;</span>
+    <span class="nt">&lt;IsDropShip&gt;</span>false<span class="nt">&lt;/IsDropShip&gt;</span>
+    <span class="nt">&lt;DiscountDate</span> <span class="na">xsi:nil=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;PurchaseOrderLines&gt;</span>
+      <span class="nt">&lt;PurchaseOrderLine&gt;</span>
+        <span class="nt">&lt;AccountReference&gt;</span>12000-00<span class="nt">&lt;/AccountReference&gt;</span>
+        <span class="nt">&lt;Amount&gt;</span>215.8500000000000000000<span class="nt">&lt;/Amount&gt;</span>
+        <span class="nt">&lt;Description&gt;</span>Catalog # LM400500 Rotary Lawn Mower - 3HP<span class="nt">&lt;/Description&gt;</span>
+        <span class="nt">&lt;IsUsed&gt;</span>true<span class="nt">&lt;/IsUsed&gt;</span>
+        <span class="nt">&lt;InventoryItemReference&gt;</span>EQLW-14130<span class="nt">&lt;/InventoryItemReference&gt;</span>
+        <span class="nt">&lt;Quantity&gt;</span>3.0000000000000000000<span class="nt">&lt;/Quantity&gt;</span>
+        <span class="nt">&lt;UnitPrice&gt;</span>71.9500000000000000000<span class="nt">&lt;/UnitPrice&gt;</span>
+        <span class="nt">&lt;QuantityReceived&gt;</span>0.0000000000000000000<span class="nt">&lt;/QuantityReceived&gt;</span>
+      <span class="nt">&lt;/PurchaseOrderLine&gt;</span>
+    <span class="nt">&lt;/PurchaseOrderLines&gt;</span>
+  <span class="nt">&lt;/PurchaseOrder&gt;</span>
+<span class="nt">&lt;/ArrayOfPurchaseOrder&gt;</span>
+</code></pre>
+</div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><a onclick="history.go(-1)" href="#"><span class="fa fa-arrow-left"></span>Back</a></div>
+                        <div class="col-sm-6 text-right"><a href="http://github.com/Zynk-workflow/docs/tree/master/_documentation/Sage-50-US-Connector/Importing-Purchase-Orders-into-Sage-50-US.md"><span class="fa fa-github"></span>Edit on Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    var screenWidth = $(window).width();
+
+    // Add .active class to active link + scroll into view
+    var pathinfo = location.pathname + location.hash;
+    if (screenWidth > 768 && pathinfo != "/")
+    {
+        var scrollItem = $("#sidebar-wrapper").find("a[href='" + pathinfo + "']")
+                .addClass('active')
+                .parents().filter("div>ul>li")[0];
+        if (scrollItem) {
+            scrollItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
+    // Add external link icon next to external menu links
+    $(".sidebar-nav a[href^=http]")
+        .append('<i class="fa fa-external-link" style="margin-left:-15px"></i>');
+
+    $("#menu-toggle").click(function(){
+        $("#sidebar-wrapper").scrollTop(0);
+        $(this).toggleClass("fa-angle-down");
+        $("#wrapper").toggleClass("menu-collapsed");
+    });
+
+    if (screenWidth <= 768) {
+        $("#menu-toggle").click();            
+    }
+
+    //Allow clicking on non-linked headers to jump to its #href
+    $("h2,h3,h4").click(function(){
+        if (this.id && this.innerHTML.indexOf("<a") == -1) {
+            location.href = "#" + this.id;
+        }
+    });
+
+    
+    
+    //should no longer be needed now that we're referencing server-side /slug permalinks
+(function () {
+    "use strict";
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+
+    function fixDoubleBracketLinks(cssSelector) {
+        var sidebarText = $(cssSelector)[0].innerHTML;
+        var matches = sidebarText.match(/\[\[(.+?)\]\]/g);
+        var result = sidebarText;
+        if(matches != null) {
+            for(var i = 0; i < matches.length; i++) {
+                var text = matches[i].replaceAll('[[','').replaceAll(']]','');
+                result = result.replace(matches[i],
+                    '<a href="' +
+                    encodeURIComponent(text.replaceAll(' ','-').toLocaleLowerCase()) +
+                    '">' + text + '</a>')
+            }
+            $(cssSelector).html(result);
+        }
+    }
+
+    fixDoubleBracketLinks('#page-content-wrapper');
+    fixDoubleBracketLinks('#sidebar-wrapper');
+})();
+    
+</script>
+    
+    
+    
+</body>
+</html>

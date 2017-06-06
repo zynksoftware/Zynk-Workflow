@@ -1,0 +1,27 @@
+html, body 
+{
+	padding: 0;
+	margin: 0;
+	font-family: lato;
+    font-weight: 400;
+}
+
+.edit-page-link 
+{
+	float: right;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 20px;
+	margin-top: 17px;
+}
+
+#wrapper
+{
+    padding-top: 80px;
+}
+
+.connector
+{
+	width:100px;
+	height:100px;
+}
