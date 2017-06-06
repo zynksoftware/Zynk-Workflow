@@ -1,5 +1,5 @@
 ---
-slug: exporting-custom-data-from-sage-200-(v2)
+slug: exporting-custom-data-from-sage-200-v2
 redirect_from: "/article/860-exporting-custom-data-from-sage-200-v2"
 title: Exporting Custom Data from Sage 200 (V2)
 ---

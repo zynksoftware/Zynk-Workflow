@@ -1,5 +1,6 @@
 ---
-slug: running a workflow-from-the-command-prompt
+slug: running-a-workflow-from-the-command-prompt
+redirect_from: "/article/70-running-a-workflow-from-the-command-prompt"
 title: Running a Workflow from the Command Prompt
 ---
 You can easily start a Workflow without launching the Zynk user interface, using the Command Prompt.

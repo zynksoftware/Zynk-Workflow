@@ -1,5 +1,5 @@
 ---
-slug: downloading-credit-memos-from-magento v2
+slug: downloading-credit-memos-from-magento-v2
 title: Downloading Credit Memos From Magento V2
 ---
 This task will download credit memos from Magento in an XML format. The results can be filtered if required. See below for a sample output file.

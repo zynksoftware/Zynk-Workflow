@@ -1,5 +1,5 @@
 ---
-slug: using-c#-code-in-xslt
+slug: using-c-sharp-code-in-xslt
 title: Using C# Code in XSLT
 ---
 You may sometimes find that its not possible to do something you require using XSLT, such as checking whether an external file exists before attempting to load it. You often get around limitations in XSLT by writing a C# script to perform the function instead, which can then be called in your XSLT. An example XSLT is shown below which includes a C# script to check if a file exists.
