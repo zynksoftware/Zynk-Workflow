@@ -3,9 +3,9 @@ slug: importing-products-into-act
 redirect_from: "/article/144-importing-products-into-act"
 title: Importing Products into ACT!
 ---
-This task will import Products into ACT!, updating existing Products and creating new ones where they don't already exist. See the [ACT! Product XML](act!-product-xml) page for more information.
+This task will import Products into ACT!, updating existing Products and creating new ones where they don't already exist. See the [ACT! Product XML](act-product-xml) page for more information.
 
-This task requires a Connection to ACT!, for more information on setting up and managing ACT! connections, see [Connecting to ACT!](connecting-to-act!).
+This task requires a Connection to ACT!, for more information on setting up and managing ACT! connections, see [Connecting to ACT!](connecting-to-act).
 
 ## Connection Settings  
 ### ACT! Connection

@@ -13,6 +13,7 @@ Each of the tasks require a connection to Xero, for more information on setting 
 - [Creating Chart of Accounts in Xero](creating-chart-of-accounts-in-xero)
 - [Exporting Accounts from Xero](exporting-accounts-from-xero)
 - [Exporting Bank Transactions from Xero](exporting-bank-transactions-from-xero)
+
 ### Working with Contacts
 - [Importing Contacts to Xero](importing-contacts-to-xero)
 - [Exporting Contacts from Xero](exporting-contacts-from-xero)
