@@ -1,5 +1,6 @@
 ---
-slug: exporting-products-from-act!
+slug: exporting-products-from-act
+redirect_from: "/article/145-exporting-products-from-act"
 title: Exporting Products from ACT!
 ---
 This task will export Products from ACT! into [ACT! Product XML](act!-product-xml).

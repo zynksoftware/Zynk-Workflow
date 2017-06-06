@@ -1,5 +1,6 @@
 ---
-slug: zynk-log-manager-(zlm)
+slug: zynk-log-manager-zlm
+redirect_from: "/article/759-zynk-log-manager-zlm"
 title: Zynk Log Manager (ZLM)
 ---
 You can use Zynk Log Manager (ZLM) to repair, shrink, verify and query your Zynk database. This extension can be used when you're Zynk database is getting too large or you have had corruption.

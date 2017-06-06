@@ -1,5 +1,6 @@
 ---
 slug: exporting-purchase-orders-from-xero
+redirect_from: "/article/961-downloading-purchase-orders-from-xero"
 title: Exporting Purchase Orders from Xero
 ---
 

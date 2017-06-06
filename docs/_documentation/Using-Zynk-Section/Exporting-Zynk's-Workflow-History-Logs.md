@@ -1,5 +1,6 @@
 ---
-slug: exporting-zynk's-workflow-history-logs
+slug: exporting-zynks-workflow-history-logs
+redirect_from: "/article/968-exporting-zynks-workflow-history-logs"
 title: Exporting Zynk's Workflow History Logs
 ---
 The History tab lets you review the logs from each run of a Workflow, providing you with a closer look at the work done by each task in the Workflow.

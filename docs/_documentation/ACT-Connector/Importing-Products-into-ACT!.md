@@ -1,5 +1,6 @@
 ---
-slug: importing-products-into-act!
+slug: importing-products-into-act
+redirect_from: "/article/144-importing-products-into-act"
 title: Importing Products into ACT!
 ---
 This task will import Products into ACT!, updating existing Products and creating new ones where they don't already exist. See the [ACT! Product XML](act!-product-xml) page for more information.

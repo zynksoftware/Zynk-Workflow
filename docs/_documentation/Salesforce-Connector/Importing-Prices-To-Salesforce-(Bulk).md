@@ -1,5 +1,6 @@
 ---
-slug: importing-prices-to-salesforce-(bulk)
+slug: importing-prices-to-salesforce-bulk
+redirect_from: "/article/724-uploading-prices-to-salesforce-bulk"
 title: Importing Prices To Salesforce (Bulk)
 ---
 

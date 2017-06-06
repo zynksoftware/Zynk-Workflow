@@ -1,5 +1,6 @@
 ---
-slug: exporting-contacts-from-act!
+slug: exporting-contacts-from-act
+redirect_from: "/article/141-exporting-contacts-from-act"
 title: Exporting Contacts from ACT!
 ---
 This task will export Contacts from ACT! into [ACT! Contact XML](act!-contact-xml).

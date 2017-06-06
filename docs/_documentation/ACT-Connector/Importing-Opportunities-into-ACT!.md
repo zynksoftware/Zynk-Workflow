@@ -1,5 +1,6 @@
 ---
-slug: importing-opportunities-into-act!
+slug: importing-opportunities-into-act
+redirect_from: "/article/142-importing-opportunities-into-act"
 title: Importing Opportunities into ACT!
 ---
 This task will create new Opportunities in ACT!. See the [ACT! Opportunity XML](act!-opportunity-xml) page for more information.

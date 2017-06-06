@@ -1,5 +1,6 @@
 ---
-slug: connecting-to-salesforce-(bulk)
+slug: connecting-to-salesforce-bulk
+redirect_from: "/article/607-connecting-to-salesforce-bulk"
 title: Connecting to Salesforce (Bulk)
 ---
 All of the tasks in the Salesforce connector require a connection to Salesforce. The type of connection required depends on the task being used. The Bulk Salesforce Operation, Upload Products and Upload Records Tasks use the 'Salesforce (Bulk)' connection type, so you will need to create a [Connection]] of this type when using those tasks. See [[Managing Connections](connection]]-of-this-type-when-using-those-tasks.-see [[managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your Salesforce details:

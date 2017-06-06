@@ -1,5 +1,6 @@
 ---
-slug: downloading-&-installing-zynk
+slug: downloading-installing-zynk
+redirect_from: "/article/39-downloading-installing-zynk"
 title: Downloading & Installing Zynk
 ---
 ## Current Version

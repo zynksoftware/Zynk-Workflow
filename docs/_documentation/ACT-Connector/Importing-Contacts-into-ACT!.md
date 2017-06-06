@@ -1,5 +1,6 @@
 ---
-slug: importing-contacts-into-act!
+slug: importing-contacts-into-act
+redirect_from: "/article/140-importing-contacts-into-act"
 title: Importing Contacts into ACT!
 ---
 This task will import Contacts into ACT!, updating existing Contacts and creating new ones where they don't already exist. See the [ACT! Contact XML](act!-contact-xml) page for more information.

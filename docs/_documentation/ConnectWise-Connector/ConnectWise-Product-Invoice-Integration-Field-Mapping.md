@@ -1,5 +1,6 @@
 ---
 slug: connectwise-product-invoice-integration-field-mapping
+redirect_from: "/article/185-connectwise-field-mapping"
 title: ConnectWise Product Invoice Integration Field Mapping
 ---
 

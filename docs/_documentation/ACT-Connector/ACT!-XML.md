@@ -1,5 +1,5 @@
 ---
-slug: act!-xml
+slug: act-xml
 title: ACT! XML
 ---
 To integrate with [ACT!](act!) using Zynk you will need to import and export data using XML.  We have created a common XML schema to allow you to easily integrate your systems with Sage.

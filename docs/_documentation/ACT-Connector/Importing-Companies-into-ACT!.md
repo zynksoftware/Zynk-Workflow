@@ -1,5 +1,6 @@
 ---
-slug: importing-companies-into-act!
+slug: importing-companies-into-act
+redirect_from: "/article/138-importing-companies-into-act"
 title: Importing Companies into ACT!
 ---
 This task will import Companies into ACT!, updating existing Companies and creating new ones where they don't already exist. See the [ACT! Company XML](act!-company-xml) page for more information.

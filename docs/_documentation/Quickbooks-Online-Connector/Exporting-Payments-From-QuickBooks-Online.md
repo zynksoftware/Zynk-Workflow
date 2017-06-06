@@ -1,5 +1,6 @@
 ---
 slug: exporting-payments-from-quickbooks-online
+redirect_from: "/article/872-downloading-payments-from-quickbooks-online"
 title: Exporting Payments From QuickBooks Online
 ---
 

@@ -1,5 +1,5 @@
 ---
-slug: act!-contact-xml
+slug: act-contact-xml
 title: ACT! Contact XML
 ---
 Import Contacts allows you to create new and update existing Contacts in ACT!. 

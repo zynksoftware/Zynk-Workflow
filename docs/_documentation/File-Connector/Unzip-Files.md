@@ -1,5 +1,6 @@
 ---
 slug: unzip-files
+redirect_from: "/article/241-unzip-files"
 title: Unzip Files
 ---
 This task will unzip an existing Zip file into the specified folder, and recreate the directory structure.

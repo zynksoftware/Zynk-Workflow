@@ -1,5 +1,6 @@
 ---
-slug: connecting-to-act!
+slug: connecting-to-act
+redirect_from: "/article/448-connecting-to-act"
 title: Connecting to ACT!
 ---
 All of the tasks in the [ACT!]] connector require a Connection to ACT!. To find out more, see [[Managing Connections](act!]]-connector-require-a-connection-to-act!.-to-find-out-more, see-[[managing-connections).

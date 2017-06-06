@@ -1,5 +1,6 @@
 ---
-slug: exporting-opportunities-from-act!
+slug: exporting-opportunities-from-act
+redirect_from: "/article/143-exporting-opportunities-from-act"
 title: Exporting Opportunities from ACT!
 ---
 This task will export Opportunities from ACT! into [ACT! Opportunity XML](act!-opportunity-xml).

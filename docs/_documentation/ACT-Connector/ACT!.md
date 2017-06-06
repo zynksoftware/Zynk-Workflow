@@ -1,5 +1,6 @@
 ---
-slug: act!
+slug: act
+redirect_from: "/article/153-introduction-to-the-act-connector"
 title: ACT!
 ---
 The ACT! connector implements an interface to ACT! and provides functions to import and export data from ACT! in Zynk XML format. For detailed schema information on the Zynk XML standard please see [ACT! XML](act!-xml).
