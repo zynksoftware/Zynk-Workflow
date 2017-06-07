@@ -66,7 +66,7 @@
     * [Email](email)
     * [FTP](ftp)
     * [SFTP](sftp)
-    * [HTTP REST](http)
+    * [HTTP REST](rest)
 * [Other](other)
     * [Developer](developer)
     * [SMS](sms)
