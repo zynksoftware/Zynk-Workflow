@@ -5,7 +5,7 @@ title: Creating Records in Salesforce
 ---
 
 
-This task will create a single new record in the Salesforce system and return the response data in XML format. If you have multiple records to create, you can use this task as a sub-task of an [XML Repeater](357-xml-repeater) task, or use the [Bulk Salesforce Operation](bulk-salesforce-operation) task instead.
+This task will create a single new record in the Salesforce system and return the response data in XML format. If you have multiple records to create, you can use this task as a sub-task of an [XML Repeater](xml-repeater) task, or use the [Bulk Salesforce Operation](bulk-salesforce-operation) task instead.
 
 
 ## Settings

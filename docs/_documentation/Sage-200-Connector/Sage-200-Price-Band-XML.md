@@ -37,7 +37,7 @@ Price bands are matched based on the name provided in the XML. If no match is fo
 
 |  XML Field | Sage Field  | Example |  Field Type | Field Length  | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| Id | N/A | 12345 | string | 255 | Optional | The Id provided will be stored in [Truth Storage](truth-storage), and will be outputted by [Exporting Price Lists from Sage 200](exporting-price-lists-from-sage-200). |
+| Id | N/A | 12345 | string | 255 | Optional | The Id provided will be stored in [Truth Storage](storage), and will be outputted by [Exporting Price Lists from Sage 200](exporting-price-bands-from-sage-200). |
 | Name | Name | Trade | string | 20 | Required | Only used if an AccountReference is not provided. |
 | Currency | Currency | GBP | string | 3 | Optional | This field is required when creating a new price band. The currency of existing price bands can't be changed. |
 

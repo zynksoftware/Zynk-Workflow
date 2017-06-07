@@ -5,7 +5,7 @@ title: Connecting to Brightpearl
 ---
 
 
-All of the tasks in the Brightpearl Connector require a Brightpearl connection, so you will need to create a [Connection](49-connections) with the type 'Brightpearl'. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your Brightpearl details:
+All of the tasks in the Brightpearl Connector require a Brightpearl connection, so you will need to create a connection with the type 'Brightpearl'. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your Brightpearl details:
 
 
 

@@ -5,7 +5,7 @@ title: Connecting to ConnectWise
 ---
 
 
-All of the tasks in the ConnectWise connector require a connection to ConnectWise. The type of connection required depends on the task being used. The ConnectWise Download Agreements, Download Companies, Download Invoices, Download Opportunities, Download Purchase Orders, List Reports and Run Report Tasks use the 'ConnectWise' connection type, so you will need to create a [Connection](49-connections) with this type when using those tasks. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below:
+All of the tasks in the ConnectWise connector require a connection to ConnectWise. The type of connection required depends on the task being used. The ConnectWise Download Agreements, Download Companies, Download Invoices, Download Opportunities, Download Purchase Orders, List Reports and Run Report Tasks use the 'ConnectWise' connection type, so you will need to create a connection with this type when using those tasks. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below:
 
 
 

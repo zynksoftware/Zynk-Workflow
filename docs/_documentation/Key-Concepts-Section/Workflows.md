@@ -81,9 +81,9 @@ Two of the most common use cases for workflows are to download data from an e-co
 
 ### Download from website to Sage
 
- * Download the required data from the website using the appropriate task. For example, this may be the [Amazon Order Download](amazon-order-download) task or the [Magento Order Download](downloading-orders-from-magento) task.
+ * Download the required data from the website using the appropriate task. For example, this may be the [Amazon Order Download](downloading-orders-from-amazon-marketplace) task or the [Magento Order Download](downloading-orders-from-magento) task.
  * Transform the data to the Zynk format. This can be done using the [Auto Mapper](auto-mapper) task or an [XSLT Transform](xslt-transform).
- * Import the data into Sage using the appropriate task. For example, this may be the [Sage 50 Import Sales Orders](importing-sales-orders-into-sage-50-uk) task.
+ * Import the data into Sage using the appropriate task. For example, this may be the [Sage 50 Import Sales Orders](importing-sales-orders-into-sage-50-uk) task. 
 
 ### Upload from Sage to website
 

@@ -5,7 +5,7 @@ title: Connecting to BXP
 ---
 
 
-All of the tasks in the BXP connector require a connection to a Sage 50 company, so you will need to create a [Connection](http://workflow.zynk.com/article/49-connections) with the type 'BXP'. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your BXP details:
+All of the tasks in the BXP connector require a connection to a Sage 50 company, so you will need to create a connection with the type 'BXP'. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your BXP details:
 
 
 

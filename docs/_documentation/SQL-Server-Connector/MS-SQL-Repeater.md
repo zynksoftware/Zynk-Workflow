@@ -12,7 +12,7 @@ The maximum time to wait for the query to execute.
 
 ### Query
 _Required_  
-The SQL Query to be executed. See below for an example.  You can use the [Query Designer](query-designer) to build the query visually.
+The SQL Query to be executed. See below for an example.  You can use the [Query Designer](using-the-query-designer) to build the query visually.
 
 ### Connection
 _Required_  

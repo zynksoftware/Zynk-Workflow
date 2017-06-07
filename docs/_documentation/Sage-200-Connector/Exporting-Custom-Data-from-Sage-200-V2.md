@@ -35,7 +35,7 @@ WHERE [SLCustomerAccount].[OpLock] &gt; @oplock OR [SLCustomerContact].[OpLock] 
 ```
 ### Query
 _Required_  
-Enter the SQL query to run against the Sage 200 database.  E.g. `SELECT * FROM [SLCustomerAccount]`.  You can use the [Query Designer](query-designer).  
+Enter the SQL query to run against the Sage 200 database.  E.g. `SELECT * FROM [SLCustomerAccount]`.  You can use the [Query Designer](using-the-query-designer).  
 
 ### Query Timeout
 _Optional_  

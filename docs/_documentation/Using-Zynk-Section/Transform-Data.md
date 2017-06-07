@@ -10,7 +10,7 @@ XSL stands for eXtensible Stylesheet Language and XSLT stands for XSL Transforma
 Options for transforming data in Zynk include:-
 
  * **CSV to XML** - Use the [CSV to XML](converting-csv-to-xml) task in the CSV connector to do this
- * **XML to CSV** - Use the [XML to CSV](xml-to-csv) task in the XML connector, or an [XSLT Transform](xslt-transform) or a Razor Template
+ * **XML to CSV** - Use the [XML to CSV](converting-xml-to-csv) task in the XML connector, or an [XSLT Transform](xslt-transform) or a Razor Template
  * **XML to XML** - Use the [Auto Mapper](auto-mapper) task or an [[XSLT Transform](xslt-transform) or a Razor Template
  * **XML to JSON** - Use the [XML to JSON](converting-xml-to-json) task in the JSON Library
  * **XML to HTML** - Use the [XSLT Transform](xslt-transform) task or a Razor Template
@@ -22,7 +22,7 @@ Options for transforming data in Zynk include:-
  * **Fixed Length Text to XML** - Use the [File Helpers](file-helpers) connector
  * **Delimited Text to XML** - Use the [File Helpers](file-helpers) connector
 
-Not supported
+Not supported 
 
  * PDF to Text
  * OCR to Text

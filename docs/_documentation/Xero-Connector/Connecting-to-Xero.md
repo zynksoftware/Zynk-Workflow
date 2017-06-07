@@ -5,7 +5,7 @@ title: Connecting to Xero
 ---
 
 
-All of the tasks in the Xero connector require a connection to Xero, so you will need to create a [Connection](49-connections) with the type 'Xero'. See [Managing Connections](managing-connections) for instructions on creating a new connection.
+All of the tasks in the Xero connector require a connection to Xero, so you will need to create a connection with the type 'Xero'. See [Managing Connections](managing-connections) for instructions on creating a new connection.
 
 
 

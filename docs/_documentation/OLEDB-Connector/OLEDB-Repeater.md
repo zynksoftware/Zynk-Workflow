@@ -8,7 +8,7 @@ The OLEDB Repeater task will execute a Query against an OLEDB database and run s
 ## Settings
 ### Query
 _Required_  
-The SQL query to be executed, see below for an example.  You can use the [Query Designer](query-designer) to build the query visually.  
+The SQL query to be executed, see below for an example.  You can use the [Query Designer](using-the-query-designer) to build the query visually.  
 
 ### Connection
 _Required_  
