@@ -37,7 +37,7 @@ See [Common Task Settings](common-task-settings)
 ## Examples
 
 
-A sample input file containing is shown below. It shows the minimum amount of information required to create a credit note in Xero. More detailed information about each field can be found in our [API Documentation](http://api.zynk.com/xero-xml/upsert-credit-notes).
+A sample input file containing is shown below. It shows the minimum amount of information required to create a credit note in Xero. More detailed information about each field can be found in our [API Documentation](xero-credit-note-xml).
 
 
 ```xml

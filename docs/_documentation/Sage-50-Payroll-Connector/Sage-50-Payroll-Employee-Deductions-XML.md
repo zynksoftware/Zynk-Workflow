@@ -3,7 +3,7 @@ slug: sage-50-payroll-employee-deductions-xml
 redirect_from: ""
 title: Sage 50 Payroll Employee Deductions XML
 ---
-The [Import Employee Deductions|Importing Employee Deductions Into Sage 50 Payroll](import-employee-deductions|importing-employee-deductions-into-sage-50-payroll) task allows you to insert or update Deductions associated with Employees in Sage 50 Payroll.
+The [Importing Employee Deductions Into Sage 50 Payroll](importing-employee-deductions-into-sage-50-payroll) task allows you to insert or update Deductions associated with Employees in Sage 50 Payroll.
 
 For an Employee Deduction to be imported, the Employee and the Deduction must already exist in Sage 50 Payroll.
 
@@ -129,14 +129,14 @@ Sample import file for updating an existing Employee Deduction otherwise inserti
 ```
 
 ## Task Links
-- [Introduction to the Sage 50 Payroll Connector|Sage-50-Payroll](introduction-to-the-sage-50-payroll-connector|sage-50-payroll)
+- [Introduction to the Sage 50 Payroll Connector](sage-50-payroll)
 - [Connecting to Sage 50 Payroll](connecting-to-sage-50-payroll)
 - [Importing Employee Absences Into Sage 50 Payroll](importing-employee-absences-into-sage-50-payroll)
 - [Importing Employee Deductions Into Sage 50 Payroll](importing-employee-deductions-into-sage-50-payroll)
 - [Importing Employee Payments Into Sage 50 Payroll](importing-employee-payments-into-sage-50-payroll)
 
 ## XML Links
-- [Introduction to the Sage 50 Payroll XML|Sage-50-Payroll-XML](introduction-to-the-sage-50-payroll-xml|sage-50-payroll-xml)
+- [Sage-50-Payroll-XML](sage-50-payroll-xml)
 - [Sage 50 Payroll Employee Absences XML](sage-50-payroll-employee-absences-xml)
 - [Sage 50 Payroll Employee Deductions XML](sage-50-payroll-employee-deductions-xml)
 - [Sage 50 Payroll Employee Payments XML](sage-50-payroll-employee-payments-xml)

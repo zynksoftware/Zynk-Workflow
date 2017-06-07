@@ -3,7 +3,7 @@ slug: uploading-services-to-sage-one
 redirect_from: "/article/818-upload-services"
 title: Uploading Services to Sage One
 ---
-This task will upload services that are supplied in the [Sage One Services XML](sage-one-services-xml) format.
+This task will upload services that are supplied in the [Sage One XML](sage-one-xml) format.
 
 ## Required Fields
 

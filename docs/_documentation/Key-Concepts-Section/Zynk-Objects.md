@@ -3,7 +3,7 @@ slug: zynk-objects
 redirect_from: "/article/47-zynk-objects"
 title: Zynk Objects
 ---
-Zynk Objects are a flexible way to handle both static and dynamic content such as text values, file names, URL's or lists. Most of the [Tasks]] settings in Zynk accept a Zynk Object. [[Variable](tasks]]-settings-in-zynk-accept-a-zynk-object. [[variable) values are also Zynk Objects.
+Zynk Objects are a flexible way to handle both static and dynamic content such as text values, file names, URL's or lists. Most of the [Tasks](tasks) settings in Zynk accept a Zynk Object. [Variables](variables) values are also Zynk Objects.
 
 ## Editing the Value of a Zynk Object
 From the task settings list or variable collection editor, click on the setting to edit, then either click the ellipsis (...) button or press F4.
@@ -20,7 +20,7 @@ The Zynk Object editor window will appear, as shown below.
 
 ## Data Types
 ### Text or Script
-This represents a single text value which can be manually entered at design time. For example, a username, a path to a file, a website address - any static piece of text. Static text objects support the use of [Environment Variables](environment-variables). For instance, you can use %USERNAME% to return the username of the user currently logged on the the computer.
+This represents a single text value which can be manually entered at design time. For example, a username, a path to a file, a website address - any static piece of text. Static text objects support the use of [environment variables](http://en.wikipedia.org/wiki/Environment_variable#System_path_variables). For instance, you can use %USERNAME% to return the username of the user currently logged on the the computer.
 
 **Available Options**
 When using static objects the Edit button will launch a text editor window which will allow you to edit the value of the setting. You can optionally set the language used for the text editor for syntax highlighting, this will default to C#. The static object will allow the Use Razor Engine setting to dynamically calculate the value to use.
@@ -32,7 +32,7 @@ Static objects are calculated with the following process:-
 2. If Use Razor Engine is enabled the value will be ran through the Razor engine and environmental variables will be expanded, the result of which is used as the value
 
 ### File Data Type
-A file object can be either a full or relative path of a file, for example C:\Exports\Invoices.xml or customers.xml. If you need to enter a directory, use the URI object instead. You can use the browse button to locate the required file on your system, instead of entering the full path manually. File objects support the use of [Environment Variables](environment-variables). For instance, you can use %AppData% to return the path of the AppData folder on your computer.
+A file object can be either a full or relative path of a file, for example C:\Exports\Invoices.xml or customers.xml. If you need to enter a directory, use the URI object instead. You can use the browse button to locate the required file on your system, instead of entering the full path manually. File objects support the use of [environment variables](http://en.wikipedia.org/wiki/Environment_variable#System_path_variables). For instance, you can use %AppData% to return the path of the AppData folder on your computer.
 
 **Absolute Paths**
 You can either use a full or relative path for file object types. If you use a use a relative path Zynk will use the base directory of the application data path using the current Workflow name. For example:
@@ -105,7 +105,7 @@ This will take the output of the previous and use it as the value for this prope
 
 ## Options
 ### Use Razor Engine
-The "Use Razor Engine" option pre-processes the field value through the built-in razor engine allowing you to dynamically create values at run time. An example of this would be where you need to create a filename on the fly at runtime based on the output of a variable. An example of this would be where you are processing a list of orders in a database and need to generate a collection of files based on the order number. For example adding `@(Context.Current["OrderId"]).xml` would result in the system creating a file named 100234.xml. Razor supports the use of [Environment Variables](environment-variables). For instance, you can use %AppData% to return the path of the AppData folder on your computer.
+The "Use Razor Engine" option pre-processes the field value through the built-in razor engine allowing you to dynamically create values at run time. An example of this would be where you need to create a filename on the fly at runtime based on the output of a variable. An example of this would be where you are processing a list of orders in a database and need to generate a collection of files based on the order number. For example adding `@(Context.Current["OrderId"]).xml` would result in the system creating a file named 100234.xml. Razor supports the use of [environment variables](http://en.wikipedia.org/wiki/Environment_variable#System_path_variables). For instance, you can use %AppData% to return the path of the AppData folder on your computer.
 
 ### Read Contents of File
 The "Read Contents of File" option will read a file name or data from a URI location e.g. Website, FTP File and use that data as the value. You can also use the Razor Engine to perform any additional modifications to the data.

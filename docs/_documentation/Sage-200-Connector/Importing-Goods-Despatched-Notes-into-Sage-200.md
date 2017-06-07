@@ -3,7 +3,7 @@ slug: importing-goods-despatched-notes-into-sage-200
 redirect_from: "/article/437-importing-goods-despatched-notes-into-sage-200"
 title: Importing Goods Despatched Notes into Sage 200
 ---
-This task will import new despatch notes in Zynk XML format into Sage 200 as goods despatched notes. To amend existing despatches, use the [Update Sales Orders](update-sales-orders) task instead.
+This task will import new despatch notes in Zynk XML format into Sage 200 as goods despatched notes. To amend existing despatches, use the [Update Sales Orders](updating-sales-orders-in-sage-200) task instead.
 
 ## Settings
 ### Sage 200 Connection

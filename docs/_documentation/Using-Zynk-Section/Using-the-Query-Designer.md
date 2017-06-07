@@ -36,4 +36,4 @@ The Query Designer is available on the following tasks:
  * [ODBC Select](odbc-select)
  * [OLEDB Repeater](oledb-repeater)
  * [OLEDB Select](oledb-select)
- * [Sage 200 Export Query (V2)](sage-200-export-query-(v2))
+ * [Sage 200 Export Query (V2)](exporting-custom-data-from-sage-200-v2)

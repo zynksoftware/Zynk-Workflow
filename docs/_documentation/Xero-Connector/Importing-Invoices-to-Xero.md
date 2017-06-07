@@ -37,7 +37,7 @@ See [Common Task Settings](common-task-settings)
 ## Examples
 
 
-A sample input file with the minimum amount of information required to create an invoice in Xero is shown below. More detailed information about each field can be found in our [API Documentation](http://api.zynk.com/xero-xml/upsert-invoices).
+A sample input file with the minimum amount of information required to create an invoice in Xero is shown below. More detailed information about each field can be found in our [API Documentation](xero-invoice-xml).
 
 ```xml
 <?xml version="1.0"?>

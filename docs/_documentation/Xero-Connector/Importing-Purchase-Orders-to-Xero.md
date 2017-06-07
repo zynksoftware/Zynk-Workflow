@@ -37,7 +37,7 @@ See [Common Task Settings](common-task-settings)
 ## Examples
 
 
-A sample input file containing a purchase order is shown below. More detailed information about each field can be found in our  	[API Documentation](http://api.zynk.com/xero-xml/upsert-purchase-orders).
+A sample input file containing a purchase order is shown below. More detailed information about each field can be found in our  	[API Documentation](xero-purchase-order-xml).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

@@ -9,7 +9,7 @@ This task will update or insert multiple product records and their standard pric
 
 ### Connection 
 _Required_  
-The Salesforce (Bulk) connection to use, see [Connecting to Salesforce (Bulk)](connecting-to-salesforce-(bulk))
+The Salesforce (Bulk) connection to use, see [Connecting to Salesforce (Bulk)](connecting-to-salesforce-bulk)
 
 ### Input File 
 _Required_  

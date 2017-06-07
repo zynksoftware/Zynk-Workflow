@@ -17,7 +17,7 @@ Each of the tasks require a connection to Sage 200, for more information on sett
  * [Exporting Price Bands from Sage 200](exporting-price-bands-from-sage-200)
  * [Exporting Purchase Orders from Sage 200](exporting-purchase-orders-from-sage-200)
  * [Exporting Purchase Return Notes from Sage 200](exporting-purchase-return-notes-from-sage-200)
- * [Exporting Custom Data from Sage 200 (V2)](exporting-custom-data-from-sage-200-(v2))
+ * [Exporting Custom Data from Sage 200 (V2)](exporting-custom-data-from-sage-200-v2)
  * [Exporting Sales Orders from Sage 200](exporting-sales-orders-from-sage-200)
  * [Exporting Stock Categories from Sage 200](exporting-stock-categories-from-sage-200)
  * [Exporting Stock Inventory from Sage 200](exporting-stock-inventory-from-sage-200)

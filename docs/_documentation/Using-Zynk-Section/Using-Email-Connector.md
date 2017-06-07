@@ -9,7 +9,7 @@ You can download a copy of the workflow from our             [GitHub site](http
 
 The workflow consists of the following tasks. Note that we don't provide details for all of the task settings here, only            the relevant ones. Please see the individual task pages for full details of all the settings.
 
-## [Import Sales Orders into Sage](import-sales-orders-into-sage)
+## [Import Sales Orders into Sage](importing-sales-orders-into-sage-50-uk)
 This is the task that creates the sales orders in Sage. Note that we don't go into any detail about where the orders have            come from as this is not relevant to the tutorial. In practice it doesn't matter what the source of the orders            is, as they will always need to be stored in the standard Zynk XML format in order to be able to import them            into Sage. We are only interested in the success file from this task, as this will contain the email addresses            of the customers whose orders have been successfully imported into Sage.
 
 ### Success File

@@ -22,11 +22,11 @@ Each of the tasks require a connection to Salesforce, for more information on se
 - [Deleting Records in Salesforce](deleting-records-in-salesforce)
 - [Querying Records in Salesforce](querying-records-in-salesforce)
 - [Updating Records in Salesforce](updating-records-in-salesforce)
-- [Uploading Records to Salesforce](uploading-records-to-salesforce)
+- [Uploading Records to Salesforce](importing-records-to-salesforce)
 - [Bulk Salesforce Operation](bulk-salesforce-operation)
-- [Uploading Prices to Salesforce (Bulk)](uploading-prices-to-salesforce-bulk)
-- [Uploading Products to Salesforce (Bulk)](uploading-products-to-salesforce-bulk)
-- [Uploading Records to Salesforce (Bulk)](uploading-records-to-salesforce-bulk)
+- [Uploading Prices to Salesforce (Bulk)](importing-prices-to-salesforce-bulk) 
+- [Uploading Products to Salesforce (Bulk)](importing-products-to-salesforce-bulk)
+- [Uploading Records to Salesforce (Bulk)](importing-records-to-salesforce-bulk)
 
 
 ## Articles and Sample Files

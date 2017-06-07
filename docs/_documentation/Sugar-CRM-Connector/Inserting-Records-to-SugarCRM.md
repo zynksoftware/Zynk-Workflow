@@ -9,7 +9,7 @@ This task will insert a new record or update an existing record in Sugar CRM. An
 
 
 
-The task supports setting relationships to existing records in Sugar, using the [link field](sugarcrm-link-fields) name. The record to link to must already exist in Sugar, the task will not create it if it does not exist. Any field can be used to look up the related record in Sugar, such as the ID or Name, and the task will use the first matching record found.
+The task supports setting relationships to existing records in Sugar, using the [link field](link-fields) name. The record to link to must already exist in Sugar, the task will not create it if it does not exist. Any field can be used to look up the related record in Sugar, such as the ID or Name, and the task will use the first matching record found.
 
 
 ## Settings
@@ -85,7 +85,7 @@ A sample success file is shown below, containing the ID of the newly created acc
 ```
 
 
-The sample input file shown below shows the creation of an opportunity with a related account. In this case the [link field](sugarcrm-link-fields) "accounts" is set to the account with ID 5f87cba4-a90e-3b2a-57ab-5305f2776fea. Note that the XPath Query setting would need to be set to `Opportunities/Opportunity` to access the records contained in this file.
+The sample input file shown below shows the creation of an opportunity with a related account. In this case the [link field](link-fields) "accounts" is set to the account with ID 5f87cba4-a90e-3b2a-57ab-5305f2776fea. Note that the XPath Query setting would need to be set to `Opportunities/Opportunity` to access the records contained in this file.
 
 
 ```xml

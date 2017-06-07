@@ -3,7 +3,7 @@ slug: accessing-variables-in-tasks
 redirect_from: "/article/50-accessing-variables-in-tasks"
 title: Accessing Variables in Tasks
 ---
-Variables can be used as the value for any task setting which accepts a [Zynk Object](zynk-object). Variables can also be accessed in templates. How to access the variable depends on the type of the variable:
+Variables can be used as the value for any task setting which accepts a [Zynk Object](zynk-objects). Variables can also be accessed in templates. How to access the variable depends on the type of the variable:
 
 ## Accessing System, Global and Workflow Variables
 You can use system, global and workflow variables for task settings using the 'Use a variable from the list below' option on the Zynk Object Editor. Simply select the name of the variable from the list provided, and it's value will be used as the value for the setting.

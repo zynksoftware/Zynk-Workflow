@@ -5,7 +5,7 @@ title: Merging XML Files
 ---
 The XML Merge task can be used to combine multiple XML files together into a single file for batch processing.
 
-A common usage scenario is in FTP based integrations where orders are written to individual files. These could first be downloaded using the [FTP Repeater]] and [[FTP Download](ftp-repeater]]-and-[[ftp-download) tasks, and then using XML Merge you can create a single file containing all the orders for use within your workflow.
+A common usage scenario is in FTP based integrations where orders are written to individual files. These could first be downloaded using the [FTP Repeater](ftp-repeater) and [FTP Download](downloading-files-with-ftp) tasks, and then using XML Merge you can create a single file containing all the orders for use within your workflow.
 
 ## Settings
 ### Input Files

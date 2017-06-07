@@ -15,7 +15,7 @@ The following system variables are available in Zynk.
  * CurrentLongDate e.g. Monday, 14 February, 2011
 
 ## Accessing System Variables
-The value of a system variable can be used any task setting which accepts a [Zynk Object](zynk-object). To use a variable for a task setting, click on the '...' button at the edge of the field.
+The value of a system variable can be used any task setting which accepts a [Zynk Object](zynk-objects). To use a variable for a task setting, click on the '...' button at the edge of the field.
 
 1. Select 'Variable' from the Data Type drop down menu.
 2. Select the variable you would like to use from the list. System variables are listed under the `-- System Variables --` section.

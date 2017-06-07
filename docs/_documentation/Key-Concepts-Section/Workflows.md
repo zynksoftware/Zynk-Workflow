@@ -81,13 +81,13 @@ Two of the most common use cases for workflows are to download data from an e-co
 
 ### Download from website to Sage
 
- * Download the required data from the website using the appropriate task. For example, this may be the [Amazon Order Download](amazon-order-download) task or the [Magento Order Download](magento-order-download) task.
+ * Download the required data from the website using the appropriate task. For example, this may be the [Amazon Order Download](amazon-order-download) task or the [Magento Order Download](downloading-orders-from-magento) task.
  * Transform the data to the Zynk format. This can be done using the [Auto Mapper](auto-mapper) task or an [XSLT Transform](xslt-transform).
- * Import the data into Sage using the appropriate task. For example, this may be the [Sage 50 Import Sales Orders](sage-50-import-sales-orders) task.
+ * Import the data into Sage using the appropriate task. For example, this may be the [Sage 50 Import Sales Orders](importing-sales-orders-into-sage-50-uk) task.
 
 ### Upload from Sage to website
 
- * Export the required data from Sage using the appropriate task. For example, this may be the [Sage 50 Export Stock Records](sage-50-export-stock-records) task.
- * Transform the data to the website's format. This can be done using the [Auto Mapper]] task or an [[XSLT Transform](auto-mapper]]-task-or-an [[xslt-transform).
- * Upload the data to the website using the appropriate task. For example, this may be the [Magento Upload Inventory](magento-upload-inventory) task.
+ * Export the required data from Sage using the appropriate task. For example, this may be the [Sage 50 Export Stock Records](exporting-stock-records-from-sage-50-uk) task.
+ * Transform the data to the website's format. This can be done using the [Auto Mapper](auto-mapper) task or an [XSLT Transform](xslt-transform).
+ * Upload the data to the website using the appropriate task. For example, this may be the [Magento Upload Inventory](uploading-inventory-to-magento) task.
 

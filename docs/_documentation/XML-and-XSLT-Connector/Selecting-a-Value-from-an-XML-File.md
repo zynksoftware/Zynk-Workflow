@@ -8,7 +8,7 @@ This task will select a value from an XML file and store it a workflow variable.
 ## Settings
 ### Variable Name
 _Optional_  
-The name of the workflow variable to store the selected XML value in. If no variable is specified, the selected value will be made available to the next task in the workflow, via the 'Output from the previous task' option on any of the task's settings which accept a [Zynk Object](zynk-object). 
+The name of the workflow variable to store the selected XML value in. If no variable is specified, the selected value will be made available to the next task in the workflow, via the 'Output from the previous task' option on any of the task's settings which accept a [Zynk Object](zynk-objects). 
 
 ### XML Input
 _Required_  

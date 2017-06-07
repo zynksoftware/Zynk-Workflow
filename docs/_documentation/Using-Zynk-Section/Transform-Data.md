@@ -9,15 +9,15 @@ XSL stands for eXtensible Stylesheet Language and XSLT stands for XSL Transforma
 
 Options for transforming data in Zynk include:-
 
- * **CSV to XML** - Use the [CSV to XML](csv-to-xml) task in the CSV connector to do this
- * **XML to CSV** - Use the [XML to CSV]] task in the XML connector, or an [[XSL Transform](xml-to-csv]]-task-in-the-xml-connector,-or-an [[xsl-transform) or a Razor Template
- * **XML to XML** - Use the [Auto Mapper]] task or an [[XSL Transform](auto-mapper]]-task-or-an [[xsl-transform) or a Razor Template
- * **XML to JSON** - Use the [XML to JSON](xml-to-json) task in the JSON Library
+ * **CSV to XML** - Use the [CSV to XML](converting-csv-to-xml) task in the CSV connector to do this
+ * **XML to CSV** - Use the [XML to CSV](xml-to-csv) task in the XML connector, or an [XSLT Transform](xslt-transform) or a Razor Template
+ * **XML to XML** - Use the [Auto Mapper](auto-mapper) task or an [[XSLT Transform](xslt-transform) or a Razor Template
+ * **XML to JSON** - Use the [XML to JSON](converting-xml-to-json) task in the JSON Library
  * **XML to HTML** - Use the [XSLT Transform](xslt-transform) task or a Razor Template
  * **XML to Text** - Use the [XSLT Transform](xslt-transform) task or a Razor Template
- * **HTML to PDF** - Use the [HTML to PDF](html-to-pdf) task in the PDF connector
- * **Word to PDF** - Use the [Word to PDF](word-to-pdf) task in the PDF connector
- * **Excel to PDF** - Use the [Excel to PDF](excel-to-pdf) task in the PDF connector
+ * **HTML to PDF** - Use the [HTML to PDF](converting-html-files-to-pdf-documents) task in the PDF connector
+ * **Word to PDF** - Use the [Word to PDF](converting-word-files-to-pdf-documents) task in the PDF connector
+ * **Excel to PDF** - Use the [Excel to PDF](converting-excel-files-to-pdf-documents) task in the PDF connector
  * **JSON to XML** - Use the [JSON to XML](json-to-xml) task in the JSON connector
  * **Fixed Length Text to XML** - Use the [File Helpers](file-helpers) connector
  * **Delimited Text to XML** - Use the [File Helpers](file-helpers) connector

@@ -192,14 +192,14 @@ Namespace: urn:MappingFunctions
 Available Since: Zynk Workflow 2.1.8
 
 #### Map To
-Returns the 'to' value from the specified [Mapping](mapping), based on the specified 'from' value.  
+Returns the 'to' value from the specified [Mapping](mappings), based on the specified 'from' value.  
 `MapTo(string mappingName, string from)`
 
  * mappingName - The name of the mapping to use.
  * from - The value to be mapped from
 
 #### Map From
-Returns the 'from' value from the specified [Mapping](mapping), based on the specified 'to' value.  
+Returns the 'from' value from the specified [Mapping](mappings), based on the specified 'to' value.  
 `MapFrom(string mappingName, string to)`
 
  * mappingName - The name of the mapping to use.

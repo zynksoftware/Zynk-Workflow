@@ -8,7 +8,7 @@ This task will export data from Sage 200 in XML format, as specified by an SQL Q
 The table and column names that can be used in the Query are determined by the Sage 200 database. They can be viewed using SQL Server Management Studio.
 
 **Note** - The information below applies to version 1 of the task. Workflows created using Zynk 2.1.0 or above will contain version 2 of this task, please see 
-[Exporting Custom Data from Sage 200 (V2)](exporting-custom-data-from-sage-200-(v2)) instead.
+[Exporting Custom Data from Sage 200 (V2)](exporting-custom-data-from-sage-200-v2) instead.
 
 ## Settings
 ### Sage 200 Connection

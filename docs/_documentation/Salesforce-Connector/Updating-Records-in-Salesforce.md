@@ -3,7 +3,7 @@ slug: updating-records-in-salesforce
 redirect_from: "/article/294-updating-records-in-salesforce"
 title: Updating Records in Salesforce
 ---
-This task will update an existing record or existing fields on a record, and requires the Salesforce record ID to update the record. It will only update a single record, if you have multiple records to update, you can use this task as a sub-task of an [XML Repeater]] task, or use the [[Bulk Salesforce Operation](xml-repeater]]-task,-or-use-the [[bulk-salesforce-operation) task instead.
+This task will update an existing record or existing fields on a record, and requires the Salesforce record ID to update the record. It will only update a single record, if you have multiple records to update, you can use this task as a sub-task of an [XML Repeater](xml-repeater) task, or use the [Bulk Salesforce Operation](bulk-salesforce-operation) task instead.
 
 ## Settings
 

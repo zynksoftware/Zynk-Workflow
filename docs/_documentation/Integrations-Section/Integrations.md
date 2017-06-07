@@ -1,5 +1,6 @@
 ---
 slug: integrations
+redirect_from: "/category/446-integrations"
 title: Integrations
 ---
 To help you getting started with using Zynk we have a series of example workflows covering common applications we integrate with.

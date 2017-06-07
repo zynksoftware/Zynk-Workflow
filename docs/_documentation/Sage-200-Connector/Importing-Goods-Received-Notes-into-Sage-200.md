@@ -3,7 +3,7 @@ slug: importing-goods-received-notes-into-sage-200
 redirect_from: "/article/438-import-goods-received-note"
 title: Importing Goods Received Notes into Sage 200
 ---
-This task will import new goods received notes in Zynk XML format into Sage 200. This task only supports receiving goods on purchase orders, to receive goods on a sales return, use the [Update Purchase Orders](update-purchase-orders) task instead.
+This task will import new goods received notes in Zynk XML format into Sage 200. This task only supports receiving goods on purchase orders, to receive goods on a sales return, use the [Update Purchase Orders](updating-purchase-orders-in-sage-200) task instead. 
 
 ## Settings
 ### Sage 200 Connection

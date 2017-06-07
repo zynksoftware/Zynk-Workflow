@@ -16,7 +16,7 @@ New global variables can be created by clicking the 'Global Variables' button in
 4. When you are finished adding global variables, click the OK button.
 
 ## Accessing Global Variables
-The value of a global variable can be used any task setting which accepts a [Zynk Object](zynk-object). To use a variable for a task setting, click on the '...' button at the edge of the field. You will then see the following window.
+The value of a global variable can be used any task setting which accepts a [Zynk Object](zynk-objects). To use a variable for a task setting, click on the '...' button at the edge of the field. You will then see the following window.
 
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b09a60c6979143615648d2/file-75Xmv3BIiP.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b09a60c6979143615648d2/file-75Xmv3BIiP.png)
 

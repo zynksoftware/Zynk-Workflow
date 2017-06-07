@@ -37,7 +37,7 @@ See [Common Task Settings](common-task-settings)
 ## Examples
 
 
-A sample input file is shown below. More detailed information about each field can be found in our  		[API Documentation](http://api.zynk.com/xero-xml/upsert-items).
+A sample input file is shown below. More detailed information about each field can be found in our [API Documentation](xero-item-xml).
 
 ```xml
 <?xml version="1.0"?>

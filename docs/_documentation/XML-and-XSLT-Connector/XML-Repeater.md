@@ -81,4 +81,4 @@ Note, we do not currently support reading child nodes, in this example you will 
 ```
 
 ## Examples
-For usage of the XML Repeater task please see our [XML / XSLT Examples](xml-/-xslt-examples) tutorial.
+For usage of the XML Repeater task please see our [XML / XSLT Examples](create-an-xslt-file) tutorial. 

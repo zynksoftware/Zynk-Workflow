@@ -3,14 +3,14 @@ slug: importing-records-to-salesforce-bulk
 redirect_from: "/article/297-uploading-records-to-salesforce-bulk"
 title: Importing Records to Salesforce (Bulk)
 ---
-This task will update or insert multiple records in Salesforce. Existing records are matched with those provided in the input file, based on the Salesforce field specified in the Salesforce Key Field setting, and the field from the input file specified by the XML Key Field setting. Unlike the [Importing Records to Salesforce]] and [[Bulk Salesforce Operation](importing-records-to-salesforce]]-and [[bulk-salesforce-operation) task, the Salesforce field does not need to be of type External Id. If a match is found the existing record will be updated, or if no match is found a new record will be inserted.
+This task will update or insert multiple records in Salesforce. Existing records are matched with those provided in the input file, based on the Salesforce field specified in the Salesforce Key Field setting, and the field from the input file specified by the XML Key Field setting. Unlike the [Importing Records to Salesforce](importing-records-to-salesforce) and [Bulk Salesforce Operation](bulk-salesforce-operation) task, the Salesforce field does not need to be of type External Id. If a match is found the existing record will be updated, or if no match is found a new record will be inserted.
 
 
 ## Settings
 
 ### Connection 
 _Required_  
-The Salesforce (Bulk) connection to use, see [Connecting to Salesforce (Bulk)](connecting-to-salesforce-(bulk))
+The Salesforce (Bulk) connection to use, see [Connecting to Salesforce (Bulk)](connecting-to-salesforce-bulk)
 
 ### Salesforce Key Field
 _Required_  

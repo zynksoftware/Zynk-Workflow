@@ -5,7 +5,7 @@ title: Connecting to QuickBooks Online
 ---
 
 
-All of the tasks in the Quickbooks Online connector require a connection to a Quickbooks Online company, so you will need to create a [Connection](49-connections) with the type 'Quickbooks Online'. See [Managing Connections](managing-connectionss) for instructions on creating a new connection. You will see a screen like the one below, requesting your Quickbooks Online details:
+All of the tasks in the Quickbooks Online connector require a connection to a Quickbooks Online company, so you will need to create a connection with the type 'Quickbooks Online'. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your Quickbooks Online details:
 
 
 

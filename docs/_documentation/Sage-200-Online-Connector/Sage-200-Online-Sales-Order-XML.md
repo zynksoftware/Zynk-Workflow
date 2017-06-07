@@ -308,7 +308,7 @@ The date and time this entity was last updated (UTC).
 Related information linked to sales orders are also included in the downloaded XML, these can also be used to set certain fields on sales order uploads using lookups rather than needing to know the internal id of the related record.
 
 ### customer
-_Dependant (see [customer_id](customer_id))_  
+_Dependant (see [customer_id](#customer_id))_  
 The sales orders customer. On a download all the related information of the customer will be included in the XML, see [Sage 200 Online Customer XML](sage-200-online-customer-xml). On an upload you can set the reference of the customer to use for the sales order and Zynk will lookup the correct internal id from Sage.
 
 #### Export example showing related information

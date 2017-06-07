@@ -3,7 +3,7 @@ slug: connecting-to-sage-50-us
 redirect_from: "/article/680-connecting-to-sage-50-us"
 title: Connecting to Sage 50 US
 ---
-All of the tasks in the Sage 50 US connector require a connection to Sage 50 US, so you will need to create a  [Connection]] with the type 'Sage 50 US'. See [[Managing Connections](connection]]-with-the-type-'sage-50-us'.-see-[[managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your Sage 50 US details:
+All of the tasks in the Sage 50 US connector require a connection to Sage 50 US, so you will need to create a  connection with the type 'Sage 50 US'. See [Connection Manager](connection-manager) for instructions on creating a new connection. You will see a screen like the one below, requesting your Sage 50 US details:
 
 ![Sage 50 US Connection](http://www.zynk.com/images/v2/sage_50_us_connection.png)
 

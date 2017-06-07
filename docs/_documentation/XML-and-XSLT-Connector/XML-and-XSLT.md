@@ -7,7 +7,7 @@ Extensible Markup Language (XML) is a markup language which is a commonly used f
 
 More information on XML and XSLT can be found on the [W3C website](http://www.w3.org/standards/xml/).
 
-Many of the tasks in Zynk accept and return XML files in order to integrate data between systems. Zynk provides the following set of tasks to enable you to process these files. There is also an [Auto Mapper]] task in [[Zynk Core](auto-mapper]]-task-in-[[zynk-core) which uses built in XSLT files to provide instant mappings for a number of connectors.
+Many of the tasks in Zynk accept and return XML files in order to integrate data between systems. Zynk provides the following set of tasks to enable you to process these files. There is also an [Auto Mapper](auto-mapper) task in [Zynk Core](zynk-core) which uses built in XSLT files to provide instant mappings for a number of connectors.
 
 ## Tasks
 - [If XML Contains](if-xml-contains)

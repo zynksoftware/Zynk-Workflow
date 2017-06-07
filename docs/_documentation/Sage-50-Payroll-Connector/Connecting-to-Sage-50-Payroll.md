@@ -3,7 +3,7 @@ slug: connecting-to-sage-50-payroll
 redirect_from: "/article/672-connecting-to-sage-payroll"
 title: Connecting to Sage 50 Payroll
 ---
-All of the tasks in the [Sage 50 Payroll]] connector require a connection to Sage 50 Payroll. To find out more, see [[Managing Connections](sage-50-payroll]] connector-require-a-connection-to-sage-50-payroll.-to-find-out-more, see-[[managing-connections). 
+All of the tasks in the [Sage 50 Payroll](sage-50-payroll) connector require a connection to Sage 50 Payroll. To find out more, see [Connection Manager](connection-manager). 
 
 You must specify the Sage 50 Payroll Connection you would like to use on each of the Sage 50 Payroll tasks. To specify the connection, select the appropriate entry from the dropdown as seen in the screenshot below. Alternatively, once you have set up the Sage 50 Payroll connection that you would like to use, you can make this the default for any tasks which require this connection type, which means that you don't need to select the connection for every new task that you add to the Workflow.
 
@@ -36,14 +36,14 @@ _Optional_
 The password associated with the Sage 50 Payroll user.
 
 ## Task Links
-- [Introduction to the Sage 50 Payroll Connector|Sage-50-Payroll](introduction-to-the-sage-50-payroll-connector|sage-50-payroll)
+- [Introduction to the Sage 50 Payroll Connector](sage-50-payroll)
 - [Connecting to Sage 50 Payroll](connecting-to-sage-50-payroll)
 - [Importing Employee Absences Into Sage 50 Payroll](importing-employee-absences-into-sage-50-payroll)
 - [Importing Employee Deductions Into Sage 50 Payroll](importing-employee-deductions-into-sage-50-payroll)
 - [Importing Employee Payments Into Sage 50 Payroll](importing-employee-payments-into-sage-50-payroll)
 
 ## XML Links
-- [Introduction to the Sage 50 Payroll XML|Sage-50-Payroll-XML](introduction-to-the-sage-50-payroll-xml|sage-50-payroll-xml)
+- [Introduction to the Sage 50 Payroll XML](sage-50-payroll-xml)
 - [Sage 50 Payroll Employee Absences XML](sage-50-payroll-employee-absences-xml)
 - [Sage 50 Payroll Employee Deductions XML](sage-50-payroll-employee-deductions-xml)
 - [Sage 50 Payroll Employee Payments XML](sage-50-payroll-employee-payments-xml)

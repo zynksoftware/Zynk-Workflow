@@ -11,7 +11,7 @@ This task will update, insert or delete multiple records in Salesforce at a time
 ## Settings
 ### Connection
 _Required_  
-The Salesforce Connection to use for the bulk operation. See the [Connecting to Salesforce (Bulk)](connecting-to-salesforce-(bulk)) article if you require more information on how to create/manage connections.
+The Salesforce Connection to use for the bulk operation. See the [Connecting to Salesforce (Bulk)](connecting-to-salesforce-bulk) article if you require more information on how to create/manage connections.
 
 ### Content Type
 _Optional_  

@@ -37,7 +37,7 @@ See [Common Task Settings](common-task-settings)
 ## Examples
 
 
-A sample input file containing a contact is shown below. More detailed information about each field can be found in our [API Documentation](http://api.zynk.com/xero-xml/upsert-contacts).
+A sample input file containing a contact is shown below. More detailed information about each field can be found in our [API Documentation](xero-contact-xml).
 
 
 ```xml
