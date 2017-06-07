@@ -3,7 +3,9 @@ slug: rest
 redirect_from: "/article/333-introduction-to-the-web-connector"
 title: HTTP
 ---
-The Web connector allows you to do everything from fetching a web page, posting a web form, performing REST API calls, downloading files from websites and much more. It supports GET, POST, PUT, PATCH and DELETE HTTP calls.
+The Web connector allows you to do everything from fetching a web page, posting a web form, performing REST API calls, downloading files from websites and much more.
+
+This task supports the following verbs GET, POST, PUT, PATCH and DELETE.
 
 ## Tasks
  * [HTTP Task](http-task)
