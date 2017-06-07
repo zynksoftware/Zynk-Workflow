@@ -18,4 +18,4 @@ Each of the tasks use an FTP connection, for more information on setting up and 
 ## Articles and Sample Files
 There is a Workflow Template and Article available on the links below:
  * [Workflow Template](https://github.com/zynksoftware/samples/tree/master/Workflow%20Samples)
- * [Article](464-ftp-to-sage-50-integration)
+ * [Article](ftp-to-sage-50-integration)

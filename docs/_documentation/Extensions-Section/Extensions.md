@@ -14,7 +14,7 @@ To open choose Extensions -> Extensions Manger from the main toolbar.
  * [Sugar CRM Field Lister](sugar-crm-field-lister)
  * [XSLT Builder](xslt-builder)
  * [Zip Search](zip-search)
- * [Zynk Log Manager (ZLM)](zynk-log-manager-(zlm))
+ * [Zynk Log Manager (ZLM)](zynk-log-manager-zlm)
 
  ### Additions
 

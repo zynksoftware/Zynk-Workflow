@@ -20,4 +20,4 @@ You will need to add your SKU codes to eBay to make use of this connector. You c
 There is a Workflow Template and Article available on the links below:
 
 * [Workflow Template](https://github.com/zynksoftware/samples/tree/master/Workflow%20Samples)
-* [Article](457-ebay-to-sage-to-uk-integration)
+* [Article](ebay-to-sage-to-uk-integration)

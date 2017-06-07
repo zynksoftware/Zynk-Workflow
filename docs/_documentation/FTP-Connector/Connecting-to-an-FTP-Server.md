@@ -4,7 +4,7 @@ redirect_from: "/article/603-connecting-to-an-ftp-server"
 title: Connecting to an FTP Server
 ---
 ## Connecting to a FTP Server
-All of the tasks in the [FTP]] Connector require an FTP connection, so you will need to create a connection with the type 'FTP'. See [[Managing Connections](ftp]]-connector-require-an-ftp-connection,-so-you-will-need-to-create-a-connection-with-the-type-'ftp'.-see [[managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your FTP server details:
+All of the tasks in the [FTP]] Connector require an FTP connection, so you will need to create a connection with the type 'FTP'. See [Connection Manager](connection-manager) for instructions on creating a new connection. You will see a screen like the one below, requesting your FTP server details:
 
 [![FTP Connection](http://www.zynk.com/images/v2/ftp_connection.png)](http://www.zynk.com/images/v2/ftp_connection.png)
 

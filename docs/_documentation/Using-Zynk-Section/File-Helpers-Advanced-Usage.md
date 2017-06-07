@@ -1,5 +1,5 @@
 ---
-slug: file-helpers---advanced-usage
+slug: file-helpers-advanced-usage
 redirect_from: "/article/632-file-helpers-advanced-usage"
 title: File Helpers   Advanced Usage
 ---

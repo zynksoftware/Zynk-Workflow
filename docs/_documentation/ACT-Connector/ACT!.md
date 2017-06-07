@@ -20,7 +20,7 @@ Each of the tasks in this library require a connection to ACT!, for more informa
  * Swiftpage ACT! 2016
 
 ## Links
-- [Introduction to the ACT! Connector|ACT!](introduction-to-the-act-connector)
+- [Introduction to the ACT! Connector](act)
 - [Connecting to ACT!](connecting-to-act)
 - [Importing Companies into ACT!](importing-companies-into-act)
 - [Exporting Companies from ACT!](exporting-companies-from-act)

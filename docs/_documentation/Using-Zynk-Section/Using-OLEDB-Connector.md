@@ -23,7 +23,7 @@ The OLEDB Repeater task is used to run a select query and loop through the res
 `SELECT Suppliers.SupplierID, Suppliers.CompanyName, Count(ProductID) As ProductCount FROM Suppliers JOIN Products ON Suppliers.SupplierID = Products.SupplierID GROUP BY Suppliers.SupplierID, Suppliers.CompanyName`
  * **Connection String** - Enter your OLEDB connection string here.
 
-The sub-task [Log Info Message](331-log-info-message) has the following setting:
+The sub-task [Log Info Message](log-info-message) has the following setting:
 
  * **Input** - This is the message to log, and is set to `@(Context.Current["CompanyName"]) has @(Context.Current["ProductCount"]) products(s).`.                The razor engine is used to get the value of the CompanyName and ProductCount context variables from the repeater task.
 

@@ -10,7 +10,7 @@ During the migration you can access the existing user documentation at http://wo
 ### API Documentation
  * [Sage 50 UK XML](sage-50-uk-xml)
  * [Sage 200 XML](sage-200-xml)
- * [Act! XML](act!-xml)
+ * [Act! XML](act-xml)
  * [Sage 50 Payroll XML](sage-50-payroll-xml)
  * [Sage One XML](sage-one-xml) 
  * [BXP XML](bxp-xml)

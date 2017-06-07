@@ -24,5 +24,5 @@ Before starting an integration with Amazon, it is important that you are able to
 ## Articles and Sample Files
 The following articles are available on the links below:
 
-* [Amazon to Sage Integration](458-amazon-to-sage-integration)
-* [Amazon Marketplace - Submit Feeds](640-amazon-submit-feeds)
+* [Amazon to Sage Integration](amazon-to-sage-integration)
+* [Amazon Marketplace - Submit Feeds](amazon-submit-feeds)

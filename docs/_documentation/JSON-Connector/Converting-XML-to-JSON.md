@@ -15,7 +15,7 @@ Set to true to ignore the root element of the XML file when converting to JSON.
 _Required_  
 An absolute or relative file path on the local computer or network to the file containing the JSON to convert. 
 
-See the [Zynk Objects article](zynk-objects-article) if you require more information on how the Zynk Object file value works. 
+See the [Zynk Objects](zynk-objects) if you require more information on how the Zynk Object file value works. 
 
 This will be defaulted to the 'Output from the previous task'
 
@@ -31,7 +31,7 @@ This will be defaulted to `xml_to_json.json` in the current working directory.
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-You can find an example of how to use this task in the [Converting Between JSON and XML](709-json-and-xml-integration) article.
+You can find an example of how to use this task in the [Converting Between JSON and XML](json-and-xml-integration) article.
 
 Sample input file:
 

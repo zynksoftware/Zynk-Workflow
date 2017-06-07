@@ -7,7 +7,7 @@ Mappings provide a simple way to handle cases where a field in the two systems y
 
 You can access mappings by clicking the 'Mappings' button on the main toolbar. See below for details on how to create and manage mappings in Zynk.
 
-Once a mapping has been created, it can be accessed within [XSLT Transform]] and [[Auto Mapper]] using the `MapTo` and `MapFrom` functions. Please see the 'Extensions' section on [[XSLT Transform](xslt-transform]]-and-[[auto-mapper]]-using-the-`mapto`-and-`mapfrom`-functions.-please-see-the-'extensions'-section-on-[[xslt-transform) for details of how to use the two functions.
+Once a mapping has been created, it can be accessed within [XSLT Transform](xslt-transform) and [Auto Mapper](auto-mapper) using the `MapTo` and `MapFrom` functions. Please see the 'Extensions' section on [XSLT Transform](xslt-transform) for details of how to use the two functions.
 
 [![](http://www.zynk.com/images/v2/mappings_manager.png)](http://www.zynk.com/images/v2/mappings_manager.png)
 

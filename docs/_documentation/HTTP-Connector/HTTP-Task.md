@@ -72,4 +72,4 @@ See [Common Task Settings](common-task-settings)
 2. Set the Method to POST
 3. Set the Input File to c:\data.xml where the file contains the data to be posted
 
-You can find further examples of how to use this task in the [Website Script Based Integration](462-website-script-based-integration) article.
+You can find further examples of how to use this task in the [Website Script Based Integration](website-script-based-integration) article.

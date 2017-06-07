@@ -5,7 +5,7 @@ title: FTP to Sage 50 Integration
 ---
  This tutorial details the basic principles when dealing with an integration between an **FTP server** and **Sage**. Thisworkflow will perform two basic tasks, which is the downloading orders from the FTP in to Sage and then passing product informationback up to the FTP. We assume that the orders will be saved in a '/download' folder on the FTP, and will be stored in the [Sage 50 UK Sales Order XML](sage-50-uk-sales-order-xml) format.        
 
-You can download a copy of the workflow from             [here](https://github.com/zynksoftware/samples/tree/master/Workflow%20Samples). You            will need to enter your FTP server, username and password into the pre-configured [workflow variables](700-configure-workflow-variables)            to use this workflow.
+You can download a copy of the workflow from             [here](https://github.com/zynksoftware/samples/tree/master/Workflow%20Samples). You            will need to enter your FTP server, username and password into the pre-configured [workflow variables](configure-workflow-variables)            to use this workflow.
 
 ## Download Orders From the FTP - Phase 1
 This part of the process will download all files from a 'download' folder on the FTP, and import the orders contained within            them into Sage 50. If the import was successful, the file on the FTP will be moved to a 'processed' folder, to            prevent the same orders from downloading again the next time the workflow runs. The process consists of the following            tasks:

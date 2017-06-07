@@ -3,11 +3,9 @@ slug: importing-records-to-salesforce
 redirect_from: "/article/295-uploading-records-to-salesforce"
 title: Importing Records to Salesforce
 ---
-This task will update existing records or insert new records, based on whether the record already exists in Salesforce. Existing records are found based on a particular field of type External Id, as specified in the task's settings. If there is no External Id field to use lookup existing records for the given object type, you can use the [Importing Records to Salesforce (Bulk)]] task as an alternative. This task will only upsert a single record, if you have multiple records to upsert, you can use this task as a sub-task of an [[XML Repeater]] task, or use the [[Bulk Salesforce Operation](importing-records-to-salesforce-(bulk)]]-task-as-an-alternative.-this-task-will-only-upsert-a-single-record,-if-you-have-multiple-records-to-upsert,-you-can-use-this-task-as-a-sub-task-of-an [[xml-repeater]]-task,-or-use-the [[bulk-salesforce-operation) task instead.
-
+This task will update existing records or insert new records, based on whether the record already exists in Salesforce. Existing records are found based on a particular field of type External Id, as specified in the task's settings. If there is no External Id field to use lookup existing records for the given object type, you can use the [Importing Records to Salesforce (Bulk)](importing-records-to-salesforce-bulk) task as an alternative. This task will only upsert a single record, if you have multiple records to upsert, you can use this task as a sub-task of an [XML Repeater](xml-repeater) task, or use the [Bulk Salesforce Operation](bulk-salesforce-operation) task instead.
 
 ## Settings
-
 ### Connection 
 _Required_  
 The Salesforce connection to use, see [Connecting to Salesforce](connecting-to-salesforce)

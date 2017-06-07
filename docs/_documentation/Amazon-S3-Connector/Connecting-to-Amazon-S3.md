@@ -5,7 +5,7 @@ title: Connecting to Amazon S3
 ---
 
 
-All of the tasks in the Amazon S3 connector require a connection to Amazon S3, so you will need to create a [Connection](49-connections) with the type 'Amazon S3'. See [Managing Connections](56-managing-connections) for instructions on creating a new connection.
+All of the tasks in the Amazon S3 connector require a connection to Amazon S3, so you will need to create a [Connection](49-connections) with the type 'Amazon S3'. See [Managing Connections](managing-connections) for instructions on creating a new connection.
 
 
 

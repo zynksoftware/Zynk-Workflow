@@ -26,4 +26,4 @@ Optional output for the response of the upload
 See [Common Task Settings](common-task-settings).
 
 ## Examples
-You can find an example of how to use this task in the [Amazon Marketplace - Submit Feeds tutorial](amazon-marketplace---submit-feeds-tutorial).
+You can find an example of how to use this task in the [Amazon Marketplace - Submit Feeds tutorial](amazon-submit-feeds).

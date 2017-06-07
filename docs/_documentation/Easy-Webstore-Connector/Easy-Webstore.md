@@ -21,5 +21,5 @@ Each of the tasks require a connection to Easy Webstore, for more information on
 There is a Workflow Template and Article available on the links below:
 
  * [Integration Template](https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/Easy%20Webstore%20to%20Sage%2050)
- * [Article](466-easy-webstore-to-sage-50-integration)
+ * [Article](easy-webstore-to-sage-50-integration)
 

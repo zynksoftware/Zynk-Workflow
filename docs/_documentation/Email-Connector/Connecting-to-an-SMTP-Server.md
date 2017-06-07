@@ -4,7 +4,7 @@ redirect_from: "/article/601-connecting-to-an-smtp-server"
 title: Connecting to an SMTP Server
 ---
 ## Connecting to an SMTP Server
-Some of the tasks in the Email Connector require a SMTP connection, so you will need to create a [Connection]] with the type 'SMTP Server'. See [[Managing Connections](connection]]-with-the-type-'smtp-server'.-see [[managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your SMTP details:
+Some of the tasks in the Email Connector require a SMTP connection, so you will need to create a connection with the type 'SMTP Server'. See [Connection Manager](connection-manager) for instructions on creating a new connection. You will see a screen like the one below, requesting your SMTP details:
 
 [![SMTP Connection](http://www.zynk.com/images/v2/smtp_connection.png)](http://www.zynk.com/images/v2/smtp_connection.png)
 

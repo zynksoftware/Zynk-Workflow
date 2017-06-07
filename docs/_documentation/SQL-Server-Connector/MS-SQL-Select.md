@@ -44,7 +44,7 @@ The SQL Query to be executed e.g. 	`SELECT * FROM Customers`.  You can use the 
 
 ### Connection
 _Required_  
-The SQL Connection to use.  See the [[Connecting to SQL Server](658-connecting-to-sql-server) article if you require more information on how to create/manage connections.
+The SQL Connection to use.  See the [[Connecting to SQL Server](connecting-to-sql-server) article if you require more information on how to create/manage connections.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings)

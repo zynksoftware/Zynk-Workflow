@@ -13,4 +13,4 @@ The Web connector allows you to do everything from fetching a web page, posting 
 There is a sample workflow and article available on the links below:
 
  * [Sample Workflow](https://github.com/zynksoftware/samples/blob/master/Workflow%20Samples/Website%20Script%20Based%20Sage%2050%20Integration.wkf)
- * [Article](462-website-script-based-integration)
+ * [Article](website-script-based-integration)

@@ -29,4 +29,4 @@ See [Common Task Settings](common-task-settings)
 ## Examples
 To introduce the usage of File Helpers within Zynk we have based our tutorial on the data from the File Helpers website.
 
-[Easy Example](630-file-helpers-basics) - simple example of reading in a pipe delimited file
+[Easy Example](file-helpers-basics) - simple example of reading in a pipe delimited file

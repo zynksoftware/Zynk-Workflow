@@ -14,5 +14,5 @@ As most of the tasks in Zynk use XML files as their input/output, the JSON conne
 There is a sample workflow and tutorial available on the links below:
 
 - [Sample Workflow](https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/JSON%20Example)
-- [Tutorial](255-converting-json-to-xml)
+- [Tutorial](converting-json-to-xml)
 

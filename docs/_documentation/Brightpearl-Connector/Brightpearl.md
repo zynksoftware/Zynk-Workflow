@@ -9,7 +9,7 @@ The Brightpearl connector provides functions to import and export data from Brig
 
 
 
-Each of the tasks require a connection to Brightpearl, for more information on setting up and managing connections see [Connecting to Brightpearl](673-connecting-to-brightpearl).
+Each of the tasks require a connection to Brightpearl, for more information on setting up and managing connections see [Connecting to Brightpearl](connecting-to-brightpearl).
 
 
 ## Tasks

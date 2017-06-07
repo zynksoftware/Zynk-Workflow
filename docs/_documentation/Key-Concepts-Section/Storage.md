@@ -38,7 +38,7 @@ There are helper tasks within the Zynk library if granular control of this data 
 Filename: variables.xml  
 Format: XML
 
-Zynk stores global variables in this file, these are variables that can be accessed from any workflow.  You can find more information in our [Variables]] and [[Using Global Variables](variables]]-and [[using-global-variables) articles.
+Zynk stores global variables in this file, these are variables that can be accessed from any workflow.  You can find more information in our [Variables](variables) and [Using Global Variables](using-global-variables) articles.
 
 ## Task Caching
 Filename: tasklist.xml  

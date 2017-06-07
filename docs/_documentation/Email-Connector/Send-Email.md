@@ -8,7 +8,7 @@ This task will send an email using your own SMTP server or a [3rd Party SMTP Ser
 ## Settings
 ### Attachments
 _Optional_  
-The file or list of files to be attached to the email. TIP: You can also use the output from a 	[List Files](list-files) task to set the list of attachments dynamically.  Please bear in mind the sending rules of your email provider, you may not be able to send all attachment types. If the attachment type is not recognised by your computer, it may not be displayed correctly in the email, if at all. Should this happen, Zynk will log a debug message detailing the file(s) affected.
+The file or list of files to be attached to the email. TIP: You can also use the output from a [List Files](list-files) task to set the list of attachments dynamically.  Please bear in mind the sending rules of your email provider, you may not be able to send all attachment types. If the attachment type is not recognised by your computer, it may not be displayed correctly in the email, if at all. Should this happen, Zynk will log a debug message detailing the file(s) affected.
 
 ### Bcc
 _Optional_  
@@ -46,7 +46,7 @@ The SMTP Connection to send the emails from.  See the [Connecting to an SMTP S
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-An article on the use of this task is available [here](633-using-email-connector).
+An article on the use of this task is available [here](using-email-connector).
 
 Sample input file for the email body, which contains a static message. Note that this is HTML, so the HTML Body setting will need to be set to True.
 

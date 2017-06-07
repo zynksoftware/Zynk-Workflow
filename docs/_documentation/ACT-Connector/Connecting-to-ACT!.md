@@ -3,7 +3,7 @@ slug: connecting-to-act
 redirect_from: "/article/448-connecting-to-act"
 title: Connecting to ACT!
 ---
-All of the tasks in the [ACT!]] connector require a Connection to ACT!. To find out more, see [[Managing Connections](act!]]-connector-require-a-connection-to-act!.-to-find-out-more, see-[[managing-connections).
+All of the tasks in the [ACT](act) connector require a Connection to ACT!. To find out more, see [Managing Connections](managing-connections).
 
 You must specify the ACT! Connection you would like to use on each of the ACT! tasks. To specify the connection, select the appropriate entry from the dropdown as seen in the screenshot below. Alternatively, once you have set up the ACT! connection that you would like to use, you can make this the default for any tasks which require this connection type, which means that you don't need to select the connection for every new task that you add to the Workflow.
 
@@ -38,13 +38,13 @@ _Required_
 The name of the ACT! database you are connecting to (**2.4**).
 
 ## Links
-- [Introduction to the ACT! Connector|ACT!](introduction-to-the-act!-connector|act!)
-- [Connecting to ACT!](connecting-to-act!)
-- [Importing Companies into ACT!](importing-companies-into-act!)
-- [Exporting Companies from ACT!](exporting-companies-from-act!)
-- [Importing Contacts into ACT!](importing-contacts-into-act!)
-- [Exporting Contacts from ACT!](exporting-contacts-from-act!)
-- [Importing Opportunities into ACT!](importing-opportunities-into-act!)
-- [Exporting Opportunities from ACT!](exporting-opportunities-from-act!)
-- [Importing Products into ACT!](importing-products-into-act!)
-- [Exporting Products from ACT!](exporting-products-from-act!)
+- [Introduction to the ACT! Connector](act)
+- [Connecting to ACT!](connecting-to-act)
+- [Importing Companies into ACT!](importing-companies-into-act)
+- [Exporting Companies from ACT!](exporting-companies-from-act)
+- [Importing Contacts into ACT!](importing-contacts-into-act)
+- [Exporting Contacts from ACT!](exporting-contacts-from-act)
+- [Importing Opportunities into ACT!](importing-opportunities-into-act)
+- [Exporting Opportunities from ACT!](exporting-opportunities-from-act)
+- [Importing Products into ACT!](importing-products-into-act)
+- [Exporting Products from ACT!](exporting-products-from-act)

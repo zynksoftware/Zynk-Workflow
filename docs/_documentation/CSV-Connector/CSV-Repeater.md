@@ -40,7 +40,7 @@ See [Common Task Settings](common-task-settings)
 ## Context Variables
 For every record in the Input CSV, the columns are available to each sub-task as a current variable. If the Include Headers setting is set to true, the variable names will correspond to the values in the first row of the Input. Otherwise, the variables will be named based on the Column Name Prefix setting and the column's index e.g. F1, F2, F3 etc.
 
-The sub-tasks can access the values of the variables using razor, so they can be used in templates, or within task settings that support [Zynk Objects](zynk-objects) (using the 'Use Razor Engine' option). For example `@(Context.Current["F1"])` would be used to access the first value in a row when Include Headers is set to false.  
+The sub-tasks can access the values of the variables using razor, so they can be used in templates, or within task settings that support [Zynk Objects](zynk-objects) using the 'Use Razor Engine' option. For example `@(Context.Current["F1"])` would be used to access the first value in a row when Include Headers is set to false.  
   
 See [Accessing Variables in Tasks](accessing-variables-in-tasks) for more information on using context variables.
 

@@ -19,7 +19,7 @@ Select the type of content being uploaded to Salesforce. The available options a
 
 ### External ID
 _Dependant_  
-The field in Salesforce of type External ID to use to when looking for existing records. Required when the Operation Type is set to Upsert. If no External ID field is available, the [Importing Records to Salesforce (Bulk)](importing-records-to-salesforce-(bulk)) task can be used as an alternative.
+The field in Salesforce of type External ID to use to when looking for existing records. Required when the Operation Type is set to Upsert. If no External ID field is available, the [Importing Records to Salesforce (Bulk)](importing-records-to-salesforce-bulk) task can be used as an alternative.
 
 ### Input File(s)
 _Required_  

@@ -16,6 +16,6 @@ A knowledge of the C# programming language is required to use the FileHelpers Co
 ## Examples
 To introduce the usage of FileHelpers within Zynk we have based our tutorials on the data from the FileHelpers website.
 
- * [Easy Example](630-file-helpers-basics) - simple example of reading in a pipe delimited file
- * [Master Details](245-master-detail-converter) - simple example reading a master / detail file
- * [Advanced Usage](632-file-helpers-advanced-usage) - example showing custom converters and fixed length files
+ * [Easy Example](file-helpers-basics) - simple example of reading in a pipe delimited file
+ * [Master Details](master-detail-converter) - simple example reading a master / detail file
+ * [Advanced Usage](file-helpers-advanced-usage) - example showing custom converters and fixed length files

@@ -9,7 +9,7 @@ This task will insert new and update existing posts in WordPress, from an XML fi
 
 
 1. If an `id` is provided for the post, the existing post will be updated.
-2. If an `external_id` is provided for the post, and a match is found  in Zynk's [truth table](727-storage), the existing post will be updated.
+2. If an `external_id` is provided for the post, and a match is found  in Zynk's [truth table](storage), the existing post will be updated.
 3. If a `slug` is provided for the post, and a match is found in WordPress, the existing post will be updated.
 4. If none of the above conditions are fulfilled, a new post will be created.
 

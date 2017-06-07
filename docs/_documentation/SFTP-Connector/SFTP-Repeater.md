@@ -36,4 +36,4 @@ The following variables are available to sub-tasks of this task. To use these va
  * Server
 
 ## Examples
-You can find an example of how to use this task in the [SFTP to Sage 50 Integration](465-sftp-to-sage-50-integration) article.
+You can find an example of how to use this task in the [SFTP to Sage 50 Integration](sftp-to-sage-50-integration) article.

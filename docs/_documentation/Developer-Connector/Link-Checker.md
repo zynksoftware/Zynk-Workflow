@@ -26,7 +26,7 @@ The URL of the web page to check.
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-You can find an example of how to use this task in the[Developer Connector](713-developer-connector) article.
+You can find an example of how to use this task in the [Developer Connector](developer-connector) article.
 
 A sample output file is shown below. This output was produced whith the Url set to '[http://www.google.co.uk/](http://www.google.co.uk/)', and Depth set to 1.
 

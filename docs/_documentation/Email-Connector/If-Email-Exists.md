@@ -30,4 +30,4 @@ Set to True to validate the address against the SMTP server, or set to false to 
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-An article on the use of this task is available [here](633-using-email-connector).
+An article on the use of this task is available [here](using-email-connector).

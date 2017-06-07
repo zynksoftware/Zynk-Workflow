@@ -19,4 +19,4 @@ Each of the tasks require a connection to BigCommerce, for more information on s
 There is a workflow template and article available on the links below:
 
 * [Workflow Template](https://github.com/zynksoftware/samples/tree/master/Workflow%20Samples)
-* [Article](463-bigcommerce-to-sage-50-integration)
+* [Article](bigcommerce-to-sage-50-integration)

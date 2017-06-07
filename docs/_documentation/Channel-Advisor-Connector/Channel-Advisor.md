@@ -14,4 +14,4 @@ Each of the tasks require a connection to Channel Advisor, for more information 
 ## Articles and Sample Files
 There is a workflow template and article available from the links below:
 * [Workflow Template](https://github.com/zynksoftware/samples/tree/master/Workflow%20Samples)
-* [Article](469-channel-advisor-to-sage-50-integration)
+* [Article](channel-advisor-to-sage-50-integration)

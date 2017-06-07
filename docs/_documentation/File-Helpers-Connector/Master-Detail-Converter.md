@@ -38,4 +38,4 @@ See [Common Task Settings](common-task-settings)
 ## Examples
 To introduce the usage of the FileHelpers module within Zynk, we have based our tutorial on the data from the FileHelpers website.
 
-[Easy Master/Details Example](711-filehelpers-master-detail-example) - simple example reading a master / detail file
+[Easy Master/Details Example](filehelpers-master-detail-example) - simple example reading a master / detail file

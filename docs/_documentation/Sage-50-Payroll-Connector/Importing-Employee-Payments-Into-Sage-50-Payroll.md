@@ -11,7 +11,7 @@ This task requires a Connection to Sage 50 Payroll, for more information on sett
 ### Sage 50 Payroll Connection
 _Required_  
 The Sage 50 Payroll connection to import Employee Payments into. See the [Connecting to Sage 50 Payroll](connecting-to-sage-50-payroll) page if you require more information on how to create/manage Zynk Connections to Sage 50 Payroll.  
-Defaulted to the connection marked as the default for Sage 50 Payroll. For more information on managing default connections within Zynk, see the [Connection Manager|Connection-Manager#default](connection-manager|connection-manager#default) page.
+Defaulted to the connection marked as the default for Sage 50 Payroll. For more information on managing default connections within Zynk, see the [Connection Manager](connection-manager) page.
 
 ## File Settings
 ### Fail File

@@ -41,4 +41,4 @@ It is normal for each individual record to take about half a second to download 
 There is a Workflow Template, Articles and Sample Files on the links below:
 
 * [Workflow Template](https://github.com/zynksoftware/samples/tree/master/Workflow%20Samples)
-* [Article](456-magento-to-sage-integration)
+* [Article](magento-to-sage-integration)

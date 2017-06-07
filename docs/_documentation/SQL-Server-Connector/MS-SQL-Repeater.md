@@ -16,7 +16,7 @@ The SQL Query to be executed. See below for an example.  You can use the [Query 
 
 ### Connection
 _Required_  
-The SQL Connection to use.  See the [[Connecting to SQL Server](658-connecting-to-sql-server) article if you require more information on how to create/manage connections.
+The SQL Connection to use.  See the [[Connecting to SQL Server](connecting-to-sql-server) article if you require more information on how to create/manage connections.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings)
@@ -25,7 +25,7 @@ See [Common Task Settings](common-task-settings)
 The task will convert each row to context variables, the name of the variables depend on the names of your columns in the query. To use these variables, reference them in templates as `@Context.Current["ColumnName"]` or within other task settings using the Razor option.
 
 ## Examples
-You can find an example of how to use this task in the[SQL Server Connector](643-using-sql-connector) tutorial.
+You can find an example of how to use this task in the[SQL Server Connector](using-sql-connector) tutorial.
 
 Sample query, which will select all data from the SLCustomerAccount table:
 

@@ -12,9 +12,9 @@ The SOAP tasks expose some of the reporting functionality available on ConnectW
 ## Links
 - [Connecting to ConnectWise](connecting-to-connectwise)
 - [Connecting to ConnectWise Accounting Interface](connecting-to-connectwise-accounting-interface)
-- [ConnectWise Integrations - Frequently Asked Questions](connectwise-integrations---frequently-asked-questions)
+- [ConnectWise Integrations - Frequently Asked Questions](connectwise-integrations-frequently-asked-questions)
 - [ConnectWise Integrations](connectwise-integrations)
-- [ConnectWise Product Invoice Integration - Field Mapping](connectwise-product-invoice-integration---field-mapping)
+- [ConnectWise Product Invoice Integration - Field Mapping](connectwise-product-invoice-integration-field-mapping)
 - [Downloading GL Batches from ConnectWise Accounting Interface](downloading-gl-batches-from-connectwise-accounting-interface)
 - [Recreating GL Batches from ConnectWise Accounting Interface](recreating-gl-batches-from-connectwise-accounting-interface)
 - [Updating GL Batches to ConnectWise Accounting Interface](updating-gl-batches-to-connectwise-accounting-interface)

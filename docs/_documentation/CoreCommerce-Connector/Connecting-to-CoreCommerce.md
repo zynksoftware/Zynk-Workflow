@@ -3,7 +3,7 @@ slug: connecting-to-corecommerce
 redirect_from: "/article/663-connecting-to-corecommerce"
 title: Connecting to CoreCommerce
 ---
-All of the tasks in the CoreCommerce connector require a connection to CoreCommerce, so you will need to create a  [Connection]] with the type 'CoreCommerce'. See [[Managing Connections](connection]]-with-the-type-'corecommerce'.-see-[[managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your CoreCommerce details:
+All of the tasks in the CoreCommerce connector require a connection to CoreCommerce, so you will need to create a  Connection with the type 'CoreCommerce'. See  [Connection Manager](connection-manager) for instructions on creating a new connection. You will see a screen like the one below, requesting your CoreCommerce details:
 
 ![CoreCommerce Connection](http://www.zynk.com/images/v2/core_commerce_connection.png)
 

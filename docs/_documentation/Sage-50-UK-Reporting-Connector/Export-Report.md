@@ -1,5 +1,5 @@
 ---
-slug: export-report
+slug: exporting-reports-from-sage-50-uk
 redirect_from: "/article/698-export-report"
 title: Export Report
 ---

@@ -39,7 +39,7 @@ The name of the file to export the downloaded orders to.
 See [Common Task Settings](common-task-settings).
 
 ## Examples
-You can find an example of how to use this task in the [Amazon to Sage Integration article](amazon-to-sage-integration-article).
+You can find an example of how to use this task in the [Amazon to Sage Integration article](amazon-to-sage-integration).
 
 Sample output file:
 ```xml

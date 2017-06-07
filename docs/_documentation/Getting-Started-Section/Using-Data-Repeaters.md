@@ -3,7 +3,7 @@ slug: using-data-repeaters
 redirect_from: "/article/622-using-data-repeaters"
 title: Using Data Repeaters
 ---
-In this tutorial we will create a more advanced workflow that queries an XML data set using the [XML Repeater]] (you could also use the [[CSV Repeater]], [[Excel Repeater]], [[SQL Repeater]], [[ODBC Repeater]], [[OLEDB Repeater]] or [[File Repeater](xml-repeater]]-(you-could-also-use-the [[csv-repeater]], [[excel-repeater]], [[sql-repeater]], [[odbc-repeater]], [[oledb-repeater]]-or-[[file-repeater)) and we want to output each of the records to our PC as personalised letters which could then be Emailed or sent to PDF for printing.
+In this tutorial we will create a more advanced workflow that queries an XML data set using the [XML Repeater](xml-repeater) (you could also use the [CSV Repeater](csv-repeater), [Excel Repeater](excel-repeater), [SQL Repeater](sql-repeater), [ODBC Repeater](odbc-repeater), [OLEDB Repeater](oledb-repeater) or [File Repeater](file-repeater)) and we want to output each of the records to our PC as personalised letters which could then be Emailed or sent to PDF for printing.
 
 First we need to create some support files for the tutorial, open your text editor and create the two files at the end of this topic and save them to your C drive as Accounts.xml and Template.xml (Tip you can just copy and paste the info below)
 

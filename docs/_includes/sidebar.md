@@ -20,7 +20,7 @@
     * [Sage 50 Payroll](sage-50-payroll)
     * [Sage 50 UK Reporting](sage-50-uk-reporting)
 * [CRM](crm)
-    * [ACT!](act!) 
+    * [ACT!](act) 
     * [AutoTask](autotask)
     * [BXP](bxp)
     * [Campaign Monitor](campaign-monitor)

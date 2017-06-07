@@ -12,7 +12,7 @@ New global variables can be created by clicking the 'Global Variables' button in
 
 1. Click the 'Add' button to add a new global variable.
 2. Enter a name for the variable in the 'Key' field.
-3. Enter a value for the variable in the 'Value' field. The value is a [Zynk Object](47-zynk-objects), so it can store both static and dynamic values.
+3. Enter a value for the variable in the 'Value' field. The value is a [Zynk Object](zynk-objects), so it can store both static and dynamic values.
 4. When you are finished adding global variables, click the OK button.
 
 ## Accessing Global Variables

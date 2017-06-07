@@ -16,4 +16,4 @@ The developer connector contains generic tasks and functions that can be used by
  * [Validate Resource](validate-resource)
 
 ## Examples
-You can find an example of how to use these tasks in the [Developer Connector](713-developer-connector) article.
+You can find an example of how to use these tasks in the [Developer Connector](developer-connector) article.

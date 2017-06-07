@@ -5,7 +5,7 @@ title: Connecting to Salesforce
 ---
 
 
-All of the tasks in the Salesforce connector require a connection to Salesforce. The type of connection required depends on the task being used. The Salesforce Create, Delete, Query, Update and Upsert Tasks use the 'Salesforce' connection type, so you will need to create a[Connection](49-connections) with this type when using those tasks. See [Managing Connections](56-managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your Salesforce details:
+All of the tasks in the Salesforce connector require a connection to Salesforce. The type of connection required depends on the task being used. The Salesforce Create, Delete, Query, Update and Upsert Tasks use the 'Salesforce' connection type, so you will need to create a[Connection](49-connections) with this type when using those tasks. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your Salesforce details:
 
 
 

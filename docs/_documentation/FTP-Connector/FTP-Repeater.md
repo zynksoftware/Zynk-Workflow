@@ -35,4 +35,4 @@ The following variables are available to this task. To use these variables, refe
  * Server
 
 ## Examples
-You can find an example of how to use this task in the [FTP to Sage 50 Integration](464-ftp-to-sage-50-integration) article.
+You can find an example of how to use this task in the [FTP to Sage 50 Integration](ftp-to-sage-50-integration) article.

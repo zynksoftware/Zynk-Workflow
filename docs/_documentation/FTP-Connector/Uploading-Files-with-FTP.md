@@ -38,4 +38,4 @@ Settings to allow using a temporary file name during the upload, and then rename
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-You can find an example of how to use this task in the [FTP to Sage 50 Integration](464-ftp-to-sage-50-integration) article.
+You can find an example of how to use this task in the [FTP to Sage 50 Integration](ftp-to-sage-50-integration) article.

@@ -1,5 +1,5 @@
 ---
-slug: sage-50---import-customers-vs-auto-create-account
+slug: sage-50-import-customers-vs-auto-create-account
 redirect_from: "/article/861-sage-50-import-customers-vs-auto-create-account"
 title: Sage 50   Import Customers vs Auto Create Account
 ---

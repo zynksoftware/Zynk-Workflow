@@ -18,7 +18,7 @@ Each of the tasks require a connection to SugarCRM, for more information on sett
 There is a workflow template and article available on the links below:
 
 - [Workflow Template](https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/Sugar%20CRM%20to%20Sage%2050%20Integration)
-- [Article](468-sugar-crm-to-sage-50-integration)
+- [Article](sugar-crm-to-sage-50-integration)
 
 ## Available Modules
 The following standard modules are available via the Sugar API and can be used with the above tasks. Custom modules are also supported, in addition to the modules listed here:

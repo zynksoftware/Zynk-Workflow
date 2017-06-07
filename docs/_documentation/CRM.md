@@ -5,7 +5,7 @@ title: CRM
 ---
 Zynk Workflow supports a number of CRM systems including
 
- * [ACT!](act!)
+ * [ACT!](act)
  * [AutoTask](autotask)
  * [BXP](bxp)
  * [Campaign Monitor](campaign-monitor)

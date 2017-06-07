@@ -22,7 +22,7 @@ The validation checker you are using, e.g http://validator.w3.org/check
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-You can find an example of how to use this task in the[Developer Connector](713-developer-connector) article.
+You can find an example of how to use this task in the [Developer Connector](developer-connector) article.
 
 To validate[http://validator.w3.org/](http://validator.w3.org/), follow the steps below:
 

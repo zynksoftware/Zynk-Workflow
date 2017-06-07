@@ -15,7 +15,7 @@ To help you getting started with using Zynk we have a series of example workflow
  * [eBay to Sage to UK Integration](ebay-to-sage-to-uk-integration)
  * [Excel to Sage Integration](excel-to-sage-integration)
  * [Export Invoice as PDF from Sage 50](export-invoice-as-pdf-from-sage-50)
- * [FileHelpers - Master Detail Example](filehelpers---master-detail-example)
+ * [FileHelpers - Master Detail Example](filehelpers-master-detail-example)
  * [FTP to Sage 50 Integration](ftp-to-sage-50-integration)
  * [JSON and XML Integration](json-and-xml-integration)
  * [Magento to Sage Integration](magento-to-sage-integration)

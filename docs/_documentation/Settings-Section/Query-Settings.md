@@ -19,4 +19,4 @@ _Optional_
 Allows filters to be set to limit the data that is exported.
 
 ## Articles
-See the [Sage 200 Custom Exports](648-using-sage-200-custom-export) tutorial for examples of how to use the query settings.
+See the [Sage 200 Custom Exports](using-sage-200-custom-export) tutorial for examples of how to use the query settings.

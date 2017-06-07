@@ -27,13 +27,13 @@ This part of the process will download new 'Closed Won' opportunities from Sales
 This part of the process will export any modified customers from Sage 50, and update the corresponding account in Salesforce.  The process consists of the following tasks:
 
 1. [Exporting Customers from Sage 50 UK](exporting-customers-from-sage-50-uk) - This task will export modified customer information from Sage 50 in Zynk XML format.
-2. [Importing Records to Salesforce (Bulk)](importing-records-to-salesforce-(bulk)) - This task will upload the customers information contained in the output file from the previous task to the accounts module in Salesforce. The accounts are matched based on the A/C field in Sage (i.e. the AccountReference in the XML file) and the SageAccountReference__c field in Salesforce.
+2. [Importing Records to Salesforce (Bulk)](importing-records-to-salesforce-bulk) - This task will upload the customers information contained in the output file from the previous task to the accounts module in Salesforce. The accounts are matched based on the A/C field in Sage (i.e. the AccountReference in the XML file) and the SageAccountReference__c field in Salesforce.
 
 ## Upload Products to Salesforce - Phase 3
 This part of the process will export any modified products from Sage 50, and update the corresponding product in Salesforce. The process consists of the following tasks:
 
 1. [Exporting Stock Records from Sage 50 UK](exporting-stock-records-from-sage-50-uk) - This task will export modified product information from Sage 50 in Zynk XML format.
-2. [Importing Records to Salesforce (Bulk)](importing-records-to-salesforce-(bulk)) - This task will upload the product information contained in the output file from the previous task to the Product2 module in Salesforce. The products are matched based on the product code field in Sage (i.e. the Sku in the XML file) and the ProductCode field in Salesforce.
+2. [Importing Records to Salesforce (Bulk)](importing-records-to-salesforce-bulk) - This task will upload the product information contained in the output file from the previous task to the Product2 module in Salesforce. The products are matched based on the product code field in Sage (i.e. the Sku in the XML file) and the ProductCode field in Salesforce.
 
 ## Archive - Phase 4
 This is the final task in the process, and will archive off all data that was used by the workflow process. This allows for traceability and will assist when debugging the workflow.

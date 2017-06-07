@@ -9,7 +9,7 @@ This task will insert new and update existing pages in WordPress, from an XML fi
 
 
 1. If an `id` is provided for the page, the existing page will be updated.
-2. If an `external_id` is provided for the page, and a match is found  in Zynk's [truth table](727-storage), the existing page will be updated.
+2. If an `external_id` is provided for the page, and a match is found  in Zynk's [truth table](storage), the existing page will be updated.
 3. If a `slug` is provided for the page, and a match is found in WordPress, the existing page will be updated.
 4. If none of the above conditions are fulfilled, a new page will be created.
 

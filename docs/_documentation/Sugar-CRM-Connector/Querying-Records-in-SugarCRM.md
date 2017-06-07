@@ -75,13 +75,13 @@ Field settings are used to specify a SugarCRM module to query, and the list of f
 | 	Setting | 	Required | 	Description |
 | --- | --- | --- |
 | 	Module Name | 	Required | 	Select the name of the module to query from the drop down. If you are querying a custom module, it will not be listed in the drop down, so you will need to type it in. You can find a list of modules in your SugarCRM system under Admin > Studio. Please note that the module name is case sensitive. |
-| 	Link Field | 	Dependant | 	This setting will only be displayed when editing the fields for a sub-query. This setting determines which field will be used to link (i.e. relate) records from this module to the parent query's module. We've provided a list of some of the commonly used 	[Link Fields](326-sugarcrm-link-fields), please refer to the Sugar CRM documentation or contact your Sugar CRM provider for a complete list of the link field names available on each module. |
+| 	Link Field | 	Dependant | 	This setting will only be displayed when editing the fields for a sub-query. This setting determines which field will be used to link (i.e. relate) records from this module to the parent query's module. We've provided a list of some of the commonly used 	[Link Fields](sugarcrm-link-fields), please refer to the Sugar CRM documentation or contact your Sugar CRM provider for a complete list of the link field names available on each module. |
 | 	Fields | 	Required | 	Enter the list of fields that should be returned by the query. Note that the field names are case sensitive. You can find the list of available field names for a module under Admin > Studio > [	*Module Name*] > Fields. You can use the 'Add Standard Fields' button to add all standard fields to the list. Please note that this will only work if you have selected a standard module from the 'Module Name' drop down box. You can remove selected fields from the list using the 'Delete' key, or click the 'Clear Fields' button to clear the list completely. |
 
 ## Examples
 
 
-You can find an example of how to use this task in the [Sugar CRM to Sage 50 Integration](468-sugar-crm-to-sage-50-integration) article.
+You can find an example of how to use this task in the [Sugar CRM to Sage 50 Integration](sugar-crm-to-sage-50-integration) article.
 
 
 

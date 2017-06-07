@@ -34,7 +34,7 @@ The file to export orders to.
 See [Common Task Settings](common-task-settings).
 
 ## Examples
-You can find an example of how to use this task in the [eBay to Sage 50 Integration](ebay-to-sage-50-integration) article.
+You can find an example of how to use this task in the [eBay to Sage 50 Integration](ebay-to-sage-to-uk-integration) article.
 
 Sample output file:
 ```xml

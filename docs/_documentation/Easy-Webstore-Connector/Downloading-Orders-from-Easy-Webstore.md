@@ -26,7 +26,7 @@ The XML file to save the results to.
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-You can find an example of how to use this task in the [Easy Webstore to Sage 50 Integration](466-easy-webstore-to-sage-50-integration) article.
+You can find an example of how to use this task in the [Easy Webstore to Sage 50 Integration](easy-webstore-to-sage-50-integration) article.
 
 Example of output format:
 

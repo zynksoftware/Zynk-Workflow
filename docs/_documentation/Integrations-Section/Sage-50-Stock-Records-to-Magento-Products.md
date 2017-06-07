@@ -7,7 +7,7 @@ title: Sage 50 Stock Records to Magento Products
 
 The Workflow, XSLT and sample XML files can be found            [here](https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/Zynk%20Products%20to%20Magento%20Products), and the XSLT can be found in the Auto Mapper task within Zynk.  If            you do not have a copy of Zynk you can register for a trial [here](http://zynk.com/download-trial/).             The following libraries and tasks will be used in this tutorial:
 
- * [Exporting Products from Sage 50 UK](exporting-products-from-sage-50-uk)
+ * [Exporting Stock Records from Sage 50 UK](exporting-stock-records-from-sage-50-uk)
  * [Auto Mapper](auto-mapper)
  * [Uploading Products to Magento](uploading-products-to-magento)
 

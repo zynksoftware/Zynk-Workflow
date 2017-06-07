@@ -5,7 +5,7 @@ title: Connecting To WordPress
 ---
 
 
-All of the tasks in the WordPress connector require a connection to a WordPress company, so you will need to create a [Connection](49-connections) with the type 'WordPress'.  See [Managing Connections](56-managing-connectionss) for instructions on creating a new connection.
+All of the tasks in the WordPress connector require a connection to a WordPress company, so you will need to create a [Connection](49-connections) with the type 'WordPress'.  See [Managing Connections](managing-connectionss) for instructions on creating a new connection.
 
 
 

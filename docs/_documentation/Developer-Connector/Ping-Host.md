@@ -22,4 +22,4 @@ The amount of time (in milliseconds) to wait for the host to respond.
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-You can find an example of how to use this task in the[Developer Connector](713-developer-connector) article.
+You can find an example of how to use this task in the [Developer Connector](developer-connector) article.

@@ -9,7 +9,7 @@ The Amazon S3 connector for Zynk allows you to integrate your systems with Amazo
 
 
 
-Each of the tasks use a connection to Amazon S3, for more information on setting up and managing connections see [Connecting to Amazon S3](600-connecting-to-amazon-s3).
+Each of the tasks use a connection to Amazon S3, for more information on setting up and managing connections see [Connecting to Amazon S3](connecting-to-amazon-s3).
 
 
 ## Tasks

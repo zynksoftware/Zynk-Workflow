@@ -20,5 +20,5 @@ Knowledge of SQL is required to use the tasks in this connector. You can find tu
 There is a workflow template and article available on the links below:
 
  * [Workflow Template](https://github.com/zynksoftware/samples/tree/master/Workflow%20Samples)
- * [Article](644-odbc-connector)
+ * [Article](odbc-connector)
 

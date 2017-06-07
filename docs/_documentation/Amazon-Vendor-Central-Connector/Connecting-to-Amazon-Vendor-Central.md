@@ -3,7 +3,7 @@ slug: connecting-to-amazon-vendor-central
 redirect_from: "/article/660-connecting-to-amazon-vendor-central"
 title: Connecting to Amazon Vendor Central
 ---
-All of the tasks in the [Amazon Vendor Central]] Connector require a connection to Amazon's upload or download SFTP location. You will need to create a connection with the type 'Amazon Vendor Central Download' or 'Amazon Vendor Central Upload', depending on which task you are using. See [[Managing Connections](amazon-vendor-central]]-connector-require-a-connection-to-amazon's-upload-or-download-sftp-location.-you-will-need-to-create-a-connection-with-the-type-'amazon-vendor-central-download'-or-'amazon-vendor-central-upload',-depending-on-which-task-you-are-using.-see-[[managing-connections) for instructions on creating a new connection. You will see a screen like the one below (regardless of which of the two connection types was selected), requesting your SFTP details:
+All of the tasks in the [Amazon Vendor Central]] Connector require a connection to Amazon's upload or download SFTP location. You will need to create a connection with the type 'Amazon Vendor Central Download' or 'Amazon Vendor Central Upload', depending on which task you are using. See [Connection Manager](connection-manager) for instructions on creating a new connection. You will see a screen like the one below regardless of which of the two connection types was selected, requesting your SFTP details:
 
 [![Amazon Vendor Central Connection](http://www.zynk.com/images/v2/amazon_vendor_central_connection.png)](http://www.zynk.com/images/v2/amazon_vendor_central_connection.png)
 

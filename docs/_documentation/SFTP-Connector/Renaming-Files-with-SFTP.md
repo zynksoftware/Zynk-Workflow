@@ -34,4 +34,4 @@ The format to use for the timestamp e.g. `yyyy-MM-dd\_HH-mm-ss`
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-You can find an example of how to use this task in the [SFTP to Sage 50 Integration](465-sftp-to-sage-50-integration) article.
+You can find an example of how to use this task in the [SFTP to Sage 50 Integration](sftp-to-sage-50-integration) article.

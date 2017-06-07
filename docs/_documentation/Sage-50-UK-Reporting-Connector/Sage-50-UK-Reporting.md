@@ -12,4 +12,4 @@ The first time you run any task Zynk will request your Sage 50 login credentials
 
 ## Tasks
 
- * [Export Report](export-report)
+ * [Exporting Reports from Sage 50 UK](exporting-reports-from-sage-50-uk)

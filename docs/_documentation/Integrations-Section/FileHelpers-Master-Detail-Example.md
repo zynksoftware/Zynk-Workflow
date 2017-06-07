@@ -1,5 +1,5 @@
 ---
-slug: filehelpers---master-detail-example
+slug: filehelpers-master-detail-example
 redirect_from: "/article/711-filehelpers-master-detail-example"
 title: FileHelpers   Master Detail Example
 ---

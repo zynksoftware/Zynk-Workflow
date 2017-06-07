@@ -21,7 +21,7 @@ See [Common Task Settings](common-task-settings)
 The task will convert each row to context variables, the name of the variables depend on the names of your columns in the query. To use these variables, reference them in templates as `@Context.Current["ColumnName"]` or within other task settings using the Razor option.
 
 ## Examples
-You can find an example of how to use this task in the [OLEDB Connector](646-using-oledb-connector) tutorial.
+You can find an example of how to use this task in the [OLEDB Connector](using-oledb-connector) tutorial.
 
 Sample query, which will select all records from the Customers table:
 

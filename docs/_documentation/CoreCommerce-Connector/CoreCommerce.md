@@ -19,4 +19,4 @@ Each of the tasks require a connection to CoreCommerce, for more information on 
 There is a workflow template and article available on the links below:
 
 * [Workflow Template](https://github.com/zynksoftware/samples/tree/master/Workflow%20Samples)
-* [Article](470-core-commerce-to-sage-50-integration)
+* [Article](core-commerce-to-sage-50-integration)

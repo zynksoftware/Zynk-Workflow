@@ -42,7 +42,7 @@ The OLEDB Connection to use.  See the [Connecting to an OLEDB Database](connecti
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-You can find an example of how to use this task in the [OLEDB Connector](646-using-oledb-connector) tutorial.
+You can find an example of how to use this task in the [OLEDB Connector](using-oledb-connector) tutorial.
 
 Sample SQL query:
 

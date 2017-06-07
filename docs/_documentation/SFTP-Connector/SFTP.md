@@ -20,4 +20,4 @@ Each of the tasks use an SFTP Connection, for more information on setting up and
 There is a Workflow Template and Article available on the links below:
 
  * [Workflow Template](https://github.com/zynksoftware/samples/tree/master/Workflow%20Samples)
- * [Article](465-sftp-to-sage-50-integration)
+ * [Article](sftp-to-sage-50-integration)

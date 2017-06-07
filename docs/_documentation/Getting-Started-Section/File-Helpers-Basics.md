@@ -1,5 +1,5 @@
 ---
-slug: file-helpers---basics
+slug: file-helpers-basics
 redirect_from: "/article/630-file-helpers-basics"
 title: File Helpers   Basics
 ---

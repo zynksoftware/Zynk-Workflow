@@ -42,7 +42,7 @@ The ODBC Connection to use.  See the [Connecting to an ODBC Database](connecting
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-You can find an example of how to use this task in the [ODBC Connector](644-odbc-connector) tutorial.
+You can find an example of how to use this task in the [ODBC Connector](odbc-connector) tutorial.
 
 Sample SQL query:
 

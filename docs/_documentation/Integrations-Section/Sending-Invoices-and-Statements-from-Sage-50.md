@@ -3,7 +3,7 @@ slug: sending-invoices-and-statements-from-sage-50
 redirect_from: "/article/645-sending-invoices-statements-from-sage-50"
 title: Sending Invoices and Statements from Sage 50
 ---
- In this tutorial, we demonstrate how to use the [Email Invoices](392-email-invoices) and [Email Statements](393-email-statements)tasks, to automate the process of sending invoices/statements to your customers in Sage. Note that we only adjust some ofthe settings for these tasks in this tutorial, and leave the rest at their default values. Refer to the links above for anexplanation of all of the settings.        
+ In this tutorial, we demonstrate how to use the [Email Invoices](emailing-invoices-from-sage-50-uk) and [Email Statements](emailing-statements-from-sage-50-uk) tasks, to automate the process of sending invoices/statements to your customers in Sage. Note that we only adjust some ofthe settings for these tasks in this tutorial, and leave the rest at their default values. Refer to the links above for anexplanation of all of the settings.        
 
 ## Email Invoices
 This task will generate a PDF invoice for all invoices that have not yet been printed, and send it to the email address on            the customer account as an attachment, via an SMTP server. The basic settings are as follows:           

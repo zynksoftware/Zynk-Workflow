@@ -3,7 +3,7 @@ slug: updating-order-status-in-easy-webstore
 redirect_from: "/article/209-updating-order-status-in-easy-webstore"
 title: Updating Order Status in Easy Webstore
 ---
-This task will update the status of orders in your store. It can be used in conjunction with the Order Status setting on the [Download Orders](download-orders) task, to change the status of orders once they have been processed to prevent them downloading again.
+This task will update the status of orders in your store. It can be used in conjunction with the Order Status setting on the [Download Orders](downloading-orders-from-easy-webstore) task, to change the status of orders once they have been processed to prevent them downloading again.
 
 ## Settings
 ### Connection
@@ -30,7 +30,7 @@ The XML file to output successful order updates to.
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-You can find an example of how to use this task in the [Easy Webstore to Sage 50 Integration](466-easy-webstore-to-sage-50-integration) article.
+You can find an example of how to use this task in the [Easy Webstore to Sage 50 Integration](easy-webstore-to-sage-50-integration) article.
 
 Sample input file:
 
