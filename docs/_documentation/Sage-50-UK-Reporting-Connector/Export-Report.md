@@ -3,7 +3,7 @@ slug: exporting-reports-from-sage-50-uk
 redirect_from: "/article/698-export-report"
 title: Export Report
 ---
-This task will generate a report using a layout file in Sage 50. The report can be generated in PDF, HTML and many other formats.
+This task will generate a report using a layout file in Sage 50. The report can be generated in PDF, HTML and other formats supported by the Report Designer.
 
 ## Settings
 ### Criteria
@@ -16,7 +16,7 @@ This can be viewed from the Sage 50 Report Designer, under Variables > CRITERIA.
 
 ### Output File
 _Required_  
-The file to save the generated report to.
+The file to save the generated report to e.g. monthly_profit_and_loss.pdf
 
 ### Output Type
 _Required_  
@@ -31,7 +31,7 @@ Choose an output format for the report from the list:
 
 ### Report File
 _Required_  
-The Sage .report/.layout file to use to generate the invoices (e.g. C:\ProgramData\Sage\Accounts\2013\Company.000\Layouts\INVPRCA4.layout)
+The actual Sage .report/.layout file to use to generate the report or invoices (e.g. C:\ProgramData\Sage\Accounts\2013\Company.000\Layouts\INVPRCA4.layout)
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings)
