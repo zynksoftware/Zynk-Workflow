@@ -8,7 +8,11 @@ This task will generate a report using a layout file in Sage 50. The report can 
 ## Settings
 ### Criteria
 _Optional_  
-A list of variables containing the criteria values to use when running the report. If the report you're running allows you to specify criteria, you can enter each value as a separate variable. For example, if the report allows you to specify a particular sales order, you can enter this by creating a variable with the name 'ORDER_NUMBER', and setting the value to your chosen sales order number. Note that the variable name must be the ODBC field name. This can be viewed from the Sage 50 Report Designer, under Variables > CRITERIA.If the criteria allows multiple values to be provided, these can be  entered by selecting the 'List' data type for the variable value.
+This should contain a list of variables with the criteria values to use when running the report. If the report you're running allows you to specify criteria, you can enter each value as a separate variable. 
+
+For example, if the report allows you to specify a particular sales order, you can enter this by creating a variable with the name 'ORDER_NUMBER', and setting the value to your chosen sales order number. Note that the variable name must be the ODBC field name. 
+
+This can be viewed from the Sage 50 Report Designer, under Variables > CRITERIA.If the criteria allows multiple values to be provided, these can be  entered by selecting the 'List' data type for the variable value.
 
 ### Output File
 _Required_  
