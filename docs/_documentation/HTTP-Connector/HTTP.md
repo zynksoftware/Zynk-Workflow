@@ -1,5 +1,5 @@
 ---
-slug: http
+slug: rest
 redirect_from: "/article/333-introduction-to-the-web-connector"
 title: HTTP
 ---
