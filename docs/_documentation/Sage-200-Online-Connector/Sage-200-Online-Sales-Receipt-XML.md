@@ -2,7 +2,7 @@
 slug: sage-200-online-sales-receipt-xml
 title: Sage 200 Online Sales Receipt XML
 ---
-Receipts are used to record a sales receipt against a particular customer's account.  Uploading a sales receipt will create a posted transaction, to download receipts see [Exporting Sales Transactions from Sage 200 Online]] which will bring data back in [[Sage 200 Online Sales Transaction XML](exporting-sales-transactions-from-sage-200-online]]-which-will-bring-data-back-in-[[sage-200-online-sales-transaction-xml) format. Further information can be found on the [Sage 200 Online Sales Receipts API Documentation](https://developer.columbus.sage.com/docs#/uk/sage200/accounts/v1/sales_receipts).
+Receipts are used to record a sales receipt against a particular customer's account.  Uploading a sales receipt will create a posted transaction, to download receipts see [Exporting Sales Transactions from Sage 200 Online](exporting-sales-transactions-from-sage-200-online) which will bring data back in [Sage 200 Online Sales Transaction XML](sage-200-online-sales-transaction-xml) format. Further information can be found on the [Sage 200 Online Sales Receipts API Documentation](https://developer.columbus.sage.com/docs#/uk/sage200/accounts/v1/sales_receipts).
 
 ## Tasks
  * [Exporting Sales Transactions from Sage 200 Online](exporting-sales-transactions-from-sage-200-online)
