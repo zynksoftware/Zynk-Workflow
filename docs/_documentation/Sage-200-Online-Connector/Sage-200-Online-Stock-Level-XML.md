@@ -144,7 +144,7 @@ The warehouse related to the stock level, see [Sage 200 Online Warehouse XML](sa
 
 ### product
 _Read Only_  
-The product related to the stock level, see [Sage 200 Online Product XML](sage-200-online-product-xml). 
+The product related to the stock level, see [Sage 200 Online Stock Record XML](sage-200-online-stock-record-xml). 
 
 #### Download example showing related information
 

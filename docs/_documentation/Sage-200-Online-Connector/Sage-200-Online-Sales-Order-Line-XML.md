@@ -221,7 +221,3 @@ The sales order lines tax code.  On an import you can set the code of the tax co
     <code>1</code>
 </tax_code>
 ```
-
-
-
-

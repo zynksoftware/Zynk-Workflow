@@ -30,6 +30,14 @@ Receipts are used to record a sales receipt against a particular customer's acco
  * [Exporting Sales Transactions from Sage 200 Online](exporting-sales-transactions-from-sage-200-online)
  * [Importing Sales Receipts to Sage 200 Online](importing-sales-receipts-to-sage-200-online)
 
+## Sales Transactions
+[Sage 200 Online Sales Transaction XML](sage-200-online-sales-transaction-xml)   
+Sales posted transactions are created when transactions, such as orders invoiced, receipts, refunds or credit notes, are posted against the sales ledger.
+
+### Tasks
+ * [Exporting Sales Transactions from Sage 200 Online](exporting-sales-transactions-from-sage-200-online)
+ * [Importing Sales Receipts to Sage 200 Online](importing-sales-receipts-to-sage-200-online)
+
 ## Stock Levels
 [Sage 200 Online Stock Level XML](sage-200-online-stock-level-xml)  
 All stock within Sage 200 regardless of type (Stock, Service/labour, or Miscellaneous), require a holding location. The location indicates where an item is stored and the stock level settings for each product in the warehouse i.e. the re-order level, the minimum and maximum stock levels. Items with a type of 'Stock' have levels recorded for each warehouse location and the levels are used when allocating, issuing and receiving stock. 
