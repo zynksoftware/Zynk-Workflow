@@ -43,12 +43,9 @@ Each of the tasks require a connection to Sage 200, for more information on sett
 ## Supported Versions
 We provide support for the following versions of Sage 200:
 
- * 2016 
- * 2015 
- * 2013 
- * 2011 
- * 2010 
- * 2009 
- * 2008 
+ * Version 11 (2016)
+ * Version 10 (2015)
+ * Version 9 R2 (2013)
+ * Version 8 (2011)
 
 Zynk contains separate libraries for each version of Sage 200 listed above. You will need to make sure you use the tasks from the correct library depending on the version of Sage 200 you have installed.
