@@ -3,9 +3,13 @@ slug: sage-200
 redirect_from: "/article/421-introduction-to-the-sage-200-connector"
 title: Sage 200
 ---
-The Sage 200 connector implements an interface to Sage 200 and provides functions to import and export data from Sage 200 in Zynk XML format. For detailed schema information on the Zynk XML standard please see [Sage 200 XML](sage-200-xml).
+The Sage 200 connector implements an interface to Sage 200 Extra On-premise and provides functions to import and export data from Sage 200 in Zynk XML format. For detailed schema information on the Zynk XML standard please see [Sage 200 XML](sage-200-xml).
+
+*If you are using the new Sage 200c please contact support@zynk.com to confirm functionality you require is supported*
 
 Each of the tasks require a connection to Sage 200, for more information on setting up and managing connections see [Connecting to Sage 200](connecting-to-sage-200).
+
+If you are using Sage 200 Standard Online or Sage 200 Extra Online please see the [Sage 200 Online Documentation](sage-200-online)
 
 ## Tasks
 
