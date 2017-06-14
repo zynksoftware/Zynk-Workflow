@@ -34,6 +34,16 @@ Transaction type.
 | --- | --- | --- |
 | string(30) | TradingAccountEntryTypePurchasePaymentSalesReceipt | `<trader_transaction_type>TradingAccountEntryTypePurchasePaymentSalesReceipt</trader_transaction_type>` |
 
+#### Available Values
+ * TradingAccountEntryTypeDeletedRecord - Deleted
+ * TradingAccountEntryTypePurchasePaymentSalesReceipt - Purchase Payment / Sales Receipt
+ * TradingAccountEntryTypePurchaseReceiptSalesPayment - Purchase Receipt / Sales Payment
+ * TradingAccountEntryTypeNOTUSED - Unknown
+ * TradingAccountEntryTypeInvoice - Invoice
+ * TradingAccountEntryTypeCreditNote - Credit Note
+ * TradingAccountEntryTypeOpeningBalanceInvoice - Opening Bal. Invoice
+ * TradingAccountEntryTypeOpeningBalanceCreditNote - Opening Bal. Credit Note
+
 ### reference
  _Read Only_  
 Transaction reference.
@@ -398,6 +408,31 @@ Ledger type.
 | --- | --- | --- |
 | string(30) | LedgerSales | `<ledger_type>LedgerSales</ledger_type>` |
 
+#### Available Values
+ * LedgerNotSpecified - Not Specified
+ * LedgerSales - Sales
+ * LedgerPurchase - Purchase
+ * LedgerNominal - Nominal
+ * LedgerPayroll - Payroll
+ * LedgerProjectCosting - Project Accounting
+ * LedgerStockControl - Stock Control
+ * LedgerSOP - SOP
+ * LedgerPOP - POP
+ * LedgerInvoicing - Invoicing
+ * LedgerCashBook - Cash Book
+ * LedgerBOM - BOM
+ * LedgerFixedAssets - Fixed Assets
+ * LedgerRetail - Retail
+ * LedgerManufacturing - Manufacturing
+ * LedgerWebAPI - Web API
+ * LedgerBankFeeds - Bank Feeds
+ * LedgerEducation - Education
+ * LedgerExcelReporting - Excel Reporting
+ * LedgerBI - Business Intelligence
+ * LedgerPriceBook - Price Book
+ * LedgerTax - Tax
+ * LedgerUnknownSource - Unknown
+
 #### urn
 _Read Only_  
 Unique reference number.
@@ -421,6 +456,16 @@ Transaction type.
 | Type | Example | XML |
 | --- | --- | --- |
 | string(30) | TradingAccountEntryTypeInvoice | `<trader_transaction_type>TradingAccountEntryTypeInvoice</trader_transaction_type>` |
+
+#### Available Values
+ * TradingAccountEntryTypeDeletedRecord - Deleted
+ * TradingAccountEntryTypePurchasePaymentSalesReceipt - Purchase Payment / Sales Receipt
+ * TradingAccountEntryTypePurchaseReceiptSalesPayment - Purchase Receipt / Sales Payment
+ * TradingAccountEntryTypeNOTUSED - Unknown
+ * TradingAccountEntryTypeInvoice - Invoice
+ * TradingAccountEntryTypeCreditNote - Credit Note
+ * TradingAccountEntryTypeOpeningBalanceInvoice - Opening Bal. Invoice
+ * TradingAccountEntryTypeOpeningBalanceCreditNote - Opening Bal. Credit Note
 
 #### reference
 _Read Only_  

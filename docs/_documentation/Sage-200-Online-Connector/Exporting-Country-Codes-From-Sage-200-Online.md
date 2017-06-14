@@ -1,9 +1,9 @@
 ---
-slug: exporting-currencies-from-sage-200-online
-title: Exporting Currencies From Sage 200 Online
+slug: exporting-country-codes-from-sage-200-online
+title: Exporting Country Codes From Sage 200 Online
 ---
 
-This task will download currencies from Sage 200 Online to an XML file.
+This task will download currencies from Sage 200 Online in [Sage 200 Online Country Code XML](sage-200-online-country-code-xml) format to a file.
 
 ## Settings
 ### Sage 200 Online Connection
@@ -43,40 +43,21 @@ Sample output file:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<Currencies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Currency>
-    <id>1</id>
-    <date_time_updated>2015-10-30T22:33:17.53</date_time_updated>
-    <symbol>£</symbol>
-    <name>Pound Sterling</name>
-    <core_currency_rate>1.000000</core_currency_rate>
-    <euro_currency_rate>1.000000</euro_currency_rate>
-    <currency_iso_code_id>49</currency_iso_code_id>
-    <is_base_currency>true</is_base_currency>
-    <is_euro_currency>false</is_euro_currency>
-    <currency_iso_code>
-      <id>49</id>
-      <date_time_updated>2015-10-30T22:33:17.707</date_time_updated>
-      <code>GBP</code>
-      <name>UNITED KINGDOM, Pound Sterling</name>
-    </currency_iso_code>
-  </Currency>
-  <Currency>
+<CountryCodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CountryCode>
+  <CountryCode>
     <id>2</id>
-    <date_time_updated>2015-10-30T22:33:17.53</date_time_updated>
-    <symbol>€</symbol>
-    <name>Euro</name>
-    <core_currency_rate>1.000000</core_currency_rate>
-    <euro_currency_rate>1.000000</euro_currency_rate>
-    <currency_iso_code_id>46</currency_iso_code_id>
-    <is_base_currency>false</is_base_currency>
-    <is_euro_currency>true</is_euro_currency>
-    <currency_iso_code>
-      <id>46</id>
-      <date_time_updated>2015-10-30T22:33:17.707</date_time_updated>
-      <code>EUR</code>
-      <name>Euro Member Countries, Euro</name>
-    </currency_iso_code>
-  </Currency>
-</Currencies>
+    <date_time_updated>2015-10-30T22:33:16.67</date_time_updated>
+    <name>Austria</name>
+    <code>AT</code>
+    <eu_member>true</eu_member>
+  </CountryCode>
+  <CountryCode>
+    <id>3</id>
+    <date_time_updated>2015-10-30T22:33:16.67</date_time_updated>
+    <name>Belgium</name>
+    <code>BE</code>
+    <eu_member>true</eu_member>
+  </CountryCode>
+</CountryCodes>
 ```
