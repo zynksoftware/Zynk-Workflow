@@ -6,7 +6,7 @@ title: Sage 200 Online Currency XML
 Sage 200 works in multiple currencies and each company can configure up to 99 currencies to use., and all can be configured to use a single exchange rate, period exchange rates, or both. One currency must be configured as the base currency and this cannot be changed once transactions have been entered.  Further information can be found on the [Sage 200 Online Currency API Documentation](https://developer.columbus.sage.com/docs#/uk/sage200/accounts/v1/currencies).
 
 ## Tasks
- * [Exporting Currencyes from Sage 200 Online](exporting-currencies-from-sage-200-online)
+ * [Exporting Currencies from Sage 200 Online](exporting-currencies-from-sage-200-online)
 
 ## Fields for Download Only
 ### id
