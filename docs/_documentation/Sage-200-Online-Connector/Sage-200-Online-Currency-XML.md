@@ -90,7 +90,7 @@ Flag to indicate if the currency is the base currency.
 | datetime | 2016-07-08T09:28:40.9 | `<date_time_updated>2016-07-08T09:28:40.9</date_time_updated>` |
 
 ## Expandable Fields
-Related information linked to customers are also included in the downloaded XML, these can also be used to set certain fields on customer uploads using lookups rather than needing to know the internal id of the related record.
+Related information linked to currencies are also included in the downloaded XML.
 
 ### currency_iso_code
 _Read Only (see [currency_iso_code_id](#currency_iso_code_id))_  
