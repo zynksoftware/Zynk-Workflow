@@ -2,12 +2,27 @@
 slug: sage-200-online-xml
 title: Sage 200 Online XML
 ---
+
 To integrate with [Sage 200 Online](sage-200-online) using Zynk you will need to import and export data using XML.  The field names and types used are the same as the [Sage 200 Online API Documentation](https://developer.columbus.sage.com/docs#/uk/sage200/accounts), but are in an XML format rather than JSON 
 
 The format for downloading and uploading are the same for each record type, but there are certain fields that only used when creating a record for the first time, updating an existing record, or when downloading a record.  These are highlighted on each page, along with the data types and field length restrictions.
 
+## Country Codes
+[Sage 200 Online Country Code XML](sage-200-online-country-code-xml)  
+All countries each have a specific code to identify accounts that belong to that country.
+
+### Tasks
+ * [Exporting Country Codes from Sage 200 Online](exporting-country-codes-from-sage-200-online)
+
+## Currencies
+[Sage 200 Online Currency XML](sage-200-online-currency-xml)  
+Sage 200 works in multiple currencies and each company can configure up to 99 currencies to use., and all can be configured to use a single exchange rate, period exchange rates, or both. One currency must be configured as the base currency and this cannot be changed once transactions have been entered.
+
+### Tasks
+ * [Exporting Currencies from Sage 200 Online](exporting-currencies-from-sage-200-online)
+
 ## Customers
-[Sage 200 Online Customer XML](sage-200-online-customer-xml)     
+[Sage 200 Online Customer XML](sage-200-online-customer-xml)  
 Customers are one of the most important entities within Sage 200 as they are associated with many important resources within the application and underpin most of the main features (e.g. sales orders, payment receipts, etc). 
 
 ### Tasks

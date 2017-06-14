@@ -3,7 +3,7 @@ slug: exporting-country-codes-from-sage-200-online
 title: Exporting Country Codes From Sage 200 Online
 ---
 
-This task will download currencies from Sage 200 Online in [Sage 200 Online Country Code XML](sage-200-online-country-code-xml) format to a file.
+This task will export country codes from Sage 200 Online in [Sage 200 Online Country Code XML](sage-200-online-country-code-xml) format to a file.
 
 ## Settings
 ### Sage 200 Online Connection

@@ -3,7 +3,7 @@ slug: exporting-currencies-from-sage-200-online
 title: Exporting Currencies From Sage 200 Online
 ---
 
-This task will download currencies from Sage 200 Online to an XML file.
+This task will export currencies from Sage 200 Online in [Sage 200 Online Currency XML](sage-200-online-currency-xml) format to a file.
 
 ## Settings
 ### Sage 200 Online Connection

@@ -39,7 +39,7 @@ Flag to indicate if the country is a member of the EU.
 
 | Type | Example | XML |
 | --- | --- | --- |
-| string(60) | true | `<eu_member>true</eu_member>` |
+| boolean | true | `<eu_member>true</eu_member>` |
 
 #### Available Values
  * true
