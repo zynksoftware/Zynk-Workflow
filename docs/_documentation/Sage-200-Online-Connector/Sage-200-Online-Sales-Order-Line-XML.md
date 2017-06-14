@@ -50,8 +50,8 @@ The item description. This could be stock item description, free text, additiona
 | string(6000) | Shipping Charges | `<description>Shipping Charges</description>` |
 
 ### tax_code_id
-_Dependant (see [tax_code](#tax_code))_  
-Tax code Id, can also be set using tax code, see [tax_code](#tax_code).
+_Dependant (see [tax_code](#tax-code))_  
+Tax code Id, can also be set using tax code, see [tax_code](#tax-code).
 
 | Type | Example | XML |
 | --- | --- | --- |
