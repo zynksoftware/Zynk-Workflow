@@ -161,16 +161,3 @@ Note, as contacts are only used as part of customer download or upload the examp
   </Customer>
 </Customers>
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
