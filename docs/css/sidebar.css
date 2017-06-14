@@ -14,7 +14,7 @@ a span.fa { margin-right:5px}
 
 #wrapper.toggled 
 {
-    padding-left: 350px;
+    padding-left: 260px;
 }
 
 #sidebar-wrapper 
@@ -24,7 +24,7 @@ a span.fa { margin-right:5px}
     z-index: 1000;
     position: fixed;
     left: 0;
-    width: 350px;
+    width: 260px;
     height: 100%;
     background: #f1f1f1;
     -webkit-transition: all 0.5s ease;
@@ -44,7 +44,7 @@ a span.fa { margin-right:5px}
 .sidebar-nav 
 {
     top: 0;
-    width: 350px;
+    width: 260px;
     margin: 0;
     padding: 0 20px 0 0;
     list-style: none;
@@ -63,7 +63,7 @@ a span.fa { margin-right:5px}
 {
     margin:0;
     padding:15px;
-    width:350px;
+    width:260px;
 
     font-size: 16px;
     background-color: #666;
@@ -103,7 +103,7 @@ a span.fa { margin-right:5px}
 .sidebar-nav li a 
 {
     display: block;
-    width: 350px;
+    width: 260px;
     text-decoration: none;
     color: #666;
  
@@ -257,11 +257,11 @@ img {
     }
 
     #wrapper {
-        padding-left: 350px;
+        padding-left: 260px;
     }
 
     #sidebar-wrapper {
-        width: 350px;
+        width: 260px;
     }
 
     .toggled .side-nav-container {
