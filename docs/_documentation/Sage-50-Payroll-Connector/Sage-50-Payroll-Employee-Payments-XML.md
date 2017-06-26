@@ -1,9 +1,4 @@
----
-slug: sage-50-payroll-employee-payments-xml
-redirect_from: ""
-title: Sage 50 Payroll Employee Payments XML
----
-The [Importing Employee Payments Into Sage 50 Payroll](importing-employee-payments-into-sage-50-payroll) task allows you to insert or update Payments associated with Employees in Sage 50 Payroll.
+The [[Import Employee Payments|Importing Employee Payments Into Sage 50 Payroll]] task allows you to insert or update Payments associated with Employees in Sage 50 Payroll.
 
 For an Employee Payment to be imported, the Employee and the Payment must already exist in Sage 50 Payroll.
 
@@ -78,7 +73,7 @@ The hourly rate to set on the Employee Payment.
 
 ## Samples
 
-Sample import file for importing a new Employee Payment  
+Sample import file for [[creating a new|Sage-50-Payroll-XML#record-operations]] Employee Payment  
 _If the Payment is already associated with the Employee then the import of the record will fail_  
 
 ```xml
@@ -87,7 +82,7 @@ _If the Payment is already associated with the Employee then the import of the r
 	<EmployeePayments>
 		<EmployeePayment RecordOperation="Insert">
 			<EmployeeReference>1</EmployeeReference>
-			<PaymentName>Salary</PaymentName>
+			<PaymentName>Expense</PaymentName>
 			<Hours>7.5</Hours>
 			<Rate>15</Rate>
 		</EmployeePayment>
@@ -95,7 +90,7 @@ _If the Payment is already associated with the Employee then the import of the r
 </Company>
 ```
 
-Sample import file for updating an existing Employee Payment   
+Sample import file for [[updating an existing|Sage-50-Payroll-XML#record-operations]] Employee Payment   
 _If the Payment isn't already associated with the Employee then the import of the record will fail_  
 
 ```xml
@@ -104,7 +99,7 @@ _If the Payment isn't already associated with the Employee then the import of th
 	<EmployeePayments>
 		<EmployeePayment RecordOperation="Update">
 			<EmployeeReference>1</EmployeeReference>
-			<PaymentName>Salary</PaymentName>
+			<PaymentName>Expense</PaymentName>
 			<Hours>7.5</Hours>
 			<Rate>15</Rate>
 		</EmployeePayment>
@@ -112,7 +107,8 @@ _If the Payment isn't already associated with the Employee then the import of th
 </Company>
 ```
 
-Sample import file for updating an existing Employee Payment otherwise inserting a new Employee Payment
+Sample import file for [[upserting|Sage-50-Payroll-XML#record-operations]] a Employee Payment  
+_If the Payment isn't already associated with the Employee then one will be created, otherwise the existing Employee Payment will be updated_
 
 ```xml
 <?xml version="1.0"?>
@@ -120,7 +116,7 @@ Sample import file for updating an existing Employee Payment otherwise inserting
 	<EmployeePayments>
 		<EmployeePayment RecordOperation="Upsert">
 			<EmployeeReference>1</EmployeeReference>
-			<PaymentName>Salary</PaymentName>
+			<PaymentName>Expense</PaymentName>
 			<Hours>7.5</Hours>
 			<Rate>10</Rate>
 		</EmployeePayment>
@@ -129,14 +125,14 @@ Sample import file for updating an existing Employee Payment otherwise inserting
 ```
 
 ## Task Links
-- [Introduction to the Sage 50 Payroll Connector](sage-50-payroll)
-- [Connecting to Sage 50 Payroll](connecting-to-sage-50-payroll)
-- [Importing Employee Absences Into Sage 50 Payroll](importing-employee-absences-into-sage-50-payroll)
-- [Importing Employee Deductions Into Sage 50 Payroll](importing-employee-deductions-into-sage-50-payroll)
-- [Importing Employee Payments Into Sage 50 Payroll](importing-employee-payments-into-sage-50-payroll)
+- [[Introduction to the Sage 50 Payroll Connector|Sage-50-Payroll]]
+- [[Connecting to Sage 50 Payroll]]
+- [[Importing Employee Absences Into Sage 50 Payroll]]
+- [[Importing Employee Deductions Into Sage 50 Payroll]]
+- [[Importing Employee Payments Into Sage 50 Payroll]]
 
 ## XML Links
-- [Sage-50-Payroll-XML](sage-50-payroll-xml)
-- [Sage 50 Payroll Employee Absences XML](sage-50-payroll-employee-absences-xml)
-- [Sage 50 Payroll Employee Deductions XML](sage-50-payroll-employee-deductions-xml)
-- [Sage 50 Payroll Employee Payments XML](sage-50-payroll-employee-payments-xml)
+- [[Introduction to the Sage 50 Payroll XML|Sage-50-Payroll-XML]]
+- [[Sage 50 Payroll Employee Absences XML]]
+- [[Sage 50 Payroll Employee Deductions XML]]
+- [[Sage 50 Payroll Employee Payments XML]]
