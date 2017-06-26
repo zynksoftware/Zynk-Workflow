@@ -3,7 +3,7 @@ slug: bigcommerce-to-sage-50-integration
 redirect_from: "/article/463-bigcommerce-to-sage-50-integration"
 title: BigCommerce to Sage 50 Integration
 ---
-This tutorial details the basic principles when dealing with an integration between **BigCommerce**and **Sage**. This workflow will perform two basic tasks, which is the downloading orders from BigCommerce in to Sage and then passing inventory levels back up to BigCommerce. We make the assumption that all orders should be downloaded to a single 'websales' account in Sage, and that the SKU codes of the products match in both systems. The integration is not designed to handle products with options.
+This tutorial details the basic principles when dealing with an integration between **BigCommerce** and **Sage**. This workflow will perform two basic tasks, which is the downloading orders from BigCommerce in to Sage and then passing inventory levels back up to BigCommerce. We make the assumption that all orders should be downloaded to a single 'websales' account in Sage, and that the SKU codes of the products match in both systems. The integration is not designed to handle products with options.
 
 You can download a copy of the workflow from our [GitHub site](https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/BigCommerce%20to%20Sage50).
 
