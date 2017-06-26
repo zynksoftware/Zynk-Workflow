@@ -3,7 +3,7 @@ slug: amazon-submit-feeds
 redirect_from: "/article/640-amazon-submit-feeds"
 title: Amazon Submit Feeds
 ---
- This tutorial does not cover publishing product data to Amazon, only updating stock levels and prices - it is assumed thatthe products already exist in your Amazon inventory and the Amazon Merchant SKU matches the Sage Product Code. You will alsoneed your Merchant ID which you should have received after associating your Amazon Seller Central account with our DeveloperAccount,  see [Obtaining a Merchant ID from Amazon](obtaining-a-merchant-id-from-amazon).
+ This tutorial does not cover publishing product data to Amazon, only updating stock levels and prices - it is assumed that the products already exist in your Amazon inventory and the Amazon Merchant SKU matches the Sage Product Code. You will also need your Merchant ID which you should have received after associating your Amazon Seller Central account with our Developer Account,  see [Obtaining a Merchant ID from Amazon](obtaining-a-merchant-id-from-amazon).
 
 ## Zynk Connectors  
  For this tutorial you will need access to the following connectors in Zynk:
