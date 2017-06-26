@@ -3,7 +3,7 @@ slug: shopify-to-sage-50-integration
 redirect_from: "/article/712-shopify-to-sage-50-integration"
 title: Shopify to Sage 50 Integration
 ---
-This is a tutorial detailing the basic principles when building an integration between **Shopify** and **Sage 50**. This workflow will perform the standard tasks when considerin gthis type of integration, which is the downloading of orders from Shopify into Sage 50.
+This is a tutorial detailing the basic principles when building an integration between **Shopify** and **Sage 50**. This workflow will perform the standard tasks when considering this type of integration, which is the downloading of orders from Shopify into Sage 50.
 
 You can download a sample integration for this process [here](https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/Shopify%20to%20Sage%2050%20Integration).
 
