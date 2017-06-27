@@ -7,7 +7,7 @@ We have established a partnership with Deltek who produce the client managemen
 
 We don't manage the scripts that generate the data for this integration, this is done by Deltek. Any custom requirements (anything outside the detail of this article) will need to be raised with Deltek.
 
-This integration will export invoices from 		**TrafficLIVE** and import them into **Sage 50 UK**as Sales Invoices. You can find a sample workflow and a sample file on our [GitHub site](https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/Traffic%20Live%20Integration).
+This integration will export invoices from **TrafficLIVE** and import them into **Sage 50 UK** as Sales Invoices. You can find a sample workflow and a sample file on our [GitHub site](https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/Traffic%20Live%20Integration).
 
 Instructions on how to set up your TrafficLIVE system can be found 		[here](http://trafficlive.screenstepslive.com/s/2523/m/userguide/l/54862-fully-automated-posting-to-sage-line-50-sales-ledger-posting#), if you have any queries on this please contact the TrafficLIVE support team on 0800 880 3002.
 
@@ -31,9 +31,9 @@ This task will download the transactions from TrafficLIVE and store them in an X
 
 This task will import your TrafficLIVE in to Sage 50 UK as Sales Invoices.
 
- * **Fail File**This will be the destination for any failed transactions.
- * **Input File**This will be the Output File from the previous task and the file that is imported in to Sage 50 UK.
- * **Success File**This will be the destination of any successful transactions.
+ * **Fail File** This will be the destination for any failed transactions.
+ * **Input File** This will be the Output File from the previous task and the file that is imported in to Sage 50 UK.
+ * **Success File** This will be the destination of any successful transactions.
 
 [HTTP Task](http-task) - Notify Successful Transactions
 

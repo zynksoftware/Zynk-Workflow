@@ -39,7 +39,7 @@ To configure the mapping, click on the ellipsis (...) button on the 'Mapping' se
 **Note:** If the drop down menus do not list the format or data type you are looking for, then Zynk cannot currently transform your data automatically. As an alternative, you can transform the data yourself using the [XSLT Transform](xslt-transform).
 
 ## Customising the Mapping
-The mapping provided can be customised to match your specific requirements. You should only use this option if you have a good knowledge of using XSLT to transform XML data, tutorials for writing XSL transforms can be found at [W3 Schools](http://www.w3schools.com/xsl/default.asp). Please note that the task only supports XSLT 1.0. Zynk Software cannot provide support for mappings which have been customised.
+The mapping provided can be customised to match your specific requirements. You should only use this option if you have a good knowledge of using XSLT to transform XML data, tutorials for writing XSL transforms can be found at [W3 Schools](http://www.w3schools.com/xml/xsl_transformation.asp). Please note that the task only supports XSLT 1.0. Zynk Software cannot provide support for mappings which have been customised.
 
 To customise the mapping, click the 'Customise Mapping' button, and you will see a window like the one below.
 
