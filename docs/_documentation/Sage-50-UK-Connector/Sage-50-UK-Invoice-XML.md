@@ -53,6 +53,7 @@ The InvoiceType field can be one of the following:
  * ServiceInvoice
  * ProductProforma
  * ServiceProforma
+ * ProductQuotation
 
 ## Account Information
 To assign the order to a particular account you will need to specify either a CustomerId or an AccountReference in the XML. The CustomerId should correspond to a customer that has already been imported into Sage via Zynk, see Import Customers task. The AccountReference should correspond to the Reference of a Sales Ledger account that exists with Sage.
