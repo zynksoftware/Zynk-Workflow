@@ -1,3 +1,8 @@
+---
+slug: sage-50-payroll-employee-payments-xml
+title: Sage 50 Payroll Employee Payments XML
+---
+
 The [[Import Employee Payments|Importing Employee Payments Into Sage 50 Payroll]] task allows you to insert or update Payments associated with Employees in Sage 50 Payroll.
 
 For an Employee Payment to be imported, the Employee and the Payment must already exist in Sage 50 Payroll.
