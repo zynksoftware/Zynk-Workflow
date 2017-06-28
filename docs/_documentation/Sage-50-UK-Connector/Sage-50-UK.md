@@ -3,7 +3,7 @@ slug: sage-50-uk
 redirect_from: "/article/389-introduction-to-the-sage-50-uk-connector"
 title: Sage 50 UK
 ---
-The Sage 50 UK connector supports **Sage 50** and **Sage 50c** editions and provides functions to import and export data from Sage 50 in Zynk XML format. For detailed schema information on the Zynk XML standard please see [Sage 50 UK XML](sage-50-uk-xml/
+The Sage 50 UK connector supports **Sage 50** and **Sage 50c** editions and provides functions to import and export data from Sage 50 in Zynk XML format. For detailed schema information on the Zynk XML standard please see [Sage 50 UK XML](/sage-50-uk-xml/)
 
 Each of the tasks require a connection to Sage 50 UK, for more information on setting up and managing connections see [Connecting to Sage 50 UK](connecting-to-sage-50-uk).
 
