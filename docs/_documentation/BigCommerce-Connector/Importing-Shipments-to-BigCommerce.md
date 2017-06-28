@@ -17,7 +17,7 @@ The XML file to output failed imports to.
 _Required_  
 The XML file containing the shipments. These should be stored in the same format as detailed below.
 
-If a `<shipment>` node contains an `<id>` node, it will be treated as an existing shipment and the task will attempt to update it in BigCommerce. When updating existing products, please note that the `<rating_total>`, `<rating_count>`, `<number_sold>`, `<date_created>`, `<date_modified>`, `<date_last_imported>` and `<custom_url>` nodes are read-only and will result in an error if you try to update them.
+If a `<shipment>` node contains an `<id>` node, it will be treated as an existing shipment and the task will attempt to update it in BigCommerce.
 
 If no `<id>` node is provided for the shipment, it will be treat as a new shipment.
 
