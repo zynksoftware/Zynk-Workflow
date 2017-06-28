@@ -1,5 +1,5 @@
 ---
-slug: importing0-fulfilments-to-shopify
+slug: importing-fulfilments-to-shopify
 title: Importing fulfilments to Shopify
 ---
 This task will upsert (insert or update) fulfilments to your Shopify store, using the product data in an XML file. If an ID is provided, the existing shipment will be updated, if not, a new one will be created.
