@@ -14,6 +14,7 @@ Each of the tasks require a connection to BigCommerce, for more information on s
 * [Updating Inventory in BigCommerce](updating-inventory-in-bigcommerce)
 * [Updating Orders in BigCommerce](updating-orders-in-bigcommerce)
 * [Uploading Products to BigCommerce](uploading-products-to-bigcommerce)
+* [Importing Shipments to BigCommerce](import-shipments-to-bigcommerce)
 
 ## Articles and Sample Files
 There is a workflow template and article available on the links below:
