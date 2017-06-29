@@ -3,7 +3,7 @@ slug: using-ui-library
 redirect_from: "/article/636-using-ui-library"
 title: Using UI Library
 ---
- This article will step you through how to use the four tasks in the User Interface folder in the Zynk Task Library. Pleasenote, these tasks are generally used for debugging purposes and should not be used when running a scheduled task.        
+ This article will step you through how to use the four tasks in the User Interface folder in the Zynk Task Library. Please note, these tasks are generally used for debugging purposes and should not be used when running a scheduled task.        
 
 ## Display Last Output
 This example will show you running an export from Sage 50 and displaying the result. The Display Last Output task will open            the file exported from Sage 50 for you to peruse. As you can see, I have set up a workflow to run an Export Currencies            task from Sage 50 and a Display Last Output task.
