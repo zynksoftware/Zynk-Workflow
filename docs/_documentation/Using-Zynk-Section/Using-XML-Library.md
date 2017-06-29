@@ -3,7 +3,7 @@ slug: using-xml-library
 redirect_from: "/article/635-using-xml-library"
 title: Using XML Library
 ---
- This article will give an overview of how the XML and XSLT tasks can be used within a workflow to process and transform data.  XML is used as the input and output of virtually all Zynk tasks, with various different object models being used.XSLT (and the Atuo Mapper task) can be used to convert data to the required format. 
+ This article will give an overview of how the XML and XSLT tasks can be used within a workflow to process and transform data.  XML is used as the input and output of virtually all Zynk tasks, with various different object models being used. XSLT (and the Auto Mapper task) can be used to convert data to the required format. 
  
  ## Input XML 
  All of the examples arebased around the following StockTransaction XML, which should be saved out to your working directory as input.xml 
