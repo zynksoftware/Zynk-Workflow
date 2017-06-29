@@ -13,7 +13,7 @@ Enter your Salesforce details as described below, then click 'Finish' to create 
 ## Settings
 ### Environment
 _Required_  
-elect the Salesforce environment to connect to.
+Select the Salesforce environment to connect to.
 
  * **Live** - Connect to a live Salesforce organization. 
  * **Sandbox** - Connect to a test Salesforce organization. We recommend using this option when developing and testing your integration. Access to a sandbox depends on your Salesforce edition.
