@@ -3,9 +3,9 @@ slug: file-helpers-basics
 redirect_from: "/article/630-file-helpers-basics"
 title: File Helpers   Basics
 ---
- This article is an introduction to using the FileHelpers Module within Zynk, based on the Easy Example on the [FileHelperssite](http://www.filehelpers.com/example\_easy.html).  Using a C# class you can read in data from a flat file format and convertto XML, which can then be used for further processing within Zynk Workflows e.g. with the XSLT Transform.        
+ This article is an introduction to using the FileHelpers Module within Zynk, based on the Easy Example on the [FileHelpers site](http://www.filehelpers.net/example/QuickStart/ReadFileDelimited/).  Using a C# class you can read in data from a flat file format and convert to XML, which can then be used for further processing within Zynk Workflows e.g. with the XSLT Transform.        
 
-More information on this task can be found on the [Basic Converter](basic-converter) article.
+More information on this task can be found on the [Basic Converter](http://workflow.zynk.com/converting-xml-files-to-csv) article.
 
 ## Input File
 Save the below to input.txt
