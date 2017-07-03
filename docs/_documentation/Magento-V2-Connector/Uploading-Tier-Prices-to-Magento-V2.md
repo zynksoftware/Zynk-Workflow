@@ -50,5 +50,5 @@ A sample input file is shown below.
     <qty>3</qty>
     <value>49.99</value>
   </TierPrice>
-</ArrayOfProduct>
+</ArrayOfTierPrice>
 ```
