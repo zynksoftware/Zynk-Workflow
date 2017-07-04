@@ -1,5 +1,6 @@
 ---
 slug: using-zynk
+redirect_from: "/category/30-using-zynk"
 title: Using Zynk
 ---
  * [Accessing Variables in Tasks](accessing-variables-in-tasks)

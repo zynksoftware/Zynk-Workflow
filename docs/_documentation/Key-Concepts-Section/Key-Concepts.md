@@ -1,5 +1,6 @@
 ---
 slug: key-concepts
+redirect_from: "/category/29-key-concepts"
 title: Key Concepts
 ---
  * [Mappings](mappings)

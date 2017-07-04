@@ -45,6 +45,6 @@ OrderNumber,CustomerId,Total
 1252,87036,42.50
 ```
 
-In the Zynk Object Editor for the output file setting on the sub-task, select the 'Use the following file' option and enter @(Context.Current[â€œOrderNumberâ€]).csv in the box below. Remember to also select the 'Use Razor Engine' option. This will result in the sub-task creating the following output files in the workflow's data directory: `1250.csv`, `1251.csv`, `1252.csv`.
+In the Zynk Object Editor for the output file setting on the sub-task, select the 'Use the following file' option and enter @(Context.Current["OrderNumber"]).csv in the box below. Remember to also select the 'Use Razor Engine' option. This will result in the sub-task creating the following output files in the workflow's data directory: `1250.csv`, `1251.csv`, `1252.csv`.
 
 Please note that if you are using a period in the file name, you must encase the Razor variable in brackets eg. `@(Context.Current["OrderNumber"]).csv`

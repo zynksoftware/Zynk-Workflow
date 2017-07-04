@@ -5,7 +5,7 @@ title: Querying Records in SugarCRM
 ---
 
 
-This task will execute a â€œreadâ€ query against the SugarCRM system and return the data in XML format. Nested queries, custom modules and custom fields are all supported.
+This task will execute a read query against the SugarCRM system and return the data in XML format. Nested queries, custom modules and custom fields are all supported.
 
 
 

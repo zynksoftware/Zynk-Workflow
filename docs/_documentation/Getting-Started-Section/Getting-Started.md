@@ -1,5 +1,6 @@
 ---
 slug: getting-started
+redirect_from: "/category/28-getting-started"
 title: Getting Started
 ---
  * [Activating Zynk](activating-zynk)

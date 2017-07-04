@@ -3,7 +3,7 @@ slug: razor-template
 redirect_from: "/article/375-razor-template"
 title: Razor Template
 ---
-The Razor template uses the Microsoft Razor engine to â€œrenderâ€ any text based output. You specify the Template File which is a Razor template containing text and variables, and an Output File which is the file you want to produce. You can also specify Template Variables which can be used within your template in the format of `@Context.Template["VariableName"]` which will then be converted when the task is run.
+The Razor template uses the Microsoft Razor engine to render any text based output. You specify the Template File which is a Razor template containing text and variables, and an Output File which is the file you want to produce. You can also specify Template Variables which can be used within your template in the format of `@Context.Template["VariableName"]` which will then be converted when the task is run.
 
 Please refer to Create a Razor Template in the Tutorials section.
 
