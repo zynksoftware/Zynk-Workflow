@@ -5,6 +5,8 @@ title: Uploading Inventory to eBay
 ---
 This task will upload inventory status information to eBay in XML format.  You must provide either the ItemID or the SKU of the product to update, the SKU is provided but does not match only the ItemID will be used.
 
+As mentioned above, it is possible to update your inventory with a SKU. However, when you create the listing in eBay for your product you must set the InventoryTrackingMethod to SKU. This is a limitation of the eBay API.
+
 ## Settings
 ### Connection
 _Required_  
