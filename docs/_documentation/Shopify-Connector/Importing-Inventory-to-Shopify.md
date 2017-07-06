@@ -15,7 +15,7 @@ The XML file to output any failed uploads to.
 
 ### Input File
 _Required_  
-The XML file containing the products. They should be stored in the same format as the results returned by the Download Products task.
+The XML file containing the products. 
 
 ### Success File
 _Required_  
