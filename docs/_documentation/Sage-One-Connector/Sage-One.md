@@ -1,7 +1,7 @@
 ---
 slug: sage-one
-redirect-from: "/article/816-introduction-to-the-sage-one-connector"
-	- "/article/815-sage-one"
+redirect_from: "/article/816-introduction-to-the-sage-one-connector"
+	- "/category/815-sage-one"
 title: Sage One
 ---
 The Sage One connector implements an interface to Sage One and provides functions to import and export data from Sage One in Zynk XML format. For detailed schema information on the Zynk XML standard please see [Sage One XML](sage-one-xml).
