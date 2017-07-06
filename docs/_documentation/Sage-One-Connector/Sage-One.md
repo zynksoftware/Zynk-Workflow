@@ -1,6 +1,6 @@
 ---
 slug: sage-one
-redirect_from: "/article/816-introduction-to-the-sage-one-connector"
+redirect-from: "/article/816-introduction-to-the-sage-one-connector"
 	- "/article/815-sage-one"
 title: Sage One
 ---
