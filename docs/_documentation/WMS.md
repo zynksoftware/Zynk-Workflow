@@ -4,6 +4,5 @@ title: WMS
 ---
 Zynk Workflow supports a number of warehouse management systems including:
 
-* [ProSKU](prosku)
-
-
+ * [Peoplevox](peoplevox)
+ * [ProSKU](prosku)
