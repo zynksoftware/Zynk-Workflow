@@ -10,167 +10,200 @@ Zynk will export the data from the "Item movement history" report in XML format.
  * [Export Item Movements from Peoplevox](export-item-movements-from-peoplevox)
 
 ## Fields
-### Item Code
+### Item Code  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | TEST01 | `<Item_code>TEST01</Item_code>` |
 
-### Item Name
+### Item Name  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | This is a test item. | `<Item_name>This is a test item.</Item_name>` |
 
-### Item Barcode
+### Item Barcode  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 5016447208891 | `<Item_barcode>5016447208891</Item_barcode>` |
 
-### Date Timestamp
+### Date Timestamp  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | '05/07/2017 10:05' | `<Date_timestamp>'05/07/2017 10:05'</Date_timestamp>` |
 
-### User
+### User  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Joe Harrison | `<User>Joe Harrison</User>` |
 
-### From
+### From  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | XYZ | `<From>XYZ</From>` |
 
-### To
+### To  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | ABC | `<To>ABC</To>` |
 
-### Quantity
+### Quantity  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 5 | `<Quantity>5</Quantity>` |
 
-### Comments
+### Comments  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Despatched | `<Comments>Despatched</Comments>` |
 
-### Sales Order Number
+### Sales Order Number  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 1234 | `<Sales_order_number>1234</Sales_order_number>` |
 
-### From Container
+### From Container  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<From_Container />` |
 
-### To Container
+### To Container  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<To_Container />` |
 
-### History Id
+### History Id  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 160738 | `<History_Id>160738</History_Id>` |
 
-### Site Reference
+### Site Reference  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | PrimarySite | `<Site_reference>PrimarySite</Site_reference>` |
 
-### Buy Price
+### Buy Price  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 0.35 | `<Buy_Price>0.35</Buy_Price>` |
 
-### Manufacturer Item No
+### Manufacturer Item No  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | H03M020 | `<Manufacturer_item_no>H03M020</Manufacturer_item_no>` |
 
-### Item Group Name
+### Item Group Name  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Item group | `<Item_group_name>Item group</Item_group_name>` |
 
-### Attribute 1
+### Attribute 1  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Whitefurze | `<Attribute_1>Whitefurze</Attribute_1>` |
 
-### Attribute 2
+### Attribute 2  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | n/a | `<Attribute_2>n/a</Attribute_2>` |
 
-### Attribute 3
+### Attribute 3  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Clear | `<Attribute_3>Clear</Attribute_3>` |
 
-### Attribute 4
+### Attribute 4  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_4 />` |
 
-### Attribute 5
+### Attribute 5  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_5 />` |
 
-### Attribute 6
+### Attribute 6  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_6 />` |
 
-### Attribute 7
+### Attribute 7  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_7 />` |
 
-### Attribute 8
+### Attribute 8  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_8 />` |
 
-### Attribute 9
+### Attribute 9  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_9 />` |
 
-### Attribute 10
+### Attribute 10  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_10 />` |
 
-### Attribute 11
+### Attribute 11  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_11 />` |
 
-### Attribute 12
+### Attribute 12  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_12 />` |
 
-### Attribute 13
+### Attribute 13  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_13 />` |
 
-### Attribute 14
+### Attribute 14  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_14 />` |
 
-### Attribute 15
+### Attribute 15  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute_15 />` |
 
-### Register Reason
+### Register Reason  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Register_Reason />` |
