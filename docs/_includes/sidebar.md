@@ -75,6 +75,8 @@
     * [FTP](/ftp)
     * [SFTP](/sftp)
     * [HTTP REST](/rest)
+* [WMS](/wms)
+    * [ProSKU](/prosku)
 * [Other](/other)
     * [Developer](/developer)
     * [SMS](/sms)
