@@ -1,5 +1,5 @@
 ---
-slug: prosku-product-xml
+slug: prosku-products-xml
 title: ProSKU Product XML
 ---
 Import Products allows you to create new and update existing product records in ProSKU. 

@@ -1,5 +1,5 @@
 ---
-slug: prosku-pre-receipt-xml
+slug: prosku-pre-receipts-xml
 title: ProSKU Pre Receipt XML
 ---
 Import pre receipt allows you to create new pre receipts in ProSKU. 
