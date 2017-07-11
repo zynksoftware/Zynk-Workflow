@@ -80,9 +80,9 @@ The below information is in relation to the customer details you are able to set
 | --- | --- | --- | --- |
 | Product_code | Phantom | string | Required |
 | Description | This item doesn't exist | string  | Optional |
-| Code2 | BLONDE | string | Optional |
-| Code3 | Blonde on Blonde | string | Required |
-| Barcode | Sales Type A | string   | Required if product requires barcode |
+| Code2 | code2 | string | Optional |
+| Code3 |code3 | string | Required |
+| Barcode | Phantom1a23 | string   | Required if product requires barcode |
 | Keywords | 20  | double   | Optional  |
 | Cost_price | 4.99  | double   | Optional  |
 | Sale_price | 12.99  | double  | Optional |
