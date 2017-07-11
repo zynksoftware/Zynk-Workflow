@@ -36,7 +36,7 @@ You can add search clauses to limit the data that is returned from the report, f
 
 ### Template
 _Required_  
-The name of the report you want to export from Peoplevox, this must match the name as showing through the reporting section of your Peoplevox web application.
+The name of the report you want to export from Peoplevox, this must match the name as showing through the reporting section of your Peoplevox web application.  Defaults to `Despatch summary`.
 
 ### Export As Elements
 _Required_  
