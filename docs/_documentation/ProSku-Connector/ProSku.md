@@ -1,6 +1,5 @@
 ---
 slug: prosku
-redirect_from: 
 title: ProSKU
 ---
 The ProSKU connector implements an interface to ProSkU and provides functions to import and export data from ProSKU. All data is transferred using an XML format, please refer to the individual task pages for examples of the format for each task.

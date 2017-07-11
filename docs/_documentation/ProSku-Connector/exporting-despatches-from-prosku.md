@@ -1,6 +1,5 @@
 ---
 slug: exporting-despatches-from-prosku
-redirect_from: 
 title: Exporting Despatches From ProSKU
 ---
 This task will export despatch details from ProSKU in XML format. 

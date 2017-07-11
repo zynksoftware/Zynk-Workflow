@@ -1,11 +1,10 @@
 ---
 slug: connecting-to-prosku
-redirect_from:
 title: Connecting To ProSKU
 ---
 All of the tasks in the ProSKU connector require a connection to a ProSKU company, so you will need to create a connection with the type 'ProSKU'. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your ProSKU details:
 
-![ProSKU Connection](http://www.zynk.com/images/v2/sage_one_connection.png)
+![ProSKU Connection](/assets/images/prosku/prosku-connection.png)
 
 Follow the steps below to obtain your access and refresh token for ProSKU:
 
