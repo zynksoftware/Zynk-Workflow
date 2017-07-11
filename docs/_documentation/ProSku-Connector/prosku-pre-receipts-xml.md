@@ -44,6 +44,9 @@ The below information shows the fields available when creating a pre receipt.
 
 ## Product Details
 The below information shows the fields available for specifying a product on the pre receipt.
+
+| XML Field | Example | Field Type | Input |
+| --- | --- | --- | --- |
 | Product_code | Phantom | string | Required |
 | Quantity | 1 | integer | Required |
 | Pallet_ref | PAL001 | string | Optional |
