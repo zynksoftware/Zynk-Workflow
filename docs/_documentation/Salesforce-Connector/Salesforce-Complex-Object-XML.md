@@ -125,13 +125,14 @@ The Field element represents the value of a field in Salesforce.
 ```
 
 ## LookupField
-The LookupField element represents a lookup for the value of an ID field in Salesforce. This is useful where you know the value of a unique identifier for a record, but don't know the ID. The example shown below will lookup the ID of the account with the name 'Test 123', and use this as the value for the AccountId field on an opportunity.
+The LookupField element represents a lookup for the value of a field from another object Salesforce. This is useful where you need to set a field to the same value as a field on another object in Salesforce. The example shown below will lookup the ID of the account with the name 'Test 123', and use this as the value for the AccountId field on an opportunity.
 
 | XML Field  | Example  | Field Type  | Input  | Description |
 | --- | --- | --- | --- | --- |
-| @Name | AccountId | string | Required | The Salesforce API field name of the field in Salesforce. |
+| @Name | AccountId | string | Required | The Salesforce API field name of the field to update in Salesforce. |
 | @Value | string | Optional | If a value is specified, this will be used instead of performing the lookup. |
-| Criteria/@Type | Account | string | Required | The type of object to perform the lookup for. This should correspond with the API name of an object in Salesforce. |
+| Criteria/@Type | Account | string | Required | The type of object to perform the lookup on. This should correspond with the API name of an object in Salesforce. |
+| Criteria/@Select | Id | string | Optional | The Salesforce API field name of the field containing the value to be returned by the lookup. If not specified, this will default to Id. |
 | Criteria/Fields | N/A | Field or LookupField | Required | The collection of field values to lookup records based on. At least one field must be specified, only records with field values matching all of those specified will be considered a match. Complex lookups across diferent types of object can be constructed by using further LookupField elements within the Fields collection. |
 
 ```xml
@@ -140,7 +141,7 @@ The LookupField element represents a lookup for the value of an ID field in Sale
     <SalesforceObject>
         <Fields>
             <LookupField Name="AccountId">
-                <Criteria Type="Account">
+                <Criteria Type="Account" Select="Id">
                     <Fields>
                         <Field Name="Name" Value="Test 123" />
                     </Fields>

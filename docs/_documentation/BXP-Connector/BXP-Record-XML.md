@@ -52,6 +52,13 @@ The Records element represents a collection of records to upload to BXP. This el
 | @FormId | 1 | integer | Required | The form ID to upload the of records contained within the collection. This should correspond with the ID of a form in BXP. |
 | Record | See below | Record | Optional | Represents a record to upload to BXP. 0 or more Record elements can be included in the Records collection. See below for more information on the Record element. |
 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Records FormId="1">
+  <!-- Omitted -->
+</Records>
+```
+
 ## Record
 The Record element represents an individual record to insert or update in BXP. 
 
@@ -59,7 +66,7 @@ The Record element represents an individual record to insert or update in BXP.
 | --- | --- | --- | --- | --- |
 | ExternalId | 8290 | string | Optional | You can include the ID of the record from the source system here. This value will not be uploaded to BXP. Zynk will track it internally using the truth table, and will create a mapping between the ExternalId value and the ID assigned by BXP. If the a record with the same ExternalId is seen in future, it will be automatically matched to the existing record ID in BXP. Please note that if a matching ExternalId is found by Zynk, this will override any MatchField(s) provided. It will never override the BXP ID if this is explicitly provided as a Field. |
 | MatchField | Name="OrderNumber" Value="8290" | string | Optional | Represents the name and value of a field that is used for matching to existing records in BXP. If more than one MatchField is specified, it will look for a matching record in BXP where all of the MatchFields match. The fields used should represent a unique value or a unique combination of values. If this is not the case, Zynk will return an error. |
-| Field | Name="Address1" Value="i6 Building" | string | Optional | Represents the name and value of a field that should be updated in BXP. |
+| Field | Name="Address1" Value="i6 Building" | string | Optional | Represents the name and value of a field that should be updated in BXP. You can use the ID of the parent record as the value for a field by specifying `{ParentId}` as the value. |
 | RelatedRecords | See below | RelatedRecords | Optional | Any related records to be uploaded to BXP can be included in the RelatedRecords collection. See below for more information. |
 
 ```xml
