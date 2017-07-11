@@ -2,7 +2,7 @@
 slug: exporting-stock-from-prosku
 title: Exporting Stock From ProSKU
 ---
-This task will export stock details from ProSKU for an individual item in XML format. 
+This task will export stock details from ProSKU for an individual item to an XML file. 
 
 ## Settings
 ### Connection

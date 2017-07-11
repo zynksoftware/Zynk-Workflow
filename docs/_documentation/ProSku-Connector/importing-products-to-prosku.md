@@ -2,10 +2,10 @@
 slug: importing-products-to-prosku
 title: Importing Products to ProSKU
 ---
-This task will upload products that are supplied in the [XML](xml) format.
+This task will upload products that are supplied in an XML format.
 
 ## Fields
-The below fields in bold are required when creating a product, the other fields are optional when creating and updating. Please note, if you do not provide an Id field when creating a product Zynk will be unable to update that product when it is next uploaded.
+The below fields in bold are required when creating a product or changing a product. The other fields are optional when creating and updating. 
 
 * __product_code__
 * description

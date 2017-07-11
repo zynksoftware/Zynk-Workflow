@@ -2,7 +2,7 @@
 slug: exporting-receipts-from-prosku 
 title: Exporting Receipts From ProSKU
 ---
-This task will export receipts details from ProSKU in XML format. 
+This task will export receipts details from ProSKU to an XML file. 
 
 ## Settings
 ### Export Date

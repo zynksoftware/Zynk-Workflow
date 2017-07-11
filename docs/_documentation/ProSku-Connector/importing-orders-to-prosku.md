@@ -2,7 +2,7 @@
 slug: importing-orders-to-prosku
 title: Uploading orders to ProSKU
 ---
-This task will upload orders that are supplied in the [XML](xml) format.
+This task will upload orders that are supplied in an XML format.
 
 ## Fields
 The below fields in bold are required when creating a product.
@@ -32,7 +32,7 @@ The below fields in bold are required when creating a product.
 * delivery_date
 * delivery_time
 
-###Country Level
+### Country Level
 * country_name
 * iso_2_code
 * iso_3_code

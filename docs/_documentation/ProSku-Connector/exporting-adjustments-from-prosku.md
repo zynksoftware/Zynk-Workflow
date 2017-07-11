@@ -2,7 +2,7 @@
 slug: exporting-adjustments-from-prosku
 title: Exporting Adjustments From ProSKU
 ---
-This task will export Adjustment details from ProSKU in XML format. 
+This task will export Adjustment details from ProSKU to an XML file. 
 
 ## Settings
 ### Export Date
