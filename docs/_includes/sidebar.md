@@ -76,6 +76,7 @@
     * [SFTP](/sftp)
     * [HTTP REST](/rest)
 * [WMS](/wms)
+    * [Peoplevox](/peoplevox)
     * [ProSKU](/prosku)
 * [Other](/other)
     * [Developer](/developer)
