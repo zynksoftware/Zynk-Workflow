@@ -71,7 +71,7 @@ See [Common Task Settings](common-task-settings)
 
 ### Item Movement Report
 
- * **Template** - Item movement history"
+ * **Template** - Item movement history
  * **Export As Elements** - True
  * **Root** - Movements
  * **Row** - Movement
