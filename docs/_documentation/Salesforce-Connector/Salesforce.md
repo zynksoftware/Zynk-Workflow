@@ -5,7 +5,7 @@ title: Salesforce
 ---
 The Salesforce connector implements an interface to Salesforce and provides functions to import and export data from Salesforce in XML format. For detailed schema information on the XML format please see [Salesforce XML](salesforce-xml).
 
-Each of the tasks require a connection to Salesforce, for more information on setting up and managing connections see [Connecting to Salesforce](connecting-to-salesforce) or [[Connecting to Salesforce (Bulk)](connecting-to-salesforce-bulk), depending on the whether it's a bulk task.
+Each of the tasks require a connection to Salesforce, for more information on setting up and managing connections see [Connecting to Salesforce](connecting-to-salesforce) or [Connecting to Salesforce (Bulk)](connecting-to-salesforce-bulk), depending on the whether it's a bulk task.
 
 
 ## Tasks
