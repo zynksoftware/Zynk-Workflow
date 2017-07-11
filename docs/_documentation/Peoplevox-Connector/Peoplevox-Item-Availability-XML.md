@@ -10,217 +10,260 @@ Zynk will export the data from the "Item availability latest reconciliation" rep
  * [Export Item Availability from Peoplevox](export-item-availability-from-peoplevox)
 
 ## Fields
-### Item Code
+### Item Code  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | ABBUILTIN/15/0/2 | `<Item_code>ABBUILTIN/15/0/2</Item_code>` |
 
-### Name
+### Name  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Name />` |
 
-### Barcode
+### Barcode  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 800811232 | `<Barcode>800811232</Barcode>` |
 
-### On Hand
+### On Hand  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 0 | `<On_hand>0</On_hand>` |
 
-### Activity
+### Activity  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Sales order allocation | `<Activity>Sales order allocation</Activity>` |
 
-### Reason
+### Reason  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Sales order Allocation | `<Reason>Sales order Allocation</Reason>` |
 
-### User
+### User  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | admin | `<User>admin</User>` |
 
-### Date Time
+### Date Time  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | '03/07/2017 10:52' | `<Date_time>'03/07/2017 10:52'</Date_time>` |
 
-### Default Economic Order Quantity
+### Default Economic Order Quantity  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Default_economic_order_quantity />` |
 
-### Default Lead Time
+### Default Lead Time  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Default_lead_time />` |
 
-### Default Suppliers Part Number
+### Default Suppliers Part Number  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Default_suppliers_part_number />` |
 
-### Has Serial Number
+### Has Serial Number  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | False | `<Has_serial_number>False</Has_serial_number>` |
 
-### Use Manufacturers Serial Number
+### Use Manufacturers Serial Number  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | False | `<Use_manufacturers_serial_number>False</Use_manufacturers_serial_number>` |
 
-### Reorder Point
+### Reorder Point  
+ 
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 0 | `<Reorder_point>0</Reorder_point>` |
 
-### Shelf Life
+### Shelf Life  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Shelf_life />` |
 
-### Default Number of Items per Container
+### Default Number of Items per Container  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Default_number_of_items_per_container />` |
 
-### Default Number of items per Outercase
+### Default Number of items per Outercase  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Default_number_of_items_per_outercase />` |
 
-### Buy Price
+### Buy Price  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 0.00 | `<Buy_price>0.00</Buy_price>` |
 
-### Wholesale Price
+### Wholesale Price  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 0.00 | `<Wholesale_price>0.00</Wholesale_price>` |
 
-### Retail Price
+### Retail Price  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 0.00 | `<Retail_price>0.00</Retail_price>` |
 
-### Weight
+### Weight  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Weight />` |
 
-### Height
+### Height  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Height />` |
 
-### Width
+### Width  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Width />` |
 
-### Depth
+### Depth  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Depth />` |
 
-### Item Type Group
+### Item Type Group  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Item group | `<Item_type_group>Item group</Item_type_group>` |
 
-### Tags
+### Tags  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Tags />` |
 
-### Allocated
+### Allocated  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 10 | `<Allocated>10</Allocated>` |
 
-### On Order
+### On Order  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 0 | `<On_order>0</On_order>` |
 
-### Attribute 1
+### Attribute 1  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute1 />` |
 
-### Attribute 2
+### Attribute 2  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute2 />` |
 
-### Attribute 3
+### Attribute 3  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute3 />` |
 
-### Attribute 4
+### Attribute 4  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `Attribute4 />` |
 
-### Attribute 5
+### Attribute 5  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute5 />` |
 
-### Attribute 6
+### Attribute 6  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute6 />` |
 
-### Attribute 7
+### Attribute 7  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute7 />` |
 
-### Attribute 8
+### Attribute 8  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute8 />` |
 
-### Attribute 9
+### Attribute 9  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute9 />` |
 
-### Attribute 10
+### Attribute 10  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute10 />` |
 
-### Attribute 11
+### Attribute 11  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute11 />` |
 
-### Attribute 12
+### Attribute 12  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute12 />` |
 
-### Attribute 13
+### Attribute 13  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute13 />` |
 
-### Attribute 14
+### Attribute 14  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute14 />` |
 
-### Attribute 15
+### Attribute 15  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute15 />` |
