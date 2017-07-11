@@ -26,13 +26,13 @@ Zynk will export the data from the "Goods in summary" report in XML format.  All
 
 | Type | Example | XML |
 | --- | --- | --- |
-| string |  | `<Reconciled_date>'05/07/2017 15:48'</Reconciled_date>` |
+| string | '05/07/2017 15:48' | `<Reconciled_date>'05/07/2017 15:48'</Reconciled_date>` |
 
 ### Carrier Name  
 
 | Type | Example | XML |
 | --- | --- | --- |
-| string | '05/07/2017 15:48' | `<Carrier_name>Unknown</Carrier_name>` |
+| string | Unknown | `<Carrier_name>Unknown</Carrier_name>` |
 
 ### User Name  
 
