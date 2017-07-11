@@ -2,6 +2,7 @@
 slug: sage-200-online-contact-xml
 title: Sage 200 Online Contact XML
 ---
+
 Information can be stored for multiple contacts against each customer account. Each contact can have its own details such as telephone numbers, fax numbers, email address and website. **Note: In Sage 200 Standard, only one contact is supported.**  Further information can be found on the [Sage 200 Online Contact API Documentation](https://developer.columbus.sage.com/docs#/uk/sage200/accounts/v1/customer_contacts). 
 
 ## Tasks

@@ -4,10 +4,7 @@ redirect_from: "/article/930-introduction-to-kashflow-connector"
 title: Kashflow
 ---
 
-
 The Kashflow connector provides predefined functions within it's tasks that allow you to download and upload data to your instance of Kashflow using their XML format. For detailed schema information on the tasks you'd like to carry out, please visit the necessary links below.
-
-
 
 Each of the tasks require a connection to Kashflow, for more information on setting up and managing connections see Connecting to Kashflow.
 
