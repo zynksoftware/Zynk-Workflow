@@ -10,197 +10,236 @@ Zynk will export the data from the "Goods in summary" report in XML format.  All
  * [Export Goods In from Peoplevox](export-goods-in-from-peoplevox)
 
 ## Fields
-### Goods In Reference Number
+### Goods In Reference Number  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 4604 | `<Goods_in_reference_number>4604</Goods_in_reference_number>` |
 
-### Delivery Date
+### Delivery Date  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | '05/07/2017 11:42' | `<Delivery_date>'05/07/2017 11:42'</Delivery_date>` |
 
-### Reconciled Date
+### Reconciled Date  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Reconciled_date>'05/07/2017 15:48'</Reconciled_date>` |
 
-### Carrier Name
+### Carrier Name  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | '05/07/2017 15:48' | `<Carrier_name>Unknown</Carrier_name>` |
 
-### User Name
+### User Name  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | JoeH | `<User_name>JoeH</User_name>` |
 
-### Item Code
+### Item Code  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | STRAPPING | `<Item_code>STRAPPING</Item_code>` |
 
-### Item Name
+### Item Name  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Strapping 12 x 55 x 3000m | `<Item_name>Strapping 12 x 55 x 3000m</Item_name>` |
 
-### Item Barcode
+### Item Barcode  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | STRAPPING | `<Item_barcode>STRAPPING</Item_barcode>` |
 
-### Description
+### Description  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Description />` |
 
-### Quantity
+### Quantity  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 30 | `<Quantity>30</Quantity>` |
 
-### Default Economic Order Quantity
+### Default Economic Order Quantity  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Default_economic_order_quantity />` |
 
-### Default Lead Time
+### Default Lead Time  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Default_lead_time />` |
 
-### Default Suppliers Part Number
+### Default Suppliers Part Number  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Default_suppliers_part_number />` |
 
-### Has Serial Number
+### Has Serial Number  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | False | `<Has_serial_number>False</Has_serial_number>` |
 
-### Use Manufacturers Serial Number
+### Use Manufacturers Serial Number  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | False | `<Use_manufacturers_serial_number>False</Use_manufacturers_serial_number>` |
 
-### Reorder Point
+### Reorder Point  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 0 | `<Reorder_point>0</Reorder_point>` |
 
-### Traceability
+### Traceability  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | False | `<Traceability>False</Traceability>` |
 
-### Shelf Life
+### Shelf Life  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Shelf_life />` |
 
-### Default Number of Items per Container
+### Default Number of Items per Container  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Default_number_of_items_per_container />` |
 
-### Default Number of Items per Outercase
+### Default Number of Items per Outercase  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Default_number_of_items_per_outercase />` |
 
-### Buy Price
+### Buy Price  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 19.82 | `<Buy_price>19.82</Buy_price>` |
 
-### Wholesale Price
+### Wholesale Price  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 0.00 | `<Wholesale_price>0.00</Wholesale_price>` |
 
-### Retail Price
+### Retail Price  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 0.00 | `<Retail_price>0.00</Retail_price>` |
 
-### Weight
+### Weight  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Weight />` |
 
-### Height
+### Height  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Height />` |
 
-### Width
+### Width  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Width />` |
 
-### Depth
+### Depth  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Depth />` |
 
-### Unit of Measure
+### Unit of Measure  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Unit | `<Unit_of_measure>Unit</Unit_of_measure>` |
 
-### Tags
+### Tags  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Tags />` |
 
-### Purchase Order Number
+### Purchase Order Number  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | PO29 | `<Purchase_order_number>PO29</Purchase_order_number>` |
 
-### Delivery Note Number
+### Delivery Note Number  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Delivery_note_number />` |
 
-### Attribute 1
+### Attribute 1  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Gordian  | `<Attribute1>Gordian </Attribute1>` |
 
-### Attribute 2
+### Attribute 2  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | n/a< | `<Attribute2>n/a</Attribute2>` |
 
-### Attribute 3
+### Attribute 3  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | n/a< | `<Attribute3>n/a</Attribute3>` |
 
-### Attribute 4
+### Attribute 4  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute4 />` |
 
-### Attribute 5
+### Attribute 5  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute5 />` |
 
-### Attribute 6
+### Attribute 6  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute6 />` |
 
-### Attribute 7
+### Attribute 7  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute7 />` |
 
-### Attribute 8
+### Attribute 8  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute8 />` |
@@ -210,42 +249,50 @@ Zynk will export the data from the "Goods in summary" report in XML format.  All
 | --- | --- | --- |
 | string |  | `<Attribute9 />` |
 
-### Attribute 10
+### Attribute 10  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute10 />` |
 
-### Attribute 11
+### Attribute 11  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute11 />` |
 
-### Attribute 12
+### Attribute 12  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute12 />` |
 
-### Attribute 13
+### Attribute 13  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute13 />` |
 
-### Attribute 14
+### Attribute 14  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute14 />` |
 
-### Attribute 15
+### Attribute 15  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<Attribute15 />` |
 
-### Site Reference
+### Site Reference  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | PrimarySite | `<Site_reference>PrimarySite</Site_reference>` |
 
-### Purchase Order Supplier
+### Purchase Order Supplier  
+
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Gordian Strapping | `<Purchase_order_supplier>Gordian Strapping</Purchase_order_supplier>` |
