@@ -6,12 +6,10 @@ All of the tasks in the ProSKU connector require a connection to a ProSKU compan
 
 ![ProSKU Connection](/assets/images/prosku/prosku_connection.png)
 
-Follow the steps below to obtain your access and refresh token for ProSKU:
-
-### 1.
-Enter your ProSKU company reference, then click 'Log In'. 
+Enter your ProSKU details as described below, and then click 'Finish' to create the connection.
 
 ## Settings
+
 ### Company Reference
 _Required_  
 Enter your Company Reference.
