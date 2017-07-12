@@ -42,35 +42,48 @@ Example input file, for detailed information see [Peoplevox Sales Order XML](peo
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<PurchaseOrders>
-	<PurchaseOrder>
-		<PurchaseOrderNumber>PO-123456</PurchaseOrderNumber>
-		<Status>Pending</Status>
-		<Reference>PO-ABCDEF</Reference>
-		<Supplier>Andrew Snape</Supplier>
-		<AddressLine1>i6</AddressLine1>
-		<AddressLine2>6 - 8 Charlotte Square</AddressLine2>
-		<AddressCity>Newcastle</AddressCity>
-		<AddressRegion>Tyne and Wear</AddressRegion>
-		<AddressPostcode>NE1 4XF</AddressPostcode>
-		<AddressCountry>United Kingdom</AddressCountry>
-		<AddressReference>WORK</AddressReference>
+<SalesOrders>
+	<SalesOrder>
+		<SalesOrderNumber>SO-123456</SalesOrderNumber>
+		<Customer>Andrew Snape</Customer>
+		<CustomerPurchaseOrderReferenceNumber>SO-ABCDEF</CustomerPurchaseOrderReferenceNumber>
+		<ShippingAddressLine1>i6</ShippingAddressLine1>
+		<ShippingAddressLine2>6 - 8 Charlotte Square</ShippingAddressLine2>
+		<ShippingAddressCity>Newcastle</ShippingAddressCity>
+		<ShippingAddressRegion>Tyne and Wear</ShippingAddressRegion>
+		<ShippingAddressPostcode>NE1 4XF</ShippingAddressPostcode>
+		<ShippingAddressCountry>United Kingdom</ShippingAddressCountry>
+		<ShippingAddressReference>WORK</ShippingAddressReference>
+		<InvoiceAddressLine1>i6</InvoiceAddressLine1>
+		<InvoiceAddressLine2>6 - 8 Charlotte Square</InvoiceAddressLine2>
+		<InvoiceAddressCity>Newcastle</InvoiceAddressCity>
+		<InvoiceAddressRegion>Tyne and Wear</InvoiceAddressRegion>
+		<InvoiceAddressPostcode>NE1 4XF</InvoiceAddressPostcode>
+		<InvoiceAddressCountry>United Kingdom</InvoiceAddressCountry>
+		<InvoiceAddressReference>WORK</InvoiceAddressReference>
+		<IsPartialShipment>true</IsPartialShipment>
+		<Status>New</Status>
 		<RequestedDeliveryDate>2017-07-20 00:00:00</RequestedDeliveryDate>
-		<SubmittedDate>2017-07-10 00:00:00</SubmittedDate>
-		<EndDate>2017-08-20 00:00:00</EndDate>
-		<ExpectedDeliveryDate>2017-07-18 00:00:00</ExpectedDeliveryDate>
-		<PurchaseOrderItems>
-			<PurchaseOrderItem>
+		<ShippingCost>5</ShippingCost>
+		<Email>support@zynk.com</Email>
+		<ContactName>Andrew Snape</ContactName>
+		<TotalSale>18</TotalSale>
+		<Discount>0</Discount>
+		<TaxPaid>3</TaxPaid>
+		<CreatedDate>2017-07-11 00:00:00</CreatedDate>
+		<PaymentMethod>1</PaymentMethod>
+		<ServiceType></ServiceType>
+		<ChannelName>Website</ChannelName>
+		<SalesOrderItems>
+			<SalesOrderItem>
 				<ItemCode>PROD001</ItemCode>
-				<Status>Pending</Status>
-				<Quantity>2</Quantity>
+				<QuantityOrdered>1</QuantityOrdered>
 				<RequestedDeliveryDate>2017-07-19 00:00:00</RequestedDeliveryDate>
-				<Line>PROD001</Line>
+				<Line></Line>
 				<Sequence>1</Sequence>
-				<CostPrice>10</CostPrice>
-				<ExpectededDeliveryDate>2017-07-21 00:00:00</ExpectededDeliveryDate>
-			</PurchaseOrderItem>
-		</PurchaseOrderItems>
-	</PurchaseOrder>
-</PurchaseOrders>
+				<SalePrice>10</SalePrice>
+			</SalesOrderItem>
+		</SalesOrderItems>
+	</SalesOrder>
+</SalesOrders>
 ```
