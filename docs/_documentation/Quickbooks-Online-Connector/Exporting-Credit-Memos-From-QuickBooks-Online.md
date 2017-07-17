@@ -11,11 +11,11 @@ This task will download credit memos from Quickbooks Online to an XML file.
 ## Download Credit Memos
 
 ### Connection
-_Required_
+_Required_  
 Select a connection to the Quickbooks Online company you want to use. See [Connecting to QuickBooks Online](connecting-to-quickbooks-online)
 
 ### Output File
-_Required_
+_Required_  
 The file save exported records to.
 
 ### Quickbooks Online Settings

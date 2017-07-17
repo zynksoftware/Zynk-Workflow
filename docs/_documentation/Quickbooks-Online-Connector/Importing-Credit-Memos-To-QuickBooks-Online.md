@@ -17,23 +17,23 @@ This task will insert new and update existing credit memos in Quickbooks Online,
 ## Upload Credit Memos
 
 ### Connection
-_Required_
+_Required_  
 Select a connection to the Quickbooks Online company you want to use. See [Connecting to QuickBooks Online](connecting-to-quickbooks-online)
 
 ### Fail File 
-_Required_
+_Required_  
 The XML file to output any records to which fail to import to Quickbooks.
 
 ### Input File 
-_Required_
+_Required_  
 The XML file containing the records to import to Quickbooks. See below for a sample input file.
 
 ### Success File 
-_Required_
+_Required_  
 The XML file to output any records to which are successfully imported to Quickbooks.
 
 ### Prevent Reprocessing
-_Required_
+_Required_  
 Set to true to prevent the same records being imported to Quickbooks more than once. Only works on records where an ExternalId is provided in the input file.
 
 
