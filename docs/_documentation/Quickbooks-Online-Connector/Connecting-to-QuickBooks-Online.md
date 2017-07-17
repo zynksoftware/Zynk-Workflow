@@ -18,16 +18,16 @@ Enter your Quickbooks Online details as described below, then click 'Finish' to 
 ## Settings
 
 ### Environment
-_Required_
+_Required_  
 Select the environment your Quickbooks Online company is in. The available options are:	  
 
 - Live - Choose this option to connect to a live Quickbooks company.
 - Sandbox - Choose this option to connect to a sandbox Quickbooks company.
 
 ### Auth Token
-_Required_
+_Required_  
 Click the 'Sign In' button to generate an auth token.
 
 ### Expiry Date
-_Read Only_
+_Read Only_  
 Once you have generated an auth token, it's expiry date will be shown here. When the connection is in use, Zynk will automatically renew the auth token when approaching the expiry date. You can replace expired auth tokens manually by signing in to Quickbooks again.
