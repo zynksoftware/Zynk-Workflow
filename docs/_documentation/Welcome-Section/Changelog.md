@@ -11,7 +11,7 @@ title: Changelog
  * ProSKU - Export Stock - Added a task to the ProSKU library to support exporting stock based on the criteria provided in the task settings.
  * Shopify - Import Order Fulfillment - Added a task to support creating and updating order fulfillments in the Shopify ecommerce platform.
  * WooCommerce v3.0+ - Added a new connector which uses the latest version of the WooCommerce API, available since WooCommerce v3.0
- * Sage 200 Standard Online - New library available to connect to Sage 200 Standard Online and Extra Online editions
+ * Sage 200 Online - New library available to connect to Sage 200 Standard Online and Extra Online editions
 
 ###  Updated
  * Designer - Automatically expand all task settings
