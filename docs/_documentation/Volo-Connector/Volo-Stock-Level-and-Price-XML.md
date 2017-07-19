@@ -33,7 +33,7 @@ The `<ProductUpdate>` element represents a product and it's new stock level and 
 
 | Volo Field | XML Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| - | externalId | 7539 | string | 255 | Optional | The ID of the corresponding order from the external system. Used for in conjunction with the 'Prevent Reprocessing' setting on the task. |
+| - | externalId | 7539 | string | 255 | Optional | The ID of the corresponding order from the external system. Used in conjunction with the 'Prevent Reprocessing' setting on the task. |
 | Stock Number | stockNumber | 100101 | string | - | Required | The stock number must already exist in Volo. |
 | - | stockLevel | - | stockLevel | - | Optional | The new stock level for the product. See below for details. |
 | - | prices | - | array | - | Optional | The list of prices for the product. See below for details. |
