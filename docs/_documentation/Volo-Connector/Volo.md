@@ -9,6 +9,6 @@ Each of the tasks require a connection to Volo, for more information on setting 
 ## Tasks
 
 * [Exporting Customers from Volo](exporting-customers-from-volo)
-* [Exporting Sales Orders from Volo](exporting-orders-from-volo)
+* [Exporting Sales Orders from Volo](exporting-sales-orders-from-volo)
 * [Importing Order History into Volo](importing-order-history-into-volo)
 * [Importing Stock Levels and Prices into Volo](importing-stock-levels-and-prices-into-volo)
