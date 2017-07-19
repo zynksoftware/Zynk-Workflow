@@ -7,7 +7,7 @@ All of the tasks in the [MagneticHQ](magnetichq) connector require a connection 
 
 ![Connecting to MagneticHQ](/assets/images/magnetichq/magnetichq-connection.png)
 
-Enter your MagneticHQ details as described below, then click 'Finish' to create the connection.  Zynk will validate the details provided by attempting to authenticate with MagneticHQ.
+Enter your MagneticHQ details as described below, then click 'Finish' to create the connection. Zynk will validate the details provided by attempting to authenticate with MagneticHQ.
 
 To find your API token browse to [MagneticHQ API](https://app.magnetichq.com/Magnetic/API.do#ad-overview) while logged in to MagneticHQ, and click the button.
 
