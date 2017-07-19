@@ -30,8 +30,8 @@ The `<OrderHistory>` element represents an order and the history entries to crea
 | Volo Field | XML Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | - | externalId | 7539 | string | 255 | Optional | The ID of the corresponding order from the external system. Used for in conjunction with the 'Prevent Reprocessing' setting on the task. |
-|  | espOrderNo | 1009 | int | - | Required | The order number must already exist in Volo. |
-|  | historyEntries | - | array | - | Required | The list of history entries to add to the order. See below for details. |
+| Order Number | espOrderNo | 1009 | int | - | Required | The order number must already exist in Volo. |
+| - | historyEntries | - | array | - | Required | The list of history entries to add to the order. See below for details. |
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -54,7 +54,7 @@ The `<HistoryEntry>` element represents an individual history entry to add to an
 | Description | description | This is a note. | string | - | Optional |  |
 | Type | type | NOTE | enum | - | Optional | Available values: 'ORDER_IN', 'ORDER_OUT', 'EMAIL', 'NOTE', 'PRINTED', 'PAYMENT', 'UPDATE', 'SCANNED', 'POSTED', 'FAILED_POSTING', 'FEEDBACK', 'PUT_ON_HOLD', 'TAKE_OFF_HOLD', 'BACK_ORDER_ALLOCATED', 'SPLIT_ORDER', 'SIGNATURE', 'FLAG_AMENDMENT', 'QUESTION_ANSWERED', 'QUESTION_RECEIVED' |
 | User | username | john.smith | string | - | Optional |  |
-| Date | timestamp | 2017-01-01T00:00:00 | datetime | - | Optional | The date should be in XSD format |
+| Date | timestamp | 2017-01-01T00:00:00 | datetime | - | Optional | The date should be in XSD format. If not specified, it will default to the current date/time. |
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -65,7 +65,7 @@ The `<HistoryEntry>` element represents an individual history entry to add to an
         <description>This is a note.</description>
         <type>NOTE</type>
         <username>john.smith</username>
-		<timestamp>2017-01-01T00:00:00</timestamp>
+        <timestamp>2017-01-01T00:00:00</timestamp>
       </historyEntry>
     </historyEntries>
   </OrderHistory>

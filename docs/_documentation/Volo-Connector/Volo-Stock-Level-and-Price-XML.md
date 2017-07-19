@@ -93,7 +93,7 @@ The `<price>` element represents a price for the product in Volo. It will appear
       <price>
         <name>RRP</name>
         <value>10.99</value>
-		<accountName></accountName>
+        <accountName></accountName>
       </price>
     </prices>
   </ProductUpdate>

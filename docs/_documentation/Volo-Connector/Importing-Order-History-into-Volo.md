@@ -26,10 +26,10 @@ _Required_
 When set to true this will prevent order history with the same `<externalId>` as a previously imported record from being imported into Volo again.
 
 ### Zynk Settings
-See [Common Task Settings](common-task-settings).  See [Volo Order History XML](volo-order-history-xml) for more detailed information.
+See [Common Task Settings](common-task-settings).
 
 ## Examples
-Sample input file showing a note being added to order 1009.
+Sample input file showing a note being added to order 1009. See [Volo Order History XML](volo-order-history-xml) for more detailed information.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <OrderHistories>
