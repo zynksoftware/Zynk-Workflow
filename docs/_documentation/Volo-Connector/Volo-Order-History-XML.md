@@ -29,7 +29,7 @@ The `<OrderHistory>` element represents an order and the history entries to crea
 
 | Volo Field | XML Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| - | externalId | 7539 | string | 255 | Optional | The ID of the corresponding order from the external system. Used for in conjunction with the 'Prevent Reprocessing' setting on the task. |
+| - | externalId | 7539 | string | 255 | Optional | The ID of the corresponding order from the external system. Used in conjunction with the 'Prevent Reprocessing' setting on the task. |
 | Order Number | espOrderNo | 1009 | int | - | Required | The order number must already exist in Volo. |
 | - | historyEntries | - | array | - | Required | The list of history entries to add to the order. See below for details. |
 
