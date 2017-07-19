@@ -9,7 +9,7 @@ The Sage 200 connector implements an interface to Sage 200 Extra On-premise and 
 
 Each of the tasks require a connection to Sage 200, for more information on setting up and managing connections see [Connecting to Sage 200](connecting-to-sage-200).
 
-If you are using Sage 200 Standard Online or Sage 200 Extra Online please see the [Sage 200 Online Documentation](sage-200-online)
+If you are using **Sage 200 Standard Online** or **Sage 200 Extra Online** please see the [Sage 200 Online Documentation](sage-200-online)
 
 ## Tasks
 

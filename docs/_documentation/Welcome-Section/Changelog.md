@@ -3,8 +3,43 @@ slug: changelog
 redirect_from: "/article/44-changelog"
 title: Changelog
 ---
-## Release 2.12
 
+## Release 2.13
+###  New
+ * Magento v2 - Upload Credit Memos - Added new task for creating credit memos
+ * Sage 50 Payroll - Added a new connector with tasks for Upserting Employee Payments, Employee Deductions and Employee Absences into Sage 50 Payroll (more information available http://workflow.zynk.com/sage-50-payroll)
+ * ProSKU - Export Stock - Added a task to the ProSKU library to support exporting stock based on the criteria provided in the task settings.
+ * Shopify - Import Order Fulfillment - Added a task to support creating and updating order fulfillments in the Shopify ecommerce platform.
+ * WooCommerce v3.0+ - Added a new connector which uses the latest version of the WooCommerce API, available since WooCommerce v3.0
+ * Sage 200 Online - New library available to connect to Sage 200 Standard Online and Extra Online editions
+
+###  Updated
+ * Designer - Automatically expand all task settings
+ * Sage 50 - Import/Export Invoices - Added support for the 'Due On' field
+ * Sage 50 - Match Accounts On - Now support matching customers on extra fields. Email 2, Email 3, Telephone 2, Trade Contact, Custom 1, Custom 2 and Custom 3 are now all supported.
+ * Sage 200 - Import Sales Orders - Now supports updating existing Live Sales Orders in Sage that have no allocated or despatched quantities. Order will be updated to reflect provided XML.
+ * Sage 200 - Import Transactions - Suppress the error when the account is on hold
+ * Salesforce - Complex Object Upload - Now support looking up the value of fields other than Id
+ * WooCommerce v2.2+ - Download Tasks - Now supports complex meta data types, including objects and arrays
+ * Magento v2 - Upload Products - Added support for looking up any select/multiselect attribute types and optionally creating where a match isn't found
+ * Magento v2 - Upload & Download Tasks - Added support for reading custom values/objects/arrays returned via the API
+ * Zip Search - Re install zip search from the extensions manager to see new features like optionally excluding files from search results and setting date time ranges.
+ * Sage 200 - Import Customers - Now support setting the contact roles.
+
+###  Fixed
+ * Amazon Marketplace - All Tasks - Correctly set the Channels setting when upgrading from an older version of Zynk that didn't have the setting
+ * BigCommerce - Download Products - Fixed issue with the task never downloading any products
+ * JSON To XML - Now support transforming JSON array to XML. The provided Root Element Name will be used for the XML Root and Elements.
+ * Magento V1 - Download Tasks - Correctly build up filters based on multiple fields
+ * Magento V2 - Upload Products - Fixed issue setting the extension_attributes fields
+ * Sage 200 v5 - Export Customers - Fixed the "Invalid object name 'Salutation'" error
+ * Xero - Upload Tasks - Fixed issue with warnings not being written to the success files
+ * Zynk Tasks - Fixed issue with Use output from previous task logic, was resulting in file names not being passed through correctly.
+ * Magento V2 - Uploads - Fixed an issue where related collections not provided in the data are blanked out on Magento. E.g. When uploading products, if product images weren't specified in the data then the product images on Magento would be removed.
+ * Magento V2 - Uploads - Fixed an issue where errors regarding data from Magento V2 were not being correctly captured, meaning that the cause of issues with data aren't obvious.
+ * Zynk - Default Editor - Fixed an issue where the default editor wouldn't launch as expected.
+
+## Release 2.12
 ### New
  * Magento v1 - Download store information from Magento
  * Magento v2 - Added Upload Shipments task
