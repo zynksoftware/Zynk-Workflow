@@ -52,7 +52,7 @@ The `<HistoryEntry>` element represents an individual history entry to add to an
 | Volo Field | XML Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | Description | description | This is a note. | string | - | Optional |  |
-| Type | type | NOTE | enum | - | Optional | Available values: 'ORDER_IN', 'ORDER_OUT', 'EMAIL', 'NOTE', 'PRINTED', 'PAYMENT', 'UPDATE', 'SCANNED', 'POSTED', 'FAILED_POSTING', 'FEEDBACK', 'PUT_ON_HOLD', 'TAKE_OFF_HOLD', 'BACK_ORDER_ALLOCATED', 'SPLIT_ORDER', 'SIGNATURE', 'FLAG_AMENDMENT', 'QUESTION_ANSWERED', 'QUESTION_RECEIVED' |
+| Type | type | NOTE | enum | - | Optional | Available values: <!--- these are not currently supported by the API but can be added once supported - 'ORDER_IN', 'ORDER_OUT', 'EMAIL', , 'PRINTED', 'PAYMENT', 'UPDATE', 'SCANNED', 'POSTED', 'FAILED_POSTING', 'FEEDBACK', 'PUT_ON_HOLD', 'TAKE_OFF_HOLD', 'BACK_ORDER_ALLOCATED', 'SPLIT_ORDER', 'SIGNATURE', 'FLAG_AMENDMENT', 'QUESTION_ANSWERED', 'QUESTION_RECEIVED' --> 'NOTE'|
 | User | username | john.smith | string | - | Optional |  |
 | Date | timestamp | 2017-01-01T00:00:00 | datetime | - | Optional | The date should be in XSD format. If not specified, it will default to the current date/time. |
 
