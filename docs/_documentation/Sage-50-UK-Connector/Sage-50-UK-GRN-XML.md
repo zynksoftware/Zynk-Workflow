@@ -22,7 +22,7 @@ Any Sage fields not documented below are not supported with our imports.  Exampl
 
 Sample import file for receiving an item on an order:
 ```xml
-?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Company>
   <GoodsNotes>
     <GoodsNote>
