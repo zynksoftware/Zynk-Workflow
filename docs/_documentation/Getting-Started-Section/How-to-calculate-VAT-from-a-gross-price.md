@@ -15,7 +15,7 @@ Figures are shown at 15% VAT for the purpose of this example, you should use the
  * Add back VAT = 14.9845
  * Round to 2dp = 14.98
 
-##Correct calcuation method
+## Correct calcuation method
 
  * Total Gross Price = 14.99
  * Take off VAT = 13.0347
@@ -23,8 +23,8 @@ Figures are shown at 15% VAT for the purpose of this example, you should use the
  * Add back VAT = 14.989905
  * Round to 2dp = 14.99
 
-Values to pass to Zynk XML
+## Values to pass to Zynk XML
 
  * Net = 13.03 (14.99 / 1.15)
- * Vat = 1.96 (14.99 â€“ 13.03)
+ * Vat = 1.96 (14.99 - 13.03)
 
