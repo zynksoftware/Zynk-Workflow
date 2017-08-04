@@ -100,6 +100,8 @@ Sample output file:
         <payPalProtectionEligibility>false</payPalProtectionEligibility>
         <amount>11.38</amount>
         <paymentDate>2017-02-28T00:00:00+0000</paymentDate>
+        <paymentId>2</paymentId>
+        <postedBatchId>1234</postedBatchId>
       </payment>
       <payment>
         <paymentMethod>Cash</paymentMethod>
@@ -107,6 +109,8 @@ Sample output file:
         <payPalProtectionEligibility>false</payPalProtectionEligibility>
         <amount>-4</amount>
         <paymentDate>2017-02-28T00:00:00+0000</paymentDate>
+        <paymentId>3</paymentId>
+        <postedBatchId>1234</postedBatchId>
       </payment>
     </payments>
     <currencyCode>GBP</currencyCode>
