@@ -12,12 +12,12 @@ Sample XML for creating an order history entry:
   <OrderUpdate>
     <externalId>7539</externalId>
     <espOrderNo>1009</espOrderNo>
-	<orderStatus>DELIVERED</orderStatus>
-	<onHoldNotes>On hold note</onHoldNotes>
-	<courier>DHL</courier>
-	<courierService>Next Day</courierService>
-	<courierTracking>01824-01423</courierTracking>
-	<notes>A note<notes>
+    <orderStatus>DELIVERED</orderStatus>
+    <onHoldNotes>On hold note</onHoldNotes>
+    <courier>DHL</courier>
+    <courierService>Next Day</courierService>
+    <courierTracking>01824-01423</courierTracking>
+    <notes>A note<notes>
     <flag1>Red Flag</flag1>
     <flag2>Green Flag</flag2>
     <payments>
@@ -55,12 +55,12 @@ The `<OrderUpdate>` element represents an order and the fields to update against
   <OrderUpdate>
     <externalId>7539</externalId>
     <espOrderNo>1009</espOrderNo>
-	<orderStatus>DELIVERED</orderStatus>
-	<onHoldNotes>On hold note</onHoldNotes>
-	<courier>DHL</courier>
-	<courierService>Next Day</courierService>
-	<courierTracking>01824-01423</courierTracking>
-	<notes>A note<notes>
+    <orderStatus>DELIVERED</orderStatus>
+    <onHoldNotes>On hold note</onHoldNotes>
+    <courier>DHL</courier>
+    <courierService>Next Day</courierService>
+    <courierTracking>01824-01423</courierTracking>
+    <notes>A note<notes>
     <flag1>Red Flag</flag1>
     <flag2>Green Flag</flag2>
     <payments>
