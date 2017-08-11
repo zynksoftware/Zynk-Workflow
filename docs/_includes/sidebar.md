@@ -54,6 +54,7 @@
     * [Magento V2](/magento-v2)
     * [PayPal](/paypal)
     * [Shopify](/shopify)
+    * [Volo](/volo)
     * [WooCommerce](/woocommerce)
 * [Files](/files)
     * [CSV](/csv)
