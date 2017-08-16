@@ -10,7 +10,7 @@ We have a team of developers and consultants who fully understand Zynk and all t
 **Our Process:**
 1. **Enquiry:** Upon receipt of your enquiry, we will provide you with an initial estimate for the work involved within 1 business day.
 2. **Acceptance:** Once you accept our estimate, we prepare a detailed scope document outlining the full details of the project and costs
-3. **Scope Sign off:** After you sign off the project scope we ask for an initial deposit of 25%
+3. **Scope Sign off:** After you sign off the project scope we ask for an initial deposit of 50%
 4. **Provision:** We provide and customise Zynk to your exact requirements.
 5. **Deployment:** We then Deploy and Test the automation via Remote Desktop or on-site as required.
 6. **Inspection:** Your integration is reviewed by a Business Analyst and when we are both happy we move forward.
