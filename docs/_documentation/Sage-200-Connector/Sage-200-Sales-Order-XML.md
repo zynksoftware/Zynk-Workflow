@@ -103,8 +103,8 @@ Depending on the settings of the import task you can set the Order no of the cre
       <RequestedDeliveryDate>2011-01-01T11:11:11</RequestedDeliveryDate>
       <PromisedDeliveryDate>2011-01-01T11:11:11</PromisedDeliveryDate>
       <CustomerOrderNumber>12345</CustomerOrderNumber>
-	  <Currency>GBP</Currency>
-	  <GenerateBackToBackPurchaseOrder>false</GenerateBackToBackPurchaseOrder>
+      <Currency>GBP</Currency>
+      <GenerateBackToBackPurchaseOrder>false</GenerateBackToBackPurchaseOrder>
     </SalesOrder>
   </SalesOrders>
 </Company>
@@ -142,8 +142,8 @@ Setting the Type to either Stock, NonStock or Miscellaneous will import a standa
         <Item>
           <Type>Stock</Type>
           <Sku>PROD01</Sku>
-		  <Barcode>123456789</Barcode>
-		  <Location>Warehouse 1</Location>
+          <Barcode>123456789</Barcode>
+          <Location>Warehouse 1</Location>
           <Description>Product 01</Description>
           <TaxCode>1</TaxCode>
           <UnitPrice>100</UnitPrice>
