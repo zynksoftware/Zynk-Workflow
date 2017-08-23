@@ -89,6 +89,7 @@ Depending on the settings of the import task you can set the Order no of the cre
 | PromisedDeliveryDate | Date promised  | 2011-01-01T11:11:11 | date | - | Optional | Will default to the current date if not provided. |
 | CustomerOrderNumber | Customer order no  | ABC12345 | string |  30 | Optional |
 | Currency | - | GBP | string |  30 | Optional | The three letter ISO currency code. It must match the currency of the customers account. Will default to the currency on the customer account if not provided. |
+| GenerateBackToBackPurchaseOrder | - | false | boolean | - | Optional | A purchase order can only be generated when one or more items has the fulfilment method 'Supplier Via Stock' or 'Direct To Customer'. |
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -102,6 +103,8 @@ Depending on the settings of the import task you can set the Order no of the cre
       <RequestedDeliveryDate>2011-01-01T11:11:11</RequestedDeliveryDate>
       <PromisedDeliveryDate>2011-01-01T11:11:11</PromisedDeliveryDate>
       <CustomerOrderNumber>12345</CustomerOrderNumber>
+	  <Currency>GBP</Currency>
+	  <GenerateBackToBackPurchaseOrder>false</GenerateBackToBackPurchaseOrder>
     </SalesOrder>
   </SalesOrders>
 </Company>
@@ -128,6 +131,7 @@ Setting the Type to either Stock, NonStock or Miscellaneous will import a standa
 | UnitDiscountPercentage | Unit discount % | 10 | double | - | Optional | Only used if UnitDiscountAmount is not set. Defaults to 0 if this or UnitDiscountAmount is not set. |
 | RequestedDeliveryDate | Delivery dates Requested | 2011-01-01T11:11:11 | date | - | Optional | Will default to the RequestedDeliveryDate at the SalesOrder level if not provided. |
 | PromisedDeliveryDate | Delivery dates Promised | 2011-01-01T11:11:11 | date | - | Optional | Will default to the PromisedDeliveryDate at the SalesOrder level if not provided. |
+| FulfilmentMethod | Fulfilment Method | From Stock | enum | - | Optional | Available values are: 'From Stock', 'Supplier Via Stock' and 'Direct To Customer'. Defaults to 'From Stock'. |
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -138,17 +142,17 @@ Setting the Type to either Stock, NonStock or Miscellaneous will import a standa
         <Item>
           <Type>Stock</Type>
           <Sku>PROD01</Sku>
+		  <Barcode>123456789</Barcode>
+		  <Location>Warehouse 1</Location>
           <Description>Product 01</Description>
-          <Barcode>123456789</Barcode>
+          <TaxCode>1</TaxCode>
           <UnitPrice>100</UnitPrice>
           <QtyOrdered>1</QtyOrdered>
-          <TaxCode>1</TaxCode>
-          <TaxRate>20</TaxRate>
           <UnitDiscountAmount>10</UnitDiscountAmount>
           <UnitDiscountPercentage>10</UnitDiscountPercentage>
           <RequestedDeliveryDate>2011-01-01T11:11:11</RequestedDeliveryDate>
           <PromisedDeliveryDate>2011-01-01T11:11:11</PromisedDeliveryDate>
-          <Location>Warehouse 1</Location>
+          <FulfilmentMethod>From Stock</FulfilmentMethod>
         </Item>
       </SalesOrderItems>
     </SalesOrder>
