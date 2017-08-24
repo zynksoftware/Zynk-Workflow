@@ -10,6 +10,7 @@ Zynk Workflow supports a number of CRM systems including
  * [BXP](bxp)
  * [Campaign Monitor](campaign-monitor)
  * [ConnectWise](connectwise)
+ * [MagneticHQ](magnetichq)
  * [Salesforce](salesforce)
  * [Sugar CRM](sugar-crm)
  * [Zoho CRM](zoho-crm)
