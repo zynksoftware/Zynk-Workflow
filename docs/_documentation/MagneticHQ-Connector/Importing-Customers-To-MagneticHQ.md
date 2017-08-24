@@ -23,3 +23,21 @@ The name of a file for “successful” imports to be sent to.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).
+
+## Examples
+A sample output file is shown below.
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<MagneticHQData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Customers>
+   <Customer>
+      <Name>Test Input Company</Name>
+      <Owner>
+        <Id>53090727</Id>
+      </Owner>
+     <ApprovedAccountsCustomer>false</ApprovedAccountsCustomer>
+     <ApprovedAccountsSupplier>true</ApprovedAccountsSupplier>
+    </Customer>
+    </Customers>
+    </MagneticHQData>
+```

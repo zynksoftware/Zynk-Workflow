@@ -13,11 +13,11 @@ Each of the tasks require a connection to MagneticHQ, for more information on se
 
 ## Tasks
 
- * ![Exporting Customers from MagneticHQ](exporting-customers-from-magnetichq)
- * ![Exporting Purchase Orders from MagneticHQ](exporting-purchase-orders-from-magnetichq)
- * ![Exporting Suppliers from MagneticHQ](exporting-suppliers-from-magnetichq)
- * ![Exporting Tax Invoices from MagneticHQ](exporting-tax-invoices-from-magnetichq)
- * ![Import Customers to MagneticHQ](importing-customers-to-magnetichq)
- * ![Import Purchase Orders to MagneticHQ](importing-purchase-orders-to-magnetichq)
- * ![Import Suppliers to MagneticHQ](importing-suppliers-to-magnetichq)
- * ![Import Tax Invoices to MagneticHQ](importing-tax-invoices-to-magnetichq)
+ * [Exporting Customers from MagneticHQ](exporting-customers-from-magnetichq)
+ * [Exporting Purchase Orders from MagneticHQ](exporting-purchase-orders-from-magnetichq)
+ * [Exporting Suppliers from MagneticHQ](exporting-suppliers-from-magnetichq)
+ * [Exporting Tax Invoices from MagneticHQ](exporting-tax-invoices-from-magnetichq)
+ * [Import Customers to MagneticHQ](importing-customers-to-magnetichq)
+ * [Import Purchase Orders to MagneticHQ](importing-purchase-orders-to-magnetichq)
+ * [Import Suppliers to MagneticHQ](importing-suppliers-to-magnetichq)
+ * [Import Tax Invoices to MagneticHQ](importing-tax-invoices-to-magnetichq)
