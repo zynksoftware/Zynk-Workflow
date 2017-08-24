@@ -25,7 +25,7 @@ The name of a file for “successful” imports to be sent to.
 See [Common Task Settings](common-task-settings).
 
 ## Examples
-A sample output file is shown below.
+A sample input file is shown below.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <MagneticHQData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
