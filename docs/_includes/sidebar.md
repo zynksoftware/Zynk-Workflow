@@ -42,7 +42,7 @@
     * [SQLite](/sqlite)
     * [ODBC](/odbc)
     * [OLEDB](/oledb)
-* [Data Sevices](/data-services)
+* [Data Services](/data-services)
     * [VIES](/vies)
 * [Ecommerce](/ecommerce)
     * [Amazon Marketplace](/amazon-marketplace)
