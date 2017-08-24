@@ -34,6 +34,6 @@ A sample input file is shown below.
 		<Name>Nathan Hopkins - Supplier</Name>
 		<ApprovedAccountsSupplier>true</ApprovedAccountsSupplier>
     </Supplier>
-    </Suppliers>
-    </MagneticHQData>
+   </Suppliers>
+</MagneticHQData>
 ```
