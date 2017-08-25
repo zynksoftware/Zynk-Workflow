@@ -10,7 +10,7 @@ This task will import item type information to Peoplevox in XML format, for deta
 [Download Template](/assets/resources/peoplevox/item_type.csv)
 
 ```csv
-ItemCode,Name,Barcode,ItemGroup,RetailPrice,Description,UnitOfMeasure,DefaultEconomicOrderQuantity,DefaultLeadTime,DefaultSuppliersPartNumber,HasSerialNumbers,UseManufacturersSerialNumber,ReorderPoint,Traceability,ShelfLife,DefaultNumberItemsPerContainer,DefaultContainerType,DefaultNumberItemsPerOuterCase,DefaultNumberItemsPerInnerCase,BuyPrice,WholesalePrice,RetailPrice,Weight,WeightMeasure,Height,Width,Depth,DimensionMeasure,Tags,Attribute1,Attribute2,Attribute3,TaxCode,MinimumPickLocationQuantity,DefaultReplenishmentQuantity
+ItemCode,Name,Barcode,ItemGroup,RetailPrice,Description,UnitOfMeasure,DefaultEconomicOrderQuantity,DefaultLeadTime,DefaultSuppliersPartNumber,HasSerialNumbers,UseManufacturersSerialNumber,ReorderPoint,Traceability,ShelfLife,DefaultNumberItemsPerContainer,DefaultContainerType,DefaultNumberItemsPerOuterCase,DefaultNumberItemsPerInnerCase,BuyPrice,WholesalePrice,RetailPrice,Weight,WeightMeasure,Height,Width,Depth,DimensionMeasure,Tags,Attribute1,Attribute2,Attribute3,Attribute4,Attribute5,Attribute6,Attribute7,Attribute8,Attribute9,Attribute10,Attribute11,Attribute12,Attribute13,Attribute14,Attribute15,TaxCode,MinimumPickLocationQuantity,DefaultReplenishmentQuantity
 ```
 
 ### Item Type Group
