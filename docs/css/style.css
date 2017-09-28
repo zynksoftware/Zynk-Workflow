@@ -25,3 +25,7 @@ html, body
 	width:100px;
 	height:100px;
 }
+
+#page-content-wrapper {
+    margin-top: 90px;
+}
