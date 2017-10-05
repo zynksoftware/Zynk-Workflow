@@ -10,11 +10,11 @@ All of the tasks in the Sage 50 US connector require a connection to Sage 50 US,
 Enter your Sage 50 US details as described below, then click 'Finish' to create the connection.
 
 ## Settings
-###Server Name
+### Server Name
 _Optional_  
 If your Sage 50 US data is stored the same machine that Zynk is installed on, this field can be left blank. If the data is on another machine on the network, you will need to enter its name.
 
-###Company
+### Company
 _Required_  
 Click the 'Refresh' button to display the list of companies. Select the one you want to connect to from the list.
 
