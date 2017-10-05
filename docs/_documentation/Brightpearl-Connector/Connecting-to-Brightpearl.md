@@ -18,7 +18,7 @@ You will need to create a private app in Brightpearl to allow Zynk to connect. 	
 ## Settings
 
 ### Data Centre ID
-_Required_
+_Required_  
 Your data centre ID can be determined from your Brightpearl domain name as follows:	
 - euw1.brightpearl.com -> eu1
 - use1.brightpearl.com -> use
@@ -29,13 +29,13 @@ Your data centre ID can be determined from your Brightpearl domain name as follo
 - mst.brightpearl.com -> usw
 
 ### Account ID
-_Required_
+_Required_  
 Enter your Brightpearl account ID.
 
 ### Private App Reference
-_Required_
+_Required_  
 Enter the reference for your private app here.
 
 ### Private App Token
-_Required_
+_Required_  
 Enter the token that was generated for your private app here.
