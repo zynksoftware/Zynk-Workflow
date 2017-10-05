@@ -10,30 +10,30 @@ All of the tasks in the Magento V2 connector require a connection to Magento, so
 Enter your Magento details as described below, then click 'Finish' to create the connection.
 
 ## Settings
-###URL
+### URL
 _Required_  
 Enter the URL for your Magento website (e.g. http://www.mymagentosite.com/).
 
-###Username
+### Username
 _Required_  
 Enter the username you use to sign in to the administration section of the website. This is not stored by Zynk, and is only used to generate the token.
 
-###Password
+### Password
 _Required_  
 Enter the password you use to sign in to the administration section of the website. This is not stored by Zynk, and is only used to generate the token.
 
-###Token
+### Token
 _Required_  
 Click the 'Generate' button to generate an API token.
 
-###HTTP Auth Username
+### HTTP Auth Username
 _Optional_  
 If your Magento website uses HTTP basic authentication, enter the username here.
 
-###HTTP Auth Password
+### HTTP Auth Password
 _Optional_  
 If your Magento website uses HTTP basic authentication, enter the password here.
 
-###Keep Alive
+### Keep Alive
 _Optional_  
 Tick this box to set the keep alive header in all HTTP requests to the Magento API. 
