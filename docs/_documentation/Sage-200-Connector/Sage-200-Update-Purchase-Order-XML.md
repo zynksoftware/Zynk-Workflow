@@ -40,7 +40,7 @@ You should also specify the document type that you would like to update.
 
     <!-- Matching Purchase Order/Return by PurchaseOrderNumber -->   
     <PurchaseOrder>
-      <PurchaseOrderNumber>0000000024</PurcahseOrderNumber>
+      <PurchaseOrderNumber>0000000024</PurchaseOrderNumber>
       <PurchaseOrderType>PopInvoice</PurchaseOrderType>
     </PurchaseOrder>
 
