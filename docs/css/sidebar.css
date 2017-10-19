@@ -19,7 +19,7 @@ a span.fa { margin-right:5px}
 
 #sidebar-wrapper 
 {
-    padding-top: 80px;
+    margin-top: 80px;
     padding-bottom: 80px;
     z-index: 1000;
     position: fixed;
