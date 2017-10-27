@@ -5,7 +5,7 @@ title: Website Script Based Integration
 ---
 This article will provide an overview of a typical script based Website to Sage integration (the example Workflow provided is specifically for a Sage 50 based integration but can be replaced by the relevant Sage 200 or ACT! tasks). More information can be found on the connector pages [Sage 50 UK](sage-50-uk), [Sage 200](sage-200) and [ACT!](act). What you will not find in this article is how to develop the website scripts. What the website scripts contain and what (programming) language they are developed in is entirely dependent upon the requirements of the project and what (programming) language the website itself is developed in. Some example scripts of more common e-commerce website integrations are [available here](https://github.com/zynksoftware/samples/tree/master/PHP).
  
- The sample Workflow (Website Script Based Sage 50 Integration) which accompanies this article can be found on our [GitHubsite](https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/Website%20Script%20Based%20Sage%2050%20Integration/My%20Workflows).The sample Workflow consists of the following tasks
+ The sample Workflow (Website Script Based Sage 50 Integration) which accompanies this article can be found on our [GitHub site](https://github.com/zynksoftware/samples/tree/master/Integration%20Samples/Website%20Script%20Based%20Sage%2050%20Integration/My%20Workflows).The sample Workflow consists of the following tasks
  
  1. [HTTP Task](http-task) - Download Website XML
     GETs any available data from the specified  URL and downloads to the specified Output File on the local disk to be processed by the rest of the Workflow.
