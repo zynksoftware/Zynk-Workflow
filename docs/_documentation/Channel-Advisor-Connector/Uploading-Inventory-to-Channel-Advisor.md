@@ -30,14 +30,16 @@ Sample input file:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfInventoryItemQuantityAndPrice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<InventoryItemQuantityAndPrice>
-		<Sku>ABC-123</Sku>
-		<DistributionCenterCode>London</DistributionCenterCode>
-		<Quantity>25</Quantity>
-		<PriceInfo>
-			<RetailPrice>169.99</RetailPrice>
-		</PriceInfo>
-	</InventoryItemQuantityAndPrice>
+<ArrayOfInventoryItemQuantityAndPrice 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <InventoryItemQuantityAndPrice>
+    <Sku xmlns="http://api.channeladvisor.com/webservices/">Test1</Sku>
+    <DistributionCenterCode xmlns="http://api.channeladvisor.com/webservices/">Beverley</DistributionCenterCode>
+    <Quantity xmlns="http://api.channeladvisor.com/webservices/">120</Quantity>
+    <PriceInfo xmlns="http://api.channeladvisor.com/webservices/">
+      <RetailPrice>169.99</RetailPrice>
+    </PriceInfo>
+  </InventoryItemQuantityAndPrice>
 </ArrayOfInventoryItemQuantityAndPrice>
 ```
