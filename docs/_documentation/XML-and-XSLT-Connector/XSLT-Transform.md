@@ -5,7 +5,7 @@ title: XSLT Transform
 ---
 The XSLT Transform task accepts an XML input file and transforms it to another format using an XSL transform file. XSL transforms can be used used to convert an XML file to another XML format, HTML, CSV, plain text and many more formats. You can pass through parameters to the XSLT at runtime if your XSLT file supports parameterised inputs. Please note that the task only supports XSLT 1.0, it does not support XSLT 2.0.
 
-A basic tutorial for writing XSL transforms can be found [here](create-an-xslt-file), and more detailed information can be found at [W3 Schools](http://www.w3schools.com/xsl/default.asp). You can find sample XSLT files in our [Github repository](https://github.com/internetware/zynk-samples/tree/master/XSLT%20Samples).
+A basic tutorial for writing XSL transforms can be found [here](create-an-xslt-file), and more detailed information can be found at [W3 Schools](https://www.w3schools.com/xml/xsl_transformation.asp). You can find sample XSLT files in our [Github repository](https://github.com/internetware/zynk-samples/tree/master/XSLT%20Samples).
 
 ## Settings
 ### Input File
