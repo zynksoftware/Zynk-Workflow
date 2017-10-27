@@ -40,4 +40,4 @@ This article will provide an overview of a typical script based Website to Sage 
     Compresses all files within the Working data directory for the current Workflow into a single zip file in the Archive Folder with the name of the date and time that the archive was created, appended with '_archive.zip'.
     Typically, as a best practice, we would structure Zynk Workflow's so that all data relating to the Workflow run remains in the Working data directory, meaning that the ArchiveWorkflowData task can be dropped at the end of the Workflow and the data stored for traceability purposes.
 
-If you have any queries on any of the above, feel free to contact our support team via email at support@zynk.com or via telephoneon 0191 303 7279.
+If you have any queries on any of the above, feel free to contact our support team via email at support@zynk.com or via telephone on 0191 303 7279.
