@@ -51,6 +51,7 @@ Each of the tasks require a connection to Sage 50 UK, for more information on se
 
 ## Supported Versions  
 We provide support for the following versions of Sage 50 and Sage 50c
+ * 2017 (24)
  * 2017 (23)
  * 2016 (22)
  * 2015 (21)
