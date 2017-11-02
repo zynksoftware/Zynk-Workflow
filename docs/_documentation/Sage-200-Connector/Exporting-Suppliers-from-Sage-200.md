@@ -114,5 +114,6 @@ Sample output file:
       <Banks />
       <CustomFields />
     </Supplier>
+  </Suppliers>
 </Company>
 ```
