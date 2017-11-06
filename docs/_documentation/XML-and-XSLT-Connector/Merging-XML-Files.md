@@ -38,7 +38,7 @@ Two sample input files are shown below, each including a single stock transactio
             <SalesPrice>0</SalesPrice>
             <StockTransactionNumber>1</StockTransactionNumber>
         </StockTransaction>
-    <StockTransactions>
+    </StockTransactions>
 </Company>
 ```
 
