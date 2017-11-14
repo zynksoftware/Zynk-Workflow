@@ -274,7 +274,7 @@ Supports grouping.
 
 ## Purchase Receipt
 
-```xlm
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Company>
   <Transactions>
