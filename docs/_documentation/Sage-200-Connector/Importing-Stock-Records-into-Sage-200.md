@@ -49,7 +49,7 @@ A sample input file for creating a stock record is shown below. See our [Sage 20
       <UnitOfSale>Each</UnitOfSale>
       <TaxCode>1</TaxCode>
       <Manufacturer>Test Company</Manufacturer>
-      <PartNumber>1234</PartNumber>
+      <ManufacturerPartNo>1234</ManufacturerPartNo>
       <StandardCostPrice>60</StandardCostPrice>
       <Description>This is a test product</Description>
       <UseDescriptionOnDocs>false</UseDescriptionOnDocs>
