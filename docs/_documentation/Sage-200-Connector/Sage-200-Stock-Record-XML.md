@@ -40,7 +40,7 @@ The information below can be specified on the Details tab in Sage.
 | Stock unit | UnitOfSale | Each | string | 20 | Optional | The 'Use multiple units' option in the Product Group must be enabled to set the UnitOfSale. |
 | Tax Rate | TaxCode | 1 | int | - | Optional |
 | Manufacturer | Manufacturer | Test Company | string | 40 | Optional |
-| Part No | PartNumber | 1234 | string | 40 | Optional |
+| Part No | ManufacturerPartNo | 1234 | string | 40 | Optional |
 | Average Buying Price | StandardCostPrice | 60 | double | - | Optional |
 | Item Description | Description | This is a test product | string | - | Optional |
 | Use Item Description On Orders And Invoices | UseDescriptionOnDocs | false | bool | - | Optional |
@@ -60,7 +60,7 @@ The information below can be specified on the Details tab in Sage.
       <UnitOfSale>Each</UnitOfSale>
       <TaxCode>1</TaxCode>
       <Manufacturer>Test Company</Manufacturer>
-      <PartNumber>1234</PartNumber>
+      <ManufacturerPartNo>1234</ManufacturerPartNo>
       <StandardCostPrice>60</StandardCostPrice>
       <Description>This is a test product</Description>
       <UseDescriptionOnDocs>false</UseDescriptionOnDocs>
