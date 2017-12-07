@@ -3,24 +3,24 @@ slug: downloading-listings-from-ebay
 redirect_from: "/article/215-downloading-listings-from-ebay"
 title: Downloading Listings from eBay
 ---
-This task will download listings information from eBay in XML format.
+This task will export listings information from eBay in XML format.
 
 ## Settings
 ### Connection
 _Required_  
 The eBay connection to use. See the [Connecting to eBay](connecting-to-ebay) article if you require more information on how to create/manage connections.
 
-### Download Date
+### Export Date
 _Required_  
-The date to download listings to.
+The date to export listings to.
 
-### Download From
+### Export From
 _Required_  
-The date to download listings from.
+The date to export listings from.
 
 ### Include Variations
 _Required_  
-Allows you to download extended variant / option information about the listings. Defaults to False.
+Allows you to export extended variant / option information about the listings. Defaults to False.
 
 ### Output File
 _Required_  
