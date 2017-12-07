@@ -1,30 +1,30 @@
 ---
 slug: downloading-orders-from-ebay
 redirect_from: "/article/214-downloading-orders-from-ebay"
-title: Downloading Orders from eBay
+title: Export Orders from eBay
 ---
-This task will download order information from eBay in XML format. The results can be filtered by Order ID if required. See the Examples section for a for sample output file.
+This task will export order information from eBay in XML format. The results can be filtered by Order ID if required. See the Examples section for a for sample output file.
 
 ## Settings
 ### Connection
 _Required_  
 The eBay connection to use. See the [Connecting to eBay](connecting-to-ebay) article if you require more information on how to create/manage connections.
 
-### Download Date
+### Export Date
 _Required_  
-The initial date to download orders from. Any orders placed before this date will not be downloaded, even if they have been modified.
+The initial date to export orders from. Any orders placed before this date will not be exported, even if they have been modified.
 
-### Download From
+### Export From
 _Required_  
-The date to download new/modified orders from. This will update automatically each time the task runs. Note that the task will download a maximum of 30 days worth of orders at a time.
+The date to export new/modified orders from. This will update automatically each time the task runs. Note that the task will export a maximum of 30 days worth of orders at a time.
 
 ### Include Item Specifics
 _Required_  
-Allows you to download extended information about the items sold on the order, e.g. MPN Identifier. Defaults to False.
+Allows you to export extended information about the items sold on the order, e.g. MPN Identifier. Defaults to False.
 
 ### Order ID
 _Optional_  
-Allows you to specify a specific order to download. If an Order ID is provided, it will override the Download Date and Download From settings.
+Allows you to specify a specific order to export. If an Order ID is provided, it will override the Export Date and Export From settings.
 
 ### Output File
 _Required_  
