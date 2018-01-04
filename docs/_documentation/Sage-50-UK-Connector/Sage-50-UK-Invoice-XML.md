@@ -76,7 +76,7 @@ To assign the order to a particular account you will need to specify either a Cu
 ```
 
 ## Details
-
+The following fields can be set on the details tab.
 
 | Sage Field | XML Field | Example | Field Type | Field Length | Input |
 | --- | --- | --- | --- | --- | --- |
@@ -84,6 +84,7 @@ To assign the order to a particular account you will need to specify either a Cu
 | Date  | InvoiceDate\* | 2014-01-01T00:00:00 | datetime | - | Optional |
 | Inv. No. | InvoiceNumber | 123 | string | 7 | Optional |
 | Order No | OrderNumber | 456 | string | 7 | Optional |
+| Due On | DueDate | 2014-01-31 | datetime | - | Optional |
 | Invoice Name | InvoiceAddress/Company\* | Zynk Software Limited | string | 60 | Optional |
 | - | Title  | Mr | string | - | Optional |
 | - | Forename | Joe | string | - | Optional |
@@ -110,6 +111,7 @@ To assign the order to a particular account you will need to specify either a Cu
       <InvoiceDate>2014-01-01T00:00:00</InvoiceDate>
       <InvoiceNumber>123</InvoiceNumber>
       <OrderNumber>456</OrderNumber>
+      <DueDate>2014-01-31</DueDate>
       <InvoiceAddress>
         <Title>Mr</Title>
         <Forename>Joe</Forename>
