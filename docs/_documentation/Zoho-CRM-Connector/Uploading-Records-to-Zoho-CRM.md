@@ -22,13 +22,9 @@ Specify the XML file to containing the records to upload. The records should be 
 _Required_  
 The XML file to output successful uploads to.
 
-### Trigger Workflow Rules
+### Module Name
 _Required_  
-Set to true to trigger workflows after inserting or updating a record in Zoho CRM.
-
-### Record Type
-_Required_  
-The type of record to be deleted. The available options are:	
+The type of record to be uploaded. The available options are:	
 
  * Accounts
  * Calls
@@ -46,6 +42,10 @@ The type of record to be deleted. The available options are:
  * Solutions
  * Tasks
  * Vendors
+
+### Trigger Workflow Rules
+_Required_  
+Set to true to trigger workflows after inserting or updating a record in Zoho CRM.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings)
