@@ -6,24 +6,24 @@ title: Scheduling a Workflow
 You can easily schedule any Workflow to run at a specific time and then repeat every 15 minutes, hour, day, week or month. The scheduler uses the built in Windows scheduling service to execute Zynk at the times you specify.
 
 ## Setting up a Schedule
-1. Click on the Scheduler button on the Workflow builder, and select the 'Run on a schedule' option. This will create a default schedule which will run the workflow every 15 minutes.
+1 - Click on the Scheduler button on the Workflow builder, and select the 'Run on a schedule' option. This will create a default schedule which will run the workflow every 15 minutes.
 
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b09937c6979143615648c5/file-rFicZN74r1.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b09937c6979143615648c5/file-rFicZN74r1.png)
 
-2. To change the settings of the schedule, click on the 'Edit' button.
+2 - To change the settings of the schedule, click on the 'Edit' button.
 
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b09941c6979143615648c7/file-jgQtCp8Eap.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b09941c6979143615648c7/file-jgQtCp8Eap.png)
 
-3. Click on the 'Triggers' tab, and then click 'Edit'.
+3 - Click on the 'Triggers' tab, and then click 'Edit'.
 
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b09958c6979143615648c8/file-RMUZD5hd0C.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b09958c6979143615648c8/file-RMUZD5hd0C.png)
 
-4. Configure the settings for when the schedule should run, then click 'Ok'. You can specify whether the schedule should run once, daily, weekly or monthly, what time it should start, and how often the task should be repeated. By default the schedule runs daily and repeats every 15 minutes from midnight.
+4 - Configure the settings for when the schedule should run, then click 'Ok'. You can specify whether the schedule should run once, daily, weekly or monthly, what time it should start, and how often the task should be repeated. By default the schedule runs daily and repeats every 15 minutes from midnight.
 
 ## Managing Schedules
 Scheduled Workflows can be managed from the Task Scheduler within Windows (please note that this may appear as Scheduled Tasks in earlier versions of Windows).
 
-1. Launch the Task Scheduler window
+1 - Launch the Task Scheduler window
 
 a. either by searching the Windows start menu   
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/57c56976c6979156e4f1f452/file-Q0TepJYsUF.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/57c56976c6979156e4f1f452/file-Q0TepJYsUF.png)
@@ -33,7 +33,7 @@ b. or by clicking Run and typing 'taskschd.msc' and clicking Ok
 
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/57c56aeec6979156e4f1f45a/file-aiF2Kjw1NA.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/57c56aeec6979156e4f1f45a/file-aiF2Kjw1NA.png)
 
-2. Find the Zynk Workflow schedule that you would like to manage (the scheduled task name will match the Workflow name in Zynk).
+2 - Find the Zynk Workflow schedule that you would like to manage (the scheduled task name will match the Workflow name in Zynk).
 
 a. Scheduled tasks created in the most recent version of Zynk (2.0 or later) will be organised under a 'Zynk' folder in the 'Task Scheduler Library'   
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/57c56c46c6979156e4f1f46b/file-gxj0WyWNi8.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/57c56c46c6979156e4f1f46b/file-gxj0WyWNi8.png)
@@ -41,7 +41,7 @@ a. Scheduled tasks created in the most recent version of Zynk (2.0 or later) wil
 b. Scheduled tasks created in earlier versions of Zynk (1.0) will appear under the 'Task Scheduler Library'   
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/57c571b9c6979156e4f1f488/file-W1MXuE5Ccb.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/57c571b9c6979156e4f1f488/file-W1MXuE5Ccb.png)
 
-3. Once you have identified the scheduled Zynk Workflow that you would like to manage, right click the entry in the 'Task Scheduler', from here you can:
+3 - Once you have identified the scheduled Zynk Workflow that you would like to manage, right click the entry in the 'Task Scheduler', from here you can:
 
 a. Disable a schedule so that the Workflow will not automatically run until re-enabled.
 
