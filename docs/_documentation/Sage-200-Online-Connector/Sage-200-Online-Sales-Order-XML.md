@@ -94,6 +94,10 @@ Promised delivery date.
 | --- | --- | --- |
 | datetime  | 2017-06-09T00:00:00 | `<promised_delivery_date>2017-06-09T00:00:00</promised_delivery_date>` |
 
+## Analysis codes
+
+Analysis codes are only supported on SOP Orders from version 2016.sp3 (12/09/2017).
+
 ### analysis_code_1
 _Optional_  
 Analysis code 1.
