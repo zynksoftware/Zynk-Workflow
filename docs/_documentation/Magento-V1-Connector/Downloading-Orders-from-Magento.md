@@ -12,7 +12,7 @@ The Magento connection to use. See the [Connecting to Magento](connecting-to-mag
 
 ### Download All
 _Required_  
-Set to true to download all records (which match the filter if one is specified), or false to download only new/modified orders.
+Set to true to download all records (which match the filter if one is specified - including start date), or false to download only new/modified orders.
 
 ### Download From
 _Optional_  
