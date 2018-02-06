@@ -3,9 +3,9 @@ slug: uploading-products-to-sage-one
 redirect_from: "/article/817-upload-products"
 title: Uploading Products to Sage One
 ---
-The Import Products task will create new and update existing non-stock items in Sage One. The product data must be provided in the [Sage One Product XML](sage-one-product-xml) format.
+The Import Stock Items task will create new and update existing stock items in Sage One. The product data must be provided in the [Sage One Stock Item XML](sage-one-stock-item-xml) format.
 
-See [Uploading Stock Items to Sage One](uploading-stock-items-to-sage-one) for importing stock items into Sage One.
+See [Uploading Products to Sage One](uploading-products-to-sage-one) for importing non-stock items into Sage One.
 
 ## Settings
 ### Sage One Connection
@@ -36,8 +36,8 @@ A sample input file is shown below. See [Sage One Product XML](sage-one-product-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <sage_one_company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <products>
-    <product>
+  <stock_items>
+    <stock_item>
       <item_code>PENCILS</item_code>
       <description>50 Coloured Pencils</description>
       <sales_ledger_account>
@@ -46,7 +46,7 @@ A sample input file is shown below. See [Sage One Product XML](sage-one-product-
       <purchase_ledger_account>
         <nominal_code>5000</nominal_code>
       </purchase_ledger_account>
-    </product>
-  </products>
+    </stock_item>
+  </stock_items>
 </sage_one_company>
 ```

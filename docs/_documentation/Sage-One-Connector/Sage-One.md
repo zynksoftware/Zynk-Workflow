@@ -28,4 +28,5 @@ Each of the tasks require a connection to Sage One, for more information on sett
 * [Uploading Purchase Invoices to Sage One](uploading-purchase-invoices-to-sage-one)
 * [Uploading Sales Invoices to Sage One](uploading-sales-invoices-to-sage-one)
 * [Uploading Services to Sage One](uploading-services-to-sage-one)
+* [Uploading Stock Items to Sage One](uploading-stock-items-to-sage-one)
 * [Uploading Suppliers to Sage One](uploading-suppliers-to-sage-one)

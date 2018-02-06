@@ -2,116 +2,237 @@
 slug: sage-one-sales-invoice-xml
 title: Sage One Sales Invoice XML
 ---
-Upload Sales Invoices allows you to create new and update existing sales invoice records in Sage One. You can either provide a field in the XML and set up the task to match sales invoice records based on that field, or alternatively you can provide an Id node in your XML.  
+The [Import Sales Invoices](uploading-sales-invoices-to-sage-one) task allows you to create new and update existing sales invoice records in Sage One, using the XML format described below. Any Sage One fields not documented below are not supported with our import.   
 
-Any Sage One fields not documented below are not supported with our uploads.   
-
-Sample upload file for creating a sales invoice record in Sage One:
+A complete example of the XML is shown below. This represents the minimum information required to create a sales invoice record in Sage One:
 
 ```xml
-<?xml version="1.0"?>
-<ArrayOfSalesInvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SalesInvoice>
-    <Id>12345</Id>
-    <ContactName>Black Sabbath</ContactName>
-    <DueDate>2016-06-20</DueDate>
-    <Reference>12345</Reference>
-    <SalesInvoiceDate>2016-06-14</SalesInvoiceDate>
-    <MainAddress>
-      <Address1>Ozzy House</Address1>
-      <Address2>123 Ozzy Road</Address2>
-      <Town>Birmingham</Town>
-      <County>West Midlands</County>
-      <Postcode>B13 2DR</Postcode>
-      <Country>
-        <Code>GB</Code>
-      </Country>
-      <Email>ozzy@sabbath.co.uk</Email>
-      <Telephone>0845 123 2921</Telephone>
-    </MainAddress>
-    <DeliveryAddress>
-      <Address1>Oz House</Address1>
-      <Address2>123 Oz Road</Address2>
-      <Town>Birmingham</Town>
-      <County>West Midlands</County>
-      <Postcode>B11 2TZ</Postcode>
-      <Country>
-        <Code>GB</Code>
-      </Country>
-    </DeliveryAddress>
-    <SalesInvoiceItems>
-      <Item>
-        <Sku>TEST</Sku>
-        <Name>TEST</Name>
-        <Qty>2</Qty>
-        <UnitPrice>8.33</UnitPrice>
-        <UnitPriceIncludesTax>false</UnitPriceIncludesTax>
-        <TaxRate>
-          <Rate>20</Rate>
-        </TaxRate>
-        <LedgerAccount>
-          <Name>Sales Type A</Name>
-        </LedgerAccount>
-      </Item>
-    </SalesInvoiceItems>
-    <Carriage>4.16</Carriage>
-    <CarriageTaxRate>
-      <Rate>20</Rate>
-    </CarriageTaxRate>
-  </SalesInvoice>
-</ArrayOfSalesInvoice>
+<?xml version="1.0" encoding="utf-8"?>
+<sage_one_company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sales_invoices>
+    <sales_invoice>
+      <contact>
+        <reference>ZYNK0001</reference>
+      </contact>
+      <main_address>
+        <address_line_1>Zynk Software</address_line_1>
+        <address_line_2>6-8 Charlotte Square</address_line_2>
+        <city>Newcastle upon Tyne</city>
+        <region>Tyne &amp; Wear</region>
+        <postal_code>NE1 4XF</postal_code>
+        <country>
+          <id>GB</id>
+        </country>
+      </main_address>
+      <invoice_lines>
+        <invoice_line>
+          <description>Free text item</description>
+          <ledger_account>
+            <nominal_code>4000</nominal_code>
+          </ledger_account>
+          <quantity>1</quantity>
+          <unit_price>10</unit_price>
+          <tax_rate>
+            <id>GB_STANDARD</id>
+          </tax_rate>
+        </invoice_line>
+      </invoice_lines>
+    </sales_invoice>
+  </sales_invoices>
+</sage_one_company>
 ```
 
-##  Account Details
-The below information is in relation to the contact details of the invoice.
+## Invoice Identification
+The following fields are use to identify the sales invoice to create/update. If neither are provided, a new invoice will always be created.
 
-| Sage Field | XML Field | Example | Field Type | Input |
-| --- | --- | --- | --- | --- |
-| - | ContactSageOneRecordId | 1234567 | string | Optional |
-| - | ContactId | 1234567 | string  | Optional |
-| Company / Name | ContactName | Black Sabbath | string | Optional |
+| Sage Field | XML Field | Example | Field Type | Input | Notes |
+| --- | --- | --- | --- | --- | --- |
+| - | id | be4eca91e41411e7aa730a57719b2edb | GUID | Optional | Sage's unique invoice ID. |
+| - | external_id | inv-0001 | string | Optional | The ID of this record from the source data. Will be stored in Zynk's truth table. |
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<sage_one_company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sales_invoices>
+    <sales_invoice>
+      <id>be4eca91e41411e7aa730a57719b2edb</id>
+      <external_id>inv-0001</external_id>
+    </sales_invoice>
+  </sales_invoices>
+</sage_one_company>
+```
+
+##  Customer Selection
+Each invoice must be assigned to an existing customer in Sage. At least one of following fields must be provided to identify the customer to assign the invoice to. If more than one is provided, Zynk will look for a match based on each field in turn, in the order they are listed below.
+
+| Sage Field | XML Field | Example | Field Type | Input | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Reference | contact/reference | ZYNK0001 | string | Optional |  |
+| - | contact/id | 8a9b4b1f174c11e691e20a5d7cf84c3e | GUID | Optional | Sage's unique customer ID. |
+| - | contact/external_id | 1234567 | string  | Optional | The ID of the customer from the source data. Will only work if the customer was imported into Sage via Zynk, and the same external_id was provided. |
+| Company / Name | contact/name | Zynk Software | string | Optional |  |
+| Main Contact > Email | contact/email | support@zynk.com | string | Optional |  |
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<sage_one_company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sales_invoices>
+    <sales_invoice>
+      <contact>
+        <reference>ZYNK0001</reference>
+        <id>8a9b4b1f174c11e691e20a5d7cf84c3e</id>
+        <external_id>1234567</external_id>
+        <name>Zynk Software</name>
+        <email>support@zynk.com</email>
+      </contact>
+    </sales_invoice>
+  </sales_invoices>
+</sage_one_company>
+```
 
 ## Invoice Details
-The below information is in relation to the main invoice details.
+The information below is in relation to the main invoice details.
 
-| Sage Field | XML Field | Example | Field Type | Input |
-| --- | --- | --- | --- | --- |
-| - | SageOneRecordId | 1234567 | string | Optional |
-| - | Id | 1234567 | string  | Optional |
-| Due Date | DueDate | 2016-06-20 | string | Required |
-| Reference | Reference | 12345 | string | Optional |
-| Invoice Date | SalesInvoiceDate | 2016-06-14  | string   | Optional  |
+| Sage Field | XML Field | Example | Field Type | Input | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Invoice Number | invoice_number | SI-45 | string | Optional | Will be auto-generated by Sage if not specified. |
+| Invoice Address | main_address | - | address | Required | See below for details. |
+| Delivery Address | delivery_address | - | address | Optional | See below for details. |
+| Invoice Date | date | 2017-01-01 | string | Optional | Will be set to today's date if not specified. |
+| Due Date | due_date | 2017-02-01 | string | Optional | Will be set automatically based on the customer's terms if not specified. |
+| Reference | reference | 12345 | string | Optional |  |
+| Notes | notes | Leave at reception |  | string | Optional |  |
+| Terms and Conditions | terms_and_conditions | Pay within 1 month | string | Optional |  |
+| Carriage | shipping_net_amount | 2.00 | string | Optional |  |
+| Carriage | shipping_tax_rate/id | GB_STANDARD | string | Optional | Used to lookup the tax rate. |
+| Carriage | shipping_tax_rate/name | Standard 20.00% | string | Optional | Used to lookup the tax rate, if ID is not specified. |
+| - | currency_id | GBP | string | Optional | Will default to the customer's currency if not specified. |
+| - | exchange_rate | 1.0 | string | Optional |  |
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<sage_one_company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sales_invoices>
+    <sales_invoice>
+      <invoice_number>SI-45</invoice_number>
+      <main_address><!-- See below --></main_address>
+      <delivery_address><!-- See below --></delivery_address>
+      <date>2017-01-01</date>
+      <due_date>2017-02-01/due_date>
+      <reference>12345</reference>
+      <notes>Leave at reception</notes>
+      <terms_and_conditions>Pay within 1 month</terms_and_conditions>
+      <shipping_net_amount>2.00</shipping_net_amount>
+      <shipping_tax_rate>
+        <id>GB_STANDARD</id>
+        <name>Standard 20.00%</name>
+      </shipping_tax_rate>
+      <currency_id>GBP</currency_id>
+      <exchange_rate>1.0</exchange_rate>
+    </sales_invoice>
+  </sales_invoices>
+</sage_one_company>
+```
 
 ## Address Details
-The below information is in relation to the address details. You are required to provide a main address.
+The below information is in relation to the address details. This should appear within either the `main_address` or `delivery_address` element in the XML.
 
-| Sage Field | XML Field | Example | Field Type | Input |
-| --- | --- | --- | --- | --- |
-| Street 1 | Address1 | Ozzy House | string | Optional |
-| Street 2 | Address2 | 123 Ozzy Road | string | Optional |
-| Town / City | Town | Birmingham | string | Optional |
-| State / Province | County | West Midlands | string | Optional |
-| Postal Code | Postcode | NE1 B13 2DR | string | Optional |
-| Email | Email | ozzy@sabbath.co.uk | string | Optional |
-| Telephone | Telephone | 0845 123 2921 | string | Optional |
-| Mobile | Mobile | 0773 863 6049 | string | Optional |
+| Sage Field | XML Field | Example | Field Type | Input | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Address 1 | address_line_1 | Zynk Software | string | Required |
+| Address 2 | address_line_2 | 6-8 Charlotte Square | string | Optional |
+| Town / City | city | Newcastle upon Tyne | string | Required |
+| State / Province / County | region | Tyne &amp; Wear | string | Required |
+| Postal Code / Postcode | postal_code | NE1 4XF | string | Optional |
+| Country | country/id | GB | string | Optional | Use the two letter ISO country code |
+| Country Group | country_group/id | GBIE | string | Optional | Available values: ALL, CA, EU, GBIE, US |
+
+```xml
+<address_line_1>Zynk Software</address_line_1>
+<address_line_2>6-8 Charlotte Square</address_line_2>
+<city>Newcastle upon Tyne</city>
+<region>Tyne &amp; Wear</region>
+<postal_code>NE1 4XF</postal_code>
+<country>
+  <id>GB</id>
+</country>
+<country_group>
+  <id>GBIE</id>
+</country_group>
+```
 
 ## Item Details
-The below information is in relation to the item details, Name, Qty and Price are always required.
+The below information is in relation to the item line details. If a product item code is specified, a product line will be added to the invoice. If a service item code is specified, a service line will be added to the invoice. If no item code is specified, a free text line will be added.
 
-| Sage Field | XML Field | Example | Field Type | Input |
-| --- | --- | --- | --- | --- |
-| - | Sku | TEST | string | Optional |
-| Description | Name | TEST | string | Required |
-| Qty/Hrs | Qty | 2 | double | Required |
-| Price/Rate | UnitPrice | 8.33 | double | Required |
-| - | UnitPriceIncludesTax | false | boolean | Optional |
-| VAT | TaxRate/Rate | 20 | double | Optional |
-| - | LedgerAccount/Name | Sales Type A | string | Optional |
+| Sage Field | XML Field | Example | Field Type | Input | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Product/Service | product/item_code | PENCIL-50 | string | Dependant | Required to add a product line to the invoice |
+| Product/Service | service/item_code | LABOUR | string | Dependant | Required to add a service line to the invoice |
+| Description | description | Colouring Pencils - 50pk | string | Required |  |
+| Ledger Account | ledger_account/nominal_code | 4000 | string | Dependant | Either the ledger account name, display name or nominal code must be provided |
+| Ledger Account | ledger_account/name | Sales Type A | string | Dependant | Either the ledger account name, display name or nominal code must be provided |
+| Ledger Account | ledger_account/display_name | Sales Type A (4000) | string | Dependant | Either the ledger account name, display name or nominal code must be provided |
+| Qty/Hrs | quantity | 2 | double | Required |  |
+| Price/Rate | unit_price | 8.33 | double | Required |  |
+| Discount | discount_amount | 8.33 | double | Optional |  |
+| VAT Rate | tax_rate/id | GB_STANDARD | string | Dependant | Either the tax rate ID or name must be provided |
+| VAT Rate | tax_rate/name | Standard 20.00% | string | Dependant | Either the tax rate ID or name must be provided |
 
-## Carriage Details
-
-| Sage Field | XML Field | Example | Field Type | Input |
-| --- | --- | --- | --- | --- |
-| Carriage | Carriage | 4.16 | double | Optional |
-| Carriage | CarriageTaxRate/Rate | TEST | string | Optional |
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<sage_one_company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sales_invoices>
+    <sales_invoice>
+      <invoice_lines>
+        <!-- Product line -->
+        <invoice_line>
+          <product>
+            <item_code>PENCIL-50</item_code>
+          </product>
+          <description>Colouring Pencils - 50pk</description>
+          <ledger_account>
+            <nominal_code>4000</nominal_code>
+            <name>Sales Type A</name>
+            <display_name>Sales Type A (4000)</display_name>
+          </ledger_account>
+          <quantity>1</quantity>
+          <unit_price>10</unit_price>
+          <tax_rate>
+            <id>GB_STANDARD</id>
+            <name>Standard 20.00%</name>
+          </tax_rate>
+        </invoice_line>
+        
+        <!-- Service line -->
+        <invoice_line>
+          <service>
+            <item_code>LABOUR</item_code>
+          </service>
+          <description>Labour</description>
+          <ledger_account>
+            <nominal_code>4000</nominal_code>
+          </ledger_account>
+          <quantity>6.5</quantity>
+          <unit_price>10</unit_price>
+          <tax_rate>
+            <id>GB_STANDARD</id>
+          </tax_rate>
+        </invoice_line>
+        
+        <!-- Free text line -->
+        <invoice_line>
+          <description>Colouring Pencils - 50pk</description>
+          <ledger_account>
+            <nominal_code>4000</nominal_code>
+          </ledger_account>
+          <quantity>1</quantity>
+          <unit_price>10</unit_price>
+          <tax_rate>
+            <id>GB_STANDARD</id>
+          </tax_rate>
+        </invoice_line>
+      </invoice_lines>
+    </sales_invoice>
+  </sales_invoices>
+</sage_one_company>
+```

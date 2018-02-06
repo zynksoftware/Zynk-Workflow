@@ -11,4 +11,5 @@ We recommend that you read the [Zynk XML Overview](zynk-xml-overview) before con
  * [Sage One Purchase Invoice XML](sage-one-purchase-invoice-xml)
  * [Sage One Sales Invoice XML](sage-one-sales-invoice-xml)
  * [Sage One Service XML](sage-one-service-xml)
+ * [Sage One Stock Item XML](sage-one-stock-item-xml)
  * [Sage One Supplier XML](sage-one-supplier-xml)
