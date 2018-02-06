@@ -24,6 +24,10 @@ The XML file containing the tier prices to upload in Magento.
 _Required_  
 The XML file to save successful tier price uploads to. The data will be written in the same format as the input file.
 
+## Store View Code
+_Required_  
+The magento store view code to perform the API calls against. Default value of 'all'.
+
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).
 
