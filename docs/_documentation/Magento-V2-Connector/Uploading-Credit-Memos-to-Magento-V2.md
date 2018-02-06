@@ -25,6 +25,10 @@ The XML file to save successful customer uploads to. The data will be written in
 _Required_  
 Set to true to prevent the same record being processed more than once by the task. This setting will only work where an `<external_id>` element is provided in the XML.
 
+## Store View Code
+_Required_  
+The magento store view code to perform the API calls against. Default value of 'all'.
+
 ### Refund Offline
 _Required_  
 Set to true to request that refunds are completed offline.
