@@ -64,6 +64,10 @@ The number of records to include in each page of results. Defaults to 50. Increa
 _Required_  
 The name of the file to export the customers to.
 
+### Store View Code
+_Required_
+The magento store view code to perform the API calls against. Default value of 'default'.
+
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).
 
