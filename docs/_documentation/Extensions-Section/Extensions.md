@@ -16,6 +16,6 @@ To open choose Extensions -> Extensions Manger from the main toolbar.
  * [Zip Search](zip-search)
  * [Zynk Log Manager (ZLM)](zynk-log-manager-zlm)
 
- ### Additions
+### Additions
 
   * [Installing the Amazon Vendor Central Extension](installing-the-amazon-vendor-central-extension)
