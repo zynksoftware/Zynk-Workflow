@@ -43,6 +43,10 @@ The value the filter is to be based upon. This is not required when using the 'N
 _Required_  
 The number of records to include in each page of results. Defaults to 50. Increasing this value will increase the speed of the download, but will consume more memory.
 
+### Store View Code
+_Required_
+The magento store view code to perform the API calls against. Default value of 'default'.
+
 ### Output File
 _Required_  
 The name of the file to export the customer groups to.
