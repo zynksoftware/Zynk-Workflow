@@ -26,6 +26,10 @@ The XML file to save successful order updates to. The data will be written in th
 _Required_  
 Set to true to prevent the same record being processed more than once by the task. This setting will only work where an `<external_id>` element is provided in the XML.
 
+## Store View Code
+_Required_  
+The magento store view code to perform the API calls against. Default value of 'all'.
+
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).
 
