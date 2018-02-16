@@ -1,0 +1,96 @@
+
+xxnav
+{
+    top: 0;
+    width: $nav-width;
+    margin: 0;
+    padding: 0 20px 0 0;
+    list-style: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+}
+
+.sidebar-nav:hover {
+    /* overflow-y: scroll; */
+    overflow-y: auto;
+}
+
+
+nav > ul > li 
+{
+    font-size: 18px;  
+    line-height: 40px;
+}
+
+nav > ul > li a 
+{
+    font-size: 14px;
+    font-weight: normal;
+    text-indent: 15px;
+    line-height: 28px;
+    font-weight:bold;
+
+}
+
+nav li ul 
+{
+    list-style: none;
+}
+
+
+
+nav li 
+{
+    text-indent: 10px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
+nav li a 
+{
+    display: block;
+    width: $nav-width;
+    text-decoration: none;
+    color: #666;
+ 
+}
+
+nav li a:hover, .sidebar-nav .active 
+{
+    text-decoration: none;
+    color: #444;
+    background: rgba(255,255,255,0.7);
+}
+
+nav li a:active, .sidebar-nav li a:focus 
+{
+    text-decoration: none;
+}
+
+
+nav ul 
+{
+    list-style: none;
+    padding: 0;
+    margin-bottom:0;
+}
+
+/* Second level nav */
+nav ul li ul li a 
+{
+    padding-left: 15px;
+    font-weight:normal;
+}
+
+
+
+nav > .sidebar-brand a {
+    color: #999999;
+}
+
+nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
