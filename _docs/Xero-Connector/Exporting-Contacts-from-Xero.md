@@ -39,7 +39,7 @@ See [Common Task Settings](common-task-settings)
 
 Sample output file showing a contact:
 
-
+```xml
 <?xml version="1.0"?>
     <ArrayOfXeroContact>
       <XeroContact>
@@ -122,3 +122,4 @@ Sample output file showing a contact:
         </ContactGroups>
       </XeroContact>
     </ArrayOfXeroContact>
+```
