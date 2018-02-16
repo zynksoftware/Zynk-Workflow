@@ -1,7 +1,7 @@
 ---
 slug: index
 redirect_from: "/article/63-welcome"
-title: Welcome to Zynk Workflow Documentation
+title: Welcome 
 ---
 ## In this Section
 
