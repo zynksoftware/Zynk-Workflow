@@ -39,7 +39,6 @@ See [Common Task Settings](common-task-settings)
 
 A sample input file containing a contact is shown below. More detailed information about each field can be found in our [API Documentation](xero-contact-xml).
 
-
 ```xml
 <ArrayOfXeroContact>
   <XeroContact>
@@ -75,5 +74,4 @@ A sample input file containing a contact is shown below. More detailed informati
     </Phones>
   </XeroContact>
 </ArrayOfXeroContact>
-
 ```
