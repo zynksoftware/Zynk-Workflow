@@ -6,7 +6,7 @@ title: Tasks
 Tasks are individual actions that are linked together to form a Workflow. There are several type of tasks available when creating a Workflow in Zynk:
 
 **Task**  
-A simple one-shot or â€œatomicâ€ action that usually accepts an input and provides an output. The majority of simple tasks do not rely on any other tasks. An example of this would be the "Copy File" task which copies a file from one location to another. Simple Tasks can be chained together to achieve more complex functionality such as Downloading a Page from a Website, Converting To PDF, Sending PDF via Email. There are also accounting tasks to automate complex business processes such as importing Customers and Sales orders from an XML data feed.
+A simple one-shot or "atomic" action that usually accepts an input and provides an output. The majority of simple tasks do not rely on any other tasks. An example of this would be the "Copy File" task which copies a file from one location to another. Simple Tasks can be chained together to achieve more complex functionality such as Downloading a Page from a Website, Converting To PDF, Sending PDF via Email. There are also accounting tasks to automate complex business processes such as importing Customers and Sales orders from an XML data feed.
 
 **Repeater Task**  
 A task that loops through a data set and runs a collection of sub-tasks for each record in that data set. An example of this would be an [Excel Repeater](excel-repeater-task) which contains a list of email addresses and for each email address you want to create a customised report such as a Statement and then Email that statement to each customer.
