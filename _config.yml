@@ -9,7 +9,7 @@ show_full_navigation: false
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Product documentation template for Zynk Workflow.
+description: Product documentation for Zynk Workflow.
 author:
   name: Adam 
   email: support@zynk.com

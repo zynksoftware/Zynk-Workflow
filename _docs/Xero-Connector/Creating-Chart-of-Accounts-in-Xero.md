@@ -33,27 +33,27 @@ Sample input file containing showing some accounts:
 
 
 ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <Setup xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:zynk="http://www.zynk.com">
-      <Accounts>
-        <Account>
-          <Code>0010</Code>
-          <Name>Freehold Property</Name>
-          <Type>Fixed</Type>
-          <TaxType>NONE</TaxType>
-        </Account>
-        <Account>
-          <Code>0011</Code>
-          <Name>Leasehold Property</Name>
-          <Type>Fixed</Type>
-          <TaxType>NONE</TaxType>
-        </Account>
-        <Account>
-          <Code>0020</Code>
-          <Name>Plant and Machinery</Name>
-          <Type>Fixed</Type>
-          <TaxType>NONE</TaxType>
-        </Account>
-      </Accounts>
-    </Setup>
+<?xml version="1.0" encoding="utf-8"?>
+<Setup xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:zynk="http://www.zynk.com">
+  <Accounts>
+    <Account>
+      <Code>0010</Code>
+      <Name>Freehold Property</Name>
+      <Type>Fixed</Type>
+      <TaxType>NONE</TaxType>
+    </Account>
+    <Account>
+      <Code>0011</Code>
+      <Name>Leasehold Property</Name>
+      <Type>Fixed</Type>
+      <TaxType>NONE</TaxType>
+    </Account>
+    <Account>
+      <Code>0020</Code>
+      <Name>Plant and Machinery</Name>
+      <Type>Fixed</Type>
+      <TaxType>NONE</TaxType>
+    </Account>
+  </Accounts>
+</Setup>
 ```

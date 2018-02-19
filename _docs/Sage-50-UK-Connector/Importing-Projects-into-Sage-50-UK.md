@@ -29,37 +29,37 @@ See [Common Task Settings](common-task-settings)
 Sample input file, for full documentation and samples see [Sage 50 UK Project XML](sage-50-uk-project-xml):  
 
 
-
-    &lt;?xml version="1.0" encoding="utf-8"?&gt;
-    &lt;Company&gt;
-      &lt;Projects&gt;
-        &lt;Project&gt;
-          &lt;Id&gt;1&lt;/Id&gt;
-          &lt;Reference&gt;ZYNK&lt;/Reference&gt;
-          &lt;Name&gt;ZYNK PROJECT&lt;/Name&gt;
-          &lt;Description&gt;ZYNK PROJECT - INTEGRATION&lt;/Description&gt;
-          &lt;StartDate&gt;2014-01-13T00:00:00&lt;/StartDate&gt;
-          &lt;EndDate&gt;2014-01-14T00:00:00&lt;/EndDate&gt;
-          &lt;Status&gt;ACTIVE&lt;/Status&gt;
-          &lt;AccountReference&gt;CUST0001&lt;/AccountReference&gt;
-          &lt;SecondReference&gt;SECONDREF&lt;/SecondReference&gt;
-          &lt;ProjectAddress&gt;
-            &lt;ContactName&gt;Mr Chris Hotchkiss&lt;/ContactName&gt;
-            &lt;Address1&gt;Nelson House, Fleming Business Centre&lt;/Address1&gt;
-            &lt;Address2&gt;Jesmond&lt;/Address2&gt;
-            &lt;Town&gt;Newcastle upon Tyne&lt;/Town&gt;
-            &lt;County&gt;Tyne &amp;amp; Wear&lt;/County&gt;
-            &lt;Postcode&gt;NE2 3AE&lt;/Postcode&gt;
-            &lt;Telephone&gt;0845 123 2920&lt;/Telephone&gt;
-            &lt;Fax&gt;0845 123 2921&lt;/Fax&gt;
-            &lt;Email&gt;support@zynk.com&lt;/Email&gt;
-            &lt;Country&gt;GB&lt;/Country&gt;
-          &lt;/ProjectAddress&gt;
-          &lt;QuotedPrice&gt;6778&lt;/QuotedPrice&gt;
-          &lt;Analysis1&gt;ANALYSIS1&lt;/Analysis1&gt;
-          &lt;Analysis2&gt;ANALYSIS2&lt;/Analysis2&gt;
-          &lt;Analysis3&gt;ANALYSIS3&lt;/Analysis3&gt;
-        &lt;/Project&gt;
-      &lt;/Projects&gt;
-    &lt;/Company&gt;
-
+```xml
+<?xml version="1.0" encoding="utf-8">
+<Company>
+  <Projects>
+    <Project>
+      <Id>1</Id>
+      <Reference>ZYNK</Reference>
+      <Name>ZYNK PROJECT</Name>
+      <Description>ZYNK PROJECT - INTEGRATION</Description>
+      <StartDate>2014-01-13T00:00:00</StartDate>
+      <EndDate>2014-01-14T00:00:00</EndDate>
+      <Status>ACTIVE</Status>
+      <AccountReference>CUST0001</AccountReference>
+      <SecondReference>SECONDREF</SecondReference>
+      <ProjectAddress>
+        <ContactName>Mr Chris Hotchkiss</ContactName>
+        <Address1>Nelson House, Fleming Business Centre</Address1>
+        <Address2>Jesmond</Address2>
+        <Town>Newcastle upon Tyne</Town>
+        <County>Tyne &amp;amp; Wear</County>
+        <Postcode>NE2 3AE</Postcode>
+        <Telephone>0845 123 2920</Telephone>
+        <Fax>0845 123 2921</Fax>
+        <Email>support@zynk.com</Email>
+        <Country>GB</Country>
+      </ProjectAddress>
+      <QuotedPrice>6778</QuotedPrice>
+      <Analysis1>ANALYSIS1</Analysis1>
+      <Analysis2>ANALYSIS2</Analysis2>
+      <Analysis3>ANALYSIS3</Analysis3>
+    </Project>
+  </Projects>
+</Company>
+```

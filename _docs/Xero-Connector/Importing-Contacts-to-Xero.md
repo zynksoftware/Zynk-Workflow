@@ -39,41 +39,39 @@ See [Common Task Settings](common-task-settings)
 
 A sample input file containing a contact is shown below. More detailed information about each field can be found in our [API Documentation](xero-contact-xml).
 
-
 ```xml
-    <ArrayOfXeroContact>
-      <XeroContact>
-        <ExternalId>8520</ExternalId>
-        <Name>Zynk Software</Name>
+<ArrayOfXeroContact>
+  <XeroContact>
+    <ExternalId>8520</ExternalId>
+    <Name>Zynk Software</Name>
+    <EmailAddress>support@zynk.com</EmailAddress>
+    <ContactPersons>
+      <ContactPerson>
+        <FirstName>Joe</FirstName>
+        <LastName>Bloggs</LastName>
         <EmailAddress>support@zynk.com</EmailAddress>
-        <ContactPersons>
-          <ContactPerson>
-            <FirstName>Joe</FirstName>
-            <LastName>Bloggs</LastName>
-            <EmailAddress>support@zynk.com</EmailAddress>
-            <IncludeInEmails>true</IncludeInEmails>
-          </ContactPerson>
-        </ContactPersons>
-        <Addresses>
-          <Address>
-            <AddressType>Street</AddressType>
-            <AddressLine1>Flemming Business Centre</AddressLine1>
-            <AddressLine2>Jesmond</AddressLine2>
-            <City>Newcastle</City>
-            <Region>Tyne &amp; Wear</Region>
-            <PostalCode>NE2 3AE</PostalCode>
-            <Country>GB</Country>
-          </Address>
-        </Addresses>
-        <Phones>
-          <Phone>
-            <PhoneType>Default</PhoneType>
-            <PhoneNumber>1232920</PhoneNumber>
-            <PhoneAreaCode>0845</PhoneAreaCode>
-            <PhoneCountryCode />
-          </Phone>
-        </Phones>
-      </XeroContact>
-    </ArrayOfXeroContact>
-
+        <IncludeInEmails>true</IncludeInEmails>
+      </ContactPerson>
+    </ContactPersons>
+    <Addresses>
+      <Address>
+        <AddressType>Street</AddressType>
+        <AddressLine1>Flemming Business Centre</AddressLine1>
+        <AddressLine2>Jesmond</AddressLine2>
+        <City>Newcastle</City>
+        <Region>Tyne &amp; Wear</Region>
+        <PostalCode>NE2 3AE</PostalCode>
+        <Country>GB</Country>
+      </Address>
+    </Addresses>
+    <Phones>
+      <Phone>
+        <PhoneType>Default</PhoneType>
+        <PhoneNumber>1232920</PhoneNumber>
+        <PhoneAreaCode>0845</PhoneAreaCode>
+        <PhoneCountryCode />
+      </Phone>
+    </Phones>
+  </XeroContact>
+</ArrayOfXeroContact>
 ```

@@ -39,86 +39,87 @@ See [Common Task Settings](common-task-settings)
 
 Sample output file showing a contact:
 
-
+```xml
 <?xml version="1.0"?>
-    <ArrayOfXeroContact>
-      <XeroContact>
-        <UpdatedDateUtc>2014-09-08T20:24:38.037</UpdatedDateUtc>
-        <Id>305ca5cf-497d-4fee-a161-cdb30e6be989</Id>
-        <ContactStatus>Active</ContactStatus>
-        <Name>Zynk Software</Name>
-        <FirstName>Joe</FirstName>
-        <LastName>Bloggs</LastName>
-        <EmailAddress>support@zynk.com</EmailAddress>
-        <BankAccountDetails />
-        <IsSupplier>false</IsSupplier>
-        <IsCustomer>true</IsCustomer>
-        <Discount xsi:nil="true" />
-        <HasAttachments>false</HasAttachments>
-        <Balances>
-          <AccountsReceivable>
-            <Outstanding>914.55</Outstanding>
-            <Overdue>0.00</Overdue>
-          </AccountsReceivable>
-          <AccountsPayable>
-            <Outstanding>0.00</Outstanding>
-            <Overdue>0.00</Overdue>
-          </AccountsPayable>
-        </Balances>
-        <ContactPersons />
-        <Addresses>
-          <Address>
-            <AddressType>Street</AddressType>
-            <City />
-            <Region />
-            <PostalCode />
-            <Country />
-            <AttentionTo />
-          </Address>
-          <Address>
-            <AddressType>PostOfficeBox</AddressType>
-            <AddressLine1>Flemming Business Centre</AddressLine1>
-            <AddressLine2>Jesmond</AddressLine2>
-            <City>Newcastle</City>
-            <Region />
-            <PostalCode>NE2 3AE</PostalCode>
-            <Country />
-            <AttentionTo />
-          </Address>
-        </Addresses>
-        <Phones>
-          <Phone>
-            <PhoneType>DirectDial</PhoneType>
-            <PhoneNumber />
-            <PhoneAreaCode />
-            <PhoneCountryCode />
-          </Phone>
-          <Phone>
-            <PhoneType>Default</PhoneType>
-            <PhoneNumber>1232920</PhoneNumber>
-            <PhoneAreaCode>0845</PhoneAreaCode>
-            <PhoneCountryCode />
-          </Phone>
-          <Phone>
-            <PhoneType>Fax</PhoneType>
-            <PhoneNumber />
-            <PhoneAreaCode />
-            <PhoneCountryCode />
-          </Phone>
-          <Phone>
-            <PhoneType>Mobile</PhoneType>
-            <PhoneNumber>7777777</PhoneNumber>
-            <PhoneAreaCode>07</PhoneAreaCode>
-            <PhoneCountryCode />
-          </Phone>
-        </Phones>
-        <ContactGroups>
-          <ContactGroup>
-            <Id>91dbdc3f-86c5-4bfe-b227-5d1735945cea</Id>
-            <Name>Training</Name>
-            <Status>ACTIVE</Status>
-            <Contacts />
-          </ContactGroup>
-        </ContactGroups>
-      </XeroContact>
-    </ArrayOfXeroContact>
+<ArrayOfXeroContact>
+  <XeroContact>
+    <UpdatedDateUtc>2014-09-08T20:24:38.037</UpdatedDateUtc>
+    <Id>305ca5cf-497d-4fee-a161-cdb30e6be989</Id>
+    <ContactStatus>Active</ContactStatus>
+    <Name>Zynk Software</Name>
+    <FirstName>Joe</FirstName>
+    <LastName>Bloggs</LastName>
+    <EmailAddress>support@zynk.com</EmailAddress>
+    <BankAccountDetails />
+    <IsSupplier>false</IsSupplier>
+    <IsCustomer>true</IsCustomer>
+    <Discount xsi:nil="true" />
+    <HasAttachments>false</HasAttachments>
+    <Balances>
+      <AccountsReceivable>
+        <Outstanding>914.55</Outstanding>
+        <Overdue>0.00</Overdue>
+      </AccountsReceivable>
+      <AccountsPayable>
+        <Outstanding>0.00</Outstanding>
+        <Overdue>0.00</Overdue>
+      </AccountsPayable>
+    </Balances>
+    <ContactPersons />
+    <Addresses>
+      <Address>
+        <AddressType>Street</AddressType>
+        <City />
+        <Region />
+        <PostalCode />
+        <Country />
+        <AttentionTo />
+      </Address>
+      <Address>
+        <AddressType>PostOfficeBox</AddressType>
+        <AddressLine1>Flemming Business Centre</AddressLine1>
+        <AddressLine2>Jesmond</AddressLine2>
+        <City>Newcastle</City>
+        <Region />
+        <PostalCode>NE2 3AE</PostalCode>
+        <Country />
+        <AttentionTo />
+      </Address>
+    </Addresses>
+    <Phones>
+      <Phone>
+        <PhoneType>DirectDial</PhoneType>
+        <PhoneNumber />
+        <PhoneAreaCode />
+        <PhoneCountryCode />
+      </Phone>
+      <Phone>
+        <PhoneType>Default</PhoneType>
+        <PhoneNumber>1232920</PhoneNumber>
+        <PhoneAreaCode>0845</PhoneAreaCode>
+        <PhoneCountryCode />
+      </Phone>
+      <Phone>
+        <PhoneType>Fax</PhoneType>
+        <PhoneNumber />
+        <PhoneAreaCode />
+        <PhoneCountryCode />
+      </Phone>
+      <Phone>
+        <PhoneType>Mobile</PhoneType>
+        <PhoneNumber>7777777</PhoneNumber>
+        <PhoneAreaCode>07</PhoneAreaCode>
+        <PhoneCountryCode />
+      </Phone>
+    </Phones>
+    <ContactGroups>
+      <ContactGroup>
+        <Id>91dbdc3f-86c5-4bfe-b227-5d1735945cea</Id>
+        <Name>Training</Name>
+        <Status>ACTIVE</Status>
+        <Contacts />
+      </ContactGroup>
+    </ContactGroups>
+  </XeroContact>
+</ArrayOfXeroContact>
+```
