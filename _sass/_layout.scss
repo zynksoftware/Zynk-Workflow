@@ -162,11 +162,6 @@ $nav-image: $baseurl + "/images/menu.svg";
 	background-color: $content-background-color;
 	color: $content-color;
 
-	h3::before {
-		content: "";
-		@extend hr;
-		margin: 20px 0;
-	}
 }
 
 .content,
