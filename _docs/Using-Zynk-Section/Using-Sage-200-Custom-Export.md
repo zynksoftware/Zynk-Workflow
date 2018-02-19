@@ -6,7 +6,7 @@ title: Using Sage 200 Custom Export
 This article will show you how to configure your own custom export from Sage 200. In this example, we demonstrate the process of filtering the results of an export and exporting additional fields which are not included in the standard export. We will use the Export Sales Orders task as an example in this tutorial, but the same principles apply across all the Sage 200 export tasks.
 
 ## Filtering the Export
-As an example, we will filter the results of the Export Sales Orders task to only include orders where the total amount is greater than Â£100. Firstly, we need to check the field name in the Sage database. You can do this using SQL Server Management Studio.
+As an example, we will filter the results of the Export Sales Orders task to only include orders where the total amount is greater than £100. Firstly, we need to check the field name in the Sage database. You can do this using SQL Server Management Studio.
 
 
 1. Navigate to your Sage 200 database in the Object Explorer, and expand the 'Tables' folder.

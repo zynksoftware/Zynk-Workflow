@@ -27,7 +27,7 @@ _Required_
 
 ### Fail File
 _Required_  
-The name of a file for “failed” imports to be sent to   
+The name of a file for "failed" imports to be sent to   
 
 ### Input File
 _Required_  
@@ -35,7 +35,7 @@ The source file that you want to import in Zynk XML format
 
 ### Success File
 _Required_  
-The name of a file for “successful” imports to be sent to.  
+The name of a file for "successful" imports to be sent to.  
 
 ### Auto On Order
 _Required_  
@@ -50,7 +50,7 @@ Set this value to True if you are providing your own purchase order number in th
 
 ### Auto Create Products
 _Required_  
-Set this value to True if you require products which are not in the product file to be created â€œon the flyâ€ Setting to False will cause the order to fail import.
+Set this value to True if you require products which are not in the product file to be created on the fly Setting to False will cause the order to fail import.
 
 ### Convert To Account Currency
 _Required_  

@@ -26,4 +26,4 @@ Enter the password for the login you want to use for the integration.
 
 ### Website
 _Required_  
-Enter the url to your Peoplevox instance.  For hosted services the URL is “wms.peoplevox.net/ClientId”.  An example for the URL could be: http://wms.peoplevox.net/myclientid/integrationservicev4.asmx
+Enter the url to your Peoplevox instance.  For hosted services the URL is wms.peoplevox.net/ClientId.  An example for the URL could be: http://wms.peoplevox.net/myclientid/integrationservicev4.asmx

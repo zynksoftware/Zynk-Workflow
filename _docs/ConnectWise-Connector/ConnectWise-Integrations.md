@@ -14,7 +14,7 @@ title: ConnectWise Integrations
 
 
 **ConnectWise Invoices to Sage Product Invoices**  
-This Workflow will import any Unposted Invoices shown in the ConnectWise accounting interface which is located on the Other â†’ Accounting Interface tab and creates a Customer in Sage if they do not already exist and product invoices for each unposted invoice, it then updates ConnectWise to mark that batch of invoices as "posted". This integration will create Sage 50 product invoices which can then be posted to the Sales Ledger and Payments made against them
+This Workflow will import any Unposted Invoices shown in the ConnectWise accounting interface which is located on the Other Accounting Interface tab and creates a Customer in Sage if they do not already exist and product invoices for each unposted invoice, it then updates ConnectWise to mark that batch of invoices as "posted". This integration will create Sage 50 product invoices which can then be posted to the Sales Ledger and Payments made against them
 
 
 

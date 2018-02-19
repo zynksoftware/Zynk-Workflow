@@ -3,7 +3,7 @@ slug: converting-html-files-to-pdf-documents
 redirect_from: "/article/285-converting-html-files-to-pdf-documents"
 title: Converting HTML Files to PDF Documents
 ---
-This task will convert an HTML document to PDF format. Specify the Input File or URL as the and the Output File as the name of the PDF to generate. You can also specify a Template File which will be used as the “backdrop” to any information printed via HTML to PDF task - typically this is used for producing letterheads where you are overprinting a letter which is coming from the HTML file. There are a number of other settings which pertain to margins and document layout for PDF generation. These options generally do not need to be changed.
+This task will convert an HTML document to PDF format. Specify the Input File or URL as the and the Output File as the name of the PDF to generate. You can also specify a Template File which will be used as the backdrop to any information printed via HTML to PDF task - typically this is used for producing letterheads where you are overprinting a letter which is coming from the HTML file. There are a number of other settings which pertain to margins and document layout for PDF generation. These options generally do not need to be changed.
 
 ## Settings
 ### Input URI

@@ -114,7 +114,7 @@ Sample output file:
 				</name>
 				<code>COST</code>
 				<currencyCode>GBP</currencyCode>
-				<currencySymbol>Â£</currencySymbol>
+				<currencySymbol>£</currencySymbol>
 				<currencyId>1</currencyId>
 				<priceListTypeCode>BUY</priceListTypeCode>
 				<gross>false</gross>
@@ -126,7 +126,7 @@ Sample output file:
 				<id>1</id>
 				<title>British Pound Sterling</title>
 				<code>GBP</code>
-				<symbol>Â£</symbol>
+				<symbol>£</symbol>
 				<exchangeRate>1.000000</exchangeRate>
 				<isDefault>true</isDefault>
 			</currency>

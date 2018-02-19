@@ -98,8 +98,8 @@ The mapping shown will produce the following output:
 
 ```csv
 ID,A/C Ref,Name,Sku,Quantity,Price
-12345,INTE001,Test,TEST01,1,Â£200.00
-12345,INTE001,Test,TEST02,1,Â£200.00
+12345,INTE001,Test,TEST01,1,£200.00
+12345,INTE001,Test,TEST02,1,£200.00
 ```
 
 ## Using Predicates

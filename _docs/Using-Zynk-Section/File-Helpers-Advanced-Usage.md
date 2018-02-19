@@ -18,9 +18,9 @@ ALFKI|Alfreds Futterkiste|Maria Anders|Sales Representative|Obere Str. 57|Berlin
 10248|ALFKI|5|04071996|01081996|16071996|3|32.38 
 10249|ALFKI|6|05071996|16081996|10071996|1|11.61 
 10251|ALFKI|3|08071996|05081996|15071996|1|41.34 
-ANATR|Ana Trujillo Emparedados y helados|Ana Trujillo|Owner|Avda. de la ConstituciÃ³n 2222|MÃ©xico D.F.|Mexico 
+ANATR|Ana Trujillo Emparedados y helados|Ana Trujillo|Owner|Avda. de la Constitucia 2222|Mexico D.F.|Mexico 
 10252|ANATR|4|09071996|06081996|11071996|2|51.3 
-ANTON|Antonio Moreno TaquerÃ­a|Antonio Moreno|Owner|Mataderos  2312|MÃ©xico D.F.|Mexico
+ANTON|Antonio Moreno Taquer­a|Antonio Moreno|Owner|Mataderos 2312|Mexico D.F.|Mexico
 ```
 
 ### C# Master Class

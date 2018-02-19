@@ -8,7 +8,7 @@ If you plan on sending emails using Zynk and do not have an in-house SMTP server
 ## Mandrill
 [Mandrill](http://www.mandrill.com/) is a transactional email product from the people who created MailChimp. Apps can use Mandrill to send automated one-to-one email, like password reminders, shopping-cart receipts, and notifications.
 
-Mandrill also offers advanced tracking, easy-to-understand reports, and hundreds of template options that shouldnâ€™t be limited to bulk email newsletters. And it's built on MailChimp's proven email platform, which sends more than three billion emails a month.
+Mandrill also offers advanced tracking, easy-to-understand reports, and hundreds of template options that shouldn not be limited to bulk email newsletters. And it's built on MailChimp's proven email platform, which sends more than three billion emails a month.
 
 It is quick to set up, has webhooks support, and high delivery rates. template options, tagging, and custom reports. Mandrill is the only transactional email product with a mobile app that allows you to monitor delivery and troubleshoot from wherever you are. You can send up to 12,000 emails per month absolutely free using their service after which they charge a very reasonable monthly fee.
 

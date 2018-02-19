@@ -187,7 +187,7 @@ Quantity.
 
 #### RequestedDeliveryDate
 _Optional_  
-Requested delivery date in “yyyy-MM-dd HH:mm:ss” format.
+Requested delivery date in yyyy-MM-dd HH:mm:ss format.
 
 | Type | Example | XML |
 | --- | --- | --- |
@@ -219,7 +219,7 @@ Cost price.
 
 #### ExpectededDeliveryDate
 _Optional_  
-Expected delivery date in “yyyy-MM-dd HH:mm:ss” format.
+Expected delivery date in yyyy-MM-dd HH:mm:ss format.
 
 | Type | Example | XML |
 | --- | --- | --- |

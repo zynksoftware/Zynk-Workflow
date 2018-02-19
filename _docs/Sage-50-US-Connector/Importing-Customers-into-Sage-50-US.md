@@ -11,7 +11,7 @@ The connection to Sage 50 US to use. See the [Connecting to Sage 50 US](connecti
 
 ### Fail File
 _Required_  
-The name of a file for “failed” imports to be sent to.
+The name of a file for "failed" imports to be sent to.
 
 ### Input File
 _Required_  
@@ -19,7 +19,7 @@ The source file that you want to import in XML format.
 
 ### Success File
 _Required_  
-The name of a file for “successful” imports to be sent to.
+The name of a file for "successful" imports to be sent to.
 
 ### Auto Generate Account IDs
 _Required_  

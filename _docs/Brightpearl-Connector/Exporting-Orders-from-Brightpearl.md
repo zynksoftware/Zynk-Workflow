@@ -65,7 +65,7 @@ Sample output file:
           </name>
           <code>COST</code>
           <currencyCode>GBP</currencyCode>
-          <currencySymbol>Â£</currencySymbol>
+          <currencySymbol>£</currencySymbol>
           <currencyId>1</currencyId>
           <priceListTypeCode>BUY</priceListTypeCode>
           <gross>false</gross>

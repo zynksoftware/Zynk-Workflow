@@ -23,7 +23,7 @@ The field in Salesforce of type External ID to use to when looking for existing 
 
 ### Input File(s)
 _Required_  
-The file(s) to upload to Salesforce. XML field names must match Salesforce API field names, custom fields are usually named like “Account_Ref__c”. If using multiple files, you can either select the 'Use a list' option and enter each file name, or select the 'Use output from the previous task' option and generate a list of files dynamically using a  [List Files](list-files) task.
+The file(s) to upload to Salesforce. XML field names must match Salesforce API field names, custom fields are usually named like "Account_Ref__c". If using multiple files, you can either select the 'Use a list' option and enter each file name, or select the 'Use output from the previous task' option and generate a list of files dynamically using a  [List Files](list-files) task.
 
 ### Object Type
 _Required_  

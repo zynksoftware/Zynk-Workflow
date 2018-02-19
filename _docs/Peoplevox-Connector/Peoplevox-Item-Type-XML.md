@@ -146,7 +146,7 @@ Traceability flag, false by default.
 
 ### ShelfLife
 _Optional_  
-Date in “yyyy-MM-dd HH:mm:ss” format.
+Date in yyyy-MM-dd HH:mm:ss format.
 
 | Type | Example | XML |
 | --- | --- | --- |

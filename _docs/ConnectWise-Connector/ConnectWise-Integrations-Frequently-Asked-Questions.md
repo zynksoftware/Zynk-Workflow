@@ -9,7 +9,7 @@ title: ConnectWise Integrations Frequently Asked Questions
 
 
 
-Click on the â€œOtherâ€ section then choose â€œAccounting Interfaceâ€ and you will see some tabs shoing Unposted Invoices, Unposted Expenses and Unposted Procurement (Invoices from Purchase Orders)
+Click on the Other section then choose Accounting Interface and you will see some tabs shoing Unposted Invoices, Unposted Expenses and Unposted Procurement (Invoices from Purchase Orders)
 
 
 
@@ -34,11 +34,11 @@ Agreement invoices in ConnectWise do not hold a SKU code so the import into Sage
 
 
 **Q: What if the integration does not work the way I want it to work?**  
-See â€œHow do I customise the Integrationâ€
+See How do I customise the Integration
 
 
 
-**Q: The standard mappings donâ€™t suit my business so I need the integration customising to my requirements - is this possible?**  
+**Q: The standard mappings don not suit my business so I need the integration customising to my requirements - is this possible?**  
 Yes, we can customise the mappings for you - this work is billed at our standard hourly rate.
 
 

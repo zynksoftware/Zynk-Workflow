@@ -14,7 +14,7 @@ Building the Workflow
 2. You should now see the Task Library pane displayed, Click on the XML Library and then Double-click (or Drag and drop) the XML Repeater to copy that task into the Tasks List
 3. Set Input File to `C:\accounts.xml`
 4. Set XPath Query to QueryResult/records this is basically mimics the directory structure of the XML file, the root element being QueryResult and the rows being records elements
-5. Next, locate the Razor Template task in the Zynk library and you need to drag it and drop it *on top* of the XML Repeater - donâ€™t worry if you get this wrong, just delete the task and try again.
+5. Next, locate the Razor Template task in the Zynk library and you need to drag it and drop it *on top* of the XML Repeater - don not worry if you get this wrong, just delete the task and try again.
 6. Set Output File to `c:\output.txt`
 7. Set Prepend Timestamp to True this will prepend the timestamp to each file so the filename is unique,
 8. Set Template File to `c:\template.txt`

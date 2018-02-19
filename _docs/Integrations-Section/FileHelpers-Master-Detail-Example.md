@@ -16,7 +16,7 @@ ALFKI|Alfreds Futterkiste|Maria Anders|Sales Representative|Obere Str. 57|Berlin
 10248|ALFKI|5|04071996|01081996|16071996|3|32.38 
 10249|ALFKI|6|05071996|16081996|10071996|1|11.61 
 10251|ALFKI|3|08071996|05081996|15071996|1|41.34 
-ANATR|Ana Trujillo Emparedados y helados|Ana Trujillo|Owner|Avda. de la ConstituciÃ³n 2222|MÃ©xico D.F.|Mexico 
+ANATR|Ana Trujillo Emparedados y helados|Ana Trujillo|Owner|Avda. de la Constituci 2222|Meico D.F.|Mexico 
 10252|ANATR|4|09071996|06081996|11071996|2|51.3
 ```
 
@@ -129,8 +129,8 @@ After saving and running the Workflow, the output.xml file should contain the fo
 			<CompanyName>Ana Trujillo Emparedados y helados</CompanyName>
 			<ContactName>Ana Trujillo</ContactName>
 			<ContactTitle>Owner</ContactTitle>
-			<Address>Avda. de la ConstituciÃƒÂ³n 2222</Address>
-			<City>MÃƒ&copy;xico D.F.</City>
+			<Address>Avda. de la Constitucia 2222</Address>
+			<City>Mexico D.F.</City>
 			<Country>Mexico</Country>
 		</Master>
 		<Details>

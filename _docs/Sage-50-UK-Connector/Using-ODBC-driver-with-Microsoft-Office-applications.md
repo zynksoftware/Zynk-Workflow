@@ -8,10 +8,10 @@ title: Using ODBC driver with Microsoft Office applications
 ## To use the ODBC driver to link your Sage 50 Accounts data to Microsoft Excel.
 1. Start Microsoft Excel from Windows.
 
-2. Open the Data menu from the MicrosoftÂ® Excel menu bar and choose the Get External Data option.
+2. Open the Data menu from the Microsoft Excel menu bar and choose the Get External Data option.
 
 - *If the option is not visible, open the Tools menu and then choose the Add-Ins option. In the Add-Ins window, if the MS Query Add-In check box is de-selected, you should check your Excel/Office installation.*
-- *If the MSQuery Add-Ins option is not available you must install it. For further information about this see your MicrosoftÂ® Excel help.*
+- *If the MSQuery Add-Ins option is not available you must install it. For further information about this see your Microsoft Excel help.*
 
 3. Choose Create New Query.
 
@@ -46,7 +46,7 @@ title: Using ODBC driver with Microsoft Office applications
 
 9. Select the fields you require from the list by double-clicking on each field in turn until you have all the fields required. The fields, as you select them, appear in the database.
 
-10. Open the File menu from the menu bar and choose the Return Data to MicrosoftÂ® Excel option.
+10. Open the File menu from the menu bar and choose the Return Data to Microsoft Excel option.
 
 *The Get External Data window appears.*
 

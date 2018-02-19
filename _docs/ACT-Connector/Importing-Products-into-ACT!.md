@@ -61,9 +61,9 @@ Each of the ACT! tasks uses an ACT! Connection, for more information on setting 
 
 | 	Setting | 	Required | 	Description |
 | --- | --- | --- | --- | --- | --- | --- |
-| 	Fail File | 	Required | 	The name of a file for â€œfailedâ€ imports to be sent to. |
+| 	Fail File | 	Required | 	The name of a file for failed imports to be sent to. |
 | 	Input File | 	Required | 	The source file that you want to import in Connect XML format. |
-| 	Success File | 	Required | 	The name of a file for â€œsuccessfulâ€ imports to be sent to. |
+| 	Success File | 	Required | 	The name of a file for successful imports to be sent to. |
 | [Common Task Settings](common-task-settings) | 	Settings common across all tasks.. |
 
 

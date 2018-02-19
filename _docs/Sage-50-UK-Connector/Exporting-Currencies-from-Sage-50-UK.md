@@ -52,7 +52,7 @@ Sample output file:
             <MajorUnit>pounds</MajorUnit>
             <MinorUnit>pence</MinorUnit>
             <Name>Pound Sterling</Name>
-            <Symbol>Â£</Symbol>
+            <Symbol>£</Symbol>
         </Currency>
         <Currency>
             <UniqueId>USD</UniqueId>
@@ -78,7 +78,7 @@ Sample output file:
             <MajorUnit>euro</MajorUnit>
             <MinorUnit>cent</MinorUnit>
             <Name>Euro</Name>
-            <Symbol>â‚¬</Symbol>
+            <Symbol>€</Symbol>
         </Currency>
     </Currencies>
 </Company>

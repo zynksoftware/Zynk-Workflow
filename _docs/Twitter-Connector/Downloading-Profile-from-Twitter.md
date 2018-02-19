@@ -44,11 +44,11 @@ A sample output file is shown below.
       <IsRetweeted>true</IsRetweeted>
       <RetweetCount>2</RetweetCount>
       <Text>RT @fusiondesignuk: Great working with @zynk integrating invoice exports from #drupal to #sage #sage50
-@fusiondesignuk @davidwilford http:/…</Text>
+@fusiondesignuk @davidwilford </Text>
       <TextAsHtml>RT <a href="https://twitter.com/fusiondesignuk" target="_blank"><a href="https://twitter.com/fusiondesignuk" target="_blank">@fusiondesignuk</a></a>: Great working with <a href="https://twitter.com/zynk" target="_blank">@zynk</a> integrating invoice exports from <a href="https://twitter.com/search?q=%23drupal" target="_blank">#drupal</a> to <a href="https://twitter.com/search?q=%23sage" target="_blank">#sage</a> <a href="https://twitter.com/search?q=%23sage" target="_blank">#sage</a>50
-<a href="https://twitter.com/fusiondesignuk" target="_blank"><a href="https://twitter.com/fusiondesignuk" target="_blank">@fusiondesignuk</a></a> <a href="https://twitter.com/davidwilford" target="_blank">@davidwilford</a> http:/…</TextAsHtml>
+<a href="https://twitter.com/fusiondesignuk" target="_blank"><a href="https://twitter.com/fusiondesignuk" target="_blank">@fusiondesignuk</a></a> <a href="https://twitter.com/davidwilford" target="_blank">@davidwilford</a> </TextAsHtml>
       <TextDecoded>RT @fusiondesignuk: Great working with @zynk integrating invoice exports from #drupal to #sage #sage50
-@fusiondesignuk @davidwilford http:/…</TextDecoded>
+@fusiondesignuk @davidwilford </TextDecoded>
       <Author />
       <Source><a href="http://twitter.com" rel="nofollow">Twitter Web Client</a></Source>
       <User />

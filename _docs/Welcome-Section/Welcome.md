@@ -49,7 +49,7 @@ Once a workflow is created it can be run on demand when needed or scheduled to r
 Zynk can be configured to check stock levels and report on any inventory items falling below re-order level and send an update via Email or SMS. Zynk could go one step futher and generate an email or purchase order in your accounting system to your supplier to re-order the items that are below re-order level.
 
 ### Business Intelligence
-Zynk can extract information from many different data sources around your business to create a â€œbusiness dashboardâ€ which is then available to anyone in your organisation.
+Zynk can extract information from many different data sources around your business to create a business dashboard which is then available to anyone in your organisation.
 
 ### Generate Reports automatically or at specific times
 Zynk can be configured to extract information from your database, accounting or CRM system and send that information to you on a regular basis by email or even by publishing the information to an public website or private intranet.
