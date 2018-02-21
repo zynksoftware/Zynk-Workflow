@@ -1,7 +1,7 @@
 ---
-slug: uploading-products-to-sage-one
+slug: uploading-stock-items-to-sage-one
 redirect_from: "/article/817-upload-products"
-title: Uploading Products to Sage One
+title: Uploading Stock Items to Sage One
 ---
 The Import Stock Items task will create new and update existing stock items in Sage One. The product data must be provided in the [Sage One Stock Item XML](sage-one-stock-item-xml) format.
 
