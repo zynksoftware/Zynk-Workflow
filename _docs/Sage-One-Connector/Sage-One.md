@@ -11,12 +11,9 @@ Each of the tasks require a connection to Sage One, for more information on sett
 
 ## Tasks
 
-* [Downloading Account Types from Sage One](downloading-account-types-from-sage-one)
 * [Downloading Bank Accounts from Sage One](downloading-bank-accounts-from-sage-one)
-* [Downloading Countries from Sage One](downloading-countries-from-sage-one)
 * [Downloading Customers from Sage One](downloading-customers-from-sage-one)
 * [Downloading Ledger Accounts from Sage One](downloading-ledger-accounts-from-sage-one)
-* [Downloading Period Types from Sage One](downloading-period-types-from-sage-one)
 * [Downloading Products from Sage One](downloading-products-from-sage-one)
 * [Downloading Purchase Invoices from Sage One](downloading-purchase-invoices-from-sage-one)
 * [Downloading Sales Invoices from Sage One](downloading-sales-invoices-from-sage-one)
