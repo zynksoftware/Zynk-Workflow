@@ -17,10 +17,6 @@ Stock changes beyond this date will be exported.
 _Required_  
 The name of the file to export the products to.
 
-### Product Code
-_Required_  
-The product code of the item that stock records should be downloaded for.
-
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).
 
