@@ -33,7 +33,7 @@ plugins:
 
 gems:
   - github-pages
-  - jekyll-redirect-from
+  #- jekyll-redirect-from
 
 
 exclude:
