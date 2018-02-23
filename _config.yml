@@ -31,8 +31,8 @@ plugins:
   - jekyll-last-modified-at
   - jekyll-redirect-from
 
-gems:
-  - github-pages
+#gems:
+ # - github-pages
   #- jekyll-redirect-from
 
 
