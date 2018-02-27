@@ -7,7 +7,7 @@ This task will export purchase orders from Magnetic HQ and store them in an XML 
 ## Settings
 ### Connection
 _Required_  
-The MagneticHQ connection to use. See the ![Connecting to MagentoHQ](connecting-to-magnetichq) if you require more information on how to create/manage connections.
+The MagneticHQ connection to use. See the [Connecting to MagentoHQ](connecting-to-magnetichq) if you require more information on how to create/manage connections.
 
 ### Export All
 _Required_  
