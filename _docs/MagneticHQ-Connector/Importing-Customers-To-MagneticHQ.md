@@ -7,7 +7,7 @@ This task will import customers that are supplied in an XML format.
 ## Settings
 ### ProSKU Connection
 _Required_  
-The MagneticHQ connection to use. See the ![Connecting to MagentoHQ](connecting-to-magnetichq) if you require more information on how to create/manage connections.
+The MagneticHQ connection to use. See the [Connecting to MagentoHQ](connecting-to-magnetichq) if you require more information on how to create/manage connections.
 
 ### Fail File
 _Required_  
