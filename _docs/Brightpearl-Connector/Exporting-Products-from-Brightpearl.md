@@ -1,6 +1,6 @@
 ---
 slug: exporting-products-from-brightpearl
-redirect_from: "/article/176-downloading-products-from-brightpearl"
+redirect: "/article/176-downloading-products-from-brightpearl"
 title: Exporting Products from Brightpearl
 ---
 
