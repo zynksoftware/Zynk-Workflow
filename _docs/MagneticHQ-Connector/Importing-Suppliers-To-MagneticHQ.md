@@ -1,5 +1,6 @@
 ---
 slug: importing-suppliers-to-magnetichq
+redirect: "/article/importing-suppliers-to-magnetichq"
 title: Importing Suppliers to Magnetic HQ
 ---
 This task will import suppliers that are supplied in an XML format.
