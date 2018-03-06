@@ -1,6 +1,6 @@
 ---
 slug: importing-employee-absences-into-sage-50-payroll
-redirect_from: ""
+redirect_from: "/article/sage-50-payroll-integration/import-employee-absences"
 title: Importing Employee Absences Into Sage 50 Payroll
 ---
 This task will import Employee Absences into Sage 50 Payroll, updating existing Employee Absences and creating new ones where they don't already exist. See the [Sage 50 Payroll Employee Absences XML](sage-50-payroll-employee-absences-xml) page for more information.
