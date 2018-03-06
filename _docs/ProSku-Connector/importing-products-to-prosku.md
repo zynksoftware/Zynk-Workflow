@@ -1,5 +1,6 @@
 ---
 slug: importing-products-to-prosku
+redirects: "/article/importing-products-to-prosku"
 title: Importing Products to ProSKU
 ---
 This task will upload products that are supplied in an XML format.
