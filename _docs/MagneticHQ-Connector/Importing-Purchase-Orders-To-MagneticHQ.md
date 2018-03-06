@@ -1,5 +1,6 @@
 ---
 slug: importing-purchase-orders-to-magnetichq
+redirect: "/article/importing-purchase-orders-to-magnetichq"
 title: Importing Purchase Orders to Magnetic HQ
 ---
 This task will import purchase orders that are supplied in an XML format.
