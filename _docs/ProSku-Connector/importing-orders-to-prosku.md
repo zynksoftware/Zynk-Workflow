@@ -1,5 +1,6 @@
 ---
 slug: importing-orders-to-prosku
+redirects: "/article/importing-orders-to-prosku"
 title: Uploading orders to ProSKU
 ---
 This task will upload orders that are supplied in an XML format.
