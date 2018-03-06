@@ -1,5 +1,6 @@
 ---
 slug: exporting-stock-from-prosku
+redirects: "/article/exporting-stock-from-prosku"
 title: Exporting Stock From ProSKU
 ---
 This task will export stock details from ProSKU for an individual item to an XML file. 
