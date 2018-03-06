@@ -1,5 +1,6 @@
 ---
 slug: validating-tax-numbers
+redirect_from: "/article/validating-tax-numbers"
 title: Validating Tax Numbers
 ---
 
@@ -42,5 +43,9 @@ Sample output file:
 THE FLEMING BUSINESS CENTRE
 JESMOND
 NEWCASTLE UPONTYNE
+
 NE2 3AE</Address>
+    <Error />
+  </VatNumber>
+</VatNumbers>
 ```
