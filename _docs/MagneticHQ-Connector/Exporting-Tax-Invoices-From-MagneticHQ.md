@@ -1,5 +1,6 @@
 ---
 slug: exporting-tax-invoices-from-magnetichq
+redirect: "/article/exporting-tax-invoices-from-magnetichq"
 title: Exporting Tax Invoices from Magnetic HQ
 ---
 This task will export tax invoices from Magnetic HQ and store them in an XML file.
