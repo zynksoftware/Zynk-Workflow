@@ -1,5 +1,6 @@
 ---
 slug: exporting-suppliers-from-magnetichq
+redirect: "/article/exporting-suppliers-from-magnetichq"
 title: Exporting Suppliers from Magnetic HQ
 ---
 This task will export suppliers from Magnetic HQ and store them in an XML file.
