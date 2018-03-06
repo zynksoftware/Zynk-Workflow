@@ -1,6 +1,6 @@
 ---
 slug: export-customers
-redirect_from: "/article/929-download-customers"
+redirect: "/article/export-customers"
 title: Export Customers
 ---
 
