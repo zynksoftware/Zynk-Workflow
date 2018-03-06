@@ -1,5 +1,6 @@
 ---
 slug: exporting-stock-changes-from-prosku
+redirects: "/article/exporting-stock-changes-from-prosku"
 title: Exporting Stock Changes From ProSKU
 ---
 This task will export any stock changes from ProSKU to an XML file. 
