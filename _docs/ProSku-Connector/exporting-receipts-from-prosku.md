@@ -1,5 +1,6 @@
 ---
-slug: exporting-receipts-from-prosku 
+slug: exporting-receipts-from-prosku
+redirects: "/article/exporting-receipts-from-prosku"
 title: Exporting Receipts From ProSKU
 ---
 This task will export receipts details from ProSKU to an XML file. 
