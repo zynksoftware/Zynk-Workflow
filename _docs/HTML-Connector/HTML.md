@@ -1,6 +1,5 @@
 ---
 slug: html
-redirect_from: "/article/814-html-to-xml"
 title: HTML
 ---
 As most of the tasks in Zynk use XML files as their input/output, this library can be used to convert HTML for further processing.
