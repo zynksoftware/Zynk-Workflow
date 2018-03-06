@@ -1,5 +1,6 @@
 ---
 slug: uploading-credit-memos-to-magento-v2
+redirect_from: "/article/uploading-credit-memos-to-magento-v2"
 title: Uploading Credit Memos to Magento V2
 ---
 This task will create new credit memos in Magento. See below for a sample input file.
