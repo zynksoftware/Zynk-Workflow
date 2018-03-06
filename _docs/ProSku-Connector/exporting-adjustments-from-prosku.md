@@ -1,5 +1,6 @@
 ---
 slug: exporting-adjustments-from-prosku
+redirects: "/article/exporting-adjustments-from-prosku"
 title: Exporting Adjustments From ProSKU
 ---
 This task will export Adjustment details from ProSKU to an XML file. 
