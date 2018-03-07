@@ -1,6 +1,6 @@
 ---
 slug: exporting-customers-from-magnetichq
-redirect: "/article/exporting-customers-from-magnetichq"
+redirect_from: "/article/exporting-customers-from-magnetichq"
 title: Exporting Customers from Magnetic HQ
 ---
 This task will export customers from Magnetic HQ and store them in an XML file.
