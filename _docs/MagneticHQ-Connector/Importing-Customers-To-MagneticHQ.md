@@ -1,6 +1,6 @@
 ---
 slug: importing-customers-to-magnetichq
-redirect: "/article/importing-customers-to-magnetichq"
+redirect_from: "/article/importing-customers-to-magnetichq"
 title: Importing Customers to Magnetic HQ
 ---
 This task will import customers that are supplied in an XML format.
