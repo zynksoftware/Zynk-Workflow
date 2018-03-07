@@ -1,5 +1,6 @@
 ---
 slug: importing-sales-payments-to-sage-200-online
+redirect_from: "/article/importing-sales-payments-to-sage-200-online"
 title: Importing Sales Payments To Sage 200 Online
 ---
 This task will insert new sales payments into Sage 200 Online, from an XML file.
