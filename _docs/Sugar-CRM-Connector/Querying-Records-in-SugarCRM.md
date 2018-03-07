@@ -1,6 +1,6 @@
 ---
 slug: querying-records-in-sugarcrm
-redirect: "/article/324-querying-records-in-sugarcrm"
+redirect_from: "/article/324-querying-records-in-sugarcrm"
 title: Querying Records in SugarCRM
 ---
 
