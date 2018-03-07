@@ -1,5 +1,6 @@
 ---
 slug: exporting-sales-transactions-from-sage-200-online
+redirect_from: "/article/exporting-sales-transactions-from-sage-200-online"
 title: Exporting Sales Transactions From Sage 200 Online
 ---
 This task will download sales transactions from Sage 200 Online in [Sage 200 Online Sales Transaction XML](sage-200-online-sales-transaction-xml) format.
