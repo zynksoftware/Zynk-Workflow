@@ -1,5 +1,6 @@
 ---
 slug: exporting-sales-orders-from-sage-200-online
+redirect_from: "/article/exporting-sales-orders-from-sage-200-online"
 title: Exporting Sales Orders From Sage 200 Online
 ---
 This task will download sales orders from Sage 200 Online to an XML file.
