@@ -1,5 +1,6 @@
 ---
 slug: exporting-customers-from-sage-200-online
+redirect_from: "/article/exporting-customers-from-sage-200-online"
 title: Exporting Customers From Sage 200 Online
 ---
 This task will download customers from Sage 200 Online in [Sage 200 Online Customer XML](sage-200-online-customer-xml) format.
