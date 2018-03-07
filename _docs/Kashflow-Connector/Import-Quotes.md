@@ -1,6 +1,6 @@
 ---
 slug: import-quotes
-redirect: "/article/import-quotes"
+redirect_from: "/article/import-kashflow-quotes"
 title: Import Quotes
 ---
 
@@ -25,5 +25,5 @@ This task will upload **Quote** information.
       </anyType>
     </Lines>
   </Invoice>
-</ArrayOfQuote><br>
+</ArrayOfQuote>
 ```
