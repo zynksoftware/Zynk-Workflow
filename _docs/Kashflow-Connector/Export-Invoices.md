@@ -1,6 +1,6 @@
 ---
 slug: export-invoices
-redirect: "/article/export-invoices"
+redirect_from: "/article/export-kashflow-invoices"
 title: Export Invoices
 ---
 
