@@ -1,6 +1,6 @@
 ---
 slug: import-customers
-redirect: "/article/import-customers"
+redirect_from: "/article/import-kashflow-customers"
 title: Import Customers
 ---
 
@@ -28,5 +28,4 @@ This task will upload **Customer**information.
     <Postcode xmlns="KashFlow">NE27 5SR</Postcode>
   </Customer>
 </ArrayOfCustomer>
-<br>
 ```
