@@ -1,6 +1,6 @@
 ---
 slug: import-invoices
-redirect: "/article/import-invoices"
+redirect_from: "/article/import-kashflow-invoices"
 title: Import Invoices
 ---
 
