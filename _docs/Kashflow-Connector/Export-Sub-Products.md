@@ -1,6 +1,6 @@
 ---
 slug: export-sub-products
-redirect: "/article/export-sub-products"
+redirect_from: "/article/export-kashflow-sub-products"
 title: Export Sub Products
 ---
 
