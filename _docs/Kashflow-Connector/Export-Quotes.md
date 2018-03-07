@@ -1,6 +1,6 @@
 ---
 slug: export-quotes
-redirect_from: "/article/export-quotes"
+redirect_from: "/article/export-kashflow-quotes"
 title: Export Quotes
 ---
 
@@ -87,5 +87,4 @@ Line 3 : 17387826,Deluxe version of Rubber Soul, the 1965 album by The Beatles.,
     <UseCustomDeliveryAddress xmlns="KashFlow">false</UseCustomDeliveryAddress>
   </Invoice>
 </ArrayOfQuote>
-
 ```
