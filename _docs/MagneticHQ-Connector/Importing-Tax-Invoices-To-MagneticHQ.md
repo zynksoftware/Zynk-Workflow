@@ -1,6 +1,6 @@
 ---
 slug: importing-tax-invoices-to-magnetichq
-redirect: "/article/importing-tax-invoices-to-magnetichq"
+redirect_from: "/article/importing-tax-invoices-to-magnetichq"
 title: Importing Tax Invoices to Magnetic HQ
 ---
 This task will import tax invoices that are supplied in an XML format.
