@@ -1,6 +1,6 @@
 ---
 slug: export-purchases
-redirect: "/article/export-purchases"
+redirect_from: "/article/export-kashflow-purchases"
 title: Export Purchases
 ---
 
