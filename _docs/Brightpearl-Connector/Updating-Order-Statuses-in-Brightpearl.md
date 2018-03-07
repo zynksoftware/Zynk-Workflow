@@ -1,6 +1,6 @@
 ---
 slug: updating-order-statuses-in-brightpearl
-redirect: "/article/updating-order-statuses-in-brightpearl"
+redirect_from: "/article/updating-order-statuses-in-brightpearl"
 title: Updating Order Statuses in Brightpearl
 ---
 
