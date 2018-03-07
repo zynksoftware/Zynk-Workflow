@@ -1,6 +1,6 @@
 ---
 slug: export-customers
-redirect_from: "/article/export-kashflow-customers"
+redirect: "/article/export-kashflow-customers"
 title: Export Customers
 ---
 
