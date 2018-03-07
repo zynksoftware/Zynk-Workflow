@@ -1,6 +1,6 @@
 ---
 slug: import-projects
-redirect: "/article/import-projects"
+redirect_from: "/article/import-kashflow-projects"
 title: Import Projects
 ---
 
