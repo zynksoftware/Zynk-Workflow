@@ -1,5 +1,6 @@
 ---
 slug: exporting-purchase-transactions-from-sage-200-online
+redirect_from: "/article/exporting-purchase-transactions-from-sage-200-online"
 title: Exporting Purchase Transactions From Sage 200 Online
 ---
 This task will download purchase transactions from Sage 200 Online to an XML file.
