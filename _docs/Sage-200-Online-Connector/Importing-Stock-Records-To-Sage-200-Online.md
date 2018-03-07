@@ -1,5 +1,6 @@
 ---
 slug: importing-stock-records-to-sage-200-online
+redirect_from: "/article/importing-stock-records-to-sage-200-online"
 title: Importing Stock Records To Sage 200 Online
 ---
 This task will insert new stock records in Sage 200 Online, using [Sage 200 Online Stock Record XML](sage-200-online-stock-record-xml) format.
