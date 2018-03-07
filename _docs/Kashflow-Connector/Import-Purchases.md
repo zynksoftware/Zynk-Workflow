@@ -1,6 +1,6 @@
 ---
 slug: import-purchases
-redirect: "/article/import-purchases"
+redirect_from: "/article/import-kashflow-purchases"
 title: Import Purchases
 ---
 
