@@ -1,6 +1,6 @@
 ---
 slug: importing-inventory-to-shopify
-redirect: "/article/importing-inventory-to-shopify"
+redirect_from: "/article/importing-inventory-to-shopify"
 title: Importing Inventory to Shopify
 ---
 This task will update the inventory on your Shopify store using the product data in an XML file.
