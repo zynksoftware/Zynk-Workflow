@@ -1,6 +1,6 @@
 ---
 slug: export-sales-codes
-redirect_from: "/article/export-sales-codes"
+redirect_from: "/article/export-kashflow-sales-codes"
 title: Export Sales Codes
 ---
 
