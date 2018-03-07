@@ -1,6 +1,6 @@
 ---
 slug: export-nominal-codes
-redirect: "/article/export-nominal-codes"
+redirect_from: "/article/export-kashflow-nominal-codes"
 title: Export Nominal Codes
 ---
 
