@@ -1,6 +1,6 @@
 ---
 slug: export-invoices
-redirect: "/article/download-invoices"
+redirect: "/article/export-invoices"
 title: Export Invoices
 ---
 
