@@ -1,5 +1,6 @@
 ---
 slug: importing-purchase-invoices-to-sage-200-online
+redirect_from: "/article/importing-purchase-invoices-to-sage-200-online"
 title: Importing Purchase Invoices To Sage 200 Online
 ---
 This task will insert new purchase invoices into Sage 200 Online, from an XML file.
