@@ -1,5 +1,6 @@
 ---
 slug: exporting-price-bands-from-sage-200-online
+redirect_from: "/article/exporting-price-bands-from-sage-200-online"
 title: Exporting Price Bands From Sage 200 Online
 ---
 This task will download all price bands from Sage 200 Online to an XML file.
