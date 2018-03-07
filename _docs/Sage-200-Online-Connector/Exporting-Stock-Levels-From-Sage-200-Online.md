@@ -1,5 +1,6 @@
 ---
 slug: exporting-stock-levels-from-sage-200-online
+redirect_from: "/article/exporting-stock-levels-from-sage-200-online"
 title: Exporting Stock Levels From Sage 200 Online
 ---
 This task will download stock levels from Sage 200 Online in [Sage 200 Online Stock Level XML](sage-200-online-stock-level-xml) format.
