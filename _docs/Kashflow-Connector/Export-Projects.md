@@ -1,6 +1,6 @@
 ---
 slug: export-projects
-redirect_from: "/article/935-download-projects"
+redirect_from: "/article/export-projects"
 title: Export Projects
 ---
 
