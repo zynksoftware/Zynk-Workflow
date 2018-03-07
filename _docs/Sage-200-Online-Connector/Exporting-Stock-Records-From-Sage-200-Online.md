@@ -1,5 +1,6 @@
 ---
 slug: exporting-stock-records-from-sage-200-online
+redirect_from: "/article/exporting-stock-records-from-sage-200-online"
 title: Exporting Stock Records From Sage 200 Online
 ---
 This task will download stock records from Sage 200 Online in [Sage 200 Online Stock Record XML](sage-200-online-stock-record-xml) format.
