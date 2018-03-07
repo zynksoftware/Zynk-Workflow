@@ -1,6 +1,6 @@
 ---
 slug: export-nominal-codes
-redirect: "/article/download-nominal-codes"
+redirect: "/article/export-nominal-codes"
 title: Export Nominal Codes
 ---
 
