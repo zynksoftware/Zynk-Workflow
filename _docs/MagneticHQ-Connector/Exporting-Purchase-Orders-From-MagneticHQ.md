@@ -1,6 +1,6 @@
 ---
 slug: exporting-purchase-orders-from-magnetichq
-redirect: "/article/exporting-purchase-orders-from-magnetichq"
+redirect_from: "/article/exporting-purchase-orders-from-magnetichq"
 title: Exporting Purchase Orders from Magnetic HQ
 ---
 This task will export purchase orders from Magnetic HQ and store them in an XML file.
