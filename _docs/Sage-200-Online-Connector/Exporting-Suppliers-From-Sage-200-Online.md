@@ -1,5 +1,6 @@
 ---
 slug: exporting-suppliers-from-sage-200-online
+redirect_from: "/article/exporting-suppliers-from-sage-200-online"
 title: Exporting Suppliers From Sage 200 Online
 ---
 This task will download suppliers from Sage 200 Online to an XML file.
