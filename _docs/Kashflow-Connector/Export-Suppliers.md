@@ -1,6 +1,6 @@
 ---
 slug: export-suppliers
-redirect: "/article/export-suppliers"
+redirect_from: "/article/export-kashflow-suppliers"
 title: Export Suppliers
 ---
 
