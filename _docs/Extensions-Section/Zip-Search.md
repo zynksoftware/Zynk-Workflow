@@ -17,10 +17,9 @@ The text you would like to search for in your .zip files. You can optionally spe
 ## Examples
 Below is an example of using the 'Workflow' option using Zip Search. After clicking 'Search' after specifying the workflow archives I'm targeting and the input I'm looking for, you'll see the results list box populate with all .zip files containing the input.
 
-[![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e831e7c697911471461ec2/file-WwY4HQYhwJ.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e831e7c697911471461ec2/file-WwY4HQYhwJ.png)
+[![](http://zynk.com/images/v2/zip_search/zip_search.PNG)](http://zynk.com/images/v2/zip_search/zip_search.PNG)
 
-[![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e8326ec697911471461ec9/file-AMatd0RcXb.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e8326ec697911471461ec9/file-AMatd0RcXb.png)
+[![](http://zynk.com/images/v2/zip_search/zip_search_results.PNG)](http://zynk.com/images/v2/zip_search/zip_search_results.PNG)
 
 Below is an example of using the 'Custom Directory' option.
-
-[![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e833c290336026d871848f/file-gDFc3CFDLm.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e833c290336026d871848f/file-gDFc3CFDLm.png)
+[![](http://zynk.com/images/v2/zip_search/zip_search_manual_dir.PNG)](http://zynk.com/images/v2/zip_search/zip_search_manual_dir.PNG)
