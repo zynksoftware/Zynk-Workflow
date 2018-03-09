@@ -2,7 +2,7 @@
 slug: sage-50-uk-grn-xml
 title: Sage 50 UK GRN XML
 ---
-The Import Goods Received Note task allows you to received items to purchase orders already in Sage.  Note that for an order / order item to be received it must be in the correct state in Sage - the order must not be fully received or fully cancelled, and at least part allocated.  The quantity for the order item must not exceed the quantity allocated / ready to receive.
+The Import Goods Received Note task allows you to receive items on purchase orders already in Sage.  Note that for an order / order item to be received it must be in the correct state in Sage - the order must not be fully received or fully cancelled, and at least part allocated.  The quantity for the order item must not exceed the quantity allocated / ready to receive.
 
 The status of the order in Sage will be updated depending on the current state, and result of the import.  The status will either not be updated, updated to complete or updated to part received.
 
@@ -39,3 +39,10 @@ Sample import file for receiving an item on an order:
   </GoodsNotes>
 </Company>
 ```
+
+## Grouping
+Individual goods notes can be grouped together to form a single Goods Received Note in Sage, with multiple item lines. Consecutive goods notes in the XML will be grouped where the following fields contain the same value on each goods note:
+
+* OrderNumber
+* Date
+* Reference
