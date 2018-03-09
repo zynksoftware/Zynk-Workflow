@@ -20,6 +20,7 @@ Each of the tasks require a connection to Magento, for more information on setti
 * [Updating Order Statuses in Magento V2](updating-order-statuses-in-magento-v2)
 * [Uploading Credit Memos to Magento V2](uploading-credit-memos-to-magento-v2)
 * [Uploading Customers to Magento V2](uploading-customers-to-magento-v2)
+* [Uploading Invoices to Magento V2](uploading-invoices-to-magento-v2)
 * [Uploading Products to Magento V2](uploading-products-to-magento-v2)
 * [Uploading Shipments to Magento V2](uploading-shipments-to-magento-v2)
 * [Uploading Tier Prices to Magento V2](uploading-tier-prices-to-magento-v2)
