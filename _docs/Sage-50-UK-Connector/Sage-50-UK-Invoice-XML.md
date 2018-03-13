@@ -265,7 +265,7 @@ We support importing stock items, service items, special lines (S1, S2 and S3) a
 
 | Sage Field | XML Field | Example | Field Type | Field Length | Input | Notes  
 | --- | --- | --- | --- | --- | --- | --- |
-| Product Code | Sku | PROD001 | string | 30 | Required for the following InvoiceType:  * ProductInvoice  ProductCredit  ProductProforma  ProductQuotation |  |
+| Product Code | Sku | PROD001 | string | 30 | Required\* |  |
 | Description  | Name | Sample Product | string | 60 | Optional   | If not specified, Zynk will use the description from the product record.  |
 | Details | Details | This is a Service Invoice product  | string | 60 | Optional   | For Service Invoices Only. Used to capture service line information.  |
 | Comment 1 | Description | This is a sample product | string | 60 | Optional |  |
@@ -279,6 +279,12 @@ We support importing stock items, service items, special lines (S1, S2 and S3) a
 | Tax Code | TaxCode   | 1 | int | 2 | Optional | If not specified, Zynk will use the default tax code associated with the product, or the default tax code associated                with the customer if the 'Use Default Tax Code for Sales' option is enabled on the customer record.  |
 | Department | Department | 1 | int | 2 | Optional |  |
 | Line Information | Reference | Sample Job | string | 60 | Optional |  |
+
+ * Sku* - Required when importing the following InvoiceType:-
+   * ProductInvoice
+   * ProductCredit
+   * ProductProforma 
+   * ProductQuotation 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
