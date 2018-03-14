@@ -1,5 +1,6 @@
 ---
 slug: downloading-customer-groups-from-magento-v2
+redirect_from: "/article/downloading-customer-groups-from-magento-v2"
 title: Downloading Customer Groups From Magento V2
 ---
 This task will download customer groups from Magento in an XML format. The results can be filtered if required. See below for a sample output file.

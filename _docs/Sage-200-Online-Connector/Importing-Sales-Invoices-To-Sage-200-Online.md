@@ -1,5 +1,6 @@
 ---
 slug: importing-sales-invoices-to-sage-200-online
+redirect_from: "/article/importing-sales-invoices-to-sage-200-online"
 title: Importing Sales Invoices To Sage 200 Online
 ---
 This task will insert new sales invoices into Sage 200 Online, from an XML file.

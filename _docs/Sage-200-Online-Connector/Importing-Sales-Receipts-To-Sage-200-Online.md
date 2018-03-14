@@ -1,5 +1,6 @@
 ---
 slug: importing-sales-receipts-to-sage-200-online
+redirect_from: "/article/importing-sales-receipts-to-sage-200-online"
 title: Importing Sales Receipts To Sage 200 Online
 ---
 This task will insert new sales receipts into Sage 200 Online, using [Sage 200 Online Sales Receipt XML](sage-200-online-sales-receipt-xml) format

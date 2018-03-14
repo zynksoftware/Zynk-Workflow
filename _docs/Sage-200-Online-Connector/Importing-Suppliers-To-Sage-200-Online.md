@@ -1,5 +1,6 @@
 ---
 slug: importing-suppliers-to-sage-200-online
+redirect_from: "/article/importing-customers-to-sage-200-online"
 title: Importing Suppliers To Sage 200 Online
 ---
  This task will insert new and update existing suppliers in Sage 200 Online, from an XML file. The logic surrounding inserting/updating suppliers works as follows:

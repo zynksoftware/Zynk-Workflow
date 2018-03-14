@@ -1,5 +1,6 @@
 ---
 slug: importing-customers-to-sage-200-online
+redirect_from: "/article/importing-customers-to-sage-200-online"
 title: Importing Customers To Sage 200 Online
 ---
 This task will insert new and update existing customers in Sage 200 Online, using [Sage 200 Online Customer XML](sage-200-online-customer-xml) format.  Please note that it is only possible to create/update the default contact using this task.

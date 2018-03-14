@@ -1,5 +1,6 @@
 ---
 slug: importing-a-file-to-amazon-s3
+redirect_from: "/article/156-uploading-a-file-to-amazon-s3"
 title: Importing a File to Amazon S3
 ---
 

@@ -12,6 +12,7 @@ Each of the tasks require a connection to ProSKU, for more information on settin
 * [Exporting Despatches from ProSKU](exporting-despatches-from-prosku)
 * [Exporting Receipts from ProSKU](exporting-receipts-from-prosku)
 * [Exporting Stock from ProSKU](exporting-stock-from-prosku)
+* [Exporting Stock Changes from ProSKU](exporting-stock-changes-from-prosku)
 * [Importing Orders to ProSKU](importing-orders-to-prosku)
 * [Importing Pre Receipts to ProSKU](importing-prereceipts-to-prosku)
 * [Importing Products to ProSKU](importing-products-to-prosku)

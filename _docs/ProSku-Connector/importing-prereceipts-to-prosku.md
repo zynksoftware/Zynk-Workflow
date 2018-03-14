@@ -1,5 +1,6 @@
 ---
 slug: importing-prereceipts-to-prosku
+redirect_from: "/article/importing-prereceipts-to-prosku"
 title: Importing Pre Receipts to ProSKU
 ---
 This task will import pre receipts to ProSKU that are supplied in an XML format. 

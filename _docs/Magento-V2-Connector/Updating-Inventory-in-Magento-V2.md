@@ -1,5 +1,6 @@
 ---
 slug: updating-inventory-in-magento-v2
+redirect_from: "/article/updating-inventory-in-magento-v2"
 title: Updating Inventory in Magento V2
 ---
 This task will update inventory in Magento. See below for a sample input file.

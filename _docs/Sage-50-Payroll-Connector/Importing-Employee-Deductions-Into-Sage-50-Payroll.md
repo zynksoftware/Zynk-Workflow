@@ -1,6 +1,6 @@
 ---
 slug: importing-employee-deductions-into-sage-50-payroll
-redirect_from: ""
+redirect_from: "/article/sage-50-payroll-integration/import-employee-deductions"
 title: Importing Employee Deductions Into Sage 50 Payroll
 ---
 This task will import Employee Deductions into Sage 50 Payroll, updating existing Employee Deductions and creating new ones where they don't already exist. See the [Sage 50 Payroll Employee Deductions XML](sage-50-payroll-employee-deductions-xml) page for more information.

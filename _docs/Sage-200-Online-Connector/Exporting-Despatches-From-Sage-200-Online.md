@@ -1,5 +1,6 @@
 ---
 slug: exporting-despatches-from-sage-200-online
+redirect_from: "/article/exporting-despatches-from-sage-200-online"
 title: Exporting Despatches From Sage 200 Online
 ---
 This task will download despatches from Sage 200 Online to an XML file.

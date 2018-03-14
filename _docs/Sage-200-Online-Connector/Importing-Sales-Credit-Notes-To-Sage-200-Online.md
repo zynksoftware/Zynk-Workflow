@@ -1,5 +1,6 @@
 ---
 slug: importing-sales-credit-notes-to-sage-200-online
+redirect_from: "/article/importing-sales-credit-notes-to-sage-200-online"
 title: Importing Sales Credit Notes To Sage 200 Online
 ---
 This task will insert new sales credit notes into Sage 200 Online, from an XML file.

@@ -1,5 +1,6 @@
 ---
 slug: exporting-country-codes-from-sage-200-online
+redirect_from: "/article/exporting-country-codes-from-sage-200-online"
 title: Exporting Country Codes From Sage 200 Online
 ---
 
