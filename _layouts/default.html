@@ -63,6 +63,20 @@
 			});
 		</script>
 		
+		<script>
+		// Allow H2,3,4 tags to be clickable URLs
+		var tags  = document.querySelectorAll('h2,h3,h4');
+
+		for (var i = 0; i < tags.length; i++)  
+		{
+			tags[i].addEventListener('click', function(event) 
+			{
+				if (this.id && this.innerHTML.indexOf("<a") == -1) {  
+				location.href = "#" + this.id;
+			}});
+		}
+		</script>
+		
 		<script>!function (e, o, n) { window.HSCW = o, window.HS = n, n.beacon = n.beacon || {}; var t = n.beacon; t.userConfig = {}, t.readyQueue = [], t.config = function (e) { this.userConfig = e }, t.ready = function (e) { this.readyQueue.push(e) }, o.config = { docs: { enabled: !1, baseUrl: "" }, contact: { enabled: !0, formId: "16c803dc-26a2-11e8-b466-0ec85169275a" } }; var r = e.getElementsByTagName("script")[0], c = e.createElement("script"); c.type = "text/javascript", c.async = !0, c.src = "https://djtflbt20bdde.cloudfront.net/", r.parentNode.insertBefore(c, r) }(document, window.HSCW || {}, window.HS || {});</script>
 		<script>
 		    HS.beacon.config({
