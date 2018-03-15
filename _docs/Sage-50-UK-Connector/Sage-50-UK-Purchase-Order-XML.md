@@ -53,7 +53,7 @@ Sample import file for creating a basic order:
 In each of the following sections most of the XML has been omitted to make the samples easier to read, you will need to provide the above as a minimum to create an order. The whole structure of the Company schema is used below as a reference of where fields should be in the object model.
 
 ## Order Details - Account Information
-To assign the order to a particular account you will need to specify either a CustomerId or an AccountReference in the XML. The CustomerId should correspond to a customer that has already been imported into Sage via Zynk, see Import Customer. The AccountReference should correspond to the Reference of a Purchase Ledger account that exists with Sage.
+To assign the order to a particular account you will need to specify either a CustomerId or an AccountReference in the XML. The CustomerId should correspond to a supplier that has already been imported into Sage via Zynk, see Import Suppliers. The AccountReference should correspond to the Reference of a Purchase Ledger account that exists with Sage.
 
 | Sage Field | XML Field  | Example  | Field Type  | Field Length  | Input  |
 | --- | --- | --- | --- | --- | --- |
@@ -140,7 +140,7 @@ If a delivery address is provided we will use the data in the XML, otherwise we 
 
 | Sage Field | XML Field  | Example  | Field Type  | Field Length  | Input  |
 | --- | --- | --- | --- | --- | --- |
-| Customer Order No. | SupplierOrderNumber  | 123  | string | 60  | Optional  |
+| Supplier Order No. | SupplierOrderNumber  | 123  | string | 60  | Optional  |
 | Order Taken By  | TakenBy  | Website  | string  | 60  | Optional  |
 | Delivery Name | Company* | Zynk Software Limited | string | 60 | Optional |
 | -  | Title    | Mr   | string  | -  | Optional  |
