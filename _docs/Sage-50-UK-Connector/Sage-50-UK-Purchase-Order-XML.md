@@ -83,6 +83,7 @@ Depending on the settings of the import task you can set the Order no of the cre
 | -| Id | 123  | string  | 255 | Optional  |
 | Order No.  | PurchaseOrderNumber  | 123  | string  | 60  | Optional  |
 | Date   | PurchaseOrderDate  | 2014-01-01T00:00:00  | datetime | 8  | Required  |
+| Ref  | Reference  | 123  | string  | 7  | Optional  |
 | Currency  | Currency*  | EUR   | string  | 3  | Optional |
 | Foreign Rate | ForeignRate* | 1.5  | double   | -  | Optional  |
 | Name  | Company*  | Zynk Software Limited  | string  | 60  | Optional  |
@@ -113,6 +114,7 @@ Depending on the settings of the import task you can set the Order no of the cre
       <Id>123</Id>
       <PurchaseOrderNumber>123</PurchaseOrderNumber>
       <PurchaseOrderDate>2014-01-01T00:00:00</PurchaseOrderDate>
+      <Reference>123</Reference>
       <Currency>EUR</Currency>
       <ForeignRate>1.5</ForeignRate>
       <PurchaseOrderAddress>
