@@ -282,7 +282,7 @@ The information below can be specified on the Documents tab in Sage.
 ```
 
 ## Delivery Addresses
-The information below can be specified in under Sales Order Processing -> SOP Maintenance -> Customer Delivery Addresses in Sage. We recommend that the Id field be populated by the unique id of the delivery address from the external system, Zynk uses this field to track delivery addresses already imported to prevent duplicates being created in Sage.
+The information below can be specified under Sales Order Processing -> SOP Maintenance -> Customer Delivery Addresses in Sage. We recommend that the Id field be populated by the unique id of the delivery address from the external system, Zynk uses this field to track delivery addresses already imported to prevent duplicates being created in Sage.
 
 | Sage Field | XML Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -335,6 +335,24 @@ The information below can be specified in under Sales Order Processing -> SOP Ma
           <TaxCode>1</TaxCode>
         </Contact>
       </DeliveryAddresses>
+    </Customer>
+  </Customers>
+</Company>
+```
+
+## Account Status
+The information below can be specified on the Account Status screen in Sage. 
+
+| Sage Field | XML Field | Example | Field Type | Field Length | Input | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| On Hold | AccountOnHold | true | bool | - | Optional |  |
+
+```xml
+<?xml version="1.0"?>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Customers>
+    <Customer>      
+      <AccountOnHold>true</AccountOnHold>
     </Customer>
   </Customers>
 </Company>
