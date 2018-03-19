@@ -22,6 +22,10 @@ This can be used to customise how the XML file is converted to CSV format. See [
 _Required_  
 The file to output the result to.
 
+### Quotation Characters
+_Optional_
+The delimeter to use for the created CSV file. This is not required, but recommended if your data contains special characters, such as the character chosen for your separator. Defaults to a " around each value.
+
 ### Separator
 _Required_  
 The character to use as a separator. This will usually be a comma.
