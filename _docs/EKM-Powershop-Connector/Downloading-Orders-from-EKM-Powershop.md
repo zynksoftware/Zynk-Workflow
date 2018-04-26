@@ -18,6 +18,10 @@ Set to true to download all orders, or false to only download new orders since t
 _Required_  
 Set to true to download full details about each order (may be slow if there are many orders to download). Set to false to download only basic information on each order.
 
+### Order Status
+_Optional_  
+The status of the orders to be downloaded (E.g. Pending). If no value is provided orders of any status will be downloaded.
+
 ### Output File
 _Required_  
 The name of the XML file to export the data to.
