@@ -64,7 +64,7 @@ Sample output file:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<Company>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Products>
     <Product>
       <UniqueId>6688</UniqueId>
@@ -111,7 +111,7 @@ Sample output file:
       <Attributes>
         <Attribute>
           <Name>Sync with website</Name>
-          <Value><NONE></Value>
+          <Value>&lt;NONE&gt;</Value>
         </Attribute>
       </Attributes>
       <UnitsOfMeasure>
@@ -190,7 +190,7 @@ Sample output file:
       <Attributes>
         <Attribute>
           <Name>Sync with website</Name>
-          <Value><NONE></Value>
+          <Value>&lt;NONE&gt;</Value>
         </Attribute>
       </Attributes>
       <UnitsOfMeasure>
