@@ -22,8 +22,6 @@ Sample import file for creating or updating a contact:
     <LastName>Dalkin</LastName>
     <EmailAddress>newbusinessadvice@sage.com</EmailAddress>
     <BankAccountDetails />
-    <IsSupplier>false</IsSupplier>
-    <IsCustomer>false</IsCustomer>
     <DefaultCurrency>GBP</DefaultCurrency>
     <HasAttachments>false</HasAttachments>
     <ContactPersons />
@@ -179,8 +177,6 @@ The following fields can be set in the financial information section.
 
 | Xero Field | XML Field  | Example  | Field Type  | Field Length  | Input  | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| - | IsCustomer | true | boolean | - | Optional | Set to true if this contact is a customer. |
-| - | IsSupplier | true | boolean | - | Optional | Set to true if this contact is a supplier. |
 | Sales Settings > Default Account | SalesAccountCode | 200 | string | 10 | Optional |
 | Sales Settings > Default Region | SalesTrackingCategories/SalesTrackingCategory/Option | North | string | 50 | Optional |
 | Purchase Settings > Default Account | PurchaseAccountCode | 300 | string | 10 | Optional |
@@ -199,8 +195,6 @@ The following fields can be set in the financial information section.
 <?xml version="1.0"?>
 <ArrayOfXeroContact>
   <XeroContact>
-    <IsSupplier>true</IsSupplier>
-    <IsCustomer>true</IsCustomer>
     <SalesAccountCode>200</SalesAccountCode>
     <SalesTrackingCategories>
       <SalesTrackingCategory>
