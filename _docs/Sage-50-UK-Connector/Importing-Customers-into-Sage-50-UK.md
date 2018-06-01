@@ -3,7 +3,7 @@ slug: importing-customers-into-sage-50-uk
 redirect_from: "/article/410-importing-customers-into-sage-50-uk"
 title: Importing Customers into Sage 50 UK
 ---
-This task will import customers to Sage 50 that is supplied in [Sage 50 UK XML]]. See the [[Examples|https://github.com/zynksoftware/Zynk-Workflow/wiki/Importing-Customers-into-Sage-50-UK#examples](sage-50-uk-xml]].-see-the-[[examples|https://github.com/zynksoftware/zynk-workflow/wiki/importing-customers-into-sage-50-uk#examples) for the XML format
+This task will import customers into Sage 50 that are supplied in [Sage 50 UK Customer XML](sage-50-uk-customer-xml) format. See the [Examples](https://github.com/zynksoftware/zynk-workflow/wiki/importing-customers-into-sage-50-uk#examples) for the sample XML files.
 
 ## Settings  
 ### Sage 50 Connection
