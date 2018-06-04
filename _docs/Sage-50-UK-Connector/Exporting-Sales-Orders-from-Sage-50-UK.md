@@ -43,7 +43,7 @@ Sample output file:
 
 ```xml
 <?xml version="1.0"?>
-<Company>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <SalesOrders>
         <SalesOrder>
             <UniqueId>5</UniqueId>
