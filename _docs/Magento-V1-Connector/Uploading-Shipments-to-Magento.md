@@ -49,6 +49,14 @@ Sample input file:
         </Product>
       </items>
     </shipping_info>
+    <add_tracks>true</add_tracks>
+    <tracks>
+      <track>
+        <carrier>DHL</carrier>
+        <title>DHL</title>
+        <track_number>1234567890</track_number>
+      </track>
+    </tracks>
   </Shipment>
 </ArrayOfShipment>
 ```
