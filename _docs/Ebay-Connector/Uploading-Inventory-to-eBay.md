@@ -34,7 +34,7 @@ Sample input file:
 ```xml
 <?xml version="1.0"?>
 <ArrayOfInventoryStatusType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <InventoryStatusType><br>
+    <InventoryStatusType>
         <ItemID xmlns="urn:ebay:apis:eBLBaseComponents">110176306105</ItemID>
         <!--<SKU xmlns="urn:ebay:apis:eBLBaseComponents>SKU123</SKU>-->
         <Quantity xmlns="urn:ebay:apis:eBLBaseComponents">2</Quantity>
@@ -45,7 +45,7 @@ Sample input file:
 Sample output file:
 
 ```xml
-<?xml version="1.0"?><br>
+<?xml version="1.0"?>
 <ArrayOfInventoryStatusType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <InventoryStatusType>
     <SKU xmlns="urn:ebay:apis:eBLBaseComponents" />
