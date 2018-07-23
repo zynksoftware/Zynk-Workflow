@@ -138,7 +138,7 @@ Depending on the settings of the import task you can set the Order no of the cre
         <Address3>Jesmond</Address3>
         <Town>Newcastle upon Tyne</Town>
         <Postcode>NE2 3AE</Postcode>
-        <County>Tyne & Wear</County>
+        <County>Tyne &amp; Wear</County>
         <Telephone>0845 123 2920</Telephone>
       </SalesOrderAddress>
       <NetValueDiscountDescription>Website Discount</NetValueDiscountDescription>
@@ -173,8 +173,12 @@ If a delivery address is provided we will use the data in the XML, otherwise we 
 | Notes 2 | Notes2 | Leave next door | string | 60 | Optional  |
 | Notes 3 | Notes3 | Paid by PayPal  | string  | 60 | Optional   |
 | Due  | DespatchDate | 2014-01-01T00:00:00 | datetime | - | Optional |
+| Custom Field 1* | Custom1 | Royal Mail Tracked | string | 60 | Optional |
+| Custom Field 2* | Custom2 | Next Day | string | 60 | Optional |
+| Custom Field 3* | Custom2 | DR35087BK923 | string | 60 | Optional |
 
 *   Company* - If this field is not set in the XML, it is built up of Title, Forename, Middlename, Surname and Suffix.
+*   Custom Field* - These fields can be renamed via the settings in Sage, so may appear differenly. The defaults are Analysis1, Analysis2 and Analysis3.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -195,12 +199,15 @@ If a delivery address is provided we will use the data in the XML, otherwise we 
         <Address3>Jesmond</Address3>
         <Town>Newcastle upon Tyne</Town>
         <Postcode>NE2 3AE</Postcode>
-        <County>Tyne & Wear</County>
+        <County>Tyne &amp; Wear</County>
       </SalesOrderDeliveryAddress>
       <Notes1>Website 1</Notes1>
       <Notes2>Leave next door</Notes2>
       <Notes3>Paid by PayPal</Notes3>
       <DespatchDate>2014-01-01T00:00:00</DespatchDate>
+      <Custom1>Royal Mail Tracked</Custom1>
+      <Custom2>Next Day</Custom2>
+      <Custom3>DR35087BK923</Custom3>
     </SalesOrder>
   </SalesOrders>
 </Company>
