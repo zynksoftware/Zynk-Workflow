@@ -44,7 +44,6 @@ Each of the tasks require a connection to Sage 50 UK, for more information on se
  * [Importing Suppliers into Sage 50 UK](importing-suppliers-into-sage-50-uk)
  * [Importing Transactions into Sage 50 UK](importing-transactions-into-sage-50-uk)
  * [Using ODBC driver with Microsoft Office applications](using-odbc-driver-with-microsoft-office-applications)
- * [Troubleshooting the Sage 50 UK Connector](troubleshooting-the-sage-50-uk-connector)
  * [Updating Ledgers](updating-ledgers)
  * [Updating Sales Orders](updating-sales-orders)
  * [Updating Invoices](updating-invoices)
@@ -62,3 +61,6 @@ We provide support for the following versions of Sage 50 and Sage 50c
 
 ## Articles and Sample Files
 There are several articles covering integrations between Sage 50 and other systems in the [Integrations](integrations) section.
+
+## Troubleshooting
+ * [Troubleshooting the Sage 50 UK Connector](troubleshooting-the-sage-50-uk-connector)
