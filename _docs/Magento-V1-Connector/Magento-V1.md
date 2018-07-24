@@ -20,6 +20,7 @@ Zynk requires an API user account to be able to connect to Magento. You can crea
 * [Downloading Product Attributes from Magento](downloading-product-attributes-from-magento)
 * [Downloading Product Categories from Magento](downloading-product-categories-from-magento)
 * [Downloading Stores from Magento](downloading-stores-from-magento)
+* [Troubleshooting the Magento v1 Connector](troubleshooting-the-magento-v1--connector)
 * [Updating Orders in Magento](updating-orders-in-magento)
 * [Uploading Credit Memos to Magento](uploading-credit-memos-to-magento)
 * [Uploading Customers to Magento](uploading-customers-to-magento)
