@@ -236,7 +236,6 @@ If a delivery address is provided we will use the data in the XML, otherwise we 
   <SalesOrders>
     <SalesOrder>
       <Carriage>
-        <QtyOrdered>1</QtyOrdered>
         <UnitPrice>10</UnitPrice>
         <NominalCode>4905</NominalCode>
         <TaxCode>1</TaxCode>
