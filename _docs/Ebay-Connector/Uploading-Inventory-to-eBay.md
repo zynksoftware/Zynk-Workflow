@@ -5,7 +5,7 @@ title: Uploading Inventory to eBay
 ---
 This task will upload inventory status information to eBay in XML format. Both single and multi-variation listings are supported.
 
-Depending upon the inventory tracking method on each listing, you must provide either the ItemID or the SKU of the listing to update. When dealing with a multi-varition listing using the ItemID tracking method, both the SKU and ItemID must be provided. The task includes an option to automatically look up the ItemID if this cannot be provided, see below for more details.
+Depending upon the inventory tracking method on each listing, you must provide either the ItemID or the SKU of the listing to update. When dealing with a multi-variation listing using the ItemID tracking method, both the SKU and ItemID must be provided. The task includes an option to automatically look up the ItemID if this cannot be provided, see below for more details.
 
 ## Settings
 ### Connection
