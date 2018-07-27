@@ -42,8 +42,8 @@ Sample input file:
 <ArrayOfInventoryStatusType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <InventoryStatusType>
         <ItemID xmlns="urn:ebay:apis:eBLBaseComponents">110176306105</ItemID>
-        <SKU xmlns="urn:ebay:apis:eBLBaseComponents>SKU123-RED</SKU>
-        <ParentSKU xmlns="urn:ebay:apis:eBLBaseComponents>SKU123</ParentSKU><!-- Used in conjunction with the Lookup Item IDs setting. Must be provided when dealing with a multi-variation listing -->
+        <SKU xmlns="urn:ebay:apis:eBLBaseComponents">SKU123-RED</SKU>
+        <ParentSKU xmlns="urn:ebay:apis:eBLBaseComponents">SKU123</ParentSKU><!-- Used in conjunction with the Lookup Item IDs setting. Must be provided when dealing with a multi-variation listing -->
         <Quantity xmlns="urn:ebay:apis:eBLBaseComponents">2</Quantity>
     </InventoryStatusType><br>
 </ArrayOfInventoryStatusType>
@@ -55,7 +55,7 @@ Sample output file:
 <?xml version="1.0"?>
 <ArrayOfInventoryStatusType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <InventoryStatusType>
-    <SKU xmlns="urn:ebay:apis:eBLBaseComponents>SKU123-RED</SKU>
+    <SKU xmlns="urn:ebay:apis:eBLBaseComponents">SKU123-RED</SKU>
     <ItemID xmlns="urn:ebay:apis:eBLBaseComponents">110176306105</ItemID>
     <StartPrice currencyID="AFA" xmlns="urn:ebay:apis:eBLBaseComponents">25</StartPrice>
     <Quantity xmlns="urn:ebay:apis:eBLBaseComponents">4</Quantity>
