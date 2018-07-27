@@ -210,6 +210,7 @@ The information below can be specified on the Trading tab in Sage.
 | Default Tax Code | TaxCode | 1 | int | - | Optional | Will use the default from the Sales Ledger settings if not provided. |
 | Use Tax Code as SOP Default | OverrideTaxCode | false | bool | - | Optional |
 | Tax Number | VatNumber | 796 5763 59 | string | 30 | Optional |
+| Order priority | OrderPriority | A | string | 1 | Optional | |
 | Default Nominal Code - Account Number | NominalCode | 4000 | string | 30 | Optional | Will use the default from Sage if not provided. |
 | Default Nominal Code - CC | CostCentre | INT | string | 30 | Optional | Will use the default from Sage if not provided. |
 | Default Nominal Code - Dept | Department | Dep | string | 30 | Optional | Will use the default from Sage if not provided. |
@@ -227,6 +228,7 @@ The information below can be specified on the Trading tab in Sage.
       <TaxCode>4</TaxCode>
       <OverrideTaxCode>false</OverrideTaxCode>
       <VatNumber>796 5763 59</VatNumber>
+      <OrderPriority>A</OrderPriority>
       <NominalCode>4000</NominalCode>
       <CostCentre>INT</CostCentre>
       <Department>Dep</Department>
