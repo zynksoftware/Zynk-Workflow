@@ -17,6 +17,7 @@ Zynk Workflow supports a number of Ecommerce systems including
 * [Magento V2](magento-v2)
 * [PayPal](paypal)
 * [Shopify](shopify)
+* [Visualsoft](visualsoft)
 * [Volo](volo)
 * [WooCommerce](woocommerce)
 
