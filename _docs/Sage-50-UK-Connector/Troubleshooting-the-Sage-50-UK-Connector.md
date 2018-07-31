@@ -4,6 +4,14 @@ redirect_from: "/article/702-troubleshooting-the-sage-50-uk-connector"
 title: Troubleshooting the Sage 50 UK Connector
 ---
 
+## Failed to connect to Sage 50 UK: Username is already in use
+Zynk is failing to connect to Sage, because the Sage user is already logged in.
+
+* This may be another user, if Zynk is using a shared Sage user account like 'manager'
+* This may be another instance of Zynk, if Zynk runs on a schedule, and the scheduled workflow run was interrupted before Zynk logged out.
+
+To resolve this issue, log the user out of Sage (e.g. open Sage, login, then logoff and close Sage)
+
 ## Sage 50 2018 (v24 onwards) - Running reporting tasks results in 'The field xxxx does not exist' error
 When Exporting/Generating Reports from Sage 50 2018 (v24 onwards) via Zynk, you might see an error like the following: 
 
