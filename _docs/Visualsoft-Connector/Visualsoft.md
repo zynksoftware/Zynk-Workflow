@@ -10,4 +10,5 @@ Each of the tasks require a connection to Visualsoft, for more information on se
 
 * [Exporting Customers from Visualsoft](exporting-customers-from-visualsoft)
 * [Exporting Orders from Visualsoft](exporting-orders-from-visualsoft)
+* [Importing Stock Levels into Visualsoft](importing-stock-levels-into-visualsoft)
 * [Notifying Orders in Visualsoft](notifying-orders-in-visualsoft)
