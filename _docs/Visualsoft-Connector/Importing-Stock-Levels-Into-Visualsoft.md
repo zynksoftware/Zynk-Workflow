@@ -11,15 +11,15 @@ Please note that the task can't update products where the stock level is set to 
 _Required_  
 The Visualsoft connection to use. See the [Connecting to Visualsoft](connecting-to-visualsoft) article if you require more information on how to create/manage connections.
 
-## Fail File
+### Fail File
 _Required_  
 The XML file to save failed stock levels to. The data will be written in the same format as the input file.
 
-## Input File
+### Input File
 _Required_  
 The XML file containing the stock levels to import into Visualsoft.
 
-## Success File
+### Success File
 _Required_  
 The XML file to save successful stock levels to. The data will be written in the same format as the input file.
 

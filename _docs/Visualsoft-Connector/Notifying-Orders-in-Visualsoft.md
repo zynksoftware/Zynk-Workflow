@@ -11,15 +11,15 @@ We recommend using this task in conjunction with the 'NotNotified' option on the
 _Required_  
 The Visualsoft connection to use. See the [Connecting to Visualsoft](connecting-to-visualsoft) article if you require more information on how to create/manage connections.
 
-## Fail File
+### Fail File
 _Required_  
 The XML file to save failed order notifications to. The data will be written in the same format as the input file.
 
-## Input File
+### Input File
 _Required_  
 The XML file containing the orders to notify.
 
-## Success File
+### Success File
 _Required_  
 The XML file to save successful order notifications to. The data will be written in the same format as the input file.
 
