@@ -12,6 +12,6 @@ Each of the tasks in this library require a connection to webCRM, for more infor
 - [Exporting Field Metadata from webCRM](exporting-field-metadata-from-webcrm)
 - [Exporting Organisations from webCRM](exporting-organisations-from-webcrm)
 - [Exporting Persons from webCRM](exporting-persons-from-webcrm)
-- [Importing Deliveries into webCRM](importing-deliveries-into-webcrm)
 - [Importing Organisations into webCRM](importing-organisations-into-webcrm)
 - [Importing Persons into webCRM](importing-persons-into-webcrm)
+- [Updating Deliveries in webCRM](updating-deliveries-in-webcrm)
