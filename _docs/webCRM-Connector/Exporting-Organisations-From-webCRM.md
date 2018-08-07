@@ -35,7 +35,7 @@ Set to true to include the details of the main person of the organisation in the
 
 ### Main Person Settings > Filter Field
 _Required_  
-The field from the Person table to use when searching for the main person, defaults to `CheckMark10`.
+The field from the Person table to use when searching for the main person, defaults to `CheckMark7`.
 
 ### Main Person Settings > Export Main Person
 _Required_  
