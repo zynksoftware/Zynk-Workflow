@@ -14,9 +14,9 @@ You can organise your Organisation records into many different categories, for e
 
 ## Identifiers
 The logic surrounding inserting/updating organisations works as follows:
-1. If an `<Id>1</Id>` is provided for the organisation, the exiting organisation with this id will be updated.
+1. If an `<Id>1</Id>` is provided for the organisation, the existing organisation with this id will be updated.
 2. If an `<ExternalId>1</ExternalId>` is provided for the organisation, and a match is found in Zynk's truth table, the existing organisation will be updated.
-3. If a `LookupField="ExtraCustom2"`is provided for Zynk will search for a match based on the data in the XML, and if a match is found the existing organisation will be updated.
+3. If a `LookupField="ExtraCustom2"`is provided Zynk will search for a match based on the data in the XML, and if a match is found the existing organisation will be updated.
 4. If none of the above conditions are fulfilled a new organisation will be created.
 
 ## Fields
@@ -34,7 +34,7 @@ Used with `@LookupField`, if set to true and more than one result is found when 
 
 | Type | Example | XML |
 | --- | --- | --- |
-| string | true | `ExactMatch="true"` |
+| bool | true | `ExactMatch="true"` |
 
 ### Id
 _Dependant_  
@@ -297,6 +297,32 @@ There are up to 15 custom fields available per organisation in webCRM.  If enabl
 | Type | Example | XML |
 | --- | --- | --- |
 | string | Advertising | `<Custom1 Name="Original Lead Source">Advertising</Custom1>` |
+
+## Expandable Fields
+Related information linked to organisations are also included in the downloaded XML
+
+### MainContact
+_Read Only_
+The primary contact associated with the organisation.  On an export this will be included if the settings have been enabled, and a match is found.  This field is not used on imports.
+
+#### Example MainContact XML
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Organisations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Organisation ExactMatch="true">
+    ...
+    <MainPerson ExactMatch="true">
+      ...
+      <Id>3</Id>
+      <FirstName>Andrew</FirstName>
+      <LastName>Snape</LastName>
+      ...
+    </MainPerson>
+    ...
+  </Organisation>
+</Organisations>
+```
 
 ## Example XML
 
