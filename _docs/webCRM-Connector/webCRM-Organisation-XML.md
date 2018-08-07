@@ -299,7 +299,7 @@ There are up to 15 custom fields available per organisation in webCRM.  If enabl
 | string | Advertising | `<Custom1 Name="Original Lead Source">Advertising</Custom1>` |
 
 ## Expandable Fields
-Related information linked to organisations are also included in the downloaded XML
+Related information linked to organisations are also included in the downloaded XML.
 
 ### MainContact
 _Read Only_
