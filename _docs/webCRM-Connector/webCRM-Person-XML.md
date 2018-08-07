@@ -1,6 +1,6 @@
 ---
-slug: webcrm-organisation-xml
-title: webCRM Organisation XML
+slug: webcrm-person-xml
+title: webCRM Person XML
 ---
 A Person belongs to an Organisation in webCRM. You can have as many Person records related to an Organisation as you need.
 

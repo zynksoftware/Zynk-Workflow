@@ -1,8 +1,8 @@
 ---
-slug: exporting-organisations-from-webcrm
-title: Exporting Organisations From webCRM
+slug: exporting-persons-from-webcrm
+title: Exporting Persons From webCRM
 ---
-This task will export organisations from webCRM, including the related main person, in [webCRM Organisation XML](webcrm-organisation-xml) format to a file.
+This task will export persons from webCRM in [webCRM Person XML](webcrm-person-xml) format to a file.
 
 ## Settings
 ### webCRM Connection
@@ -28,18 +28,6 @@ Allows filters to be added to the export to limit the data returned.  The Field 
 ### Include Field Metadata
 _Required_
 Set to true to include names of custom fields in the output XML.
-
-### Main Person Settings > Export Main Person
-_Required_  
-Set to true to include the details of the main person of the organisation in the output XML.
-
-### Main Person Settings > Filter Field
-_Required_  
-The field from the Person table to use when searching for the main person, defaults to `CheckMark10`.
-
-### Main Person Settings > Export Main Person
-_Required_  
-The value in the Person table to use when searching for the main person, defaults to `true`.
 
 ### Page Size
 _Required_
