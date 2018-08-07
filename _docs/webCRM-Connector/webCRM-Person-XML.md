@@ -74,7 +74,7 @@ _Optional_
 | bool | false | `<BlockMassEmail>false</BlockMassEmail>` |
 
 ### CampaignWrongPasswordCount
-_Optional_  
+_Read Only_  
 
 | Type | Example | XML |
 | --- | --- | --- |
@@ -93,14 +93,14 @@ _Optional_
 
 | Type | Example | XML |
 | --- | --- | --- |
-| string |  | `<Comment></Comment>` |
+| string | Technical contact | `<Comment>Technical contact</Comment>` |
 
 ### CreatedBy
-_Read Only_  
+_Optional_  
 
 | Type | Example | XML |
 | --- | --- | --- |
-| string | api2 Zynk | `<CreatedBy>api2 Zynk</CreatedBy>` |
+| string | James | `<CreatedBy>James</CreatedBy>` |
 
 ### DirectPhone
 _Optional_  
@@ -152,35 +152,35 @@ _Optional_
 | string | Snape | `<LastName>Snape</LastName>` |
 
 ### LoginLog
-_Read Only_  
+_Optional_  
 
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<LoginLog />` |
 
 ### MarketDateId
-_Read Only_  
+_Optional_  
 
 | Type | Example | XML |
 | --- | --- | --- |
 | string |  | `<MarketDateId />` |
 
 ### MemberGroupId
-_Optional_  
+_Read Only_  
 
 | Type | Example | XML |
 | --- | --- | --- |
 | int | 0 | `<MemberGroupId>0</MemberGroupId>` |
 
 ### MemberLanguageId
-_Optional_  
+_Read Only_  
 
 | Type | Example | XML |
 | --- | --- | --- |
 | int | 0 | `<MemberLanguageId>0</MemberLanguageId>` |
 
 ### MemberNumber
-_Optional_  
+_Read Only_  
 
 | Type | Example | XML |
 | --- | --- | --- |
@@ -193,15 +193,22 @@ _Read Only_
 | --- | --- | --- |
 | datetime | 2018-02-27T14:20:25+00:00 | `<MemberStartDate>2018-02-27T14:20:25+00:00</MemberStartDate>` |
 
+### MemberStatusId
+_Read Only_  
+
+| Type | Example | XML |
+| --- | --- | --- |
+| int | 0 | `<MemberStatusId>0</MemberStatusId>` |
+
 ### MemberWrongPasswordCount
-_Optional_  
+_Read Only_  
 
 | Type | Example | XML |
 | --- | --- | --- |
 | int | 0 | `<MemberWrongPasswordCount>0</MemberWrongPasswordCount>` |
 
 ### MiddleName
-_Optional_  
+_Read Only_  
 
 | Type | Example | XML |
 | --- | --- | --- |
@@ -229,18 +236,28 @@ _Read Only_
 | string |  | `<History />` |
 
 ### OrganisationId
-_Optional_  
+_Read Only_  
 
 | Type | Example | XML |
 | --- | --- | --- |
 | int | 0 | `<OrganisationId>0</OrganisationId>` |
+
+### Salutation
+_Optional_  
+
+| Type | Example | XML |
+| --- | --- | --- |
+| picklist | Mr | `<Salutation>Mr</Salutation>` |
+
+#### Values
+Available values depend on your webCRM setup.
 
 ### Skype
 _Optional_  
 
 | Type | Example | XML |
 | --- | --- | --- |
-| string |  | `<Skype />` |
+| string | zynksoftware | `<Skype>zynksoftware</Skype>` |
 
 ### SortOrder
 _Read Only_  
@@ -254,10 +271,13 @@ _Optional_
 
 | Type | Example | XML |
 | --- | --- | --- |
-| string | Active | `<Status>Active</Status>` |
+| picklist | Active | `<Status>Active</Status>` |
+
+#### Values
+Available values depend on your webCRM setup.
 
 ### SupportLanguageId
-_Read Only_  
+_Optional_  
 
 | Type | Example | XML |
 | --- | --- | --- |
@@ -277,7 +297,7 @@ _Optional_
 | --- | --- | --- |
 | string | Developer | `<Title>Developer</Title>` |
 
-### TelephoneSearch
+### UpdatedBy
 _Read Only_  
 
 | Type | Example | XML |

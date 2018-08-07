@@ -12,7 +12,7 @@ The format for downloading and uploading are the same for each record type, but 
 
 ### Tasks
  * [Exporting Deliveries from webCRM](exporting-deliveries-from-webcrm)
- * [Importing Deliveries to webCRM](importing-deliveries-to-webcrm)
+ * [Updating Deliveries in webCRM](updating-deliveries-in-webcrm)
 
 ## Field Metadata
 [webCRM Field Metadata XML](webcrm-field-metadata-xml)  
