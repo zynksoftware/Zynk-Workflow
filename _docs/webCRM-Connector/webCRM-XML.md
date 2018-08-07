@@ -25,11 +25,11 @@ The format for downloading and uploading are the same for each record type, but 
 
 ### Tasks
  * [Exporting Organisations from webCRM](exporting-organisations-from-webcrm)
- * [Importing Organisations to webCRM](importing-organisations-to-webcrm)
+ * [Importing Organisations to webCRM](importing-organisations-into-webcrm)
 
 ## Persons
 [webCRM Person XML](webcrm-person-xml)  
 
 ### Tasks
  * [Exporting Persons from webCRM](exporting-persons-from-webcrm)
- * [Importing Persons to webCRM](importing-persons-to-webcrm)
+ * [Importing Persons to webCRM](importing-persons-into-webcrm)
