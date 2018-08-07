@@ -110,3 +110,57 @@ _Optional_
 | Type | Example | XML |
 | --- | --- | --- |
 | string | 000000001 | `<ErpId>000000001</ErpId>` |
+
+### ErpReadOnly
+_Optional_  
+
+| Type | Example | XML |
+| --- | --- | --- |
+| bool | false | `<ErpReadOnly>false</ErpReadOnly>` |
+
+### ErpStatus
+_Optional_  
+
+| Type | Example | XML |
+| --- | --- | --- |
+| picklist | NotReadyForSynchronization | `<ErpStatus>NotReadyForSynchronization</ErpStatus>` |
+
+#### Values
+Available values depend on your webCRM setup.
+
+### ErpSyncDateTime
+_Optional_  
+
+| Type | Example | XML |
+| --- | --- | --- |
+| datetime | 2018-03-06T16:39:46+00:00 | `<ErpSyncDateTime>2018-03-06T16:39:46+00:00</ErpSyncDateTime>` |
+
+### GmRevenue1 - GmRevenue12
+_Optional_  
+
+| Type | Example | XML |
+| --- | --- | --- |
+| numeric | 1 | `<GmRevenue1>1</GmRevenue1>` |
+
+### History
+_Read Only_  
+
+| Type | Example | XML |
+| --- | --- | --- |
+| html | &lt;tr&gt;&lt;td&gt;08-12-2018&amp;nbsp;14:43&amp;nbsp;&lt;/td&gt;&lt;td&gt;SYS&amp;nbsp;&lt;/td&gt;&lt;td&gt;(JR)&amp;nbsp;9000&amp;nbsp;&lt;/td&gt;&lt;td colspan="2"&gt;New&amp;nbsp;&lt;/td&gt;&lt;td&gt;No risk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;08-12-2016&amp;nbsp;14:42&amp;nbsp;&lt;/td&gt;&lt;td&gt;SYS&amp;nbsp;&lt;/td&gt;&lt;td&gt;(SYS)&amp;nbsp;9000&amp;nbsp;&lt;/td&gt;&lt;td colspan="2"&gt;New&amp;nbsp;&lt;/td&gt;&lt;td&gt;No risk&lt;/td&gt;&lt;/tr&gt; | `<History>&lt;tr&gt;&lt;td&gt;08-12-2018&amp;nbsp;14:43&amp;nbsp;&lt;/td&gt;&lt;td&gt;SYS&amp;nbsp;&lt;/td&gt;&lt;td&gt;(JR)&amp;nbsp;9000&amp;nbsp;&lt;/td&gt;&lt;td colspan="2"&gt;New&amp;nbsp;&lt;/td&gt;&lt;td&gt;No risk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;08-12-2016&amp;nbsp;14:42&amp;nbsp;&lt;/td&gt;&lt;td&gt;SYS&amp;nbsp;&lt;/td&gt;&lt;td&gt;(SYS)&amp;nbsp;9000&amp;nbsp;&lt;/td&gt;&lt;td colspan="2"&gt;New&amp;nbsp;&lt;/td&gt;&lt;td&gt;No risk&lt;/td&gt;&lt;/tr&gt; </History>` |
+
+### NextFollowUp
+_Optional_  
+
+| Type | Example | XML |
+| --- | --- | --- |
+| datetime | 2018-03-06T16:39:46+00:00 | `<NextFollowUp>2018-03-06T16:39:46+00:00</NextFollowUp>` |
+
+### ExtraCustom1 - ExtraCustom8
+_Optional_  
+There are up to eight extra custom fields available per organisation in webCRM.  If enabled at the task level, exports will attempt to include the label of the field as setup in the webCRM admin in the Name attribute.
+
+// TODO
+| Type | Example | XML |
+| --- | --- | --- |
+| string | JOE001 | `<ExtraCustom2 Name="Accounting ID Number">JOE001</ExtraCustom2>` |
