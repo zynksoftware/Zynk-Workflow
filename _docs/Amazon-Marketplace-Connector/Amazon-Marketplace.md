@@ -3,7 +3,7 @@ slug: amazon-marketplace
 redirect_from: "/article/146-introduction-to-the-amazon-marketplace-connector"
 title: Amazon Marketplace
 ---
-The Amazon Marketplace connector in Zynk allows you to download your orders from Amazon Marketplace in an XML format, and then process them within Zynk into your Accounting, ERP, CRM or database. It also supports the upload any kind of Amazon compatible data feed (XML or CSV).
+The Amazon Marketplace connector in Zynk allows you to download your orders from Amazon Marketplace (also known as Amazon Seller Central) in an XML format, and then process them within Zynk into your Accounting, ERP, CRM or database. It also supports the upload any kind of Amazon compatible data feed (XML or CSV).
 
 Each of the tasks require a connection to Amazon Marketplace, for more information on setting up and managing connections see [Connecting to Amazon Marketplace](connecting-to-amazon-marketplace).
 
