@@ -26,4 +26,31 @@ Optional output for the response of the upload
 See [Common Task Settings](common-task-settings).
 
 ## Examples
-You can find an example of how to use this task in the [Amazon Marketplace - Submit Feeds tutorial](amazon-submit-feeds).
+You can find an example of how to use this task in the [Amazon Marketplace - Submit Feeds tutorial](amazon-submit-feeds). A sample input file is shown below.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<AmazonEnvelope xsi:noNamespaceSchemaLocation="amzn-envelope.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+    <MerchantIdentifier>XXXXXXXXXXXX</MerchantIdentifier>
+  </Header>
+  <MessageType>Inventory</MessageType>
+  <Message>
+    <MessageID>1</MessageID>
+    <OperationType>Update</OperationType>
+    <Inventory>
+      <SKU>PROD001</SKU>
+      <Quantity>12</Quantity>
+    </Inventory>
+  </Message>
+  <Message>
+    <MessageID>2</MessageID>
+    <OperationType>Update</OperationType>
+    <Inventory>
+      <SKU>PROD002</SKU>
+      <Quantity>5</Quantity>
+    </Inventory>
+  </Message>
+</AmazonEnvelope>
+```
