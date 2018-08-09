@@ -43,7 +43,7 @@ Sample input file:
     <InventoryStatusType>
         <ItemID xmlns="urn:ebay:apis:eBLBaseComponents">110176306105</ItemID>
         <SKU xmlns="urn:ebay:apis:eBLBaseComponents">SKU123-RED</SKU>
-        <ParentSKU xmlns="urn:ebay:apis:eBLBaseComponents">SKU123</ParentSKU><!-- Used in conjunction with the Lookup Item IDs setting. Must be provided when dealing with a multi-variation listing -->
+        <ParentSKU xmlns="urn:ebay:apis:eBLBaseComponents">SKU123</ParentSKU><!-- Used in conjunction with the Lookup Item IDs setting. Must be provided when dealing with a multi-variation listing and ItemID is not provided -->
         <Quantity xmlns="urn:ebay:apis:eBLBaseComponents">2</Quantity>
     </InventoryStatusType><br>
 </ArrayOfInventoryStatusType>
