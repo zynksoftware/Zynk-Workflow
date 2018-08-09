@@ -4,7 +4,7 @@ title: Connecting to webCRM
 ---
 All of the tasks in the [webCRM](webcrm) connector require a connection to your webCRM account, so you will need to create a connection with the type 'webCRM'.  See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your webCRM details: 
 
-![IMAGE](IMAGE)
+![webCRM Connection](/assets/images/webcrm/webcrm_connection.png)
 
 Enter your webCRM details as described below, then click 'Finish' to create the connection.  Zynk will attempt to login in to webCRM with the provided details to verify the token.
 

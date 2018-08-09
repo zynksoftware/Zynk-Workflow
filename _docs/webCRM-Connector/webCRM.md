@@ -6,8 +6,7 @@ This connector implements an interface to webCRM, and provides functions to impo
 
 Each of the tasks in this library require a connection to webCRM, for more information on setting up and managing connections see [Connecting to webCRM](connecting-to-webcrm).
 
-## Links
-- [Connecting to webCRM](connecting-to-webcrm)
+## Tasks
 - [Exporting Deliveries from webCRM](exporting-deliveries-from-webcrm)
 - [Exporting Field Metadata from webCRM](exporting-field-metadata-from-webcrm)
 - [Exporting Organisations from webCRM](exporting-organisations-from-webcrm)
