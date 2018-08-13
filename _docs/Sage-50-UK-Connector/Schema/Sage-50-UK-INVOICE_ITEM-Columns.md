@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-invoice_item-columns
+slug: sage-50-uk-invoice-item-columns
 title: Sage 50 UK INVOICE_ITEM Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

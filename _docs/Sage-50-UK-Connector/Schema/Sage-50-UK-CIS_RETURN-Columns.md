@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-cis_return-columns
+slug: sage-50-uk-cis-return-columns
 title: Sage 50 UK CIS_RETURN Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

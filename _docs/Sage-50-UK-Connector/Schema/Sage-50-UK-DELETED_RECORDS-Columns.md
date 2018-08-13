@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-deleted_records-columns
+slug: sage-50-uk-deleted-records-columns
 title: Sage 50 UK DELETED_RECORDS Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

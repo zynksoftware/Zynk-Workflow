@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-tax_code-columns
+slug: sage-50-uk-tax-code-columns
 title: Sage 50 UK TAX_CODE Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-sagepay_pay_by_link-columns
+slug: sage-50-uk-sagepay-pay-by-link-columns
 title: Sage 50 UK SAGEPAY_PAY_BY_LINK Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

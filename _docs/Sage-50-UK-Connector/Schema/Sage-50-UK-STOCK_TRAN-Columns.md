@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-stock_tran-columns
+slug: sage-50-uk-stock-tran-columns
 title: Sage 50 UK STOCK_TRAN Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-clear_audit_trail_event-columns
+slug: sage-50-uk-clear-audit-trail-event-columns
 title: Sage 50 UK CLEAR_AUDIT_TRAIL_EVENT Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

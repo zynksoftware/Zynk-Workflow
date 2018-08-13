@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-esubmission_settings-columns
+slug: sage-50-uk-esubmission-settings-columns
 title: Sage 50 UK ESUBMISSION_SETTINGS Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

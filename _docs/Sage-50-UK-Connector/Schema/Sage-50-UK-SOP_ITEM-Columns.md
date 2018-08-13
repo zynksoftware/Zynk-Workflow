@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-sop_item-columns
+slug: sage-50-uk-sop-item-columns
 title: Sage 50 UK SOP_ITEM Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

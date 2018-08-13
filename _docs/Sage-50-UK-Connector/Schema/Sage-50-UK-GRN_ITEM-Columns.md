@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-grn_item-columns
+slug: sage-50-uk-grn-item-columns
 title: Sage 50 UK GRN_ITEM Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

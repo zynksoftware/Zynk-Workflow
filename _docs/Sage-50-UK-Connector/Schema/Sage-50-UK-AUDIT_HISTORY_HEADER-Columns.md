@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-audit_history_header-columns
+slug: sage-50-uk-audit-history-header-columns
 title: Sage 50 UK AUDIT_HISTORY_HEADER Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-rtd_summary-columns
+slug: sage-50-uk-rtd-summary-columns
 title: Sage 50 UK RTD_SUMMARY Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

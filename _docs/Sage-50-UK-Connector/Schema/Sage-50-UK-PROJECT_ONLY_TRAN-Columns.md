@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-project_only_tran-columns
+slug: sage-50-uk-project-only-tran-columns
 title: Sage 50 UK PROJECT_ONLY_TRAN Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

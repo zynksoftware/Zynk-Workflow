@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-fixed_asset_cat-columns
+slug: sage-50-uk-fixed-asset-cat-columns
 title: Sage 50 UK FIXED_ASSET_CAT Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

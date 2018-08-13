@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-project_cost_code-columns
+slug: sage-50-uk-project-cost-code-columns
 title: Sage 50 UK PROJECT_COST_CODE Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

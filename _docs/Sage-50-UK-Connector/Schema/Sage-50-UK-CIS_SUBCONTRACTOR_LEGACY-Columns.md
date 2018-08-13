@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-cis_subcontractor_legacy-columns
+slug: sage-50-uk-cis-subcontractor-legacy-columns
 title: Sage 50 UK CIS_SUBCONTRACTOR_LEGACY Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-financial_budget-columns
+slug: sage-50-uk-financial-budget-columns
 title: Sage 50 UK FINANCIAL_BUDGET Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

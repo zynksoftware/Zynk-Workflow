@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-direct_debit_payment_requests-columns
+slug: sage-50-uk-direct-debit-payment-requests-columns
 title: Sage 50 UK DIRECT_DEBIT_PAYMENT_REQUESTS Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

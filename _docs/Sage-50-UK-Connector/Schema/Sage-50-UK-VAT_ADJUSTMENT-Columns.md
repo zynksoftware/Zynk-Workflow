@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-vat_adjustment-columns
+slug: sage-50-uk-vat-adjustment-columns
 title: Sage 50 UK VAT_ADJUSTMENT Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

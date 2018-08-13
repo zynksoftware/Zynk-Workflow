@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-bank_statement_line-columns
+slug: sage-50-uk-bank-statement-line-columns
 title: Sage 50 UK BANK_STATEMENT_LINE Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

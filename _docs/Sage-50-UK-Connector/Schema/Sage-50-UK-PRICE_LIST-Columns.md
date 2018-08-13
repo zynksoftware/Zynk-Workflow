@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-price_list-columns
+slug: sage-50-uk-price-list-columns
 title: Sage 50 UK PRICE_LIST Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

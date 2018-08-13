@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-fund_type-columns
+slug: sage-50-uk-fund-type-columns
 title: Sage 50 UK FUND_TYPE Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

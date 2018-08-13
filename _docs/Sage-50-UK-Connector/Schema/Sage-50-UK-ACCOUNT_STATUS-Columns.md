@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-account_status-columns
+slug: sage-50-uk-account-status-columns
 title: Sage 50 UK ACCOUNT_STATUS Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

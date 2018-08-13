@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-project_status-columns
+slug: sage-50-uk-project-status-columns
 title: Sage 50 UK PROJECT_STATUS Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

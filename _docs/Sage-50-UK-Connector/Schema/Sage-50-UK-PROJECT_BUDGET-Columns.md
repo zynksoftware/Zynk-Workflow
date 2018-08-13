@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-project_budget-columns
+slug: sage-50-uk-project-budget-columns
 title: Sage 50 UK PROJECT_BUDGET Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

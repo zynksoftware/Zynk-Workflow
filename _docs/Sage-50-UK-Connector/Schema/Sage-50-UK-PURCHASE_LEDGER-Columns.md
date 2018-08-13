@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-purchase_ledger-columns
+slug: sage-50-uk-purchase-ledger-columns
 title: Sage 50 UK PURCHASE_LEDGER Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

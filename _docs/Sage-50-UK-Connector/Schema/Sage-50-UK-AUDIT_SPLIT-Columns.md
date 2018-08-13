@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-audit_split-columns
+slug: sage-50-uk-audit-split-columns
 title: Sage 50 UK AUDIT_SPLIT Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-sales_order-columns
+slug: sage-50-uk-sales-order-columns
 title: Sage 50 UK SALES_ORDER Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-purchase_del_addr-columns
+slug: sage-50-uk-purchase-del-addr-columns
 title: Sage 50 UK PURCHASE_DEL_ADDR Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

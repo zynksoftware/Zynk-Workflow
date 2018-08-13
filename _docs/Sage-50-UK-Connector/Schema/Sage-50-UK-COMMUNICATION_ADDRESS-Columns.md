@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-communication_address-columns
+slug: sage-50-uk-communication-address-columns
 title: Sage 50 UK COMMUNICATION_ADDRESS Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-project_revenue_code-columns
+slug: sage-50-uk-project-revenue-code-columns
 title: Sage 50 UK PROJECT_REVENUE_CODE Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

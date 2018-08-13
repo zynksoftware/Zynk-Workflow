@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-stock_allocation-columns
+slug: sage-50-uk-stock-allocation-columns
 title: Sage 50 UK STOCK_ALLOCATION Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

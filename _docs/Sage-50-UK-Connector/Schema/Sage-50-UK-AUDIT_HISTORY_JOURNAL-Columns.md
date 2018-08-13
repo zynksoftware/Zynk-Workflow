@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-audit_history_journal-columns
+slug: sage-50-uk-audit-history-journal-columns
 title: Sage 50 UK AUDIT_HISTORY_JOURNAL Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

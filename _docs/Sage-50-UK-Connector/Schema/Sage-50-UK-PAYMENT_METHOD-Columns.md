@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-payment_method-columns
+slug: sage-50-uk-payment-method-columns
 title: Sage 50 UK PAYMENT_METHOD Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

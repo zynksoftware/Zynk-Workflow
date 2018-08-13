@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-ecsales_fill-columns
+slug: sage-50-uk-ecsales-fill-columns
 title: Sage 50 UK ECSALES_FILL Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

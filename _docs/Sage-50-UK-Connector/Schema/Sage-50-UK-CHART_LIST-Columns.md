@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-chart_list-columns
+slug: sage-50-uk-chart-list-columns
 title: Sage 50 UK CHART_LIST Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

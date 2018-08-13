@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-calendar_recurrence_pattern-columns
+slug: sage-50-uk-calendar-recurrence-pattern-columns
 title: Sage 50 UK CALENDAR_RECURRENCE_PATTERN Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

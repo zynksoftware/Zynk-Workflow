@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-cis_subcontractor_return-columns
+slug: sage-50-uk-cis-subcontractor-return-columns
 title: Sage 50 UK CIS_SUBCONTRACTOR_RETURN Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

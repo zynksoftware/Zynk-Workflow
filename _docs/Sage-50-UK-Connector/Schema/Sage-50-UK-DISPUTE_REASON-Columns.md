@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-dispute_reason-columns
+slug: sage-50-uk-dispute-reason-columns
 title: Sage 50 UK DISPUTE_REASON Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

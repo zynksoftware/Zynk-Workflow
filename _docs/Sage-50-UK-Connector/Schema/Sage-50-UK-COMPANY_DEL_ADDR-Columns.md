@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-company_del_addr-columns
+slug: sage-50-uk-company-del-addr-columns
 title: Sage 50 UK COMPANY_DEL_ADDR Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

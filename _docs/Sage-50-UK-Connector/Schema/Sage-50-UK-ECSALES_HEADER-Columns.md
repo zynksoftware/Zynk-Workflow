@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-ecsales_header-columns
+slug: sage-50-uk-ecsales-header-columns
 title: Sage 50 UK ECSALES_HEADER Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

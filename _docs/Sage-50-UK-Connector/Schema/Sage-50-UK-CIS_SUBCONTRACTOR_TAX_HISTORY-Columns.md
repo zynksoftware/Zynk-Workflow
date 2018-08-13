@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-cis_subcontractor_tax_history-columns
+slug: sage-50-uk-cis-subcontractor-tax-history-columns
 title: Sage 50 UK CIS_SUBCONTRACTOR_TAX_HISTORY Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

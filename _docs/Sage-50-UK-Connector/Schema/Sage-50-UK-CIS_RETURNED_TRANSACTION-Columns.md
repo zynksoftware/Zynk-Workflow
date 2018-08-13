@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-cis_returned_transaction-columns
+slug: sage-50-uk-cis-returned-transaction-columns
 title: Sage 50 UK CIS_RETURNED_TRANSACTION Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-cleared_tran_range-columns
+slug: sage-50-uk-cleared-tran-range-columns
 title: Sage 50 UK CLEARED_TRAN_RANGE Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

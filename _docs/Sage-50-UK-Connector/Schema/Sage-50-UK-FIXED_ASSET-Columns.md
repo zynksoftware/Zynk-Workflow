@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-fixed_asset-columns
+slug: sage-50-uk-fixed-asset-columns
 title: Sage 50 UK FIXED_ASSET Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-ecsales_split-columns
+slug: sage-50-uk-ecsales-split-columns
 title: Sage 50 UK ECSALES_SPLIT Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

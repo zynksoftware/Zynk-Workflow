@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-nominal_ledger-columns
+slug: sage-50-uk-nominal-ledger-columns
 title: Sage 50 UK NOMINAL_LEDGER Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

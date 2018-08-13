@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-purchase_order-columns
+slug: sage-50-uk-purchase-order-columns
 title: Sage 50 UK PURCHASE_ORDER Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-contact_history-columns
+slug: sage-50-uk-contact-history-columns
 title: Sage 50 UK CONTACT_HISTORY Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

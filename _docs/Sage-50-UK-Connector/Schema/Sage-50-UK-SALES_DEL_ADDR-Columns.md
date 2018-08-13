@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-sales_del_addr-columns
+slug: sage-50-uk-sales-del-addr-columns
 title: Sage 50 UK SALES_DEL_ADDR Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

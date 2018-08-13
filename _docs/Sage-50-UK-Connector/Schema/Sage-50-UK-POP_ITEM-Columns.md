@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-pop_item-columns
+slug: sage-50-uk-pop-item-columns
 title: Sage 50 UK POP_ITEM Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

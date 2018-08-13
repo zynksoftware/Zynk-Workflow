@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-protx_payment-columns
+slug: sage-50-uk-protx-payment-columns
 title: Sage 50 UK PROTX_PAYMENT Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

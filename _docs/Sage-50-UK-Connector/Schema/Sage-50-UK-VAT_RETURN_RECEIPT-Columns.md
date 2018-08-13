@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-vat_return_receipt-columns
+slug: sage-50-uk-vat-return-receipt-columns
 title: Sage 50 UK VAT_RETURN_RECEIPT Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

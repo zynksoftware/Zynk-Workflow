@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-supplier_payment_info-columns
+slug: sage-50-uk-supplier-payment-info-columns
 title: Sage 50 UK SUPPLIER_PAYMENT_INFO Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

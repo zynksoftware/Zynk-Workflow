@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-calendar_event_label-columns
+slug: sage-50-uk-calendar-event-label-columns
 title: Sage 50 UK CALENDAR_EVENT_LABEL Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

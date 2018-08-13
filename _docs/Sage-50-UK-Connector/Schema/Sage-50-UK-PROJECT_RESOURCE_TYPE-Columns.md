@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-project_resource_type-columns
+slug: sage-50-uk-project-resource-type-columns
 title: Sage 50 UK PROJECT_RESOURCE_TYPE Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

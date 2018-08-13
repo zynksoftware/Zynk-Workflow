@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-stock_comp-columns
+slug: sage-50-uk-stock-comp-columns
 title: Sage 50 UK STOCK_COMP Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

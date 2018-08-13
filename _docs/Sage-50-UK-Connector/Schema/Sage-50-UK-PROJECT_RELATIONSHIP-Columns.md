@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-project_relationship-columns
+slug: sage-50-uk-project-relationship-columns
 title: Sage 50 UK PROJECT_RELATIONSHIP Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-stock_cat-columns
+slug: sage-50-uk-stock-cat-columns
 title: Sage 50 UK STOCK_CAT Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-update_ledger-columns
+slug: sage-50-uk-update-ledger-columns
 title: Sage 50 UK UPDATE_LEDGER Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

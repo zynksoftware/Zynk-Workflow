@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-cis_settings-columns
+slug: sage-50-uk-cis-settings-columns
 title: Sage 50 UK CIS_SETTINGS Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

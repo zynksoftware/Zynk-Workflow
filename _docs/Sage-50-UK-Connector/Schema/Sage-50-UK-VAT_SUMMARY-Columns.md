@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-vat_summary-columns
+slug: sage-50-uk-vat-summary-columns
 title: Sage 50 UK VAT_SUMMARY Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

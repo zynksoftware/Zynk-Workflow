@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-credit_bureau-columns
+slug: sage-50-uk-credit-bureau-columns
 title: Sage 50 UK CREDIT_BUREAU Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

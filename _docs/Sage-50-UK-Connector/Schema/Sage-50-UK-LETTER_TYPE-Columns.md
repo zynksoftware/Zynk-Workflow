@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-letter_type-columns
+slug: sage-50-uk-letter-type-columns
 title: Sage 50 UK LETTER_TYPE Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

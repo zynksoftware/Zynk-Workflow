@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-sofa_category-columns
+slug: sage-50-uk-sofa-category-columns
 title: Sage 50 UK SOFA_CATEGORY Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

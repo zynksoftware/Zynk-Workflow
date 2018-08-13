@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-audit_usage-columns
+slug: sage-50-uk-audit-usage-columns
 title: Sage 50 UK AUDIT_USAGE Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

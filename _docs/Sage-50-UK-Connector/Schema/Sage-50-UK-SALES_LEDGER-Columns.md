@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-sales_ledger-columns
+slug: sage-50-uk-sales-ledger-columns
 title: Sage 50 UK SALES_LEDGER Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

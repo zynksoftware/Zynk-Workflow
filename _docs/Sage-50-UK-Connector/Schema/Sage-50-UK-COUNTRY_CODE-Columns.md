@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-country_code-columns
+slug: sage-50-uk-country-code-columns
 title: Sage 50 UK COUNTRY_CODE Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

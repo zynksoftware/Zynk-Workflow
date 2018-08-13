@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-ec_vat_description-columns
+slug: sage-50-uk-ec-vat-description-columns
 title: Sage 50 UK EC_VAT_DESCRIPTION Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |

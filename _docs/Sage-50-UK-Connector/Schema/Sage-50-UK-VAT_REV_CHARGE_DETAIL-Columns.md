@@ -1,5 +1,5 @@
 ---
-slug: sage-50-uk-vat_rev_charge_detail-columns
+slug: sage-50-uk-vat-rev-charge-detail-columns
 title: Sage 50 UK VAT_REV_CHARGE_DETAIL Columns
 ---
 | Name | Type  |  Length | Precision  |  Notes  | Example |
