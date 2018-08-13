@@ -3,9 +3,11 @@ slug: exporting-custom-data-from-sage-50-uk
 redirect_from: "/article/400-exporting-custom-data-from-sage-50-uk"
 title: Exporting Custom Data from Sage 50 UK
 ---
-This task will export data from Sage 50 as specified in the Query, it will export to XML format. This is useful when there is no task which exports the data required.
+This task will export data from Sage 50 UK as specified in the Query, it will export to XML format. This is useful when there is no task which exports the data required.
 
-The table and column names that can be used in the Query are determined by the Sage 50 ODBC. Typically, we advise that you connect up to the Sage 50 ODBC via Excel (or some similar utility), which will give you a list of the table and column names. There is a section within the Sage Accounts Help file which details how to connect up to the Sage 50 ODBC via Excel, simply open the Sage 50 help, click 'Index' and search for 'ODBC'.  You can view an extract of the document in the article [Using ODBC driver with Microsoft Office applications](using-odbc-driver-with-microsoft-office-applications).
+The table and column names that can be used in the Query are determined by the Sage 50 UK ODBC Driver.  We would advise that you connect to Sage 50 UK via Excel (or similar utility) to list the table and column names available on your version, or for reference view article [Sage 50 UK Database Documentation](sage-50-uk-database-documentation).
+
+There is a section within the Sage Accounts Help file which details how to connect up to the Sage 50 UK ODBC via Excel, simply open the Sage help, click 'Index' and search for 'ODBC'.  You can view an extract of the document in the article [Using ODBC driver with Microsoft Office applications](using-odbc-driver-with-microsoft-office-applications).
 
 ## Settings
 ### Sage 50 Connection
