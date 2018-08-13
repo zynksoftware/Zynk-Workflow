@@ -2,8 +2,6 @@
 slug: sage-50-uk-fund-columns
 title: Sage 50 UK FUND Columns
 ---
-# FUND Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | FUND_ID | INTEGER | 4 | 10 | Fund ID |  |

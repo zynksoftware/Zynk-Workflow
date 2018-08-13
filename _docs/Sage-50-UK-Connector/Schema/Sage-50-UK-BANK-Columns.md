@@ -2,8 +2,6 @@
 slug: sage-50-uk-bank-columns
 title: Sage 50 UK BANK Columns
 ---
-# BANK Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ACCOUNT_REF | VARCHAR | 8 | 8 | Account reference | 1200 |

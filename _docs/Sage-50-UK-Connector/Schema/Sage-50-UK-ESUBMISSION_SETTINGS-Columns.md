@@ -2,8 +2,6 @@
 slug: sage-50-uk-esubmission_settings-columns
 title: Sage 50 UK ESUBMISSION_SETTINGS Columns
 ---
-# ESUBMISSION_SETTINGS Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | USER_ID | VARCHAR | 23 | 23 | The user ID used to logon to the government's online submission service. |  |

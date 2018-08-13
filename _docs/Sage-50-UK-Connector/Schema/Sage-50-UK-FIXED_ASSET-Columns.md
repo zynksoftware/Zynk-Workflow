@@ -2,8 +2,6 @@
 slug: sage-50-uk-fixed_asset-columns
 title: Sage 50 UK FIXED_ASSET Columns
 ---
-# FIXED_ASSET Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ASSET_REF | VARCHAR | 8 | 8 | Fixed asset reference | K562FTF |

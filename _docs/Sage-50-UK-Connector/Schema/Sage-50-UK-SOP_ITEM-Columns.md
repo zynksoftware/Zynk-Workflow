@@ -2,8 +2,6 @@
 slug: sage-50-uk-sop_item-columns
 title: Sage 50 UK SOP_ITEM Columns
 ---
-# SOP_ITEM Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ORDER_NUMBER | INTEGER | 4 | 10 | Order Reference number | 1 |

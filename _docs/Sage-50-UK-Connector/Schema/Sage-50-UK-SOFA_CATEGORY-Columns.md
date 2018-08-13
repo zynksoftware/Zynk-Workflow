@@ -2,8 +2,6 @@
 slug: sage-50-uk-sofa_category-columns
 title: Sage 50 UK SOFA_CATEGORY Columns
 ---
-# SOFA_CATEGORY Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | SOFA_ID | INTEGER | 4 | 10 | Category ID | 1 |

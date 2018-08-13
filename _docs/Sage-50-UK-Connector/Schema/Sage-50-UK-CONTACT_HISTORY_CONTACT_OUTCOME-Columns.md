@@ -2,8 +2,6 @@
 slug: sage-50-uk-contact_history_contact_outcome-columns
 title: Sage 50 UK CONTACT_HISTORY_CONTACT_OUTCOME Columns
 ---
-# CONTACT_HISTORY_CONTACT_OUTCOME Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | UNIQUE_ID | INTEGER | 4 | 10 | The unique number of this ContactHistory Contact Outcome | 1 |

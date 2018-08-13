@@ -2,8 +2,6 @@
 slug: sage-50-uk-ec_vat_description-columns
 title: Sage 50 UK EC_VAT_DESCRIPTION Columns
 ---
-# EC_VAT_DESCRIPTION Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | UNIQUE_ID | INTEGER | 4 | 10 | The unique identifier of this record (an internal number) | 1 |

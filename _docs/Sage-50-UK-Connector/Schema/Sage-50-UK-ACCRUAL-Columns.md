@@ -2,8 +2,6 @@
 slug: sage-50-uk-accrual-columns
 title: Sage 50 UK ACCRUAL Columns
 ---
-# ACCRUAL Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | NAME | VARCHAR | 60 | 60 | Name | Telephone Accrual |

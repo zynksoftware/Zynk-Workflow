@@ -2,8 +2,6 @@
 slug: sage-50-uk-ecsales_fill-columns
 title: Sage 50 UK ECSALES_FILL Columns
 ---
-# ECSALES_FILL Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | COUNTRY_CODE | VARCHAR | 2 | 2 | Country Code |  |

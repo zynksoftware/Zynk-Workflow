@@ -2,8 +2,6 @@
 slug: sage-50-uk-financial_budget-columns
 title: Sage 50 UK FINANCIAL_BUDGET Columns
 ---
-# FINANCIAL_BUDGET Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ACCOUNT_REF | VARCHAR | 8 | 8 | Nominal Account Reference | 0020 |

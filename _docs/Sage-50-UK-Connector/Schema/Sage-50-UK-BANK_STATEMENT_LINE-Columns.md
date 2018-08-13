@@ -2,8 +2,6 @@
 slug: sage-50-uk-bank_statement_line-columns
 title: Sage 50 UK BANK_STATEMENT_LINE Columns
 ---
-# BANK_STATEMENT_LINE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ACCOUNT_REF | VARCHAR | 8 | 8 | Bank Account Reference |  |

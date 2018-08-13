@@ -2,8 +2,6 @@
 slug: sage-50-uk-pop_item-columns
 title: Sage 50 UK POP_ITEM Columns
 ---
-# POP_ITEM Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ORDER_NUMBER | INTEGER | 4 | 10 | Order Reference number | 1 |

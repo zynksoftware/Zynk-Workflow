@@ -2,8 +2,6 @@
 slug: sage-50-uk-vat_rev_charge_return-columns
 title: Sage 50 UK VAT_REV_CHARGE_RETURN Columns
 ---
-# VAT_REV_CHARGE_RETURN Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | CUSTOMER_REF | VARCHAR | 8 | 8 | Customer reference |  |

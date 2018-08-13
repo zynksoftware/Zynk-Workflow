@@ -2,8 +2,6 @@
 slug: sage-50-uk-calendar_event-columns
 title: Sage 50 UK CALENDAR_EVENT Columns
 ---
-# CALENDAR_EVENT Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | UNIQUE_ID | INTEGER | 4 | 10 | The unique identifier of this calendar event (an internal number) | 1 |

@@ -2,8 +2,6 @@
 slug: sage-50-uk-cleared_tran_range-columns
 title: Sage 50 UK CLEARED_TRAN_RANGE Columns
 ---
-# CLEARED_TRAN_RANGE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | CATE_ID | INTEGER | 4 | 10 | Clear Audit Trail Event ID |  |

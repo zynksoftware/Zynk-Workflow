@@ -2,8 +2,6 @@
 slug: sage-50-uk-protx_payment-columns
 title: Sage 50 UK PROTX_PAYMENT Columns
 ---
-# PROTX_PAYMENT Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | VENDOR_TX_CODE | VARCHAR | 63 | 63 | The id assigned to the payment by Line 50 |  |

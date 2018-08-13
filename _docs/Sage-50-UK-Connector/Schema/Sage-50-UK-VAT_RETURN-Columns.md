@@ -2,8 +2,6 @@
 slug: sage-50-uk-vat_return-columns
 title: Sage 50 UK VAT_RETURN Columns
 ---
-# VAT_RETURN Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | VAT_BOX | SMALLINT | 2 | 5 | Box on Vat Return |  |

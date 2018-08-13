@@ -2,8 +2,6 @@
 slug: sage-50-uk-stock_tran-columns
 title: Sage 50 UK STOCK_TRAN Columns
 ---
-# STOCK_TRAN Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | TRAN_NUMBER | INTEGER | 4 | 10 | Transaction number | 1 |

@@ -2,8 +2,6 @@
 slug: sage-50-uk-audit_header-columns
 title: Sage 50 UK AUDIT_HEADER Columns
 ---
-# AUDIT_HEADER Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | TRAN_NUMBER | INTEGER | 4 | 10 | Item number | 1 |

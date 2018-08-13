@@ -2,8 +2,6 @@
 slug: sage-50-uk-price_list-columns
 title: Sage 50 UK PRICE_LIST Columns
 ---
-# PRICE_LIST Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | TYPE | VARCHAR | 1 | 1 | Type: customer price list (P), supplier price list (U) | P |

@@ -2,8 +2,6 @@
 slug: sage-50-uk-stock_comp-columns
 title: Sage 50 UK STOCK_COMP Columns
 ---
-# STOCK_COMP Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ASSEMBLY_CODE | VARCHAR | 30 | 30 | Assembly stock code | PC001 |

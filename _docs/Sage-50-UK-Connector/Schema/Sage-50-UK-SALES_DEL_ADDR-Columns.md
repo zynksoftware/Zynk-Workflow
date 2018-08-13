@@ -2,8 +2,6 @@
 slug: sage-50-uk-sales_del_addr-columns
 title: Sage 50 UK SALES_DEL_ADDR Columns
 ---
-# SALES_DEL_ADDR Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | REFERENCE | VARCHAR | 12 | 12 | Delivery address reference | ABS001  0001 |

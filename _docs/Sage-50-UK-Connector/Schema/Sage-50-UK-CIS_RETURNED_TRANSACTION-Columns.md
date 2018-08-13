@@ -2,8 +2,6 @@
 slug: sage-50-uk-cis_returned_transaction-columns
 title: Sage 50 UK CIS_RETURNED_TRANSACTION Columns
 ---
-# CIS_RETURNED_TRANSACTION Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | TRANSACTION_ID | INTEGER | 4 | 10 | Autonumber unique ID for transaction - the transaction number exposed to users |  |

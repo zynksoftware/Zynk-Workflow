@@ -2,7 +2,6 @@
 slug: sage-50-uk-database-documentation
 title: Sage 50 UK Database Documentation
 ---
-# Sage 50 UK Database Documentation
 ## Tables
  * [ACCOUNT_STATUS Columns](sage-50-uk-account_status-columns)
  * [ACCRUAL Columns](sage-50-uk-accrual-columns)

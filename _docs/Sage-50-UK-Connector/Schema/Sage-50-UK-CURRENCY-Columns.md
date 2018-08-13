@@ -2,8 +2,6 @@
 slug: sage-50-uk-currency-columns
 title: Sage 50 UK CURRENCY Columns
 ---
-# CURRENCY Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | NUMBER | SMALLINT | 2 | 5 | Currency number | 1 |

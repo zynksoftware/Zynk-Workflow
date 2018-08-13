@@ -2,8 +2,6 @@
 slug: sage-50-uk-letter_type-columns
 title: Sage 50 UK LETTER_TYPE Columns
 ---
-# LETTER_TYPE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | UNIQUE_ID | INTEGER | 4 | 10 | The unique identifier of this record (an internal number) | 10 |

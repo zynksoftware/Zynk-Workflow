@@ -2,8 +2,6 @@
 slug: sage-50-uk-credit_bureau-columns
 title: Sage 50 UK CREDIT_BUREAU Columns
 ---
-# CREDIT_BUREAU Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | NUMBER | SMALLINT | 2 | 5 | Bureau Number | 1 |

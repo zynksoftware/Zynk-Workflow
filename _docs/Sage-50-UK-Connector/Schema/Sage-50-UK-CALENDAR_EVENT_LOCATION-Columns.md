@@ -2,8 +2,6 @@
 slug: sage-50-uk-calendar_event_location-columns
 title: Sage 50 UK CALENDAR_EVENT_LOCATION Columns
 ---
-# CALENDAR_EVENT_LOCATION Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | LOCATION | VARCHAR | 60 | 60 | The location of a calendar event/appointment, as entered by the user |  |

@@ -2,8 +2,6 @@
 slug: sage-50-uk-project_resource_type-columns
 title: Sage 50 UK PROJECT_RESOURCE_TYPE Columns
 ---
-# PROJECT_RESOURCE_TYPE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | TYPE_ID | INTEGER | 4 | 10 | Unique ID Number | 1 |

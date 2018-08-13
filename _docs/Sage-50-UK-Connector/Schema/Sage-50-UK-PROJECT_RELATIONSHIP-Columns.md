@@ -2,8 +2,6 @@
 slug: sage-50-uk-project_relationship-columns
 title: Sage 50 UK PROJECT_RELATIONSHIP Columns
 ---
-# PROJECT_RELATIONSHIP Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ANCESTOR_ID | INTEGER | 4 | 10 | Ancestor Project Number | 1 |

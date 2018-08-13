@@ -2,8 +2,6 @@
 slug: sage-50-uk-company-columns
 title: Sage 50 UK COMPANY Columns
 ---
-# COMPANY Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | COMPANYID | VARCHAR | 37 | 37 | Unique Company Id | C4C463BE-B098-4A7D-A23B-D1A92B8DCB59 |

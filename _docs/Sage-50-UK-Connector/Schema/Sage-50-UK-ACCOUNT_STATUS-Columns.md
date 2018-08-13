@@ -2,8 +2,6 @@
 slug: sage-50-uk-account_status-columns
 title: Sage 50 UK ACCOUNT_STATUS Columns
 ---
-# ACCOUNT_STATUS Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | NUMBER | SMALLINT | 2 | 5 | Record Number | 1 |

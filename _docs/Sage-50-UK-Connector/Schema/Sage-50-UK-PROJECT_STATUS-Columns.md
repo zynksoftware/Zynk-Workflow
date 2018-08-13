@@ -2,8 +2,6 @@
 slug: sage-50-uk-project_status-columns
 title: Sage 50 UK PROJECT_STATUS Columns
 ---
-# PROJECT_STATUS Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | STATUS_ID | INTEGER | 4 | 10 | Unique ID Number | 1 |

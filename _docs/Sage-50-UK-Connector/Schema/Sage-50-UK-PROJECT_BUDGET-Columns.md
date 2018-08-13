@@ -2,8 +2,6 @@
 slug: sage-50-uk-project_budget-columns
 title: Sage 50 UK PROJECT_BUDGET Columns
 ---
-# PROJECT_BUDGET Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | PROJECT_ID | INTEGER | 4 | 10 | Project ID | 1 |

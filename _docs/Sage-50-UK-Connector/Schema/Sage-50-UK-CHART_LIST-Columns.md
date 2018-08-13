@@ -2,8 +2,6 @@
 slug: sage-50-uk-chart_list-columns
 title: Sage 50 UK CHART_LIST Columns
 ---
-# CHART_LIST Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | CHART | INTEGER | 4 | 10 | Chart number | 1 |

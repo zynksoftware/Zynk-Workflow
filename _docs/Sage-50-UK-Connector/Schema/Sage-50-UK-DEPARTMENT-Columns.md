@@ -2,8 +2,6 @@
 slug: sage-50-uk-department-columns
 title: Sage 50 UK DEPARTMENT Columns
 ---
-# DEPARTMENT Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | NUMBER | SMALLINT | 2 | 5 | Department number | 0 |

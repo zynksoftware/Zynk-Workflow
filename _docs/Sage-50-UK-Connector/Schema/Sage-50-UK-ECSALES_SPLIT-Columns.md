@@ -2,8 +2,6 @@
 slug: sage-50-uk-ecsales_split-columns
 title: Sage 50 UK ECSALES_SPLIT Columns
 ---
-# ECSALES_SPLIT Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | TYPE | VARCHAR | 3 | 3 | Transaction type |  |

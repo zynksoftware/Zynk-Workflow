@@ -2,8 +2,6 @@
 slug: sage-50-uk-purchase_order-columns
 title: Sage 50 UK PURCHASE_ORDER Columns
 ---
-# PURCHASE_ORDER Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ORDER_NUMBER | INTEGER | 4 | 10 | Order number | 1 |

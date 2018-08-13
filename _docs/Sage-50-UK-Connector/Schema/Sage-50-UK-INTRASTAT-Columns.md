@@ -2,8 +2,6 @@
 slug: sage-50-uk-intrastat-columns
 title: Sage 50 UK INTRASTAT Columns
 ---
-# INTRASTAT Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ORDER_NUMBER | VARCHAR | 7 | 7 | Order Number |  |

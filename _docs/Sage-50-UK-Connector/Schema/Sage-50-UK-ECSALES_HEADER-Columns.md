@@ -2,8 +2,6 @@
 slug: sage-50-uk-ecsales_header-columns
 title: Sage 50 UK ECSALES_HEADER Columns
 ---
-# ECSALES_HEADER Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | DATE_FROM | DATE | 2 | 10 | Start date |  |

@@ -2,8 +2,6 @@
 slug: sage-50-uk-cis_subcontractor-columns
 title: Sage 50 UK CIS_SUBCONTRACTOR Columns
 ---
-# CIS_SUBCONTRACTOR Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | SUPPLIER_REFN | VARCHAR | 8 | 8 | The reference of the supplier to which these CIS details apply. |  |

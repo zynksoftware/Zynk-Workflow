@@ -2,8 +2,6 @@
 slug: sage-50-uk-remittance-columns
 title: Sage 50 UK REMITTANCE Columns
 ---
-# REMITTANCE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | URN | VARCHAR | 8 | 8 | Remittance Unique Reference Number |  |

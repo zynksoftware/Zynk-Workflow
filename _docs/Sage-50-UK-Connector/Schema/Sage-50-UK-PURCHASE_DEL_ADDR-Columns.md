@@ -2,8 +2,6 @@
 slug: sage-50-uk-purchase_del_addr-columns
 title: Sage 50 UK PURCHASE_DEL_ADDR Columns
 ---
-# PURCHASE_DEL_ADDR Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | REFERENCE | VARCHAR | 12 | 12 | Delivery address reference | CON001  0001 |

@@ -2,8 +2,6 @@
 slug: sage-50-uk-vat_return_receipt-columns
 title: Sage 50 UK VAT_RETURN_RECEIPT Columns
 ---
-# VAT_RETURN_RECEIPT Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | UNIQUE_ID | INTEGER | 4 | 10 | The unique ID of this receipt |  |

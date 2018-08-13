@@ -2,8 +2,6 @@
 slug: sage-50-uk-nominal_ledger-columns
 title: Sage 50 UK NOMINAL_LEDGER Columns
 ---
-# NOMINAL_LEDGER Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ACCOUNT_REF | VARCHAR | 8 | 8 | Account Code | 0010 |

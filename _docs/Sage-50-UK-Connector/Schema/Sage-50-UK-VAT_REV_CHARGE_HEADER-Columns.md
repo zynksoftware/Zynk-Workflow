@@ -2,8 +2,6 @@
 slug: sage-50-uk-vat_rev_charge_header-columns
 title: Sage 50 UK VAT_REV_CHARGE_HEADER Columns
 ---
-# VAT_REV_CHARGE_HEADER Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | DATE_FROM | DATE | 2 | 10 | Start date |  |

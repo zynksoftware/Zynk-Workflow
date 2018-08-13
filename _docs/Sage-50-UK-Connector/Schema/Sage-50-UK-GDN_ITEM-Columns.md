@@ -2,8 +2,6 @@
 slug: sage-50-uk-gdn_item-columns
 title: Sage 50 UK GDN_ITEM Columns
 ---
-# GDN_ITEM Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | UNIQUE_ID | INTEGER | 4 | 10 | Unique record identifier | 1 |

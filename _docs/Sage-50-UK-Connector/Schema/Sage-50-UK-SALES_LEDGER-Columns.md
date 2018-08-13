@@ -2,8 +2,6 @@
 slug: sage-50-uk-sales_ledger-columns
 title: Sage 50 UK SALES_LEDGER Columns
 ---
-# SALES_LEDGER Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ACCOUNT_REF | VARCHAR | 8 | 8 | Account Reference | A1D001 |

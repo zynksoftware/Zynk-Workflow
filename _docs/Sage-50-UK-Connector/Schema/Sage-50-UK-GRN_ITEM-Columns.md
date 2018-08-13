@@ -2,8 +2,6 @@
 slug: sage-50-uk-grn_item-columns
 title: Sage 50 UK GRN_ITEM Columns
 ---
-# GRN_ITEM Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | GRN_NUMBER | INTEGER | 4 | 10 | GRN Number | 2 |

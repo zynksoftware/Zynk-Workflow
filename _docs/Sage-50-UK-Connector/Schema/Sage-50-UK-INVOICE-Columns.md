@@ -2,8 +2,6 @@
 slug: sage-50-uk-invoice-columns
 title: Sage 50 UK INVOICE Columns
 ---
-# INVOICE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | INVOICE_NUMBER | INTEGER | 4 | 10 | Invoice number | 1 |

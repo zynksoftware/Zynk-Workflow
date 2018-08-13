@@ -2,8 +2,6 @@
 slug: sage-50-uk-update_ledger-columns
 title: Sage 50 UK UPDATE_LEDGER Columns
 ---
-# UPDATE_LEDGER Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | INVOICE_NUMBER | INTEGER | 4 | 10 | Invoice number |  |

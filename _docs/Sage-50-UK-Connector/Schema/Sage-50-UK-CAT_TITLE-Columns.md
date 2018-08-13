@@ -2,8 +2,6 @@
 slug: sage-50-uk-cat_title-columns
 title: Sage 50 UK CAT_TITLE Columns
 ---
-# CAT_TITLE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | CHART | INTEGER | 4 | 10 | Chart number | 1 |

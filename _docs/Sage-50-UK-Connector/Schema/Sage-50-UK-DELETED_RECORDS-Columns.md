@@ -2,8 +2,6 @@
 slug: sage-50-uk-deleted_records-columns
 title: Sage 50 UK DELETED_RECORDS Columns
 ---
-# DELETED_RECORDS Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | TABLE_ID | INTEGER | 4 | 10 | The unique reference of the table where the deletion was performed |  |

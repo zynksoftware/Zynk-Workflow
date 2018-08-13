@@ -2,8 +2,6 @@
 slug: sage-50-uk-calendar_recurrence_pattern-columns
 title: Sage 50 UK CALENDAR_RECURRENCE_PATTERN Columns
 ---
-# CALENDAR_RECURRENCE_PATTERN Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | UNIQUE_ID | INTEGER | 4 | 10 | The unique identifier of this calendar event recurrence (an internal number) | 1 |

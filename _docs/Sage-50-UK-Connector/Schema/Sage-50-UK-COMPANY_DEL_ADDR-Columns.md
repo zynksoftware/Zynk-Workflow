@@ -2,8 +2,6 @@
 slug: sage-50-uk-company_del_addr-columns
 title: Sage 50 UK COMPANY_DEL_ADDR Columns
 ---
-# COMPANY_DEL_ADDR Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | REFERENCE | VARCHAR | 12 | 12 | Delivery address reference | COMPANY 0001 |

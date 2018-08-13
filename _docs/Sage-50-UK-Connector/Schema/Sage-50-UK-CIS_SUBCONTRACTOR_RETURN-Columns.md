@@ -2,8 +2,6 @@
 slug: sage-50-uk-cis_subcontractor_return-columns
 title: Sage 50 UK CIS_SUBCONTRACTOR_RETURN Columns
 ---
-# CIS_SUBCONTRACTOR_RETURN Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | RETURN_ID | INTEGER | 4 | 10 | The unique ID of the CIS return to which this subcontractor's payment details belong. |  |

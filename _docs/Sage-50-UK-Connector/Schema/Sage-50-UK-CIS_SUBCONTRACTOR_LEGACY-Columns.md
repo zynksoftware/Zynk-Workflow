@@ -2,8 +2,6 @@
 slug: sage-50-uk-cis_subcontractor_legacy-columns
 title: Sage 50 UK CIS_SUBCONTRACTOR_LEGACY Columns
 ---
-# CIS_SUBCONTRACTOR_LEGACY Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | SUPPLER_REFN | VARCHAR | 8 | 8 | The account reference of the subcontractor to whom this data applies. |  |

@@ -2,8 +2,6 @@
 slug: sage-50-uk-direct_debit_payment_requests-columns
 title: Sage 50 UK DIRECT_DEBIT_PAYMENT_REQUESTS Columns
 ---
-# DIRECT_DEBIT_PAYMENT_REQUESTS Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | TRAN_NUMBER | INTEGER | 4 | 10 | Transaction number |  |

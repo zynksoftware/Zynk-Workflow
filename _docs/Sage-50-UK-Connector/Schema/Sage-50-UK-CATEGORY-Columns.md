@@ -2,8 +2,6 @@
 slug: sage-50-uk-category-columns
 title: Sage 50 UK CATEGORY Columns
 ---
-# CATEGORY Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | CHART | INTEGER | 4 | 10 | Chart number | 1 |

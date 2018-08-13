@@ -2,8 +2,6 @@
 slug: sage-50-uk-audit_vat-columns
 title: Sage 50 UK AUDIT_VAT Columns
 ---
-# AUDIT_VAT Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | TRAN_NUMBER | INTEGER | 4 | 10 | Transaction number | 56 |

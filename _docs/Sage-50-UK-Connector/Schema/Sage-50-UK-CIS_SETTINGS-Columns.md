@@ -2,8 +2,6 @@
 slug: sage-50-uk-cis_settings-columns
 title: Sage 50 UK CIS_SETTINGS Columns
 ---
-# CIS_SETTINGS Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | IS_CONTRACTOR | SMALLINT | 2 | 5 | Is the current company a contractor in the Construction Industry Scheme? | 0 |

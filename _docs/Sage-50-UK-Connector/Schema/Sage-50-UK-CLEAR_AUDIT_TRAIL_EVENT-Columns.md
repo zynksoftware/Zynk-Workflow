@@ -2,8 +2,6 @@
 slug: sage-50-uk-clear_audit_trail_event-columns
 title: Sage 50 UK CLEAR_AUDIT_TRAIL_EVENT Columns
 ---
-# CLEAR_AUDIT_TRAIL_EVENT Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | CATE_ID | INTEGER | 4 | 10 | Unique ID Number |  |

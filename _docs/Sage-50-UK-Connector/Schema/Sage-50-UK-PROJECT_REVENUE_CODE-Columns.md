@@ -2,8 +2,6 @@
 slug: sage-50-uk-project_revenue_code-columns
 title: Sage 50 UK PROJECT_REVENUE_CODE Columns
 ---
-# PROJECT_REVENUE_CODE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | REVENUE_CODE_ID | INTEGER | 4 | 10 | Unique ID Number | 1 |

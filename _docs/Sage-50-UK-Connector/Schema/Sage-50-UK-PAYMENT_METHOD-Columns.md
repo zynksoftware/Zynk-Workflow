@@ -2,8 +2,6 @@
 slug: sage-50-uk-payment_method-columns
 title: Sage 50 UK PAYMENT_METHOD Columns
 ---
-# PAYMENT_METHOD Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | UNIQUE_ID | INTEGER | 4 | 10 | The unique number of this payment method | 1 |

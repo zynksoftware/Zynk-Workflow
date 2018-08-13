@@ -2,8 +2,6 @@
 slug: sage-50-uk-recurring-columns
 title: Sage 50 UK RECURRING Columns
 ---
-# RECURRING Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | UNIQUE_ID | INTEGER | 4 | 10 | The unique number of this Recurring entry | 1 |

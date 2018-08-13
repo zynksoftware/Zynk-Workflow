@@ -2,8 +2,6 @@
 slug: sage-50-uk-rtd_summary-columns
 title: Sage 50 UK RTD_SUMMARY Columns
 ---
-# RTD_SUMMARY Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | VAT_BOX | SMALLINT | 2 | 5 | Box on RTD Return |  |

@@ -2,8 +2,6 @@
 slug: sage-50-uk-project_cost_type-columns
 title: Sage 50 UK PROJECT_COST_TYPE Columns
 ---
-# PROJECT_COST_TYPE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | COST_TYPE_ID | INTEGER | 4 | 10 | Unique ID Number | 1 |

@@ -2,8 +2,6 @@
 slug: sage-50-uk-project-columns
 title: Sage 50 UK PROJECT Columns
 ---
-# PROJECT Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | REFERENCE | VARCHAR | 12 | 12 | Project Reference | PROJ001 |

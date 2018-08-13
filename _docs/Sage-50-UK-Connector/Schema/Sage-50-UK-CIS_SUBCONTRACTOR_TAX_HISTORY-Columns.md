@@ -2,8 +2,6 @@
 slug: sage-50-uk-cis_subcontractor_tax_history-columns
 title: Sage 50 UK CIS_SUBCONTRACTOR_TAX_HISTORY Columns
 ---
-# CIS_SUBCONTRACTOR_TAX_HISTORY Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | SUPPLIER_REFN | VARCHAR | 8 | 8 | The account reference for the supplier/subcontractor |  |

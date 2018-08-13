@@ -2,8 +2,6 @@
 slug: sage-50-uk-cis_return-columns
 title: Sage 50 UK CIS_RETURN Columns
 ---
-# CIS_RETURN Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | RETURN_ID | INTEGER | 4 | 10 | The unique number of this CIS return (an internal number) |  |

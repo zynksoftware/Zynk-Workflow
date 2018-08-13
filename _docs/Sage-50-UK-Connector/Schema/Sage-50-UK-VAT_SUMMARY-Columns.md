@@ -2,8 +2,6 @@
 slug: sage-50-uk-vat_summary-columns
 title: Sage 50 UK VAT_SUMMARY Columns
 ---
-# VAT_SUMMARY Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | VAT_BOX | SMALLINT | 2 | 5 | Box on VAT Return |  |

@@ -2,8 +2,6 @@
 slug: sage-50-uk-vat_details-columns
 title: Sage 50 UK VAT_DETAILS Columns
 ---
-# VAT_DETAILS Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | VAT_BOX | INTEGER | 4 | 10 | VAT Box |  |

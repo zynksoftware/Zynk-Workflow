@@ -2,8 +2,6 @@
 slug: sage-50-uk-prepayment-columns
 title: Sage 50 UK PREPAYMENT Columns
 ---
-# PREPAYMENT Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | NAME | VARCHAR | 60 | 60 | Name | Rent Prepayment |

@@ -2,8 +2,6 @@
 slug: sage-50-uk-vat_adjustment-columns
 title: Sage 50 UK VAT_ADJUSTMENT Columns
 ---
-# VAT_ADJUSTMENT Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | VAT_BOX | SMALLINT | 2 | 5 | VAT Box |  |

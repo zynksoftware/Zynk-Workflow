@@ -2,8 +2,6 @@
 slug: sage-50-uk-country_code-columns
 title: Sage 50 UK COUNTRY_CODE Columns
 ---
-# COUNTRY_CODE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | CODE | VARCHAR | 2 | 2 | Country Code | AD |

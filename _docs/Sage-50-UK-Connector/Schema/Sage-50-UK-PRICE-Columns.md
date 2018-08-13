@@ -2,8 +2,6 @@
 slug: sage-50-uk-price-columns
 title: Sage 50 UK PRICE Columns
 ---
-# PRICE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | PRICE_ID | VARCHAR | 39 | 39 | Ref | PGUF     APPWCH |

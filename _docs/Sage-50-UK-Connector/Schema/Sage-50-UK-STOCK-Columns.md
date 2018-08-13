@@ -2,8 +2,6 @@
 slug: sage-50-uk-stock-columns
 title: Sage 50 UK STOCK Columns
 ---
-# STOCK Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | STOCK_CODE | VARCHAR | 30 | 30 | Stock code | BOARD001 |

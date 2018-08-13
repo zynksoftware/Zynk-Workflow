@@ -2,8 +2,6 @@
 slug: sage-50-uk-communication_address-columns
 title: Sage 50 UK COMMUNICATION_ADDRESS Columns
 ---
-# COMMUNICATION_ADDRESS Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | ACCOUNT_TYPE | TINYINT | 1 | 3 | Is this record for a customer or supplier? | 0 |

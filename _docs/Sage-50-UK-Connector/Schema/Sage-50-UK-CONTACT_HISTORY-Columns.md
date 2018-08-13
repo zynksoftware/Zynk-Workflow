@@ -2,8 +2,6 @@
 slug: sage-50-uk-contact_history-columns
 title: Sage 50 UK CONTACT_HISTORY Columns
 ---
-# CONTACT_HISTORY Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | UNIQUE_ID | INTEGER | 4 | 10 | The unique identifier of this record (an internal number) | 1 |

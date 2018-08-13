@@ -2,8 +2,6 @@
 slug: sage-50-uk-tax_code-columns
 title: Sage 50 UK TAX_CODE Columns
 ---
-# TAX_CODE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | TAX_CODE | VARCHAR | 3 | 3 | Tax code (T0 to T99) | T0 |

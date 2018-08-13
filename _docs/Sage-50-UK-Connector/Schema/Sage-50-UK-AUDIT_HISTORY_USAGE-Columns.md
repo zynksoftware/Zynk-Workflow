@@ -2,8 +2,6 @@
 slug: sage-50-uk-audit_history_usage-columns
 title: Sage 50 UK AUDIT_HISTORY_USAGE Columns
 ---
-# AUDIT_HISTORY_USAGE Columns
-
 | Name | Type  |  Length | Precision  |  Notes  | Example |
 | --- | --- | --- | --- | --- | --- |
 | TYPE | VARCHAR | 2 | 2 | Transaction type |  |
