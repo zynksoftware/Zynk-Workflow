@@ -16,6 +16,7 @@ Sample import file for creating a customer:
       <Id>123</Id>
       <AccountReference>JOE001</AccountReference>
       <CompanyName>Zynk Software Limited</CompanyName>
+      <ShortName>ZYNK</ShortName>
       <CreditLimit>1000</CreditLimit>
       <Currency>GBP</Currency>
       <CustomerInvoiceAddress>
@@ -110,6 +111,7 @@ The information below can be specified on the Company tab in Sage. Depending on 
 | - | Id | 123 | string | 255 | Optional | Used internally by Zynk for duplicate prevention and when importing sales orders. |
 | A/C Ref | AccountReference | JOE001 | string | 8 | Optional | Required when 'Auto Generate References' and 'Match Accounts On' settings are disabled. |
 | Name | CompanyName | Zynk Software Limited | string | 60 | Optional  | If a CompanyName is not provided, it will default to the Title, Forename, Middlename and Surname. |
+| Short Name | ShortName | ZYNK | string | 8 | Optional  |
 | Credit Limit | CreditLimit | 1000 | double | - | Optional | Defaults to 0 if not provided. |
 | Currency | Currency | GBP | string | 3 | Optional | This field can only be set when creating a new customer. Defaults to the base currency from Accounting System Manager -> Currencies and Exchange Rates if not provided.|
 | Address [Line 1] | Address1 | Nelson House | string | 60 | Optional |
@@ -132,6 +134,7 @@ The information below can be specified on the Company tab in Sage. Depending on 
       <Id>123</Id>
       <AccountReference>JOE001</AccountReference>
       <CompanyName>Zynk Software Limited</CompanyName>
+      <ShortName>ZYNK</ShortName>
       <CreditLimit>1000</CreditLimit>
       <Currency>GBP</Currency>
       <CustomerInvoiceAddress>
