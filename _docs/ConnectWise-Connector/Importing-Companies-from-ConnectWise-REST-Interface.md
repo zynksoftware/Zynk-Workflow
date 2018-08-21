@@ -53,12 +53,6 @@ A sample input file is shown below.
   <Company>
     <id>2</id>
     <externalId>MYCOM</externalId>
-    <_info>
-      <dateEntered>2002-08-20T18:04:26Z</dateEntered>
-      <enteredBy>CONVERSION</enteredBy>
-      <lastUpdated>2018-05-01T14:33:38Z</lastUpdated>
-      <updatedBy>Admin1</updatedBy>
-    </_info>
     <identifier>YourCompany</identifier>
     <name>Your Company</name>
     <status>
@@ -73,12 +67,12 @@ A sample input file is shown below.
     <addressLine2>test</addressLine2>
     <city>test</city>
     <state>MS</state>
-    <zip />
+    <zip>NE1 4XF</zip>
     <country>
       <id>1</id>
       <name>United States</name>
     </country>
-    <phoneNumber />
+    <phoneNumber>0191 303 7279</phoneNumber>
     <faxNumber />
     <website>http://www.example.com</website>
     <territoryId>38</territoryId>
@@ -130,6 +124,18 @@ A sample input file is shown below.
         <value>3.5</value>
       </customField>
     </customFields>
+    <teams>
+      <team>
+        <teamRole>
+          <name>Account Mgr</name>
+        </teamRole>
+        <member>
+          <identifier>Admin1</identifier>
+        </member>
+        <locationId>0</locationId>
+        <businessUnitId>0</businessUnitId>
+      </team>
+    </teams>
   </Company>
 </Companies>
 ```
