@@ -26,6 +26,7 @@ The REST tasks allow you to import and export various information from ConnectWi
 - [Exporting Activities from ConnectWise REST Interface](exporting-activities-from-connectwise-rest-interface)
 - [Exporting Companies from ConnectWise REST Interface](exporting-companies-from-connectwise-rest-interface)
 - [Exporting Invoices from ConnectWise REST Interface](exporting-invoices-from-connectwise-rest-interface)
+- [Exporting Members from ConnectWise REST Interface](exporting-members-from-connectwise-rest-interface)
 - [Importing Activities via ConnectWise REST Interface](importing-activities-via-connectwise-rest-interface)
 - [Importing Companies via ConnectWise REST Interface](importing-companies-via-connectwise-rest-interface)
 
