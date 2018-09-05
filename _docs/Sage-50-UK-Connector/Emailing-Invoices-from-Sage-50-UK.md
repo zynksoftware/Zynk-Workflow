@@ -44,7 +44,7 @@ Set to true if you would like to be sent a notification if an invoice could not 
 
 ### Send To
 _Optional_  
-The email address to send the failure notification email to.
+The email address to send the failure notification email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients. A list can be provided either as a comma separated list, or by chosing the ['List' data type](zynk-objects#list-data-type) and entering each address separately.
 
 ### Add Background
 _Required_  
