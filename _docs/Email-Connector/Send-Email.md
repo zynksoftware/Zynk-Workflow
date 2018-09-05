@@ -12,7 +12,7 @@ The file or list of files to be attached to the email. TIP: You can also use the
 
 ### Bcc
 _Optional_  
-The address to send a Bcc (blind carbon copy) of the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients.
+The address to send a Bcc (blind carbon copy) of the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients. A list can be provided either as a comma separated list, or by chosing the ['List' data type](zynk-objects#list-data-type) and entering each address separately.
 
 ### Body
 _Required_  
@@ -20,7 +20,7 @@ The content for the email. If the content is HTML, remember to set the HTML Body
 
 ### Cc
 _Optional_  
-The address to send a Cc (carbon copy) of the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients.
+The address to send a Cc (carbon copy) of the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients. A list can be provided either as a comma separated list, or by chosing the ['List' data type](zynk-objects#list-data-type) and entering each address separately.
 
 ### From
 _Required_  
@@ -36,7 +36,9 @@ The subject text for the email.
 
 ### To
 _Required_  
-The address you are sending the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients. TIP: If this task is a sub-task of a repeater, you can use the context variables from the repeater task (e.g. 	`@Context.Current["Email_Address"]`) to dynamically set the address for each email.
+The address you are sending the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients. A list can be provided either as a comma separated list, or by chosing the ['List' data type](zynk-objects#list-data-type) and entering each address separately.
+
+**TIP:** If this task is a sub-task of a repeater, you can use the context variables from the repeater task (e.g. 	`@Context.Current["Email_Address"]`) to dynamically set the address for each email.
 
 ### SMTP Connection
 _Required_  
