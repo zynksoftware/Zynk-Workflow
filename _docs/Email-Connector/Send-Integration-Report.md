@@ -12,11 +12,11 @@ The SMTP Connection to send the emails from.  See the [Connecting to an SMTP S
 
 ### Bcc
 _Optional_  
-The address to send a Bcc (blind carbon copy) of the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients.
+The address to send a Bcc (blind carbon copy) of the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients. A list can be provided either as a comma separated list, or by chosing the ['List' data type](zynk-objects#list-data-type) and entering each address separately.
 
 ### Cc
 _Optional_  
-The address to send a Cc (carbon copy) of the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients.
+The address to send a Cc (carbon copy) of the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients. A list can be provided either as a comma separated list, or by chosing the ['List' data type](zynk-objects#list-data-type) and entering each address separately.
 
 ### From
 _Required_  
@@ -28,7 +28,7 @@ The settings for generating the report. See below for more details.
 
 ### To
 _Required_  
-The address you are sending the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients.
+The address you are sending the email to. You can specify a list of email addresses if you would like to send the same email to multiple recipients. A list can be provided either as a comma separated list, or by chosing the ['List' data type](zynk-objects#list-data-type) and entering each address separately.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings)
