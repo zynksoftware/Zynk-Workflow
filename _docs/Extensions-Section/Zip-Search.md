@@ -5,6 +5,8 @@ title: Zip Search
 ---
 You can use the Zip Search extension to loop through a series of zip files to find a certain match. This can be useful when troubleshooting an issue with a certain order, or trying to locate the XML for a certain product.
 
+Zip Search can be installed via Zynk's [Extensions Manager](extensions)
+
 ## Settings
 ### Workflow / Custom Directory
 _Required_  
