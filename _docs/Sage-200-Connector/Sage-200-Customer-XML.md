@@ -246,6 +246,26 @@ The information below can be specified on the Trading tab in Sage.
 </Company>
 ```
 
+## Payment
+The information below can be specified on the Payment tab in Sage. 
+
+| Sage Field | XML Field | Example | Field Type | Field Length | Input | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Payment terms | PaymentTermsDays | 30 | int | - | Optional | |
+| Payment terms - from | PaymentTermsBasis | PaymentDueFromDocumentDate | enum | - | Optional | Available values: PaymentDueFromCalendarMonth, PaymentDueFromStartOfMonth, PaymentDueFromEndOfMonth, PaymentDueFromDocumentDate |
+
+```xml
+<?xml version="1.0"?>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Customers>
+    <Customer>
+      <PaymentTermsDays>30</PaymentTermsDays>
+      <PaymentTermsBasis>PaymentDueFromDocumentDate</PaymentTermsBasis>
+    </Customer>
+  </Customers>
+</Company>
+```
+
 ## Credit
 The information below can be specified on the Credit tab in Sage. 
 
