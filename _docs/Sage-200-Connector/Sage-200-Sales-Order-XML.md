@@ -61,6 +61,7 @@ To assign the order to a particular account you will need to specify either a Cu
 | --- | --- | --- | --- | --- | --- | --- |
 | CustomerId | - | 12345 | string | 255 | Required, unless AccountReference is provided | Only used if an AccountReference is not provided. |
 | AccountReference | A/C Ref | INTE001 | string | 8 | Required, unless CustomerId is provided |
+| DefaultWarehouse | By default supply from | Warehouse 1 | string | 20 | Optional | If not specified, this will be picked up from the task settings. |
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -69,6 +70,7 @@ To assign the order to a particular account you will need to specify either a Cu
     <SalesOrder>
       <CustomerId>12345</CustomerId>
       <AccountReference>INTE001</AccountReference>
+      <DefaultWarehouse>Warehouse 1</DefaultWarehouse>
     </SalesOrder>
   </SalesOrders>
 </Company>
