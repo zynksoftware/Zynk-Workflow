@@ -30,7 +30,7 @@ Sample output file:
 
 ```xml
 <?xml version="1.0"?>
-<Company>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <PriceLists>
         <PriceList AllRecords="false">
             <Name>Public Price List</Name>

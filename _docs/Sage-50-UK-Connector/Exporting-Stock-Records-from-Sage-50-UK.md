@@ -51,7 +51,7 @@ Sample output file:
 
 ```xml
 <?xml version="1.0"?>
-<Company>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Products>
         <Product>
             <UniqueId>FAX001</UniqueId>

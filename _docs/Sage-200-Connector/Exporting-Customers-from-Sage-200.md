@@ -56,7 +56,7 @@ Sample output file:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<Company>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Customers>
     <Customer>
       <UniqueId>1228</UniqueId>

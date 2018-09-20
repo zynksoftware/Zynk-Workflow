@@ -44,7 +44,7 @@ Sample output file, showing a despatch of product PROD001 for order 0000000002:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<Company>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <DespatchNotes>
     <DespatchNote>
       <UniqueId>29954</UniqueId>

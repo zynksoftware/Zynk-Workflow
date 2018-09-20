@@ -47,7 +47,7 @@ Sample output file, for full documentation and samples see [Sage 50 UK Customer 
 
 ```xml 
 <?xml version="1.0"?>
-<Company>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Customers>
         <Customer>
             <UniqueId>ABS001</UniqueId>
