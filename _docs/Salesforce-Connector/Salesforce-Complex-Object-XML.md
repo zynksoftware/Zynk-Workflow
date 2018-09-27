@@ -131,6 +131,7 @@ The LookupField element represents a lookup for the value of a field from anothe
 | --- | --- | --- | --- | --- |
 | @Name | AccountId | string | Required | The Salesforce API field name of the field to update in Salesforce. |
 | @Value | N/A | string | Optional | If a value is specified, this will be used instead of performing the lookup. |
+| @LookupFieldType | Equals | enum | Optional | The type of comparison to perform when looking for a matching record in Salesforce. The available options are 'Equals' and 'Like'. Will default to 'Equals' if not specified. |
 | Criteria/@Type | Account | string | Required | The type of object to perform the lookup on. This should correspond with the API name of an object in Salesforce. |
 | Criteria/@Select | Id | string | Optional | The Salesforce API field name of the field containing the value to be returned by the lookup. If not specified, this will default to Id. |
 | Criteria/Fields | N/A | Field or LookupField | Required | The collection of field values to lookup records based on. At least one field must be specified, only records with field values matching all of those specified will be considered a match. Complex lookups across diferent types of object can be constructed by using further LookupField elements within the Fields collection. |
@@ -140,7 +141,7 @@ The LookupField element represents a lookup for the value of a field from anothe
 <SalesforceObjects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="Opportunity">
     <SalesforceObject>
         <Fields>
-            <LookupField Name="AccountId">
+            <LookupField Name="AccountId" LookupFieldType="Equals">
                 <Criteria Type="Account" Select="Id">
                     <Fields>
                         <Field Name="Name" Value="Test 123" />
