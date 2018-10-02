@@ -92,7 +92,7 @@ The SalesforceObject element represents an individual record to insert or update
 
 | XML Field  | Example  | Field Type  | Input  | Description |
 | --- | --- | --- | --- | --- |
-| @OperationType | Insert | enum | Optional | The type of operation to perform against Salesforce. The available options are 'Insert', 'Update' and 'Upsert'. Will default to the option selected in the task settings if not specified. |
+| @OperationType | Insert | enum | Optional | The type of operation to perform against Salesforce. The available options are **Insert**, **Update** and **Upsert**. Will default to the option selected in the task settings if not specified. |
 | Fields | N/A | Field or LookupField | Required | A collection of field values to set on the object in Salesforce. The collection can contain either Field or LookupField elements. |
 | Relationships | N/A | Relationship | Optional | A collection of child records related to this record. The collection can contain 0 or more Relationship elements. See below for more information on the Relationship element. |
 
@@ -113,6 +113,8 @@ The Field element represents the value of a field in Salesforce.
 | --- | --- | --- | --- | --- |
 | @Name | CloseDate | string | Required | The Salesforce API field name of the field in Salesforce. |
 | @Value | 2016-08-10 | string | Optional | The value for the field. |
+| @MatchCase | true | bool | Optional | When the Field appears within the Criteria collection of a LookupField, and the field type in Salesforce is a string or text area, this attribute is used to control whether the `@Value` provided is matched on a case sensitive basis. If not specified, the matching will not be case sensitive. |
+| @PicklistMatchType | ApiName | enum | Optional | When the Field appears within the Criteria collection of a LookupField, and the field type in Salesforce is a picklist, this attribute is used to control how `@Value` is matched. **ApiName** will match the Value to the picklist's API names. **Value** will match the Value to the picklist's display values. **ApiNameThenValue** will firstly try to match based based on API name, then fall back to the value if no match is found. **ValueThenApiName** will firstly try to match based based on value, then fall back to the API name if no match is found. If not specified, the matching will default to 'ApiName'. |
 
 ```xml
 <?xml version="1.0"?>
@@ -120,6 +122,14 @@ The Field element represents the value of a field in Salesforce.
     <SalesforceObject>
         <Fields>
             <Field Name="CloseDate" Value="2016-08-10" />
+            <LookupField Name="AccountId">
+                <Criteria Type="Account">
+                    <Fields>
+                        <Field Name="Name" Value="Test 123" MatchCase="true" />
+                        <Field Name="Type" Value="Reseller" PicklistMatchType="ApiName" />
+                    </Fields>
+                </Criteria>
+            </LookupField>
         </Fields>
     </SalesforceObject>
 </SalesforceObjects>
@@ -132,11 +142,11 @@ The LookupField element represents a lookup for the value of a field from anothe
 | --- | --- | --- | --- | --- |
 | @Name | AccountId | string | Required | The Salesforce API field name of the field to update in Salesforce. |
 | @Value | N/A | string | Optional | If a value is specified, this will be used instead of performing the lookup. |
-| @LookupFieldType | Equals | enum | Optional | The type of comparison to perform when looking for a matching record in Salesforce. The available options are 'Equals' and 'Like'. Will default to 'Equals' if not specified. |
+| @LookupFieldType | Equals | enum | Optional | The type of comparison to perform when looking for a matching record in Salesforce. The available options are **Equals** and **Like**. Will default to 'Equals' if not specified. |
 | Criteria/@Type | Account | string | Required | The type of object to perform the lookup on. This should correspond with the API name of an object in Salesforce. |
 | Criteria/@Select | Id | string | Optional | The Salesforce API field name of the field containing the value to be returned by the lookup. If not specified, this will default to Id. |
-| Criteria/@LookupType | Index | enum | Optional | The type of lookup to perform against Salesforce. 'Exact' will return the first matching record, but will fail if more than one match is found. 'First' will return the first matching record found. 'Last' will return the last matching record found. 'Index' will return the matching record from a specific index, as specified by the LookupIndex attribute. Will default to 'Exact' if not specified. |
-| Criteria/@LookupIndex | 1 | int | Optional | The index of the record the lookup should return. Use in conjunction with the 'Index' LookupType. |
+| Criteria/@LookupType | Index | enum | Optional | The type of lookup to perform against Salesforce. **Exact** will return the first matching record, but will fail if more than one match is found. **First** will return the first matching record found. **Last** will return the last matching record found. 'Index' will return the matching record from a specific index, as specified by the `@LookupIndex` attribute. Will default to 'Exact' if not specified. |
+| Criteria/@LookupIndex | 1 | int | Optional | The index of the record the lookup should return. Use in conjunction with the **Index** LookupType. |
 | Criteria/Fields | N/A | Field or LookupField | Required | The collection of field values to lookup records based on. At least one field must be specified, only records with field values matching all of those specified will be considered a match. Complex lookups across diferent types of object can be constructed by using further LookupField elements within the Fields collection. |
 
 ```xml
@@ -147,7 +157,8 @@ The LookupField element represents a lookup for the value of a field from anothe
             <LookupField Name="AccountId" LookupFieldType="Index" LookupIndex="1">
                 <Criteria Type="Account" Select="Id">
                     <Fields>
-                        <Field Name="Name" Value="Test 123" />
+                        <Field Name="Name" Value="Test 123" MatchCase="true" />
+                        <Field Name="Type" Value="Reseller" PicklistMatchType="ApiName" />
                     </Fields>
                 </Criteria>
             </LookupField>
