@@ -129,11 +129,11 @@ Sample XSLT file to convert the input file above to the Salesforce XML format. N
             <xsl:otherwise>
               <Pricebook2Id><xsl:value-of select="Pricebook2Id"/></Pricebook2Id>
               <Product2Id><xsl:value-of select="Product2Id"/></Product2Id>
+              <CurrencyIsoCode><xsl:value-of select="../../Currency" /></CurrencyIsoCode>
             </xsl:otherwise>
           </xsl:choose>
      
-          <UnitPrice><xsl:value-of select="StoredPrice"/></UnitPrice>
-          <CurrencyIsoCode><xsl:value-of select="../../Currency" /></CurrencyIsoCode>
+            <UnitPrice><xsl:value-of select="StoredPrice"/></UnitPrice>
           <UseStandardPrice>false</UseStandardPrice>
           <IsActive>true</IsActive>
         </sObject>
