@@ -10,6 +10,8 @@ All of the tasks in the Sage 50 UK connector require a connection to a Sage 50 c
 
 Enter your Sage 50 details as described below, then click 'Finish' to create the connection.
 
+Please note for Sage 50 v25 (2019) you must select the "Use manual data path" and enter the location of your data manually.
+
 ## Settings
 ### Company
 _Dependant_  
