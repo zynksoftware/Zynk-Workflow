@@ -1,21 +1,25 @@
 ---
-slug: exporting-companies-from-connectwise-rest-interface
-title: Exporting Companies from ConnectWise REST Interface
+slug: exporting-purchase-orders-from-connectwise-rest-interface
+title: Exporting Purchase Orders from ConnectWise REST Interface
 ---
-This task will export companies from ConnectWise in an XML format. The results can be filtered if required. See below for a sample output file.
+This task will export purchase orders from ConnectWise in an XML format. The results can be filtered if required. See below for a sample output file.
 
 ## Settings
 ### Connection
 _Required_  
 The ConnectWise REST Interface connection to use. See the [Connecting to ConnectWise REST Interface](connecting-to-connectwise-rest-interface) article if you require more information on how to create/manage connections.
 
+### Export Item Lines
+_Required_  
+Set to true to include the item lines in the exported data.
+
 ### Export Settings > Date Created
 _Required_  
-When the 'Export Modified, New or All Records' setting is set to 'New', only companies created after this date will be exported. This date will update automatically each time the task runs, to ensure only new companies are exported each time.
+When the 'Export Modified, New or All Records' setting is set to 'New', only purchase orders created after this date will be exported. This date will update automatically each time the task runs, to ensure only new puchase orders are exported each time.
 
 ### Export Settings > Date Modified
 _Required_  
-When the 'Export Modified, New or All Records' setting is set to 'Modified', only companies updated after this date will be downloaded. This date will update automatically each time the task runs, to ensure only modified companies are exported each time.
+When the 'Export Modified, New or All Records' setting is set to 'Modified', only purchase orders updated after this date will be downloaded. This date will update automatically each time the task runs, to ensure only modified invoices are exported each time.
 
 ### Export Settings > Export Modified, New or All Records
 _Required_  
@@ -31,28 +35,28 @@ The number of records to include in each page of results. Defaults to 100. Incre
 
 ### Output File
 _Required_  
-The name of the file to export the companies to.
+The name of the file to export the purchase orders to.
 
 ### References To Fetch
 _Optional_  
 The exported data may include fields which reference other records in ConnectWise. If you specify the reference field names here, and the task will fetch the related records and include them in the exported data. The supported fields are listed below: 
 
+* customerCompany
+* customerContact
+* customerSite
+* shipmentMethod
 * status
-* type
-* defaultContact
-* parentCompany
-* ownershipType
-* timeZone
 * taxCode
-* billingTerms
-* invoiceTemplate
-* companyEntityType
-* billToCompany
-* billingSite
-* billingContact
-* invoiceDeliveryMethod
+* terms
+* vendorCompany
+* vendorContact
+* vendorSite
+* warehouse
 * currency
-* territoryManager
+* purchaseOrderItem/product
+* purchaseOrderItem/shipmentMethod
+* purchaseOrderItem/warehouse
+* purchaseOrderItem/warehouseBin
 
 ### Where Settings > Child Conditions
 _Optional_  
@@ -111,95 +115,128 @@ See [Common Task Settings](common-task-settings).
 A sample output file is shown below.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<Companies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Company>
-    <id>2</id>
-    <externalId>MYCOM</externalId>
+<PurchaseOrders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PurchaseOrder>
+    <id>1</id>
+    <externalId />
     <_info>
-      <dateEntered>2002-08-20T18:04:26Z</dateEntered>
-      <enteredBy>CONVERSION</enteredBy>
-      <lastUpdated>2018-05-01T14:33:38Z</lastUpdated>
+      <dateEntered>2011-03-23T18:48:40Z</dateEntered>
+      <enteredBy>Admin1</enteredBy>
+      <lastUpdated>2011-03-23T18:48:40Z</lastUpdated>
       <updatedBy>Admin1</updatedBy>
     </_info>
-    <identifier>YourCompany</identifier>
-    <name>Your Company</name>
+    <businessUnitId>10</businessUnitId>
+    <closedFlag>false</closedFlag>
+    <customerCompany>
+      <id>37</id>
+      <name>Arts Midwest</name>
+      <identifier>ArtsMidwest</identifier>
+    </customerCompany>
+    <customerSite>
+      <id>41</id>
+      <name>Main</name>
+    </customerSite>
+    <dateClosed xsi:nil="true" />
+    <dropShipCustomerFlag>true</dropShipCustomerFlag>
+    <enteredBy>Admin1</enteredBy>
+    <freightCost>0</freightCost>
+    <freightTaxTotal>0</freightTaxTotal>
+    <locationId>2</locationId>
+    <poDate>2011-03-23T00:00:00Z</poDate>
+    <poNumber>0</poNumber>
+    <salesTax>0</salesTax>
+    <shipmentDate xsi:nil="true" />
+    <shipmentMethod>
+      <id>8</id>
+      <name>Courier Service</name>
+    </shipmentMethod>
     <status>
       <id>1</id>
-      <name>Active</name>
+      <name>New</name>
     </status>
-    <type>
-      <id>5</id>
-      <name>Partner</name>
-    </type>
-    <addressLine1>test</addressLine1>
-    <addressLine2>test</addressLine2>
-    <city>test</city>
-    <state>MS</state>
-    <zip />
-    <country>
-      <id>1</id>
-      <name>United States</name>
-    </country>
-    <phoneNumber />
-    <faxNumber />
-    <website>http://www.example.com</website>
-    <territoryId>38</territoryId>
-    <marketId>23</marketId>
-    <accountNumber>MYCOM</accountNumber>
-    <defaultContact>
-      <id>77</id>
-      <name>Arnie Bellini</name>
-    </defaultContact>
-    <dateAcquired>2002-08-20T18:04:26Z</dateAcquired>
-    <annualRevenue>0</annualRevenue>
-    <numberOfEmployees xsi:nil="true" />
-    <timeZone>
-      <id>1</id>
-      <name>US Eastern</name>
-    </timeZone>
-    <leadFlag>false</leadFlag>
-    <unsubscribeFlag>false</unsubscribeFlag>
-    <calendarId xsi:nil="true" />
-    <vendorIdentifier />
-    <taxIdentifier />
+    <subTotal>200</subTotal>
     <taxCode>
       <id>11</id>
       <name>Standard VAT</name>
     </taxCode>
-    <billingTerms>
+    <taxFreightFlag>false</taxFreightFlag>
+    <taxPoFlag>false</taxPoFlag>
+    <terms>
       <id>2</id>
       <name>Net 10</name>
-    </billingTerms>
-    <billToCompany>
-      <id>2</id>
-      <name>Your Company</name>
-      <identifier>YourCompany</identifier>
-    </billToCompany>
-    <invoiceDeliveryMethod>
-      <id>1</id>
-      <name>Mail</name>
-    </invoiceDeliveryMethod>
-    <deletedFlag>false</deletedFlag>
-    <dateDeleted xsi:nil="true" />
-    <mobileGuid>f3bd951a-f535-446d-ba4e-fccb1f7ac954</mobileGuid>
+    </terms>
+    <total>200</total>
+    <updateShipmentInfo xsi:nil="true" />
+    <updateVendorOrderNumber xsi:nil="true" />
+    <vendorCompany>
+      <id>8</id>
+      <name>Angry Fox, Co.</name>
+      <identifier>AngryFoxCo</identifier>
+    </vendorCompany>
+    <vendorContact>
+      <id>20</id>
+      <name>Robert Storts</name>
+    </vendorContact>
+    <vendorInvoiceDate xsi:nil="true" />
+    <vendorSite>
+      <id>7</id>
+      <name>Main</name>
+    </vendorSite>
+    <currency>
+      <id>4</id>
+      <name>French Francs</name>
+      <symbol>FFr</symbol>
+      <isoCode>EUR</isoCode>
+    </currency>
     <customFields>
       <customField>
-        <id>3</id>
-        <caption>Sage Ref</caption>
-        <type>Text</type>
+        <id>1</id>
+        <caption>Sign Off</caption>
+        <type>Checkbox</type>
         <entryMethod>EntryField</entryMethod>
         <numberOfDecimals>0</numberOfDecimals>
-        <value>MYC001</value>
-      </customField>
-      <customField>
-        <id>6</id>
-        <caption>CustomNumber</caption>
-        <type>Number</type>
-        <entryMethod>EntryField</entryMethod>
-        <numberOfDecimals>2</numberOfDecimals>
-        <value>3.5</value>
       </customField>
     </customFields>
-  </Company>
-</Companies>
+    <purchaseOrderItems>
+      <purchaseOrderItem>
+        <id>1</id>
+        <_info>
+          <dateEntered>2011-03-23T18:48:40Z</dateEntered>
+          <enteredBy>Conversion</enteredBy>
+          <lastUpdated>2011-03-23T18:48:40Z</lastUpdated>
+          <updatedBy>Admin1</updatedBy>
+        </_info>
+        <backorderedFlag>false</backorderedFlag>
+        <canceledFlag>false</canceledFlag>
+        <closedFlag>false</closedFlag>
+        <dateCanceled xsi:nil="true" />
+        <dateCanceledUtc xsi:nil="true" />
+        <description>SPAM -ConnectFilter</description>
+        <displayInternalNotesFlag>false</displayInternalNotesFlag>
+        <expectedShipDate xsi:nil="true" />
+        <lineNumber>1</lineNumber>
+        <packingSlip>0</packingSlip>
+        <product>
+          <id>750</id>
+          <identifier>SPAM -ConnectFilter</identifier>
+        </product>
+        <purchaseOrderId>1</purchaseOrderId>
+        <quantity>20</quantity>
+        <receivedQuantity>20</receivedQuantity>
+        <shipDate xsi:nil="true" />
+        <shipmentMethod>
+          <id>8</id>
+          <name>Courier Service</name>
+        </shipmentMethod>
+        <tax>0</tax>
+        <unitCost>10</unitCost>
+        <unitOfMeasure>
+          <id>12</id>
+          <name>User-based</name>
+        </unitOfMeasure>
+        <receivedStatus>FullyReceived</receivedStatus>
+      </purchaseOrderItem>
+    </purchaseOrderItems>
+  </PurchaseOrder>
+</PurchaseOrders>
 ```

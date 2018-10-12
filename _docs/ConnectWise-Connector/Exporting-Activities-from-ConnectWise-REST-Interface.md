@@ -35,7 +35,15 @@ The name of the file to export the activities to.
 
 ### References To Fetch
 _Optional_  
-The exported data may include fields which reference other records in ConnectWise. If you specify the reference field names here, and the task will fetch the related records and include them in the exported data.
+The exported data may include fields which reference other records in ConnectWise. If you specify the reference field names here, and the task will fetch the related records and include them in the exported data. The supported fields are listed below: 
+
+* type
+* company
+* contact
+* status
+* assignedBy
+* assignTo
+* currency
 
 ### Where Settings > Child Conditions
 _Optional_  
