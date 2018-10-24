@@ -12,3 +12,22 @@ This task will export all available mobile users from My Mobile Workers in an XM
 ### Connection
 _Required_
 The My Mobile Workers connection to use. See the [Connecting to My Mobile Workers](connecting-to-my-mobile-workers) article for more information.
+
+## Example XML
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<MyMobileWorkersData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MobileUsers>
+    <MobileUser>
+      <username>ChrisBaker1</username>
+      <email>chris.baker@zynk.com</email>
+      <color>7D8E60</color>
+    </MobileUser>
+    <MobileUser>
+      <username>zynktester</username>
+      <email />
+      <color>000aff</color>
+    </MobileUser>
+  </MobileUsers>
+</MyMobileWorkersData>
+```
