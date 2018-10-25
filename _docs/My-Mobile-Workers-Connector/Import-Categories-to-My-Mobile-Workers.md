@@ -25,6 +25,7 @@ The file containing the records you wish to process.
 _Required_
 The file to write successful records to.
 
+## XML
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <MyMobileWorkersData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
