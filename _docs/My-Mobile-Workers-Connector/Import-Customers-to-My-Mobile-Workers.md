@@ -24,3 +24,22 @@ The file containing the records you wish to process.
 ### Success File
 _Required_
 The file to write successful records to.
+
+## XML
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<MyMobileWorkersData>
+	<Customers>
+		<Customer>
+			<name>Test Company</name>
+			<external_id>000001</external_id>
+			<contact_name>Test Person</contact_name>
+			<address_1>123 Test Road</address_1>
+			<address_3>Newcastle</address_3>
+			<address_4>Tyne and Wear</address_4>
+			<postcode>NE1 4XF</postcode>
+			<contact_number>01913037279</contact_number>
+		</Customer>
+	</Customers>
+</MyMobileWorkersData>
+```
