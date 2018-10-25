@@ -24,3 +24,20 @@ The file containing the records you wish to process.
 ### Success File
 _Required_
 The file to write successful records to.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<MyMobileWorkersData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Items>
+    <Item>
+      <external_id />
+      <name>This is a test product for Zynk documentation</name>
+      <category_id>
+        <name>DemoZynk</name>
+      </category_id>
+      <price>17.9</price>
+      <product_code>TEST0001</product_code>
+    </Item>
+  </Items>
+</MyMobileWorkersData>
+```
