@@ -28,3 +28,15 @@ The file to write successful records to.
 ### Update Status
 _Required_
 The status to update jobs to. List of Job Statuses is available from [MyMobileWorkers API documentation](https://docs.mymobileworkers.com/index.php?title=List_of_Job_Statuses).
+
+## XML
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<MyMobileWorkersData>
+	<Jobs>
+		<Job>
+	  		<job_number>YMQQ6Z</job_number>
+		</Job>
+	</Jobs>
+</MyMobileWorkersData>
+```
