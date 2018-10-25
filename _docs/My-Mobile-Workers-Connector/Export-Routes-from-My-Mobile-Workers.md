@@ -12,3 +12,17 @@ This task will export all available routes from My Mobile Workers in an XML form
 ### Connection
 _Required_
 The My Mobile Workers connection to use. See the [Connecting to My Mobile Workers](connecting-to-my-mobile-workers) article for more information.
+
+## XML
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<MyMobileWorkersData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Routes>
+    <Route>
+      <external_id>54</external_id>
+      <route_code>g</route_code>
+      <route_name>rhgi</route_name>
+    </Route>
+  </Routes>
+</MyMobileWorkersData>
+```
