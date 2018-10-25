@@ -5,7 +5,7 @@ title: Storage
 ---
 Zynk uses a number of files within the the Data directory; from caches of data, application variables, to logs and truth records.
 
-## Log Storage
+## [Log Storage](log-database)
 Filename: Log.sdf   
 Format: Microsoft SQL Server Compact
 
@@ -16,6 +16,8 @@ Zynk uses this file to record the history of each run of every workflow; the tas
 
 ### Application Logs
 The Log.sdf also stores any errors that occur in Zynk but not within a run of a workflow e.g. errors creating schedules.  These can be viewed by choosing Tools -> Application Log from the main toolbar.
+
+For more detailed information on the log storage please visit [here](log-database).
 
 ## Truth Storage
 Filename: Zynk.sdf  
