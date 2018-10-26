@@ -50,7 +50,7 @@ Please see below a list of available columns on the job table: -
 ###### Relationships
 Please see below a list of relationships between the job table and the other tables in the log database: -
 * __Job.WorkflowId -> Log.WorkflowId__
-* __Job.Id -> Log.Log.JobNumber__
+* __Job.Id -> Log.JobNumber__
 * __Job.Id -> JobItem.JobNumber__
 
 ### Job Item
