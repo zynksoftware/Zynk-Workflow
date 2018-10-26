@@ -19,7 +19,7 @@ The Log.sdf also stores any errors that occur in Zynk but not within a run of a 
 
 For more detailed information on the log storage please visit [here](log-database).
 
-## Truth Storage
+## [Truth Storage](truth-database)
 Filename: Zynk.sdf  
 Format: Microsoft SQL Server Compact
 

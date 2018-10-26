@@ -2,7 +2,7 @@
 slug: log-database
 title: Log Database
 ---
-This article will outline detailed information regarding the log database that Zynk uses. Typically, this is stored in the default data directory (C:\ProgramData\Zynk Software\Zynk\2.0), although if you have specified a bespoke data directory in Tools -> Options the database file will be located in that directory.
+This article will outline detailed information regarding the log database that Zynk uses. Typically, this is stored in the default data directory (C:\ProgramData\Zynk Software\Zynk\2.0\Data), although if you have specified a bespoke data directory in Tools -> Options the database file will be located in that directory.
 
 You can configure the archive of historical data in this database via your workflow. By default, this is set to retain the previous 90 days of workflow and application history.
 
@@ -12,7 +12,7 @@ You can interrogate your database using the free-to-use Zynk extension [Zynk Log
 
 ## Tables
 ### Log
-The log database will store both application and workflow level log messages. 
+The log table will store both application and workflow level log messages. 
 
 The following fields are exposed in the log table:
 
@@ -25,30 +25,30 @@ The following fields are exposed in the log table:
 * __Message__ This field will tell you the message that was logged by Zynk Workflow.
 
 ### Job
-The job database will store workflow level errors as the each message will relate to a single run of the workflow and the log messages associated with it.
+The job table will store workflow level errors as the each message will relate to a single run of the workflow and the log messages associated with it.
 
 The job table is linked to the job item table which stores each individual task result and the log messages associated with it. 
 
 These two tables are linked by the Id column from the job table and the JobNumber column from the job item table.
 
-The following fields are available in the job database:
+The following fields are available in the job table:
 * __WorkflowId__ This field is the unique identifier that is used to match a job to a workflow.
 * __StartDate__ This field indicates the date and time that a workflow run began.
 * __EndDate__ This field indicates the date and time that a workflow run ended.
 * __Result__ This field will give you the final outcome of a workflow event. For example, a successfully completed workflow would return the result 'Success'.
-* __Id__ This field is the unique identifier that is used to match a job item database entry to a job database entry.
+* __Id__ This field is the unique identifier that is used to match a job item table entry to a job table entry.
 * __RunType__ This field will indicate the way in which the workflow was run. For example, a scheduled workflow will be have the RunType set to '2'.
 * __ArchivePath__ This field will detail where the archive for the workflow run is stored - if an Archive Workflow Data task was completed within that workflow.
 
 ## Job Item
-The job item database will store task level log messages.
+The job item table will store task level log messages.
 
 The job item table is linked to the job table which stores each workflow result.
 
 These two tables are linked by the Id column from the job table and the JobNumber column from the job item table.
 
-The following fields are available in the job database:
-* __JobNumber__ This field is the unique identifier of the job database entry that the job item database entry is related to.
+The following fields are available in the job table:
+* __JobNumber__ This field is the unique identifier of the job table entry that the job item table entry is related to.
 * __TaskName__ This field will indicate the full name of the task associated with this job item.
 * __StartDate__ This field indicates the date and time that a task run began.
 * __EndDate__ This field indicates the date and time that a task run ended.
