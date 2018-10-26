@@ -11,6 +11,8 @@ Format: Microsoft SQL Server Compact
 
 The log file is created when Zynk is installed, and can be re-created by Zynk by closing Zynk, moving the Log.sdf from the Data folder and re-opening Zynk.  Any previous workflow or application logs will no longer be available to be viewed within Zynk.
 
+For more detailed information ont the log database and the data available visit the [Log Database](log-database) article.
+
 ### Workflow Logs
 Zynk uses this file to record the history of each run of every workflow; the tasks that were executed when the workflow ran, and any Info, Debug, Warning and Error logs outputted from the run.  You can view workflow logs from within Zynk by opening the required workflow and choosing the History tab.  From here you choose a specific run of the workflow, and view either all log entries, or choose an individual task to limit the entries.  You can control how long log entries are kept by using the History House Keeping setting in the Properties of each workflow file.
 
@@ -35,6 +37,8 @@ There are helper tasks within the Zynk library if granular control of this data 
  * [Insert Truth Record](insert-truth-record)
  * [Update Truth Record](update-truth-record)
  * [Upsert Truth Records](upsert-truth-records)
+
+For more detailed information ont the truth database and the data available visit the [Truth Database](truth-database) article.
 
 ## Variables
 Filename: variables.xml  
