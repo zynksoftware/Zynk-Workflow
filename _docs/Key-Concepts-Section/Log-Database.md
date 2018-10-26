@@ -29,6 +29,7 @@ Please see below a list of relationships between the log table and the other tab
 * __Log.WorkflowId -> Job.WorkflowId__
 * __Log.JobNumber -> Job.Id__
 * __Log.JobNumber -> JobItem.JobNumber__
+* __Log.TaskId -> JobItem.TaskId__
 
 ### Job
 The job table will store workflow level errors as the each message will relate to a single run of the workflow and the log messages associated with it.
