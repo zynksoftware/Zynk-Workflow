@@ -5,6 +5,8 @@ title: Upsert Truth Records
 ---
 This task will insert or update records in the truth table (as seen on the 'Data' tab) to an XML file. The truth table maps the ID numbers of records imported using Zynk between two systems. The 'Internal ID' is usually the ID of the record in Sage, and the external ID is the ID of the matching record from an external system such as a website or e-commerce platform. Note: the truth table is automatically populated when importing data into Sage, so this task is only required when not importing data into Sage.
 
+For more detailed information on the truth table please visit the [Truth Database](truth-database) page.
+
 ## Settings
 ### External ID
 _Required_  

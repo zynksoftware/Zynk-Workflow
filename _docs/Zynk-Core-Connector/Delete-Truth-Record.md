@@ -5,6 +5,8 @@ title: Delete Truth Record
 ---
 This task will delete a record from Zynk's truth table.
 
+For more detailed information on the truth table please visit the [Truth Database](truth-database) page.
+
 ## Settings
 ### Match Truth Records On
 _Required_  

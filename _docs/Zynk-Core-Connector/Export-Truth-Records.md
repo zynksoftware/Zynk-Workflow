@@ -7,6 +7,8 @@ This task will export records from the truth table (as seen on the 'Data' tab) t
 
 The truth table is used by Zynk to map the ID numbers of records imported using Zynk between two systems. The 'Internal ID' is usually the ID of the record in Sage, and the external ID is the ID of the matching record from an external system such as a website or e-commerce platform.
 
+For more detailed information on the truth table please visit the [Truth Database](truth-database) page.
+
 ## Settings
 ### Export Modified, New or All
 _Required_  

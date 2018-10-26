@@ -5,6 +5,8 @@ title: Insert Truth Record
 ---
 This task will insert a truth record into Zynk's truth table.
 
+For more detailed information on the truth table please visit the [Truth Database](truth-database) page.
+
 ## Settings
 ### Insert Fields
 _Required_  

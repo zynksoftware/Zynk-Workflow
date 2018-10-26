@@ -5,6 +5,8 @@ title: If Truth Record Exists
 ---
 This task will check whether a record exists in Zynk's truth table, and run a series of sub-tasks depending on the result.
 
+For more detailed information on the truth table please visit the [Truth Database](truth-database) page.
+
 ## Settings
 ### Equal To
 _Required_  
