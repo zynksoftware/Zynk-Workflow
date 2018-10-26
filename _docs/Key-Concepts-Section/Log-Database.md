@@ -14,8 +14,8 @@ You can interrogate your database using the free-to-use Zynk extension [Zynk Log
 ### Log
 The log table will store both application and workflow level log messages. 
 
-The following fields are exposed in the log table:
-
+###### Columns
+Please see below a list of available columns on the log table: -
 * __WorkflowId__ This field is the GUID related to the workflow that caused the error. This field is blank when the log message does not originate from a workflow.
 * __TaskId__ This field is the GUId related to the task that caused the error. This field is blank when the log message does not originate from a task.
 * __LogType__ This field indicates the type log that has been registered. For example, error messages have the LogType 'Error' or debug message have the LogType 'Debug'.
@@ -24,6 +24,12 @@ The following fields are exposed in the log table:
 * __Id__ This field is populated with a uniquely generated identifier.
 * __Message__ This field will tell you the message that was logged by Zynk Workflow.
 
+###### Relationships
+Please see below a list of relationships between the log table and the other tables in the log database: -
+* __Log.WorkflowId -> Job.WorkflowId__
+* __Log.JobNumber -> Job.Id__
+* __Log.JobNumber -> JobItem.JobNumber__
+
 ### Job
 The job table will store workflow level errors as the each message will relate to a single run of the workflow and the log messages associated with it.
 
@@ -31,7 +37,8 @@ The job table is linked to the job item table which stores each individual task 
 
 These two tables are linked by the Id column from the job table and the JobNumber column from the job item table.
 
-The following fields are available in the job table:
+###### Columns
+Please see below a list of available columns on the job table: -
 * __WorkflowId__ This field is the unique identifier that is used to match a job to a workflow.
 * __StartDate__ This field indicates the date and time that a workflow run began.
 * __EndDate__ This field indicates the date and time that a workflow run ended.
@@ -40,14 +47,21 @@ The following fields are available in the job table:
 * __RunType__ This field will indicate the way in which the workflow was run. For example, a scheduled workflow will be have the RunType set to '2'.
 * __ArchivePath__ This field will detail where the archive for the workflow run is stored - if an Archive Workflow Data task was completed within that workflow.
 
-## Job Item
+###### Relationships
+Please see below a list of relationships between the job table and the other tables in the log database: -
+* __Job.WorkflowId -> Log.WorkflowId__
+* __Job.Id -> Log.Log.JobNumber__
+* __Job.Id -> JobItem.JobNumber__
+
+### Job Item
 The job item table will store task level log messages.
 
 The job item table is linked to the job table which stores each workflow result.
 
 These two tables are linked by the Id column from the job table and the JobNumber column from the job item table.
 
-The following fields are available in the job table:
+###### Columns
+Please see below a list of available columns on the job item table: -
 * __JobNumber__ This field is the unique identifier of the job table entry that the job item table entry is related to.
 * __TaskName__ This field will indicate the full name of the task associated with this job item.
 * __StartDate__ This field indicates the date and time that a task run began.
@@ -56,3 +70,9 @@ The following fields are available in the job table:
 * __InCount__ The InCount will give you an exact total of the amount of records passed into the task. For example, if you have a file containing 10 sales orders you are importing into Sage 50, the InCount for your Import Sales Orders task will be 10.
 * __OutCount__ The OutCount will give you an exact total of the amount of records passed out of the task. For example, if you run an Export Stock Records task and 10 products are exported, the OutCount will be set to 10. The OutCount can also indicate how many records have been imported successfully.
 * __ErrorCount__ The ErrorCount will indicate how many records have failed to be processed. For example, if you try to import 5 sales orders into Sage and 1 fails. Your Import Sales Orders task will have an InCount of 5, an OutCount of 4 and an ErrorCount of 1.
+
+###### Relationships
+Please see below a list of relationships between the job item table and the other tables in the log database: -
+* __JobItem.TaskId -> Log.TaskId__
+* __JobItem.JobNumber -> Log.JobNumber__
+* __JobItem.JobNumber -> Job.Id__
