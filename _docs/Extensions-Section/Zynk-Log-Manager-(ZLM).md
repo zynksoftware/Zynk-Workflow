@@ -100,7 +100,7 @@ _* Connected to database_
 ![Zynk Log Manager Query Tab](/assets/images/extensions/ZLM3.png)  
 _* Connected to database_
 
-![Zynk Log Manager Query]((/assets/images/extensions/ZLM5.png)  
+![Zynk Log Manager Query](/assets/images/extensions/ZLM5.png)  
 _* Connected to database_
 
 ## CSV
