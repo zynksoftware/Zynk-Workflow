@@ -88,9 +88,38 @@ Once you have successfully executed a query in Zynk Log Manager (ZLM) you can ch
 
 If you choose to send an email with an attachment of the data, you can use the default Zynk Workflow SMTP connection, but we'd prefer you to use your own if possible.
 
-### Examples
+## Examples
 Below is an example of querying a Zynk database. Firstly, making sure I am connecting to the correct database file and then writing a query to return results from the database.
 
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e837a990336026d87184bf/file-xgRAH5aeZ5.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e837a990336026d87184bf/file-xgRAH5aeZ5.png)
 
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e837b290336026d87184c0/file-jCZhL1yUKI.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e837b290336026d87184c0/file-jCZhL1yUKI.png)
+
+## CSV
+
+```csv
+Id,Profile,Type,InternalId,ExternalId,Hash,Created,Modified,Purge,Collection
+164,d3f9adfe-6002-41f2-bb98-fd0bc6e6154c,Zynk.SAAS.Peoplevox.Objects.ItemType,1152593,01152593,757602046,26/09/2018 14:41:20,26/09/2018 14:41:20,,
+```
+
+## XML
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<QueryResults>
+  <QueryResult>
+    <Id>164</Id>
+    <Profile>d3f9adfe-6002-41f2-bb98-fd0bc6e6154c</Profile>
+    <Type>Zynk.SAAS.Peoplevox.Objects.ItemType</Type>
+    <InternalId>1152593</InternalId>
+    <ExternalId>01152593</ExternalId>
+    <Hash>757602046</Hash>
+    <Created>26/09/2018 14:41:20</Created>
+    <Modified>26/09/2018 14:41:20</Modified>
+    <Purge />
+  </QueryResult>
+</QueryResults>
+```
+
+## HTML
+![Zynk Log Manager HTML Example](/assets/images/extensions/ZLM4.png)
