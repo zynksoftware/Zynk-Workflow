@@ -45,7 +45,7 @@ The maximum size of the database your compacting to.
 ## Records Settings
 Please note, you must be connected to a database to configure and use these settings.
 
-### (Number) Keep the logs for the last 
+### Keep the logs for the last 
 _Optional_
 Optionally remove log files for a period of workflow runs or time.
 
