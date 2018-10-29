@@ -91,7 +91,9 @@ If you choose to send an email with an attachment of the data, you can use the d
 ## Examples
 Below is an example of querying a Zynk database. Firstly, making sure I am connecting to the correct database file and then writing a query to return results from the database.
 
-[![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e837a990336026d87184bf/file-xgRAH5aeZ5.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e837a990336026d87184bf/file-xgRAH5aeZ5.png)
+![Zynk Log Manager General Tab](/assets/images/extensions/ZLM1.png)
+![Zynk Log Manager Records Tab](/assets/images/extensions/ZLM2.png)
+![Zynk Log Manager Query Tab](/assets/images/extensions/ZLM3.png)
 
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e837b290336026d87184c0/file-jCZhL1yUKI.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e837b290336026d87184c0/file-jCZhL1yUKI.png)
 
