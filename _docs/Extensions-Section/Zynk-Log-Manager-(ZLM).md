@@ -16,10 +16,10 @@ If you enter the correct Sql CE version, the full path to your database file, yo
 
 If you enter all the above information and don't click connect, you can verify (test the connection), compact, repair and shrink your database.
 
-* __Verify__ - This method will test the connection details you have entered into ZLM. For further information please visit [MSDN](https://msdn.microsoft.com/en-us/library/a0a5czch(v=vs.100).aspx).
-* __Compact__ - This action will reclaim wasted space in the database by recreating the file. For further information please visit [MSDN](https://msdn.microsoft.com/en-us/library/system.data.sqlserverce.sqlceengine.compact(v=vs.100).aspx).
-* __Repair__ - This method will attempt to repair a broken database. For further information please visit [MSDN](https://msdn.microsoft.com/en-us/library/system.data.sqlserverce.sqlceengine.repair(v=vs.100).aspx).
-* __Shrink__ - This method will attempt to recover wasted space in the database by removing empty page files. For further information please visit [MSDN](https://msdn.microsoft.com/en-us/library/system.data.sqlserverce.sqlceengine.shrink(v=vs.100).aspx).
+* __Verify__ - This method will test the connection details you have entered into ZLM. For further information please visit [MSDN article](https://msdn.microsoft.com/en-us/library/a0a5czch(v=vs.100).aspx) related to verifying a database.
+* __Compact__ - This action will reclaim wasted space in the database by recreating the file. For further information please visit [MSDN article](https://msdn.microsoft.com/en-us/library/system.data.sqlserverce.sqlceengine.compact(v=vs.100).aspx) related to compacting a database.
+* __Repair__ - This method will attempt to repair a broken database. For further information please visit [MSDN article](https://msdn.microsoft.com/en-us/library/system.data.sqlserverce.sqlceengine.repair(v=vs.100).aspx) related to repairing a database.
+* __Shrink__ - This method will attempt to recover wasted space in the database by removing empty page files. For further information please visit [MSDN article](https://msdn.microsoft.com/en-us/library/system.data.sqlserverce.sqlceengine.shrink(v=vs.100).aspx) related to shrinking a database.
 
 ## General Settings
 ### Database
