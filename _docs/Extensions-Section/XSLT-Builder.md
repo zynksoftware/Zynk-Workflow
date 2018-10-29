@@ -3,6 +3,7 @@ slug: xslt-builder
 redirect_from: "/article/760-xslt-builder"
 title: XSLT Builder
 ---
+![XSLT Builder Icon](/assets/images/xslt.ico)  
 You can use the XSLT Builder extension to configure and run XSLT files. 
 
 You can populate the XML window (top left pane) with your input format, the XSLT window (top right pane) with your mapping, the parameters window (bottom left pane) with any mapping parameters you require and the bottom pane will show your results, or any errors that occur when running the transform.
