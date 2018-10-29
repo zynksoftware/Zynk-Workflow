@@ -46,37 +46,37 @@ The maximum size of the database your compacting to.
 Please note, you must be connected to a database to configure and use these settings.
 
 ### Keep the logs for the last 
-_Optional_
+_Optional_  
 Optionally remove log files for a period of workflow runs or time.
 
 * __Days or Runs__ select if you would like to remove records based on the number of days or the number of workflow runs.
 * __Number__ enter the amount of days or workflow runs you'd like to remove.
 
 ### Remove all logs
-_Optional_
+_Optional_  
 This setting will erase all log entries from the database when enabled.
 
 ### Remove orphaned logs
-_Optional_
+_Optional_  
 This setting will remove orphaned logs from the database when enabled. An orphaned log is an entry in either the Log or JobItem table that has no related entry in the Job table.
 
 ### Remove all truth entries
-_Optional_
+_Optional_  
 This setting will remove all truth entries from the truth database when enabled.
 
 ## Query Settings
 Please note, you must be connected to a database to configure and use these settings.
 
 ### Workflow
-_Optional_ 
+_Optional_  
 If you are looking to query a specific workflow, and are unsure how to do so, select a workflow from the drop down list and then select one of the available query templates.
 
 ### Query Template
-_Optional_
+_Optional_  
 Optionally use one of the available query templates and click 'Send to Query Editor' to run and edit the query.
 
 ### Query
-_Required_
+_Required_  
 Enter your query manually or select one of the available query templates and click 'Execute'. Your results will appear in the window below which you can export or send in csv, xml or html.
 
 ## Exporting and Sending Query Data
@@ -98,6 +98,9 @@ _* Not connected to database_
 _* Connected to database_
 
 ![Zynk Log Manager Query Tab](/assets/images/extensions/ZLM3.png)  
+_* Connected to database_
+
+![Zynk Log Manager Query]((/assets/images/extensions/ZLM5.png)  
 _* Connected to database_
 
 ## CSV
