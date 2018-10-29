@@ -3,6 +3,7 @@ slug: zip-search
 redirect_from: "/article/758-zip-search"
 title: Zip Search
 ---
+![Zip Search Icon](/assets/images/search.ico)  
 You can use the Zip Search extension to loop through a series of zip files to find a certain match.
 
 Typically, a Zynk workflow will finish with an Archive Workflow Data task. This task is built to clean up all the files used in the integration run and move them into a zip folder in your directory of choice.
