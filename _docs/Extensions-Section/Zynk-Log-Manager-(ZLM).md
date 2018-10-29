@@ -3,7 +3,7 @@ slug: zynk-log-manager-zlm
 redirect_from: "/article/759-zynk-log-manager-zlm"
 title: Zynk Log Manager (ZLM)
 ---
-![ZLM Icon](/assets/images/extensions/logmanager.ico)  
+![ZLM Icon](/assets/images/logmanager.ico)  
 
 You can use Zynk Log Manager (ZLM) to perform a variety of operations on your two Zynk databases (Zynk.sdf and Log.sdf). 
 
