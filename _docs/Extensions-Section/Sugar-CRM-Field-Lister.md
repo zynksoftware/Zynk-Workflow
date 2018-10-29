@@ -3,6 +3,7 @@ slug: sugar-crm-field-lister
 redirect_from: "/article/761-sugar-crm-field-lister"
 title: Sugar CRM Field Lister
 ---
+![Sugar CRM Field Lister Icon](/assets/images/sugar.ico)  
 The Sugar CRM Field Lister lists all modules and fields in your Sugar CRM system, including link fields (which aren't visible through Studio).
 
 If you enter a valid URL, Username and Password for Sugar CRM then you will be able to click the List Fields button and in the window below your results will appear.
