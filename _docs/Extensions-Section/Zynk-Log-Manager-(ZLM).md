@@ -92,10 +92,13 @@ If you choose to send an email with an attachment of the data, you can use the d
 Below is an example of querying a Zynk database. Firstly, making sure I am connecting to the correct database file and then writing a query to return results from the database.
 
 ![Zynk Log Manager General Tab](/assets/images/extensions/ZLM1.png)
-![Zynk Log Manager Records Tab](/assets/images/extensions/ZLM2.png)
-![Zynk Log Manager Query Tab](/assets/images/extensions/ZLM3.png)
+_* Not connected to database_
 
-[![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e837b290336026d87184c0/file-jCZhL1yUKI.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56e837b290336026d87184c0/file-jCZhL1yUKI.png)
+![Zynk Log Manager Records Tab](/assets/images/extensions/ZLM2.png)
+_* Connected to database_
+
+![Zynk Log Manager Query Tab](/assets/images/extensions/ZLM3.png)
+_* Connected to database_
 
 ## CSV
 
@@ -125,3 +128,4 @@ Id,Profile,Type,InternalId,ExternalId,Hash,Created,Modified,Purge,Collection
 
 ## HTML
 ![Zynk Log Manager HTML Example](/assets/images/extensions/ZLM4.png)
+_* Right click and open image in new tab for better viewing_
