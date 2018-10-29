@@ -89,7 +89,7 @@ Once you have successfully executed a query in Zynk Log Manager (ZLM) you can ch
 If you choose to send an email with an attachment of the data, you can use the default Zynk Workflow SMTP connection, but we'd prefer you to use your own if possible.
 
 ## Examples
-Below is an example of querying a Zynk database. Firstly, making sure I am connecting to the correct database file and then writing a query to return results from the database.
+Please see below a series of screenshots of the Zynk Log Manager (ZLM). 
 
 ![Zynk Log Manager General Tab](/assets/images/extensions/ZLM1.png)  
 _* Not connected to database_
