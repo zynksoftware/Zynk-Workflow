@@ -3,6 +3,8 @@ slug: zynk-log-manager-zlm
 redirect_from: "/article/759-zynk-log-manager-zlm"
 title: Zynk Log Manager (ZLM)
 ---
+![ZLM Icon](/assets/images/extensions/logmanager.ico)  
+
 You can use Zynk Log Manager (ZLM) to perform a variety of operations on your two Zynk databases (Zynk.sdf and Log.sdf). 
 
 The two database files are located in your data directory, typically this is C:\ProgramData\Zynk Software\Zynk\2.0, although if you have configured a custom data directory in 'Tools -> Options' your database files will be located there. You can browse to your custom data directory if necessary.
