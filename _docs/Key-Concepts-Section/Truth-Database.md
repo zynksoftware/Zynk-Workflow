@@ -1,6 +1,6 @@
 ---
-slug: job-database
-title: Job Database
+slug: truth-database
+title: Truth Database
 ---
 This article will outline detailed information regarding the truth database that Zynk uses. Typically, this is stored in the default data directory (C:\ProgramData\Zynk Software\Zynk\2.0\Data), although if you have specified a bespoke data directory in Tools -> Options the database file will be located in that directory.
 
