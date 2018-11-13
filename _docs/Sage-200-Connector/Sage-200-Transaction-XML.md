@@ -30,6 +30,7 @@ Any Sage fields not documented below are not directly supported with our imports
 | BankReference |  Bank A/C Ref. | string | 8 | Optional |
 | DiscountValue  |  Discount | 0 | double | - | Optional |
 | QueryFlag  |  Query | T | string | 1 | Optional |
+| ExchangeRate* | Exchange Rate | 1.145 | double | - | Optional |
 
 *   TransactionType* - See supported types below
 *   CustomerId - The A/C Ref can be looked up based on CustomerId if the customer or supplier was imported into Sage using Zynk, and an Id was provided at the time of import.
@@ -39,6 +40,7 @@ Any Sage fields not documented below are not directly supported with our imports
 *   TaxRate* - Defaults to the rate associated with the TaxCode
 *   AnalysisCode* - Only imported if configured within Sage 200
 *   VatInclusive* - Used to net down the transaction if required
+*   ExchangeRate* - Will use the exchange rate configured in Sage for the currency associated with the customer account if not provided
 
 Sample import file for creating a sales invoice transaction:
 
@@ -64,6 +66,7 @@ Sample import file for creating a sales invoice transaction:
       <TaxRate>20</TaxRate>
       <AnalysisCode>AC1</AnalysisCode>
       <QueryFlag>T</QueryFlag>
+      <ExchangeRate>1.145</ExchangeRate>
     </Transaction>
   </Transactions>
 </Company>
