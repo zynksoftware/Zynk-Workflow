@@ -1,16 +1,17 @@
 ---
-slug: uploading-feeds-to-amazon-marketplace
-redirect_from: "/article/148-uploading-feeds-to-amazon-marketplace"
-title: Uploading Feeds to Amazon Marketplace
+slug: importing-feeds-to-amazon-marketplace
+title: Importing Feeds to Amazon Marketplace
 ---
-This task will submit any Amazon XML feed.
-
-You may want to consider using the [Import Feeds](importing-feeds-to-amazon-marketplace) task as an alternative to this one. Import Feeds encapsulates the whole process of submitting a feed to Amazon and getting back the results.
+This task encapsulates the whole process of submitting XML feeds to Amazon, waiting for Amazon to process them, and retrieving the results.
 
 ## Settings
 ### API Call Delay
 _Required_   
 Specify the delay in milliseconds to use between calls to Amazon. Amazon throttle requests to their services, so if sending a large data set you may need to increase this limit.
+
+### Channels
+_Required_  
+Choose at least one marketplace to send the XML feed to. For information about how Amazon handles feeds sent to multiple marketplaces, see [Using Multiple Marketplaces](http://docs.developer.amazonservices.com/en_UK/feeds/Feeds_EU_Global_Seller.html).
 
 ### Connection
 _Required_  
@@ -20,19 +21,25 @@ The Amazon Marketplace Connection to use. See the [Connecting to Amazon Marketpl
 _Required_  
 Choose from the list of supported feeds for upload. We support all available types of the Feeds API.
 
+### Fail File
+_Required_  
+The name of the file to write failed records to. This will be written in the same XML format as the input file.
+
 ### Input File
 _Required_  
 The name of the file containing the data feed in XML format.
 
-### Output File
-_Optional_  
-Optional output for the response of the upload. 
+### Success File
+_Required_  
+The name of the file to write successfully processed records to. This will be written in the same XML format as the input file.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).
 
 ## Example
 A sample input file is shown below. This contains data for the '_POST_PRODUCT_DATA_' feed type.
+
+Documentation for Amazon's XML feed formats can be found in [Selling on Amazon Guide to XML](https://images-na.ssl-images-amazon.com/images/G/01/rainier/help/XML_Documentation_Intl.pdf).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

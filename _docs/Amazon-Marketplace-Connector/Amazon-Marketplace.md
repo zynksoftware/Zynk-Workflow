@@ -12,7 +12,8 @@ Zynk currently supports the UK, US, CA, DE, ES, FR and IT marketplaces.
 ## Tasks
 * [Downloading Orders from Amazon Marketplace](downloading-orders-from-amazon-marketplace)
 * [Exporting Reports from Amazon Marketplace](exporting-reports-from-amazon-marketplace)
-* [Uploading Feeds to Amazon Marketplace](uploading-feeds-to-amazon-marketplace)
+* [Importing Feeds to Amazon Marketplace](importing-feeds-to-amazon-marketplace)
+* [Submitting Feeds to Amazon Marketplace](uploading-feeds-to-amazon-marketplace)
 * [Uploading Inventory Feeds to Amazon Marketplace](uploading-inventory-feeds-to-amazon-marketplace)
 * [Uploading Price Feeds to Amazon Marketplace](uploading-price-feeds-to-amazon-marketplace)
 
