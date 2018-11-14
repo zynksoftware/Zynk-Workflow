@@ -1,3 +1,7 @@
+---
+slug: quickflw-product-xml
+title: Quickflw Product XML
+---
 The [Upload Products into Quickflw]() task allows you to create new and update existing products in Quikflw. The XML format required is provided below. Any fields not documented here are not supported within our imports to Quikflw.
 
 ## Product
