@@ -1,5 +1,5 @@
 ---
-slug: webCRM-quotation-line-xml
+slug: webcrm-quotation-line-xml
 title: webCRM Quotation Line XML
 ---
 Quotation lines are used to track products sold on deliveries.  The
