@@ -25,7 +25,7 @@ Any Sage fields not documented below are not directly supported with our imports
 | TaxAmount  | Tax Value  | 20 | double | - | Optional |
 | TaxCode* | Tax Code  | 1 | int | - | Optional |
 | TaxRate* |  N/A | 20 | double | - | Optional |
-| AnalysisCode* | Transaction Analysis  | AC1 | string | 60 | Optional |
+| AnalysisCode* | Transaction Analysis  | AC1 | string | 20 | Optional |
 | VatInclusive* |  N/A | false | bool | - | Optional |
 | BankReference |  Bank A/C Ref. | string | 8 | Optional |
 | DiscountValue  |  Discount | 0 | double | - | Optional |
