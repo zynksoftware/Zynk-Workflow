@@ -16,6 +16,7 @@ Sample import file for creating a basic order:
       <Id>123</Id>
       <AccountReference>JOE001</AccountReference>
       <SalesOrderDate>2014-01-01T00:00:00</SalesOrderDate>
+      <VatInclusive>true</VatInclusive>
       <SalesOrderAddress>
         <Title>Mr</Title>
         <Forename>Joe</Forename>
@@ -126,6 +127,7 @@ Depending on the settings of the import task you can set the Order no of the cre
       <SalesOrderType>ProductInvoice</SalesOrderType>
       <Currency>EUR</Currency>
       <ForeignRate>1.5</ForeignRate>
+      <VatInclusive>true</VatInclusive>
       <SalesOrderAddress>
         <Title>Mr</Title>
         <Forename>Joe</Forename>
@@ -172,6 +174,7 @@ If a delivery address is provided we will use the data in the XML, otherwise we 
 | Notes 1 | Notes1 | Website 1 | string | 60 | Optional  |
 | Notes 2 | Notes2 | Leave next door | string | 60 | Optional  |
 | Notes 3 | Notes3 | Paid by PayPal  | string  | 60 | Optional   |
+| VatInclusive | VatInclusive | true | boolean | - | Optional |
 | Due  | DespatchDate | 2014-01-01T00:00:00 | datetime | - | Optional |
 | Custom Field 1* | Custom1 | Royal Mail Tracked | string | 60 | Optional |
 | Custom Field 2* | Custom2 | Next Day | string | 60 | Optional |
@@ -179,6 +182,7 @@ If a delivery address is provided we will use the data in the XML, otherwise we 
 
 *   Company* - If this field is not set in the XML, it is built up of Title, Forename, Middlename, Surname and Suffix.
 *   Custom Field* - These fields can be renamed via the settings in Sage, so may appear differenly. The defaults are Analysis1, Analysis2 and Analysis3.
+*  Vat Inclusive* - If not provided will default to the relevant VAT settings in Sage
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
