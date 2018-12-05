@@ -55,7 +55,6 @@ Sample input file, for full documentation and samples see [Sage 50 UK Transactio
       <NetAmount>12.56</NetAmount>
       <TaxCode>1</TaxCode>
       <BankReference>1200</BankReference>
-      <ExchangeRate xsi:nil="true" />
     </Transaction>
   </Transactions>
 </Company>
