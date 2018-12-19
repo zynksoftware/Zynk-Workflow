@@ -10,6 +10,14 @@ This task will import despatch notes in to your Sage 50 Company that are supplie
 _Required_  
 The connection to Sage 50 UK to use.  See the [Connecting to Sage 50 UK](connecting-to-sage-50-uk) article if you require more information on how to create/manage connections.
 
+### Auto Allocate Stock
+_Required_  
+Set to true to automatically allocate stock to the sales orders if there is not enough stock already allocated. Only the minimum amount required for the despatch will be allocated. 
+
+### Auto Post Invoices
+_Required_  
+Set to true to automatically post the generated invoices to the ledger. This will update the customer's account balance to reflect the new invoice.
+
 ### Payment Type
 _Required_  
 The default payment type. If a payment type is not specified in the input XML file, the payment type selected in this setting will be used. It can be set to either Sales Receipt or Sales Receipt on Account.
