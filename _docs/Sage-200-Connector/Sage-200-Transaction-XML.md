@@ -13,6 +13,7 @@ Any Sage fields not documented below are not directly supported with our imports
 | CustomerId* | A/C ref  | 1 | string | 255 | Required for sales and purchase transaction types, unless an AccountReference is provided |
 | AccountReference | A/C ref  | ANDREW | string | 8 | Required for sales and purchase transaction types, unless a CustomerId is provided |
 | TransactionDate  | Trans. Date  | 2011-01-01T11:11:11 | dateTime | - | Optional |
+| DueDate | Due Date  | 2011-01-01T11:11:11 | dateTime | - | Optional |
 | NominalCode  | Nominal A/C No.  | 4000 | string | 8 | Optional |
 | CostCentre  | Nominal CC  | 01 | string | 3 | Optional |
 | Department  | Nominal Dept.  | 01 | string | 3 | Optional |
@@ -33,8 +34,8 @@ Any Sage fields not documented below are not directly supported with our imports
 | ExchangeRate* | Exchange Rate | 1.145 | double | - | Optional |
 
 *   TransactionType* - See supported types below
-*   CustomerId - The A/C Ref can be looked up based on CustomerId if the customer or supplier was imported into Sage using Zynk, and an Id was provided at the time of import.
-
+*   CustomerId* - The A/C Ref can be looked up based on CustomerId if the customer or supplier was imported into Sage using Zynk, and an Id was provided at the time of import.
+*   DueDate - If not specified, the due date will be set automatically based on the customer's payment terms.
 *   TaxCode* - Defaults to trader default if not provided. Tax can't be applied to SalesReceipt, SalesPayment, PurchaseReceipt, PurchasePayment, JournalCredit and JournalDebit transactions, the exempt tax code will always be used.
 
 *   TaxRate* - Defaults to the rate associated with the TaxCode
