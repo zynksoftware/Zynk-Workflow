@@ -7,7 +7,7 @@ Each task within the Quikflw connector requires a connection to Quikflw, so you 
 
 You will see a user interface like the one below, requesting your Quikflw Api key.
 
-![Quikflw Connection](http://www.zynk.com/images/v2/jobadder_connection.png)
+![Quikflw Connection](http://www.zynk.com/images/v2/quikflw/quikflw_connection.png)
 
 Once you have provided your Quikflw Api Key, click 'Finish' to create the connection.
 
