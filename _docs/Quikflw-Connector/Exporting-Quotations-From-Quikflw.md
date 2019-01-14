@@ -3,7 +3,7 @@ slug: exporting-quotations-from-quikflw
 title: Exporting Quotations from Quikflw
 ---
 
-This task will export quotations from Quikflw in [Quikflw Quotation XML]() format to a file.
+This task will export quotations from Quikflw in [Quikflw Quotation XML](quikflw-quotation-xml) format to a file.
 
 ## Settings
 ### Quikflw Connection
