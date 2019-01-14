@@ -74,6 +74,7 @@ Example input file, for detailed information see [Peoplevox Sales Order XML](peo
 		<PaymentMethod>1</PaymentMethod>
 		<ServiceType></ServiceType>
 		<ChannelName>Website</ChannelName>
+		<Site>PrimarySite</Site>
 		<SalesOrderItems>
 			<SalesOrderItem>
 				<ItemCode>PROD001</ItemCode>

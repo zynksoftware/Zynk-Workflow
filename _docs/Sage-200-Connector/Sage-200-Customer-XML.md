@@ -209,28 +209,28 @@ The information below can be specified on the Trading tab in Sage.
 
 | Sage Field | XML Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| Country Code | Country | GB | string | 2 | Optional | Use the 2 letter ISO country code as the value. |
+| Country Code | CountryCode | GB | string | 2 | Optional | Use the 2 letter ISO country code as the value. |
 | Default Tax Code | TaxCode | 1 | int | - | Optional | Will use the default from the Sales Ledger settings if not provided. |
 | Use Tax Code as SOP Default | OverrideTaxCode | false | bool | - | Optional |
 | Tax Number | VatNumber | 796 5763 59 | string | 30 | Optional |
+| Keep Transactions For | KeepTransactionsFor | 24 | int | - | Optional | |
 | Order priority | OrderPriority | A | string | 1 | Optional | |
 | Default Nominal Code - Account Number | NominalCode | 4000 | string | 30 | Optional | Will use the default from Sage if not provided. |
 | Default Nominal Code - CC | CostCentre | INT | string | 30 | Optional | Will use the default from Sage if not provided. |
 | Default Nominal Code - Dept | Department | Dep | string | 30 | Optional | Will use the default from Sage if not provided. |
-| Analysis Code | Name | Web Customer | string | 60 | Optional | If the analysis code does not already exist in Sage, it will not be set on the customer. |
-| Value | Value | true | string | 60 | Optional | If the analysis code does not already exist in Sage, it will not be set on the customer. |
+| Analysis Codes - Name | Name | Web Customer | string | 60 | Optional | If the analysis code does not already exist in Sage, it will not be set on the customer. |
+| Analysis Codes - Value | Value | true | string | 60 | Optional | If the analysis code does not already exist in Sage, it will not be set on the customer. |
 
 ```xml
 <?xml version="1.0"?>
 <Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Customers>
     <Customer>
-      <CustomerInvoiceAddress>
-        <Country>GB</Country>
-      </CustomerInvoiceAddress>
+      <CountryCode>GB</CountryCode>
       <TaxCode>4</TaxCode>
       <OverrideTaxCode>false</OverrideTaxCode>
       <VatNumber>796 5763 59</VatNumber>
+      <KeepTransactionsFor>24</KeepTransactionsFor>
       <OrderPriority>A</OrderPriority>
       <NominalCode>4000</NominalCode>
       <CostCentre>INT</CostCentre>

@@ -1,6 +1,6 @@
 ---
-slug: quickflw-quotation-xml
-title: Quickflw Quotation XML
+slug: quikflw-quotation-xml
+title: Quikflw Quotation XML
 ---
 
 ## Unique Identifier

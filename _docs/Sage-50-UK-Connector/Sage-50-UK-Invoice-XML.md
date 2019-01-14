@@ -263,7 +263,7 @@ We support importing stock items, service items, special lines (S1, S2 and S3) a
 
 
 
-| Sage Field | XML Field | Example | Field Type | Field Length | Input | Notes  
+| Sage Field | XML Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | Product Code | Sku | PROD001 | string | 30 | Required\* |  |
 | Description  | Name | Sample Product | string | 60 | Optional   | If not specified, Zynk will use the description from the product record.  |
@@ -278,6 +278,7 @@ We support importing stock items, service items, special lines (S1, S2 and S3) a
 | Nominal Code | NominalCode | 4000 | string | 8 | Optional | If not specified, Zynk will use the default nominal code associated with the product, or the default nominal                code associated with the customer if the 'Use Default Nominal Code for Sales' option is enabled on the customer                record.  |
 | Tax Code | TaxCode   | 1 | int | 2 | Optional | If not specified, Zynk will use the default tax code associated with the product, or the default tax code associated                with the customer if the 'Use Default Tax Code for Sales' option is enabled on the customer record.  |
 | Department | Department | 1 | int | 2 | Optional |  |
+| Make negative | IsNegativeLine | false | boolean | - | Optional | The unit price should always be specified as a positive number. Set this to true to import the unit price as a negative amount. |
 | Line Information | Reference | Sample Job | string | 60 | Optional |  |
 
  * Sku* - Required when importing the following InvoiceType:-
@@ -305,6 +306,7 @@ We support importing stock items, service items, special lines (S1, S2 and S3) a
           <NominalCode>4000</NominalCode>
           <TaxCode>1</TaxCode>
           <Department>1</Department>
+          <IsNegativeLine>false</IsNegativeLine>
           <Reference>Sample Job</Reference>
         </Item>
       </InvoiceItems>
