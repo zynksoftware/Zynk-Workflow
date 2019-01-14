@@ -21,6 +21,7 @@ The [Upload Products into Quickflw]() task allows you to create new and update e
 | Labour Rate | LabourRate | 50 | double | |
 
 ### Tax Codes
+
 | Quikflw Fields | XML Field | Example | Field Type |
 | --- | --- | --- | --- |
 | Tax Code Sales | SalesTaxCode/Value | 20.0% S | string |
