@@ -10,7 +10,7 @@ If a product with a matching product code exists within Quikflw, the task will u
 ### Settings
 ## Connection
 _Required_  
-The connection to Quikflw to use. See the [Connecting to Quikflw] article if you require further information on how to create/manage the connection to Quikflw.
+The connection to Quikflw to use. See the [Connecting to Quikflw](connecting-to-quikflw) article if you require further information on how to create/manage the connection to Quikflw.
 
 ## Fail File
 _Required_   
