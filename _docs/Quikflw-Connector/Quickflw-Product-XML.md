@@ -4,7 +4,7 @@ title: Quickflw Product XML
 ---
 The [Upload Products into Quickflw]() task allows you to create new and update existing products in Quikflw. The XML format required is provided below. Any fields not documented here are not supported within our imports to Quikflw.
 
-## Product
+## Quikflw Product
 
 | Quikflw Field | XML Field | Example | Field Type | Notes |
 | --- | --- | --- | --- | --- |
@@ -19,7 +19,6 @@ The [Upload Products into Quickflw]() task allows you to create new and update e
 | Labour Name | LabourName | Test | string | |
 | Labour Hours | LabourHours | 3 | double | |
 | Labour Rate | LabourRate | 50 | double | |
-| Use Price Breaks | UsePriceBreaks | false | bool | |
 
 ### Tax Codes
 | Quikflw Field | XML Field | Example | Field Type |
@@ -28,7 +27,7 @@ The [Upload Products into Quickflw]() task allows you to create new and update e
 | Purchases Tax Code | PurchasesTaxCode/Value | No VAT | string | | 
 
 #### Sales Tax Code
-Quickflw supports tax codes. These to be setup by navigating to the settings cog on the top right and selecting 'Account Settings'.
+Quickflw supports tax codes, they can be setup by navigating to the settings cog on the top right and selecting 'Account Settings'.
 
 ```xml
 <SalesTaxCode>
@@ -45,7 +44,7 @@ Quickflw supports tax codes. These to be setup by navigating to the settings cog
 ```
 
 ### Account Codes
-Quickflw supports account codes. These to be setup by navigating to the settings cog on the top right and selecting 'Account Settings'.
+Quickflw supports account codes, they can be setup by navigating to the settings cog on the top right and selecting 'Account Settings'.
 
 | Quikflw Field | XML Field | Example | Field Type |
 | --- | --- | --- | --- | --- |
@@ -69,7 +68,7 @@ Quickflw supports account codes. These to be setup by navigating to the settings
 ```
 
 ### Custom Fields
-Quickflw allows custom fields to be setup by navigating to the settings cog on the top right and selecting 'Item Settings'.
+Quickflw allows custom fields configured for products, they can be setup by navigating to the settings cog on the top right and selecting 'Item Settings'.
 | Quikflw Field | XML Field | Example | Field Type |
 | --- | --- | --- | --- | --- |
 | Custom Field Label | CustomField/Label | Manufacturer | string | | 
@@ -83,6 +82,22 @@ Quickflw allows custom fields to be setup by navigating to the settings cog on t
     </CustomField>
 </CustomFields>
 ```
+
+### Prices
+Quikflw supports multiple prices for products, including different prices for different price lists. They can be configured by navigating to the settings cog on the top right and selecting 'Business Settings' -> 'Price Lists'.
+
+```xml
+<Prices>
+    <Price>
+        <PriceList>
+            <Value>USD</Value>
+        </PriceList>
+        <Price>1.99</Price>
+        <BreakPoint>0</BreakPoint>
+    </Price>
+</Prices>
+```
+
 #### Minimal Product Upload
 The following fields are required by Quikflw to upload products:
 ```xml
@@ -95,7 +110,7 @@ The following fields are required by Quikflw to upload products:
 </Products>
 ```
 
-#### Sample Product Upload
+#### Sample Product Import
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
@@ -110,7 +125,6 @@ The following fields are required by Quikflw to upload products:
     <LabourName>Test Labour</LabourName>
     <LabourHours>10</LabourHours>
     <LabourRate>1</LabourRate>
-    <UsePriceBreaks>false</UsePriceBreaks>
     <SalesTaxCode>
         <Id>ac3eb80c-a83d-4b64-8516-549a97813b8e</Id>
         <Value>20.0% S</Value>
