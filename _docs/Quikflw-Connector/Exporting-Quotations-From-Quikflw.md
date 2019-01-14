@@ -45,37 +45,64 @@ Sample output file, for full documentation and samples see [Quikflw Quotation XM
 <?xml version="1.0" encoding="utf-8"?>
 <Quotations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Quotation>
-    <Id>9138b32c-eb27-4199-aa05-061c30e86a31</Id>
+    <Id>1ec58ac3-95d8-4373-ade4-7123496e0549</Id>
     <Client>
-      <Id>7cf70a56-eadc-45f0-8222-3749411ceab1</Id>
-      <Value>Sample Client 1</Value>
+      <Id>7cbdb9ea-fa4c-4058-804d-3d7c55a6d4b7</Id>
+      <Name>Zynk Software Ltd</Name>
+      <Address1>i6 Charlotte Square</Address1>
+      <Address2>6-8 Charlotte Square</Address2>
+      <Town>Newcastle upon Tyne</Town>
+      <County>Tyne &amp; Wear</County>
+      <Postcode>NE1 4X</Postcode>
+      <Country>United Kingdom</Country>
+      <Email>andrew.gittus@zynk.com</Email>
+      <Telephone>01913037279</Telephone>
+      <Website>http://zynk.com</Website>
+      <AccountReference>ZYNK</AccountReference>
+      <Created>2018-12-21T11:25:45.647</Created>
     </Client>
     <Contact>
-      <Id>e290edb6-2b51-4c67-8b5f-a13462e3afc6</Id>
-      <Value>Mr Donald Draper</Value>
+      <Id>03ef3dcd-cebc-4549-b978-89ea4e2aa8b4</Id>
+      <Client>
+        <Id>7cbdb9ea-fa4c-4058-804d-3d7c55a6d4b7</Id>
+        <Value>Zynk Software Ltd</Value>
+      </Client>
+      <Title>Sales</Title>
+      <FirstName>Zynk</FirstName>
+      <LastName>Sales</LastName>
+      <Position>Sales</Position>
+      <Telephone>01913037279</Telephone>
+      <Email>sales@zynk.com</Email>
+      <Address1 />
+      <Address2 />
+      <Address3 />
+      <Town />
+      <County />
+      <Postcode />
+      <Country />
     </Contact>
     <Status>
-      <Id>1</Id>
-      <Value>Draft</Value>
+      <Id>7</Id>
+      <Value>Completed</Value>
     </Status>
     <Reference>Q</Reference>
-    <ClientReference />
-    <Number>1000</Number>
+    <ClientReference>Quikflw</ClientReference>
+    <Number>1107</Number>
     <Version>1</Version>
-    <Description>Sample Quotation 1</Description>
-    <Note />
-    <Discount>0</Discount>
-    <Margin>3.47</Margin>
-    <TotalVat>44</TotalVat>
-    <TotalMargin>10</TotalMargin>
-    <TotalCost>110</TotalCost>
-    <TotalNet>320</TotalNet>
-    <TotalPrice>364</TotalPrice>
-    <TotalLabour>200</TotalLabour>
-    <TotalLabourCost>20</TotalLabourCost>
-    <TotalLabourHours>2</TotalLabourHours>
-    <TotalProfit>190</TotalProfit>
-    <Profit>59.375</Profit>
+    <Description>Integration Development</Description>
+    <Note>Client notes</Note>
+    <Discount>4.55</Discount>
+    <Margin>90.48</Margin>
+    <TotalVat>21</TotalVat>
+    <TotalMargin>95</TotalMargin>
+    <TotalCost>0</TotalCost>
+    <TotalNet>105</TotalNet>
+    <TotalPrice>126</TotalPrice>
+    <TotalLabour>10</TotalLabour>
+    <TotalLabourCost>0</TotalLabourCost>
+    <TotalLabourHours>10</TotalLabourHours>
+    <TotalProfit>105</TotalProfit>
+    <Profit>100</Profit>
     <PriceList>
       <Id>de4731b0-bf42-4995-bad5-d4b10e69fe8c</Id>
       <Value>GBP</Value>
@@ -84,14 +111,35 @@ Sample output file, for full documentation and samples see [Quikflw Quotation XM
       <Id>1</Id>
       <Value>GBP</Value>
     </Currency>
+    <PoNumber>123456789</PoNumber>
+    <AccountReference>ZYNK</AccountReference>
     <CustomFields />
-    <InvoiceAddress>Sample Client 1, 40 Brunswick Square, Bloomsbury, London, WC1N 1AZ</InvoiceAddress>
-    <DeliveryAddress>Sample Client 1, 40 Brunswick Square, Bloomsbury, London, WC1N 1AZ</DeliveryAddress>
-    <DateQuoted>2018-11-01T00:00:00</DateQuoted>
-    <NumberDaysValid>0</NumberDaysValid>
-    <Created>2018-11-01T10:29:49.757</Created>
-    <LastUpdated>2018-11-05T11:46:21.723</LastUpdated>
-    <EstimatedDelivery>2018-11-01T00:00:00</EstimatedDelivery>
+    <DeliveryAddress>
+      <Address1>i6 Charlotte Square</Address1>
+      <Address2>6-8 Charlotte Square</Address2>
+      <Country>United Kingdom</Country>
+      <County>Tyne &amp; Wear</County>
+      <Name>Zynk Software Ltd</Name>
+      <Postcode>NE1 4X</Postcode>
+      <Reference />
+      <Town>Newcastle upon Tyne</Town>
+    </DeliveryAddress>
+    <InvoiceAddress>
+      <Address1>i6 Charlotte Square</Address1>
+      <Address2>6-8 Charlotte Square</Address2>
+      <Country>United Kingdom</Country>
+      <County>Tyne &amp; Wear</County>
+      <Name>Zynk Software Ltd</Name>
+      <Postcode>NE1 4X</Postcode>
+      <Reference />
+      <Town>Newcastle upon Tyne</Town>
+    </InvoiceAddress>
+    <DateQuoted>2018-12-21T00:00:00</DateQuoted>
+    <NumberDaysValid>30</NumberDaysValid>
+    <Created>2018-12-21T11:32:00.48</Created>
+    <CreatedBy>projects@zynk.com</CreatedBy>
+    <LastUpdated>2019-01-14T09:26:52.68</LastUpdated>
+    <EstimatedDelivery>2018-12-21T00:00:00</EstimatedDelivery>
     <IsApproved>false</IsApproved>
     <IsClientDraft>false</IsClientDraft>
     <AllowClientToCustomize>false</AllowClientToCustomize>
@@ -101,53 +149,61 @@ Sample output file, for full documentation and samples see [Quikflw Quotation XM
     <IsStripePaid>false</IsStripePaid>
     <Sections>
       <Section>
-        <Id>c79e6dca-6883-4789-bdca-9dc7987bd0fb</Id>
+        <Id>f3f881f2-dda0-4368-9e8e-292cb3fe0188</Id>
+        <Name>Integration Development</Name>
+        <Note>Sage 50 &amp;amp; Quikflw</Note>
         <IncludeInTotal>true</IncludeInTotal>
         <HideFromClient>false</HideFromClient>
         <IsRequired>false</IsRequired>
         <AllowClientToCustomize>false</AllowClientToCustomize>
         <SortPos>0</SortPos>
         <CurrencySymbol>£</CurrencySymbol>
-        <Discount>0</Discount>
-        <Margin>2.38</Margin>
-        <TotalLabour>100</TotalLabour>
-        <TotalLabourCost>10</TotalLabourCost>
-        <TotalLabourHours>1</TotalLabourHours>
-        <TotalVat>22</TotalVat>
-        <TotalDiscount>0</TotalDiscount>
-        <TotalMargin>5</TotalMargin>
-        <TotalCost>105</TotalCost>
-        <TotalNet>210</TotalNet>
-        <TotalPrice>232</TotalPrice>
+        <Discount>4.55</Discount>
+        <Margin>90.48</Margin>
+        <TotalLabour>10</TotalLabour>
+        <TotalLabourCost>0</TotalLabourCost>
+        <TotalLabourHours>10</TotalLabourHours>
+        <TotalVat>21</TotalVat>
+        <TotalDiscount>5</TotalDiscount>
+        <TotalMargin>95</TotalMargin>
+        <TotalCost>0</TotalCost>
+        <TotalNet>105</TotalNet>
+        <TotalPrice>126</TotalPrice>
         <Items>
-          <Product>
-            <Id>80d0f5ad-000e-4a15-a246-300163eae039</Id>
-            <ProductCode>QL-1</ProductCode>
+          <Item>
+            <Id>d3cef410-9819-49a8-b9e3-95bcc01fc065</Id>
+            <ProductCode>TEST</ProductCode>
             <Deleted xsi:nil="true" />
             <Information>
-              <Description>Quotation Line Item 1</Description>
-              <Category />
-              <CustomFields />
+              <Description>Test Product</Description>
+              <Category>Test Category</Category>
+              <CustomFields>
+                <CustomField>
+                  <Label>Custom Field 1</Label>
+                  <Value>TEST CUSTOM FIELD</Value>
+                </CustomField>
+              </CustomFields>
             </Information>
+            <Unit>kgs</Unit>
             <UsePriceBreaks xsi:nil="true" />
-            <Quantity>5</Quantity>
+            <Quantity>1</Quantity>
             <SetupCost>0</SetupCost>
-            <Vat>0</Vat>
+            <Vat>20</Vat>
             <Markup>0</Markup>
-            <Discount>0</Discount>
-            <ListPrice>0</ListPrice>
-            <Price>10</Price>
+            <Discount>5</Discount>
+            <ListPrice>100</ListPrice>
+            <Price>95</Price>
             <ListCost>0</ListCost>
-            <Cost>10</Cost>
-            <LabourName />
-            <LabourHours>0</LabourHours>
-            <LabourRate>0</LabourRate>
+            <Cost>0</Cost>
+            <LabourName>Test Labour</LabourName>
+            <LabourHours>10</LabourHours>
+            <LabourRate>1</LabourRate>
             <LabourCostRate>0</LabourCostRate>
-            <LabourPrice>0</LabourPrice>
+            <LabourPrice>10</LabourPrice>
             <LabourCost>0</LabourCost>
-            <Margin>0</Margin>
-            <MarginPrice>0</MarginPrice>
-            <Total>50</Total>
+            <Margin>100</Margin>
+            <MarginPrice>95</MarginPrice>
+            <Total>105</Total>
             <ImageUrl>/Product Images/NotFound.png</ImageUrl>
             <IsKit>false</IsKit>
             <IsKitItem>false</IsKitItem>
@@ -158,125 +214,20 @@ Sample output file, for full documentation and samples see [Quikflw Quotation XM
             <IsRequired>false</IsRequired>
             <SortPos>0</SortPos>
             <AllowClientToCustomize>false</AllowClientToCustomize>
-          </Product>
-          <Product>
-            <Id>78b449ca-68ee-46ec-8ab8-25a182d48987</Id>
-            <ProductCode>QL-2</ProductCode>
-            <Deleted xsi:nil="true" />
-            <Information>
-              <Description>Quotation Line Item 2</Description>
-              <Category />
-              <CustomFields />
-            </Information>
-            <UsePriceBreaks xsi:nil="true" />
-            <Quantity>4</Quantity>
-            <SetupCost>0</SetupCost>
-            <Vat>0</Vat>
-            <Markup>0</Markup>
-            <Discount>0</Discount>
-            <ListPrice>0</ListPrice>
-            <Price>5</Price>
-            <ListCost>0</ListCost>
-            <Cost>5</Cost>
-            <LabourName />
-            <LabourHours>0</LabourHours>
-            <LabourRate>0</LabourRate>
-            <LabourCostRate>0</LabourCostRate>
-            <LabourPrice>0</LabourPrice>
-            <LabourCost>0</LabourCost>
-            <Margin>0</Margin>
-            <MarginPrice>0</MarginPrice>
-            <Total>20</Total>
-            <ImageUrl>/Product Images/NotFound.png</ImageUrl>
-            <IsKit>false</IsKit>
-            <IsKitItem>false</IsKitItem>
-            <IsComment>false</IsComment>
-            <HidePrices>false</HidePrices>
-            <CanDelete>true</CanDelete>
-            <HideOnPdf>false</HideOnPdf>
-            <IsRequired>false</IsRequired>
-            <SortPos>1</SortPos>
-            <AllowClientToCustomize>false</AllowClientToCustomize>
-          </Product>
-          <Product>
-            <Id>390bf781-12a8-4d5b-9e74-2a0c2442a18f</Id>
-            <ProductCode>QL-3</ProductCode>
-            <Deleted xsi:nil="true" />
-            <Information>
-              <Description>Quotation Line Item 3</Description>
-              <Category />
-              <CustomFields />
-            </Information>
-            <UsePriceBreaks xsi:nil="true" />
-            <Quantity>1</Quantity>
-            <SetupCost>0</SetupCost>
-            <Vat>0</Vat>
-            <Markup>0</Markup>
-            <Discount>0</Discount>
-            <ListPrice>0</ListPrice>
-            <Price>30</Price>
-            <ListCost>0</ListCost>
-            <Cost>30</Cost>
-            <LabourName />
-            <LabourHours>0</LabourHours>
-            <LabourRate>0</LabourRate>
-            <LabourCostRate>0</LabourCostRate>
-            <LabourPrice>0</LabourPrice>
-            <LabourCost>0</LabourCost>
-            <Margin>0</Margin>
-            <MarginPrice>0</MarginPrice>
-            <Total>30</Total>
-            <ImageUrl>/Product Images/NotFound.png</ImageUrl>
-            <IsKit>false</IsKit>
-            <IsKitItem>false</IsKitItem>
-            <IsComment>false</IsComment>
-            <HidePrices>false</HidePrices>
-            <CanDelete>true</CanDelete>
-            <HideOnPdf>false</HideOnPdf>
-            <IsRequired>false</IsRequired>
-            <SortPos>2</SortPos>
-            <AllowClientToCustomize>false</AllowClientToCustomize>
-          </Product>
-          <Product>
-            <Id>8ab51d46-c502-47fa-b8d0-fedfb0a2d6a8</Id>
-            <ProductCode>PARMA-VIOLETS</ProductCode>
-            <Deleted xsi:nil="true" />
-            <Information>
-              <Description>The sweets are hard, biconcave disc-shaped sweets.</Description>
-              <Category>Test</Category>
-              <CustomFields />
-            </Information>
-            <Unit>KGs</Unit>
-            <UsePriceBreaks xsi:nil="true" />
-            <Quantity>1</Quantity>
-            <SetupCost>0</SetupCost>
-            <Vat>20</Vat>
-            <Markup>100</Markup>
-            <Discount>0</Discount>
-            <ListPrice>10</ListPrice>
-            <Price>10</Price>
-            <ListCost>5</ListCost>
-            <Cost>5</Cost>
-            <LabourName>Andrew</LabourName>
-            <LabourHours>1</LabourHours>
-            <LabourRate>100</LabourRate>
-            <LabourCostRate>10</LabourCostRate>
-            <LabourPrice>100</LabourPrice>
-            <LabourCost>10</LabourCost>
-            <Margin>50</Margin>
-            <MarginPrice>5</MarginPrice>
-            <Total>110</Total>
-            <ImageUrl>/Uploads/d47d3087-9de2-464c-bad4-0982ef0668af/Images/b066fdca-6022-432b-8805-e8547f1dc813.jpeg</ImageUrl>
-            <IsKit>true</IsKit>
-            <IsKitItem>false</IsKitItem>
-            <IsComment>false</IsComment>
-            <HidePrices>false</HidePrices>
-            <CanDelete>true</CanDelete>
-            <HideOnPdf>false</HideOnPdf>
-            <IsRequired>false</IsRequired>
-            <SortPos>3</SortPos>
-            <AllowClientToCustomize>false</AllowClientToCustomize>
-          </Product>
+            <TaxCode>
+              <Id>ac3eb80c-a83d-4b64-8516-549a97813b8e</Id>
+              <Value>20.0% S</Value>
+            </TaxCode>
+            <PurchasesAccountCode>
+              <Id>8f1afc15-007a-48e2-9e22-1c3b4246826a</Id>
+              <Value>Purchases</Value>
+            </PurchasesAccountCode>
+            <SalesAccountCode>
+              <Id>b01b3009-eb1e-41dc-bc14-9568e81313b3</Id>
+              <Value>Sales</Value>
+            </SalesAccountCode>
+            <Inactive>false</Inactive>
+          </Item>
         </Items>
       </Section>
     </Sections>

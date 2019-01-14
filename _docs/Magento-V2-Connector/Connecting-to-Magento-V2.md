@@ -24,7 +24,9 @@ Enter the password you use to sign in to the administration section of the websi
 
 ### Token
 _Required_  
-Click the 'Generate' button to generate an API token.
+Click the 'Generate' button to generate an 'Admin' API token. Alternatively, an 'Integration' token can be generated within Magento V2 by navigating to System > Integrations -> Add New Integration. Once an integration token has been generated, the 'Access Token' value can be used for the token Magento V2 connection.
+
+The _primary_ difference between the token types is the default lifetime. For further information, refer to the [Magento DevDocs - Token-based authentication](https://devdocs.magento.com/guides/v2.3/get-started/authentication/gs-authentication-token.html) article.
 
 ### HTTP Auth Username
 _Optional_  

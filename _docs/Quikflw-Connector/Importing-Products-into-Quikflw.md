@@ -31,9 +31,17 @@ The name of the XML file where failed product uploads are stored.
 <?xml version="1.0" encoding="utf-8"?>
 <Products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Product>
-    <ProductCode>TEST-PRODUCT</ProductCode>
+    <ProductCode>TEST</ProductCode>
     <Description>This is a test product.</Description>
-    <Price>9.99</Price>
+    <Prices>
+      <Price>
+        <PriceList>
+          <Value>GBP</Value>
+        </PriceList>
+        <Price>9.99</Price>
+        <BreakPoint>0</BreakPoint>
+      </Price>
+    </Prices>
   </Product>
 </Products>
 ```
