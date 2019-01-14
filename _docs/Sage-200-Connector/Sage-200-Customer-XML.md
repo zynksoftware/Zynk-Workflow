@@ -218,8 +218,8 @@ The information below can be specified on the Trading tab in Sage.
 | Default Nominal Code - Account Number | NominalCode | 4000 | string | 30 | Optional | Will use the default from Sage if not provided. |
 | Default Nominal Code - CC | CostCentre | INT | string | 30 | Optional | Will use the default from Sage if not provided. |
 | Default Nominal Code - Dept | Department | Dep | string | 30 | Optional | Will use the default from Sage if not provided. |
-| Analysis Code | Name | Web Customer | string | 60 | Optional | If the analysis code does not already exist in Sage, it will not be set on the customer. |
-| Value | Value | true | string | 60 | Optional | If the analysis code does not already exist in Sage, it will not be set on the customer. |
+| Analysis Codes - Name | Name | Web Customer | string | 60 | Optional | If the analysis code does not already exist in Sage, it will not be set on the customer. |
+| Analysis Codes - Value | Value | true | string | 60 | Optional | If the analysis code does not already exist in Sage, it will not be set on the customer. |
 
 ```xml
 <?xml version="1.0"?>
