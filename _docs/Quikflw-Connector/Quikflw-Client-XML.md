@@ -1,6 +1,6 @@
 ---
-slug: quickflw-client-xml
-title: Quickflw Client XML
+slug: quikflw-client-xml
+title: Quikflw Client XML
 ---
 
 ## Quotation Client
