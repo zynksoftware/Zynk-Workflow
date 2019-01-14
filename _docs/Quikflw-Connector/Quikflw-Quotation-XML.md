@@ -8,8 +8,8 @@ title: Quikflw Quotation XML
 | Quikflw Field | XML Field | Example |
 | --- | ---| --- |
 |  -  | Id | 1ec58ac3-95d8-4373-ade4-7123496e0549 |
-|  -  | Client | [See Client XML](Quikflw-Client-XML)
-|  -  | Contact | [See Contact XML](Quikflw-Contact-XML)
+|  -  | Client | [See Client XML](quikflw-client-xml)
+|  -  | Contact | [See Contact XML](quikflw-contact-xml)
 |  -  | Status/Id | 7
 |  -  | Status/Status | Completed
 |  -  | Reference |Q
@@ -33,8 +33,8 @@ title: Quikflw Quotation XML
 | - | Currency/Value | GBP 
 | PO Number | PoNumber | 123456789
 | Companies -> Account Reference | AccountReference | ZYNK
-| Delivery Addr | DeliveryAddress | [See Address XML](Quikflw-Address-XML)
-| Invoice Addr | InvoiceAddress | [See Address XML](Quikflw-Address-XML)
+| Delivery Addr | DeliveryAddress | [See Address XML](quikflw-address-xml)
+| Invoice Addr | InvoiceAddress | [See Address XML](quikflw-address-xml)
 | Date Quoted | DateQuoted | 2018-12-21T00:00:00 (ISO 8601)
 | No Of Days Valid | NumberDaysValid | 30
 | Created by | Created | 2018-12-21T11:32:00.48 (ISO 8601)
@@ -72,7 +72,7 @@ title: Quikflw Quotation XML
 | Cost | TotalCost | 0
 | Net | TotalNet | 105
 | Total Price | TotalPrice | 126
-| Items | Items/Item | [See Item XML](Quikflw-Quotation-Section-Item-XML)
+| Items | Items/Item | [See Item XML](quickflw-quotation-section-item-xml)
 
 ## Example Quotation XML
 
