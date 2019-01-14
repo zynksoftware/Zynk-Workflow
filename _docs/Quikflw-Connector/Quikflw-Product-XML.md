@@ -22,7 +22,7 @@ The [Upload Products into Quickflw]() task allows you to create new and update e
 
 ### Tax Codes
 
-| Quikflw Fields | XML Field | Example | Field Type |
+| Quikflw Field | XML Field | Example | Field Type |
 | --- | --- | --- | --- |
 | Tax Code Sales | SalesTaxCode/Value | 20.0% S | string |
 | Purchases Tax Code | PurchasesTaxCode/Value | No VAT | string |
