@@ -1,6 +1,6 @@
 ---
-slug: quickflw-address-xml
-title: Quickflw Address XML
+slug: quikflw-address-xml
+title: Quikflw Address XML
 ---
 
 ## Quikflw Address 
