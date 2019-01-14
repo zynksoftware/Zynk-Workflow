@@ -23,8 +23,8 @@ The [Upload Products into Quickflw]() task allows you to create new and update e
 ### Tax Codes
 | Quikflw Field | XML Field | Example | Field Type |
 | --- | --- | --- | --- |
-| Tax Code Sales | SalesTaxCode/Value | 20.0% S | string | | 
-| Purchases Tax Code | PurchasesTaxCode/Value | No VAT | string | | 
+| Tax Code Sales | SalesTaxCode/Value | 20.0% S | string |
+| Purchases Tax Code | PurchasesTaxCode/Value | No VAT | string |
 
 #### Sales Tax Code
 Quickflw supports tax codes, they can be setup by navigating to the settings cog on the top right and selecting 'Account Settings'.
@@ -48,8 +48,8 @@ Quickflw supports account codes, they can be setup by navigating to the settings
 
 | Quikflw Field | XML Field | Example | Field Type |
 | --- | --- | --- | --- |
-| Sales Account Code | SalesAccountCode/Value | 1000 | string | | 
-| Purchases Account Code | PurchasesAccountCode/Value | 1001 | string | | 
+| Sales Account Code | SalesAccountCode/Value | 1000 | string |
+| Purchases Account Code | PurchasesAccountCode/Value | 1001 | string |
 
 #### Sales Account Code
 ```xml
@@ -72,8 +72,8 @@ Quickflw allows custom fields configured for products, they can be setup by navi
 
 | Quikflw Field | XML Field | Example | Field Type |
 | --- | --- | --- | --- |
-| Custom Field Label | CustomField/Label | Manufacturer | string | | 
-| Custom Field Value | CustomField/Value | Zynk | string | | 
+| Custom Field Label | CustomField/Label | Manufacturer | string | 
+| Custom Field Value | CustomField/Value | Zynk | string |
 
 ```xml 
 <CustomFields>
