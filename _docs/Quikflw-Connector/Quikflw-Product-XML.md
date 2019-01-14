@@ -3,7 +3,7 @@ slug: quikflw-product-xml
 title: Quikflw Product XML
 ---
 
-The [Upload Products into Quickflw]() task allows you to create new and update existing products in Quikflw. The XML format required is provided below. Any fields not documented here are not supported within our imports to Quikflw.
+The [Import Products into Quickflw](importing-products-into-quikflw) task allows you to create new and update existing products in Quikflw. The XML format required is provided below. Any fields not documented here are not supported within our imports to Quikflw.
 
 ## Quikflw Product
 
@@ -29,7 +29,9 @@ The [Upload Products into Quickflw]() task allows you to create new and update e
 | Purchases Tax Code | PurchasesTaxCode/Value | No VAT | string |
 
 #### Sales Tax Code
-Quickflw supports tax codes, they can be setup by navigating to the settings cog on the top right and selecting 'Account Settings'.
+Quikflw Tax Code configuration:
+
+Quikflw -> Cog -> Account Settings -> Tax Codes
 
 ```xml
 <SalesTaxCode>
@@ -46,7 +48,9 @@ Quickflw supports tax codes, they can be setup by navigating to the settings cog
 ```
 
 ### Account Codes
-Quickflw supports account codes, they can be setup by navigating to the settings cog on the top right and selecting 'Account Settings'.
+Quickflw Account Code configuration:
+
+Quikflw -> Cog -> Account Settings -> Account Codes
 
 | Quikflw Field | XML Field | Example | Field Type |
 | --- | --- | --- | --- |
@@ -70,7 +74,9 @@ Quickflw supports account codes, they can be setup by navigating to the settings
 ```
 
 ### Custom Fields
-Quickflw allows custom fields configured for products, they can be setup by navigating to the settings cog on the top right and selecting 'Item Settings'.
+Quickflw product custom field configuration:
+
+Quikflw -> Cog -> Item Settings -> Custom Fields
 
 | Quikflw Field | XML Field | Example | Field Type |
 | --- | --- | --- | --- |
@@ -87,7 +93,9 @@ Quickflw allows custom fields configured for products, they can be setup by navi
 ```
 
 ### Prices
-Quikflw supports multiple prices for products, including different prices for different price lists. They can be configured by navigating to the settings cog on the top right and selecting 'Business Settings' -> 'Price Lists'.
+Quikflw supports multiple prices for products, including different prices for different price lists. Configuration:
+
+Quikflw -> Cog -> Business Settings -> Price Lists
 
 ```xml
 <Prices>
