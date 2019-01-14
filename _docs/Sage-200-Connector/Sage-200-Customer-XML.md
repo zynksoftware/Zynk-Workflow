@@ -209,7 +209,7 @@ The information below can be specified on the Trading tab in Sage.
 
 | Sage Field | XML Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| Country Code | Country | GB | string | 2 | Optional | Use the 2 letter ISO country code as the value. |
+| Country Code | CountryCode | GB | string | 2 | Optional | Use the 2 letter ISO country code as the value. |
 | Default Tax Code | TaxCode | 1 | int | - | Optional | Will use the default from the Sales Ledger settings if not provided. |
 | Use Tax Code as SOP Default | OverrideTaxCode | false | bool | - | Optional |
 | Tax Number | VatNumber | 796 5763 59 | string | 30 | Optional |
@@ -226,9 +226,7 @@ The information below can be specified on the Trading tab in Sage.
 <Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Customers>
     <Customer>
-      <CustomerInvoiceAddress>
-        <Country>GB</Country>
-      </CustomerInvoiceAddress>
+      <CountryCode>GB</CountryCode>
       <TaxCode>4</TaxCode>
       <OverrideTaxCode>false</OverrideTaxCode>
       <VatNumber>796 5763 59</VatNumber>
