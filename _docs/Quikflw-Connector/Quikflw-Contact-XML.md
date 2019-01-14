@@ -1,6 +1,6 @@
 ---
-slug: quickflw-contact-xml
-title: Quickflw Contact XML
+slug: quikflw-contact-xml
+title: Quikflw Contact XML
 ---
 
 ## Quotation Contact
