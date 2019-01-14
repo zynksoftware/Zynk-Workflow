@@ -43,6 +43,7 @@ title: Quickflw Quotation Section Item XML
 | - | SalesAccountCode | Sales
 | - | Inactive | false
 
+## Example Quotation Section Item XML
 
 ```xml
 <Item>
