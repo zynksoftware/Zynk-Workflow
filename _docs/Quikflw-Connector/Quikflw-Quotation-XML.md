@@ -3,8 +3,6 @@ slug: quikflw-quotation-xml
 title: Quikflw Quotation XML
 ---
 
-## Unique Identifier
-
 ## Quotation Header
 
 | Quikflw Field | XML Field | Example |
@@ -52,6 +50,7 @@ title: Quikflw Quotation XML
 | - | IsStripePaid | false
 
 ## Quotation Sections
+
 | Quikflw Field | XML Field | Example |
 | --- | ---| --- |
 | - | Id | f3f881f2-dda0-4368-9e8e-292cb3fe0188
