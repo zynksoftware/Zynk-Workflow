@@ -45,16 +45,22 @@ A sample input file is shown below. This shows the minimum amount of information
   <CreditMemo>
     <order_id>5</order_id>
     <invoice_id>4</invoice_id>
-    <subtotal>34</subtotal>
-    <subtotal_incl_tax>34</subtotal_incl_tax>
+    <subtotal>29</subtotal>
+    <subtotal_incl_tax>29</subtotal_incl_tax>
     <tax_amount>0</tax_amount>
     <grand_total>34</grand_total>
+    <shipping_amount>5</shipping_amount>
+    <base_subtotal>29</base_subtotal>
+    <base_subtotal_incl_tax>29</base_subtotal_incl_tax>
+    <base_tax_amount>0</base_tax_amount>
+    <base_grand_total>34</base_grand_total>
+	  <base_shipping_amount>5</base_shipping_amount>
     <items>
       <item>
         <order_item_id>5</order_item_id>
-        <price>34</price>
+        <price>29</price>
         <qty>1</qty>
-        <row_total>34</row_total>
+        <row_total>29</row_total>
         <tax_amount>0</tax_amount>
       </item>
     </items>
