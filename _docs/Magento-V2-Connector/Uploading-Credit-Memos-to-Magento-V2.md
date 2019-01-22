@@ -54,7 +54,7 @@ A sample input file is shown below. This shows the minimum amount of information
     <base_subtotal_incl_tax>29</base_subtotal_incl_tax>
     <base_tax_amount>0</base_tax_amount>
     <base_grand_total>34</base_grand_total>
-	  <base_shipping_amount>5</base_shipping_amount>
+    <base_shipping_amount>5</base_shipping_amount>
     <items>
       <item>
         <order_item_id>5</order_item_id>
