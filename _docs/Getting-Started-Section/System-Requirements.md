@@ -7,16 +7,13 @@ title: System Requirements
 ## What do I need to run Zynk?
 
 Zynk can be installed on most Windows based PCs running one of the following operating systems:
-
- * Windows 7 SP1 (x86 and x64)
- * Windows 8
- * Windows 8.1
- * Windows 10
- * Windows Server 2008 R2 SP1 (x64)
- * Windows Server 2008 SP2 (x86 and x64)
- * Windows Server 2012
- * Windows Server 2012 R2
- * Windows Server 2016
+ 
+ * Windows 7 SP1 32-bit and 64-bit
+ * Windows 8.1 32-bit, 64-bit
+ * Windows 10 32-bit and 64-bit
+ * Windows Server 2008 R2 SP1 64-bit
+ * Windows Server 2012 & 2012 R2 64-bit
+ * Windows Server 2016 64-bit
 
 ### Additional Notes
 
