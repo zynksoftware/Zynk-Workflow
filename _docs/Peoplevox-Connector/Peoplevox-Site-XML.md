@@ -1,6 +1,6 @@
 ---
-slug: peoplevox-customer-xml
-title: Peoplevox Customer XML
+slug: peoplevox-site-xml
+title: Peoplevox Site XML
 ---
 
 Zynk will import the data using the standard fields under Integration Templates that can be ran configured your Peoplevox web application.  Note, the fields must use the default names, you can import the correct configuration using the file below.
