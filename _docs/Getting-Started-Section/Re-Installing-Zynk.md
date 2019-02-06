@@ -1,7 +1,7 @@
 ---
 slug: re-installing-zynk
 redirect_from: "/article/66-re-installing-zynk"
-title: Re Installing Zynk
+title: Reinstalling Zynk
 ---
 If you are moving Zynk from one machine to another, you will need to go to Help > About within Zynk and email the exact version to us at [support@zynk.com](mailto:support@zynk.com) so we are able to send you the correct .exe file for re-install.
 
@@ -12,6 +12,8 @@ In Windows XP or earlier: C:\Documents and Settings\All Users\Application Data\Z
 In Windows Vista or Later: C:\ProgramData\Zynk Software\Zynk\2.0\
 
 After re-installing you will need to browse to either of the locations above on the new machine and replace the 2.0 folder with the data copied previously.
+
+In addition for connections that rely on a specific data path (For example, Sage 50 UK and US) these connections will need to be reconfigured to use the new data path.
 
 When you are ready to start using Zynk you will need to contact us so we can disable the license to allow the software to be activated on the new machine.
 
