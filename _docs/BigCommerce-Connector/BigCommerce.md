@@ -7,6 +7,8 @@ The BigCommerce connector for Zynk allows you to easily integrate with your BigC
 
 Each of the tasks require a connection to BigCommerce, for more information on setting up and managing connections see [Connecting to BigCommerce](connecting-to-bigcommerce).
 
+Note, new integrations will need to use the latest version [BigCommerce Connector V3](bigcommerce-v3).
+
 ## Tasks
 * [Downloading Customers from BigCommerce](downloading-customers-from-bigcommerce)
 * [Downloading Orders from BigCommerce](downloading-orders-from-bigcommerce)

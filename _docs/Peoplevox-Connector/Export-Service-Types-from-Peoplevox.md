@@ -1,9 +1,9 @@
 ---
-slug: export-item-movements-from-peoplevox
-title: Export Item Movements from Peoplevox
+slug: export-service-types-from-peoplevox
+title: Export Service Types from Peoplevox
 ---
 
-This task will export item movement information from Peoplevox in XML format, for detailed information see [Peoplevox Item Movement XML](peoplevox-item-movement-xml).  The information is exported using the "Item movement history" report that can be ran through your Peoplevox web application.  You can add date filters and search clauses to limit the data that is returned.
+This task will export service type information from Peoplevox in XML format, for detailed information see [Peoplevox Service Type XML](peoplevox-service-type-xml).  The information is exported using the "Service types" report that can be ran through your Peoplevox web application.  You can add date filters and search clauses to limit the data that is returned.
 
 ## Settings
 ### Peoplevox Connection
@@ -32,7 +32,7 @@ The number of items to retreive per request made to Peoplevox.  Zynk will make a
 
 ### Output File
 _Required_  
-The name or full path to the file the returned data will be saved to.  Defaults to `peoplevox_export_item_movements.xml`, which will be created in the working directory of the Workflow.
+The name or full path to the file the returned data will be saved to.  Defaults to `peoplevox_export_service_types.xml`, which will be created in the working directory of the Workflow.
 
 ### Search Clauses
 _Optional_  
@@ -46,47 +46,20 @@ Maximum amount of time in minutes that Zynk will wait for a response per call ma
 See [Common Task Settings](common-task-settings)
 
 ## Example XML
-Example output file, for detailed information see [Peoplevox Item Movement XML](peoplevox-item-movement-xml).
+Example output file, for detailed information see [Peoplevox Service Type XML](peoplevox-service-type-xml).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<ItemMovementHistory 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ItemMovement>
-    <Item_code>TEST01</Item_code>
-    <Item_name>This is a test item.</Item_name>
-    <Item_barcode>5016447208891</Item_barcode>
-    <Date_timestamp>'05/07/2017 10:05'</Date_timestamp>
-    <User>Joe Harrison</User>
-    <From>XYZ</From>
-    <To>ABC</To>
-    <Quantity>5</Quantity>
-    <Comments>Despatched</Comments>
-    <Sales_order_number>1234</Sales_order_number>
-    <From_Container />
-    <To_Container />
-    <History_Id>160738</History_Id>
-    <Site_reference>PrimarySite</Site_reference>
-    <Buy_Price>0.35</Buy_Price>
-    <Manufacturer_item_no>H03M020</Manufacturer_item_no>
-    <Item_group_name>Item group</Item_group_name>
-    <Attribute_1>Whitefurze</Attribute_1>
-    <Attribute_2>n/a</Attribute_2>
-    <Attribute_3>Clear</Attribute_3>
-    <Attribute_4 />
-    <Attribute_5 />
-    <Attribute_6 />
-    <Attribute_7 />
-    <Attribute_8 />
-    <Attribute_9 />
-    <Attribute_10 />
-    <Attribute_11 />
-    <Attribute_12 />
-    <Attribute_13 />
-    <Attribute_14 />
-    <Attribute_15 />
-    <Register_Reason />
-  </ItemMovement>
-</ItemMovementHistory>
+<ServiceTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ServiceType>
+    <Carrier>DHL</Carrier>
+    <Name>123</Name>
+    <Code>123</Code>
+  </ServiceType>
+  <ServiceType>
+    <Carrier>DHL</Carrier>
+    <Name>321</Name>
+    <Code>321</Code>
+  </ServiceType>
+</ServiceTypes>
 ```

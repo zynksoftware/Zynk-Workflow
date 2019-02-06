@@ -1,9 +1,9 @@
 ---
-slug: export-item-movements-from-peoplevox
-title: Export Item Movements from Peoplevox
+slug: export-returns-from-peoplevox
+title: Export Returns from Peoplevox
 ---
 
-This task will export item movement information from Peoplevox in XML format, for detailed information see [Peoplevox Item Movement XML](peoplevox-item-movement-xml).  The information is exported using the "Item movement history" report that can be ran through your Peoplevox web application.  You can add date filters and search clauses to limit the data that is returned.
+This task will export return information from Peoplevox in XML format, for detailed information see [Peoplevox Return XML](peoplevox-return-xml).  The information is exported using the "Return summary" report that can be ran through your Peoplevox web application.  You can add date filters and search clauses to limit the data that is returned.
 
 ## Settings
 ### Peoplevox Connection
@@ -32,7 +32,7 @@ The number of items to retreive per request made to Peoplevox.  Zynk will make a
 
 ### Output File
 _Required_  
-The name or full path to the file the returned data will be saved to.  Defaults to `peoplevox_export_item_movements.xml`, which will be created in the working directory of the Workflow.
+The name or full path to the file the returned data will be saved to.  Defaults to `peoplevox_export_despatch_summary.xml`, which will be created in the working directory of the Workflow.
 
 ### Search Clauses
 _Optional_  
@@ -46,47 +46,48 @@ Maximum amount of time in minutes that Zynk will wait for a response per call ma
 See [Common Task Settings](common-task-settings)
 
 ## Example XML
-Example output file, for detailed information see [Peoplevox Item Movement XML](peoplevox-item-movement-xml).
+Example output file, for detailed information see [Peoplevox Return XML](peoplevox-return-xml).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<ItemMovementHistory 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ItemMovement>
-    <Item_code>TEST01</Item_code>
-    <Item_name>This is a test item.</Item_name>
-    <Item_barcode>5016447208891</Item_barcode>
-    <Date_timestamp>'05/07/2017 10:05'</Date_timestamp>
-    <User>Joe Harrison</User>
-    <From>XYZ</From>
-    <To>ABC</To>
-    <Quantity>5</Quantity>
-    <Comments>Despatched</Comments>
-    <Sales_order_number>1234</Sales_order_number>
-    <From_Container />
-    <To_Container />
-    <History_Id>160738</History_Id>
+<ReturnsSummary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Return>
+    <Return_code>RET1</Return_code>
+    <Return_date>'14/06/2018 16:55:07'</Return_date>
+    <Quantity>1</Quantity>
+    <Item_name>Sample Product</Item_name>
+    <Sales_order_number>POO2</Sales_order_number>
+    <Despatch_date>'14/06/2018 16:52:17'</Despatch_date>
+    <Return_reason>Why Not</Return_reason>
+    <Return_condition>NEW</Return_condition>
+    <Return_comments>Internal notes: </Return_comments>
+    <Days_since_despatch>237</Days_since_despatch>
+    <Item_barcode>5060466510500</Item_barcode>
+    <Sales_order_contact_name>Zynk Software</Sales_order_contact_name>
+    <Customer_phone_number>0191 303 7279</Customer_phone_number>
+    <Item_sale_price>3.00</Item_sale_price>
+    <Sales_order_email>support@zynk.com</Sales_order_email>
+    <Customer_purchase_order_reference_number>INT001</Customer_purchase_order_reference_number>
+    <Channel_name>Web</Channel_name>
+    <Payment_type>Card</Payment_type>
+    <Attribute1 />
+    <Attribute2 />
+    <Attribute3 />
+    <Attribute4 />
+    <Attribute5 />
+    <Attribute6 />
+    <Attribute7 />
+    <Attribute8 />
+    <Attribute9 />
+    <Attribute10 />
+    <Attribute11 />
+    <Attribute12 />
+    <Attribute13 />
+    <Attribute14 />
+    <Attribute15 />
     <Site_reference>PrimarySite</Site_reference>
-    <Buy_Price>0.35</Buy_Price>
-    <Manufacturer_item_no>H03M020</Manufacturer_item_no>
-    <Item_group_name>Item group</Item_group_name>
-    <Attribute_1>Whitefurze</Attribute_1>
-    <Attribute_2>n/a</Attribute_2>
-    <Attribute_3>Clear</Attribute_3>
-    <Attribute_4 />
-    <Attribute_5 />
-    <Attribute_6 />
-    <Attribute_7 />
-    <Attribute_8 />
-    <Attribute_9 />
-    <Attribute_10 />
-    <Attribute_11 />
-    <Attribute_12 />
-    <Attribute_13 />
-    <Attribute_14 />
-    <Attribute_15 />
-    <Register_Reason />
-  </ItemMovement>
-</ItemMovementHistory>
+    <Is_Reusable>True</Is_Reusable>
+    <Item_code>PROD001</Item_code>
+  </Return>
+</ReturnsSummary>
 ```

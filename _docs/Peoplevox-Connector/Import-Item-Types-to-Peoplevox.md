@@ -41,6 +41,14 @@ The name or full path to the file falied records will be saved to.  Defaults to 
 _Required_  
 Set to False if you do not need item groups being created on Peoplevox as part of the import.  Set to True to allow Zynk create the item groups.  Note, Peoplevox will create any item groups that do not already exist regardless of this setting.  This setting works best when using the `ItemTypeGroup` object within the XML to allow you to set the parent group.
 
+### Prevent Reprocessing
+_Required_  
+Set to true if you only want to process a record once, or false to update every time.  Defaults to False.
+
+### Timeout (In Minutes)
+_Required_  
+Maximum amount of time in minutes that Zynk will wait for a response per call made.  Defaults to 10.
+
 ## Example XML
 Example input file, for detailed information see [Peoplevox Item Type XML](peoplevox-item-type-xml).
 

@@ -10,6 +10,18 @@ This task will export information from the specified report in Peoplevox to XML 
 _Required_  
 The connection to the Peoplevox instance to use.  See the [Connecting to Peoplevox](connecting-to-peoplevox) if you require more information on how to create/manage connections.
 
+### API Call Delay
+_Required_  
+The number of seconds to wait between sending requests to the Peoplevox API, used when making multiple paged requests to export data.  Defaults to 1.
+
+### Columns
+_Optional_  
+By default all columns returned in the report will be included in the output file.  You can optionally provide a list of columns to limit the amount of data returned.  Note the columns must be as they are shown through the reporting in the Peoplevox web application e.g. `Salesorder number` for the `Despatch summary` report.
+
+### Created Since
+_Required_  
+The date to use to limit the data returned, this is only used when Download All is set to False.  Zynk will update the setting based on the information returned from the report.  Defaults to the time when the task was added to the Workflow.
+
 ### Date Modified Field
 _Dependant_  
 If you have Export All set to False this is date field to use on the report that Zynk will filter against.  If Export All is set to True you do not need to update this field.  Defaults to `Despatch date`.  You will need to check the report you are exporting to find the column name of the field to use.
@@ -22,9 +34,9 @@ Set to False only bring back modified information since that last time the task 
 _Required_  
 The number of items to retreive per request made to Peoplevox.  Zynk will make as many requests as required to download all data matching the filters set on the task.  The maxumum this can be is 1000, anything higher will be reset to 1000.  Defaults to `20`.
 
-### Modified Since
-_Required_  
-The date to use to limit the data returned, this is only used when Download All is set to False.  Zynk will update the Modified Since setting based on the information returned from the report.  Defaults to the time when the task was added to the Workflow.
+### Order By Field
+_Optional_  
+The field to use to order the records by.  If left empty, it will default to the date created field.
 
 ### Output File
 _Required_  
@@ -37,6 +49,10 @@ You can add search clauses to limit the data that is returned from the report, f
 ### Template
 _Required_  
 The name of the report you want to export from Peoplevox, this must match the name as showing through the reporting section of your Peoplevox web application.  Defaults to `Despatch summary`.
+
+### Timeout (In Minutes)
+_Required_  
+Maximum amount of time in minutes that Zynk will wait for a response per call made.  Defaults to 10.
 
 ### Export As Elements
 _Required_  

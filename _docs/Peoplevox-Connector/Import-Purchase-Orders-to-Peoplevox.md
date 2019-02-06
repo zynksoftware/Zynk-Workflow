@@ -37,6 +37,14 @@ The name or full path to the file successfully imported records will be saved to
 _Required_  
 The name or full path to the file falied records will be saved to.  Defaults to `peoplevox_import_purchase_orders_fail.xml`, which will be created in the working directory of the Workflow.
 
+### Prevent Reprocessing
+_Required_  
+Set to true if you only want to process a record once, or false to update every time.  Defaults to False.
+
+### Timeout (In Minutes)
+_Required_  
+Maximum amount of time in minutes that Zynk will wait for a response per call made.  Defaults to 10.
+
 ## Example XML
 Example input file, for detailed information see [Peoplevox Purchase Order XML](peoplevox-purchase-order-xml).
 
