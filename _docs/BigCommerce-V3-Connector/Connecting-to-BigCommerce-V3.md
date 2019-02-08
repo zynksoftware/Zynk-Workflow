@@ -4,9 +4,9 @@ title: Connecting to BigCommerce V3
 ---
 All of the tasks in the BigCommerce V3 connector require a connection to BigCommerce, so you will need to create a connection with the type 'BigCommerce V3'. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your BigCommerce details.
 
-From within your BigCommerce store you will need to create an API Account, this is documented on the [BigcCommerce Dev Center](https://developer.bigcommerce.com/api-docs/getting-started/basics/authentication#authentication_getting-api-credentials). 
+From within your BigCommerce store you will need to create an API Account, this is documented on the [BigCommerce Dev Center](https://developer.bigcommerce.com/api-docs/getting-started/basics/authentication#authentication_getting-api-credentials). 
 
-![BigCommerce V3 Connection](http://www.zynk.com/images/v2/big_commerce_connection.png)
+![BigCommerce V3 Connection](http://www.zynk.com/images/v2/big_commerce_v3_connection.png)
 
 Enter your BigCommerce details as described below, then click 'Finish' to create the connection.
 

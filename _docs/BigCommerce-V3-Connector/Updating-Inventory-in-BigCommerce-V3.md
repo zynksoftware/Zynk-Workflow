@@ -31,22 +31,25 @@ See [Common Task Settings](common-task-settings).
 ## Examples
 A sample input file is shown below.
 
-If you are updating a simple product you can provide `<sku>`, however if you are updating an option you will also need to include details of the parent.  This can either be `<parent_sku>` or `<parent_sku>`.
+If you are updating a simple product you can provide `<sku>`, however if you are updating an option you will also need to include details of the parent.  This can either be `<parent_sku>` or `<parent_id>`.
 
 You can set `<inventory_level>` and `<inventory_warning_level>`, as well as `<inventory_tracking>` which can be one of `none`, `product` or `variant`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<inventories xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<inventories>
     <inventory>
         <sku>SAMPLE001</sku>
         <inventory_level>20</inventory_level>
+        <inventory_warning_level>5</inventory_warning_level>
+        <inventory_tracking>variant</inventory_tracking>
     </inventory>
     <inventory>
         <parent_sku>SAMPLE001</parent_sku>
         <sku>SAMPLE001-BLACK</sku>
         <inventory_level>20</inventory_level>
+        <inventory_warning_level>5</inventory_warning_level>
+        <inventory_tracking>variant</inventory_tracking>
     </inventory>
 </inventories>
 ```
