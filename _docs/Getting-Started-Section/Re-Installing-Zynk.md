@@ -11,10 +11,10 @@ In Windows XP or earlier: C:\Documents and Settings\All Users\Application Data\Z
 
 In Windows Vista or Later: C:\ProgramData\Zynk Software\Zynk\2.0\
 
-After re-installing you will need to browse to either of the locations above on the new machine and replace the 2.0 folder with the data copied previously.
+After reinstalling you will need to browse to either of the locations above on the new machine and replace the 2.0 folder with the data copied previously.
+
+When you are ready to start using Zynk you will need to access Zynk on the old machine and on the top bar select Tools --> License Manager where you can deactivate the license from that machine for reactivation on the new installation. If you are unable to manually deactivate for any reason please contact support@zynk.com so we can do this for you.
 
 In addition for connections that rely on a specific data path (For example, Sage 50 UK and US) these connections will need to be reconfigured to use the new data path.
-
-When you are ready to start using Zynk you will need to contact us so we can disable the license to allow the software to be activated on the new machine.
 
 **Please note that if Zynk Software did not build the integration then you should contact your developers to ensure all data/files are copied from and to the relevant locations.**
