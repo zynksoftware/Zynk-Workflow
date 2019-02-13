@@ -156,8 +156,8 @@ You can attach up to 10 files to an invoice in Xero. If the same file name is pr
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfXeroCreditNote>
-  <XeroCreditNote>
+<ArrayOfXeroInvoice>
+  <XeroInvoice>
     <Attachments>
       <Attachment>
         <FilePath>C:\10388.png</FilePath>
@@ -165,6 +165,6 @@ You can attach up to 10 files to an invoice in Xero. If the same file name is pr
         <IncludeOnline>false</IncludeOnline>
       </Attachment>
     </Attachments>
-  </XeroCreditNote>
-</ArrayOfXeroCreditNote>
+  </XeroInvoice>
+</ArrayOfXeroInvoice>
 ```
