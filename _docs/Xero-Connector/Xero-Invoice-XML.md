@@ -144,3 +144,27 @@ The following fields can be set on the invoice items.
   </XeroInvoice>
 </ArrayOfXeroInvoice>
 ```
+
+## Attachments
+You can attach up to 10 files to an invoice in Xero. If the same file name is provided as an attachment already on the invoice in Xero, the existing file will be overwritten.
+
+| Xero Field | XML Field  | Example  | Field Type  | Field Length  | Input | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| - | FilePath | C:\10388.png | string | - | Required | The path of the file to upload to Xero |
+| Name | FileName | upload.png | string | - | Optional | Will default to the file name specified in the FilePath if not provided |
+| Include with Invoice | IncludeOnline | false | bool | - | Optional | Only available for accounts receivable invoices, defaults to false |
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfXeroCreditNote>
+  <XeroCreditNote>
+    <Attachments>
+      <Attachment>
+        <FilePath>C:\10388.png</FilePath>
+        <FileName>upload.png</FileName>
+        <IncludeOnline>false</IncludeOnline>
+      </Attachment>
+    </Attachments>
+  </XeroCreditNote>
+</ArrayOfXeroCreditNote>
+```

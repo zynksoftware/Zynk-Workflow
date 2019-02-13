@@ -20,6 +20,7 @@ Each of the tasks require a connection to Xero, for more information on setting 
 - [Exporting Organisation Details from Xero](exporting-organisation-details-from-xero)
 - [Exporting Payments from Xero](exporting-payments-from-xero)
 - [Exporting Purchase Orders from Xero](exporting-purchase-orders-from-xero)
+- [Exporting Repeating Invoices from Xero](exporting-repeating-invoices-from-xero)
 - [Exporting Tax Rates from Xero](exporting-tax-rates-from-xero)
 - [Importing Bank Transactions to Xero](importing-bank-transactions-to-xero)
 - [Importing Contacts to Xero](importing-contacts-to-xero)
