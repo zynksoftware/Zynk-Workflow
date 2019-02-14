@@ -22,7 +22,7 @@ We've also introduced a much needed Search facility that lets you search the ent
 If you spot anything we've missed please drop a line to [support@zynk.com](mailto:support@zynk.com) or just edit the page on Github and make a pull request.
 
 ## What is Zynk Workflow?
-Zynk is a business automation and integration platform that can be configured to automate virtually any business process, either manually when required or set on a trigger based schedule.  Zynk ships with a wide range of connectors covering accounting products, CRM systems, ecommerce platforms, to various storage providers and data conversion tasks.  Each connector provides a number of tasks that can be used to import, export and transform data as required.
+Zynk is a business automation and integration platform that can be configured to automate virtually any business process, either manually when required or set on a trigger based schedule.  Zynk ships with a wide range of connectors covering everything from accounting products, CRM systems and Ecommerce platforms to various storage providers and data conversion tasks.  Each connector provides a number of tasks that can be used to import, export and transform data as required.
 
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/5661c7c2c697915b26a5d416/file-wsthjJae1Q.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/5661c7c2c697915b26a5d416/file-wsthjJae1Q.png)
 
