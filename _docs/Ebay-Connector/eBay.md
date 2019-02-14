@@ -12,8 +12,9 @@ Please note that only the UK eBay marketplace is supported.
 You will need to add your SKU codes to eBay to make use of this connector. You can find instructions on how to do this in [Adding SKU Codes to eBay Items](adding-sku-codes-to-ebay-items).
 
 ## Tasks
-* [Downloading Orders from eBay](downloading-orders-from-ebay)
-* [Downloading Listings from eBay](downloading-listings-from-ebay)
+* [Exporting All Selling from eBay](exporting-all-selling-from-ebay)
+* [Exporting Orders from eBay](downloading-orders-from-ebay)
+* [Exporting Listings from eBay](downloading-listings-from-ebay)
 * [Uploading Inventory to eBay](uploading-inventory-to-ebay)
 
 ## Articles and Sample Files
