@@ -2,7 +2,9 @@
 slug: sage-200-online
 title: Sage 200 Online
 ---
-The Sage 200 Online connector and provides tasks to upload and download data from Sage 200 Online. All data is transferred using [Sage 200 Online XML](sage-200-online-xml) format, please refer to the individual task pages for examples of the format for each task.
+The Sage 200 Online connector and provides tasks to upload and download data from Sage 200 Online. All data is transferred using our [Sage 200 Online XML](sage-200-online-xml) format, please refer to the individual task pages for examples of the format for each task.
+
+This connector supports both Sage 200 Standard Online and Sage 200 Extra Online. If you are looking to integrate with Sage 200c or Sage 200 Extra, you will need to use our [Sage 200](sage-200) connector.
 
 Each of the tasks require a connection to Sage 200 Online, for more information on setting up and managing connections see [Connecting to Sage 200 Online](connecting-to-sage-200-online).
 
