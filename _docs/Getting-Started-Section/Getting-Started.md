@@ -4,8 +4,7 @@ redirect_from: "/category/28-getting-started"
 title: Getting Started
 ---
  * [Activating Zynk](activating-zynk)
- * [Application Log](application-log)
- * [Best Practices Whilst Using Zynk](best-practices-whilst-using-zynk)
+ * [Application Log](application-log) 
  * [Connection Manager](connection-manager)
  * [Container Tasks](container-tasks)
  * [Create an XSLT File](create-an-xslt-file)
