@@ -3,6 +3,246 @@ slug: changelog
 redirect_from: "/article/44-changelog"
 title: Changelog
 ---
+## Release 2.20.3
+### New
+* Amazon - Export Products - Added support to download product information from Amazon seller central
+* Peoplevox - Export Service Types - Added support to export Service Types
+
+### Updated
+* Xero - Import Invoices/Credit Notes/Contacts/Bank Transactions - Added support to import attachments (PDF's) into Xero
+* Email - Send Integration Report - Added support for the Peoplevox file types to the send integration report task
+* Shopify - Export Orders - Updated to include Risk factors associated with Orders
+* webCRM - Export Deliveries - Added task setting to optionally download additional line information
+* My Mobile Workers - Export Jobs - Added support to download attachments associated with jobs
+
+### Fixed
+ * Zynk Application - Assembly bindings to particular version of Sage 200, would mean that certain Sage 200 versions didn't show in Zynk UI
+
+## Release 2.20.2
+### New
+ * Shopify - Export Tasks - Added support to retrieve meta field collection
+
+## Release 2.20.1
+### Fixed
+ * Magento V2 - Fixed issues with updates to Inventory, Order Status and Tier Prices
+
+## Release 2.20.0
+### New
+* Sage 50 - Export Sales Orders - Added  - Added new option to include despatch information
+* Sage 50 US - Added support for Sage 50 US 2019.1
+* QuikFlw - New connector in Zynk, support for Exporting Quotations and Importing Products, documentation available at - http://workflow.zynk.com/quikflw
+
+### Updated
+* PeopleVox - Export Tasks - Output debug messages for any search clauses configured on task
+* JobAdder - Export Timesheets Task - Updated the available filtering at the task level to allow more control over the data returned
+
+### Fixed
+* Zynk Upgrader - Exception thrown 'The connection is already Open (state=Open)'
+* Manta Library - Upload Tasks - Duplicates not output to fail file
+* Sage 200 - Import Customers - Setting incorrect country code, matching first 2 characters of country name incorrectly, e.g. Great Britain imported as Greece
+* Sage 200 Online - Export Country Codes - Task hanging repeatedly downloading the same set of data from the API
+* Salesforce - Complex Object Upload - Object reference not set to an instance of an object. at Zynk.SAAS.SalesForce.Helpers.SalesforceHelper.LookupRecord
+* Sage 50 - Import Goods Received Notes - Duplicate prevention issue, updated the process so ALL generated received line id's are stored in Zynk truth
+* Sage 50 - Despatch Sales Orders - Despatching of order updated the items to despatched but didn't create an entry in the deliveries tab on the order in Sage
+* Sage 50 - Import Despatch Notes - Duplicate prevention issue, data tab in Zynk never populated with the generated record id in Sage
+* Magento V1 - Import Shipments - Successful imports appear in the fail file if payment capture is attempted
+* Sage 200 - Export Customers - Invoice address not exported if no preferred contact with a role of type 'Account' associated with the customer
+* Sage 200 - Export Customers - Delivery address country code in export doesn't match the country name
+* eBay - All Tasks - Unhandled exception in the application if the current authorisation token in use has expired
+* Sage 200 - Export Query (V1) - Returns a successful result code on the Zynk task even if the connection fails
+
+## Release 2.19
+### New
+* Amazon Marketplace - Added Export Report task
+* Amazon Marketplace - Added Import Feeds task
+* Connectwise - Added Import/Export Activities, and Export Members tasks
+
+### Fixed
+* Connectwise - REST Import Tasks - Fixed issue setting custom field values when creating a new record
+* Connectwise - REST Export Tasks - Using the custom field conditions not longer causes a error
+* CSV - CSV to XML - Fixed incorrect output when processing a tab delimited file
+* Magento V1 - Upload Shipments - Ensure tracking info is added before sending the email to the customer
+* Sage 50 - Export Purchase Orders - Write out the correct tax code for each item
+* Sage 50 - Export Stock Transactions - Always output the quantity as a positive number
+* Sage 50 - Import Sales Orders/Purchase Orders/Invoices - Validate SKUs before auto creating products
+* Sage 50 - Import Sales Orders/Purchase Orders/Invoices - Correctly determine the carriage tax code based on the VAT settings on the task
+* Sage 50 - Import Stock Records - Validate SKUs before import
+* Sugar CRM - Query - Resolved pagination issue when connecting to newer versions of Sugar CRM
+* Sage 200 - Customer Import - Country code lookup failing, using the first two characters of a country name as the country code, e.g. Great Britain would become GR (Greece)
+* File - Move File - Incorrectly creating folders with the full file path name and placing the moved file within that folder
+
+## Release 2.18.2
+### New
+ * JobAdder - New connector - tasks available for exporting timesheets and placements
+ 
+### Fixed
+ * Zynk - Variables - Zynk crashing with a stack overflow in kernalbase.dll if a variable references itself, fixed so a variable can never point to itself
+* Sage 50 - Export Inventory - Inventory level only export for products with one or more stock transaction associated
+
+## Release 2.18
+### Updated
+ * Ebay - Upload Inventory - Added option to look up Item IDs, allowing the update of inventory for items which are tracked by ID
+* Magento V1 - Upload Shipments - Added support for adding a comment, and setting the email and include comments flags
+* Sage 50 - Export Sales Orders/Purchase Orders - Added support for the customer/supplier telephone field
+* Sage 50 - Import Invoices/Despatch Notes - Added option to automatically post the invoice to the ledger
+
+### Fixed
+* Sage One - Import Customers/Suppliers - Always set the main contact first
+* Sage 50 - Import Sales Orders - Correctly calculate the unit price, discount amount and VAT when dealing with discounted items on VAT inclusive orders
+* Zynk Objects - Fixed an issue where razored email addresses containing hyphen immediately before @ would cause an error (e.g. test-@test.com)
+
+## Release 2.17.3
+### Fixed
+ * Sage 50 - Import Transactions - Journal credit and debits between bank and non bank nominals results in a 'The Foreign Currency on the account does not match the Foreign Currency on the transaction'.
+
+## Release 2.17.2
+### Updated
+* Sage 200 - Import/Export Customers - Added support for the order priority field
+
+### Fixed
+ * CSV to XML - Fixed issue where certain valid XML characters were stripped from the output 
+ * FTP - FTP Rename - Fixed issue with an incorrect output file path being generated when prepend timestamp is enabled
+ * Sage 50 - Import Sales Orders/Invoices/Purchase Orders - Only consider the currency when matching the customer/supplier if it's specified in the XML
+ * Sage 50 - Despatch Sales Orders/Import Despatch Notes - Fixed an issue where some generated Product Invoices would have discrepancies in the tax amount when compared against the original Sales Order
+ * If Xml Contains - Fixed the Exists/NotExists logic
+ * Sage 200 - Export Customers - Fixed issue preventing the Id from the truth table being written to the output file
+ * Magento 2 - Download Task - Fixed miscalculation in pagination where page size was equal to the number of records - manifests as the same record being downloaded multiple times in the same run of download task.
+
+## Release 2.17.1
+### New
+* ACT 2018 - Added new connector for ACT 2018
+
+### Updated
+* ACT - Import Contacts - Added support for adding attachments to notes
+* Sage 50 - Email Invoices - Added optional 'Include Invoices From' setting which will only return invoices created in Sage after that date
+* Sage 50 - Email Statements/Invoices - Added 'Send To 'From' Address' setting, if set to true will send all generated Statements/Invoices to the 'From' address on the task rather than to the Sage 50 Customer's email address
+
+### Fixed
+* Amazon MWS - Export Refunds/Commissions - Fixed throttling errors
+* PeopleVox - Export Report - Fixed an issue where the date on the task would not update and the task would fail with the error that the date is not a valid format
+
+## Release 2.17
+### New
+ * Magento V2 - Added Import Invoices task
+ * Sage 200 - Convert Pro Formas To Sales Orders - Added a task so that Pro Forma Invoices in Sage 200 can be converted to Sales Orders via Zynk
+ * Sage 200 - Import Sales Order Acknowledgements - Added a task so that Sales Orders in Sage 200 can be acknowledged via Zynk
+webCRM Connector Added - Various Import and Export tasks, see Zynk documentation for more details
+
+### Updated
+ * Amazon Marketplace - Export Commissions/Export Refunds - Added option to specify the order IDs to download commissions/refunds for
+ * BigCommerce - Upload Shipments - Added support for looking up the order_product_id based on sku, and defaulting the order_address_id to the first shipping address
+ * EKM - Download Orders - Added order status setting
+ * Peoplevox - Export Tasks - Added an API Call Delay setting, to resolve timeout issues due to requests being sent too quickly
+ * Sage 50 - Import Goods Received Notes - Group by order number, date and reference, and import into Sage as a single GDN
+ * Sage 50 - Import Invoices, Purchase Orders, Transactions - Added support for setting the Fund field
+ * Sage 50 - Import Sales Orders/Invoices/Purchase Orders - When 'Convert To Account Currency' is disabled, take the currency into account when searching for an account based on the match fields
+ * Sage 200 Online - Import Sales Orders - Added support for looking up the warehouse by name
+ * Sage One - All tasks - Detect when the API rate limit is reached and retry the request after a delay
+ * Salesforce - Connection - Made the organisation name and username visible
+
+### Fixed
+ * Auto Mapper - Correctly save the Zynk Object type of parameter values
+ * Email - If Email Exists - Task no longer fails with a valid email address when SMTP validation is false
+ * History Tab - Export Logs - Fixed issue where the wrong logs were written to the output file
+ * Sage 50 - Allocate Transactions - Fixed an issue where deleted transactions could be allocated
+ * Sage 50 - Customer & Supplier  Import & Export - Only try and import/export the Email2 & 3 fields if Sage 50 major version 19 or above 
+ * Sage 50 - Import Purchase Orders/Sales Orders/Invoices - VAT Settings on imports - updated so that the provided country code is validated against countries set up in Sage If the country code doesn't match, don't use VAT Settings, would previously fall through to the EU scenario. 
+ * Sage 50 - Import Transactions - SA transactions are no longer grouped
+ * Sage 200 V9 onwards - Export Sales Orders (V2 Task) - Now correctly identifies Pro Forma Invoices and Quotations correctly in the exported data, would previously assume anything that isn't a Sales Order is a Sales Return
+ * Sage 200 - Import Customers - Fixed an issue where limited price bands could be duplicated
+ * Sage 200 - Import Sales Orders - Fixed issue with allocation quantity when Allow Negative Stock is set to false
+ * Sage 200 - Import Sales Orders - Fixed issue with how the default value for the fulfilment method is determined
+ * Sage 200 - Import Sales Orders - Fixed an issue where Id on Item was being overwritten by the internal sage 200 db id. Now written out to UniqueId node as with other Sage 200 imports.
+ * Sage 200 - Import Stock Transactions - Fixed an issue where Average Buying Price was always used, even when Standard Costing is enabled on the stock item
+ * Sage One - Import Sales/Purchase Invoices - Calculate tax amount automatically if not specified in the input file
+ * WooCommerce V2.2 - Import Products - Correctly handle SKUs containing ampersands and other special characters
+ * Xero - Connection - Fixed issue with certificate generation
+ * XML - XML to CSV - Automatically escape any occurrences of the delimiter in the output
+ * WooCommerce V3 - Export (Download) Tasks - Fixed issue where specific record id's did not support razor values
+ * Sage 200 - Import Sales Orders - Fixed an issue which meant that Quantity on sales order items would be reduced to the amount that could be fulfilled
+ * Sage 200 - Import Sales Orders - Issue with on hold customer orders not being imported due to prevalidation routine not looking at the IgnoreCustomerOnHold flag against the sales order
+
+## Release 2.16
+### New
+ * Volo - Added Export Credits task
+ * PGP Encryption - New connector for encrypting and decrypting files using PGP
+ * Excel - New task for repeating over all worksheets in an Excel file
+ * Zynk - Tasks - Added an upsert mappings task so that Zynk mappings can be updated dynamically from within a Workflow
+
+### Updated
+ * Magento v2 - Export Credit Memos - Added an option to fetch the related sales orders
+ * Peoplevox - Export Report - Added Order By Field setting
+ * Sage One - Now use the v3 API, which supports setting a wider range of fields
+ * Sage 50 - Import Transactions - Added option allowing the difference on journals to be automatically posted to a specific nominal instead of failing
+ * WooCommerce V3 - Connection - Added option to select the authentication method
+ * Zoho CRM - Upsert Records - Added option to trigger workflow rules in Zoho
+ * Zynk - Updated the database provider in Zynk from SQLCE 3.5 SP2 to SQLCE 4.0
+ 
+### Fixed
+ * FTP - Connection - Fixed timeout error after multiple connection attempts
+ * Magento v2 - Connection - Improved error handling surrounding generating the token
+ * Sage 200 - Export Customers (V2) - Correctly export the LineDiscount
+ * Sage 200 - Export Customers (V2) - Correctly set the CustomerDeliveryAddress when the 'Export Delivery Addresses' setting is enabled
+ * Sage 200 - Import Sales Orders, Import Purchase Orders - Allow use of the Description element when importing comment lines
+ * Sage 200 - Import Sales Orders - Fixed warehouse and allocation errors when importing 'Direct to Customer' item lines 
+ * Salesforce - Complex Upload - Fixed an error when looking up a record on an object that doesn't have an IsDeleted field
+ * Excel - Could not find installable isam
+ * Magento V1 - Export Tasks - Value cannot be null. Parameter name: collection. When no data returned from the website
+ * Zynk - Truth Database - Fixed an issue with the UpsertWith methods causing duplication in the Data tab.
+ * Sage 50 - Import Customers updated the truth methods used by the task
+ * Sage 200 Online - Fixed an issue where the Sage 200 Online 
+ * Peoplevox - All Import Tasks have been updated to only update fields on Peoplevox based on populated fields in XML. Fixes issue with values on PVX being blanked out when they are set in the XML.
+
+## Release 2.15
+### New 
+ * Sage 200c 2017 - Added new connector for the latest version of Sage 200
+ * Swiftpage ACT! 2017 - Added new connector for the latest version of ACT!
+
+### Updated
+ * Designer - Can only create scheduled tasks when using a paid license
+ * Magento V2 - All Tasks - Added the ability to specify the Store Code to be used
+ * Sage 50 - Import Despatch Notes/Despatch Sales Orders - Added option to automatically allocate stock
+ * Sage 50 - Import Goods Received Notes - Now create a link back to the purchase order on the product activity screen
+ * Sage 200 - Import Sales Orders/Import Goods Despatched Notes - Added option to prevent allocations taking stock levels negative, even if allowed in Sage
+ * Sage 200 - Updated Purchase Orders - Allow receipt of direct delivery purchase order lines
+
+### Fixed
+ * Magento - Upload Products - Fixed duplication of the values in the 'New Category Available Sort By Value' setting
+ * Sage 50 - Import Suppliers - Fixed issue with the Match Accounts On setting not finding any matches
+ * Sage 200 - Import/Export Customers - Add support for importing and exporting limited price books
+ * Salesforce - Bulk Salesforce Operation - Fixed encoding issue with non-English characters
+ * Sugar CRM - Import Task - Fixed issue in some cases when setting multiple relationships
+ * WooCommerce - Download Tasks - Fixed error surrounding 'enumeration yielded no results
+ * Zynk Upgrader - Fixed the directory not found error when upgrading from v1.5 or below
+
+## Release 2.14
+### New
+ * Volo - Added new connector with tasks for importing order history, stock levels and prices, and exporting customers and sales orders
+ 
+### Updated
+ * Sage 50 US - Now support Sage 50 US 2018
+ * Sage 200 - Import/Export Suppliers - Added support for the 'On Hold' field
+ * Xero - Private API Connection - Added a link to the applications page in Xero, and an option to generate the certificate files
+ 
+### Fixed
+ * Designer - Repoint scheduled tasks when renaming or moving a workflow
+ * File - Move File - Don't create an empty output file without a timestamp when Prepend Timestamp is enabled
+ * FTP - Connection - Fixed issues when validating connections with Use SSL, Use Passive or Use Binary enabled
+ * FTP - Upload File - Fixed certificate validation issue
+ * Magento V2 - Upload Products - Lookup Option Values - Fixed an issue where if no option value was provided then an error is raised on Magento: 'Attribute "<attribute_code>" has invalid value. Invalid type for value: "". Expected Type: "int".'
+ * Magento V2 - Upload Tier Prices - Fixed issue uploading tier prices for products with a '/' in the SKU
+ * Sage 50 - Import Goods Received Notes - Do not update the 'Qty On Order' field for non-stock items, or create a goods in stock transaction
+ * Sage 50 - Import Stock Transactions - Validate that Qty is provided in the XML
+ * Sage 50 - Import Transactions - Allow journals to be created against control accounts
+ * Sage 200 - Export Customers - Fixed invalid column errors for Sage 200 v5 (2008)
+ * Sage 200 - Export Tasks - Fixed an issue that resulted in custom fields from certain tables not being exported, e.g. SLCustomerAccount
+ * Sage 200 - Import Customers - Setting contact roles - Fixed an issue which would result in multiple contacts being the preferred for a role if preferred roles are duplicated in the input file.
+ * Sage 200 - Import Sales Orders - Fixed an error when importing an order with traceable items, when auto allocate enabled in Sage, but set to Disabled in Zynk
+ * Salesforce - Complex Record Upload - Fixed an error that was occurring when Zynk attempts to lookup existing records. Wasn't specifiying content type on subsequent requests, resulting in the data defaulting to JSON, where Zynk expected XML.
+ * Shopify - Download Tasks - Added a Download From date to all download tasks
+ * Sugar CRM - Sugar CRM Import - Fixed the error when the Key Field setting is left blank, will now default to the ID field
+ * Tesco Connector - Ensure any API errors are picked up and logged in Zynk.
+ * Sage 200 - Import Stock Records - Only set the product group when creating a new product, prevfenting validation errors from occurring.
 
 ## Release 2.13
 ###  New
