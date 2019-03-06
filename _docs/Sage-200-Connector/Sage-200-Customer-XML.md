@@ -167,11 +167,11 @@ The information below can be specified on the Contacts tab in Sage. The default 
 | Telephone > Country | TelephoneCountryCode | 44 | string | 5 | Optional |
 | Telephone > Area | TelephoneAreaCode | 845 | string | 20 | Optional |
 | Telephone > Number | Telephone | 123 2920 | string | 200 | Optional |
-| Mobile > Country | Mobile | 44 | string | 5 | Optional |
-| Mobile > Area | Mobile | 77 | string | 20 | Optional |
+| Mobile > Country | MobileCountryCode | 44 | string | 5 | Optional |
+| Mobile > Area | MobileAreaCode | 77 | string | 20 | Optional |
 | Mobile > Number | Mobile |  777 7777 | string | 200 | Optional |
-| Fax > Country | Fax | 44 | string | 5 | Optional |
-| Fax > Area | Fax | 845 | string | 20 | Optional |
+| Fax > Country | FaxCountryCode | 44 | string | 5 | Optional |
+| Fax > Area | FaxAreaCode | 845 | string | 20 | Optional |
 | Fax > Number | Fax | 123 2921 | string | 200 | Optional |
 | Email | Email | support@zynk.com | string | 200 | Optional |
 | Website | Website | http://www.zynk.com/ | string | 200 | Optional |
