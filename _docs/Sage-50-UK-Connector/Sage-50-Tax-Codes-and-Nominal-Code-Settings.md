@@ -11,13 +11,13 @@ Zynk supports reading the default Tax Codes and Nominal Codes from Sage 50, so t
 
 Zynk will calculate the tax code for items in the following order:
 
-  * **If using Custom VAT Settings:**
+  * ***If using Custom VAT Settings:***
   
     * If the Delivery Address is the same as the Company Address we use the UK Sales Tax Code
     * If the Delivery Address is in EU (as setup in Sage -> Settings -> Countries) we use the EU Sales Tax Code
     * Otherwise we use the RoW Sales Tax Code
     
- * **By Default:**
+ * ***By Default:***
              
     * Use Tax Code field from the XML source (if supplied)
     * Use Tax Code specified on the Sales Ledger Account - if option is checked to Override Tax Code in Invoicing)
@@ -37,13 +37,13 @@ Zynk will calculate the Nominal Code for items in the following order:
  
  Zynk will calculate the Tax Code for carriage in the follow order:
  
-  * **If using Custom VAT Settings:**
+  * ***If using Custom VAT Settings:***
   
     * If the Delivery Address is the same as the Company Address we use the UK Carriage Code
     * If the Delivery Address is in EU (as setup in Sage -> Settings -> Countries) we use the EU Carriage Code
     * Otherwise we use the RoW Carriage Code
     
-  * **By default is not supplied in the XML:**
+  * ***By default is not supplied in the XML:***
     
     * We will use the T1 code
     
@@ -60,13 +60,13 @@ Zynk will calculate the Nominal Code for items in the following order:
 
 Zynk will calculate the Tax Code for items in the following order:
 
-* **If using Custom VAT Settings:**
+* ***If using Custom VAT Settings:***
   
     * If the Delivery Address is the same as the Company Address we use the UK Purchase Tax Code
     * If the Delivery Address is in EU (as setup in Sage -> Settings -> Countries) we use the EU Purchase Tax Code
     * Otherwise we use the RoW Purchase Tax Code
           
- * **By Default:**
+ * ***By Default:***
              
     * Use Tax Code field from the XML source (if supplied)
     * Use Tax Code specified on the Purchase Ledger Account - if option is checked to Override Tax Code in Invoicing)
@@ -86,13 +86,13 @@ Zynk will calculate the Nominal Code for items in the following order:
  
  Zynk will calculate the Tax Code for carriage in the follow order:
  
-  * **If using Custom VAT Settings:**
+  * ***If using Custom VAT Settings:***
   
     * If the Delivery Address is the same as the Company Address we use the UK Carriage Code
     * If the Delivery Address is in EU (as setup in Sage -> Settings -> Countries) we use the EU Carriage Code
     * Otherwise we use the RoW Carriage Code
     
-  * **By default is not supplied in the XML:**
+  * ***By default is not supplied in the XML:***
     
     * We will use the T1 code
     
