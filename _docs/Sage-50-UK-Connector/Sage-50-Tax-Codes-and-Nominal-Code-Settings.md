@@ -102,6 +102,3 @@ Zynk will calculate the Nominal Code for items in the following order:
 
   * Use the Nominal Code field as specified in the XML source (if supplied)
   * Use the Footer Purchase Nominal Code from Settings -> Invoice and Order Defaults
-
- 
- 
