@@ -16,7 +16,7 @@ Zynk will calculate the tax code for items in the following order:
     * If the Delivery Address is the same as the Company Address we use the UK Sales Tax Code
     * If the Delivery Address is in EU (as setup in Sage -> Settings -> Countries) we use the EU Sales Tax Code
     * Otherwise we use the RoW Sales Tax Code
-          
+    
  * **By Default:**
              
     * Use Tax Code field from the XML source (if supplied)
