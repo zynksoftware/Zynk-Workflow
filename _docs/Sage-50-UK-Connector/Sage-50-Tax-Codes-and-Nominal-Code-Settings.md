@@ -46,7 +46,7 @@ Zynk will calculate the Nominal Code for items in the following order:
   * ***By default is not supplied in the XML:***
     
     * We will use the T1 code
-    
+
 ### Carriage Nominal Codes
 
 Zynk will calculate the Nominal Code for items in the following order:
@@ -72,7 +72,7 @@ Zynk will calculate the Tax Code for items in the following order:
     * Use Tax Code specified on the Purchase Ledger Account - if option is checked to Override Tax Code in Invoicing)
     * Use Tax Code from the Stock Record
     * Use Tax Code from Settings -> Product Defaults
-      
+ 
 ### Item Nominal Codes
 
 Zynk will calculate the Nominal Code for items in the following order:
@@ -81,7 +81,7 @@ Zynk will calculate the Nominal Code for items in the following order:
    * Use the Default Nominal Code from the Purchase Ledger account (if the option is checked on the account to override Nominal Code in Invoicing)
    * Use the Sales Nominal Code from the Stock Record
    * Use the Sales Nominal Code from Settings -> Product Defaults
-   
+
  ### Carriage Tax Codes
  
  Zynk will calculate the Tax Code for carriage in the follow order:
@@ -95,7 +95,7 @@ Zynk will calculate the Nominal Code for items in the following order:
   * ***By default is not supplied in the XML:***
     
     * We will use the T1 code
-    
+
 ### Carriage Nominal Codes
 
 Zynk will calculate the Nominal Code for items in the following order:
