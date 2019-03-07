@@ -12,13 +12,13 @@ If these are not already installed, they will be installed automatically as part
 **Standard Installation**
 
 C:\Program Files (x86)\Zynk Software\Zynk\2.0 
-    | 
+         
     --- Zynk.exe 
     --- Zynk Connectors
     --- Zynk Extensions Folder
     
 C:\ProgramData\Zynk Software\Zynk\2.0
-    | 
+         
     --- Data  
     --- Logs  
     --- My Workflows 
