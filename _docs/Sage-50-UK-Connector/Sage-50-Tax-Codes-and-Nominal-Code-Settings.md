@@ -6,7 +6,6 @@ title: Sage 50 Tax code and Nominal Code Import Settings
 Zynk supports reading the default Tax Codes and Nominal Codes from Sage 50, so these fields are not required within the Connect XML schema when importing Invoices, Sales Orders or Purchase Orders.
 
 ## Sales
-
 ### Item Tax Codes
 
 Zynk will calculate the tax code for items in the following order:
@@ -33,9 +32,9 @@ Zynk will calculate the Nominal Code for items in the following order:
    * Use the Sales Nominal Code from the Stock Record
    * Use the Sales Nominal Code from Settings -> Product Defaults
 
- ### Carriage Tax Codes
- 
- Zynk will calculate the Tax Code for carriage in the follow order:
+### Carriage Tax Codes
+
+Zynk will calculate the Tax Code for carriage in the follow order:
  
   * ***If using Custom VAT Settings:***
   
@@ -82,9 +81,9 @@ Zynk will calculate the Nominal Code for items in the following order:
    * Use the Sales Nominal Code from the Stock Record
    * Use the Sales Nominal Code from Settings -> Product Defaults
 
- ### Carriage Tax Codes - 1
+### Carriage Tax Codes
  
- Zynk will calculate the Tax Code for carriage in the follow order:
+Zynk will calculate the Tax Code for carriage in the follow order:
  
   * ***If using Custom VAT Settings:***
   
