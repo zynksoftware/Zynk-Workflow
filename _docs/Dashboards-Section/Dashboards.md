@@ -5,7 +5,7 @@ title: Dashboards
 
 Each of the dashboard connectors allow you to display key information from your systems to a HTML file which can be displayed on a web browser in your office. You can use Dashboards with systems such as Sage 50, Sage 200, Sugar CRM and Salesforce.
 
-For information on how to use these tasks please see the page on [using dashboards](/using-dashboards)
+For information on how to use these tasks please see the page on [Using Dashboards](/using-dashboards)
 
 ## Tasks
 
@@ -34,4 +34,4 @@ Select the connection to use.
 See [Common Task Settings](/common-task-settings)
 
 ## Examples  
-Information on how to use the Zynk dashboards tasks can be found on the [using dashboards](/using-dashboards) article.
+Information on how to use the Zynk dashboards tasks can be found on the [Using Dashboards](/using-dashboards) article.

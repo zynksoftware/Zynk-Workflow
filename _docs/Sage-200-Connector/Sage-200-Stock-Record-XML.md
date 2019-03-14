@@ -133,7 +133,7 @@ The information below can be specified on the Suppliers tab in Sage.
 | Sage Field | XML Field  | Example  | Field Type  | Field Length  | Input  | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | A/C Ref | AccountReference | SUP001 | string | 8 | Required |
-| Supplier stock code | SupplierStockCode | S-PROD001 | string | 40 | Required |
+| Supplier stock code | SupplierStockCode | S-PROD001 | string | 40 | Optional |
 | Lead Time | LeadTime | 3 | short | - | Optional |
 | Lead Time Unit | LeadTimeUnit | EnumTimeUnitDay | enum | - | Optional | Can be either EnumTimeUnitDay, EnumTimeUnitWeek, EnumTimeUnitMonth, or EnumTimeUnitYear. |
 | Usual Order Quantity | UsualOrderQuantity | 1 | decimal | - | Optional |

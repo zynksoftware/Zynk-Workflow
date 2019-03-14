@@ -5,11 +5,18 @@ title: Connecting to Sage 200 Online
 ---
 All of the tasks in the Sage 200 Online connector require a connection to a Sage 200 Online company, so you will need to create a connection with the type 'Sage 200 Online'. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your Sage 200 Online details:
 
-![Sage 200 Online Connection](http://www.zynk.com/images/v2/sage_200_online_connection.png)
+![Sage 200 Online Connection](/assets/images/sage-200-online/sage-200-online-connection.png)
 
 Enter your Sage 200 details as described below, then click 'Finish' to create the connection.
 
 ## Settings
+### Edition
+_Required_  
+Select the edition of Sage 200 Online you are connecting to. The available options are:
+
+* Standard
+* Extra
+
 ### Access Token
 _Required_  
 You can generate an access token for Sage 200 Online by following the steps below. This allows Zynk to access your Sage data.

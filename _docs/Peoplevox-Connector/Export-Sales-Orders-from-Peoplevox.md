@@ -70,6 +70,7 @@ Example input file, for detailed information see [Peoplevox Sales Order XML](peo
 		<PaymentMethod>1</PaymentMethod>
 		<ServiceType></ServiceType>
 		<ChannelName>Website</ChannelName>
+		<Site />
 		<SalesOrderItems>
 			<SalesOrderItem>
 				<ItemCode>PROD001</ItemCode>
@@ -78,8 +79,17 @@ Example input file, for detailed information see [Peoplevox Sales Order XML](peo
 				<Line></Line>
 				<Sequence>1</Sequence>
 				<SalePrice>10</SalePrice>
+				<Attribute1 />
+				<Attribute2 />
+				<Attribute3 />
 			</SalesOrderItem>
 		</SalesOrderItems>
+		<OnHold>false</OnHold>
+		<Attribute1>01913037279</Attribute1>
+		<Attribute2 />
+		<Attribute3 />
+		<Attribute4 />
+		<Attribute5 />
 	</SalesOrder>
 </SalesOrders>
 ```

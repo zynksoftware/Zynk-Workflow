@@ -45,10 +45,13 @@ If you are using **Sage 200 Standard Online** or **Sage 200 Extra Online** pleas
 ## Supported Versions
 We provide support for the following versions of Sage 200:
 
- * Version 12 (2017)
- * Version 11 (2016)
- * Version 10 (2015)
- * Version 9 R2 (2013)
- * Version 8 (2011)
+ * Sage 200c Summer 2018 (v12.00.0020)
+ * Sage 200c Spring 2018 (v12.00.0013)
+ * Sage 200c Winter 2017 (v12.00.0007)
+ * Sage 200c Summer 2017 (v12.00.0003)
+ * Sage 200 2016 (v11)
+ * Sage 200 2015 (v10)
+ * Sage 200 2013 R2 (v9)
+ * Sage 200 2011 (v8)
 
 Zynk contains separate libraries for each version of Sage 200 listed above. You will need to make sure you use the tasks from the correct library depending on the version of Sage 200 you have installed.

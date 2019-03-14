@@ -227,3 +227,25 @@ The following fields can be set in the financial information section.
   </XeroContact>
 </ArrayOfXeroContact>
 ```
+
+## Attachments
+You can attach up to 10 files to a contact in Xero. If the same file name is provided as an attachment already on the contact in Xero, the existing file will be overwritten.
+
+| Xero Field | XML Field  | Example  | Field Type  | Field Length  | Input | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| - | FilePath | C:\10388.png | string | - | Required | The path of the file to upload to Xero |
+| Name | FileName | upload.png | string | - | Optional | Will default to the file name specified in the FilePath if not provided |
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfXeroContact>
+  <XeroContact>
+    <Attachments>
+      <Attachment>
+        <FilePath>C:\10388.png</FilePath>
+        <FileName>upload.png</FileName>
+      </Attachment>
+    </Attachments>
+  </XeroContact>
+</ArrayOfXeroContact>
+```

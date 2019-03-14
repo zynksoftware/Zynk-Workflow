@@ -10,12 +10,15 @@ Each of the tasks require a connection to Amazon Marketplace, for more informati
 Zynk currently supports the UK, US, CA, DE, ES, FR and IT marketplaces.
 
 ## Tasks
-* [Downloading Orders from Amazon Marketplace](downloading-orders-from-amazon-marketplace)
+* [Exporting Commissions from Amazon Marketplace](exporting-commissions-from-amazon-marketplace)
+* [Exporting Orders from Amazon Marketplace](downloading-orders-from-amazon-marketplace)
+* [Exporting Products from Amazon Marketplace](exporting-products-from-amazon-marketplace)
+* [Exporting Refunds from Amazon Marketplace](exporting-refunds-from-amazon-marketplace)
 * [Exporting Reports from Amazon Marketplace](exporting-reports-from-amazon-marketplace)
 * [Importing Feeds to Amazon Marketplace](importing-feeds-to-amazon-marketplace)
 * [Submitting Feeds to Amazon Marketplace](uploading-feeds-to-amazon-marketplace)
-* [Uploading Inventory Feeds to Amazon Marketplace](uploading-inventory-feeds-to-amazon-marketplace)
-* [Uploading Price Feeds to Amazon Marketplace](uploading-price-feeds-to-amazon-marketplace)
+* [Importing Inventory Feeds to Amazon Marketplace](uploading-inventory-feeds-to-amazon-marketplace)
+* [Importing Price Feeds to Amazon Marketplace](uploading-price-feeds-to-amazon-marketplace)
 
 Each task listed above requires you to select the countries you wish to download. Please note, the channel settings on your task must correspond to your connection details. For example, if you wish to download orders from Amazon Canada you will be required to enter a North America authorisation token and seller id.
 

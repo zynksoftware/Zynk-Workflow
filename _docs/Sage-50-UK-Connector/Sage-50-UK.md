@@ -47,6 +47,7 @@ Each of the tasks require a connection to Sage 50 UK, for more information on se
  * [Updating Ledgers](updating-ledgers)
  * [Updating Sales Orders](updating-sales-orders)
  * [Updating Invoices](updating-invoices)
+ * [Sage 50 Tax code and Nominal Code Import Settings](sage-50-tax-codes-and-nominal-code-settings)
 
 ## Supported Versions  
 We provide support for the following versions of Sage 50 and Sage 50c
