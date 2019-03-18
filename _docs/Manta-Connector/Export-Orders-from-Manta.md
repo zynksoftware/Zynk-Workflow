@@ -28,7 +28,7 @@ The name of the file to export the quotations to.
 See [Common Task Settings](common-task-settings).
 
 ## Examples
-Sample output file, for full documentation and samples see [Manta Order XML](manta-order-xml)
+Sample output file for Manta orders.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
