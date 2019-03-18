@@ -60,6 +60,7 @@
     * [Visualsoft](/visualsoft)
     * [Volo](/volo)
     * [WooCommerce](/woocommerce)
+    * [Manta](/manta)
 * [Files](/files)
     * [CSV](/csv)
     * [HTML](/html)
