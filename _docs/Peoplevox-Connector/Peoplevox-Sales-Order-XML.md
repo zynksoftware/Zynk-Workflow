@@ -178,16 +178,14 @@ Is partial shipment, defaults to false.
 
 ### Status
 _Optional_  
-Sales order status name, defaults to New.
+The name of the status. Only the “cancelled” status is permitted on imports; all other statuses are read-only (optional) (see Sales order statuses)
 
 | Type | Example | XML |
 | --- | --- | --- |
 | string(50) | New | `<Status>New</Status>` |
 
 #### Available Values
- * New
- * Despatched
- * Closed
+ * Cancelled
 
 ### RequestedDeliveryDate
 _Optional_  

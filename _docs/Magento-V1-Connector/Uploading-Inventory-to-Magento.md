@@ -38,6 +38,19 @@ Sample input file, showing the product TEST with a stock level of 80:
     <sku>TEST</sku>
     <qty>80</qty>
     <is_in_stock>1</is_in_stock>
+    <manage_stock>1</manage_stock>
+    <use_config_manage_stock>0</use_config_manage_stock>
+    <min_qty>2</min_qty>
+    <use_config_min_qty>0</use_config_min_qty>
+    <min_sale_qty>1</min_sale_qty>
+    <use_config_min_sale_qty>0</use_config_min_sale_qty>
+    <max_sale_qty>10</max_sale_qty>
+    <use_config_max_sale_qty>0</use_config_max_sale_qty>
+    <is_qty_decimal>0</is_qty_decimal>
+    <backorders>1</backorders>
+    <use_config_backorders>0</use_config_backorders>
+    <notify_stock_qty>10</notify_stock_qty>
+    <use_config_notify_stock_qty>0</use_config_notify_stock_qty>
   </Inventory>
 </ArrayOfInventory>
 ```
