@@ -46,6 +46,7 @@ Some transactions can be grouped during the import, to end up with a single head
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>4000</NominalCode>
       <Reference>1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>4000</Details>
       <NetAmount>100</NetAmount>
       <TaxRate>20</TaxRate>
@@ -60,6 +61,7 @@ Some transactions can be grouped during the import, to end up with a single head
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>4001</NominalCode>
       <Reference>1</Reference>
+      <PaymentReference>38</PaymentReference>
       <Details>4001</Details>
       <NetAmount>100</NetAmount>
       <TaxRate>20</TaxRate>
@@ -84,6 +86,7 @@ Supports grouping.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>4000</NominalCode>
       <Reference>SI1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Sales Invoice</Details>
       <NetAmount>100</NetAmount>
       <TaxRate>20</TaxRate>
@@ -97,6 +100,7 @@ Supports grouping.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>4001</NominalCode>
       <Reference>SI1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Sales Invoice</Details>
       <NetAmount>100</NetAmount>
       <TaxRate>20</TaxRate>
@@ -121,6 +125,7 @@ Supports grouping.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>4000</NominalCode>
       <Reference>SC1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Sales Credit</Details>
       <NetAmount>100</NetAmount>
       <TaxRate>20</TaxRate>
@@ -134,6 +139,7 @@ Supports grouping.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>4001</NominalCode>
       <Reference>SC1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Sales Credit</Details>
       <NetAmount>100</NetAmount>
       <TaxRate>20</TaxRate>
@@ -158,6 +164,7 @@ Supports allocations. Please note that Sage expects a gross amount for Sales Rec
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <BankReference>1200</BankReference>
       <Reference>SI1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Sales Receipt</Details>
       <NetAmount>240</NetAmount>
       <TaxRate>0</TaxRate>
@@ -180,6 +187,7 @@ Supports allocations. Please note that Sage expects a gross amount for Sales Rec
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <BankReference>1200</BankReference>
       <Reference>SP1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Sales Payment</Details>
       <NetAmount>240</NetAmount>
       <TaxRate>0</TaxRate>
@@ -204,6 +212,7 @@ Supports grouping.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>5000</NominalCode>
       <Reference>PI1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Purchase Invoice</Details>
       <NetAmount>100</NetAmount>
       <TaxRate>20</TaxRate>
@@ -219,6 +228,7 @@ Supports grouping.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>5001</NominalCode>
       <Reference>PI1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Purchase Invoice</Details>
       <NetAmount>100</NetAmount>
       <TaxRate>20</TaxRate>
@@ -245,6 +255,7 @@ Supports grouping.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>5000</NominalCode>
       <Reference>PC1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Purchase Credit</Details>
       <NetAmount>100</NetAmount>
       <TaxRate>20</TaxRate>
@@ -260,6 +271,7 @@ Supports grouping.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>5001</NominalCode>
       <Reference>PC1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Purchase Credit</Details>
       <NetAmount>100</NetAmount>
       <TaxRate>20</TaxRate>
@@ -285,6 +297,7 @@ Supports grouping.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <BankReference>1200</BankReference>
       <Reference>PR1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Purchase Receipt</Details>
       <NetAmount>240</NetAmount>
       <TaxRate>0</TaxRate>
@@ -309,6 +322,7 @@ Supports allocations.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <BankReference>1200</BankReference>
       <Reference>PI1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Purchase Payment</Details>
       <NetAmount>240</NetAmount>
       <TaxRate>0</TaxRate>
@@ -332,6 +346,7 @@ Supports allocations.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>7000</NominalCode>
       <Reference>BR1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Bank Receipt</Details>
       <NetAmount>240</NetAmount>
       <TaxRate>0</TaxRate>
@@ -355,6 +370,7 @@ Supports allocations.
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <NominalCode>7000</NominalCode>
       <Reference>BP1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Bank Payment</Details>
       <NetAmount>240</NetAmount>
       <TaxRate>0</TaxRate>
@@ -378,6 +394,7 @@ Supports grouping.  Note all values must be positive
       <AccountReference>4000</AccountReference>
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <Reference>JDC1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Journal Debit</Details>
       <NetAmount>240</NetAmount>
       <TaxRate>0</TaxRate>
@@ -390,6 +407,7 @@ Supports grouping.  Note all values must be positive
       <AccountReference>4001</AccountReference>
       <TransactionDate>2014-04-22T00:00:00</TransactionDate>
       <Reference>JDC1</Reference>
+      <PaymentReference>37</PaymentReference>
       <Details>Journal Credit</Details>
       <NetAmount>240</NetAmount>
       <TaxRate>0</TaxRate>
