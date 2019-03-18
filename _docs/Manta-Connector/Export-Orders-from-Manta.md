@@ -3,7 +3,7 @@ slug: exporting-orders-from-manta
 title: Exporting Orders from Manta
 ---
 
-This task will export orders from Manta in [Manta Order XML](manta-order-xml) format to a file.
+This task will export orders from Manta in the Manta Order XML](#examples) format to a file.
 
 ## Settings
 ### Connection Settings
