@@ -1,6 +1,6 @@
 ---
 slug: licensing-issues
-title: Issues when Activating a Zynk License
+title: Issues When Activating a Zynk License
 ---
 
 ## Potential Issues When Activating a Zynk License
