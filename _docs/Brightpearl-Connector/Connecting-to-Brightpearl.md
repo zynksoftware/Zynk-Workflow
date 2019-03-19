@@ -9,7 +9,7 @@ All of the tasks in the Brightpearl Connector require a Brightpearl connection, 
 
 
 
-[![Brightpearl Connection](http://www.zynk.com/images/v2/brightpearl_connection.png)](http://www.zynk.com/images/v2/brightpearl_connection.png)
+[![Brightpearl Connection](/assets/images/brightpearl/brightpearl_connection.png)
 
 
 

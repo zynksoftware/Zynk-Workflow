@@ -6,7 +6,7 @@ title: Connecting to Sage 50 UK
 
 All of the tasks in the Sage 50 UK connector require a connection to a Sage 50 company, so you will need to create a connection with the type 'Sage 50 UK'. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your Sage 50 details:
 
-[![Sage 50 UK Connection](http://www.zynk.com/images/v2/sage_50_uk_connection.png)](http://www.zynk.com/images/v2/sage_50_uk_connection.png)
+![Sage 50 UK Connection](/assets/images/sage-50/sage_50_uk_connection.png)
 
 Enter your Sage 50 details as described below, then click 'Finish' to create the connection.
 

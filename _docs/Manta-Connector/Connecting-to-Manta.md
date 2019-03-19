@@ -7,7 +7,7 @@ A connection to Manta is required by each task within the Manta connector. See [
 
 Enter your Manta details as described below, then click 'Finish' to create the connection.
 
-![Manta Connection](../../images/Manta Connector/manta_connection.png)
+![Manta Connection](/assets/images/manta/manta_connection.png)
 
 ## Settings
 ### URL

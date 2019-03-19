@@ -13,7 +13,7 @@ In order to successfully connect your Kashflow account to Zynk, you'll need your
 
 
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/57e261b4c697910d0784cc10/file-v2fParu8Cs.png)
+![Kashflow Connection](/assets/images/kashflow/kashflow_connection.png)
 
 
 

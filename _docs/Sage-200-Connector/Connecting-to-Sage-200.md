@@ -9,7 +9,7 @@ Note that there are separate connection types for each version of Sage 200, you 
 
 ## Connecting to Sage 200 Version 9 (2013) and Above
 
-[![Sage 200 Connection](http://www.zynk.com/images/v2/sage_200_connection_v11.png)](http://www.zynk.com/images/v2/sage_200_connection_v11.png)
+![Sage 200 Connection](/assets/images/sage-200/sage_200_connection_v11.png)
 
 Enter you Sage 200 details as described below, then click 'Finish' to create the connection.
 
@@ -24,7 +24,7 @@ If the company you have selected has a password, enter this here.
 
 ## Connecting to Sage 200 Versions 5.1-8 (2008-2011)
 
-[![Sage 200 Connection](http://www.zynk.com/images/v2/sage_200_connection.png)](http://www.zynk.com/images/v2/sage_200_connection.png)
+![Sage 200 Connection](/assets/images/sage200/sage_200_connection.png)
 
 Enter you Sage 200 details as described below, then click 'Finish' to create the connection.
 

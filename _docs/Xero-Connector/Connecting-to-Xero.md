@@ -10,7 +10,7 @@ Zynk connects to Xero using the private API, which requires you to set up a priv
 
 In Zynk you will see a screen like the one below, requesting your Xero private application details:
 
-[![Xero](http://www.zynk.com/images/v2/xero_connection_1.png)](http://www.zynk.com/images/v2/xero_connection_1.png)
+![Xero](/assets/images/xero/xero_connection.png)
 
 Enter the details as described below, then click 'Finish' to create the connection.
 

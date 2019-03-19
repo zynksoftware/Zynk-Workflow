@@ -9,7 +9,7 @@ All of the tasks in the Quickbooks Online connector require a connection to a Qu
 
 
 
-[![Quickbooks Online Connection](http://www.zynk.com/images/v2/quickbooks_online_connection.png)](http://www.zynk.com/images/v2/quickbooks_online_connection.png)
+![Quickbooks Online Connection](/assets/images/quickbooks-online/quickbooks_online_connection.png)
 
 
 
