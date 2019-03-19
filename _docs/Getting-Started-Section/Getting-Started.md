@@ -4,6 +4,7 @@ redirect_from: "/category/28-getting-started"
 title: Getting Started
 ---
  * [Activating Zynk](activating-zynk)
+ * [Licensing Issues](licensing-issues)
  * [Application Log](application-log) 
  * [Connection Manager](connection-manager)
  * [Container Tasks](container-tasks)
