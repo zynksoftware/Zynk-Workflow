@@ -1,5 +1,6 @@
 ---
 slug: exporting-timesheets-from-jobadder
+redirect_from: "/article/exporting-timesheets-from-jobadder"
 title: Exporting Timesheets from JobAdder
 ---
 This task will export timesheets from JobAdder in the XML format. See below for a sample output file.
