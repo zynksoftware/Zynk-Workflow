@@ -7,7 +7,7 @@ title: Issues when Activating a Zynk License
 
 When activating a valid Zynk license in versions prior to 2.20.3 you may come across the following message:
 
-![Licensing Error](https://github.com/zynksoftware/workflow/blob/master/_docs/Getting-Started-Section/license.png "Licensing Error")
+![Licensing Error](https://raw.githubusercontent.com/zynksoftware/workflow/master/_docs/Getting-Started-Section/license.png "Licensing Error")
 
 This can relate to an issue in older versions of Zynk where Zynk cannot create a secure connection to the Zynk licensing server using TLS 1.2.
 
