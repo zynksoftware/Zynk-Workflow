@@ -7,7 +7,12 @@ All of the tasks in the Magento V2 connector require a connection to Magento, so
 
 ![Magento V2 Connection](http://www.zynk.com/images/v2/magento_v2_connection.png)
 
+Please note, if you are on a Zynk version equal to or higher than 2.21.0 then you can optionally create a token from your Magento admin by going to System -> Integrations -> Add New Integration.
+
 Enter your Magento details as described below, then click 'Finish' to create the connection.
+
+## API Endpoint
+##### [POST /V1/integration/admin/token](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/integrationAdminTokenServiceV1CreateAdminAccessTokenPost)
 
 ## Settings
 ### URL
@@ -15,11 +20,11 @@ _Required_
 Enter the URL for your Magento website (e.g. http://www.mymagentosite.com/).
 
 ### Username
-_Required_  
+_Optional_  
 Enter the username you use to sign in to the administration section of the website. This is not stored by Zynk, and is only used to generate the token.
 
 ### Password
-_Required_  
+_Optional_  
 Enter the password you use to sign in to the administration section of the website. This is not stored by Zynk, and is only used to generate the token.
 
 ### Token

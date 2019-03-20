@@ -25,6 +25,10 @@ Each of the tasks require a connection to Magento, for more information on setti
 * [Uploading Shipments to Magento V2](uploading-shipments-to-magento-v2)
 * [Uploading Tier Prices to Magento V2](uploading-tier-prices-to-magento-v2)
 
+## Tips & Tools
+
+* [Matching records in Magento v2](matching-records-in-magento-v2)
+
 ## Supported Versions
 
 This connector only supports version 2 of Magento. Please see [Magento V1](magento-v1) connector for information relating to Magento V1.

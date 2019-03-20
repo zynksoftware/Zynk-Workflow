@@ -3,7 +3,13 @@ slug: uploading-invoices-to-magento-v2
 redirect_from: "/article/uploading-invoices-to-magento-v2"
 title: Uploading Invoices to Magento V2
 ---
-This task will create new invoices in Magento. See below for a sample input file.
+This task will create new invoices in Magento. You must provide either the order/increment_id or order/entity_id in your data so we can invoice a specific order.
+
+See below for a sample input file.
+
+## API Endpoint
+##### [POST /V1/order/{orderId}/Invoice](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/salesInvoiceOrderV1ExecutePost)
+_{orderId}_ The task will find a matching order id based on the data you provide. 
 
 ## Settings
 ### Connection

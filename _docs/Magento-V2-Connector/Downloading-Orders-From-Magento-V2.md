@@ -5,6 +5,9 @@ title: Downloading Orders From Magento V2
 ---
 This task will download orders from Magento in an XML format. The results can be filtered if required. See below for a sample output file.
 
+## API Endpoints
+##### [GET /V1/orders](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/salesOrderRepositoryV1GetListGet)
+
 ## Settings
 ### Connection
 _Required_  

@@ -5,6 +5,9 @@ title: Downloading Invoices From Magento V2
 ---
 This task will download invoices from Magento in an XML format. The results can be filtered if required. See below for a sample output file.
 
+## API Endpoints
+##### [GET /V1/invoices](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/salesInvoiceRepositoryV1GetListGet)
+
 ## Settings
 ### Connection
 _Required_  

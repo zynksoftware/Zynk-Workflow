@@ -9,6 +9,10 @@ The `<entity_id>` element is used to specify the ID of the order to create the s
 
 You can optionally provide a collection of `<item>` elements to ship specific items on the order. If no items are provided, the task will ship all remaining items on the order.
 
+## API Endpoint
+##### [POST /V1/order/{orderId}/ship](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/salesShipOrderV1ExecutePost)
+_{orderId}_ The task will find a matching order id based on the data you provide. 
+
 ## Settings
 ### Connection
 _Required_  

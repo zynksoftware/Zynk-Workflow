@@ -7,6 +7,13 @@ title: Uploading Products to Magento V2
 
 If the `<id>` element is specified in the input file, the task will update the product with the specified ID. If no ID is specified, the task will use the `<sku>` element to check if the product already exists. If a match is found the existing product will be updated, otherwise a new product will be created.
 
+## API Endpoints
+##### [POST /V1/products](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/catalogProductRepositoryV1SavePost)
+This method will be used when creating a new product record. The matching routine for products is noted above.
+##### [PUT /V1/products/{sku}](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/catalogProductRepositoryV1SavePut)
+This method will be used when updated an exisitng product record. The matching routine for products is noted above.
+_{sku}_ The task will find a matching sku based on the data you provide.
+
 ## Settings
 ### Connection
 _Required_  
