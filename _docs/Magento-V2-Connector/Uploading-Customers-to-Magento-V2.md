@@ -8,10 +8,10 @@ This task will create or update customers in Magento. See below for a sample inp
 If the `<id>` element is specified in the input file, the task will update the customer with the specified ID. If no ID is specified, the task will use the `<email>` element to check if the customer already exists. If a match is found the existing customer will be updated, otherwise a new customer will be created.
 
 ## API Endpoints
-##### [POST /V1/customers]()
+##### [POST /V1/customers](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/customerAccountManagementV1CreateAccountPost)
 This method will be used for creating new customers. The matching routine is noted above.
-##### [PUT /V1/customers/{id}]()
-This method will be used for updating existing customers. The matching routine is noted above.
+##### [PUT /V1/customers/{id}](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/customerCustomerRepositoryV1SavePut)
+This method will be used for updating existing customers. The matching routine is noted above.  
 _{id}_ You must provide either the customer id or the email in order find a successfully match for the customer. You can also use a match clause.
 
 ## Settings

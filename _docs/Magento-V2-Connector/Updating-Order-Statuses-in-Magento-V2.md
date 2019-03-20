@@ -6,7 +6,7 @@ title: Updating Order Statuses in Magento V2
 This task will update order statuses in Magento, and optionally add a comment. See below for a sample input file.
 
 ## API Endpoints
-##### [POST /V1/orders/{id}/comments]
+##### [POST /V1/orders/{id}/comments](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/salesOrderManagementV1AddCommentPost)
 _{id}_ You must provide either the increment id or the entity id of the order in order to successfully update the status and post comments.
 
 ## Settings

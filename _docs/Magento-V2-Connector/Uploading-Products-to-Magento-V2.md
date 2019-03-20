@@ -11,7 +11,7 @@ If the `<id>` element is specified in the input file, the task will update the p
 ##### [POST /V1/products](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/catalogProductRepositoryV1SavePost)
 This method will be used when creating a new product record. The matching routine for products is noted above.
 ##### [PUT /V1/products/{sku}](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/catalogProductRepositoryV1SavePut)
-This method will be used when updated an exisitng product record. The matching routine for products is noted above.
+This method will be used when updated an exisitng product record. The matching routine for products is noted above.  
 _{sku}_ The task will find a matching sku based on the data you provide.
 
 ## Settings
