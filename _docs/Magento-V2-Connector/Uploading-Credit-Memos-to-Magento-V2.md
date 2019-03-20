@@ -6,7 +6,7 @@ title: Uploading Credit Memos to Magento V2
 This task will create new credit memos in Magento. See below for a sample input file.
 
 ## API Endpoints
-##### [POST /V1/creditmemo/refund](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/salesCreditmemoManagementV1RefundPost)
+##### [POST /V1/creditmemo/refund](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/salesCreditmemoManagementV1RefundPost)  
 
 ## Settings
 ### Connection

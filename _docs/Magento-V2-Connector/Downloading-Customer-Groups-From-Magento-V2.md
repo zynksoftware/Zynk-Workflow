@@ -6,7 +6,7 @@ title: Downloading Customer Groups From Magento V2
 This task will download customer groups from Magento in an XML format. The results can be filtered if required. See below for a sample output file.
 
 ## API Enpoints
-##### [GET /V1/customerGroups/search](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/customerGroupRepositoryV1GetListGet)
+##### [GET /V1/customerGroups/search](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/customerGroupRepositoryV1GetListGet)  
 
 ## Settings
 ### Connection

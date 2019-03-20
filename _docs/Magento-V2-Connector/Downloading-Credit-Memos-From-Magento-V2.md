@@ -6,7 +6,7 @@ title: Downloading Credit Memos From Magento V2
 This task will download credit memos from Magento in an XML format. The results can be filtered if required. See below for a sample output file.
 
 ## API Endpoint
-##### [GET /V1/creditmemos](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/salesCreditmemoRepositoryV1GetListGet)
+##### [GET /V1/creditmemos](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/salesCreditmemoRepositoryV1GetListGet)  
 
 ## Settings
 ### Connection

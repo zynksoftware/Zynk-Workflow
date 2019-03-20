@@ -5,8 +5,8 @@ title: Downloading Customers From Magento V2
 ---
 This task will download customers from Magento in an XML format. The results can be filtered if required. See below for a sample output file.
 
-##API Endpoints
-##### [GET /V1/customers/search](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/customerCustomerRepositoryV1GetListGet)
+## API Endpoints
+##### [GET /V1/customers/search](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/customerCustomerRepositoryV1GetListGet)  
 
 ## Settings
 ### Connection
