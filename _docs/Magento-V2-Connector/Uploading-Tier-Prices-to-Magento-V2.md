@@ -8,10 +8,10 @@ title: Uploading Tier Prices to Magento V2
 The task uses the `<sku>`, `<customer_group_name>`, and `<qty>` elements to check if the tier price already exists. If a match is found the existing tier price will be updated, otherwise a new tier price will be created.
 
 ## API Endpoint
-##### [POST /V1/products/{sku}/group-prices/{groupId}/tiers/{qty}/price/{price}](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/catalogProductTierPriceManagementV1AddPost)
-_{sku}_ The task will find a matching product sku based on the data you provide. This should be the product you want to update prices for.
-_{groupId}_ The task will find a matching customer group id based on the data you provide. This should be the customer group you want to update the product prices for.
-_{qty}_ This value will default to 1 if you do not provide a value.
+##### [POST /V1/products/{sku}/group-prices/{groupId}   /tiers/{qty}/price/{price}](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/catalogProductTierPriceManagementV1AddPost)
+_{sku}_ The task will find a matching product sku based on the data you provide. This should be the product you want to update prices for.  
+_{groupId}_ The task will find a matching customer group id based on the data you provide. This should be the customer group you want to update the product prices for.  
+_{qty}_ This value will default to 1 if you do not provide a value.  
 
 ## Settings
 ### Connection

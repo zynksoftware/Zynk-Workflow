@@ -5,7 +5,7 @@ title: Updating Inventory in Magento V2
 ---
 This task will update inventory in Magento. See below for a sample input file.
 
-## API Endpoints
+## API Endpoint
 ##### [PUT /V1/products/{sku}/stockItems/1](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/catalogInventoryStockRegistryV1UpdateStockItemBySkuPut)
 _{sku}_ You have to provide either the product id or the sku to match the product and successfully update the inventory.
 

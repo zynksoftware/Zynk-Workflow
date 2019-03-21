@@ -5,7 +5,7 @@ title: Downloading Products From Magento V2
 ---
 This task will download products from Magento in an XML format. The results can be filtered if required. See below for a sample output file.
 
-## API Endpoints
+## API Endpoint
 ###### [GET /V1/products](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/catalogProductRepositoryV1GetListGet)  
 
 ## Settings
