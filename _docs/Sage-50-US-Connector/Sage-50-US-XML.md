@@ -2,7 +2,6 @@
 slug: sage-50-us-xml
 title: Sage 50 US XML
 ---
-**NOTE - The Sage 50 US Connector is currently in BETA - if you are interested in getting early access please contact us at support@zynk.com**  
 
  * [Sage 50 US Customer XML](sage-50-us-customer-xml)
  * [Sage 50 US Sales Order XML](sage-50-us-sales-order-xml)
