@@ -19,14 +19,14 @@ The TransactionType field can be one of the following:
  
  ## XML Fields
  
-| Sage Field | XML Field  | Example  | Field Type  | Field Length  | Input  |
+| Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 123 | 8 | Int | Required if needed for duplicate prevention |
-| Ref | Reference | 12345 | String | 10 | Optional |
-| ExRef | PaymentReference | 12345 | String | 10 | Optional |
-| Date | TransactionDate | 2014-04-22T00:00:00 | Datetime | 8 | Optional |
-| Type | TransactionType | SA | Enum | 2 | Required |
-| Nominal | NominalCode | 4000 | String | 8 | Required |
+| Ref | Reference | 12345 | 10 | String | Optional |
+| ExRef | PaymentReference | 12345 | 10 | String | Optional |
+| Date | TransactionDate | 2014-04-22T00:00:00 | 8 | Datetime | Optional |
+| Type | TransactionType | SA | 2 | Enum | Required |
+| Nominal | NominalCode | 4000 | 8 | String | Required |
 | Details | Details | Payment on Account | 60 | String | Optional |
 | Account | AccountReference | JOE001 | 8 | String | Required |
 | Project | ProjectRef | BANANA | 8 | String | Optional |
