@@ -16,6 +16,26 @@ The TransactionType field can be one of the following:
  * BankPayment
  * JournalDebit
  * JournalCredit
+ 
+ ## XML Fields
+ 
+| Sage Field | XML Field  | Example  | Field Type  | Field Length  | Input  |
+| --- | --- | --- | --- | --- | --- |
+| N/A | Id | 123 | 8 | Int | Required if needed for duplicate prevention |
+| Ref | Reference | 12345 | String | 10 | Optional |
+| ExRef | PaymentReference | 12345 | String | 10 | Optional |
+| Date | TransactionDate | 2014-04-22T00:00:00 | Datetime | 8 | Optional |
+| Type | TransactionType | SA | Enum | 2 | Required |
+| Nominal | NominalCode | 4000 | String | 8 | Required |
+| Details | Details | Payment on Account | 60 | String | Optional |
+| Account | AccountReference | JOE001 | 8 | String | Required |
+| Project | ProjectRef | BANANA | 8 | String | Optional |
+| Dept | Department | 0 | 3 | Int | Optional |
+| ProjectItem | Cost Code | LABOUR | 10 | String | Optional |
+| Net | NetAmount | 9.99 | 8 | Double | Required |
+| N/A | TaxRate | 20 | 8 | Int | Optional |
+| Tax | TaxAmount | 2.00 | 8 | Double | Optional |
+| Tax Code | TaxCode | 1 | 2 | Int | Optional |
 
 ## Allocations  
 Some credit transaction types can be automatically allocated during the import, we do not support allocating existing credit transactions.  Using the Reference field you can specify the Sage reference of the transaction you want to allocate to, note we can only allocated to a single debit transaction in Sage.  If the reference cannot be found or is already allocated the transaction will be imported, but left unallocated.  As there is potential for the allocation to fail SR transactions will be imported as SA, and PP as PA.
