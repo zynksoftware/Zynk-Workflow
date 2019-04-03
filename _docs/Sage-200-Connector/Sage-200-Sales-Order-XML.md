@@ -377,8 +377,8 @@ The Address1 field is used to check if the delivery address is provided in the X
 | Company | Postal name | Internetware | string | 60 | Optional | If not provided, will be built up from the Title, Forename and Surname. |
 | Address1 | Address 1 | i6 Building | string | 60 | Optional |
 | Address2 | Address 2 | 6-8 Charlotte Square | string | 60 | Optional |
-| Address3 | Address 3 | string | 60 | Optional |
-| Address4 | Address 4 | string | 60 | Optional |
+| Address3 | Address 3 | | string | 60 | Optional |
+| Address4 | Address 4 | | string | 60 | Optional |
 | Town | City | Newcastle Upon Tyne | string | 60 | Optional | Available in Sage 200 V6 and greater. Can only be set if 'Use Segmented Addresses' is enabled in Accounting System Manager -> System Settings.|
 | County | County | Tyne and Wear | string | 60 | Optional | Available in Sage 200 V6 and greater. Can only be set if 'Use Segmented Addresses' is enabled in Accounting System Manager -> System Settings. |
 | Postcode  | Postcode | NE1 4XF | string | 10 | Optional |
