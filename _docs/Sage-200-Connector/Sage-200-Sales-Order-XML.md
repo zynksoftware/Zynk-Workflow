@@ -370,7 +370,7 @@ The Currency field cannot be set directly on an order as this is set through the
 ```
 
 ## Delivery & Invoicing - Delivery address
-The Address1 field is used to check if the delivery address is provided in the XML, and if so Zynk will use the data provided.  If Address1 is blank and the customer has a default delivery address configured in Sage, Zynk will use that, otherwise it will fall back to the invoice address of the customer in Sage.  Note if 'Use Segmented Addresses' is not enabled in Accounting System Manager -> System Settings certain fields will not be displayed in addresses.
+The Address1 field is used to check if the delivery address is provided in the XML, and if so Zynk will use the data provided.  If Address1 is blank and the customer has a default delivery address configured in Sage, Zynk will use that, otherwise it will fall back to the invoice address of the customer in Sage. PLease note if 'Use Segmented Addresses' is not enabled in Accounting System Manager -> System Settings certain fields will not be displayed in addresses, as noted below.
 
 | XML Field | Sage Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -379,8 +379,8 @@ The Address1 field is used to check if the delivery address is provided in the X
 | Address2 | Address 2 | 6-8 Charlotte Square | string | 60 | Optional |
 | Address3 | Address 3 | | string | 60 | Optional |
 | Address4 | Address 4 | | string | 60 | Optional |
-| Town | City | Newcastle Upon Tyne | string | 60 | Optional | Available in Sage 200 V6 and greater. Can only be set if 'Use Segmented Addresses' is enabled in Accounting System Manager -> System Settings.|
-| County | County | Tyne and Wear | string | 60 | Optional | Available in Sage 200 V6 and greater. Can only be set if 'Use Segmented Addresses' is enabled in Accounting System Manager -> System Settings. |
+| Town | City | Newcastle Upon Tyne | string | 60 | Optional | Available in Sage 200 V6 and greater. Can only be set if 'Use Segmented Addresses' is enabled. |
+| County | County | Tyne and Wear | string | 60 | Optional | Available in Sage 200 V6 and greater. Can only be set if 'Use Segmented Addresses' is enabled. |
 | Postcode  | Postcode | NE1 4XF | string | 10 | Optional |
 | Country | Country  | GB | string | 2 | Optional | Should be the ISO2 country code. If a country name is provided, Zynk will try to map it to the appropriate county code. |
 | ContactName  | Contact | Test Person | string | 50 | Optional |
