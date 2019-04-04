@@ -4,7 +4,7 @@ redirect_from: "/article/36-technical-support"
 title: Technical Support
 ---
 **Before you contact our support team, please check the following:-**  
-Software has has suddenly stopped working
+Software has suddenly stopped working
 
  * Have you upgraded the Zynk software recently?
  * Have you upgraded your Accounting or CRM software?
