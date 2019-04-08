@@ -3,7 +3,7 @@ slug: sage-200
 redirect_from: "/article/421-introduction-to-the-sage-200-connector"
 title: Sage 200
 ---
-The Sage 200 connector implements an interface to Sage 200 Extra On-premise and provides functions to import and export data from Sage 200 in Zynk XML format. For detailed schema information on the Zynk XML standard please see [Sage 200 XML](sage-200-xml).
+The Sage 200 connector implements an interface to Sage 200cloud Professional and Sage 200 Extra (On-premise) and provides functions to import and export data from Sage 200 in the Zynk XML format. For detailed schema information on the Zynk XML standard please see [Sage 200 XML](sage-200-xml).
 
 Each of the tasks require a connection to Sage 200, for more information on setting up and managing connections see [Connecting to Sage 200](connecting-to-sage-200).
 
@@ -45,13 +45,16 @@ If you are using **Sage 200 Standard Online** or **Sage 200 Extra Online** pleas
 ## Supported Versions
 We provide support for the following versions of Sage 200:
 
- * Sage 200c Summer 2018 (v12.00.0020)
- * Sage 200c Spring 2018 (v12.00.0013)
- * Sage 200c Winter 2017 (v12.00.0007)
- * Sage 200c Summer 2017 (v12.00.0003)
- * Sage 200 2016 (v11)
- * Sage 200 2015 (v10)
- * Sage 200 2013 R2 (v9)
- * Sage 200 2011 (v8)
+| Sage Version | Sage Version Number | Zynk Connector |
+| --- | --- | --- |
+| Sage 200c Winter 2018 | 12.00.0027 | Sage 200 Version 13 (2018) |
+| Sage 200c Summer 2018 | 12.00.0020 | Sage 200 Version 13 (2018) |
+| Sage 200c Spring 2018 | 12.00.0013 | Sage 200 Version 12 (2017) |
+| Sage 200c Winter 2017 | 12.00.0007 | Sage 200 Version 12 (2017) |
+| Sage 200c Summer 2017 | 12.00.0003 | Sage 200 Version 12 (2017) |
+| Sage 200 Extra 2016 | 11.00.x | Sage 200 Version 11 (2016) |
+| Sage 200 Extra 2015 | 10.00.x | Sage 200 Version 10 (2015) |
+| Sage 200 Extra 2013 R2 | 9.02.x | Sage 200 Version 9 (2013) |
+| Sage 200 Extra 2011 | 8.00.x | Sage 200 Version 8 (2011) |
 
-Zynk contains separate libraries for each version of Sage 200 listed above. You will need to make sure you use the tasks from the correct library depending on the version of Sage 200 you have installed.
+Zynk contains separate connectors for different versions of Sage 200. You will need to make sure you use the tasks from the correct connector depending on which version of Sage 200 you have installed.
