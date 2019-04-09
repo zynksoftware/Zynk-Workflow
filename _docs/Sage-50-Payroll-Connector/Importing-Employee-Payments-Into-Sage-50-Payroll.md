@@ -43,7 +43,7 @@ For full documentation and samples, see [Sage 50 Payroll Employee Payments XML](
 - [Importing Employee Payments Into Sage 50 Payroll](importing-employee-payments-into-sage-50-payroll)
 
 ## XML Links
-- [Sage-50-Payroll-XML](sage-50-payroll-xml)
+- [Introduction to the Sage 50 Payroll XML](sage-50-payroll-xml)
 - [Sage 50 Payroll Employee Absences XML](sage-50-payroll-employee-absences-xml)
 - [Sage 50 Payroll Employee Deductions XML](sage-50-payroll-employee-deductions-xml)
 - [Sage 50 Payroll Employee Payments XML](sage-50-payroll-employee-payments-xml)
