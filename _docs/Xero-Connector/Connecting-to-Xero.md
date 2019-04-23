@@ -32,7 +32,7 @@ In Zynk you will see a screen like the one below, requesting your Xero private a
 
 8. You will be presented with a page containing a Consumer Key for the new app, enter this in the Consumer Key section back in the Zynk Connection Wizard.
 
-9. Ensure the correct private key file (ending in .pfx) is displayed in the Certificate File section of Zynk then selection Finish.
+9. Ensure the correct private key file (ending in .pfx) is displayed in the Certificate File section of Zynk then select Finish.
 
 
 ## Settings
