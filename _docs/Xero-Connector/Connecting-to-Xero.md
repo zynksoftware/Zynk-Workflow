@@ -14,7 +14,7 @@ In Zynk you will see a screen like the one below, requesting your Xero private a
 
 ### Xero Private App Creation process
 
-1. Click on generate to generate a new pair of publick and private key files, setting the password for these files when prompted.
+1. Click on generate to generate a new pair of public and private key files, setting the password for these files when prompted.
 
 2. Login in to your developer account at https://developer.xero.com/myapps/
 
