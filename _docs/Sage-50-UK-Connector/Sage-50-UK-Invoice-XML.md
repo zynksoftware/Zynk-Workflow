@@ -51,6 +51,7 @@ The InvoiceType field can be one of the following:
  * ProductInvoice
  * ProductCredit
  * ServiceInvoice
+ * ServiceCredit
  * ProductProforma
  * ServiceProforma
  * ProductQuotation
