@@ -17,7 +17,7 @@ The TransactionType field can be one of the following:
  * JournalDebit
  * JournalCredit
  
- ## XML Fields
+## XML Fields
  
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
