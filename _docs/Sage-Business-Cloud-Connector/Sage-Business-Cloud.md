@@ -2,7 +2,7 @@
 slug: sage-business-cloud
 title: Sage Business Cloud
 ---
-The Sage Business Cloud connector implements an interface to Sage Business Cloud and provides functions to import and export data from Sage Business Cloud in Zynk XML format. For detailed schema information on the Zynk XML standard please see [Sage Business Cloud XML](sage-business-cloud-xml).  Our connector currently supports Sage Business Cloud UK and Ireland only.
+The Sage Business Cloud connector implements an interface to Sage Business Cloud and provides functions to import and export data from Sage Business Cloud in Zynk XML format. For detailed schema information on the Zynk XML standard please see [Sage Business Cloud XML](sage-business-cloud-xml).
 
 Each of the tasks require a connection to Sage Business Cloud, for more information on setting up and managing connections see [Connecting to Sage Business Cloud](connecting-to-sage-business-cloud).
 
