@@ -14,7 +14,7 @@
     * [Quickbooks Online](/quickbooks-online)
     * [Sage 50 US](/sage-50-us)
     * [Brightpearl](/brightpearl)
-    * [Sage One](/sage-one)
+    * [Sage Business Cloud](/sage-business-cloud)
     * [Sage 50 Payroll](/sage-50-payroll)
     * [Sage 50 UK Reporting](/sage-50-uk-reporting)
 * [CRM](/crm)
