@@ -12,7 +12,7 @@ During the migration you can access the existing user documentation at http://wo
  * [Sage 200 XML](sage-200-xml)
  * [Act! XML](act-xml)
  * [Sage 50 Payroll XML](sage-50-payroll-xml)
- * [Sage One XML](sage-one-xml) 
+ * [Sage Business Cloud XML](sage-business-cloud-xml) 
  * [BXP XML](bxp-xml)
  * [Quickbooks Online XML](quickbooks-online-xml)
  * [Sage 50 US XML](sage-50-us-xml)
