@@ -24,7 +24,7 @@ If the company you have selected has a password, enter this here.
 
 ## Connecting to Sage 200 Versions 5.1-8 (2008-2011)
 
-![Sage 200 Connection](/assets/images/sage200/sage_200_connection.png)
+![Sage 200 Connection](/assets/images/sage-200/sage_200_connection.png)
 
 Enter you Sage 200 details as described below, then click 'Finish' to create the connection.
 
