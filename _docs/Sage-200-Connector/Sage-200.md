@@ -54,7 +54,5 @@ We provide support for the following versions of Sage 200:
 | Sage 200c Summer 2017 | 12.00.0003 | Sage 200 Version 12 (2017) |
 | Sage 200 Extra 2016 | 11.00.x | Sage 200 Version 11 (2016) |
 | Sage 200 Extra 2015 | 10.00.x | Sage 200 Version 10 (2015) |
-| Sage 200 Extra 2013 R2 | 9.02.x | Sage 200 Version 9 (2013) |
-| Sage 200 Extra 2011 | 8.00.x | Sage 200 Version 8 (2011) |
 
 Zynk contains separate connectors for different versions of Sage 200. You will need to make sure you use the tasks from the correct connector depending on which version of Sage 200 you have installed.
