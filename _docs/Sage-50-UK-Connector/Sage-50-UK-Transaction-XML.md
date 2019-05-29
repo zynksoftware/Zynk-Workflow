@@ -15,17 +15,17 @@ The same tasks and object model are used for all transctions types, however cert
 The following transaction types are supported by our tasks: -
 
  * [BR - Bank Receipt](http://workflow.zynk.com/sage-50-uk-transaction-xml#br---bank-receipt)
- * BP - Bank Payment
- * JD / JC - Bank Transfer
- * JD / JC - Journal Debit & Journal Credit
- * SI - Sales Invoice
- * SC - Sales Credit Note
- * SA - Sales Receipt on Account (or SR - Sales Receipt)
- * SP - Sales Payment
- * PI - Purchase Invoice
- * PC - Purchase Credit Note
- * PA - Purchase Payment on Account (or PP - Purchase Payment) 
- * PR - Purchase Receipt
+ * [BP - Bank Payment](http://workflow.zynk.com/sage-50-uk-transaction-xml#bp---bank-payment)
+ * [JD / JC - Bank Transfer](http://workflow.zynk.com/sage-50-uk-transaction-xml#jd--jc---bank-transfer)
+ * [JD / JC - Journal Debit & Journal Credit](http://workflow.zynk.com/sage-50-uk-transaction-xml#jd--jc---journal-debit--journal-credit)
+ * [SI - Sales Invoice](http://workflow.zynk.com/sage-50-uk-transaction-xml#si---sales-invoice)
+ * [SC - Sales Credit Note](http://workflow.zynk.com/sage-50-uk-transaction-xml#sc---sales-credit-note)
+ * [SA - Sales Receipt on Account (or SR - Sales Receipt)](http://workflow.zynk.com/sage-50-uk-transaction-xml#sa---sales-receipt-on-account-or-sr---sales-receipt)
+ * [SP - Sales Payment](http://workflow.zynk.com/sage-50-uk-transaction-xml#sp---sales-payment)
+ * [PI - Purchase Invoice](http://workflow.zynk.com/sage-50-uk-transaction-xml#pi---purchase-invoice)
+ * [PC - Purchase Credit Note](http://workflow.zynk.com/sage-50-uk-transaction-xml#pc---purchase-credit-note)
+ * [PA - Purchase Payment on Account (or PP - Purchase Payment)](http://workflow.zynk.com/sage-50-uk-transaction-xml#pa---purchase-payment-on-account-or-pp---purchase-payment)
+ * [PR - Purchase Receipt](http://workflow.zynk.com/sage-50-uk-transaction-xml#pr---purchase-receipt)
 
 ## Allocations  
 If the [Auto Allocate Transactions](http://workflow.zynk.com/importing-transactions-into-sage-50-uk#auto-allocate-transactions) setting is enabled Zynk will attempt to allocate certain transaction types during the import. Only SC, SA (or SR), PC and PA (or PP) transaction types will be used for the auto allocate routine.
