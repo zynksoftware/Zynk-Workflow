@@ -50,6 +50,7 @@ If the [Prevent Duplicates](http://workflow.zynk.com/importing-transactions-into
 This will create a transaction against the activity of the specified bank account, the same as manually entering using Bank Accounts -> Bank Receipts in Sage.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 1 | 8 | Int | Required if needed for duplicate prevention |
@@ -98,6 +99,7 @@ This will create a transaction against the activity of the specified bank accoun
 This will create a transaction against the activity of the specified bank account, the same as manually entering using Bank Accounts -> Bank Payments in Sage.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 2 | 8 | Int | Required if needed for duplicate prevention |
@@ -152,6 +154,7 @@ During the import Zynk will validate the debits and credits in the journal set b
 If either of the bank accounts provided are not in the base currency of the company being imported into and an exchange rate is not provided Zynk will read the exchange rates configured in Sage.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 3 | 8 | Int | Required if needed for duplicate prevention |
@@ -203,6 +206,7 @@ This will create a set of journals to transfer balances between nominal codes, t
 During the import Zynk will validate the debits and credits in the journal set balance.  If there is a variance and the [Journal Variance Nominal Code](http://workflow.zynk.com/importing-transactions-into-sage-50-uk#prevent-duplicates) setting has a valid nominal an additional balancing transaction will be created, otherwise the whole set will be rejected.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 4 | 8 | Int | Required if needed for duplicate prevention |
@@ -262,6 +266,7 @@ During the import Zynk will validate the debits and credits in the journal set b
 This will create a transaction against the activity of the specified customer account, the same as manually entering using Customers -> Batch Invoice in Sage. SI transactions support grouping during the import.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 6 | 8 | Int | Required if needed for duplicate prevention |
@@ -330,6 +335,7 @@ This will create a transaction against the activity of the specified customer ac
 This will create a transaction against the activity of the specified customer account, the same as manually entering using Customers -> Batch Credit in Sage. SC transactions support grouping during the import, and can be auto allocated.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 8 | 8 | Int | Required if needed for duplicate prevention |
@@ -400,6 +406,7 @@ This will create a transaction against the activity of the specified customer ac
 It will depend on the settings in Sage 50, but typically the NetAmount field should be the gross value of the receipt, and use the non-vatable code T9.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 10 | 8 | Int | Required if needed for duplicate prevention |
@@ -444,6 +451,7 @@ This will create a transaction against the activity of the specified customer ac
 It will depend on the settings in Sage 50, but typically the NetAmount field should be the gross value of the receipt, and use the non-vatable code T9.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 11 | 8 | Int | Required if needed for duplicate prevention |
@@ -486,6 +494,7 @@ It will depend on the settings in Sage 50, but typically the NetAmount field sho
 This will create a transaction against the activity of the specified supplier account, the same as manually entering using Suppliers -> Batch Invoice in Sage. PI transactions support grouping during the import.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 12 | 8 | Int | Required if needed for duplicate prevention |
@@ -557,6 +566,7 @@ This will create a transaction against the activity of the specified supplier ac
 This will create a transaction against the activity of the specified supplier account, the same as manually entering using Suppliers -> Batch Credit in Sage. PC transactions support grouping during the import, and can be auto allocated.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 14 | 8 | Int | Required if needed for duplicate prevention |
@@ -630,6 +640,7 @@ This will create a transaction against the activity of the specified supplier ac
 It will depend on the settings in Sage 50, but typically the NetAmount field should be the gross value of the receipt, and use the non-vatable code T9.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 16 | 8 | Int | Required if needed for duplicate prevention |
@@ -674,6 +685,7 @@ This will create a transaction against the activity of the specified supplier ac
 It will depend on the settings in Sage 50, but typically the NetAmount field should be the gross value of the receipt, and use the non-vatable code T9.
 
 ### XML Fields
+
 | Sage Field | XML Field  | Example  | Field Length  | Field Type  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | N/A | Id | 17 | 8 | Int | Required if needed for duplicate prevention |
