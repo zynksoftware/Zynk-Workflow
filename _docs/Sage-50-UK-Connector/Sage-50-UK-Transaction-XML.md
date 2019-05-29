@@ -14,7 +14,7 @@ The same tasks and object model are used for all transctions types, however cert
 ## Transaction Types
 The following transaction types are supported by our tasks: -
 
- * BR - Bank Receipt
+ * [BR - Bank Receipt](http://workflow.zynk.com/sage-50-uk-transaction-xml#br---bank-receipt)
  * BP - Bank Payment
  * JD / JC - Bank Transfer
  * JD / JC - Journal Debit & Journal Credit
