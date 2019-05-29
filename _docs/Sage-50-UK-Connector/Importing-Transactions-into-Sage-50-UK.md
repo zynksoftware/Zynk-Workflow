@@ -3,7 +3,7 @@ slug: importing-transactions-into-sage-50-uk
 redirect_from: "/article/420-importing-transactions-into-sage-50-uk"
 title: Importing Transactions into Sage 50 UK
 ---
-This task will any type of audit trail transactions to Sage 50 that is supplied in Zynk XML format.
+This task will import most types of audit trail transactions to Sage 50 that is supplied in Zynk XML format.
 
 ## Settings
 ### Sage 50 Connection
