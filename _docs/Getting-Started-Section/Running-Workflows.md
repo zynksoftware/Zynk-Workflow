@@ -6,7 +6,7 @@ In order to run a workflow, ensure the Zynk application is open. Within the left
 
 ![](/assets/images/openworkflow.png)
 
-Once the workflow has loaded, the 'Task's' interface will be populated with the workflow tasks. If the 'Run' button is enabled, you can run the workflow by pressing the run button as seen below.
+Once the workflow has loaded, the 'Tasks' interface will be populated with the workflow tasks. If the 'Run' button is enabled, you can run the workflow by pressing the run button as seen below.
 
 ![](/assets/images/myzynkworkflow.png)
 
