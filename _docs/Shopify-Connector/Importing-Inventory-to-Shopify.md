@@ -3,7 +3,7 @@ slug: importing-inventory-to-shopify
 redirect_from: "/article/importing-inventory-to-shopify"
 title: Importing Inventory to Shopify
 ---
-This task will update the inventory on your Shopify store using the product data in an XML file.
+This task will update the inventory on your Shopify store using the product data in an XML file. All variants with a matching SKU will have their quantity updated.
 
 ## Settings
 ### Connection
@@ -29,13 +29,13 @@ See [Common Task Settings](common-task-settings).
 A sample input file is shown below which updates an existing products inventory levels.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<variants>
-    <variant>
-        <sku>MER99AMP2</sku>
-        <inventory-management>shopify</inventory-management> <!-- shopify | blank -->
-        <inventory-policy>continue</inventory-policy> <!-- deny | continue -->
-        <inventory-quantity>15</inventory-quantity>
-        <old-inventory-quantity>10</old-inventory-quantity>
-    </variant>
-</variants>
+<inventory_collection>
+  <inventory>
+    <inventory_level>
+      <sku>MER99AMP2</sku>
+      <available>15</available>
+      <location>Home</location>
+    </inventory_level>
+  </inventory>
+</inventory_collection>
 ```
