@@ -15,3 +15,4 @@ Each of the tasks require a connection to Shopify, for more information on setti
 * [Uploading Customers to Shopify](uploading-customers-to-shopify)
 * [Importing Inventory to Shopify](importing-inventory-to-shopify)
 * [Importing Order Fulfilments to Shopify](importing-fulfilments-to-shopify)
+* [Importing Prices to Shopify](importing-prices-to-shopify)
