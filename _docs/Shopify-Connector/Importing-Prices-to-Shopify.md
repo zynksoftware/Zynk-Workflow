@@ -25,7 +25,8 @@ The XML file to output successful uploads to.
 See [Common Task Settings](common-task-settings).
 
 ## Examples
-```<?xml version="1.0" encoding="utf-8"?>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
 <products>
   <product>
     <sku>MER99AMP2</sku>
