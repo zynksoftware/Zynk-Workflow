@@ -12,7 +12,7 @@ Once a mapping has been created, it can be accessed within [XSLT Transform](xslt
 [![](http://www.zynk.com/images/v2/mappings_manager.png)](http://www.zynk.com/images/v2/mappings_manager.png)
 
 ## Creating A New Mapping
-To create a new connection, click the 'New' button on the toolbar. You will then see a window like the one below:
+To create a new mapping, click the 'New' button on the toolbar. You will then see a window like the one below:
 
 [![](http://www.zynk.com/images/v2/new_mapping.png)](http://www.zynk.com/images/v2/new_mapping.png)
 
@@ -33,12 +33,12 @@ Click 'Yes' to delete the mapping.
 ## Importing/Exporting Mappings
 You can import and export mappings to and from files, this allows you to copy mappings from one PC to another. Please note that when importing mappings, it will overwrite any mappings which already exist.
 
-**Export Connections**
+**Export Mappings**
 1. Select one or more mappings from the list of mappings.
 2. Click the 'Export' button.
 3. Choose a file to export the mappings to, and click the 'Ok' button.
 
-**Import Connections**
+**Import Mappings**
 1. Click the 'Import' button.
 2. Select the file containing the mappings to import.
 3. Click the 'Ok' button.
