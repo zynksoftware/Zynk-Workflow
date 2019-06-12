@@ -9,8 +9,6 @@ Zynk Workflow supports a number of Ecommerce systems including
 * [Amazon Vendor Central](amazon-vendor-central)
 * [BigCommerce](bigcommerce)
 * [Channel Advisor](channel-advisor)
-* [CoreCommerce](corecommerce)
-* [Easy Webstore](easy-webstore)
 * [Ebay](ebay)
 * [EKM Powershop](ekm-powershop)
 * [Magento V1](magento-v1)
@@ -18,6 +16,5 @@ Zynk Workflow supports a number of Ecommerce systems including
 * [PayPal](paypal)
 * [Shopify](shopify)
 * [Visualsoft](visualsoft)
-* [Volo](volo)
 * [WooCommerce](woocommerce)
 

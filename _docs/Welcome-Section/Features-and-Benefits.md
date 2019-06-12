@@ -12,7 +12,6 @@ title: Features and Benefits
  * Workflow Templates provide access to common pre-defined business processes that you can then use as the basis to build your own Workflows.
  * Powerful Templating based on Razor to allow you to create personalised Emails, Letters and other Documents.
  * Scripting based on Razor to allow you to take even more control of your Workflows.
- * Debugger to let you run your Workflow one step at a time.
  * Scheduler to allow you to run Workflows at any time of day or night
  * Variables Support for use in Templates or Tasks - Supports Global, Workflow, Task and Context variables
  * Windows Compatibiilty with Vista, Windows 7, Windows Server 2008 and later
@@ -29,11 +28,11 @@ title: Features and Benefits
  * Reliable and Accurate Zynk is reliable and based on 5 years of development
 
 **Capabilities**
- * Accounting System and ERP Integration including supportSage 50 and Sage 200
+ * Accounting System and ERP Integration including support Sage 50 and Sage 200
  * CRM Systems integration including ConnectWise, Salesforce
  * ODBC Database integration with MySQL, Foxpro, DBase, Postgre SQL, Sybase, Vista DB and more\*
  * OLEDB Database integration such as Access, Oracle, DB2, Visual Foxpro, Exchange, AS2, Lotus Notes and more\*
- * SQL Server integrationwith Compact, Express, Workgroup, Standard and Enterprise editions
+ * SQL Server integrationw ith Compact, Express, Workgroup, Standard and Enterprise editions
  * Cloud and SaaS Integration with Salesforce and Amazon Web Services
  * Downloading of Amazon Marketplace Orders
  * Uploading of Inventory to Amazon Marketplace
@@ -42,13 +41,13 @@ title: Features and Benefits
  * Ecommerce Integration - link your website to your accounting system or CRM
  * File management automate the management of files and folders
  * XML, CSV and Text document management, creation and parsing.
- * Microsoft Excelintegration to process Excel files and spreadsheets
+ * Microsoft Excel integration to process Excel files and spreadsheets
  * Automated FTP integration automatically upload and download files
  * Email Marketing to send outbound emails or alerts to customers and prospects
  * Email Processing handle inbound emails and route or respond automatically
  * Web Site integration with Web sites, Ecommerce Sites, SOAP and REST based web services
- * Payment Gateways integrationwith PayPal and Secure Trading
- * Online Backup Servicessuch as Amazon S3, Dropbox
+ * Payment Gateways integration with PayPal
+ * Online Backup Services such as Amazon S3
  * PDF filesCreation, Splitting and Merging of PDF documents
  * Report Creation - Automate your daily, weekly and monthly reporting
  * SMS Marketing via TxtLocal

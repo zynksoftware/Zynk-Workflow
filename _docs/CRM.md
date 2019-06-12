@@ -7,7 +7,6 @@ Zynk Workflow supports a number of CRM systems including
 
  * [ACT!](act)
  * [AutoTask](autotask)
- * [BXP](bxp)
  * [Campaign Monitor](campaign-monitor)
  * [ConnectWise](connectwise)
  * [MagneticHQ](magnetichq)

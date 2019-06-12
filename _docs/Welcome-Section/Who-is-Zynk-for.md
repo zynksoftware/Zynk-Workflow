@@ -18,7 +18,6 @@ Key Features: Accounting & E-commerce Integration.
  * Integration with Amazon Marketplace Orders can be downloaded into Databases or Accounting Systems.
  * Integration with Ebay.
  * PayPal Transactions can be downloaded directly into your Accounting System.
- * Secure Trading transactions can be downloaded into your Accounting System.
  * Product Publishing Information related to stock and inventory can be published automatically to your website.
 
 ### Management
