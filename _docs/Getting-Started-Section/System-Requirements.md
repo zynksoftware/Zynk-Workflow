@@ -14,6 +14,7 @@ Zynk can be installed on most Windows based PCs running one of the following ope
  * Windows Server 2008 R2 SP1 64-bit
  * Windows Server 2012 & 2012 R2 64-bit
  * Windows Server 2016 64-bit
+ * Windows Server 2019 64-bit
 
 ### Additional Notes
 
