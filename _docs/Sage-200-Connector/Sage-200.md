@@ -47,6 +47,7 @@ We provide support for the following versions of Sage 200:
 
 | Sage Version | Sage Version Number | Zynk Connector |
 | --- | --- | --- |
+| Sage 200c Spring 2019 | 12.00.0031 | Sage 200 Version 13 (2019) |
 | Sage 200c Winter 2018 | 12.00.0027 | Sage 200 Version 13 (2018) |
 | Sage 200c Summer 2018 | 12.00.0020 | Sage 200 Version 13 (2018) |
 | Sage 200c Spring 2018 | 12.00.0013 | Sage 200 Version 12 (2017) |
