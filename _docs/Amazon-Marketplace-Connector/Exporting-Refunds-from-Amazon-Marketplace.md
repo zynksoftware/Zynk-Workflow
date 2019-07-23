@@ -31,3 +31,18 @@ The name of the file to export the downloaded refunds to.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).
+
+## Examples
+Sample output file:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFinance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Finance>
+    <AmazonOrderId>123-1234567-1234567</AmazonOrderId>
+    <FinanceType>Refund</FinanceType>
+    <MarketplaceName>Amazon.co.uk</MarketplaceName>
+    <Total>10</Total>
+  </Finance>
+</ArrayOfFinance>
+```
