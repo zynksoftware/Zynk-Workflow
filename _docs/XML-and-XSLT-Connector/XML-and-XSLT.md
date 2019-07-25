@@ -11,6 +11,7 @@ Many of the tasks in Zynk accept and return XML files in order to integrate data
 
 ## Tasks
 - [If XML Contains](if-xml-contains)
+- [List and Merge XML Files](list-and-merge-xml-files)
 - [Merging XML Files](merging-xml-files)
 - [XML Repeater](xml-repeater)
 - [Selecting a Value from an XML File](selecting-a-value-from-an-xml-file)
