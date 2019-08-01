@@ -93,6 +93,7 @@ When creating a new product you can optionally provide the QtyInStock which will
 | --- | --- | --- | --- | --- | --- |
 | In Stock | QtyInStock | 10 | double | - | Optional |
 | Re-order Qty | ReorderQty | 10 | double | -  | Optional  |
+| Re-order Level | ReorderLvl | 10 | double | -  | ReadOnly  |
 
 ```xml
 <?xml version="1.0"?>
@@ -101,6 +102,7 @@ When creating a new product you can optionally provide the QtyInStock which will
     <Product>
       <QtyInStock>10</QtyInStock>
       <ReorderQty>10</ReorderQty>
+      <ReorderLvl>10</ReorderLvl>
     </Product>
   </Products>
 </Company>
