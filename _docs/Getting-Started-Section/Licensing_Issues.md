@@ -1,9 +1,9 @@
 ---
-slug: licensing-issues
-title: Issues When Activating a Zynk License
+slug: Licensing-Troubleshooting
+title: Licensing-Troubleshooting
 ---
 
-## Potential Issues When Activating a Zynk License
+## Licensing-Troubleshooting
 
 When activating a valid Zynk license in versions prior to 2.20.3 you may come across the following message:
 
