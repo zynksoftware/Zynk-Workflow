@@ -3,7 +3,7 @@ slug: create-an-xslt-file
 redirect_from: "/article/621-create-an-xslt-file"
 title: Create an XSLT File
 ---
-Let's say you have an XML file which looks like this:-
+Let's say you have an XML file which looks like this:
 
 ```xml
 <?xml version="1.0" standalone="yes"?>
@@ -16,7 +16,7 @@ Let's say you have an XML file which looks like this:-
 
 If you want to transform this data into a format that can be used by the Sage 50 Connect module, you would use an XSLT transformer            which is a simple text file containing instructions on how to convert the XML
 
-All the XSLT processing instructions start with the prefix XSL followed by an instruction e.g. `<xsl:value-of select="Variable" />`
+All the XSLT processing instructions start with the prefix 'xsl' followed by an instruction e.g. `<xsl:value-of select="@Variable" />`
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -26,12 +26,12 @@ All the XSLT processing instructions start with the prefix XSL followed by an in
 			<Customers>
 				<xsl:for-each select="Rows/Row">
 					<Customer>
-						<AccountRef>
+						<AccountReference>
 							<xsl:value-of select= "@Id"/>
-						</AccountRef>
-						<Name>
+						</AccountReference>
+						<CompanyName>
 							<xsl:value-of select= "@Name"/>
-						</Name>
+						</CompanyName>
 					</Customer>
 				</xsl:for-each>
 			</Customers>
@@ -47,16 +47,16 @@ Output from XSL transform 
 <Company>
 	<Customers>
 		<Customer>
-			<AccountRef>1</AccountRef>
-			<Name>DataMining Ltd</Name>
+			<AccountReference>1</AccountReference>
+			<CompanyName>DataMining Ltd</CompanyName>
 		</Customer>
 		<Customer>
-			<AccountRef>2</AccountRef>
-			<Name>Nelson Inc</Name>
+			<AccountReference>2</AccountReference>
+			<CompanyName>Nelson Inc</CompanyName>
 		</Customer>
 		<Customer>
-			<AccountRef>3</AccountRef>
-			<Name>Internetware Ltd</Name>
+			<AccountReference>3</AccountReference>
+			<CompanyName>Internetware Ltd</CompanyName>
 		</Customer>
 	</Customers>
 </Company>
