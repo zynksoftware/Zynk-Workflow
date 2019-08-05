@@ -20,17 +20,17 @@ All the XSLT processing instructions start with the prefix XSL followed by an in
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0"xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
 		<Company>
 			<Customers>
 				<xsl:for-each select="Rows/Row">
 					<Customer>
 						<AccountRef>
-							<xsl:value-of select= "Id"/>
+							<xsl:value-of select= "@Id"/>
 						</AccountRef>
 						<Name>
-							<xsl:value-of select= "Name"/>
+							<xsl:value-of select= "@Name"/>
 						</Name>
 					</Customer>
 				</xsl:for-each>
@@ -47,7 +47,7 @@ Output from XSL transform 
 <Company>
 	<Customers>
 		<Customer>
-			<AccountRef>DataMining Ltd</AccountRef>
+			<AccountRef>1</AccountRef>
 			<Name>DataMining Ltd</Name>
 		</Customer>
 		<Customer>
