@@ -1,5 +1,5 @@
 ---
-slug: Licensing-Troubleshooting
+slug: licensing-troubleshooting
 title: Licensing-Troubleshooting
 ---
 
