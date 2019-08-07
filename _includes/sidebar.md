@@ -52,7 +52,6 @@
     * [EKM Powershop](/ekm-powershop)
     * [Magento V1](/magento-v1)
     * [Magento V2](/magento-v2)
-    * [Manta](/manta)
     * [PayPal](/paypal)
     * [Shopify](/shopify)
     * [Visualsoft](/visualsoft)
