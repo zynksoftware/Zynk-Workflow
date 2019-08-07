@@ -78,6 +78,7 @@
     * [ProSKU](/prosku)
 * [Other](/other)
     * [Developer](/developer)
+    * [JobAdder](/jobadder)
     * [My Mobile Workers](/my-mobile-workers)
     * [SMS](/sms)
     * [User Interface](/user-interface)
