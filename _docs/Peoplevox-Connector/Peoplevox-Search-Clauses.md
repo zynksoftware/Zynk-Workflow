@@ -28,15 +28,18 @@ _Required_
 The comparison to use for the Field and Value.  Defaults to Equals.
 
 #### Available Values
- * Contains
- * EndWith
- * Equals
- * GreaterThan
- * GreaterThanOrEqualTo
- * LessThan
- * LessThanOrEqualTo
- * NotEqualTo
- * StartsWith
+ * **Contains** - Barcode.Contains("08112")
+ * **EndWith** - Barcode.EndsWith("1232")
+ * **Equals** - Barcode == "800811232"
+ * **Equals2** - Barcode.Equals("800811232")
+ * **GreaterThan** - Barcode > "800811232"
+ * **GreaterThanOrEqualTo** - Barcode >= "800811232"
+ * **LessThan** - Barcode < "800811232"
+ * **LessThanOrEqualTo** - Barcode <= "800811232"
+ * **NotContains** - !Barcode.Contains("800811232")
+ * **NotEqualTo** - Barcode != "800811232"
+ * **NotEqualTo2** - !Barcode.Equals("800811232")
+ * **StartsWith** - Barcode.StartsWith("8008")
 
 ### Field
 _Required_  
