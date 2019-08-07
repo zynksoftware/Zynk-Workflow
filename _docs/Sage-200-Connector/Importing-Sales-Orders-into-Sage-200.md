@@ -71,6 +71,10 @@ If accepting the order will place the account over their credit limit the order 
 _Required_  
 Specifies if the sales order number specified in the XML should be used or if Sage 200 should allocate the order numbers.
 
+#### Prevent Duplicates
+_Required_  
+Set to ‘True’ to check whether the stock transaction Id supplied in the input XML file has already been imported, and if so skip the stock transaction.
+
 #### Ready for Invoice Printing
 _Required_  
 If set to true marks the order as ready for invoice printing.
@@ -81,6 +85,10 @@ _Optional_
 Configure custom VAT settings to use when importing the orders.
 
 ### Product Options
+#### Allow Negative Stock
+_Required_  
+Choose whether to allow stock allocation to take the stock level of a product below 0, even when negative stock is allowed in Sage. Only takes affect when Auto Allocate Stock is set to Always and negative stock is enabled in Sage.
+
 #### Auto Allocate Stock
 _Required_  
 Choose whether to allocate stock to the sales orders. The following options are available:	
@@ -93,7 +101,7 @@ Choose whether to allocate stock to the sales orders. The following options are 
 _Required_  
 Will automatically create products if they do not exist in Sage 200.
 
-### Default Carriage SKU
+#### Default Carriage SKU
 _Required_  
 Allows you to specify a default stock code for carriage line.
 
@@ -108,6 +116,17 @@ Allows you to specify the default warehouse to use for newly created products.
 #### Product Lookup
 _Required_  
 Allows you to specify the field to use when searching for products. Acceptable fields are Sku or Barcode.
+
+#### Traceable Sort Type
+_Required_  
+_Default:_ Default  
+Sort type to use when allocating/despatching traceable items, when a batch/serial number is not specified in the input file.
+
+ * **Default**
+ * **ShortestUseByDate**
+ * **LongestUseByDate**
+ * **ShortestSellByDate**
+ * **LongestSellByDate**
 
 #### Use Multiple Warehouses
 _Required_  
