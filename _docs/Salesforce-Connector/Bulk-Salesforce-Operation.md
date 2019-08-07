@@ -8,14 +8,19 @@ title: Bulk Salesforce Operation
 This task will update, insert or delete multiple records in Salesforce at a time. The records can all be stored in a single file, or split up into separate files.
 
 
-## Settings
-### Connection
-_Required_  
-The Salesforce Connection to use for the bulk operation. See the [Connecting to Salesforce (Bulk)](connecting-to-salesforce-bulk) article if you require more information on how to create/manage connections.
-
+## Connection Settings
 ### Content Type
 _Optional_  
 Select the type of content being uploaded to Salesforce. The available options are XML and CSV.
+
+### Salesforce Connection
+_Required_  
+The Salesforce Connection to use for the bulk operation. See the [Connecting to Salesforce (Bulk)](connecting-to-salesforce-bulk) article if you require more information on how to create/manage connections.
+
+## Salesforce Settings
+### Concurrency Mode
+_Required_  
+The concurrency mode for the bulk job. Use serial mode if you experience errors related to locking.
 
 ### External ID
 _Dependant_  

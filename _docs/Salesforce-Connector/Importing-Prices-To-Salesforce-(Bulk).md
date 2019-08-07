@@ -7,12 +7,15 @@ title: Importing Prices To Salesforce (Bulk)
 
 This task will update or insert multiple pricebook records. Products are matched based on the ProductCode field in Salesforce, and the field from the input file specified in the XML SKU Field setting. Pricebooks are matched based on the Name field in Salesforce, and the field from the input field specified in the XML Pricebook setting. If a matching Pricebook entry is found for the product, the existing pricebook entry will be updated, otherwise a pricebook entry will be inserted.
 
-
-## Settings
-
-### Connection 
+## Connection Settings
+### Salesforce Connection 
 _Required_  
 The Salesforce (Bulk) connection to use, see [Connecting to Salesforce (Bulk)](connecting-to-salesforce-bulk)
+
+## Salesforce Settings
+### Concurrency Mode
+_Required_  
+The concurrency mode for the bulk job. Use serial mode if you experience errors related to locking.
 
 ### Input File 
 _Required_  

@@ -6,20 +6,12 @@ title: Importing Records to Salesforce (Bulk)
 This task will update or insert multiple records in Salesforce. Existing records are matched with those provided in the input file, based on the Salesforce field specified in the Salesforce Key Field setting, and the field from the input file specified by the XML Key Field setting. Unlike the [Importing Records to Salesforce](importing-records-to-salesforce) and [Bulk Salesforce Operation](bulk-salesforce-operation) task, the Salesforce field does not need to be of type External Id. If a match is found the existing record will be updated, or if no match is found a new record will be inserted.
 
 
-## Settings
-
-### Connection 
+## Connection Settings
+### Salesforce Connection 
 _Required_  
 The Salesforce (Bulk) connection to use, see [Connecting to Salesforce (Bulk)](connecting-to-salesforce-bulk)
 
-### Salesforce Key Field
-_Required_  
-The field in Salesforce to use to match existing records.
-
-### Salesforce Object 
-_Required_  
-The record type to upload e.g. Account.
-
+## Import Settings
 ### Input File
 _Required_  
 The file containing the raw product data to import to Salesforce. The contents of this file will be transformed using the XSLT file provided before being imported to Salesforce.
@@ -36,11 +28,23 @@ The XPath query (relative to the one provided in the XPath Query setting) to get
 _Required_  
 The XSLT file to use to transform the input file to objects in the Salesforce XML format. The XML field names outputted from the XSLT must match Salesforce object API field names. A list of standard API field names can be found [here](http://help.salesforce.com/help/pdfs/en/salesforce_field_names_reference.pdf). Any custom fields added to the chosen object are supported, and are usually named like `Account_Ref__c`.
 
+## Salesforce Settings
+### Concurrency Mode
+_Required_  
+The concurrency mode for the bulk job. Use serial mode if you experience errors related to locking.
+
+### Salesforce Key Field
+_Required_  
+The field in Salesforce to use to match existing records.
+
+### Salesforce Object 
+_Required_  
+The record type to upload e.g. Account.
+
 ### Zynk Settings 
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-
 You can find an example of how to use this task in the [Salesforce to Sage 50 Integration](salesforce-to-sage-50-integration) article.
 
 Sample input file containing customers in the Zynk XML format, to be uploaded to Salesforce as accounts:
