@@ -6,15 +6,27 @@ title: Exporting Quotations from Quikflw
 This task will export quotations from Quikflw in [Quikflw Quotation XML](quikflw-quotation-xml) format to a file.
 
 ## Settings
-### Quikflw Connection
+### Export Clients
 _Required_  
-The connection to Quikflw to use. See the [Connecting to Quikflw] article if you require further information on how to create/manage the connection to Quikflw.
+Optionally export related client from Quikflw.
+
+### Export Contacts
+_Required_  
+Optionally export related contact from Quikflw.
+
+### Export Settings > Date Created
+_Required_  
+Only quotations created after this date will be downloaded. This date is automatically updated each time the task runs with the highest created date.
 
 ### Export Settings > Date Modified
 _Required_  
 Only quotations updated after this date will be downloaded. This date is automatically updated each time the task runs with the highest updated date.
 
-### Export Settings > Export Status
+### Export Settings > Export Modified, New or All Records
+_Required_  
+Used to choose which records should be included in the export. Note that the ‘Modified’ setting will also export any new record
+
+### Export Status
 _Required_  
 _Default Value :_ Draft   
 Status of the quotations to export from Quikflw.   
@@ -26,7 +38,7 @@ The following status are supported:
 * Commenced
 * Completed
 
-### Export Settings > Page Size
+### Page Size
 _Required_  
 _Default Value :_ 50   
 The number of records to include in each page of records. Increasing this value will increase the speed of the download, however, more of memory (RAM) will be consumed.
@@ -34,6 +46,10 @@ The number of records to include in each page of records. Increasing this value 
 ### Output File
 _Required_   
 The name of the file to export the quotations to.
+
+### Quikflw Connection
+_Required_  
+The connection to Quikflw to use. See the [Connecting to Quikflw](connecting-to-quikflw) article if you require further information on how to create/manage the connection to Quikflw.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).
