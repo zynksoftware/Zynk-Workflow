@@ -5,10 +5,15 @@ title: Downloading Subscribers from Campaign Monitor
 ---
 This task will provide a list of subscribers from whichever list you specify from Campaign Monitor in an XML format.
 
-### Settings
+## Settings
 ### Connection
 _Required_  
 The Campaign Monitor Connection to download lists from.  See the [Connecting to Campaign Monitor](connecting-to-campaign-monitor) article if you require more information on how to create/manage connections.
+
+### Export Settings
+_Required_  
+
+ * **Download Modified, New or All Records** - Used to choose which records should be included in the export. Note that the 'Modified' will also export any new records.
 
 ### Output File
 _Required_  
