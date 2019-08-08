@@ -23,7 +23,7 @@ The name of the file to store the successfully imported records in Zynk XML form
 
 ### Prevent Duplicates
 _Required_  
-Set to 'True' to check whether the Id supplied in the  input XML file has already been imported, and if so skip the record.
+Set to 'True' to check whether the Id on each PurchaseInvoice supplied in the input XML file has already been imported, and if so skip the record.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings)
