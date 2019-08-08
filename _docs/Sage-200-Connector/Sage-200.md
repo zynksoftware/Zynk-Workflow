@@ -32,7 +32,7 @@ If you are using **Sage 200 Standard Online** or **Sage 200 Extra Online** pleas
  * [Importing Goods Despatched Notes into Sage 200](importing-goods-despatched-notes-into-sage-200)
  * [Importing Goods Received Notes into Sage 200](importing-goods-received-notes-into-sage-200)
  * [Importing Price Bands Into Sage 200](importing-price-bands-into-sage-200)
- * [Importing Purchase Invoices Into Sage 200](importing-purchase-invoice-into-sage-200)
+ * [Importing Purchase Invoices Into Sage 200](importing-purchase-invoices-into-sage-200)
  * [Importing Purchase Orders into Sage 200](importing-purchase-orders-into-sage-200)
  * [Importing Sales Orders into Sage 200](importing-sales-orders-into-sage-200)
  * [Importing Stock Records into Sage 200](importing-stock-records-into-sage-200)
