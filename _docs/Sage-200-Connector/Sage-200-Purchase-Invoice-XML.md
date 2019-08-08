@@ -74,9 +74,9 @@ In order to lookup the purchase order to invoice, one of the following identifie
 ```
 
 ## Receipt Notes
-If no GRNs are provided, then the routine will identify which lines have a received quantity in Sage 200 but do not have a matching invoiced quantiy and invoice these remaining lines so that the total invoiced quantity is equal to the total received quantity.
+If no ReceiptNotes are provided, then the routine will identify which lines have a received quantity in Sage 200 but do not have a matching invoiced quantiy and invoice these remaining lines so that the total invoiced quantity is equal to the total received quantity.
 
-If GRNs are provided in the ReceiptNotes collection, the routine will look for these GRNs against the matched Purchase Order, identify the received quantity on these lines and the total invoiced quantity across the lines of the purchase order, and invoice the difference.
+If goods received notes (GRNs) are provided in the ReceiptNotes collection, the routine will look for these GRNs against the matched Sage 200 Purchase Order, identify the received quantity on these lines and the total invoiced quantity across the lines of the purchase order, and invoice the difference.
 
 Please note that this will mean that the process will never result in an invoiced quantity that is greater than the received quantity, i.e. the process will not allow over invoicing as the quantity to invoice is always determined by the received quantity.
 
