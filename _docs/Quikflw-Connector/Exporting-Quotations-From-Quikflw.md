@@ -27,8 +27,7 @@ _Required_
 Used to choose which records should be included in the export. Note that the ‘Modified’ setting will also export any new record
 
 ### Export Status
-_Required_  
-_Default Value :_ Draft   
+_Optional_  
 Status of the quotations to export from Quikflw.   
 The following status are supported:
 * Draft
