@@ -37,10 +37,13 @@ A sample input file for creating a purchase invoice is shown below. See our [Sag
   <PurchaseInvoices>
     <PurchaseInvoice>
       <Id>PurchaseInvoice1234</Id>
+      <PurchaseOrderUniqueId>5679</PurchaseOrderUniqueId>
       <PurchaseOrderNumber>0000000001</PurchaseOrderNumber>
-      <InvoiceNumber>PITEST</InvoiceNumber>
+      <PurchaseOrderId>PO-1234</PurchaseOrderId>
+      <SupplierOrderNumber>SupplierRef1234</SupplierOrderNumber>
+      <InvoiceNumber>PI-123</InvoiceNumber>
       <InvoiceDate>2019-07-11T00:00:00</InvoiceDate>
-      <InvoiceSecondReference>MY-PI-2ndREFERENCE</InvoiceSecondReference>
+      <InvoiceSecondReference>REF-456</InvoiceSecondReference>
       <ReceiptNotes>
         <ReceiptNote>
           <GRNNumber>0000000011</GRNNumber>
