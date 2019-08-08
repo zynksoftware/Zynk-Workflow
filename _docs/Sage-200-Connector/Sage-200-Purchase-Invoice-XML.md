@@ -36,7 +36,7 @@ In order to lookup the purchase order to invoice, one of the following identifie
 | PurchaseOrderUniqueId | - | 5679 | int | - | Dependant | The database ID of the Sage 200 purchase order. In the Zynk PurchaseOrder object, this would be the UniqueId specified in the success file of a successfully imported PurchaseOrder or in the export file from Sage 200. If this data is obtained via direct SQL access to Sage 200, then this relates to the POPOrderReturn.POPOrderReturnID |
 | PurchaseOrderNumber | Order no | 0000000001 | int | - | Dependant | The Order no of the Sage 200 purchase order. In the Zynk PurchaseOrder object, this would be the PurchaseOrderNumber specified in the success file of a successfully imported PurchaseOrder or in the export file from Sage 200. If this data is obtained via direct SQL access to Sage 200, then this relates to the POPOrderReturn.DocumentNo  |
 | PurchaseOrderId | - | PO-1234 | string | 4000 | Dependant | The Id of the Zynk PurchaseOrder. If the PurchaseOrder was previously imported by Zynk and an Id (3rd party system identifier) was specified in the XML, then this can be used to match to the Sage 200 PurchaseOrder. This will only be valid in scenarios where the PurchaseOrder was created by Zynk and an Id was specified on the purchase order, this is not something that could be obtained directly via SQL access to Sage 200. |
-| SupplierOrderNumber | 	Supplier Reference no | SupplierRef1234 | string | 30 | Dependant | The Supplier reference no Sage 200 purchase order. In the Zynk PurchaseOrder object, this would be the SupplierOrderNumber specified in the success file of a successfully imported PurchaseOrder or in the export file from Sage 200. If this data is obtained via direct SQL access to Sage 200, then this relates to the POPOrderReturn.SupplierDocumentNo |
+| SupplierOrderNumber | 	Supplier Reference no | SupplierRef1234 | string | 30 | Dependant | The Supplier reference no of the Sage 200 purchase order. In the Zynk PurchaseOrder object, this would be the SupplierOrderNumber specified in the success file of a successfully imported PurchaseOrder or in the export file from Sage 200. If this data is obtained via direct SQL access to Sage 200, then this relates to the POPOrderReturn.SupplierDocumentNo |
 
 ```xml
 <?xml version="1.0"?>
@@ -53,6 +53,7 @@ In order to lookup the purchase order to invoice, one of the following identifie
 ```
 
 ## Purchase Invoice Fields
+
 | XML Field | Sage Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | InvoiceNumber | Reference | PI-123 | string | 30 | Optional | If not specified then the created purchase invoice transaction will not have a reference populated, advised to be populated |
