@@ -2,7 +2,7 @@
 slug: importing-purchase-invoices-into-sage-200
 title: Importing Purchase Invoices into Sage 200
 ---
-This task will import new purchase invoice records in Zynk XML format into Sage 200.
+This task will import new purchase invoice records in Zynk XML format into Sage 200 and associate with the Sage 200 purchase order, and goods received note in instances where three way matching is enabled in the Sage 200 configuration.
 
 ## Settings
 ### Sage 200 Connection
