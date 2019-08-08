@@ -4,15 +4,20 @@ title: Exporting Products from Amazon Marketplace
 ---
 This task will export a list of products from Amazon in XML format, based on a list of products to search for.
 
-## Settings
+## Amazon Settings
 ### API Call Delay
 _Required_  
 Specify the delay in milliseconds to use between calls to Amazon. Amazon throttle requests to their services, so if sending a large data set you may need to increase this limit.
+
+### Channels
+_Required_  
+Choose at least one marketplace to send the XML feed to. For information about how Amazon handles feeds sent to multiple marketplaces, see [Using Multiple Marketplaces](http://docs.developer.amazonservices.com/en_UK/feeds/Feeds_EU_Global_Seller.html).
 
 ### Connection
 _Required_  
 The Amazon Marketplace Connection to use. See the [Connecting to Amazon Marketplace](connecting-to-amazon-marketplace) article if you require more information on how to create/manage connections.
 
+## Export Settings
 ### Input File
 _Required_  
 The file containing the list of products to search for. Products can be searched based on SellerSKU, ASIN, GCID, UPC, EAN, ISBN, or JAN. A sample is provided below.
@@ -21,7 +26,7 @@ The file containing the list of products to search for. Products can be searched
 _Required_  
 The name of the file to export the downloaded products to.
 
-### Zynk Settings
+## Zynk Settings
 See [Common Task Settings](common-task-settings).
 
 ## Examples

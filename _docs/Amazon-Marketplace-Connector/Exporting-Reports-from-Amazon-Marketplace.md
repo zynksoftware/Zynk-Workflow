@@ -9,6 +9,10 @@ This task allows you to run reports from your Amazon MWS account. Some reports w
 _Required_  
 Specify the delay in milliseconds to use between calls to Amazon. Amazon throttle requests to their services, so if sending a large data set you may need to increase this limit.
 
+### Channels
+_Required_  
+Choose at least one marketplace to send the XML feed to. For information about how Amazon handles feeds sent to multiple marketplaces, see [Using Multiple Marketplaces](http://docs.developer.amazonservices.com/en_UK/feeds/Feeds_EU_Global_Seller.html).
+
 ### Connection
 _Required_  
 The Amazon Marketplace Connection to use. See the [Connecting to Amazon Marketplace](connecting-to-amazon-marketplace) article if you require more information on how to create/manage connections.
@@ -33,7 +37,7 @@ Select the type of report to run. Full details of each report type can be found 
 _Optional_  
 Specify an start date to filter the data returned by the report.
 
-### Zynk Settings
+## Zynk Settings
 See [Common Task Settings](common-task-settings).
 
 ## Examples

@@ -11,6 +11,7 @@ Zynk currently supports the UK, US, CA, DE, ES, FR and IT marketplaces.
 
 ## Tasks
 * [Exporting Commissions from Amazon Marketplace](exporting-commissions-from-amazon-marketplace)
+* [Exporting Financial Events from Amazon Marketplace](exporting-financial-events-from-amazon-marketplace)
 * [Exporting Orders from Amazon Marketplace](downloading-orders-from-amazon-marketplace)
 * [Exporting Products from Amazon Marketplace](exporting-products-from-amazon-marketplace)
 * [Exporting Refunds from Amazon Marketplace](exporting-refunds-from-amazon-marketplace)
