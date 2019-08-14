@@ -1,9 +1,9 @@
 ---
 slug: uploading-customers-to-magento
 redirect_from: "/article/267-uploading-customers-to-magento"
-title: Uploading Customers to Magento
+title: Importing Customers to Magento
 ---
-This task will upload new and update existing customers in Magento. The input file should be in Magento XML format. If an existing customer_id or email is provided in the input file, the existing customer will be updated in Magento, otherwise a new customer will be created.
+This task will import new and update existing customers in Magento. The input file should be in Magento XML format. If an existing customer_id or email is provided in the input file, the existing customer will be updated in Magento, otherwise a new customer will be created.
 
 ## Settings
 ### Connection
@@ -16,7 +16,7 @@ The XML file to output failed customer uploads to.
 
 ### Input File
 _Required_  
-The XML file containing the customers to upload to Magento. Note that you only need to provide values for fields you want to update.
+The XML file containing the customers to import to Magento. Note that you only need to provide values for fields you want to update.
 
 ### Success File
 _Required_  
@@ -34,9 +34,9 @@ Set to true to prevent the same record being processed more than once by the tas
 _Optional_  
 The name of the default customer group to assign to customers who don't have a group_id provided in the input file.
 
-### Upload Address Book
+### Import Address Book
 _Required_  
-Set to True to upload the address book for the customer (if provided in the input file).
+Set to True to import the address book for the customer (if provided in the input file).
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

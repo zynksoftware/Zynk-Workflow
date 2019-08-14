@@ -1,18 +1,18 @@
 ---
 slug: downloading-customers-from-bigcommerce
 redirect_from: "/article/167-downloading-customers-from-bigcommerce"
-title: Downloading Customers from BigCommerce
+title: Exporting Customers from BigCommerce
 ---
-This task will download customers registered on your BigCommerce store to an XML file.
+This task will export customers registered on your BigCommerce store to an XML file.
 
 ## Settings
 ### Connection
 _Required_  
 The BigCommerce connection to use. See the Connecting to BigCommerce article if you require more information on how to create/manage connections.
 
-### Download All
+### Export All
 _Required_  
-Set this option to true to download all customers from your store, or set to false to download only new or modified customers since this task last ran. Defaults to False.
+Set this option to true to export all customers from your store, or set to false to export only new or modified customers since this task last ran. Defaults to False.
 
 ### Output File
 _Required_  

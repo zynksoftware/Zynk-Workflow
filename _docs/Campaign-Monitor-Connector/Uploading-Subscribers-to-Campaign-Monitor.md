@@ -1,18 +1,18 @@
 ---
 slug: uploading-subscribers-to-campaign-monitor
 redirect_from: "/article/454-uploading-subscribers-to-campaign-monitor"
-title: Uploading Subscribers to Campaign Monitor
+title: Importing Subscribers to Campaign Monitor
 ---
 This task will take an XML file in the format specified below and update or add to your specified list in Campaign Monitor.
 
 ## Settings
 ### Connection
 _Required_  
-The Campaign Monitor Connection to download lists from.  See the [Connecting to Campaign Monitor](connecting-to-campaign-monitor) article if you require more information on how to create/manage connections.
+The Campaign Monitor Connection to import lists from.  See the [Connecting to Campaign Monitor](connecting-to-campaign-monitor) article if you require more information on how to create/manage connections.
 
 ### Input File
 _Required_  
-The file containing records you wish to upload to your list in Campaign Monitor.
+The file containing records you wish to import to your list in Campaign Monitor.
 
 ### Response File
 _Required_  

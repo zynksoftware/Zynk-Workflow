@@ -8,8 +8,8 @@ The Channel Advisor connector provides tasks that allow you to download orders a
 Each of the tasks require a connection to Channel Advisor, for more information on setting up and managing connections see [Connecting to Channel Advisor](connecting-to-channel-advisor).
 
 ## Tasks
-* [Downloading Orders from Channel Advisor](downloading-orders-from-channel-advisor)
-* [Uploading Inventory to Channel Advisor](uploading-inventory-to-channel-advisor)
+* [Exporting Orders from Channel Advisor](downloading-orders-from-channel-advisor)
+* [Updating Inventory in Channel Advisor](uploading-inventory-to-channel-advisor)
 
 ## Articles and Sample Files
 There is a workflow template and article available from the links below:

@@ -3,7 +3,7 @@ slug: downloading-customers-from-ekm-powershop
 redirect_from: "/article/217-downloading-customers-from-ekm-powershop"
 title: Downloading Customers from EKM Powershop
 ---
-This task will download details of all customers to an XML file.
+This task will export details of all customers to an XML file.
 
 ## Settings
 ### Connection
@@ -12,7 +12,7 @@ The EKM Powershop connection to use.  See the [Connecting to EKM Powershop](conn
 
 ### Customer Details
 _Required_  
-Set to true to download full details about each customer (this might be slow if there are a lot of customers to download). Set to false to download only basic information on each customer.
+Set to true to export full details about each customer (this might be slow if there are a lot of customers to export). Set to false to export only basic information on each customer.
 
 ### Output File
 _Required_  

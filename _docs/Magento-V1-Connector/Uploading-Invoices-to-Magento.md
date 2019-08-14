@@ -1,7 +1,7 @@
 ---
 slug: uploading-invoices-to-magento
 redirect_from: "/article/714-uploading-invoices-to-magento"
-title: Uploading Invoices to Magento
+title: Importing Invoices to Magento
 ---
 This task will create new invoices in Magento. The input file should be in Magento XML format. You can optionally provide a list of specific items and quantities to invoice, or just provide the order number and the task will automatically invoice all items.
 
@@ -12,15 +12,15 @@ The Magento connection to use. See the [Connecting to Magento](connecting-to-mag
 
 ### Fail File
 _Required_  
-The XML file to output failed invoice uploads to.
+The XML file to output failed invoice imports to.
 
 ### Input File
 _Required_  
-The XML file containing the products to upload to Magento. Note that you only need to provide values for fields you want to update.
+The XML file containing the products to import to Magento. Note that you only need to provide values for fields you want to update.
 
 ### Success File
 _Required_  
-The XML file to output successful invoice uploads to. 
+The XML file to output successful invoice imports to. 
 
 ### Prevent Reprocessing
 _Required_  

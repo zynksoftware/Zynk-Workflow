@@ -1,30 +1,30 @@
 ---
 slug: downloading-products-from-magento
 redirect_from: "/article/263-downloading-products-from-magento"
-title: Downloading Products from Magento
+title: Exporting Products from Magento
 ---
-This task will download product details from Magento in XML format. The results can be filtered if required.
+This task will export product details from Magento in XML format. The results can be filtered if required.
 
 ## Settings
 ### Connection
 _Required_  
 The Magento connection to use. See the [Connecting to Magento](connecting-to-magento) article if you require more information on how to create/manage connections.
 
-### Download All
+### Export All
 _Required_  
-Set to true to download all products, set to false to download only those products which have been modified since the last time the task was run.
+Set to true to export all products, set to false to export only those products which have been modified since the last time the task was run.
 
-### Download Detailed
+### Export Detailed
 _Required_  
-Set to true to download detailed information for each product, set to false to download only basic information.
+Set to true to export detailed information for each product, set to false to export only basic information.
 
-### Download From
+### Export From
 _Required_  
-The rolling date to download new/modified products from, when Download All is set to false. Will update automatically each time the task runs.
+The rolling date to export new/modified products from, when Export All is set to false. Will update automatically each time the task runs.
 
 ### Start Date
 _Optional_  
-No products created before this date will be downloaded, even if they are modified.
+No products created before this date will be exported, even if they are modified.
 
 ### Output File
 _Required_  

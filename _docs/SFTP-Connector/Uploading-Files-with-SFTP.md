@@ -1,9 +1,9 @@
 ---
 slug: uploading-files-with-sftp
 redirect_from: "/article/306-uploading-files-with-sftp"
-title: Uploading Files with SFTP
+title: Importing Files with SFTP
 ---
-This task will upload one or more files from the local file system to a remote SFTP Server.
+This task will import one or more files from the local file system to a remote SFTP Server.
 
 ## Settings
 ### Connection
@@ -16,7 +16,7 @@ The directory to move to on SFTP Server e.g. `/webdata`.  It is important that y
 
 ### Input File
 _Required_  
-The file to be uploaded from local PC. To upload multiple files, you can use the 'Use a list' option in the Zynk Object editor, or the output from a [List Files](list-files) task.
+The file to be imported from local PC. To import multiple files, you can use the 'Use a list' option in the Zynk Object editor, or the output from a [List Files](list-files) task.
 
 ### Output File
 _Required_  

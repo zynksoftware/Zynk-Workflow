@@ -1,7 +1,7 @@
 ---
 slug: uploading-orders-to-woocommerce
 redirect_from: "/article/340-uploading-orders-to-woocommerce"
-title: Uploading Orders to WooCommerce
+title: Importing Orders to WooCommerce
 ---
 This task will update or insert orders into your WooCommerce store from an XML file. The orders in the input file are matched to orders in WooCommerce based on the `<id>` provided. If a match is found, the existing order in WooCommerce will be updated. If no `<id>` is provided, a new order will be created.
 
@@ -12,19 +12,19 @@ The WooCommerce connection to use. See the [Connecting to WooCommerce](connectin
 
 ### Fail File
 _Required_  
-The name of the XML file to save any orders which fail to upload to WooCommerce. Defaults to 'woo_commerce_order_upsert_fail.xml'.
+The name of the XML file to save any orders which fail to import to WooCommerce. Defaults to 'woo_commerce_order_import_fail.xml'.
 
 ### Input File
 _Required_  
-The name of the XML file containing the orders to upload to WooCommerce. Defaults to 'woo_commerce_order_upsert.xml'.
+The name of the XML file containing the orders to import to WooCommerce. Defaults to 'woo_commerce_order_import.xml'.
 
 ### Success File
 _Required_  
-The name of the XML file to save any orders which successfully uploaded to WooCommerce. Defaults to 'woo_commerce_order_upsert_success.xml'.
+The name of the XML file to save any orders which successfully imported to WooCommerce. Defaults to 'woo_commerce_order_import_success.xml'.
 
 ### Prevent Reprocessing
 _Required_  
-When set to true this will prevent another order with the same `<external_id>` as a previously uploaded record from being uploaded to WooCommerce.
+When set to true this will prevent another order with the same `<external_id>` as a previously imported record from being imported to WooCommerce.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

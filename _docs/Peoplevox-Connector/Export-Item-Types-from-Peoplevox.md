@@ -3,7 +3,7 @@ slug: export-item-types-from-peoplevox
 title: Export Item Types from Peoplevox
 ---
 
-This task will export item type information from Peoplevox in XML format, for detailed information see [Peoplevox Item Type XML](peoplevox-item-type-xml).  The information is exported using the "Item types" report that can be ran through your Peoplevox web application.  You can add date filters and search clauses to limit the data that is returned.
+This task will export item type information from Peoplevox in XML format, for detailed information see [Peoplevox Item Type XML](peoplevox-item-type-xml).  The information is exported using the "Item types" integration template that can be ran through your Peoplevox web application.  You can add filters and search clauses to limit the data that is returned.
 
 ## Settings
 ### Peoplevox Connection

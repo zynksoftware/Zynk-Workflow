@@ -1,22 +1,22 @@
 ---
 slug: downloading-orders-from-bigcommerce
 redirect_from: "/article/168-downloading-orders-from-bigcommerce"
-title: Downloading Orders from BigCommerce
+title: Exporting Orders from BigCommerce
 ---
-This task will download orders taken on your BigCommerce store to an XML file.
+This task will export orders taken on your BigCommerce store to an XML file.
 
 ## Settings
 ### Connection
 _Required_  
 The BigCommerce connection to use.See the [Connecting to BigCommerce](connecting-to-bigcommerce) article if you require more information on how to create/manage connections.
 
-### Download All
+### Export All
 _Required_  
-Set to true to download all orders from your store, or set to false to download only new or modified orders since this task last ran. Defaults to false.
+Set to true to export all orders from your store, or set to false to export only new or modified orders since this task last ran. Defaults to false.
 
-### Download Stage
+### Export Stage
 _Required_  
-The status of the orders to be downloaded. Can be set to 'Any' to download orders regardless of their status.
+The status of the orders to be exported. Can be set to 'Any' to export orders regardless of their status.
 
 ### Output File
 _Required_  

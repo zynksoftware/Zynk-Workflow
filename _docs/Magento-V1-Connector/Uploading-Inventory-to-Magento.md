@@ -1,7 +1,7 @@
 ---
 slug: uploading-inventory-to-magento
 redirect_from: "/article/269-uploading-inventory-to-magento"
-title: Uploading Inventory to Magento
+title: Updating Inventory in Magento
 ---
 This task will update stock data for the products in Magento.
 

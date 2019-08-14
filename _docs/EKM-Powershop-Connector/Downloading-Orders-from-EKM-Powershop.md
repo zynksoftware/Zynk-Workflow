@@ -3,20 +3,20 @@ slug: downloading-orders-from-ekm-powershop
 redirect_from: "/article/218-downloading-orders-from-ekm-powershop"
 title: Downloading Orders from EKM Powershop
 ---
-This task will download all orders that have been modified since the last data specified, to an XML file.
+This task will export all orders that have been modified since the last data specified, to an XML file.
 
 ## Settings
 ### Connection
 _Required_  
 The EKM Powershop connection to use.  See the [Connecting to EKM Powershop](connecting-to-ekm-powershop) article if you require more information on how to create/manage connections.
 
-### Download All
+### Export All
 _Required_  
-Set to true to download all orders, or false to only download new orders since this task last ran.
+Set to true to export all orders, or false to only export new orders since this task last ran.
 
 ### Order Details
 _Required_  
-Set to true to download full details about each order (may be slow if there are many orders to download). Set to false to download only basic information on each order.
+Set to true to export full details about each order (may be slow if there are many orders to export). Set to false to export only basic information on each order.
 
 ### Order Status
 _Optional_  

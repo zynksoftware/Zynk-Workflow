@@ -1,26 +1,26 @@
 ---
 slug: downloading-orders-from-magento
 redirect_from: "/article/262-downloading-orders-from-magento"
-title: Downloading Orders from Magento
+title: Exporting Orders from Magento
 ---
-This task will download orders from Magento in XML format. You can choose to only download orders created/updated since the last time the task was run, or select certain orders based on a filter (such as those with the status 'Processing'). See below for a sample output file.
+This task will export orders from Magento in XML format. You can choose to only export orders created/updated since the last time the task was run, or select certain orders based on a filter (such as those with the status 'Processing'). See below for a sample output file.
 
 ## Settings
 ### Connection
 _Required_  
 The Magento connection to use. See the [Connecting to Magento](connecting-to-magento) article if you require more information on how to create/manage connections.
 
-### Download All
+### Exprt All
 _Required_  
-Set to true to download all records (which match the filter if one is specified - including start date), or false to download only new/modified orders.
+Set to true to export all records (which match the filter if one is specified - including start date), or false to export only new/modified orders.
 
-### Download From
+### Export From
 _Optional_  
-The date to download new/modified orders from. Updates automatically each time the task runs.
+The date to export new/modified orders from. Updates automatically each time the task runs.
 
 ### Start Date
 _Optional_  
-No orders created before this date will be downloaded, even if they are modified.
+No orders created before this date will be exported, even if they are modified.
 
 ### Output File
 _Required_  
@@ -45,9 +45,9 @@ The following types of filter are available:
 _Optional_  
 The value the filter is to be based upon. When using the eq filter type, you can specify multiple values by separating them with commas, or using the 'Use a list' option after clicking the ellipsis (...) button.
 
-### Download Stage
+### Export Stage
 _Optional_  
-Set the status of the orders to be downloaded (e.g. pending, processing, complete). Multiple statuses can be entered by separating them with commas, or using the 'Use a list' option after clicking the ellipsis (...) button.
+Set the status of the orders to be exported (e.g. pending, processing, complete). Multiple statuses can be entered by separating them with commas, or using the 'Use a list' option after clicking the ellipsis (...) button.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

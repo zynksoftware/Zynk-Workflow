@@ -1,6 +1,6 @@
 ---
 slug: uploading-credit-memos-to-magento
-title: Uploading Credit Memos to Magento
+title: Importing Credit Memos to Magento
 ---
 This task will create new credit memos for existing orders in Magento. The order must have already been invoiced. The task does not support updating existing credit memos.
 
@@ -11,15 +11,15 @@ The Magento connection to use. See the [Connecting to Magento](connecting-to-mag
 
 ### Fail File
 _Required_  
-The XML file to output failed credit memo uploads to.
+The XML file to output failed credit memo imports to.
 
 ### Input File
 _Required_  
-The XML file containing the credit memos to upload to Magento.
+The XML file containing the credit memos to import to Magento.
 
 ### Success File
 _Required_  
-The XML file to output successful credit memo uploads to. 
+The XML file to output successful credit memo imports to. 
 
 ### Comment
 _Optional_  

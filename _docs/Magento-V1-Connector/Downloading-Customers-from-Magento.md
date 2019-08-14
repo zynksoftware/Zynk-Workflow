@@ -1,30 +1,30 @@
 ---
 slug: downloading-customers-from-magento
 redirect_from: "/article/260-downloading-customers-from-magento"
-title: Downloading Customers from Magento
+title: Exporting Customers from Magento
 ---
-This task will download customer information from Magento in XML format. The results can be filtered if required. See below for a sample output file.
+This task will export customer information from Magento in XML format. The results can be filtered if required. See below for a sample output file.
 
 ## Settings
 ### Connection
 _Required_  
 The Magento connection to use. See the [Connecting to Magento](connecting-to-magento) article if you require more information on how to create/manage connections.
 
-### Download Address Book
+### Export Address Book
 _Required_  
-Set to true to download the full list of addresses for each customer.
+Set to true to export the full list of addresses for each customer.
 
-### Download All
+### Export All
 _Required_  
-Set to true to download all customers matching the filter, set to false to only download new/modified customers matching the filter.
+Set to true to export all customers matching the filter, set to false to only export new/modified customers matching the filter.
 
-### Download Detailed
+### Export Detailed
 _Required_  
-Set to true to download billing and shipping addresses, set to false to only download basic information.
+Set to true to export billing and shipping addresses, set to false to only export basic information.
 
-### Download From
+### Export From
 _Required_  
-The rolling date to download new/modified customers from, when Download All is set to true. This will update automatically each time the task runs.
+The rolling date to export new/modified customers from, when Export All is set to true. This will update automatically each time the task runs.
 
 ### Start Date
 _Optional_  

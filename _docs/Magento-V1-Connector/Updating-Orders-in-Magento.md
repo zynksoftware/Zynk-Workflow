@@ -1,7 +1,7 @@
 ---
 slug: updating-orders-in-magento
 redirect_from: "/article/266-updating-orders-in-magento"
-title: Updating Orders in Magento
+title: Importing Orders in Magento
 ---
 This task will update the status of orders in Magento, and optionally add comments and notify the customer by email.
 

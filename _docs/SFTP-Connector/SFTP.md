@@ -10,11 +10,11 @@ Each of the tasks use an SFTP Connection, for more information on setting up and
 ## Tasks
 
  * [Deleting Files with SFTP](deleting-files-with-sftp)
- * [Downloading Files with SFTP](downloading-files-with-sftp)
+ * [Exporting Files with SFTP](downloading-files-with-sftp)
  * [Listing Files with SFTP](listing-files-with-sftp)
  * [Renaming Files with SFTP](renaming-files-with-sftp)
  * [SFTP Repeater](sftp-repeater)
- * [Uploading Files with SFTP](uploading-files-with-sftp)
+ * [Importing Files with SFTP](uploading-files-with-sftp)
 
 ## Articles and Sample Files
 There is a Workflow Template and Article available on the links below:

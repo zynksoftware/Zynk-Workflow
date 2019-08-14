@@ -1,18 +1,18 @@
 ---
 slug: downloading-lists-from-campaign-monitor
 redirect_from: "/article/506-downloading-lists-from-campaign-monitor"
-title: Downloading Lists from Campaign Monitor
+title: Exporting Lists from Campaign Monitor
 ---
-This task will allow you to download a collection of your lists in Campaign Monitor in an XML format. You will need to specify your Campaign Monitor Client ID as part of the task.
+This task will allow you to export a collection of your lists in Campaign Monitor in an XML format. You will need to specify your Campaign Monitor Client ID as part of the task.
 
 ## Settings
 ### Connection
 _Required_  
-The Campaign Monitor Connection to download lists from.  See the [Connecting to Campaign Monitor](connecting-to-campaign-monitor) article if you require more information on how to create/manage connections.
+The Campaign Monitor Connection to export lists from.  See the [Connecting to Campaign Monitor](connecting-to-campaign-monitor) article if you require more information on how to create/manage connections.
 
 ### Output File
 _Required_  
-The file to save all downloaded records to, in XML format.
+The file to save all exported records to, in XML format.
 
 ### Client ID
 _Required_  

@@ -11,7 +11,7 @@ The Shopify connection to use. See [Connecting to Shopify](connecting-to-shopify
 
 ### Fail File
 _Required_  
-The XML file to output any failed uploads to.
+The XML file to output any failed imports to.
 
 ### Input File
 _Required_  
@@ -19,7 +19,7 @@ The XML file containing the products.
 
 ### Success File
 _Required_  
-The XML file to output successful uploads to. 
+The XML file to output successful imports to. 
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

@@ -1,7 +1,7 @@
 ---
 slug: updating-inventory-in-bigcommerce
 redirect_from: "/article/170-updating-inventory-in-bigcommerce"
-title: Updating Inventory in BigCommerce
+title: Importing Inventory Updates into BigCommerce
 ---
 This task will update stock levels of products and option SKUs in your BigCommerce store.
 

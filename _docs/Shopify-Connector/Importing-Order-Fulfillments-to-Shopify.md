@@ -1,6 +1,6 @@
 ---
 slug: importing-fulfilments-to-shopify
-title: Importing fulfillments to Shopify
+title: Importing Fulfillments to Shopify
 ---
 This task will upsert (insert or update) fulfillments to your Shopify store, using the product data in an XML file. If an ID is provided, the existing shipment will be updated, if not, a new one will be created.
 
@@ -11,7 +11,7 @@ The Shopify connection to use. See [Connecting to Shopify](connecting-to-shopify
 
 ### Fail File
 _Required_  
-The XML file to output any failed uploads to.
+The XML file to output any failed imports to.
 
 ### Input File
 _Required_  
@@ -19,7 +19,7 @@ The XML file containing the fulfillments. They should be stored in the same form
 
 ### Success File
 _Required_  
-The XML file to output successful uploads to. 
+The XML file to output successful imports to. 
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

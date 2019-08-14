@@ -1,10 +1,10 @@
 ---
 slug: uploading-files-with-ftp
 redirect_from: "/article/252-uploading-files-with-ftp"
-title: Uploading Files with FTP
+title: Importing Files with FTP
 ---
 
-This task will upload a file from the local file system to a remote FTP Server.
+This task will import a file from the local file system to a remote FTP Server.
 
 ## Settings
 ### FTP Connection
@@ -29,10 +29,10 @@ Set to true to always overwrite file on server, otherwise file will not be copie
 
 ### Retry Count
 _Required_  
-The number of times to retry the upload if an error occurs.
+The number of times to retry the import if an error occurs.
 
-### Temporary Upload Settings
-Settings to allow using a temporary file name during the upload, and then rename once the upload is complete.  See [Temporary Upload Settings](temporary-upload-settings)
+### Temporary Import Settings
+Settings to allow using a temporary file name during the import, and then rename once the import is complete.  See [Temporary Import Settings](temporary-upload-settings)
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings)

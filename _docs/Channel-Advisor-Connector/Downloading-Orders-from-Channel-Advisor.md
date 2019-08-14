@@ -1,9 +1,9 @@
 ---
 slug: downloading-orders-from-channel-advisor
 redirect_from: "/article/181-downloading-orders-from-channel-advisor"
-title: Downloading Orders from Channel Advisor
+title: Exporting Orders from Channel Advisor
 ---
-This task will download new and updated orders from Channel Advisor in XML format.
+This task will export new and updated orders from Channel Advisor in XML format.
 
 ## Settings
 ### Connection
@@ -16,55 +16,55 @@ The name of the file to export the orders to.
 
 ### Checkout Status
 _Required_  
-Select the checkout status of orders to download.
+Select the checkout status of orders to export.
 
 ### Client Order IDs
 _Optional_  
-Specify specific orders to download using a comma separated list of alphanumeric client order IDs.
+Specify specific orders to export using a comma separated list of alphanumeric client order IDs.
 
 ### Date From
 _Optional_  
-The date to download new/updated orders from. Updates automatically when the task runs.
+The date to export new/updated orders from. Updates automatically when the task runs.
 
 ### Detail Level
 _Required_  
-Set the level of detail required for the orders downloaded. Choose from Low, Medium, High or Complete.
+Set the level of detail required for the orders exported. Choose from Low, Medium, High or Complete.
 
 ### Distribution Center Code
 _Optional_  
-Set the distribution center code of orders you want to download.
+Set the distribution center code of orders you want to export.
 
 ### Export State
 _Required_  
-Set the export state of orders you want to download. Choose from Not Exported, Exported or Unknown.
+Set the export state of orders you want to export. Choose from Not Exported, Exported or Unknown.
 
 ### Fulfilment Type
 _Required_  
-Set the fulfilment type of orders you want to download. Choose from All, External Only, Seller Only, Seller Ship Only, Seller Pickup Only, Seller Ship To Store Only or Seller Courier Only
+Set the fulfilment type of orders you want to export. Choose from All, External Only, Seller Only, Seller Ship Only, Seller Pickup Only, Seller Ship To Store Only or Seller Courier Only
 
 ### Order IDs
 _Optional_  
-Specify specific orders to download using a comma separated list of numeric order IDs.
+Specify specific orders to export using a comma separated list of numeric order IDs.
 
 ### Order State
 _Required_  
-Set the order state of orders you want to download. Choose from Active, Archived or Cancelled.
+Set the order state of orders you want to export. Choose from Active, Archived or Cancelled.
 
 ### Payment Status
 _Required_  
-Set the payment status of orders you want to download. Choose from Cleared, Submitted, Not Submitted, Deposited, Failed or No Change.
+Set the payment status of orders you want to export. Choose from Cleared, Submitted, Not Submitted, Deposited, Failed or No Change.
 
 ### Refund Status
 _Required_  
-Set the refund status of orders you want to download. Choose from No Refunds, Order Level, Line Item Level, Order And Line Item Level or Failed Attempts Only.
+Set the refund status of orders you want to export. Choose from No Refunds, Order Level, Line Item Level, Order And Line Item Level or Failed Attempts Only.
 
 ### Shipping Status
 _Required_  
-Set the refund status of orders you want to download. Choose from Shipped, Unshipped, Pending Shipment, Partially Shipped or No Change.
+Set the refund status of orders you want to export. Choose from Shipped, Unshipped, Pending Shipment, Partially Shipped or No Change.
 
 ### Start Date
 _Optional_  
-The initial start date of the order download. Any orders created before this date will not be downloaded, even if they are updated. 
+The initial start date of the order export. Any orders created before this date will not be exported, even if they are updated. 
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

@@ -1,9 +1,9 @@
 ---
 slug: downloading-files-with-sftp
 redirect_from: "/article/302-downloading-files-with-sftp"
-title: Downloading Files with SFTP
+title: Exporting Files with SFTP
 ---
-This task will download a file from a remote SFTP server to the local PC or networked drive.
+This task will export a file from a remote SFTP server to the local PC or networked drive.
 
 ## Settings
 ### Connection
@@ -16,7 +16,7 @@ The directory to move to on SFTP Server e.g. `/webdata`.  It is important that y
 
 ### Filename
 _Required_  
-The name of file to be downloaded e.g. `web_orders.xml`.  It is important that you use the 'Text or script' data type instead of   'File' for this setting. This will prevent Zynk  treating it as a relative path and converting it to an  absolute path on  the local file system.  
+The name of file to be exported e.g. `web_orders.xml`.  It is important that you use the 'Text or script' data type instead of   'File' for this setting. This will prevent Zynk  treating it as a relative path and converting it to an  absolute path on  the local file system.  
 
 ### Output File
 _Required_  

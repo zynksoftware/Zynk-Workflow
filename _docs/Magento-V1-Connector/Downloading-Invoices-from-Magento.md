@@ -1,26 +1,26 @@
 ---
 slug: downloading-invoices-from-magento
 redirect_from: "/article/261-downloading-invoices-from-magento"
-title: Downloading Invoices from Magento
+title: Exporting Invoices from Magento
 ---
-This task will download invoices from Magento in Magento XML format. The results can be filtered if required. See below for a sample output file.
+This task will export invoices from Magento in Magento XML format. The results can be filtered if required. See below for a sample output file.
 
 ## Settings
 ### Connection
 _Required_  
 The Magento connection to use. See the [Connecting to Magento](connecting-to-magento) article if you require more information on how to create/manage connections.
 
-### Download All
+### Export All
 _Required_  
-Set to true to download all invoices which match the filter, or false to also filter on new/modified invoices.
+Set to true to export all invoices which match the filter, or false to also filter on new/modified invoices.
 
-### Download From
+### Export From
 _Required_  
-The rolling date the download new/modified invoices from. This will update automatically each time the task runs.
+The rolling date the export new/modified invoices from. This will update automatically each time the task runs.
 
 ### Start Date
 _Optional_  
-No invoices created before this date will be downloaded, even if modified.
+No invoices created before this date will be exported, even if modified.
 
 ### Output File
 _Required_  
@@ -47,7 +47,7 @@ The value the filter is to be based upon. When using the eq filter type, you can
 
 ### Invoice Status
 _Required_  
-Set a filter for the status of the invoices to be downloaded. Select from All, Pending, Paid, Cancelled.
+Set a filter for the status of the invoices to be exported. Select from All, Pending, Paid, Cancelled.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

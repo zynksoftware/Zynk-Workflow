@@ -1,7 +1,7 @@
 ---
 slug: uploading-products-to-shopify
 redirect_from: "/article/312-uploading-products-to-shopify"
-title: Uploading Products to Shopify
+title: Importing Products into Shopify
 ---
 This task will upsert (insert or update) products to your Shopify store, using the product data in an XML file. If no product ID is provided for a product in the input file, that task will insert a new product into Shopify. If an ID is provided, the existing product will be updated.
 
@@ -12,7 +12,7 @@ The Shopify connection to use. See [Connecting to Shopify](connecting-to-shopify
 
 ### Fail File
 _Required_  
-The XML file to output any failed uploads to.
+The XML file to output any failed imports to.
 
 ### Input File
 _Required_  
@@ -20,7 +20,7 @@ The XML file containing the products. They should be stored in the same format a
 
 ### Success File
 _Required_  
-The XML file to output successful uploads to. 
+The XML file to output successful imports to. 
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

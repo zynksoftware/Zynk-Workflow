@@ -1,7 +1,7 @@
 ---
 slug: uploading-customers-to-shopify
 redirect_from: "/article/311-uploading-customers-to-shopify"
-title: Uploading Customers to Shopify
+title: Importing Customers to Shopify
 ---
 This task will upsert (insert or update) customers to your Shopify store, using the customer data in an XML file. If no customer ID is provided for a customer in the input file, the task will insert a new customer into Shopify. If an ID is provided, the existing customer will be updated.
 
@@ -12,7 +12,7 @@ The Shopify connection to use. See [Connecting to Shopify](connecting-to-shopify
 
 ### Fail File
 _Required_  
-The XML file to output any failed uploads to.
+The XML file to output any failed imports to.
 
 ### Input File
 _Required_  
@@ -20,7 +20,7 @@ The XML file containing the new customers. They should be stored in the same for
 
 ### Success File
 _Required_  
-The XML file to output successful uploads to. 
+The XML file to output successful imports to. 
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

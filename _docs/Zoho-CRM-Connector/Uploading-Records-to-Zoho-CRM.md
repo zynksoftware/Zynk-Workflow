@@ -1,14 +1,14 @@
 ---
 slug: uploading-records-to-zoho-crm
 redirect_from: "/article/365-uploading-records-to-zoho-crm"
-title: Uploading Records to Zoho CRM
+title: Importing Records to Zoho CRM
 ---
-This task will upsert (insert or update) various types of records to your Zoho CRM account. If the record in the input file contains an ID, the task will update the matching record in Zoho CRM, otherwise it will insert a new record.
+This task will import (insert or update) various types of records to your Zoho CRM account. If the record in the input file contains an ID, the task will update the matching record in Zoho CRM, otherwise it will insert a new record.
 
 ## Settings
 ### Connection
 _Required_  
-The Zoho CRM Connection to use for deleting records.  See the [Connecting to Zoho CRM](connecting-to-zoho-crm) article if you require more information on how to create/manage connections.
+The Zoho CRM Connection to use for importing records.  See the [Connecting to Zoho CRM](connecting-to-zoho-crm) article if you require more information on how to create/manage connections.
 
 ### Fail File
 _Required_  
@@ -16,15 +16,15 @@ The XML file to output failed uploads to.
 
 ### Input File
 _Required_  
-Specify the XML file to containing the records to upload. The records should be stored in the same format as the result of the 'Download Records' task.
+Specify the XML file to containing the records to import. The records should be stored in the same format as the result of the [Export Records](downloading-records-from-zoho-crm) task.
 
 ### Success File
 _Required_  
-The XML file to output successful uploads to.
+The XML file to output successful imports to.
 
 ### Module Name
 _Required_  
-The type of record to be uploaded. The available options are:	
+The type of record to be imported. The available options are:	
 
  * Accounts
  * Calls

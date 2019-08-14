@@ -1,18 +1,18 @@
 ---
 slug: downloading-products-from-bigcommerce
 redirect_from: "/article/169-downloading-products-from-bigcommerce"
-title: Downloading Products from BigCommerce
+title: Exporting Products from BigCommerce
 ---
-This task will download products from your BigCommerce store to an XML file.
+This task will export products from your BigCommerce store to an XML file.
 
 ## Settings
 ### Connection
 _Required_  
 The BigCommerce connection to use. See the [Connecting to BigCommerce](connecting-to-bigcommerce) article if you require more information on how to create/manage connections.
 
-### Download All
+### Export All
 _Required_  
-Set to true to download all products from your store, or set to false to download only new or modified products since this task last ran. Defaults to False.
+Set to true to export all products from your store, or set to false to export only new or modified products since this task last ran. Defaults to False.
 
 ### Output File
 _Required_  

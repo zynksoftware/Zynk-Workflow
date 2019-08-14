@@ -1,8 +1,8 @@
 ---
 slug: downloading-stores-from-magento
-title: Downloading Stores from Magento
+title: Exporting Stores from Magento
 ---
-This task will download all stores from Magento in XML format. See below for a sample output file.
+This task will export all stores from Magento in XML format. See below for a sample output file.
 
 ## Settings
 ### Connection

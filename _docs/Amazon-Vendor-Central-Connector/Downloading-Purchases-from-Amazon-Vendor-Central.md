@@ -1,9 +1,9 @@
 ---
 slug: downloading-purchases-from-amazon-vendor-central
 redirect_from: "/article/160-downloading-purchases-from-amazon-vendor-central"
-title: Downloading Purchases from Amazon Vendor Central
+title: Exporting Purchases from Amazon Vendor Central
 ---
-This task will download purchase orders (ORDERS) files from Amazon Vendor Central, and convert them to XML format.
+This task will export purchase orders (ORDERS) files from Amazon Vendor Central, and convert them to XML format.
 
 ## Settings
 ### Connection
@@ -12,7 +12,7 @@ The Amazon Vendor Central Connection to use. See the [Connecting to Amazon Vendo
 
 ### Output Directory
 _Required_  
-The folder to save the downloaded purchase order files to.
+The folder to save the exported purchase order files to.
 
 ### Use XML Mapping
 _Required_  

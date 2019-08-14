@@ -1,9 +1,9 @@
 ---
 slug: downloading-transactions-from-paypal
 redirect_from: "/article/282-downloading-transactions-from-paypal"
-title: Downloading Transactions from Paypal
+title: Exporting Transactions from Paypal
 ---
-The Download transactions task will download all PayPal transactions between the specified Start and End Date to the desired Output File in XML format. The Output Details option instructs the task to download additional transaction details including order item lines where specified.
+The Export transactions task will export all PayPal transactions between the specified Start and End Date to the desired Output File in XML format. The Output Details option instructs the task to export additional transaction details including order item lines where specified.
 
 The Start Date and End Date are updated after the task runs to the current Date Time and the current Date Time plus one day.
 

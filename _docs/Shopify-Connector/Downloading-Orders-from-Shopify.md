@@ -1,18 +1,18 @@
 ---
 slug: downloading-orders-from-shopify
 redirect_from: "/article/309-downloading-orders-from-shopify"
-title: Downloading Orders from Shopify
+title: Exporting Orders from Shopify
 ---
-This task will download a list of orders from your Shopify store, and save them to an XML file. 
+This task will export a list of orders from your Shopify store, and save them to an XML file. 
 
 ## Settings
 ### Connection
 _Required_  
 The Shopify connection to use. See [Connecting to Shopify](connecting-to-shopify) if you require more information on how to create/manage connections.
 
-### Download All
+### Export All
 _Required_  
-Set this option to true to download all orders, or set to false to only download new or modified orders since the task was last ran.
+Set this option to true to export  all orders, or set to false to only export new or modified orders since the task was last ran.
 
 ### Output File
 _Required_  
@@ -20,7 +20,7 @@ The XML file to save the list of orders to.
 
 ### Status
 _Required_  
-Set this option to 'Any' to download orders regardless of their status, or set this option to only download orders which have a particular status. 
+Set this option to 'Any' to export orders regardless of their status, or set this option to only export orders which have a particular status. 
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

@@ -1,9 +1,9 @@
 ---
 slug: uploading-despatch-advice-to-amazon-vendor-central
 redirect_from: "/article/162-uploading-despatch-advice-to-amazon-vendor-central"
-title: Uploading Despatch Advice to Amazon Vendor Central
+title: Importing Despatch Advice to Amazon Vendor Central
 ---
-This task will convert an input XML file containing despatch advice messages (DESADV) to EDIFACT D96A format, and upload them to Amazon Vendor Central.
+This task will convert an input XML file containing despatch advice messages (DESADV) to EDIFACT D96A format, and import them to Amazon Vendor Central.
 
 ## Settings
 ### Connection
@@ -12,19 +12,19 @@ The Amazon Vendor Central Connection to use. See the [Connecting to Amazon Vendo
 
 ### Test Mode
 _Required_  
-Set to true to save the generated EDI files to the workflow's data directory instead of uploading them to the SFTP. This can be useful for testing purposes, as it allows you to take a look at the converted EDI file.
+Set to true to save the generated EDI files to the workflow's data directory instead of importing them to the SFTP. This can be useful for testing purposes, as it allows you to take a look at the converted EDI file.
 
 ### Fail File
 _Required_  
-The XML file to output any despatch advice messages which failed to upload to Amazon. The data is stored in the same format as the input file.
+The XML file to output any despatch advice messages which failed to import to Amazon. The data is stored in the same format as the input file.
 
 ### Input File
 _Required_  
-The XML file containing the despatch advice messages to upload to Amazon. See below for an example.
+The XML file containing the despatch advice messages to import to Amazon. See below for an example.
 
 ### Success File
 _Required_  
-The XML file to output despatch advice messages which successfully to upload to Amazon. The data is stored in the same format as the input file.
+The XML file to output despatch advice messages which successfully to import to Amazon. The data is stored in the same format as the input file.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).
