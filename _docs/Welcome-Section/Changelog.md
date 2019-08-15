@@ -3,6 +3,14 @@ slug: changelog
 redirect_from: "/article/44-changelog"
 title: Changelog
 ---
+## Release 2.22.2
+### Fixed
+* All API calls now require a clientID to be specified with requests, updated the SOAP tasks in Zynk and the Accounting Interface tasks.
+
+## Release 2.22.1
+### Fixed
+* An issue has been resolved which would cause fresh Zynk installs and upgrades from versions prior to 2.16 not to launch.
+
 ## Release 2.22.0
 ### New
 * Amazon Marketplace - Added Export Financial Events task, exposing the financial refund information from Amazon
