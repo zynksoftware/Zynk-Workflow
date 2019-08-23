@@ -15,12 +15,11 @@ Types of Variables and how to access them:-
 
 | Type | Description | Example |
 | --- | --- | --- |
-| 	 Application | 	 A setting contained in the Global Variables collection in Zynk | 	 @Context.Application["EmailAddress"] |
-| 	 Workflow | 	 A setting contained in the Workflow Variables collection | 	 @Context.Workflow["ServerPath"] |
+| 	 Application | 	 A setting contained in the Global Variables collection in Zynk | 	 @Context.Application[&#34;EmailAddress&#34;] |
+| 	 Workflow | 	 A setting contained in the Workflow Variables collection | 	 @Context.Workflow[&#34;ServerPath&#34;] |
 | 	 Template | 	 A setting contained in the Template Variables collection | 	 @Context.Template[&#34;CompanyName&#34;] |
-| 	 Current | 	 A value from the current record in a Repeater task     | 	 @Context.Current["id"]                      |
-| 	 Object | 	 Access to the current record in a Repeater task | 	 @Context.Object.SelectSingleNode("Name").InnerText	  
-	(Assuming an XML Repeater Task) |
+| 	 Current | 	 A value from the current record in a Repeater task     | 	 @Context.Current[&#34;id&#34;]                      |
+| 	 Object | 	 Access to the current record in a Repeater task | 	 @Context.Object.SelectSingleNode(&#34;Name&#34;).InnerText (Assuming an XML Repeater Task) |
 
 ## Context Object for Repeater Tasks
 A context object will contain a .NET object representing the current record within a repeater task. The type of the object will depend on the repeater task being used, the following table describes the different supported repeater tasks:
@@ -28,10 +27,10 @@ A context object will contain a .NET object representing the current record with
 | Task | Object Type | Example | Documentation |
 | --- | --- | --- | --- |
 | 	 File Repeater | 	 System.IO.FileInfo | 	 @Context.Object.FullName | 	 	[MSDN Documentation](http://msdn.microsoft.com/en-us/library/system.io.fileinfo.aspx) |
-| 	 XML Repeater | 	 System.Xml.XmlNode | 	 @Context.Object.SelectSingleNode("Name").InnerText | 	 	[MSDN Documentation](http://msdn.microsoft.com/en-us/library/system.xml.xmlnode.aspx) |
+| 	 XML Repeater | 	 System.Xml.XmlNode | 	 @Context.Object.SelectSingleNode(&#34;Name&#34;).InnerText | 	 	[MSDN Documentation](http://msdn.microsoft.com/en-us/library/system.xml.xmlnode.aspx) |
 | 	 Excel Repeater | 	 System.Data.DataRow | 	 @Context.Object[0].ToString() | 	 	[MSDN Documentation](http://msdn.microsoft.com/en-us/library/system.data.datarow.aspx) |
 | 	 CSV Repeater | 	 System.Data.DataRow | 	 @Context.Object[0].ToString() | 	 	[MSDN Documentation](http://msdn.microsoft.com/en-us/library/system.data.datarow.aspx) |
-| 	 ODBC Repeater | 	 System.Data.DataRow | 	 @Context.Object["NAME"].ToString() | 	 	[MSDN Documentation](http://msdn.microsoft.com/en-us/library/system.data.datarow.aspx) |
+| 	 ODBC Repeater | 	 System.Data.DataRow | 	 @Context.Object[&#34;NAME&#34;].ToString() | 	 	[MSDN Documentation](http://msdn.microsoft.com/en-us/library/system.data.datarow.aspx) |
 | 	 OleDB Repeater | 	 System.Data.DataRow | 	 @Context.Object[0].ToString() | 	 	[MSDN Documentation](http://msdn.microsoft.com/en-us/library/system.data.datarow.aspx) |
 | 	 MSSQL Repeater | 	 System.Data.DataRow | 	 @Context.Object[0].ToString() | 	 	[MSDN Documentation](http://msdn.microsoft.com/en-us/library/system.data.datarow.aspx) |
 
@@ -45,6 +44,6 @@ OrderNumber,CustomerId,Total
 1252,87036,42.50
 ```
 
-In the Zynk Object Editor for the output file setting on the sub-task, select the 'Use the following file' option and enter @(Context.Current["OrderNumber"]).csv in the box below. Remember to also select the 'Use Razor Engine' option. This will result in the sub-task creating the following output files in the workflow's data directory: `1250.csv`, `1251.csv`, `1252.csv`.
+In the Zynk Object Editor for the output file setting on the sub-task, select the 'Use the following file' option and enter @(Context.Current[&#34;OrderNumber&#34;]).csv in the box below. Remember to also select the 'Use Razor Engine' option. This will result in the sub-task creating the following output files in the workflow's data directory: `1250.csv`, `1251.csv`, `1252.csv`.
 
 Please note that if you are using a period in the file name, you must encase the Razor variable in brackets eg. `@(Context.Current["OrderNumber"]).csv`
