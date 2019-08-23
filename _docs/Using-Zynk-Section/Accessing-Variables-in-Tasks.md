@@ -17,7 +17,7 @@ Types of Variables and how to access them:-
 | --- | --- | --- |
 | 	 Application | 	 A setting contained in the Global Variables collection in Zynk | 	 @Context.Application["EmailAddress"] |
 | 	 Workflow | 	 A setting contained in the Workflow Variables collection | 	 @Context.Workflow["ServerPath"] |
-| 	 Template | 	 A setting contained in the Template Variables collection | 	 @Context.Template["CompanyName"] |
+| 	 Template | 	 A setting contained in the Template Variables collection | 	 @Context.Template[&#34;CompanyName&#34;] |
 | 	 Current | 	 A value from the current record in a Repeater task     | 	 @Context.Current["id"]                      |
 | 	 Object | 	 Access to the current record in a Repeater task | 	 @Context.Object.SelectSingleNode("Name").InnerText	  
 	(Assuming an XML Repeater Task) |
