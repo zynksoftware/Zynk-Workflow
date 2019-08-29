@@ -21,9 +21,11 @@ When the 'Export Modified, New or All Records' setting is set to 'New' or 'Modif
 _Required_  
 Choose which orders should be exported. The available options are:
 
-* __New__ - Only orders created after the date shown in the 'Export From' setting will be exported.
-* __Modified__ - Only orders updated after the date shown in the 'Export From' setting will be exported.
-* __NotNotified__ - All orders which have not been notified (i.e. flagged as downloaded in Visualsoft) will be exported. Use this option in conjunction with the [Notify Orders](notifying-orders-in-visualsoft) task to control which orders are exported.
+* __New__ - This will perform a GetOrdersByDateRange request. By default this will only return successful orders, created since the date shown in the 'Export From' setting.
+* __Modified__ - This will perform a GetUpdatedOrders request, using the date shown in the 'Export From' setting. By default, this returns orders with a payment received order state that have already been notified (marked as downloaded) which have been modified since the date shown in the 'Export From' setting, excluding Visualsoft test orders.
+* __NotNotified__ - This will perform a GetNewOrders request. By default, this returns orders with a payment received order state that have not been notified (marked as downloaded), excluding Visualsoft test orders. Use this option in conjunction with the [Notify Orders](notifying-orders-in-visualsoft) task to control which orders are exported.
+
+The default behaviour of the requests mentioned above can be changed, by contacting Visualsoft support.
 
 ### Order IDs
 _Optional_  

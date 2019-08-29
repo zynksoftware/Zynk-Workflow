@@ -7,9 +7,6 @@ The Sage 50 US connector implements an interface to Sage 50 US and provides func
 
 Each of the tasks require a connection to Sage 50 US, for more information on setting up and managing connections see [Connecting to Sage 50 US](connecting-to-sage-50-us).
 
-## Beta Connector
-The Sage 50 US Connector is currently in beta and we only have tasks for a limited number of areas within Sage. If you want to be involved in the beta, or want to see additional areas in Sage supported by the connector, please contact us at support@zynk.com.
-
 ## Tasks
 * [Exporting Customers from Sage 50 US](exporting-customers-from-sage-50-us)
 * [Exporting Inventory from Sage 50 US](exporting-inventory-from-sage-50-us)
@@ -22,4 +19,5 @@ The Sage 50 US Connector is currently in beta and we only have tasks for a limit
 ## Supported Versions
 We provide support for the following versions of Sage 50 US:
 
+* 2019 
 * 2017 (v24)

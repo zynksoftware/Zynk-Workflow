@@ -1,9 +1,9 @@
 ---
 slug: uploading-shipments-to-magento
 redirect_from: "/article/518-uploading-shipments-to-magento"
-title: Uploading Shipments to Magento
+title: Importing Shipments to Magento
 ---
-This task will upload shipments to existing orders in Magento. Optionally, you can provide a list of specific items and quantities to ship, or just provide the order number and the task will automatically ship all items. Optionally, you can process the order further by creating an invoice, and processing a payment against that invoice.
+This task will import shipments to existing orders in Magento. Optionally, you can provide a list of specific items and quantities to ship, or just provide the order number and the task will automatically ship all items. Optionally, you can process the order further by creating an invoice, and processing a payment against that invoice.
 
 ## Settings
 ### Connection
@@ -12,15 +12,15 @@ The Magento connection to use. See the [Connecting to Magento](connecting-to-mag
 
 ### Fail File
 _Required_  
-The XML file to output failed shipment uploads to.
+The XML file to output failed shipment imports to.
 
 ### Input File
 _Required_  
-The XML file containing the shipments to upload to Magento.
+The XML file containing the shipments to import to Magento.
 
 ### Success File
 _Required_  
-The XML file to output successful shipment uploads to. 
+The XML file to output successful shipment imports to. 
 
 ### Prevent Reprocessing
 _Required_  

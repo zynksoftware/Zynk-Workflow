@@ -4,7 +4,7 @@ title: Importing Feeds to Amazon Marketplace
 ---
 This task encapsulates the whole process of submitting XML feeds to Amazon, waiting for Amazon to process them, and retrieving the results.
 
-## Settings
+## Amazon Settings
 ### API Call Delay
 _Required_   
 Specify the delay in milliseconds to use between calls to Amazon. Amazon throttle requests to their services, so if sending a large data set you may need to increase this limit.
@@ -17,10 +17,12 @@ Choose at least one marketplace to send the XML feed to. For information about h
 _Required_  
 The Amazon Marketplace Connection to use. See the [Connecting to Amazon Marketplace](connecting-to-amazon-marketplace) article if you require more information on how to create/manage connections.
 
+## Feed Settings
 ### Feed Type
 _Required_  
 Choose from the list of supported feeds for upload. We support all available types of the Feeds API.
 
+## File Settigns
 ### Fail File
 _Required_  
 The name of the file to write failed records to. This will be written in the same XML format as the input file.
@@ -33,7 +35,7 @@ The name of the file containing the data feed in XML format.
 _Required_  
 The name of the file to write successfully processed records to. This will be written in the same XML format as the input file.
 
-### Zynk Settings
+## Zynk Settings
 See [Common Task Settings](common-task-settings).
 
 ## Example

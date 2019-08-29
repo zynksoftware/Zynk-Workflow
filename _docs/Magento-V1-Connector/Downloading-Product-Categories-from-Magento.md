@@ -1,9 +1,9 @@
 ---
 slug: downloading-product-categories-from-magento
 redirect_from: "/article/265-downloading-product-categories-from-magento"
-title: Downloading Product Categories from Magento
+title: Exporting Product Categories from Magento
 ---
-This task will download a list of all product categories from Magento in XML format.
+This task will export a list of all product categories from Magento in XML format.
 
 ## Settings
 ### Connection
@@ -14,20 +14,20 @@ The Magento connection to use. See the [Connecting to Magento](connecting-to-mag
 _Required_  
 The name of the file to export the product categories to.
 
-### Download Detailed
+### Export Detailed
 _Required_  
-Set to true to download detailed category data, or false to just download the category tree containing the category names and IDs.
+Set to true to export detailed category data, or false to just export the category tree containing the category names and IDs.
 
 ### Parent Category ID
 _Optional_  
-Enter the ID of the category to download a list of sub categories from, or leave blank to download all sub categories from the root level.
+Enter the ID of the category to export a list of sub categories from, or leave blank to export all sub categories from the root level.
 
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).
 
 ## Examples
-Sample output file, when Download Detailed is set to true:
+Sample output file, when Export Detailed is set to true:
 ```xml
 <?xml version="1.0"?>
 <ArrayOfCategory>

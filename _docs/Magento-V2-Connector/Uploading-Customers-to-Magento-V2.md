@@ -1,7 +1,7 @@
 ---
 slug: uploading-customers-to-magento-v2
 redirect_from: "/article/772-uploading-customers-to-magento"
-title: Uploading Customers to Magento V2
+title: Importing Customers to Magento V2
 ---
 This task will create or update customers in Magento. See below for a sample input file.
 
@@ -21,15 +21,15 @@ The Magento V2 connection to use. See the [Connecting to Magento V2](connecting-
 
 ## Fail File
 _Required_  
-The XML file to save failed customer uploads to. The data will be written in the same format as the input file.
+The XML file to save failed customer imports to. The data will be written in the same format as the input file.
 
 ## Input File
 _Required_  
-The XML file containing the customers to upload in Magento.
+The XML file containing the customers to import in Magento.
 
 ## Success File
 _Required_  
-The XML file to save successful customer uploads to. The data will be written in the same format as the input file.
+The XML file to save successful customer imports to. The data will be written in the same format as the input file.
 
 ## Prevent Reprocessing
 _Required_  

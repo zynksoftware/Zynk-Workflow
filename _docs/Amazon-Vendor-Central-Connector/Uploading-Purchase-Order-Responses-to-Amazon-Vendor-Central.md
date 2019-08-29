@@ -1,9 +1,9 @@
 ---
-slug: uploading-purchase-order-responses-to-amazon-vendor-central
-redirect_from: "/article/164-uploading-purchase-order-reponses-to-amazon-vendor-central"
-title: Uploading Purchase Order Responses to Amazon Vendor Central
+slug: importing-purchase-order-responses-to-amazon-vendor-central
+redirect_from: "/article/164-importing-purchase-order-reponses-to-amazon-vendor-central"
+title: Importing Purchase Order Responses to Amazon Vendor Central
 ---
-This task will convert an input XML file containing purchase order response messages (ORDRSP) to EDIFACT D96A format, and upload them to Amazon Vendor Central.
+This task will convert an input XML file containing purchase order response messages (ORDRSP) to EDIFACT D96A format, and import them to Amazon Vendor Central.
 
 ## Settings
 ### Connection
@@ -12,19 +12,19 @@ The Amazon Vendor Central Connection to use. See the [Connecting to Amazon Vendo
 
 ### Test Mode
 _Required_  
-Set to true to save the generated EDI files to the workflow's data directory instead of uploading them to the SFTP. This can be useful for testing purposes, as it allows you to take a look at the converted EDI file.
+Set to true to save the generated EDI files to the workflow's data directory instead of import them to the SFTP. This can be useful for testing purposes, as it allows you to take a look at the converted EDI file.
 
 ### Fail File
 _Required_  
-The XML file to output any purchase order responses which failed to upload to Amazon. The data is stored in the same format as the input file.
+The XML file to output any purchase order responses which failed to import to Amazon. The data is stored in the same format as the input file.
 
 ### Input File
 _Required_  
-The XML file containing the purchase order responses to upload to Amazon. See below for an example.
+The XML file containing the purchase order responses to import to Amazon. See below for an example.
 
 ### Success File
 _Required_  
-The XML file to output purchase order responses which successfully to upload to Amazon. The data is stored in the same format as the input file.
+The XML file to output purchase order responses which successfully to import to Amazon. The data is stored in the same format as the input file.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

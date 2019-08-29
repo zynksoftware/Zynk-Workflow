@@ -1,7 +1,7 @@
 ---
 slug: downloading-gl-batches-from-connectwise-accounting-interface
 redirect_from: "/article/926-downloading-gl-batches-from-connectwise"
-title: Downloading GL Batches from ConnectWise Accounting Interface
+title: Exporting GL Batches from ConnectWise Accounting Interface
 ---
 
 

@@ -1,9 +1,9 @@
 ---
 slug: downloading-customers-from-shopify
 redirect_from: "/article/308-downloading-customers-from-shopify"
-title: Downloading Customers from Shopify
+title: Exporting Customers from Shopify
 ---
-This task will download a list of customers from your Shopify store, and save them to an XML file.
+This task will export a list of customers from your Shopify store, and save them to an XML file.
 
 ## Settings
 ### Connection
@@ -12,7 +12,7 @@ The Shopify connection to use. See [Connecting to Shopify](connecting-to-shopify
 
 ### From ID
 _Required_  
-If an ID number is specified, the task will only download customers with an ID number greater than the ID number entered.
+If an ID number is specified, the task will only export customers with an ID number greater than the ID number entered.
 
 ### Output File
 _Required_  

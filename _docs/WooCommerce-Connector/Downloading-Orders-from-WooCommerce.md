@@ -36,6 +36,10 @@ Choose which orders should be downloaded from WooCommerce. The available options
 _Required_  
 The number of orders to download per page. Increasing this value will speed up the download, but will consume more memory. Defaults to 10.
 
+### Record IDs
+_Optional_  
+Enter a comma separated list of IDs of specific records to export. This will override the Download Settings.
+
 ### Output File
 _Required_  
 The name of the XML file to export the orders to. Defaults to 'woo_commerce_orders.xml'. 

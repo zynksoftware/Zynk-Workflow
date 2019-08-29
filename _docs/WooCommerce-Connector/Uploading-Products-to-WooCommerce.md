@@ -1,7 +1,7 @@
 ---
 slug: uploading-products-to-woocommerce
 redirect_from: "/article/341-uploading-products-to-woocommerce"
-title: Uploading Products to WooCommerce
+title: Importing Products to WooCommerce
 ---
 This task will update or insert products into your WooCommerce store from an XML file. The products in the input file are matched to products in WooCommerce based on the `<id>` or the `<sku>`. If an `<id>` is provided, the existing product in WooCommerce with this ID will be updated. If a `<sku>` is provided and a product already exists in WooCommerce with a matching SKU, the existing product will be updated. Otherwise a new product will be created.
 
@@ -14,19 +14,19 @@ The WooCommerce connection to use. See the [Connecting to WooCommerce](connectin
 
 ### Fail File
 _Required_  
-The name of the XML file to save any products which fail to upload to WooCommerce. Defaults to 'woo_commerce_product_upsert_fail.xml'.
+The name of the XML file to save any products which fail to import to WooCommerce. Defaults to 'woo_commerce_product_import_fail.xml'.
 
 ### Input File
 _Required_  
-The name of the XML file containing the products to upload to WooCommerce. Defaults to 'woo_commerce_product_upsert.xml'.
+The name of the XML file containing the products to import to WooCommerce. Defaults to 'woo_commerce_product_import.xml'.
 
 ### Success File
 _Required_  
-The name of the XML file to save any products which successfully uploaded to WooCommerce. Defaults to 'woo_commerce_product_upsert_success.xml'.
+The name of the XML file to save any products which successfully imported to WooCommerce. Defaults to 'woo_commerce_product_import_success.xml'.
 
 ### Prevent Reprocessing
 _Required_  
-When set to true this will prevent another product with the same `<external_id>` as a previously uploaded record from being uploaded to WooCommerce.
+When set to true this will prevent another product with the same `<external_id>` as a previously imported record from being imported to WooCommerce.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

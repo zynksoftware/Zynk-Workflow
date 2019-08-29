@@ -1,7 +1,7 @@
 ---
 slug: uploading-inventory-to-channel-advisor
 redirect_from: "/article/182-uploading-inventory-to-channel-advisor"
-title: Uploading Inventory to Channel Advisor
+title: Updating Inventory in Channel Advisor
 ---
 This task will update inventory in Channel Advisor, based on an XML file.
 

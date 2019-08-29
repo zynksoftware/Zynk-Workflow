@@ -1,9 +1,9 @@
 ---
 slug: downloading-invoices-from-magento-v2
 redirect_from: "/article/767-downloading-invoices-from-magento"
-title: Downloading Invoices From Magento V2
+title: Exporting Invoices From Magento V2
 ---
-This task will download invoices from Magento in an XML format. The results can be filtered if required. See below for a sample output file.
+This task will export invoices from Magento in an XML format. The results can be filtered if required. See below for a sample output file.
 
 ## API Endpoint
 ##### [GET /V1/invoices](https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/salesInvoiceRepositoryV1GetListGet)  
@@ -13,25 +13,25 @@ This task will download invoices from Magento in an XML format. The results can 
 _Required_  
 The Magento V2 connection to use. See the [Connecting to Magento V2](connecting-to-magento-v2) article if you require more information on how to create/manage connections.
 
-### Download Settings > Date Created
+### Export Settings > Date Created
 _Required_  
-When the 'Export Modified, New or All Records' setting is set to 'All', only invoices created after this date will be downloaded. This date will update automatically each time the task runs.
+When the 'Export Modified, New or All Records' setting is set to 'All', only invoices created after this date will be exported. This date will update automatically each time the task runs.
 
-### Download Settings > Date Modified
+### Export Settings > Date Modified
 _Required_  
-When the 'Export Modified, New or All Records' setting is set to 'Modified', only invoices updated after this date will be downloaded. This date will update automatically each time the task runs.
+When the 'Export Modified, New or All Records' setting is set to 'Modified', only invoices updated after this date will be exported. This date will update automatically each time the task runs.
 
-### Download Settings > Export Modified, New or All Records
+### Export Settings > Export Modified, New or All Records
 _Required_  
-Choose which records should be downloaded. The available options are:
+Choose which records should be exported. The available options are:
 
-* __Modified__ - Only records updated after the date shown in the 'Date Modified' setting will be downloaded.
-* __New__ - Only records created after the date shown in the 'Date Created' setting will be downloaded.
-* __All__ - All records will be downloaded, regardless of when they were created or updated.
+* __Modified__ - Only records updated after the date shown in the 'Date Modified' setting will be exported.
+* __New__ - Only records created after the date shown in the 'Date Created' setting will be exported.
+* __All__ - All records will be exported, regardless of when they were created or updated.
 
 ### Filter Groups
 _Optional_  
-The filtering to apply to the records. Only records which match the criteria specified will be downloaded.
+The filtering to apply to the records. Only records which match the criteria specified will be exported.
 
 Filters are arranged into groups. The individual filters within a group will be combined using the OR operator. Groups of filters are combined using the AND operator.
 
@@ -61,7 +61,7 @@ The value the filter is to be based upon. This is not required when using the 'N
 
 ### Page Size
 _Required_  
-The number of records to include in each page of results. Defaults to 50. Increasing this value will increase the speed of the download, but will consume more memory.
+The number of records to include in each page of results. Defaults to 50. Increasing this value will increase the speed of the export, but will consume more memory.
 
 ### Store View Code
 _Required_  

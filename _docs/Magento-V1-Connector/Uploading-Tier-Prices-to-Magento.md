@@ -1,9 +1,9 @@
 ---
 slug: uploading-tier-prices-to-magento
 redirect_from: "/article/273-uploading-tier-prices-to-magento"
-title: Uploading Tier Prices to Magento
+title: Importing Tier Prices to Magento
 ---
-This task will update price list data for the products in Magento, note this uploads to Tier Prices not Group Prices. To upload Group Prices, use the [Uploading Group Prices to Magento](uploading-group-prices-to-magento) task instead. The price list names in the XML file must match the name of customers groups in Magento. See attachments for sample file.
+This task will update price list data for the products in Magento, note this imports to Tier Prices not Group Prices. To import Group Prices, use the [Importing Group Prices to Magento](uploading-group-prices-to-magento) task instead. The price list names in the XML file must match the name of customers groups in Magento. See attachments for sample file.
 
 ## Settings
 ### Connection

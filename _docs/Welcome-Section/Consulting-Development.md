@@ -5,16 +5,19 @@ title: Consulting Development
 ---
 **If you need help or support setting up Zynk, our consulting services can help you rapidly deploy, configure, and test Zynk in your environment to automate your IT processes.**
 
-We have a team of developers and consultants who fully understand Zynk and all the component parts.
+**Zynk Teams**
+- Sales Team
+- Specifications Team
+- Development Team
+- Support and Deployment Team
 
-**Our Process:**
-1. **Enquiry:** Upon receipt of your enquiry, we will provide you with an initial estimate for the work involved within 1 business day.
-2. **Acceptance:** Once you accept our estimate, we prepare a detailed scope document outlining the full details of the project and costs
-3. **Scope Sign off:** After you sign off the project scope we ask for an initial deposit of 50%
-4. **Provision:** We design the required Zynk workflow(s) customised to your exact requirements.
-5. **Deployment:** We then Deploytest the integration then deploy via Remote Desktop or on-site as required, once this stage is completed we will invoice the next 40% of the project.
-6. **User Acceptance Testing:** Your integration is ready for you to perform your acceptance testing.
-7. **Go Live:** We put the integration live on your system and send our final invoice.
+**Our Process**
+1. **Initial Enquiry** - When you make an enquiry to our sales team via telephone (0191 303 7279) or email (sales@zynk.com) and we will gather some basic requirements from to your form a proposal.
+2. **Proposal** - We will send you a proposal outlining the basic functionality of the integration. This will include project costs, license costs and other information about the company.
+3. **Specification** - Once the proposal document has been signed your project will be handed to the specifications team. From here, we will write you a detailed overview of your integration which will consist of details on the integration points, end to end mappings and a general overview. This will then be sent to you for review and ultimately a signature.
+4. **Development** - When the specification process is complete (i.e when you have signed the document) your project will be passed to the development team. You will be assigned a developer and he/she will carry out the integration work internally. This includes the worfklow development, mapping development and testing.
+5. **Deployment** - Once your developer is happy with the integration he will pass your project onto the support and deployment team. From here, we will set up Zynk on your PC or server and you will begin user acceptance testing.
+6. **Go Live** - Once you have tested the integration and you are happy with the functionality we will send you a 'Go Live' form. Once that is filled in we will put your integration live. Please note, by filling in this form you are confirming you are happy for the integration to be put live.
 
 **Services Offered:**
 - Ecommerce & Database Integration

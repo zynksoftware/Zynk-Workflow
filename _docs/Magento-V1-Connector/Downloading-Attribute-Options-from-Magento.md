@@ -1,9 +1,9 @@
 ---
 slug: downloading-attribute-options-from-magento
 redirect_from: "/article/258-downloading-attribute-options-from-magento"
-title: Downloading Attribute Options from Magento
+title: Exporting Attribute Options from Magento
 ---
-This task will download all option values for a selected product attribute from Magento in Magento XML format.
+This task will export all option values for a selected product attribute from Magento in Magento XML format.
 
 ## Settings
 ### Attribute

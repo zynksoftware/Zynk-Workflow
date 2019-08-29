@@ -1,7 +1,7 @@
 ---
 slug: uploading-products-to-bigcommerce
 redirect_from: "/article/172-uploading-products-to-bigcommerce"
-title: Uploading Products to BigCommerce
+title: Importing Products into BigCommerce
 ---
 This task will update existing or insert new products on your BigCommerce store.
 
@@ -12,11 +12,11 @@ The BigCommerce connection to use. See the [Connecting to BigCommerce](connectin
 
 ### Fail File
 _Required_  
-The XML file to output failed uploads to.
+The XML file to output failed imports to.
 
 ### Input File
 _Required_  
-The XML file containing the product updates. These should be stored in the same format as products downloaded using the 'Download Products' task.
+The XML file containing the products. These should be stored in the same format as products exported using the [Export Products](downloading-products-from-bigcommerce) task.
 
 If a `<product>` node contains an `<id>` node, it will be treated as an existing product and the task will attempt to update it in BigCommerce. When updating existing products, please note that the `<rating_total>`, `<rating_count>`, `<number_sold>`, `<date_created>`, `<date_modified>`, `<date_last_imported>` and `<custom_url>` nodes are read-only and will result in an error if you try to update them.
 

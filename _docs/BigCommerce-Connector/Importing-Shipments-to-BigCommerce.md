@@ -1,7 +1,7 @@
 ---
 slug: import-shipments-to-bigcommerce
 redirect_from: "/article/import-shipments-to-bigcommerce"
-title: Importing Shipments to BigCommerce
+title: Importing Shipments into BigCommerce
 ---
 This task will create new and update existing shipments in your Big Commerce platform.
 

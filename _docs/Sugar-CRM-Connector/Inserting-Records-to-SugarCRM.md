@@ -1,7 +1,7 @@
 ---
 slug: inserting-records-to-sugarcrm
 redirect_from: "/article/327-uploading-records-to-sugarcrm"
-title: Inserting Records to SugarCRM
+title: Importing Records to SugarCRM
 ---
 
 

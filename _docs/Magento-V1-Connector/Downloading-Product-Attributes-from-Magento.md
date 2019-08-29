@@ -1,9 +1,9 @@
 ---
 slug: downloading-product-attributes-from-magento
 redirect_from: "/article/264-downloading-product-attributes-from-magento"
-title: Downloading Product Attributes from Magento
+title: Exporting Product Attributes from Magento
 ---
-This task will download a list of product attributes from Magento in XML format. The list of options is also provided when the attribute type is a select list.
+This task will export a list of product attributes from Magento in XML format. The list of options is also provided when the attribute type is a select list.
 
 ## Settings
 ### Connection
@@ -12,7 +12,7 @@ The Magento connection to use. See the [Connecting to Magento](connecting-to-mag
 
 ### Attribute Set ID
 _Optional_  
-Enter the ID of a particular attribute set to download, or leave blank to download all attribute sets.
+Enter the ID of a particular attribute set to export, or leave blank to export all attribute sets.
 
 ### Output File
 _Required_  

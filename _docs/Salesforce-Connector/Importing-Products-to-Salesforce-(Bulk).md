@@ -5,11 +5,15 @@ title: Importing Products to Salesforce (Bulk)
 ---
 This task will update or insert multiple product records and their standard price into Salesforce. Products are matched based on the ProductCode field in Salesforce, and the field from the input file specified in the XML SKU Field setting. If a match is found the existing product will be updated, or if no match is found a new product will be inserted.
 
-## Settings
-
-### Connection 
+## Connection Settings
+### Salesforce Connection 
 _Required_  
 The Salesforce (Bulk) connection to use, see [Connecting to Salesforce (Bulk)](connecting-to-salesforce-bulk)
+
+## Salesforce Settings
+### Concurrency Mode
+_Required_  
+The concurrency mode for the bulk job. Use serial mode if you experience errors related to locking.
 
 ### Input File 
 _Required_  

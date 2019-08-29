@@ -11,11 +11,11 @@ All data is exchanged via an SFTP connection, Zynk does not support AS2 connecti
 
 ## Tasks
 
-* [Downloading Purchases from Amazon Vendor Central](downloading-purchases-from-amazon-vendor-central)
+* [Exporting Purchases from Amazon Vendor Central](downloading-purchases-from-amazon-vendor-central)
 * [Notify Purchase Orders to Amazon Vendor Central](notify-purchase-orders-to-amazon-vendor-central)
-* [Uploading Despatch Advice to Amazon Vendor Central](uploading-despatch-advice-to-amazon-vendor-central)
-* [Uploading Invoices to Amazon Vendor Central](uploading-invoices-to-amazon-vendor-central)
-* [Uploading Purchase Order Responses to Amazon Vendor Central](uploading-purchase-order-responses-to-amazon-vendor-central)
+* [Importing Despatch Advice to Amazon Vendor Central](uploading-despatch-advice-to-amazon-vendor-central)
+* [Importing Invoices to Amazon Vendor Central](uploading-invoices-to-amazon-vendor-central)
+* [Importing Purchase Order Responses to Amazon Vendor Central](uploading-purchase-order-responses-to-amazon-vendor-central)
 
 ## Installing the Amazon Vendor Central Connector
 

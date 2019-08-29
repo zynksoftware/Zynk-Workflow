@@ -1,8 +1,8 @@
 ---
 slug: downloading-customer-groups-from-magento
-title: Downloading Customer Groups from Magento
+title: Exporting Customer Groups from Magento
 ---
-This task will download all customer groups from Magento in XML format. See below for a sample output file.
+This task will export all customer groups from Magento in XML format. See below for a sample output file.
 
 ## Settings
 ### Connection

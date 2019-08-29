@@ -9,21 +9,21 @@ Each of the tasks require a connection to Magento, for more information on setti
 
 ## Tasks
 
-* [Downloading Credit Memos from Magento V2](downloading-credit-memos-from-magento-v2)
-* [Downloading Customer Groups from Magento V2](downloading-customer-groups-from-magento-v2)
-* [Downloading Customers from Magento V2](downloading-customers-from-magento-v2)
-* [Downloading Invoices from Magento V2](downloading-invoices-from-magento-v2)
-* [Downloading Orders from Magento V2](downloading-orders-from-magento-v2)
-* [Downloading Product Attributes from Magento V2](downloading-product-attributes-from-magento-v2)
-* [Downloading Products from Magento V2](downloading-products-from-magento-v2)
+* [Exporting Credit Memos from Magento V2](downloading-credit-memos-from-magento-v2)
+* [Exporting Customer Groups from Magento V2](downloading-customer-groups-from-magento-v2)
+* [Exporting Customers from Magento V2](downloading-customers-from-magento-v2)
+* [Exporting Invoices from Magento V2](downloading-invoices-from-magento-v2)
+* [Exporting Orders from Magento V2](downloading-orders-from-magento-v2)
+* [Exporting Product Attributes from Magento V2](downloading-product-attributes-from-magento-v2)
+* [Exporting Products from Magento V2](downloading-products-from-magento-v2)
 * [Updating Inventory in Magento V2](updating-inventory-in-magento-v2)
 * [Updating Order Statuses in Magento V2](updating-order-statuses-in-magento-v2)
-* [Uploading Credit Memos to Magento V2](uploading-credit-memos-to-magento-v2)
-* [Uploading Customers to Magento V2](uploading-customers-to-magento-v2)
-* [Uploading Invoices to Magento V2](uploading-invoices-to-magento-v2)
-* [Uploading Products to Magento V2](uploading-products-to-magento-v2)
-* [Uploading Shipments to Magento V2](uploading-shipments-to-magento-v2)
-* [Uploading Tier Prices to Magento V2](uploading-tier-prices-to-magento-v2)
+* [Importing Credit Memos to Magento V2](uploading-credit-memos-to-magento-v2)
+* [Importing Customers to Magento V2](uploading-customers-to-magento-v2)
+* [Importing Invoices to Magento V2](uploading-invoices-to-magento-v2)
+* [Importing Products to Magento V2](uploading-products-to-magento-v2)
+* [Importing Shipments to Magento V2](uploading-shipments-to-magento-v2)
+* [Importing Tier Prices to Magento V2](uploading-tier-prices-to-magento-v2)
 
 ## Tips & Tools
 

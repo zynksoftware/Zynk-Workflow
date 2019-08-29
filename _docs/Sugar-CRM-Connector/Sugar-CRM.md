@@ -11,7 +11,7 @@ Each of the tasks require a connection to SugarCRM, for more information on sett
 
 ## Tasks
 - [Querying Records in SugarCRM](querying-records-in-sugarcrm)
-- [Inserting Records to SugarCRM](inserting-records-to-sugarcrm)
+- [Importing Records to SugarCRM](inserting-records-to-sugarcrm)
 - [Link Fields](link-fields)
 
 ## Articles and Sample Files

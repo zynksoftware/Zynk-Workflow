@@ -1,9 +1,9 @@
 ---
 slug: uploading-product-attributes-to-magento
 redirect_from: "/article/271-uploading-product-attributes-to-magento"
-title: Uploading Product Attributes to Magento
+title: Importing Product Attributes to Magento
 ---
-This task will upload attributes to existing products in Magento. The input file should be in Magento XML format.
+This task will import attributes to existing products in Magento. The input file should be in Magento XML format.
 
 ## Settings
 ### Connection
@@ -12,19 +12,19 @@ The Magento connection to use. See the [Connecting to Magento](connecting-to-mag
 
 ### Fail File
 _Required_  
-The XML file to output failed product attribute uploads to.
+The XML file to output failed product attribute imports to.
 
 ### Input File
 _Required_  
-The XML file containing the product attributes to upload to Magento.
+The XML file containing the product attributes to import to Magento.
 
 ### Success File
 _Required_  
-The XML file to output successful product attribute uploads to.
+The XML file to output successful product attribute imports to.
 
 ### Attribute Set
 _Required_  
-The ID or name of the attribute set to upload attributes to. This must already exist in Magento, the task will not create attribute sets. 
+The ID or name of the attribute set to import attributes to. This must already exist in Magento, the task will not create attribute sets. 
 
 ### Prevent Reprocessing
 _Required_  

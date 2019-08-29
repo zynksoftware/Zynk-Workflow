@@ -1,9 +1,9 @@
 ---
 slug: uploading-product-categories-to-magento
 redirect_from: "/article/272-uploading-product-categories-to-magento"
-title: Uploading Product Categories to Magento
+title: Importing Product Categories to Magento
 ---
-This task will upload product categories to Magento. The input file should be in Magento XML format.
+This task will import product categories to Magento. The input file should be in Magento XML format.
 
 ## Settings
 ### Connection
@@ -12,15 +12,15 @@ The Magento connection to use. See the [Connecting to Magento](connecting-to-mag
 
 ### Fail File
 _Required_  
-The XML file to output failed product attribute uploads to.
+The XML file to output failed product attribute imports to.
 
 ### Input File
 _Required_  
-The XML file containing the product attributes to upload to Magento.
+The XML file containing the product attributes to import to Magento.
 
 ### Success File
 _Required_  
-The XML file to output successful product attribute uploads to.
+The XML file to output successful product attribute imports to.
 
 ### Prevent Reprocessing
 _Required_  

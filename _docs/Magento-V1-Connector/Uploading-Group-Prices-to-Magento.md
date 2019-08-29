@@ -1,9 +1,9 @@
 ---
 slug: uploading-group-prices-to-magento
 redirect_from: "/article/268-uploading-group-prices-to-magento"
-title: Uploading Group Prices to Magento
+title: Importing Group Prices to Magento
 ---
-This is an overview of the Upload Group Prices task. Depending on how the pricing system works on your Magento site, you may need to use the [Uploading Tier Prices to Magento](uploading-tier-prices-to-magento) task instead.
+This is an overview of the Import Group Prices task. Depending on how the pricing system works on your Magento site, you may need to use the [Importing Tier Prices to Magento](uploading-tier-prices-to-magento) task instead.
 
 ## Settings
 ### Connection
@@ -16,7 +16,7 @@ The XML file to output successful price updates to.
 
 ### Input File
 _Required_  
-The XML file containing the group prices to upload to Magento.
+The XML file containing the group prices to import to Magento.
 
 ### Success File
 _Required_  

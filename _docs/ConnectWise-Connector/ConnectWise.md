@@ -24,7 +24,7 @@ The REST tasks allow you to import and export various information from ConnectWi
 The Accounting Interface tasks let you download GL batches (unposted Invoices, expenses and procurement information) from ConnectWise, and update GL batches, adding records to the batch on ConnectWise, preventing them from being downloaded again. You can also upload invoice payments to ConnectWise. Each of these tasks requires a ConnectWise Accounting Interface connection, for more information on setting up and managing this type of connection, see the page [Connecting to ConnectWise Accounting Interface](connecting-to-connectwise-accounting-interface).  
 
 - [Connecting to ConnectWise Accounting Interface](connecting-to-connectwise-accounting-interface)
-- [Downloading GL Batches from ConnectWise Accounting Interface](downloading-gl-batches-from-connectwise-accounting-interface)
+- [Exporting GL Batches from ConnectWise Accounting Interface](downloading-gl-batches-from-connectwise-accounting-interface)
 - [Recreating GL Batches from ConnectWise Accounting Interface](recreating-gl-batches-from-connectwise-accounting-interface)
 - [Updating GL Batches to ConnectWise Accounting Interface](updating-gl-batches-to-connectwise-accounting-interface)
 - [Updating Invoice Payments to ConnectWise Accounting Interface](updating-invoice-payments-to-connectwise-accounting-interface)

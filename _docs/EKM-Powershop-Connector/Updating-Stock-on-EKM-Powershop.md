@@ -1,7 +1,7 @@
 ---
 slug: updating-stock-on-ekm-powershop
 redirect_from: "/article/221-updating-stock-on-ekm-powershop"
-title: Updating Stock on EKM Powershop
+title: Updating Stock in EKM Powershop
 ---
 This task will update the stock level for a product.
 

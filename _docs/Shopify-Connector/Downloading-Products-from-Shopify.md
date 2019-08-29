@@ -3,16 +3,16 @@ slug: downloading-products-from-shopify
 redirect_from: "/article/310-downloading-products-from-shopify"
 title: Downloading Products from Shopify
 ---
-This task will download a list of products from your Shopify store, and save them to an XML file.
+This task will export a list of products from your Shopify store, and save them to an XML file.
 
 ## Settings
 ### Connection
 _Required_  
 The Shopify connection to use. See [Connecting to Shopify](connecting-to-shopify) if you require more information on how to create/manage connections.
 
-### Download All
+### Export All
 _Required_  
-Set this option to true to download all products, or set to false to only download new or modified products since the task was last ran.
+Set this option to true to export all products, or set to false to only export new or modified products since the task was last ran.
 
 ### Output File
 _Required_  
@@ -20,7 +20,7 @@ The XML file to save the list of products to.
 
 ### Status
 _Required_  
-Set this option to 'Any' to download products regardless of their published status, or set this option to only download products which are either published or unpublished. 
+Set this option to 'Any' to export products regardless of their published status, or set this option to only export products which are either published or unpublished. 
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings).

@@ -9,7 +9,7 @@ The first dialog that will be displayed is the License Manager which shows all l
 
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b08c98c69791436156485c/file-3MlE3ogQBs.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b08c98c69791436156485c/file-3MlE3ogQBs.png)
 
-Click on the   **Enter New Licence** button to enter your license key as shown below:-
+Click on the   **Enter New Licence** button to enter your license key as shown below:- 
 
 [![](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b08cab9033603f7da36f9b/file-Jo0OAMQBJM.png)](https://s3.amazonaws.com/helpscout.net/docs/assets/565effd4c697915b26a5c620/images/56b08cab9033603f7da36f9b/file-Jo0OAMQBJM.png)
 

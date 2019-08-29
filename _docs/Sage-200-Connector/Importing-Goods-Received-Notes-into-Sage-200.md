@@ -22,6 +22,10 @@ The name of the file to store failed goods notes in Zynk XML format.
 _Required_  
 The name of the file to store the successfully imported goods notes in Zynk XML format.
 
+### Auto Invoice
+_Required_  
+Set to 'True' to automatically invoice received purchase orders items.
+
 ### Prevent Duplicates
 _Required_  
 Set to 'True' to check whether the goods note Id supplied in the  input XML file has already been imported, and if so skip the despatch  note.

@@ -1,7 +1,7 @@
 ---
 slug: updating-order-status-on-ekm-powershop
 redirect_from: "/article/220-updating-order-status-on-ekm-powershop"
-title: Updating Order Status on EKM Powershop
+title: Updating Order Status in EKM Powershop
 ---
 This task will update the status of an order.
 

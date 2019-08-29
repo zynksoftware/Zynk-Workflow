@@ -9,11 +9,11 @@ Each of the tasks use an FTP connection, for more information on setting up and 
 
 ## Tasks
  * [Deleting Files with FTP](deleting-files-with-ftp)
- * [Downloading Files with FTP](downloading-files-with-ftp)
+ * [Exporting Files with FTP](downloading-files-with-ftp)
  * [Listing Files with FTP](listing-files-with-ftp)
  * [Renaming Files with FTP](renaming-files-with-ftp)
  * [FTP Repeater](ftp-repeater)
- * [Uploading Files with FTP](uploading-files-with-ftp)
+ * [Importing Files with FTP](uploading-files-with-ftp)
 
 ## Articles and Sample Files
 There is a Workflow Template and Article available on the links below:

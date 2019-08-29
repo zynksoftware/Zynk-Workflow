@@ -4,7 +4,7 @@ redirect_from: "/category/28-getting-started"
 title: Getting Started
 ---
  * [Activating Zynk](activating-zynk)
- * [Licensing Issues](licensing-issues)
+ * [Licensing Troubleshooting](licensing-troubleshooting)
  * [Application Log](application-log) 
  * [Connection Manager](connection-manager)
  * [Container Tasks](container-tasks)
@@ -13,7 +13,7 @@ title: Getting Started
  * [Downloading & Installing Zynk](downloading-installing-zynk)
  * [File Helpers - Basics](file-helpers-basics)
  * [How to calculate VAT from a gross price](how-to-calculate-vat-from-a-gross-price)
- * [Re-Installing Zynk](re-installing-zynk)
+ * [Reinstalling Zynk](re-installing-zynk)
  * [Running Zynk](running-zynk)
  * [System Requirements](system-requirements)
  * [Uninstalling Zynk](uninstalling-zynk)

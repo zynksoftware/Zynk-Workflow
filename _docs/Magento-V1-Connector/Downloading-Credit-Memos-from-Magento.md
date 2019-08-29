@@ -1,26 +1,26 @@
 ---
 slug: downloading-credit-memos-from-magento
 redirect_from: "/article/259-downloading-credit-memos-from-magento"
-title: Downloading Credit Memos from Magento
+title: Exporting Credit Memos from Magento
 ---
-This task will download credit memos from Magento in Magento XML format. The results can be filtered if required. See below for a sample output file.
+This task will export credit memos from Magento in Magento XML format. The results can be filtered if required. See below for a sample output file.
 
 ## Settings
 ### Connection
 _Required_  
 The Magento connection to use. See the [Connecting to Magento](connecting-to-magento) article if you require more information on how to create/manage connections.
 
-### Download Status
+### Export Status
 _Required_  
 The status to filter the credit memos on.
 
-### Download All
+### Export All
 _Required_  
-Set to true to download all credit memos which match the filter, or false to also filter on new/modified credit memos.
+Set to true to export all credit memos which match the filter, or false to also filter on new/modified credit memos.
 
-### Download From
+### Export From
 _Required_  
-The rolling date the download new/modified credit memos from.
+The rolling date the export new/modified credit memos from.
 
 ### Start Date
 _Optional_  

@@ -1,7 +1,7 @@
 ---
 slug: uploading-invoices-to-magento-v2
 redirect_from: "/article/uploading-invoices-to-magento-v2"
-title: Uploading Invoices to Magento V2
+title: Importing Invoices to Magento V2
 ---
 This task will create new invoices in Magento. You must provide either the order/increment_id or order/entity_id in your data so we can invoice a specific order.
 
@@ -18,15 +18,15 @@ The Magento V2 connection to use. See the [Connecting to Magento V2](connecting-
 
 ### Fail File
 _Required_  
-The XML file to save failed invoice uploads to. The data will be written in the same format as the input file.
+The XML file to save failed invoice imports to. The data will be written in the same format as the input file.
 
 ### Input File
 _Required_  
-The XML file containing the invoices to upload in Magento.
+The XML file containing the invoices to import in Magento.
 
 ### Success File
 _Required_  
-The XML file to save successful invoice uploads to. The data will be written in the same format as the input file.
+The XML file to save successful invoice imports to. The data will be written in the same format as the input file.
 
 ### Prevent Reprocessing
 _Required_  

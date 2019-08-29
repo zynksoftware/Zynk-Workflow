@@ -15,7 +15,7 @@ You will need to add your SKU codes to eBay to make use of this connector. You c
 * [Exporting All Selling from eBay](exporting-all-selling-from-ebay)
 * [Exporting Orders from eBay](downloading-orders-from-ebay)
 * [Exporting Listings from eBay](downloading-listings-from-ebay)
-* [Uploading Inventory to eBay](uploading-inventory-to-ebay)
+* [Updating Inventory in eBay](uploading-inventory-to-ebay)
 
 ## Articles and Sample Files
 There is a Workflow Template and Article available on the links below:

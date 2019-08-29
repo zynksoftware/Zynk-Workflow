@@ -1,7 +1,7 @@
 ---
 slug: updating-orders-in-bigcommerce
 redirect_from: "/article/171-updating-orders-in-bigcommerce"
-title: Updating Orders in BigCommerce
+title: Importing Order Updates into BigCommerce
 ---
 This task will change the status of orders in your BigCommerce store. It can be used in conjunction with the Download Stage setting on the [Downloading Orders from BigCommerce](downloading-orders-from-bigcommerce) task, to change the status of orders once they have been processed to prevent them downloading again.
 
@@ -12,7 +12,7 @@ The BigCommerce connection to use. See the [Connecting to BigCommerce](connectin
 
 ### Input File
 _Required_  
-The XML file containing the orders to update. These should be stored in the same format as orders downloaded using the 'Download Orders' task, but the only required information is the  <id> of the orders.
+The XML file containing the orders to update. These should be stored in the same format as orders downloaded using the [Export Orders](downloading-orders-from-bigcommerce) task, but the only required information is the  <id> of the orders.
 
 ### Notify Stage
 _Required_  

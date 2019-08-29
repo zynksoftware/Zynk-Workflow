@@ -31,7 +31,7 @@ Sample import file for creating a basic product:
 | Product Code | Sku | PROD001  | string  | 30  | Required |
 | Description | Name | Test Product  | string  | 60  | Optional  |
 | Category  | GroupCode  | 1 | int  | 2 | Optional  |
-| IntraStart Com. Code  | IntrastatCommodityCode  | 71162019  | string  | 8  | Optional  |
+| IntraStat Com. Code  | IntrastatCommodityCode  | 71162019  | string  | 8  | Optional  |
 | Com. Code Description  | CommodityCode  | Necklaces  | string  | 30  | Optional  |
 | Barcode  | Barcode  | 9789862410035  | string  | 60  | Optional  |
 | Item Type  | ItemType*  | Stock | enum  | -  | Optional  |

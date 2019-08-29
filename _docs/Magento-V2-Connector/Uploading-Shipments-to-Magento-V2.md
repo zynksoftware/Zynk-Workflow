@@ -42,7 +42,7 @@ The magento store view code to perform the API calls against. Default value of '
 See [Common Task Settings](common-task-settings).
 
 ## Examples
-A sample input file is shown below. This will create or update the customer with the email address `support@zynk.com`.
+A sample input file is shown below. This will create a shipment with item 'WSH12-32-Purple' for Magento order '000000004'.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfShipment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">

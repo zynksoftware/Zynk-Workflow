@@ -1,18 +1,18 @@
 ---
 slug: downloading-records-from-zoho-crm
 redirect_from: "/article/364-downloading-records-from-zoho-crm"
-title: Downloading Records from Zoho CRM
+title: Exporting Records from Zoho CRM
 ---
-This task will download various types of records from your Zoho CRM account, in XML format.
+This task will export various types of records from your Zoho CRM account, in XML format.
 
 ## Settings
 ### Connection
 _Required_  
-The Zoho CRM Connection to use for deleting records.  See the [Connecting to Zoho CRM](connecting-to-zoho-crm) article if you require more information on how to create/manage connections.
+The Zoho CRM Connection to use for exporting records.  See the [Connecting to Zoho CRM](connecting-to-zoho-crm) article if you require more information on how to create/manage connections.
 
-### Download All
+### Export All
 _Required_  
-Set to true to download all records, or set to false to download only new records or ones that have been modified since the last time you ran the task.
+Set to true to export all records, or set to false to export only new records or ones that have been modified since the last time you ran the task.
 
 ### Filter
 _Optional_  
@@ -20,7 +20,7 @@ Specify criteria to use to filter the records. See below for a sample filter. N
 
 ### Output File
 _Required_  
-Specify the XML file to download the records to.
+Specify the XML file to export the records to.
 
 ### Record Type
 _Required_  
@@ -45,7 +45,7 @@ The type of record to be deleted. The available options are:
 
 ### Related Records
 _Optional_  
-Enter a list of Zoho module names to download related records from. For example, if the 'Record Type' setting is set to 'Sales Orders' and you enter 'Accounts' into the related records list, the task will automatically download details of the account associated with each sales order.
+Enter a list of Zoho module names to export related records from. For example, if the 'Record Type' setting is set to 'Sales Orders' and you enter 'Accounts' into the related records list, the task will automatically export details of the account associated with each sales order.
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings)

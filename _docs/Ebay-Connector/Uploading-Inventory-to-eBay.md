@@ -1,7 +1,7 @@
 ---
 slug: uploading-inventory-to-ebay
 redirect_from: "/article/777-uploading-inventory-to-ebay"
-title: Uploading Inventory to eBay
+title: Updating Inventory in eBay
 ---
 This task will upload inventory status information to eBay in XML format. Both single and multi-variation listings are supported.
 

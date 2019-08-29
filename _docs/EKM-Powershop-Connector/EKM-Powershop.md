@@ -9,8 +9,8 @@ Each of the tasks require a connection to EKM Powershop, for more information on
 
 ## Tasks
 
- * [Downloading Customers from EKM Powershop](downloading-customers-from-ekm-powershop)
- * [Downloading Orders from EKM Powershop](downloading-orders-from-ekm-powershop)
- * [Downloading Stock from EKM Powershop](downloading-stock-from-ekm-powershop)
- * [Updating Order Status on EKM Powershop](updating-order-status-on-ekm-powershop)
- * [Updating Stock on EKM Powershop](updating-stock-on-ekm-powershop)
+ * [Exporting Customers from EKM Powershop](downloading-customers-from-ekm-powershop)
+ * [Exporting Orders from EKM Powershop](downloading-orders-from-ekm-powershop)
+ * [Exporting Stock from EKM Powershop](downloading-stock-from-ekm-powershop)
+ * [Updating Order Status in EKM Powershop](updating-order-status-on-ekm-powershop)
+ * [Updating Stock on in Powershop](updating-stock-on-ekm-powershop)
