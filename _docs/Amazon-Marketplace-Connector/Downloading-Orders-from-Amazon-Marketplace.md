@@ -62,11 +62,11 @@ Sample output file:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Orders>
-	<Order AmazonOrderId="012-0123456-0123456" SellerOrderId="" PurchaseDate="03/04/2014 10:30:55" LastUpdateDate="03/04/2014 11:01:13" OrderStatus="Unshipped" FulfillmentChannel="MFN" SalesChannel="Amazon.co.uk" OrderChannel="" ShipServiceLevel="Std UK Dom" NumberOfItemsShipped="0" NumberOfItemsUnshipped="1">
+	<Order AmazonOrderId="012-0123456-0123456" SellerOrderId="" MarketplaceId="A1F83G8C2ARO7P" BuyerEmail="a9cxt8kt21g8qzk@marketplace.amazon.co.uk" BuyerName="John Smith" OrderType="StandardOrder" OrderStatus="Shipped" FulfillmentChannel="MFN" SalesChannel="Amazon.co.uk" OrderChannel="" ShipServiceLevel="Std UK Dom_1" ShipmentServiceLevelCategory="Standard" ShippedByAmazonTFM="False" CbaDisplayableShippingLabel="" TFMShipmentStatus="" PurchaseDate="01/04/2019 21:02:28" LastUpdateDate="02/04/2019 08:38:45" EarliestShipDate="02/04/2019 00:00:00" LatestShipDate="02/04/2019 23:59:59" EarliestDeliveryDate="04/04/2019 00:00:00" LatestDeliveryDate="05/04/2019 23:59:59" NumberOfItemsShipped="1" NumberOfItemsUnshipped="0" PaymentMethod="Other">
 		<ShippingAddress Name="Zynk Software" AddressLine1="Nelson House" AddressLine2="Fleming Business Centre" AddressLine3="Jesmond" City="Newcastle" County="" District="" StateOrRegion="England" PostalCode="NE2 3AE" CountryCode="GB" Phone="0845 123 2920" />
 		<OrderTotal CurrencyCode="GBP" Amount="10.29" />
 		<OrderItems>
-			<OrderItem ASIN="B00272N8Q2" SellerSKU="PROD001" Title="Test Product" QuantityOrdered="1" QuantityShipped="0" GiftMessageText="">
+			<OrderItem OrderItemId="12302045414568" ASIN="B00272N8Q2" SellerSKU="PROD001" Title="Test Product" QuantityOrdered="1" QuantityShipped="0" GiftMessageText="">
 				<ItemPrice CurrencyCode="GBP" Amount="6.34" />
 				<ShippingPrice CurrencyCode="GBP" Amount="3.95" />
 				<GiftWrapPrice CurrencyCode="GBP" Amount="0.00" />
@@ -75,6 +75,7 @@ Sample output file:
 				<GiftWrapTax CurrencyCode="GBP" Amount="0.00" />
 				<ShippingDiscount CurrencyCode="GBP" Amount="0.00" />
 				<PromotionDiscount CurrencyCode="GBP" Amount="0.00" />
+				<PromotionIds />
 			</OrderItem>
 		</OrderItems>
 	</Order>
