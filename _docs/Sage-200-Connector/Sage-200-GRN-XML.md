@@ -30,7 +30,7 @@ In the following section, the mapping between the XML goods note object model an
 
 | XML Field  | Sage Field  | Required  | Notes  |
 | --- | --- | --- | --- |
-| Id | N/A | No | Used internally in Zynk |
+| Id | N/A | No | Used internally by Zynk for duplicate prevention. Set this to the ID from the source system. |
 | AccountReference | A/C ref | Yes | The Sage 200 supplier account reference that the purchase order is assigned to in Sage  |
 | Type | N/A | Yes | Must be GoodsReceivedNote |
 | OrderNumber | Order No | Yes | The Sage 200 purchase order no that you would like to receive to |
