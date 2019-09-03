@@ -40,14 +40,18 @@ The following information is required at the despatch note level, to identify wh
 
 | Sage Field | XML Field | Example | Field Type | Field Length | Input |
 | --- | --- | --- | --- | --- | --- |
+| - | Id* | 43527 | string | 255 | Optional |
 | Order No | OrderNumber | 0000001579 | string | 20 | Required, if a CustomerOrderNumber has not been provided |
 | Customer Order No | CustomerOrderNumber | 02-139483-383 | string | 30 | Required, if an OrderNumber has not been provided |
+
+*   Id* - Used internally by Zynk for duplicate prevention. We recommend setting this to the despatch ID from the source system.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Company>
   <DespatchNotes>
     <DespatchNote>
+      <Id>43527</Id>
       <OrderNumber>0000001579</OrderNumber>
       <CustomerOrderNumber>02-139483-383</CustomerOrderNumber>
     </DespatchNote>
