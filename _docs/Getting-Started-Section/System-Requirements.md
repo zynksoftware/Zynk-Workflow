@@ -6,15 +6,23 @@ title: System Requirements
 
 ## What do I need to run Zynk?
 
-Zynk can be installed on most Windows based PCs running one of the following operating systems:
+#### HARD DRIVE
 
- * Windows 7 SP1 32-bit and 64-bit
- * Windows 8.1 32-bit, 64-bit
- * Windows 10 32-bit and 64-bit
- * Windows Server 2008 R2 SP1 64-bit
- * Windows Server 2012 & 2012 R2 64-bit
- * Windows Server 2016 64-bit
- * Windows Server 2019 64-bit
+ * SATA Hard drive (SSD recommended)
+ * 10GB Minimum Free Hard Disk Space (Dependant on data workloads)
+
+#### CPU
+ * Intel i5 Quad-core 2.6GHz or Higher recommended
+
+#### MEMORY:
+ * 8GB RAM Minimum (16GB RAM Recommended)
+
+#### OPERATING SYSTEM
+
+* Microsoft® Windows® 2012 Server Standard Edition and Data Centre Editions
+* Microsoft® Windows® 2012 R2 Server Standard Edition and Data Centre Editions
+* Microsoft® Windows® 2016 Server Standard Edition and Data Centre Editions
+* Microsoft® Windows 10 Pro/Enterprise (32 and 64 bit)
 
 ### Additional Notes
 
