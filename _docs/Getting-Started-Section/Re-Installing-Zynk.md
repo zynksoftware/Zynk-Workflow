@@ -8,10 +8,12 @@ If you are moving Zynk from one machine to another, you will need to go to Help 
 You should backup your existing Zynk data directory. Depending on the version of Windows you are running on this can be found in one of the following locations:
 
 In Windows XP or earlier: 
-**C:\Documents and Settings\All Users\Application Data\Zynk Software\Zynk\2.0\**
+
+**C:\Documents and Settings\All Users\Application Data\Zynk Software\Zynk\2.0**
 
 In Windows Vista or Later: 
-**C:\ProgramData\Zynk Software\Zynk\2.0\**
+
+**C:\ProgramData\Zynk Software\Zynk\2.0**
 
 After reinstalling, replace the newly created 2.0 folder with the data copied from your existing Zynk data directory.
 
