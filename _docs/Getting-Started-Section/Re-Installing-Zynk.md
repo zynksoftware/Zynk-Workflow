@@ -5,7 +5,13 @@ title: Reinstalling Zynk
 ---
 If you are moving Zynk from one machine to another, you will need to go to Help > About within Zynk and email the exact version to us at [support@zynk.com](mailto:support@zynk.com) so we are able to send you the correct .exe file for re-install.
 
-You should backup your existing Zynk data directory. Depending on the version of Windows you are running on this can be found in one of the following locations:
+The Zynk programdata will need to be copied to the new server. Ensure the workflows are not being, and are not scheduled to run. 
+
+http://workflow.zynk.com/running-a-workflow.html
+
+http://workflow.zynk.com/scheduling-a-workflow.html#managingschedules
+
+Depending on the version of Windows you are running on this can be found in one of the following locations:
 
 In Windows XP or earlier: 
 
