@@ -121,7 +121,7 @@ Sample input file, for full documentation and samples see [Sage 50 UK Purchase O
         <Address3>Jesmond</Address3>
         <Town>Newcastle Upon Tyne</Town>
         <Postcode>NE2 3AE</Postcode>
-        <County>Tyne & Wear</County>
+        <County>Tyne and Wear</County>
         <Country>GB</Country>
         <Telephone>0845 123 2920</Telephone>
         <Fax>0845 123 2921</Fax>
@@ -138,7 +138,7 @@ Sample input file, for full documentation and samples see [Sage 50 UK Purchase O
           <TaxRate>20</TaxRate>
           <TaxCode>1</TaxCode>
           <NominalCode>4000</NominalCode>
-          <Department>1200</Department>
+          <Department>0</Department>
           <Type>Stock</Type>
         </Item>
         <Item>
@@ -149,7 +149,7 @@ Sample input file, for full documentation and samples see [Sage 50 UK Purchase O
           <TaxRate>20</TaxRate>
           <TaxCode>1</TaxCode>
           <NominalCode>4000</NominalCode>
-          <Department>1200</Department>
+          <Department>0</Department>
           <Type>Stock</Type>
         </Item>
       </PurchaseOrderItems>
@@ -161,7 +161,7 @@ Sample input file, for full documentation and samples see [Sage 50 UK Purchase O
         <TaxRate>20</TaxRate>
         <TaxCode>1</TaxCode>
         <NominalCode>4000</NominalCode>
-        <Department>1200</Department>
+        <Department>0</Department>
         <Type>NonStock</Type>
       </Carriage>
       <PurchaseOrderType>ProductInvoice</PurchaseOrderType>
