@@ -50,7 +50,7 @@ Each of the tasks require a connection to Sage 50 UK, for more information on se
  * [Sage 50 Tax code and Nominal Code Import Settings](sage-50-tax-codes-and-nominal-code-settings)
 
 ## Supported Versions  
-We provide support all current versions of Sage 50the following versions of Sage 50 and Sage 50cloud have been fully tested with Zynk Workflow
+The following versions of Sage 50 and Sage 50cloud have been fully tested with Zynk Workflow
  * 2020 (26)
  * 2019 (25)
  * 2018 (24)
