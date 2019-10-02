@@ -383,7 +383,7 @@ The Address1 field is used to check if the delivery address is provided in the X
 | County | County | Tyne and Wear | string | 60 | Optional | Available in Sage 200 V6 and greater. Can only be set if 'Use Segmented Addresses' is enabled. |
 | Postcode  | Postcode | NE1 4XF | string | 10 | Optional |
 | Country | Country  | GB | string | 2 | Optional | Should be the ISO2 country code. If a country name is provided, Zynk will try to map it to the appropriate county code. |
-| ContactName  | Contact | Test Person | string | 50 | Optional |
+| ContactName  | Contact | Test Person | string | 235 | Optional |
 | Telephone  | Telephone | 0845 123 2920 | string | 30 | Optional |
 | Fax  | Fax | 0845 123 2921 | string | 30 | Optional |
 | Email  | E-mail | support@internetware.co.uk | string | 255 | Optional |
