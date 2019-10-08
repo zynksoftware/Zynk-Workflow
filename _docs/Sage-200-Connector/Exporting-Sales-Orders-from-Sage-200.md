@@ -68,7 +68,7 @@ Sample output file:
         <Address3 />
         <Town>Jesmond</Town>
         <Postcode>NE2 3AE</Postcode>
-        <County>Tyne & Wear</County>
+        <County>Tyne &amp; Wear</County>
         <Country> </Country>
         <CountryName><Non-European></CountryName>
         <Telephone>0845 123 2920</Telephone>
@@ -94,7 +94,7 @@ Sample output file:
         <Address3 />
         <Town>Jesmond</Town>
         <Postcode>NE2 3AE</Postcode>
-        <County>Tyne & Wear</County>
+        <County>Tyne &amp; Wear</County>
         <Country> </Country>
         <CountryName><Non-European></CountryName>
         <Telephone>0845 123 2920</Telephone>
