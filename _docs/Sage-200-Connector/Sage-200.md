@@ -35,6 +35,7 @@ If you are using **Sage 200 Standard Online** or **Sage 200 Extra Online** pleas
  * [Importing Purchase Invoices Into Sage 200](importing-purchase-invoices-into-sage-200)
  * [Importing Purchase Orders into Sage 200](importing-purchase-orders-into-sage-200)
  * [Importing Sales Orders into Sage 200](importing-sales-orders-into-sage-200)
+ * [Importing Sales Order Acknowledgements into Sage 200](importing-sales-order-acknowledgements-into-sage-200)
  * [Importing Stock Records into Sage 200](importing-stock-records-into-sage-200)
  * [Importing Stock Transactions into Sage 200](importing-stock-transactions-into-sage-200)
  * [Importing Suppliers into Sage 200](importing-suppliers-into-sage-200)

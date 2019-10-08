@@ -13,6 +13,7 @@ We recommend that you read the [Zynk XML Overview](zynk-xml-overview) before con
  * [Sage 200 Purchase Invoice XML](sage-200-purchase-invoice-xml)
  * [Sage 200 Purchase Order XML](sage-200-purchase-order-xml)
  * [Sage 200 Sales Order XML](sage-200-sales-order-xml)
+ * [Sage 200 Sales Order Acknowledgement XML](sage-200-sales-order-acknowledgement-xml)
  * [Sage 200 Stock Record XML](sage-200-stock-record-xml)
  * [Sage 200 Stock Transaction XML](sage-200-stock-transaction-xml)
  * [Sage 200 Supplier XML](sage-200-supplier-xml)
