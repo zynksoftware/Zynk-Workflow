@@ -34,7 +34,7 @@ Set to 'True' to check whether the goods note Id supplied in the  input XML file
 See [Common Task Settings](common-task-settings)
 
 ## Examples
-A sample input file for creating a goods note is shown below. This applies to workflows created in v2.22 of Zynk and above (using the ImportGoodsReceivedNotesV2 task). See our [Sage 200 GRN XML](sage-200-grn-xml) for more details on the Zynk XML Goods Note format for Sage 200.
+A sample input file for creating a goods note is shown below. This applies to workflows created in v2.22 of Zynk and above (using the ImportGoodsReceivedNotesV2 task). See our [Sage 200 GRN XML (V2)](sage-200-grn-xml-v2) for more details on the Zynk XML Receipt Note format for Sage 200.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -65,7 +65,7 @@ A sample input file for creating a goods note is shown below. This applies to wo
 </Company>
 ```
 
-For workflows created in versions of Zynk prior to v2.22 (using the ImportGoodsReceivedNotes task), the format is as follows.
+For workflows created in versions of Zynk prior to v2.22 (using the ImportGoodsReceivedNotes task), the format is as follows. See [Sage 200 GRN XML](sage-200-grn-xml) for more details on the Zynk XML Goods Note format for Sage 200.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
