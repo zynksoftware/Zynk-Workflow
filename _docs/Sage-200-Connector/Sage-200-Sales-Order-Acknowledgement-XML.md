@@ -13,7 +13,7 @@ At least one of the following fields must be provided to identify which order to
 | --- | --- | --- | --- | --- | --- | --- |
 | UniqueId | - | 2841241 | int | - | Optional | Used to specify the SOPOrderReturn.SOPOrderReturnID value from the Sage database. |
 | SalesOrderNumber | Order no | 0000000005 | string | 10 | Optional | |
-| Id | - | 12345 | string | 255 | Optional | Only works where an order was imported into Sage via Zynk, and an Id was specifed at the time. |
+| Id | - | 12345 | string | 255 | Optional | Only works where an order was imported into Sage via Zynk, and an Id was specified at the time. |
 | CustomerOrderNumber | Customer order no | ABC12345 | string | 30 | Optional | |
 
 ```xml

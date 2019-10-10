@@ -11,6 +11,7 @@ If you are using **Sage 200 Standard Online** or **Sage 200 Extra Online** pleas
 
 ## Tasks
 
+ * [Converting Proformas to Sales Orders](converting-proformas-to-sales-orders)
  * [Exporting Allocation Sessions from Sage 200](exporting-allocation-sessions-from-sage-200) 
  * [Exporting Currencies from Sage 200](exporting-currencies-from-sage-200)
  * [Exporting Customers from Sage 200](exporting-customers-from-sage-200)

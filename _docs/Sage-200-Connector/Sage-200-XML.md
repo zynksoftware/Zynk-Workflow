@@ -6,6 +6,7 @@ To integrate with [Sage 200](sage-200) using Zynk you will need to import and ex
 
 We recommend that you read the [Zynk XML Overview](zynk-xml-overview) before continuing as this contains some generic information on the XML object model, alternatively, choose the task relevant to your integration:
 
+ * [Sage 200 Convert Proformas to Sales Orders XML](sage-200-convert-proformas-to-sales-orders-xml)
  * [Sage 200 Customer XML](sage-200-customer-xml)
  * [Sage 200 GDN XML](sage-200-gdn-xml)
  * [Sage 200 GRN XML](sage-200-grn-xml)
