@@ -2,7 +2,11 @@
 slug: sage-200-grn-xml
 title: Sage 200 GRN XML
 ---
-Import Goods Received Notes allows you to receive specific item lines on purchase orders within Sage 200.  We recommend that the Id field be populated by the unique id of the goods received note from the external system, Zynk uses this field for logging if there are issues with the import.   
+Import Goods Received Notes allows you to receive specific item lines on purchase orders within Sage 200. 
+
+This documentation applies to the **ImportGoodsReceivedNotes** task, available in Zynk versions prior to v2.22. For the later version of the task, please refer to [Sage 200 GRN XML V2](sage-200-grn-xml-v2).
+
+We recommend that the Id field be populated by the unique id of the goods received note from the external system, Zynk uses this field for logging if there are issues with the import.   
 
 Any Sage fields not documented below are not directly supported with our imports.  
 

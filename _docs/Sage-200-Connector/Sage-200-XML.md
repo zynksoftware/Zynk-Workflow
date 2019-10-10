@@ -10,6 +10,7 @@ We recommend that you read the [Zynk XML Overview](zynk-xml-overview) before con
  * [Sage 200 Customer XML](sage-200-customer-xml)
  * [Sage 200 GDN XML](sage-200-gdn-xml)
  * [Sage 200 GRN XML](sage-200-grn-xml)
+ * [Sage 200 GRN XML V2](sage-200-grn-xml-v2)
  * [Sage 200 Price Band XML](sage-200-price-band-xml)
  * [Sage 200 Purchase Invoice XML](sage-200-purchase-invoice-xml)
  * [Sage 200 Purchase Order XML](sage-200-purchase-order-xml)
