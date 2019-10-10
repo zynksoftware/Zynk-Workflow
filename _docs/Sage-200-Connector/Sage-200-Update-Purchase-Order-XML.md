@@ -93,12 +93,15 @@ If you want any valid Item adjustments to be processed regardless of whether or 
 ```
 
 ## Receiving Purchase Order Items
-To receive a purchase order item, you must specify the amount to receive. 
+To receive a purchase order item, you must specify the amount to receive, and a reference number. You can optionally specify a date and narrative for the goods note.
 
 _N.B. It is not valid to provide a QtyToAmendReceive on the same XML Item that QtyToReceive has been provided on._
 
 | XML Field | Sage Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
+| GoodsNoteReference | Reference | 5230-H | string | - | Required | The reference/supplier GRN number. |
+| GoodsNoteDate | Date | 2019-10-01 | date | - | Optional | The goods note date. |
+| GoodsNoteNarrative | Narrative | Goods received | string | - | Optional | The goods note narrative. |
 | QtyToReceive | Qty Received | 1 | decimal | - | Required | The quantity to receive. |
 
 ```xml
@@ -106,6 +109,9 @@ _N.B. It is not valid to provide a QtyToAmendReceive on the same XML Item that Q
 <Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <PurchaseOrders>
     <PurchaseOrder>
+      <GoodsNoteReference>5230-H</GoodsNoteReference>
+      <GoodsNoteDate>2019-10-01</GoodsNoteDate>
+      <GoodsNoteNarrative>Goods received</GoodsNoteNarrative>
       <PurchaseItems>
         <Item>
           <QtyToReceive>1</QtyToReceive>
