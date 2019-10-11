@@ -11,10 +11,10 @@ At least one of the following fields must be provided to identify which order to
 
 | XML Field | Sage Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| UniqueId | - | 2841241 | int | - | Optional | Used to specify the SOPOrderReturn.SOPOrderReturnID value from the Sage database. |
-| SalesOrderNumber | Order no | 0000000005 | string | 10 | Optional | |
-| Id | - | 12345 | string | 255 | Optional | Only works where an order was imported into Sage via Zynk, and an Id was specified at the time. |
-| CustomerOrderNumber | Customer order no | ABC12345 | string | 30 | Optional | |
+| UniqueId | - | 2841241 | int | - | Optional | The database ID of the sales order. In the Zynk SalesOrder object, this would be the UniqueId specified in the success file of a successfully imported SalesOrder or in the export file from Sage 200. If this data is obtained directly from the Sage database, then this relates to SOPOrderReturn.SOPOrderReturnID |
+| SalesOrderNumber | Order no | 0000000005 | string | 10 | Optional | The Order no of the sales order. In the Zynk SalesOrder object, this would be the SaleseOrderNumber specified in the success file of a successfully imported SalesOrder or in the export file from Sage 200. If this data is obtained directly from the Sage database, then this relates to  SOPOrderReturn.DocumentNo |
+| Id | - | 12345 | string | 255 | Optional | The Id of the Zynk SalesOrder. If the SalesOrder was previously imported by Zynk and an Id (3rd party system identifier) was specified in the XML, then this can be used to match the sales order. This will only be valid in scenarios where the SalesOrder was created by Zynk and an Id was specified. This is not something that can be obtained directly from the Sage 200 database. |
+| CustomerOrderNumber | Customer order no | ABC12345 | string | 30 | Optional | The Customer order no of the sales order. In the Zynk SalesOrder object, this would be the CustomerOrderNumber specified in the success file of a successfully imported SalesOrder or in the export file from Sage 200. If this data is obtained directly from the Sage database, then this relates to SOPOrderReturn.CustomerDocumentNo |
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
