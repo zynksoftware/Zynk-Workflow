@@ -214,7 +214,7 @@ During the import Zynk will validate the debits and credits in the journal set b
 | Bank | AccountReference | 4000 | 8 | String | Required |
 | Date | TransactionDate | 2019-05-16T00:00:00 | - | Datetime | Optional |
 | Posted Date | PostedDate | 2019-05-16T00:00:00 | - | Datetime | Optional |
-| Ref | Reference | JDC1 | 10 | String | Optional |
+| Ref | Reference | JDC1 | 10 | String | Required |
 | Ex.Ref | PaymentReference | 4 | 10 | String | Optional |
 | Dept | Department | 1 | 3 | Int | Optional |
 | Fund | Fund | 001 | 3 | Int | Optional |
