@@ -163,7 +163,7 @@ If either of the bank accounts provided are not in the base currency of the comp
 | Bank | ToBankAccount | 1260 | 8 | String | Required |
 | Date | TransactionDate | 2019-05-16T00:00:00 | - | Datetime | Optional |
 | Posted Date | PostedDate | 2019-05-16T00:00:00 | - | Datetime | Optional |
-| Ref | Reference | BT1 | 10 | String | Optional |
+| Ref | Reference | BT1 | 10 | String | Required |
 | Ex.Ref | PaymentReference | 3 | 10 | String | Optional |
 | Dept | Department | 1 | 3 | Int | Optional |
 | Fund | Fund | 001 | 3 | Int | Optional |
