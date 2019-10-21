@@ -45,31 +45,31 @@ A sample output file is shown below. This output was produced whith the Url set 
 		<Link>
 			<Links />
 			<Title>Images</Title>
-			<Href>http://www.google.co.uk/imghp?hl=en&tab=wi</Href>
+			<Href>http://www.google.co.uk/imghp?hl=en&amp;tab=wi</Href>
 			<Result>OK</Result>
 		</Link>
 		<Link>
 			<Links />
 			<Title>Maps</Title>
-			<Href>http://maps.google.co.uk/maps?hl=en&tab=wl</Href>
+			<Href>http://maps.google.co.uk/maps?hl=en&amp;tab=wl</Href>
 			<Result>Found</Result>
 		</Link>
 		<Link>
 			<Links />
 			<Title>Play</Title>
-			<Href>https://play.google.com/?hl=en&tab=w8</Href>
+			<Href>https://play.google.com/?hl=en&amp;tab=w8</Href>
 			<Result>Found</Result>
 		</Link>
 		<Link>
 			<Links />
 			<Title>YouTube</Title>
-			<Href>http://www.youtube.com/?gl=GB&tab=w1</Href>
+			<Href>http://www.youtube.com/?gl=GB&amp;tab=w1</Href>
 			<Result>MovedPermanently</Result>
 		</Link>
 		<Link>
 			<Links />
 			<Title>News</Title>
-			<Href>http://news.google.co.uk/nwshp?hl=en&tab=wn</Href>
+			<Href>http://news.google.co.uk/nwshp?hl=en&amp;tab=wn</Href>
 			<Result>OK</Result>
 		</Link>
 		<Link>
@@ -99,19 +99,19 @@ A sample output file is shown below. This output was produced whith the Url set 
 		<Link>
 			<Links />
 			<Title>Translate</Title>
-			<Href>http://translate.google.co.uk/?hl=en&tab=wT</Href>
+			<Href>http://translate.google.co.uk/?hl=en&amp;tab=wT</Href>
 			<Result>Found</Result>
 		</Link>
 		<Link>
 			<Links />
 			<Title>Books</Title>
-			<Href>https://books.google.co.uk/bkshp?hl=en&tab=wp</Href>
+			<Href>https://books.google.co.uk/bkshp?hl=en&amp;tab=wp</Href>
 			<Result>OK</Result>
 		</Link>
 		<Link>
 			<Links />
 			<Title>Shopping</Title>
-			<Href>http://www.google.co.uk/shopping?hl=en&tab=wf</Href>
+			<Href>http://www.google.co.uk/shopping?hl=en&amp;tab=wf</Href>
 			<Result>OK</Result>
 		</Link>
 		<Link>
@@ -135,7 +135,7 @@ A sample output file is shown below. This output was produced whith the Url set 
 		<Link>
 			<Links />
 			<Title>Videos</Title>
-			<Href>http://video.google.co.uk/?hl=en&tab=wv</Href>
+			<Href>http://video.google.co.uk/?hl=en&amp;tab=wv</Href>
 			<Result>MovedPermanently</Result>
 		</Link>
 		<Link>
@@ -153,7 +153,7 @@ A sample output file is shown below. This output was produced whith the Url set 
 		<Link>
 			<Links />
 			<Title>Sign in</Title>
-			<Href>https://accounts.google.com/ServiceLogin?hl=en&continue=http://www.google.co.uk/</Href>
+			<Href>https://accounts.google.com/ServiceLogin?hl=en&amp;continue=http://www.google.co.uk/</Href>
 			<Result>OK</Result>
 		</Link>
 		<Link>
