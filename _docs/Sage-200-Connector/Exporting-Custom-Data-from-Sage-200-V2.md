@@ -41,6 +41,20 @@ Enter the SQL query to run against the Sage 200 database.  E.g. `SELECT * FROM [
 _Optional_  
 Enter the length of time (in seconds) to allow the query to run for. If the query does not finish running before this time elapses, it will stop and an error will be reported back.
 
+### Truth Settings
+_Optional_  
+These settings can be used to output the IDs of any records that were imported into Sage via Zynk, and an `<Id>` value was provided. The IDs are stored in the 'External ID' column of Zynk's truth table, and can be included in the export by specifying the following info:
+
+- **Internal ID Column** - The Sage database column name to read the internal ID value from. The column needs to be selected as part of the query. Some common examples of the column names to use for certain tables are listed below.
+  - *PLSupplierAccount* - SupplierAccountNumber
+  - *POPOrderReturn* - DocumentNo
+  - *SLCustomerAccount* - CustomerAccountNumber
+  - *SOPOrderReturn* - DocumentNo
+  - *StockItem* - Code
+  - In many other cases it is the table name followed by ID. For example, when exporting from the SOPDespatchReceipt table, it would be SOPDespatchReceiptID.
+
+- **Record Type** - The type of record to search for in the truth table. This can be seen on the Data tab. For example, for sales orders, the type is 'Zynk.Connect.Objects.SalesOrder'.
+
 ### Output File
 _Required_  
 The file to save the results of the query to. The data will be saved in XML format.
