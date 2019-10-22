@@ -14,5 +14,5 @@ This task supports the following verbs GET, POST, PUT, PATCH and DELETE.
 ## Articles and Sample Files
 There is a sample workflow and article available on the links below:
 
- * [Sample Workflow](https://github.com/zynksoftware/samples/blob/master/Workflow%20Samples/Website%20Script%20Based%20Sage%2050%20Integration.wkf) (Right click to download this file, double click and it will open in Zynk)
+ * [Sample Workflow](https://raw.githubusercontent.com/zynksoftware/samples/master/Workflow%20Samples/Website%20Script%20Based%20Sage%2050%20Integration.wkf) (Right click to download this file, double click and it will open in Zynk)
  * [Article](website-script-based-integration)
