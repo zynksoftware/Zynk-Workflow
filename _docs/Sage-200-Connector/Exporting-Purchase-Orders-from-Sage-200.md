@@ -193,8 +193,10 @@ Sample output file:
       <PaymentAmount xsi:nil="true" />
       <Status>Live</Status>
       <AnalysisCodes />
-      <GoodsNoteDate xsi:nil="true" /
-                     
+      <GoodsNoteDate xsi:nil="true"/>
+      <TotalNet xsi:nil="true" />
+      <TotalTax xsi:nil="true" />
+      <TotalGross xsi:nil="true" />               
     </PurchaseOrder>
   </PurchaseOrders>
 </Company>
