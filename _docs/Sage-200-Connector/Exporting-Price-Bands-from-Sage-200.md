@@ -51,6 +51,7 @@ Sample output file:
       <Name>Standard</Name>
       <Reference>Standard</Reference>
       <Currency>GBP</Currency>
+      <ExchangeRate>1,000000</ExchangeRate>
       <Type>PriceList</Type>
       <Prices>
         <Price Action="Upsert">
@@ -58,24 +59,28 @@ Sample output file:
           <DiscountType>Fixed</DiscountType>
           <StockCode>PROD001</StockCode>
           <StoredPrice>34.2</StoredPrice>
+          <BaseStoredPrice>34.2</BaseStoredPrice>
           <Value>0</Value>
           <ExternalReference>PROD001</ExternalReference>
           <BaseQty xsi:nil="true" />
           <QtyBreak xsi:nil="true" />
           <DiscountAmountValue xsi:nil="true" />
           <DiscountPercentValue xsi:nil="true" />
+          <UseStandard>false</UseStandard>
         </Price>
         <Price Action="Upsert">
           <UniqueId>6430</UniqueId>
           <DiscountType>Fixed</DiscountType>
           <StockCode>PROD002</StockCode>
           <StoredPrice>220.8083</StoredPrice>
+          <BaseStoredPrice>220.8083</BaseStoredPrice>
           <Value>0</Value>
           <ExternalReference>PROD002</ExternalReference>
           <BaseQty xsi:nil="true" />
           <QtyBreak xsi:nil="true" />
           <DiscountAmountValue xsi:nil="true" />
           <DiscountPercentValue xsi:nil="true" />
+          <UseStandard>false</UseStandard>
         </Price>
       </Prices>
     </PriceList>
@@ -84,6 +89,7 @@ Sample output file:
       <Name>Trade</Name>
       <Reference>Trade</Reference>
       <Currency>GBP</Currency>
+      <ExchangeRate>1.000000</ExchangeRate>
       <Type>PriceList</Type>
       <Prices>
         <Price Action="Upsert">
@@ -91,24 +97,28 @@ Sample output file:
           <DiscountType>Fixed</DiscountType>
           <StockCode>PROD001</StockCode>
           <StoredPrice>25.2</StoredPrice>
+          <BaseStoredPrice>25.2</BaseStoredPrice>
           <Value>0</Value>
           <ExternalReference>PROD001</ExternalReference>
           <BaseQty xsi:nil="true" />
           <QtyBreak xsi:nil="true" />
           <DiscountAmountValue xsi:nil="true" />
           <DiscountPercentValue xsi:nil="true" />
+          <UseStandard>false</UseStandard>
         </Price>
         <Price Action="Upsert">
           <UniqueId>6984</UniqueId>
           <DiscountType>Fixed</DiscountType>
           <StockCode>PROD002</StockCode>
           <StoredPrice>160.8083</StoredPrice>
+         <BaseStoredPrice>160.8083</BaseStoredPrice>
           <Value>0</Value>
           <ExternalReference>PROD002</ExternalReference>
           <BaseQty xsi:nil="true" />
           <QtyBreak xsi:nil="true" />
           <DiscountAmountValue xsi:nil="true" />
           <DiscountPercentValue xsi:nil="true" />
+          <UseStandard>false</UseStandard>
         </Price>
       </Prices>
     </PriceList>
