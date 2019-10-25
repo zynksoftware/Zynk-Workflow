@@ -44,6 +44,7 @@ Sample output file:
     <Supplier>
       <UniqueId>CON001</UniqueId>
       <CompanyName>Concept Stationery Supplies</CompanyName>
+      <AccountOpened>2018-10-10T00:00:00</AccountOpened>
       <AccountReference>CON001</AccountReference>
       <VatNumber>GB988 3453 23</VatNumber>
       <CreditLimit>17000</CreditLimit>
@@ -64,6 +65,8 @@ Sample output file:
         <Fax>0191 643 4345</Fax>
         <Mobile>0191 643 4344</Mobile>
         <Email>newbusinessadvice@sage.com</Email>
+        <Email2 />
+        <Email3 />
         <Website>www.sage.co.uk</Website>
         <Birthdate xsi:nil="true" />
         <Notes />
@@ -72,6 +75,7 @@ Sample output file:
         <TradeContact>Anthony Thane</TradeContact>
         <Activities />
         <Groups />
+        <Roles />
       </SupplierInvoiceAddress>
       <SupplierDeliveryAddress>
         <Title />
@@ -93,16 +97,39 @@ Sample output file:
         <CustomFields />
         <Activities />
         <Groups />
+        <Roles />
       </SupplierDeliveryAddress>
+      <ChargeCredit xsi:nil="true" />
+      <Currency>GBP</Currency>
       <TermsAgreed>true</TermsAgreed>
+      <AccountOnHold xsi:nil-"true" />
+      <IsActive>true</IsActive>
       <AccountStatus>0</AccountStatus>
       <Priority>true</Priority>
       <NominalCode>5000</NominalCode>
+      <DepartmentInfo>
+       <Reference>0</Reference>
+       <Name>Default</Name>
+       <Number xsi:nil="true" />
+      </DepartmentInfo>
+     <FixedDiscount>0</FixedDiscount>
       <Analysis1>North East</Analysis1>
       <Analysis2>Stationery</Analysis2>
       <Analysis3 />
       <Contacts />
+      <Memo />
+      <OverrideNominalCode xsi:nil="true" />
+      <OverrideTaxCode>false</OverrideTaxCode>
+      <PaymentDays>0</PaymentDays>
+      <RestrictMailing xsi:nil="true" />
+      <SendElectronicInvoice xsi:nil="true" />
+      <SendElectronicLetter>false</SendElectronicLetter>
+      <SettlementDays>0</SettlementDays>
+      <SettlementDiscount>0</SettlementDiscount>
+      <Terms />
+      <Contracts />
       <TaxCode>1</TaxCode>
+      <PaymentGroup xsi:nil="true" />
       <Banks>
         <Bank>
           <BankName>HSBC Bank</BankName>
