@@ -49,9 +49,12 @@ Sample output file, showing a despatch of product PROD001 for order 0000000002:
     <DespatchNote>
       <UniqueId>29954</UniqueId>
       <OrderNumber>0000000002</OrderNumber>
+      <DocumentNumber>0000000001</DocumentNumber>
       <CustomerOrderNumber>12</CustomerOrderNumber>
+      <DespatchDate2019-03-08T00:00:00></DespatchDate>
       <GoodsNotes>
         <GoodsNote>
+          <UniqueId>2322</UniqueId>
           <Type>GoodsDespatchedNote</Type>
           <Date>2013-10-10T00:00:00</Date>
           <Sku>PROD001</Sku>
