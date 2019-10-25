@@ -89,7 +89,11 @@ Sample output file:
         <Fax />
         <FaxCountryCode />
         <FaxAreaCode />
+        <Mobile />
+        <MoblieCountryCode />
+        <MobileAreaCode />
         <Email />
+        <Website />
         <ContactName />
         <Birthdate xsi:nil="true" />
         <Notes />
@@ -97,6 +101,18 @@ Sample output file:
         <CustomFields />
         <Activities />
         <Groups />
+        <Roles>
+          <Role>
+           <UniqueId>1</UniqueId>
+           <Name>Account</Name>
+           <IsPreferred>true</IsPreferred>
+         </Role>
+         <Role>
+           <UniqueId>2</UniqueId>
+           <Name>SendStatementTo</Name>
+           <IsPreferred>True</IsPreferred>
+         </Role>
+        </Roles>
       </CustomerInvoiceAddress>
       <CustomerDeliveryAddress>
         <UniqueId>1229</UniqueId>
@@ -121,7 +137,11 @@ Sample output file:
         <Fax />
         <FaxCountryCode />
         <FaxAreaCode />
+        <Mobile />
+        <MobileCountryCode />
+        <MoblieAreaCode />
         <Email />
+        <Website />
         <ContactName />
         <Birthdate xsi:nil="true" />
         <Notes />
@@ -129,6 +149,18 @@ Sample output file:
         <CustomFields />
         <Activities />
         <Groups />
+        <Roles>
+          <Role>
+            <UniqueId>1</UniqueId>
+            <Name>Account</Name>
+            <IsPreferred>true</IsPreferred>
+          </Role>
+          <Role>
+            <UniqueId>2</UniqueId>
+            <Name>SendStatementTo</Name>
+            <IsPreferred>true</IsPreferred>
+          </Role>
+        </Roles>
       </CustomerDeliveryAddress>
       <Analysis1 />
       <Analysis2 />
@@ -143,13 +175,16 @@ Sample output file:
       <FixedDiscount xsi:nil="true" />
       <LineDiscount>0</LineDiscount>
       <PriceListReference>Standard</PriceListReference>
+      <LimitedPriceListReferences />
       <DiscountGroupReference />
       <OrderValueDiscountReference />
       <DiscountType xsi:nil="true" />
       <CreditLimit>0</CreditLimit>
+      <CreditReference />
       <SettlementDays>0</SettlementDays>
       <SettlementDiscount>0</SettlementDiscount>
       <PaymentDays>0</PaymentDays>
+      <PaymentBasis xsi:nil="true" />
       <Terms />
       <AccountStatus xsi:nil="true" />
       <DUNSNumber xsi:nil="true" />
@@ -218,6 +253,11 @@ Sample output file:
       <Activities />
       <Groups />
       <Notes />
+      <InvoiceLayout>Default Invoice Layout</InvoiceLayout>
+      <CountryCode />
+      <KeepTransactionsFor>30</KeepTransactionsFor>
+      <OrderPriority />
+      <Turnovers />
     </Customer>
   </Customers>
 </Company>
