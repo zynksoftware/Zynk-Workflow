@@ -50,9 +50,12 @@ Sample output file:
     <PurchaseOrder>
       <UniqueId>1665</UniqueId>
       <PurchaseOrderNumber>0000000001</PurchaseOrderNumber>
+      <SupplierOrderNumber />
       <ForeignRate>1</ForeignRate>
+     <Currency>GBP</Currency>
       <AccountReference>INT001</AccountReference>
       <CurrencyUsed xsi:nil="true" />
+      <VatInclusive>false</VatInclusive>
       <NetValueDiscount xsi:nil="true" />
       <NetValueDiscountPercent>0</NetValueDiscountPercent>
       <TaxNumber />
@@ -64,6 +67,7 @@ Sample output file:
         <Address1>Nelson House</Address1>
         <Address2>Fleming Business Centre</Address2>
         <Address3 />
+        <Address4 />
         <Town>Jesmond</Town>
         <Postcode>NE2 3AE</Postcode>
         <County>Tyne & Wear</County>
@@ -83,6 +87,7 @@ Sample output file:
         <CustomFields />
         <Activities />
         <Groups />
+        <Roles />
       </PurchaseOrderAddress>
       <PurchaseOrderDeliveryAddress>
         <Company />
@@ -90,6 +95,7 @@ Sample output file:
         <Address1 />
         <Address2 />
         <Address3 />
+        <address4 />
         <Town />
         <Postcode />
         <County />
@@ -109,6 +115,7 @@ Sample output file:
         <CustomFields />
         <Activities />
         <Groups />
+        <Roles />
       </PurchaseOrderDeliveryAddress>
       <PurchaseOrderItems>
         <Item>
@@ -143,6 +150,7 @@ Sample output file:
       </PurchaseOrderItems>
       <Carriage>
         <Sku />
+        <PrintSequenceNumber xsi:nil="true" />
         <QtyOrdered>0</QtyOrdered>
         <UnitPrice>0</UnitPrice>
         <UnitDiscountAmount xsi:nil="true" />
@@ -155,23 +163,38 @@ Sample output file:
         <TotalTax>0</TotalTax>
         <TaxCode xsi:nil="true" />
         <Type>ChargeLine</Type>
+        <Confirmation xsi:nil="true" />
         <QtyAllocated xsi:nil="true" />
         <QtyDespatched xsi:nil="true" />
         <QtyReceived xsi:nil="true" />
         <QtyInvoiced xsi:nil="true" />
+        <QtyToAllocate xsi:nil="true" />
+        <QtyToAmendAllocate xsi:nil="true" />
+        <QtyToDespatch xsi:nil="true" />
+        <QtyToAmendDespatch xsi:nil="true" />
+        <QtyToReturn xsi:nil="true" />
+        <QtyToAmendReturn xsi:nil="true" />
+        <QtyToReceive xsi:nil="true" />
+        <QtyToAmendReceive xsi:nil="true" />
         <PromisedDeliveryDate xsi:nil="true" />
         <RequestedDeliveryDate xsi:nil="true" />
+        <IsNegativeLine xsi:nil="true" />
+        <ShowOnDocs xsi:nil="true" />
+        <ShowOnPickingList xsi:nil="true" />
       </Carriage>
       <PurchaseOrderType>PopInvoice</PurchaseOrderType>
       <TakenBy>ADAM</TakenBy>
       <Courier xsi:nil="true" />
       <SettlementDays>0</SettlementDays>
       <SettlementDiscount>0</SettlementDiscount>
+      <DefaultWarehouse />
       <InvoiceDate xsi:nil="true" />
       <GlobalTaxCode>1</GlobalTaxCode>
       <PaymentAmount xsi:nil="true" />
       <Status>Live</Status>
       <AnalysisCodes />
+      <GoodsNoteDate xsi:nil="true" /
+                     
     </PurchaseOrder>
   </PurchaseOrders>
 </Company>
