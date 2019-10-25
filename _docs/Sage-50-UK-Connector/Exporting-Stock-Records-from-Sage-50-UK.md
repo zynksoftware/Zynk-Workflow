@@ -73,6 +73,7 @@ Sample output file:
             <ReorderLvl>0</ReorderLvl>
             <TaxCode>1</TaxCode>
             <GroupCode>9</GroupCode>
+            <GroupName />
             <Department>1</Department>
             <UnitOfSale>Each</UnitOfSale>
             <NominalCode>4000</NominalCode>
@@ -82,6 +83,7 @@ Sample output file:
             <QtyAllocated>0</QtyAllocated>
             <ImageName>fax001.jpg</ImageName>
             <LastCostPrice>150</LastCostPrice>
+            <LastCostPriceDiscounted>0</LastCostPriceDiscounted>
             <QtyLastOrder>0</QtyLastOrder>
             <AverageCostPrice>150</AverageCostPrice>
             <StandardCostPrice xsi:nil="true" />
@@ -113,6 +115,7 @@ Sample output file:
             <CustomFields />
             <AnalysisCodes />
             <SearchCategories />
+            <IsActive />
         </Product>
     </Products>
 </Company>
