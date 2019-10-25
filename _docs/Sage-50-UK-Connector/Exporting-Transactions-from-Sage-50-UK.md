@@ -46,7 +46,9 @@ Sample output file:
             <TransactionType>SalesInvoice</TransactionType>
             <AccountReference>ABS001</AccountReference>
             <TransactionDate>2009-03-02T00:00:00</TransactionDate>
+            <DueDate xsi:nil="true" />
             <PostedDate xsi:nil="true" />
+            <AnalysisCode />
             <NominalCode>4000</NominalCode>
             <Department>1</Department>
             <Reference>35</Reference>
@@ -58,6 +60,8 @@ Sample output file:
             <TaxAmount>2.43</TaxAmount>
             <ElectronicTransaction>false</ElectronicTransaction>
             <OutstandingAmount>0</OutstandingAmount>
+            <ProjectRef />
+            <ProjectItem />
             <TransactionNumber>631</TransactionNumber>
             <BankReference>4000</BankReference>
             <Discount xsi:nil="true" />
