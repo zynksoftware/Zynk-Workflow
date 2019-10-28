@@ -65,7 +65,10 @@ Sample output file:
       <Locations>
         <Location>
           <UniqueId>1006</UniqueId>
-          <Name>WAREHOUS</Name>
+          <Name>HOME</Name>
+          <MinimumLevel>0.00000</MinimumLevel>
+          <MaximumLevel>0.00000</MaximumLevel>
+          <ReorderLevel>0.00000</ReorderLevel>
           <QtyInStock>0</QtyInStock>
           <QtyOnOrder>36</QtyOnOrder>
           <QtyAllocated>0</QtyAllocated>
@@ -89,7 +92,10 @@ Sample output file:
       <Locations>
         <Location>
           <UniqueId>1006</UniqueId>
-          <Name>WAREHOUS</Name>
+          <Name>AWAY</Name>
+          <MinimumLevel>0.00000</MinimumLevel>
+          <MaximumLevel>0.00000</MaximumLevel>
+          <ReorderLevel>0.00000</ReorderLevel>
           <QtyInStock>9</QtyInStock>
           <QtyOnOrder>10</QtyOnOrder>
           <QtyAllocated>0</QtyAllocated>
