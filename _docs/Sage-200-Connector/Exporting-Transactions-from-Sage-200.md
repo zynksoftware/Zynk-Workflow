@@ -51,6 +51,7 @@ Sample output file:
       <TransactionType>SalesReceipt</TransactionType>
       <AccountReference>ONBOARD</AccountReference>
       <TransactionDate>2012-03-19T00:00:00</TransactionDate>
+      <DueDate xsi:nil="true />
       <PostedDate xsi:nil="true" />
       <Reference>DXB_000003206C</Reference>
       <PaymentReference>101000066426</PaymentReference>
