@@ -24,7 +24,7 @@ Specify the XML file to export the records to.
 
 ### Record Type
 _Required_  
-The type of record to be deleted. The available options are:	
+The type of record to be Selected. The available options are:	
 
  * Accounts
  * Calls
