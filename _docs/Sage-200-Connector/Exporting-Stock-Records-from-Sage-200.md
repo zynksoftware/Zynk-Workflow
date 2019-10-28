@@ -208,6 +208,8 @@ Sample output file:
       <ProductSuppliers />
       <AnalysisCodes />
       <SearchCategories />
+      <RevenueNominal />
+      <IsActive xsi:nil="true" />
     </Product>
   </Products>
 </Company>
