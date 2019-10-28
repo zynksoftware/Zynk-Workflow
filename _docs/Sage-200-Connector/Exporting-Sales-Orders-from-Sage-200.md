@@ -51,6 +51,7 @@ Sample output file:
       <UniqueId>1361</UniqueId>
       <SalesOrderNumber>0000000002</SalesOrderNumber>
       <CustomerOrderNumber>12</CustomerOrderNumber>
+     <DefaultWarehouse>HOME</DefaultWareHouse>
       <ForeignRate>1</ForeignRate>
       <Currency>GBP</Currency>
       <AccountReference>ZYN0001</AccountReference>
@@ -61,11 +62,17 @@ Sample output file:
       <PromisedDeliveryDate>2013-10-10T00:00:00</PromisedDeliveryDate>
       <RequestedDeliveryDate>2013-10-10T00:00:00</RequestedDeliveryDate>
       <SalesOrderAddress>
+        <UniqueId />
+        <Title />
+        <Forename />
+        <Midddlename />
+        <Surname />
         <Company>Zynk Software Limited</Company>
         <Description> - NE2 3AE</Description>
         <Address1>Nelson House</Address1>
         <Address2>Fleming Business Centre</Address2>
         <Address3 />
+        <Address4 />
         <Town>Jesmond</Town>
         <Postcode>NE2 3AE</Postcode>
         <County>Tyne &amp; Wear</County>
@@ -77,7 +84,11 @@ Sample output file:
         <Fax />
         <FaxCountryCode />
         <FaxAreaCode />
+        <Mobile />
+        <MoblieCountryCode />
+        <MoblieAreaCode />
         <Email />
+        <Website />
         <ContactName />
         <Birthdate xsi:nil="true" />
         <Notes />
@@ -85,6 +96,7 @@ Sample output file:
         <CustomFields />
         <Activities />
         <Groups />
+        <Roles />
       </SalesOrderAddress>
       <SalesOrderDeliveryAddress>
         <Company>Zynk Software Limited</Company>
@@ -92,6 +104,7 @@ Sample output file:
         <Address1>Nelson House</Address1>
         <Address2>Fleming Business Centre</Address2>
         <Address3 />
+        <Address4 />
         <Town>Jesmond</Town>
         <Postcode>NE2 3AE</Postcode>
         <County>Tyne &amp; Wear</County>
@@ -111,12 +124,14 @@ Sample output file:
         <CustomFields />
         <Activities />
         <Groups />
+        <Roles />
       </SalesOrderDeliveryAddress>
       <SalesOrderItems>
         <Item>
           <Sku>PROD001</Sku>
           <Name>Test Product</Name>
           <Description>Test Product</Description>
+          <PrintSequenceNumber xsi:nil="true" />
           <QtyOrdered>5</QtyOrdered>
           <UnitPrice>34.2</UnitPrice>
           <UnitDiscountAmount>0</UnitDiscountAmount>
@@ -133,6 +148,7 @@ Sample output file:
           <Location>WAREHOUS</Location>
           <Barcode />
           <Type>Stock</Type>
+          <Confirmation xsi:nil="true" />
           <QtyAllocated>0</QtyAllocated>
           <QtyDespatched>5</QtyDespatched>
           <QtyReceived xsi:nil="true" />
@@ -140,10 +156,14 @@ Sample output file:
           <FulfilmentMethod>From Stock</FulfilmentMethod>
           <PromisedDeliveryDate>2013-10-10T00:00:00</PromisedDeliveryDate>
           <RequestedDeliveryDate>2013-10-10T00:00:00</RequestedDeliveryDate>
+          <IsNegativeLine xsi:nil="true" />
+          <ShowOnDocs xsi:nil="true" />
+          <ShowOnPickingList xsi:nil="true" />
         </Item>
       </SalesOrderItems>
       <Carriage>
         <Sku />
+        <PrintSequenceNumber xsi:nil="true" />
         <QtyOrdered>0</QtyOrdered>
         <UnitPrice>0</UnitPrice>
         <UnitDiscountAmount xsi:nil="true" />
@@ -156,12 +176,16 @@ Sample output file:
         <TotalTax>0</TotalTax>
         <TaxCode xsi:nil="true" />
         <Type>ChargeLine</Type>
+        <Confirmation xsi:nil="true" />
         <QtyAllocated xsi:nil="true" />
         <QtyDespatched xsi:nil="true" />
         <QtyReceived xsi:nil="true" />
         <QtyInvoiced xsi:nil="true" />
         <PromisedDeliveryDate xsi:nil="true" />
         <RequestedDeliveryDate xsi:nil="true" />
+        <IsNegativeLine xsi:nil="true" />
+        <ShowOnDocs xsi:nil="true" />
+        <ShowOnPickingList xsi:nil="true" />
       </Carriage>
       <SalesOrderType>SopInvoice</SalesOrderType>
       <TakenBy>Website</TakenBy>
@@ -178,6 +202,9 @@ Sample output file:
       <DiscountType xsi:nil="true" />
       <Priority />
       <AnalysisCodes />
+      <TotalNet xsi:nil="true" />
+      <TotalTax xsi:nil="true" />
+      <TotalGross xsi:nil="true" />
     </SalesOrder>
   </SalesOrders>
 </Company>
