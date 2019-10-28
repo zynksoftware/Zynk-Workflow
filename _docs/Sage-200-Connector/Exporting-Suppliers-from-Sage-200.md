@@ -50,6 +50,7 @@ Sample output file:
       <Id>1234</Id>
       <UniqueId>1620</UniqueId>
       <CompanyName>Zynk Software</CompanyName>
+      <AccountOpened xsi:nil="true" />
       <AccountReference>ZYN001</AccountReference>
       <VatNumber>GB12345</VatNumber>
       <CreditLimit>1000</CreditLimit>
@@ -63,12 +64,21 @@ Sample output file:
         <Address1>Flemming Business Centre</Address1>
         <Address2>Jesmond</Address2>
         <Address3 />
+        <Address4 />
         <Town>Newcastle</Town>
         <Postcode>NE2 3AE</Postcode>
-        <Country> </Country>
+        <County />
+        <Country />
+        <CountryName />
         <Telephone>0845 123 2920</Telephone>
+        <TelephoneCountryCode />
+        <TelephoneAreaCode />
         <Fax />
+        <FaxCountryCode />
+        <FaxAreaCode />
         <Mobile />
+        <MobileCountryCode />
+        <MobileAreaCode />
         <Email>support@example.com</Email>
         <ContactName>Joe Bloggs</ContactName>
         <Website>www.example.com</Website>
@@ -78,6 +88,7 @@ Sample output file:
         <CustomFields />
         <Activities />
         <Groups />
+        <Roles />
       </SupplierInvoiceAddress>
       <SupplierDeliveryAddress>
         <Title>Mr.</Title>
@@ -88,12 +99,21 @@ Sample output file:
         <Address1>Flemming Business Centre</Address1>
         <Address2>Jesmond</Address2>
         <Address3 />
+        <Address4 />
         <Town>Newcastle</Town>
         <Postcode>NE2 3AE</Postcode>
+        <County />
         <Country> </Country>
+        <CountryName />
         <Telephone>0845 123 2920</Telephone>
+        <TelephoneCountryArea />
+        <TelephoneAreaCode />
         <Fax />
+        <FaxCountryCode />
+        <FaxAreaCode />
         <Mobile />
+        <MobileCountryCode />
+        <MobileAreaCode />
         <Email>support@example.com</Email>
         <ContactName>Joe Bloggs</ContactName>
         <Website>www.example.com</Website>
@@ -103,16 +123,33 @@ Sample output file:
         <CustomFields />
         <Activities />
         <Groups />
+        <Roles />
       </SupplierDeliveryAddress>
+      <ChargeCredit xsi:nil="true" />
       <Currency>GBP</Currency>
       <TermsAgreed>true</TermsAgreed>
+      <AccountOnHold>false</AccountOnHold>
+      <IsActive xsi:nil="true" />
       <AccountStatus xsi:nil="true" />
       <Priority xsi:nil="true" />
       <ShortName>Internet</ShortName>
+      <FixedDiscount xsi:nil="true" />
+      <OverrideNominalCode xsi:nil="true" />
+      <OverrideTaxCode xsi:nil="true" />
+      <PaymentDays>0</PaymentDays>
+      <RestrictMailing xsi:nil="true" />
+      <SendElectronicInvoice xsi:nil="true" />
+      <SendElectronicLetter xsi:nil="true" />
+      <SettlementDays xsi:nil="true" />
+      <SettlementDiscount xsi:nil="true" />
       <Contacts />
       <TaxCode>1</TaxCode>
+      <PaymentGroupDescription />
+      <PaymentGroup>0</PaymentGroup>
       <Banks />
+      <AnalysisCodes />
       <CustomFields />
+      <KeepTransactionsFor>30</KeepTransactionsFor>
     </Supplier>
   </Suppliers>
 </Company>
