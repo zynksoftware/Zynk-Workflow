@@ -21,7 +21,7 @@ _Optional_
 
  * **Columns** - Allows you to specify additional columns to include in the export.  Additional fields will be exported in the CustomFields section in the XML.  Be sure to include the table name for each of the additional columns provided eg. `[STOCK].[QTY_LAST_STOCK_TAKE]`.  If the table that the column you are trying to retrieve is not used by the standard export, you will need to add the table to Joins.
  * **Joins** - Allows data to be exported from other tables in the Sage database. Required when exporting data from tables not included in the standard export.
- * **Where Clauses** - Allows filters to be set to limit the data that is exported.
+ * **Where Clauses** - Allows filters to be set to limit the data that is exported. A list of these filters can be found in the [Stock Columns](sage-50-uk-stock-columns) article
 
 ### Query Timeout
 _Optional_  
