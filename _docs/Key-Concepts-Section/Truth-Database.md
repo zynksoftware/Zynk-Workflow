@@ -12,7 +12,7 @@ You can interrogate your database using the free-to-use Zynk extension [Zynk Log
 
 ## Tables
 ### Connection
-The connection table will store all of the connections you have set up within Zynk. For more information on creating an managing connectiong from Zynk please see [here](managing-connections)
+The connection table will store all of the connections you have set up within Zynk. For more information on creating an managing connections from Zynk please see [here](managing-connections)
 
 The following fields are exposed in the connections table:
 
