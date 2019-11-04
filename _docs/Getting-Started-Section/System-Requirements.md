@@ -22,6 +22,7 @@ title: System Requirements
 * Microsoft® Windows® 2012 Server Standard Edition and Data Centre Editions
 * Microsoft® Windows® 2012 R2 Server Standard Edition and Data Centre Editions
 * Microsoft® Windows® 2016 Server Standard Edition and Data Centre Editions
+* Microsoft® Windows® 2019 Server Standard Edition and Data Centre Editions
 * Microsoft® Windows 10 Pro/Enterprise (32 and 64 bit)
 
 ### Additional Notes
