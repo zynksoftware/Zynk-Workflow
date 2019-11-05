@@ -4,7 +4,7 @@ title: Connecting to WooCommerce V3.0+
 ---
 All of the tasks in the WooCommerce V3.0+ connector require a connection to WooCommerce, so you will need to create a connection with the type 'WooCommerce Version 3.0+'. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your WooCommerce details: 
 
-![WooCommerce Connection](/assets/images/woocommerce-v3/woocommerce-v3-connection.png)
+![WooCommerce Connection](/assets/images/woocommerce-v3/woocomerce-v3-connection.png)
 
 Enter your WooCommerce details as described below, then click 'Finish' to create the connection. For more information on generating API keys see [WooCommerce REST API](https://docs.woocommerce.com/document/woocommerce-rest-api/).
 
