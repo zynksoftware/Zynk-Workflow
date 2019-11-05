@@ -3,6 +3,8 @@ slug: downloading-orders-from-ekm-powershop
 redirect_from: "/article/218-downloading-orders-from-ekm-powershop"
 title: Downloading Orders from EKM Powershop
 ---
+**This documentation refers to an older version of our EKM connector, which is no longer supported. See [EKM Connector](ekm) for the current version.**
+
 This task will export all orders that have been modified since the last data specified, to an XML file.
 
 ## Settings

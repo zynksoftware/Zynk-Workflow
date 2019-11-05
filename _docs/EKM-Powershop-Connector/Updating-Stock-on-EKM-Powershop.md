@@ -3,6 +3,8 @@ slug: updating-stock-on-ekm-powershop
 redirect_from: "/article/221-updating-stock-on-ekm-powershop"
 title: Updating Stock in EKM Powershop
 ---
+**This documentation refers to an older version of our EKM connector, which is no longer supported. See [EKM Connector](ekm) for the current version.**
+
 This task will update the stock level for a product.
 
 ## Settings

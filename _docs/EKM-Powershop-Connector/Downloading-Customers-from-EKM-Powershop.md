@@ -3,6 +3,8 @@ slug: downloading-customers-from-ekm-powershop
 redirect_from: "/article/217-downloading-customers-from-ekm-powershop"
 title: Downloading Customers from EKM Powershop
 ---
+**This documentation refers to an older version of our EKM connector, which is no longer supported. See [EKM Connector](ekm) for the current version.**
+
 This task will export details of all customers to an XML file.
 
 ## Settings
