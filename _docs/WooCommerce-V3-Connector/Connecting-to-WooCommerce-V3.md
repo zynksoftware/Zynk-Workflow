@@ -6,7 +6,7 @@ All of the tasks in the WooCommerce V3.0+ connector require a connection to WooC
 
 ![WooCommerce Connection](/assets/images/woocommerce-v3/woocommerce-v3-connection.png)
 
-Enter your WooCommerce details as described below, then click 'Finish' to create the connection.
+Enter your WooCommerce details as described below, then click 'Finish' to create the connection. For more information on generating API keys see [WooCommerce REST API](https://docs.woocommerce.com/document/woocommerce-rest-api/).
 
 ## Settings
 ### URL
