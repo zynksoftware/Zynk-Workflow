@@ -85,7 +85,7 @@ Sample output file:
       <address_1>Nelson House</address_1>
       <address_2 />
       <city>Jesmond</city>
-      <state>Tyne &amp Wear</state>
+      <state>Tyne &amp; Wear</state>
       <postcode>NE2 3AE</postcode>
       <country>GB</country>
       <email>support@zynk.com</email>
