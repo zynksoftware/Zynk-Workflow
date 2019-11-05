@@ -14,7 +14,7 @@ title: Welcome
  * [Who is Zynk for](who-is-zynk-for)
  * [Zynk Version 2 - What's New](zynk-version-2-whats-new)
 
-## New Documentation Site - Feburary 2018
+## Documentation Site
 Based on your feedback we've updated the documentation site template and added a new responsive layout which  means you can now read the documentation on your mobile and tablet. 
 
 We've also introduced a much needed Search facility that lets you search the entire Zynk Workflow documentation site. 
