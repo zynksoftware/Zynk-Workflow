@@ -49,7 +49,7 @@
     * [BigCommerce](/bigcommerce)
     * [Channel Advisor](/channel-advisor)
     * [Ebay](/ebay)
-    * [EKM Powershop](/ekm-powershop)
+    * [EKM](/ekm)
     * [Magento V1](/magento-v1)
     * [Magento V2](/magento-v2)
     * [PayPal](/paypal)
