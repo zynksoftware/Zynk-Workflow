@@ -27,7 +27,7 @@
     * [Salesforce](/salesforce)
     * [Sugar CRM](/sugar-crm)
     * [webCRM](/webcrm)
-    * [Zoho CRM](/zoho-crm)
+    * [Zoho CRM](/zoho-crm-v2)
 * [Dashboards](/dashboards)
     * [Dashboards for Sage 50 UK](/dashboards-for-sage-50-uk)
     * [Dashboards for Sage 50 US](/dashboards-for-sage-50-us)

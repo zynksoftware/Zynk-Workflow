@@ -3,6 +3,8 @@ slug: downloading-records-from-zoho-crm
 redirect_from: "/article/364-downloading-records-from-zoho-crm"
 title: Exporting Records from Zoho CRM
 ---
+**This documentation refers to an older version of our Zoho CRM connector, which is no longer supported. See [Zoho CRM Connector](zoho-crm-v2) for the current version.**
+
 This task will export various types of records from your Zoho CRM account, in XML format.
 
 ## Settings

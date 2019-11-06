@@ -3,6 +3,8 @@ slug: zoho-crm
 redirect_from: "/article/361-introduction-to-the-zoho-crm-connector"
 title: Zoho CRM
 ---
+**This documentation refers to an older version of our Zoho CRM connector, which is no longer supported. See [Zoho CRM Connector](zoho-crm-v2) for the current version.**
+
 The Zoho CRM connector for Zynk allows you to download your sales orders, products, contacts and more from your Zoho CRM account, and then process them with Zynk. It also allows you to upload new records, and update or delete existing records.
 
 Each of the tasks require a connection to Zoho CRM, for more  information on setting up and managing connections see [Connecting to Zoho CRM](connecting-to-zoho-crm).
