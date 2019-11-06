@@ -3,7 +3,9 @@ slug: scheduling-a-workflow
 redirect_from: "/article/71-scheduling-a-workflow"
 title: Scheduling a Workflow
 ---
-You can easily schedule any Workflow to run at a specific time and then repeat every 15 minutes, hour, day, week or month. The scheduler uses the built in Windows scheduling service to execute Zynk at the times you specify.
+You can easily schedule any Workflow to run at a specific time and then repeat every 15 minutes, hour, day, week or month. The scheduler uses the built in Windows scheduling service to execute Zynk at the times you specify. 
+
+Please note, due to the way Zynk interacts with Windows Task Scheduler, Zynk will need to be ran as a user with full administrator priviledges to alter schedule settings. If you user account doesn't have this or encounters issues, close the program and run it by right clicking the icon and choosing "Run as Administrator"
 
 ## Setting up a Schedule
 1 - Click on the Scheduler button on the Workflow builder, and select the 'Run on a schedule' option. This will create a default schedule which will run the workflow every 15 minutes.
