@@ -8,7 +8,7 @@ The Sage 50 UK connector supports **Sage 50** and **Sage 50c** editions and prov
 
 Each of the tasks require a connection to Sage 50 UK, for more information on setting up and managing connections see [Connecting to Sage 50 UK](connecting-to-sage-50-uk).
 
-If you are using **Sage 50 US** please see the [Sage 50 US Documentation](Sage-50-US).
+If you are using **Sage 50 US** please see the [Sage 50 US Documentation](sage-50-us).
 
 ## Tasks
  * [Allocating Payments in Sage 50 UK](allocating-payments-in-sage-50-uk)
