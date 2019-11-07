@@ -7,6 +7,8 @@ The Sage 50 US connector implements an interface to Sage 50 US and provides func
 
 Each of the tasks require a connection to Sage 50 US, for more information on setting up and managing connections see [Connecting to Sage 50 US](connecting-to-sage-50-us).
 
+If you are using **Sage 50 UK** please see the [Sage 50 UK Documentation](sage-50-uk).
+
 ## Tasks
 * [Exporting Customers from Sage 50 US](exporting-customers-from-sage-50-us)
 * [Exporting Inventory from Sage 50 US](exporting-inventory-from-sage-50-us)
