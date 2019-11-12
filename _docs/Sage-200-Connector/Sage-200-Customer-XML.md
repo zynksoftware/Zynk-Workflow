@@ -269,6 +269,9 @@ The information below can be specified on the Payment tab in Sage.
 
 | Sage Field | XML Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
+| Account type | AccountType | OpenItem | enum | - | Optional | Available values: BalanceForward, OpenItem, AutoAllocation |
+| Settlement discount | SettlementDiscount | 2.5 | double | - | Optional | |
+| Settlement discount - if paid within | SettlementDays | 14 | int | - | Optional | |
 | Payment terms | PaymentTermsDays | 30 | int | - | Optional | |
 | Payment terms - from | PaymentTermsBasis | PaymentDueFromDocumentDate | enum | - | Optional | Available values: PaymentDueFromCalendarMonth, PaymentDueFromStartOfMonth, PaymentDueFromEndOfMonth, PaymentDueFromDocumentDate |
 
@@ -277,6 +280,9 @@ The information below can be specified on the Payment tab in Sage.
 <Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Customers>
     <Customer>
+      <AccountType>OpenItem</AccountType>
+      <SettlementDiscount>2.5</SettlementDiscount>
+      <SettlementDays>14</SettlementDays>
       <PaymentTermsDays>30</PaymentTermsDays>
       <PaymentTermsBasis>PaymentDueFromDocumentDate</PaymentTermsBasis>
     </Customer>
