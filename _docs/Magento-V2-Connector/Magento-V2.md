@@ -23,6 +23,7 @@ Each of the tasks require a connection to Magento, for more information on setti
 * [Importing Invoices to Magento V2](uploading-invoices-to-magento-v2)
 * [Importing Products to Magento V2](uploading-products-to-magento-v2)
 * [Importing Shipments to Magento V2](uploading-shipments-to-magento-v2)
+* [Importing Special Prices to Magento V2](importing-special-prices-to-magento-v2)
 * [Importing Tier Prices to Magento V2](uploading-tier-prices-to-magento-v2)
 
 ## Tips & Tools
