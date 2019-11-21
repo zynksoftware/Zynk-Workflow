@@ -64,7 +64,7 @@ The name of the workflow. To rename a workflow, right click on the workflow in t
 _Required_  
 Set this to true to allow the workflow to resume from the last failed task. This means that the workflow will pick up from where it left off in the event of a task failing. This setting defaults to true. 
 
-This will only apply to tasks where the [Can Resume from Failure](common-task-settings#Can-Resume-from-Failure) setting is true.
+This will only apply to tasks where the [Can Resume from Failure](common-task-settings#can-resume-from-failure) setting is true.
 
 If set to false, the workflow will always start from the begining regardless of the outcome of the previous run.
 
