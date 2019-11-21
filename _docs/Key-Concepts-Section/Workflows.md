@@ -60,6 +60,14 @@ The result when the workflow was last ran.
 _Read Only_  
 The name of the workflow. To rename a workflow, right click on the workflow in the 'My Workflows' tab, and click 'Rename'.
 
+### Resume Workflow on Failure
+_Required_  
+Set this to true to allow the workflow to resume from the last failed task. This means that the workflow will pick up from where it left off in the event of a task failing. This setting defaults to true. 
+
+This will only apply to tasks where the [Can Resume from Failure](../Settings-Section/Common-Task-Settings#Can-Resume-from-Failure) setting is true.
+
+If set to false, the workflow will always start from the begining regardless of the outcome of the previous run.
+
 ### Show Help On Startup
 _Required_  
 Set to true to display the documentation when the workflow is opened.
