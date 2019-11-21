@@ -223,6 +223,7 @@ When importing a Customer record you can also set fields on the Credit Control t
       <SettlementDays>30</SettlementDays>
       <SettlementDiscount>2.5</SettlementDiscount>
       <PaymentDays>30</PaymentDays>
+      <PaymentDueFrom>DaysAfterInvoiceDate</PaymentDueFrom>
       <Terms>30 Days Strictly Net</Terms>
       <AccountStatus>0</AccountStatus>
       <DUNSNumber>0</DUNSNumber>
