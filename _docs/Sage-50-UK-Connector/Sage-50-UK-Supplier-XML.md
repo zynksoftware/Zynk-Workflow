@@ -172,11 +172,17 @@ When importing a Supplier record you can also set fields on the Credit Control t
 | Sage Field | XML Field  | Example  | Field Type  | Field Length  | Input  |
 | --- | --- | --- | --- | --- | --- |
 | Credit Limit  | CreditLimit  | 1000  | double  | -  | Optional  |
+| Settlement Due | SettlementDays | 28 | short | - | Optional |
+| Sett. Discount | SettlementDiscount | 3.5 | double | - | Optional |
+| Payment Due | PaymentDays | 28 | short | - | Optional |
+| Payment Due From | PaymentDueFrom\* | DaysAfterInvoiceDate | enum | - | Optional |
+| Trading Terms Text | Terms | 28 days after invoice | string | 30 | Optional |
 | Priority Supplier | Priority  | true  | bool  | -  | Optional  |
-| Account Status  | AccountStatus*  | 0  | int  | 2  | Optional  |
+| Account Status  | AccountStatus\*  | 0  | int  | 2  | Optional  |
 | Terms Agreed  | TermsAgreed  | true  | bool  | -  | Optional  |
 
-*   AccountStatus* - This field is only set when creating a new customer.
+* AccountStatus* - This field is only set when creating a new customer.
+* PaymentDueFrom* - Valid values: DaysAfterInvoiceDate, DaysFromFirstDayOfFollowingMonth, DaysBeforeLastDayOfFollowingMonth, DayOfMonth, DaysFromOneMonthAfterInvoiceDate
 
 ```xml
 <?xml version="1.0"?>
@@ -184,6 +190,11 @@ When importing a Supplier record you can also set fields on the Credit Control t
   <Suppliers>
     <Supplier>
       <CreditLimit>1000</CreditLimit>
+      <SettlementDays>28</SettlementDays>
+      <SettlementDiscount>3.5</SettlementDiscount>
+      <PaymentDays>28</PaymentDays>
+      <PaymentDueFrom>DaysAfterInvoiceDate</PaymentDueFrom>
+      <Terms>28 days after invoice</Terms>
       <Priority>true</Priority>
       <AccountStatus>0</AccountStatus>
       <TermsAgreed>true</TermsAgreed>
