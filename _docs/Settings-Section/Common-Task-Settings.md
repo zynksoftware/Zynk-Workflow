@@ -10,6 +10,14 @@ The following settings are common across all tasks in Zynk.
 _Required_  
 If set to True the workflow will stop running if the task does not end successfully, otherwise the workflow will continue.
 
+### Can Resume From Failure
+_Required_  
+When a task fails and this setting is enabled, the status of the task will be set to 'Resume' rather than 'Fail'. This indicates  that the workflow should start from this task the next time it runs. This means that the workflow will pick up from where it left off in the event of this task failing. This setting defaults to True. 
+
+The [Resume Workflow on Failure](../Key-Concepts-Section/Workflows#Resume-Workflow-on-Failure) setting in the workflow properties must also be True for this to work.
+
+If set to false, the workflow will start from the begining even if this task fails.
+
 ### Enabled
 _Required_  
 Set to True to run this task when the workflow is executed, otherwise it will be skipped. If a container task is not enabled none of the child tasks will be ran.
