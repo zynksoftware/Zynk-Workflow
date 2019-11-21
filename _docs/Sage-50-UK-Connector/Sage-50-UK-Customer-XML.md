@@ -201,7 +201,8 @@ When importing a Customer record you can also set fields on the Credit Control t
 | Settlement Due  | SettlementDays  | 30  | int  | 2  | Optional  |
 | Sett. Discount  | SettlementDiscount  | 2.5  | double  | -  | Optional  |
 | Payment Due  | PaymentDays  | 30  | double  | -  | Optional  |
-| Trading Terms  | Terms  | 30 Days Strictly Net  | string  | 30  | Optional  |
+| Payment Due From | PaymentDueFrom\* | DaysAfterInvoiceDate | enum | - | Optional |
+| Trading Terms Text | Terms  | 30 Days Strictly Net  | string  | 30  | Optional  |
 | Account Status  | AccountStatus  | 0  | int  | 2  | Optional  |
 | DUNS Number   | DUNSNumber  | 0 | string  | 9  | Optional  |
 | Terms Agreed  | TermsAgreed  | true  | bool  | -  | Optional  |
@@ -211,6 +212,7 @@ When importing a Customer record you can also set fields on the Credit Control t
 | Restrict Mailing  | RestrictMailing  | true  | bool  | -  | Optional  |  
 
 * AccountOpened* - This field is only set when creating a new customer.  If this field is not provided it will default to the current date.
+* PaymentDueFrom* - Valid values: DaysAfterInvoiceDate, DaysFromFirstDayOfFollowingMonth, DaysBeforeLastDayOfFollowingMonth, DayOfMonth, DaysFromOneMonthAfterInvoiceDate
 
 ```xml
 <?xml version="1.0"?>
