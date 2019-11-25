@@ -21,6 +21,7 @@ Set to true if you want the task to list all files in sub-directories, or false 
 ### Search Pattern
 _Optional_  
 Allows you to specify the type of files to be processed. For example, `*.xml` will only list files with the .xml extension.
+This should be set to Data Type: Text or script
 
 ### Zynk Settings
 See [Common Task Settings](common-task-settings)
