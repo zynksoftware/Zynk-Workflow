@@ -8,7 +8,7 @@ This task will output a list of files contained within a folder, and optionally 
 ## Settings
 ### Folder
 _Optional_  
-The directory containing the files to list. Leave blank to list files in the workflow's working directory.
+The directory containing the files to list. Use a dot to list files in the workflow's working directory, or the path to the foder.
 
 ### Output File
 _Optional_  
