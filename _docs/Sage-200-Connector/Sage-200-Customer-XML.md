@@ -331,11 +331,18 @@ The information below can be specified on the Documents tab in Sage.
 ```
 
 ## Delivery Addresses
-The information below can be specified under Sales Order Processing -> SOP Maintenance -> Customer Delivery Addresses in Sage. We recommend that the Id field be populated by the unique id of the delivery address from the external system, Zynk uses this field to track delivery addresses already imported to prevent duplicates being created in Sage.
+The information below can be specified under Sales Order Processing -> SOP Maintenance -> Customer Delivery Addresses in Sage. 
+
+Delivery addresses are matched to existing delivery address in Sage based on the following fields, in the order shown below:
+* UniqueId
+* Id
+* Description
 
 | Sage Field | XML Field | Example | Field Type | Field Length | Input | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| - | Id | 5230 | string | 30 | Optional |
+| - | UniqueId | 462462 | int | - | Optional | The CustDeliveryAddressID from the Sage 200 database. This field is only used for matching, it can't be set directly |
+| - | Id | 5230 | string | 30 | Optional | We recommend this field be populated by the unique ID of the delivery address from the external system. Zynk will store this in truth table, and will use it for matching |
+| Description | Description | Main Address | string | 255 | Optional | Must be specified when creating a new delivery address. If not specified, it will be automatically populated with the name and postcode |
 | Postal Name | Company | Zynk Software Limited | string | 60 | Optional | If a value is not provided for this field, it will default to the Title, Forename, Middlename, Surname and Suffix. |
 | - | Title | Mr | string | - | Optional | Only used if Company is not provided. |
 | - | Forename | Joe | string | - | Optional | Only used if Company is not provided. |
@@ -363,7 +370,9 @@ The information below can be specified under Sales Order Processing -> SOP Maint
     <Customer>      
       <DeliveryAddresses>
         <Contact>
+          <UniqueId>462462</UniqueId>
           <Id>5230</Id>
+          <Description>Main Address</Description>
           <Company>internetware</Company>
           <Title>Mr</Title>
           <Forename>Joe</Forename>
