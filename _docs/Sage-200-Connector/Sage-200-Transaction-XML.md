@@ -21,7 +21,7 @@ Any Sage fields not documented below are not directly supported with our imports
 | ProjectItem  | Project Item  | string | Optional |
 | Reference  | Reference  | SI1 | string | 20 | Optional |
 | SecondReference  | 2nd Reference  | Order 1 | string | 20 | Optional |
-| Details | Narrative | Sales Invoice | string | - | Optional |
+| Details | Narrative | Sales Invoice | string | 6000 | Optional |
 | NetAmount  | Net Value  | 100 | double | - | Required |
 | TaxAmount  | Tax Value  | 20 | double | - | Optional |
 | TaxCode* | Tax Code  | 1 | int | - | Optional |
