@@ -15,6 +15,7 @@ Many of the tasks in Zynk accept and return XML files in order to integrate data
 - [Merging XML Files](merging-xml-files)
 - [XML Repeater](xml-repeater)
 - [Selecting a Value from an XML File](selecting-a-value-from-an-xml-file)
+- [Splitting and Repeating Over XML Files](splitting-and-repeating-over-xml-files)
 - [Splitting XML Files](splitting-xml-files)
 - [Converting XML to CSV](converting-xml-to-csv)
 - [XSLT Transform](xslt-transform)
