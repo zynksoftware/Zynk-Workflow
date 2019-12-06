@@ -3,6 +3,8 @@ slug: connecting-to-zoho-crm
 redirect_from: "/article/651-connecting-to-zoho-crm"
 title: Connecting to Zoho CRM
 ---
+**This documentation refers to an older version of our Zoho CRM connector, which is no longer supported. See [Zoho CRM Connector](zoho-crm-v2) for the current version.**
+
 All of the tasks in the Zoho CRM connector require a connection to Zoho CRM, so you will need to create a connection with the type 'Zoho CRM'. See [Managing Connections](managing-connections) for instructions on creating a new connection. You will see a screen like the one below, requesting your Zoho CRM details:
 
 [![Zoho CRM Connection](http://www.zynk.com/images/v2/zoho_crm_connection.png)](http://www.zynk.com/images/v2/zoho_crm_connection.png)

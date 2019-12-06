@@ -3,6 +3,8 @@ slug: deleting-records-from-zoho-crm
 redirect_from: "/article/363-deleting-records-from-zoho-crm"
 title: Deleting Records from Zoho CRM
 ---
+**This documentation refers to an older version of our Zoho CRM connector, which is no longer supported. See [Zoho CRM Connector](zoho-crm-v2) for the current version.**
+
 This task will delete a record from your Zoho CRM account.
 
 ## Settings

@@ -3,6 +3,8 @@ slug: uploading-records-to-zoho-crm
 redirect_from: "/article/365-uploading-records-to-zoho-crm"
 title: Importing Records to Zoho CRM
 ---
+**This documentation refers to an older version of our Zoho CRM connector, which is no longer supported. See [Zoho CRM Connector](zoho-crm-v2) for the current version.**
+
 This task will import (insert or update) various types of records to your Zoho CRM account. If the record in the input file contains an ID, the task will update the matching record in Zoho CRM, otherwise it will insert a new record.
 
 ## Settings
