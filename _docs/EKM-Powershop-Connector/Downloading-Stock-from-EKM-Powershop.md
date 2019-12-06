@@ -3,6 +3,8 @@ slug: downloading-stock-from-ekm-powershop
 redirect_from: "/article/219-downloading-stock-from-ekm-powershop"
 title: Downloading Stock from EKM Powershop
 ---
+**This documentation refers to an older version of our EKM connector, which is no longer supported. See [EKM Connector](ekm) for the current version.**
+
 This task will export details of all stock to an XML file.
 
 ## Settings

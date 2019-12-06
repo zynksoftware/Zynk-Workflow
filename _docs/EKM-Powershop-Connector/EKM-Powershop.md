@@ -3,6 +3,8 @@ slug: ekm-powershop
 redirect_from: "/article/216-introduction-to-the-ekm-powershop-connector"
 title: EKM Powershop
 ---
+**This documentation refers to an older version of our EKM connector, which is no longer supported. See [EKM Connector](ekm) for the current version.**
+
 The EKM Powershop connector for Zynk allows you to download your orders, customers and stock levels from your EKM Powershop site in XML format and then process them with Zynk. It also allows you to update the status of orders and product stock levels.
 
 Each of the tasks require a connection to EKM Powershop, for more information on setting up and managing connections see the page [Connecting to EKM Powershop](connecting-to-ekm-powershop).
