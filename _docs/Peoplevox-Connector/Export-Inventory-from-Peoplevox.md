@@ -51,48 +51,41 @@ Optionally export the item type data associated with each inventory item. Defaul
 See [Common Task Settings](common-task-settings)
 
 ## Example XML
-Example input file, for detailed information see [Peoplevox Item Type XML](peoplevox-item-type-xml).
+Example output file.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<ItemTypes 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<ItemType>
-		<ItemCode>PROD001</ItemCode>
-		<Name>Sample Product</Name>
-		<Barcode>123456789</Barcode>
-		<Description>Sample product for Peoplevox</Description>
-		<ItemGroup>Stock</ItemGroup>
-		<UnitOfMeasure>Unit</UnitOfMeasure>
-		<DefaultEconomicOrderQuantity>1</DefaultEconomicOrderQuantity>
-		<DefaultLeadTime>10</DefaultLeadTime>
-		<DefaultSuppliersPartNumber>02TEST</DefaultSuppliersPartNumber>
-		<HasSerialNumber>true</HasSerialNumber>
-		<UseManufacturersSerialNumber>true</UseManufacturersSerialNumber>
-		<ReorderPoint>1</ReorderPoint>
-		<Traceability>true</Traceability>
-		<ShelfLife>2017-04-10T00:00:00</ShelfLife>
-		<DefaultNumberOfItemsPerContainer>1</DefaultNumberOfItemsPerContainer>
-		<DefaultContainerType>test</DefaultContainerType>
-		<DefaultNumberItemsPerOuterCase>1</DefaultNumberItemsPerOuterCase>
-		<BuyPrice>1</BuyPrice>
-		<WholesalePrice>2</WholesalePrice>
-		<RetailPrice>3</RetailPrice>
-		<Weight>1</Weight>
-		<WeightMeasure>Pounds</WeightMeasure>
-		<Height>1</Height>
-		<Width>1</Width>
-		<Depth>1</Depth>
-		<DimensionMeasure>Inches</DimensionMeasure>
-		<Tags>stock</Tags>
-		<Attribute1>attribute_1</Attribute1>
-		<Attribute2>attribute_2</Attribute2>
-		<Attribute3>attribute_3</Attribute3>
-		<ItemTypeGroup>
-			<Name>Stock</Name>
-			<ParentGroup>Items</ParentGroup>
-		</ItemTypeGroup>
-	</ItemType>
-</ItemTypes>
+<Inventory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <InventoryItem>
+    <ItemCode>101365</ItemCode>
+    <ItemName>Mini Clipboard Calculator</ItemName>
+    <TotalAllocated>0</TotalAllocated>
+    <TotalAvailable>0</TotalAvailable>
+    <TotalOnHand>0</TotalOnHand>
+    <Sites>
+      <InventorySite>
+        <Name>PrimarySite</Name>
+        <Reference>PrimarySite</Reference>
+        <Allocated>0</Allocated>
+        <Available>0</Available>
+        <OnHand>0</OnHand>
+      </InventorySite>
+      <InventorySite>
+        <Name>SystemSite</Name>
+        <Reference>SystemSite</Reference>
+        <Allocated>0</Allocated>
+        <Available>0</Available>
+        <OnHand>0</OnHand>
+      </InventorySite>
+      <InventorySite>
+        <Name>Test Site</Name>
+        <Reference>TestSite</Reference>
+        <Allocated>0</Allocated>
+        <Available>0</Available>
+        <OnHand>0</OnHand>
+      </InventorySite>
+    </Sites>
+    <ItemTypes />
+  </InventoryItem>
+</Inventory>
 ```
