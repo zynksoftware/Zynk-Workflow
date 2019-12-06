@@ -12,6 +12,7 @@ Each of the tasks require a connection to Peoplevox, for more information on set
  * [Export Customers from Peoplevox](export-customers-from-peoplevox)
  * [Export Despatches from Peoplevox](export-despatches-from-peoplevox)
  * [Export Goods In from Peoplevox](export-goods-in-from-peoplevox)
+ * [Export Inventory from Peoplevox](export-inventory-from-peoplevox)
  * [Export Item Availability from Peoplevox](export-item-availability-from-peoplevox) 
  * [Export Item Movements from Peoplevox](export-item-movements-from-peoplevox) 
  * [Export Item Types from Peoplevox](export-item-types-from-peoplevox)
