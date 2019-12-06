@@ -48,8 +48,12 @@ The exported data may include fields which reference other records in ConnectWis
 * subContractCompany
 * subContractContact
 * parentAgreement
+* location
+* department
+* billingCycle
+* billingTerms
 * billToCompany
-* billToCompany
+* billToContact
 * billToSite
 * taxCode
 * workRole
@@ -57,7 +61,7 @@ The exported data may include fields which reference other records in ConnectWis
 * invoiceTemplate
 * currency
 * agreementAdditions
-* agreementAddition/product
+* agreementAdditions/agreementAddition/product
 
 ### Where Settings > Child Conditions
 _Optional_  
