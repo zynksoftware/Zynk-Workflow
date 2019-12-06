@@ -12,7 +12,7 @@ The connection to the Peoplevox instance to use.  See the [Connecting to Peoplev
 
 ### API Call Delay
 _Required_  
-The number of seconds to wait between sending requests to the Peoplevox API, used when making multiple paged requests to export data.  Defaults to 1.
+The number of seconds to wait between sending requests to the Peoplevox API, used when making multiple paged requests to export data.  Defaults to `1`.
 
 ### Items Per Page
 _Required_  
