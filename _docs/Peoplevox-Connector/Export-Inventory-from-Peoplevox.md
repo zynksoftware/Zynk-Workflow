@@ -3,7 +3,7 @@ slug: export-inventory-from-peoplevox
 title: Export Inventory from Peoplevox
 ---
 
-This task will export item type information from Peoplevox in XML format, for detailed information see [Peoplevox Item Type XML](peoplevox-item-type-xml).  The information is exported using the "Item types" integration template that can be ran through your Peoplevox web application.  You can add filters and search clauses to limit the data that is returned.
+This task will export inventory information from Peoplevox in XML format. The output is built up from a number of reports from Peoplevox to give an overall stock position per site. You can control the level of detail in output using the task settings.
 
 ## Settings
 ### Peoplevox Connection
@@ -20,7 +20,7 @@ The number of items to retreive per request made to Peoplevox.  Zynk will make a
 
 ### Output File
 _Required_  
-The name or full path to the file the returned data will be saved to.  Defaults to `peoplevox_export_item_types.xml`, which will be created in the working directory of the Workflow.
+The name or full path to the file the returned data will be saved to.  Defaults to `peoplevox_export_inventory.xml`, which will be created in the working directory of the Workflow.
 
 ### Search Clauses
 _Optional_  
@@ -28,7 +28,7 @@ You can add search clauses to limit the data that is returned from the report, f
 
 ### Timeout (In Minutes)
 _Required_  
-Maximum amount of time in minutes that Zynk will wait for a response per call made.  Defaults to 10.
+Maximum amount of time in minutes that Zynk will wait for a response per call made.  Defaults to `10`.
 
 ## Peoplevox Settings
 ### Export Item Inventory Changes
