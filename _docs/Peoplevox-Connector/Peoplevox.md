@@ -22,6 +22,7 @@ Each of the tasks require a connection to Peoplevox, for more information on set
  * [Export Sales Orders from Peoplevox](export-sales-orders-from-peoplevox)
  * [Export Service Types from Peoplevox](export-service-types-from-peoplevox)
  * [Export Sites from Peoplevox](export-sites-from-peoplevox) 
+ * [Export Template from Peoplevox](export-template-from-peoplevox) 
  * [Import Customers to Peoplevox](import-customers-to-peoplevox)
  * [Import Item Types to Peoplevox](import-item-types-to-peoplevox)
  * [Import Purchase Orders to Peoplevox](import-purchase-orders-to-peoplevox)
