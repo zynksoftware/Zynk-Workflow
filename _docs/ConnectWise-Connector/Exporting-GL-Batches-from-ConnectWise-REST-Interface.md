@@ -15,7 +15,7 @@ Specify whether Unposted Expenses should be included in the data. This will be d
 
 ### Export Unposted Invoices
 _Required_  
-Specify whether Unposted Procurement should be included in the data. This will be defaulted to True.
+Specify whether Unposted Invoices should be included in the data. This will be defaulted to True.
 
 ### Export Unposted Procurement
 _Required_  
@@ -25,9 +25,13 @@ Specify whether Unposted Procurement should be included in the data. This will 
 _Required_  
 The name of the file to export the GL batch to.
 
-### Owner Level
+### Owner Level (Location) Id
 _Optional_  
-Filter to restrict the records that are returned based on Location (Level 2 of the Corporate Structure). You can must specify the Location ID.
+Filter to restrict the records that are returned based on Location that they belong to in the Company structure.
+
+### Owner Level (Location) Name
+_Optional_  
+Filter to restrict the records that are returned based on Location that they belong to in the Company structure. If no matching Location name is found on ConnectWise then records belonging to all Locations will be returned. You must leave 'Owner Level (Location) Id' empty for this value to be used. 
 
 ### References To Fetch
 _Optional_  
@@ -47,8 +51,16 @@ The exported data may include fields which reference other records in ConnectWis
 * customer/taxCode
 * customer/currency
 * transaction/company
+* transaction/billToCompany
 * transaction/companyType
+* transaction/invoice
+* transaction/invoice/location
+* transaction/invoice/territory
+* transaction/invoice/agreement
+* transaction/invoice/agreement/agreementAdditions
+* transaction/invoice/agreement/agreementAdditions/agreementAddition/product
 * transaction/site
+* transaction/billToSite
 * transaction/billingTerms
 * transaction/purchaseOrder
 * transaction/project
@@ -58,6 +70,13 @@ The exported data may include fields which reference other records in ConnectWis
 * transaction/shipCompanyType
 * transaction/shipSite
 * transaction/shipContact
+* transaction/detail/detailItem/currency
+* transaction/detail/detailItem/taxCode
+* transaction/detail/detailItem/item
+* transaction/detail/detailItem/product
+* transaction/detail/detailItem/warehouseSite
+* transaction/detail/detailItem/warehouseBin
+* transaction/detail/detailItem/shipmentMethod
 * expense/member
 * expense/company
 * expense/project
@@ -67,6 +86,9 @@ The exported data may include fields which reference other records in ConnectWis
 * expenseBill/detailItem/company
 * expenseBill/detailItem/expenseClass
 * expenseBill/detailItem/currency
+* expenseBill/detailItem/project
+* expenseBill/detailItem/taxCode
+* expenseBill/detailItem/expenseEntry
 * purchaseTransaction/company
 * purchaseTransaction/companyType
 * purchaseTransaction/contact
@@ -78,8 +100,20 @@ The exported data may include fields which reference other records in ConnectWis
 * purchaseTransaction/shipToContact
 * purchaseTransaction/shipToSite
 * purchaseTransaction/taxCode
+* purchaseTransaction/purchaseOrder
+* purchaseTransaction/purchaseOrder/taxCode
+* purchaseTransaction/purchaseOrder/purchaseOrderItems
+* purchaseTransaction/purchaseOrder/purchaseOrderItem/product
+* purchaseTransaction/purchaseOrder/purchaseOrderItem/shipmentMethod
+* purchaseTransaction/purchaseOrder/purchaseOrderItem/warehouse
+* purchaseTransaction/purchaseOrder/purchaseOrderItem/warehouseBin
 * purchaseTransaction/purchaseDetailItem/item
+* purchaseTransaction/purchaseDetailItem/currency
 * purchaseTransaction/purchaseDetailItem/shipmentMethod
+* purchaseTransaction/purchaseDetailItem/warehouseBin
+* purchaseTransaction/purchaseDetailItem/warehouseBin/warehouse
+* purchaseTransaction/purchaseDetailItem/warehouseSite
+* purchaseTransaction/purchaseDetailItem/taxCode
 * purchaseTransaction/purchaseDetailTaxItem/warehouseBin
 * adjustmentTransaction/adjustmentDetailItem/item
 * inventoryTransfer/item
