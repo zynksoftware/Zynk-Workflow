@@ -10,6 +10,10 @@ This task will export a list of products from your Shopify store, and save them 
 _Required_  
 The Shopify connection to use. See [Connecting to Shopify](connecting-to-shopify) if you require more information on how to create/manage connections.
 
+### Export Products
+_Required_
+Optionally export the related inventory levels and inventory locations for each product record.
+
 ### Export All
 _Required_  
 Set this option to true to export all products, or set to false to only export new or modified products since the task was last ran.

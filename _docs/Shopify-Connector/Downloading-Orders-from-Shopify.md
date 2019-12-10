@@ -10,6 +10,10 @@ This task will export a list of orders from your Shopify store, and save them to
 _Required_  
 The Shopify connection to use. See [Connecting to Shopify](connecting-to-shopify) if you require more information on how to create/manage connections.
 
+### Export Transactions
+_Required_
+Optionally export the transactions related to the order record.
+
 ### Export All
 _Required_  
 Set this option to true to export  all orders, or set to false to only export new or modified orders since the task was last ran.
