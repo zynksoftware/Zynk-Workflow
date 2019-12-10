@@ -2,7 +2,7 @@
 slug: matching-records-in-magento-v2
 title: Matching records in Magento v2
 ---
-When attempting to update records in Magento v2 you can provide a <field> and <value> in a match object to try and return a matching record. 
+When attempting to update records in Magento v2 you can provide a <field> and <value> in a match object to try and return a matching record. You can also provide multiple values to match on by providing a match collection in <matches>.
 
 For example, if I wanted to match customers between Magento v2 and Sage 50 based on a custom field called 'sage_account_number' I could provide the following data:
 
@@ -41,6 +41,30 @@ For example, if I wanted to match customers between Magento v2 and Sage 50 based
         <default_shipping>true</default_shipping>
       </address>
     </addresses>
+  </Customer>
+</ArrayOfCustomer>
+```
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCustomer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Customer>
+    <matches>
+      <match>
+        <field>lastname</field>
+        <value>JOE001</value>
+      </match>
+      <match>
+        <field>email</field>
+        <value>joe@zynk.com</value>
+      </match>
+    </matches>
+    <group_id>440</group_id>
+    <firstname>Joe</firstname>
+    <lastname>JOE001</lastname>
+    <email>joe@zynk.com</email>
+    <store_id>1</store_id>
+    <website_id>1</website_id>
   </Customer>
 </ArrayOfCustomer>
 ```

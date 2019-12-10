@@ -13,6 +13,12 @@ This task will export credit memos from Magento in an XML format. The results ca
 _Required_  
 The Magento V2 connection to use. See the [Connecting to Magento V2](connecting-to-magento-v2) article if you require more information on how to create/manage connections.
 
+### Export Customers 
+Optionally export customer information associated to each record. Please note, in order to successfully run the task with this setting enabled you must also enable the export orders setting.
+
+### Export Orders
+Optionally export order information associated to each record. 
+
 ### Export Settings > Date Created
 _Required_  
 When the 'Export Modified, New or All Records' setting is set to 'All', only credit memos created after this date will be exported. This date will update automatically each time the task runs.
