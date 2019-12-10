@@ -12,6 +12,10 @@ Please refer to Create a Razor Template in the Tutorials section.
 _Required_  
 The name of the file to be output after being processed through the Razor template engine.
 
+### Additional Namespaces
+_Optional_
+Optionally add namespaces to your razor template.
+
 ### Prepend Timestamp
 _Required_  
 Set to true to add a timestamp to start of file name. Defaults to False. This setting is useful when using this task within a repeater task, as it will ensure the same file is not overwritten each time the task is ran.
