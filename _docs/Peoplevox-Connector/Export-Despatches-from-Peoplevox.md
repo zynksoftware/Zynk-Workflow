@@ -10,6 +10,10 @@ This task will export despatch information from Peoplevox in XML format, for det
 _Required_  
 The connection to the Peoplevox instance to use.  See the [Connecting to Peoplevox](connecting-to-peoplevox) if you require more information on how to create/manage connections.
 
+### Export Sales Orders
+_Required_
+Optionally export the sales order information related to each despatch.
+
 ### API Call Delay
 _Required_  
 The number of seconds to wait between sending requests to the Peoplevox API, used when making multiple paged requests to export data.  Defaults to 1.

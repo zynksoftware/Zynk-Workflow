@@ -25,6 +25,10 @@ PurchaseOrderNumber,ItemCode,Status,Quantity,RequestedDeliveryDate,Line,Sequence
 _Required_  
 The connection to the Peoplevox instance to use.  See the [Connecting to Peoplevox](connecting-to-peoplevox) if you require more information on how to create/manage connections.
 
+### Validate Templates
+_Required_
+Optionally valid the template configured in Peoplevox against the Zynk object. Any fields that are not set up on the template or that do not match the Zynk object will be logged out as a warning.
+
 ### Input File
 _Required_  
 The name or full path to the file the data to be imported will be read from.  Defaults to `peoplevox_import_purchase_orders.xml`, which should exist in the working directory of the Workflow.
@@ -44,6 +48,10 @@ Set to true if you only want to process a record once, or false to update every 
 ### Timeout (In Minutes)
 _Required_  
 Maximum amount of time in minutes that Zynk will wait for a response per call made.  Defaults to 10.
+
+### Retry Settings
+_Optional_
+See [Retry Settings](retry-settings).
 
 ## Example XML
 Example input file, for detailed information see [Peoplevox Purchase Order XML](peoplevox-purchase-order-xml).
