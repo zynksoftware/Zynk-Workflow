@@ -10,7 +10,7 @@ This task will insert or update credit notes in Xero from an XML file.
 
 ### Connection 
 _Required_  
-The Xero connection use when running this task.
+The Xero connection use when running this task. See [Connecting to Xero](connecting-to-xero-with-oauth-2) for more information on how to set up a connection.
 
 ### Fail File
 _Required_  

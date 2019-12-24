@@ -4,6 +4,8 @@ redirect_from: "/article/667-connecting-to-xero"
 title: Connecting to Xero
 ---
 
+**Xero will no longer support this type of connection in December 2020. Please refer to [Connecting to Xero with OAuth 2](connecting-to-xero-with-oauth-2) for documentation for the newer OAuth 2 connection**
+
 All of the tasks in the Xero connector require a connection to Xero, so you will need to create a connection with the type 'Xero'. See [Managing Connections](managing-connections) for instructions on creating a new connection.
 
 Zynk connects to Xero using the private API, which requires you to set up a private application in Xero. Xero provide instructions on how to do this in the documentation section of their site under [Private Applications](https://developer.xero.com/documentation/auth-and-limits/private-applications/). Note that the name for the private application is not important, so you can choose anything (such as 'Zynk Integration').

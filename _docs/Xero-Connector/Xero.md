@@ -5,11 +5,11 @@ title: Xero
 ---
 The Xero connector implements an interface to Xero and provides functions to import and export data from Xero in Zynk XML format. For detailed schema information on the Zynk XML standard please see [Xero XML](xero-xml).
 
-Each of the tasks require a connection to Xero, for more information on setting up and managing connections see [Connecting to Xero](connecting-to-xero).
+Each of the tasks require a connection to Xero, for more information on setting up and managing connections see [Connecting to Xero](connecting-to-xero-with-oauth-2).
 
 ## Tasks
 
-- [Connecting to Xero](connecting-to-xero)
+- [Connecting to Xero](connecting-to-xero-with-oauth-2)
 - [Creating Chart of Accounts in Xero](creating-chart-of-accounts-in-xero)
 - [Exporting Accounts from Xero](exporting-accounts-from-xero)
 - [Exporting Bank Transactions from Xero](exporting-bank-transactions-from-xero)

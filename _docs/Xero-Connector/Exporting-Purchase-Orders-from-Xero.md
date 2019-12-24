@@ -11,7 +11,7 @@ This task will download purchase orders from Xero in XML format.
 
 ### Connection 
 _Required_  
-The Xero connection use when running this task.
+The Xero connection use when running this task. See [Connecting to Xero](connecting-to-xero-with-oauth-2) for more information on how to set up a connection.
 
 ### Output File
 _Required_  

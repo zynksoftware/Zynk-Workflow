@@ -12,7 +12,7 @@ This task will update the chart of accounts in Xero using an XML file.
 
 ### Connection 
 _Required_
-The connection entry you'd like to use to run the task.
+The connection entry you'd like to use to run the task. See [Connecting to Xero](connecting-to-xero-with-oauth-2) for more information on how to set up a connection.
 
 ### Input File
 _Required_
