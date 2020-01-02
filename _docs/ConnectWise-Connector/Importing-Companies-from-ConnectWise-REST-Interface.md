@@ -7,6 +7,7 @@ This task will import companies into ConnectWise from an XML file. See below for
 Companies are created/updated based on the following rules:
 * If an `<id>` is specified, the task will update the company with this ID.
 * If an `<externalId>` is specified, and a corresponding entry is found in Zynk's truth table, the task will update the company with this ID.
+* If one or more `<lookup>` elements have been specified, Zynk will search for a match based on each one in turn, and will update the first matching company it finds.
 * If one or more fields have been selected in the 'Match Companies On' setting, Zynk will search for a match based on the selected fields. If a matching company is found in ConnectWise, it will update the company.
 * If none of the above conditions are met, the task will create a new company.
 
@@ -53,6 +54,27 @@ A sample input file is shown below.
   <Company>
     <id>2</id>
     <externalId>MYCOM</externalId>
+    <lookups>
+      <lookup>
+        <matches>
+          <match>
+            <type>Field</type><!-- Field | ChildField | CustomField -->
+            <fieldName>name</fieldName>
+            <comparison>Equals</comparison><!-- Equals | Contains | GreaterThan | GreaterThanOrEqual | In | Like | LessThan | LessThanOrEqual | NotEqual | NotContains | NotIn | NotLike | IsNull -->
+            <valueType>String</valueType><!-- String | Bool | DateTime | Numeric -->
+            <value>Your Company</value>
+            <values><!-- Used in conjuction with 'In' and 'NotIn' comparisons only -->
+              <value>Your Company</value>
+            </values>
+          </match>
+        </matches>
+        <orderBy>
+          <fieldName>name</fieldName>
+          <direction>Ascending</direction><!-- Ascending | Descending -->
+        </orderBy>
+        <type>One</type><!-- One | First -->
+      </lookup>
+    </lookups>
     <identifier>YourCompany</identifier>
     <name>Your Company</name>
     <status>

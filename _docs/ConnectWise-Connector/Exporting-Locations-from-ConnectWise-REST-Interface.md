@@ -1,25 +1,17 @@
 ---
-slug: exporting-invoices-from-connectwise-rest-interface
-title: Exporting Invoices from ConnectWise REST Interface
+slug: exporting-locations-from-connectwise-rest-interface
+title: Exporting Locations from ConnectWise REST Interface
 ---
-This task will export invoices from ConnectWise in an XML format. The results can be filtered if required. See below for a sample output file.
+This task will export locations from ConnectWise in an XML format. The results can be filtered if required. See below for a sample output file.
 
 ## Settings
 ### Connection
 _Required_  
 The ConnectWise REST Interface connection to use. See the [Connecting to ConnectWise REST Interface](connecting-to-connectwise-rest-interface) article if you require more information on how to create/manage connections.
 
-### Child Conditions
-_Optional_  
-Use this setting to specify where clauses to filter the records returned. This setting is used to specify conditions surrounding standard fields which are part of an array.
-
 ### Conditions
 _Optional_  
 Use this setting to specify where clauses to filter the records returned. This setting is used to specify conditions surrounding standard fields.
-
-### Custom Field Conditions
-_Optional_  
-Use this setting to specify where clauses to filter the records returned. This setting is used to specify conditions surrounding custom fields.
 
 #### Condition > Comparison
 _Required_  
@@ -61,11 +53,11 @@ The value the filter is to be based upon.
 
 ### Export Settings > Date Created
 _Required_  
-When the 'Export Modified, New or All Records' setting is set to 'New', only invoices created after this date will be exported. This date will update automatically each time the task runs, to ensure only new invoices are exported each time.
+When the 'Export Modified, New or All Records' setting is set to 'New', only locations created after this date will be exported. This date will update automatically each time the task runs, to ensure only new locations are exported each time.
 
 ### Export Settings > Date Modified
 _Required_  
-When the 'Export Modified, New or All Records' setting is set to 'Modified', only invoices updated after this date will be downloaded. This date will update automatically each time the task runs, to ensure only modified invoices are exported each time.
+When the 'Export Modified, New or All Records' setting is set to 'Modified', only locations updated after this date will be downloaded. This date will update automatically each time the task runs, to ensure only modified locations are exported each time.
 
 ### Export Settings > Export Modified, New or All Records
 _Required_  
@@ -81,21 +73,13 @@ The number of records to include in each page of results. Defaults to 100. Incre
 
 ### Output File
 _Required_  
-The name of the file to export the invoices to.
+The name of the file to export the locations to.
 
 ### References To Fetch
 _Optional_  
 The exported data may include fields which reference other records in ConnectWise. If you specify the reference field names here, and the task will fetch the related records and include them in the exported data. The supported fields are listed below: 
 
-* status
-* company
-* billToCompany
-* shipToCompany
-* billingSite
-* shippingSite
-* billingTerms
-* taxCode
-* currency
+* This task does not return any references that can be fetched
 
 ### References To Fetch Page Size
 _Required_  
@@ -108,91 +92,45 @@ See [Common Task Settings](common-task-settings).
 A sample output file is shown below.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<Invoices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Invoice>
-    <id>206</id>
-    <externalId>23f13s</externalId>
+<SystemLocations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SystemLocation>
+    <id>2</id>
+    <externalId />
     <_info>
-      <dateEntered>2016-10-04T14:00:58Z</dateEntered>
-      <enteredBy>Admin1</enteredBy>
-      <lastUpdated>2018-02-08T10:36:47Z</lastUpdated>
-      <updatedBy>Admin1</updatedBy>
+      <lastUpdated>2005-03-21T11:04:16Z</lastUpdated>
+      <updatedBy>zAdmin</updatedBy>
     </_info>
-    <invoiceNumber>197</invoiceNumber>
-    <type>Miscellaneous</type>
-    <status>
-      <id>3</id>
-      <name>Closed</name>
-    </status>
-    <company>
-      <id>143</id>
-      <name>TESTNEW</name>
-      <identifier>TESTNEW</identifier>
-    </company>
-    <billToCompany>
-      <id>143</id>
-      <name>TESTNEW</name>
-      <identifier>TESTNEW</identifier>
-    </billToCompany>
-    <shipToCompany>
-      <id>143</id>
-      <name>TESTNEW</name>
-      <identifier>TESTNEW</identifier>
-    </shipToCompany>
-    <applyToId xsi:nil="true" />
-    <attention>TT TT</attention>
-    <billingSite>
-      <id>146</id>
-      <name>Main</name>
-    </billingSite>
-    <shippingSite>
-      <id>146</id>
-      <name>Main</name>
-    </shippingSite>
-    <billingTerms>
+    <ownerLevelId>2</ownerLevelId>
+    <structureLevel>
       <id>2</id>
-      <name>Net 10</name>
-    </billingTerms>
-    <reference />
-    <templateSetupId>1</templateSetupId>
-    <emailTemplateId>1</emailTemplateId>
-    <addToBatchEmailList>false</addToBatchEmailList>
-    <date>2016-10-04T00:00:00Z</date>
-    <restrictDownpaymentFlag>false</restrictDownpaymentFlag>
-    <locationId>2</locationId>
-    <departmentId>10</departmentId>
-    <territoryId>39</territoryId>
-    <topComment />
-    <bottomComment />
-    <taxableFlag>false</taxableFlag>
-    <taxCode>
-      <id>21</id>
-      <name>UK VAT Rates</name>
-    </taxCode>
-    <internalNotes />
-    <downpaymentPreviouslyTaxedFlag>false</downpaymentPreviouslyTaxedFlag>
-    <serviceTotal>444</serviceTotal>
-    <currency>
-      <id>4</id>
-      <name>French Francs</name>
-      <symbol>FFr</symbol>
-      <isoCode>EUR</isoCode>
-    </currency>
-    <dueDate>2016-10-14T00:00:00Z</dueDate>
-    <expenseTotal>0</expenseTotal>
-    <productTotal>0</productTotal>
-    <previousProgressApplied>0</previousProgressApplied>
-    <serviceAdjustmentAmount>0</serviceAdjustmentAmount>
-    <agreementAmount>0</agreementAmount>
-    <downpaymentApplied>0</downpaymentApplied>
-    <subtotal>444</subtotal>
-    <total>444</total>
-    <remainingDownpayment>0</remainingDownpayment>
-    <salesTax>0</salesTax>
-    <payments>350</payments>
-    <credits>0</credits>
-    <balance>94</balance>
-    <specialInvoiceFlag>true</specialInvoiceFlag>
-  </Invoice>
-</Invoices>
+      <name>Location (Level 2)</name>
+    </structureLevel>
+    <name>Tampa Office</name>
+    <reportsTo>
+      <id>38</id>
+      <name>Corporate</name>
+    </reportsTo>
+    <calendar>
+      <id>1</id>
+      <name>Standard Office Hours</name>
+    </calendar>
+    <locationFlag>true</locationFlag>
+    <clientFlag>false</clientFlag>
+    <workRoleIds>
+      <workRoleId>6</workRoleId>
+      <workRoleId>11</workRoleId>
+      <workRoleId>16</workRoleId>
+      <workRoleId>17</workRoleId>
+      <workRoleId>18</workRoleId>
+      <workRoleId>21</workRoleId>
+    </workRoleIds>
+    <departmentIds>
+      <departmentId>10</departmentId>
+      <departmentId>13</departmentId>
+      <departmentId>14</departmentId>
+      <departmentId>15</departmentId>
+      <departmentId>16</departmentId>
+    </departmentIds>
+  </SystemLocation>
+</SystemLocations>
 ```

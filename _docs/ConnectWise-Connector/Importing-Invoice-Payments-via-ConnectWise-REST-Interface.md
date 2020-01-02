@@ -7,6 +7,7 @@ This task will import invoice payments into ConnectWise from an XML file. See be
 Invoice payments are created/updated based on the following rules:
 * If an `<id>` is specified, the task will update the payment with this ID.
 * If an `<externalId>` is specified, and a corresponding entry is found in Zynk's truth table, the task will update the payment with this ID.
+* If one or more `<lookup>` elements have been specified, Zynk will search for a match based on each one in turn, and will update the first matching payment it finds.
 * If a payment already exists for the specified invoice, the task will update the existing payment.
 * If none of the above conditions are met, the task will create a new payment.
 

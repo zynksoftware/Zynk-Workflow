@@ -9,17 +9,22 @@ The ConnectWise connector provides tasks that expose some of the functions avail
 The REST tasks allow you to import and export various information from ConnectWise, using the latest version of the API. This often provides access to fields not available via the older Accounting Interface and SOAP APIs. We recommend using the REST versions of the tasks wherever possible.  
 
 - [Connecting to ConnectWise REST Interface](connecting-to-connectwise-rest-interface)
+- [Creating Accounting Batches via ConnectWise REST Interface](updating-gl-batches-via-connectwise-rest-interface)
 - [Exporting Activities from ConnectWise REST Interface](exporting-activities-from-connectwise-rest-interface)
 - [Exporting Agreements from ConnectWise REST Interface](exporting-agreements-from-connectwise-rest-interface)
+- [Exporting Agreement Types from ConnectWise REST Interface](exporting-agreement-types-from-connectwise-rest-interface)
+- [Exporting Batches from ConnectWise REST Interface](exporting-batches-from-connectwise-rest-interface)
+- [Exporting Billing Cycles from ConnectWise REST Interface](exporting-billing-cycles-from-connectwise-rest-interface)
 - [Exporting Companies from ConnectWise REST Interface](exporting-companies-from-connectwise-rest-interface)
+- [Exporting Departments from ConnectWise REST Interface](exporting-departments-from-connectwise-rest-interface)
 - [Exporting GL Batches from ConnectWise REST Interface](exporting-gl-batches-from-connectwise-rest-interface)
 - [Exporting Invoices from ConnectWise REST Interface](exporting-invoices-from-connectwise-rest-interface)
 - [Exporting Members from ConnectWise REST Interface](exporting-members-from-connectwise-rest-interface)
 - [Exporting Purchase Orders from ConnectWise REST Interface](exporting-purchase-orders-from-connectwise-rest-interface)
 - [Importing Activities via ConnectWise REST Interface](importing-activities-via-connectwise-rest-interface)
+- [Importing Agreements via ConnectWise REST Interface](importing-agreements-via-connectwise-rest-interface)
 - [Importing Companies via ConnectWise REST Interface](importing-companies-via-connectwise-rest-interface)
 - [Importing Invoice Payments via ConnectWise REST Interface](importing-invoice-payments-via-connectwise-rest-interface)
-- [Updating GL Batches via ConnectWise REST Interface](updating-gl-batches-via-connectwise-rest-interface)
 
 ## Accounting Interface
 The Accounting Interface tasks let you download GL batches (unposted Invoices, expenses and procurement information) from ConnectWise, and update GL batches, adding records to the batch on ConnectWise, preventing them from being downloaded again. You can also upload invoice payments to ConnectWise. Each of these tasks requires a ConnectWise Accounting Interface connection, for more information on setting up and managing this type of connection, see the page [Connecting to ConnectWise Accounting Interface](connecting-to-connectwise-accounting-interface).  

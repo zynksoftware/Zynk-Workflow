@@ -7,6 +7,7 @@ This task will import activities into ConnectWise from an XML file. See below fo
 Activities are created/updated based on the following rules:
 * If an `<id>` is specified, the task will update the company with this ID.
 * If an `<externalId>` is specified, and a corresponding entry is found in Zynk's truth table, the task will update the company with this ID.
+* If one or more `<lookup>` elements have been specified, Zynk will search for a match based on each one in turn, and will update the first matching activty it finds.
 * If none of the above conditions are met, the task will create a new company.
 
 When updating existing activities, only writeable fields specified in the input file will be updated. Any other fields will keep their existing values.
@@ -43,6 +44,27 @@ A sample input file is shown below.
   <Activity>
     <id>79</id>
     <externalId>124314</externalId>
+    <lookups>
+      <lookup>
+        <matches>
+          <match>
+            <type>Field</type><!-- Field | ChildField | CustomField -->
+            <fieldName>name</fieldName>
+            <comparison>Equals</comparison><!-- Equals | Contains | GreaterThan | GreaterThanOrEqual | In | Like | LessThan | LessThanOrEqual | NotEqual | NotContains | NotIn | NotLike | IsNull -->
+            <valueType>String</valueType><!-- String | Bool | DateTime | Numeric -->
+            <value>Test Activity</value>
+            <values><!-- Used in conjunction with 'In' and 'NotIn' comparisons only -->
+              <value>Test Activity</value>
+            </values>
+          </match>
+        </matches>
+        <orderBy>
+          <fieldName>name</fieldName>
+          <direction>Ascending</direction><!-- Ascending | Descending -->
+        </orderBy>
+        <type>One</type><!-- One | First -->
+      </lookup>
+    </lookups>
     <name>Test Activity</name>
     <company>
       <id>2</id>
