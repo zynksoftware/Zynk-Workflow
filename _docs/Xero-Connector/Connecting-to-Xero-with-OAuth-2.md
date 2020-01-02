@@ -13,7 +13,7 @@ Zynk connects to Xero using the private API, which requires you to set up a priv
 
 2. Click "New App" at the top right.
 
-![Xero](/assets/images/xero/xero_oauth_2_private_app.png)
+![Xero Private App Screen](/assets/images/xero/xero_oauth_2_private_app.png)
 
 3. Enter a name for the application. This can be anything you like, such as 'Zynk Integration'.
 
@@ -25,7 +25,7 @@ Zynk connects to Xero using the private API, which requires you to set up a priv
 
 7. Click the 'Create app' button.
 
-![Xero](/assets/images/xero/xero_oauth_2_private_app_2.png)
+![Xero Private App Screen](/assets/images/xero/xero_oauth_2_private_app_2.png)
 
 8. Click the Generate secret link. The generated client ID and secret will need to be copied to your Zynk connection.
 
@@ -35,7 +35,7 @@ Futher information can be found in Xero's [Private Application Documentation](ht
 
 When creating a 'Xero (Private API, OAuth 2.0)' connection in Zynk, you will see a screen like the one below, requesting your Xero private application details:
 
-![Xero](/assets/images/xero/xero_oauth_2_connection.png)
+![Xero Connection](/assets/images/xero/xero_oauth_2_connection.png)
 
 ### Client ID
 _Required_  
