@@ -63,7 +63,7 @@ A sample input file is shown below.
             <comparison>Equals</comparison><!-- Equals | Contains | GreaterThan | GreaterThanOrEqual | In | Like | LessThan | LessThanOrEqual | NotEqual | NotContains | NotIn | NotLike | IsNull -->
             <valueType>String</valueType><!-- String | Bool | DateTime | Numeric -->
             <value>Your Company</value>
-            <values><!-- Used in conjuction with 'In' and 'NotIn' comparisons only -->
+            <values><!-- Used in conjunction with 'In' and 'NotIn' comparisons only -->
               <value>Your Company</value>
             </values>
           </match>
